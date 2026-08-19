@@ -5,3 +5,12 @@
 .tags button {
   flex: 0 0 auto;
 }
+
+.card[role="button"] {
+  cursor: pointer;
+}
+
+.card[role="button"]:focus-visible {
+  outline: 3px solid var(--violet);
+  outline-offset: 6px;
+}
