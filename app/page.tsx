@@ -4,10 +4,10 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useState } from "react";
 
 const projects = [
-  { id: 8, title: "CONTOR ACASĂ", type: "Platformă", price: 2490, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "Firebase", "SaaS"] },
+  { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2490, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "Firebase", "SaaS"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 790, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "Multilingv", "Booking"] },
 ];
-const filters = ["Toate", "Platformă", "Beauty"];
+const filters = ["Toate", "Utility Management", "Beauty"];
 
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
