@@ -4,9 +4,9 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useEffect, useState } from "react";
 
 const projects = [
-  { id: 9, title: "iQ CALENDAR", type: "Calendar & Events", price: 1490, tone: "iqcalendar", desc: "Calendar social pentru evenimente, parteneri și grupuri", stack: ["React", "TypeScript", "Firebase Auth", "Realtime Database", "Google Sign-In", "Telegram Bot API", "DeepL API", "Netlify Functions", "Firebase Admin", "Esbuild"] },
-  { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2490, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
-  { id: 7, title: "MICORA", type: "Beauty", price: 790, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
+  { id: 9, title: "iQ CALENDAR", type: "Calendar & Events", price: 1000, tone: "iqcalendar", desc: "Calendar social pentru evenimente, parteneri și grupuri", stack: ["React", "TypeScript", "Firebase Auth", "Realtime Database", "Google Sign-In", "Telegram Bot API", "DeepL API", "Netlify Functions", "Firebase Admin", "Esbuild"] },
+  { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 3000, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
+  { id: 7, title: "MICORA", type: "Beauty", price: 300, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
 const filters = ["Toate", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
