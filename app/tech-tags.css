@@ -1,0 +1,7 @@
+.tags {
+  flex-wrap: wrap;
+}
+
+.tags button {
+  flex: 0 0 auto;
+}
