@@ -14,3 +14,130 @@
   outline: 3px solid var(--violet);
   outline-offset: 6px;
 }
+
+.modal-detailed {
+  width: min(940px, 100%);
+  padding: 18px;
+}
+
+.modal-detailed .visual {
+  height: 340px;
+}
+
+.modal-content {
+  padding: 10px 18px 18px;
+}
+
+.modal-title-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-title-row h2 {
+  margin: 12px 0 18px;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: .9;
+  letter-spacing: -.06em;
+}
+
+.modal-price {
+  padding-bottom: 19px;
+  text-align: right;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.modal-price small {
+  display: block;
+  font: 600 8px var(--font-mono);
+  letter-spacing: 1px;
+}
+
+.modal-summary {
+  max-width: 760px;
+  margin: 24px 0 34px;
+  color: #57544e;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.detail-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.detail-sections section {
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: #fff8;
+}
+
+.detail-sections h3 {
+  margin: 0 0 16px;
+  font-size: 17px;
+  letter-spacing: -.02em;
+}
+
+.detail-sections ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detail-sections li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 10px 0;
+  color: #55524c;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.detail-sections li svg {
+  width: 14px;
+  min-width: 14px;
+  color: var(--violet);
+}
+
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.modal-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  font-weight: 750;
+}
+
+.modal-actions svg {
+  width: 18px;
+}
+
+.demo-link {
+  border: 1px solid var(--ink);
+}
+
+.buy-link {
+  background: var(--ink);
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .modal-detailed .visual { height: 230px; }
+  .modal-content { padding: 8px 4px 6px; }
+  .modal-title-row { align-items: flex-start; }
+  .modal-title-row h2 { font-size: 42px; }
+  .modal-price { font-size: 25px; }
+  .detail-sections { grid-template-columns: 1fr; }
+  .modal-actions { grid-template-columns: 1fr; }
+}
