@@ -44,9 +44,12 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
-    server: isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
-      : undefined,
+    server: {
+      host: "0.0.0.0", port: 3004, strictPort: true,
+      allowedHosts: ["vanzare-proiecte.localhost"],
+      ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
+    },
+    preview: { host: "0.0.0.0", port: 3004, strictPort: true, allowedHosts: ["vanzare-proiecte.localhost"] },
     plugins: [
       vinext(),
       sites(),

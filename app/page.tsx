@@ -4,12 +4,18 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useEffect, useState } from "react";
 
 const projects = [
+  { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "ChatGPT Sign-In", "Tailwind CSS", "Vinext", "Cloudflare"] },
+  { id: 11, title: "ÉLAN", type: "Beauty & Academy", price: 400, tone: "elan", desc: "Website editorial pentru salon de unghii, servicii premium și cursuri profesionale", stack: ["React", "TypeScript", "Vite", "Responsive Design", "Lead Form", "CSS Animations", "Tailwind CSS", "Cloudflare"] },
+  { id: 10, title: "FIXORA", type: "Service Management", price: 1500, tone: "fixora", desc: "Sistem operațional pentru administrarea completă a unui service auto", stack: ["React", "TypeScript", "Vite", "LocalStorage", "CSV Export", "Dashboard", "Responsive UI", "Tailwind CSS", "Cloudflare"] },
   { id: 9, title: "iQ CALENDAR", type: "Calendar & Events", price: 800, tone: "iqcalendar", desc: "Calendar social pentru evenimente, parteneri și grupuri", stack: ["React", "TypeScript", "Firebase Auth", "Realtime Database", "Google Sign-In", "Telegram Bot API", "DeepL API", "Netlify Functions", "Firebase Admin", "Esbuild"] },
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
+  "Equipment Rental": "equipment-rental",
+  "Beauty & Academy": "beauty-academy",
+  "Service Management": "service-management",
   "Calendar & Events": "calendar-events",
   "Utility Management": "utility-management",
   Beauty: "beauty",
@@ -20,6 +26,38 @@ const projectDetails: Record<number, {
   demo?: string;
   sections: Array<{ title: string; items: string[] }>;
 }> = {
+  12: {
+    summary: "RentTech este o platformă full-stack pentru companii care închiriază utilaje și echipamente profesionale. Combină un catalog comercial rapid cu un panou securizat în care administratorul poate actualiza prețurile afișate clienților.",
+    demo: "https://renttech-moldova.cristian-codre495379.chatgpt.site",
+    sections: [
+      { title: "Ideea și publicul", items: ["Creat pentru firme de închiriere utilaje, echipamente de șantier și generatoare", "Prezintă oferta într-un format profesionist, cu tarife zilnice transparente", "Conectează rapid clientul cu echipa de vânzări prin solicitări și apel telefonic"] },
+      { title: "Catalogul public", items: ["Catalog cu excavatoare, nacele, compactoare, generatoare și echipamente de iluminat", "Filtrare după Construcții, Energie și Lucru la înălțime", "Căutare instant după denumirea utilajului", "Etichete de disponibilitate, specificații, tarif zilnic și opțiune de solicitare", "Secțiuni comerciale cu beneficii, statistici și procesul de închiriere în trei pași"] },
+      { title: "Administrare și date", items: ["Panou separat pentru catalog și prețuri", "Actualizarea tarifelor direct din interfața de administrare", "API REST pentru citirea și modificarea echipamentelor", "Persistență în Cloudflare D1 prin Drizzle ORM", "Date implicite de rezervă dacă baza de date nu este disponibilă"] },
+      { title: "Acces și tehnologie", items: ["Autentificare pentru administrator prin Sign in with ChatGPT", "Next.js, React și TypeScript", "Cloudflare D1, Drizzle ORM, Vinext și infrastructură Cloudflare", "Design responsive pentru telefon, tabletă și desktop"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul sursă complet pentru site, API și panoul de administrare", "Schema bazei de date și date demo pentru catalog", "Structură pregătită pentru branding, echipamente și tarife reale", "Bază extensibilă pentru rezervări, disponibilitate și plăți online"] },
+    ],
+  },
+  11: {
+    summary: "Élan este un website premium care unește două direcții de business într-o singură experiență: serviciile unui studio de manichiură și vânzarea cursurilor printr-o academie profesională.",
+    demo: "https://elan-nail-studio-academy.cristian-codre495379.chatgpt.site",
+    sections: [
+      { title: "Ideea și poziționarea", items: ["Potrivit pentru nail artiști, saloane premium și academii de beauty", "Identitate editorială elegantă, construită pentru diferențiere și încredere", "Prezintă experiența, rezultatele și standardele studioului într-un parcurs coerent"] },
+      { title: "Servicii pentru cliente", items: ["Prezentare pentru manichiură BIAB, gel și arhitectură, plus nail art editorial", "Durată, preț de pornire și descriere pentru fiecare serviciu", "Trasee clare către programare", "Programul, locația și datele necesare înaintea unei vizite"] },
+      { title: "Academie și cursuri", items: ["Oferte distincte pentru nivel începător, intermediar și avansat", "Durată, kit, certificat, dimensiunea grupei și preț pentru fiecare curs", "Secțiune dedicată metodei, siguranței și educației aplicate", "Indicatori de încredere, rezultate și testimonial"] },
+      { title: "Conversie și experiență", items: ["Formular interactiv pentru servicii, cursuri și solicitări personalizate", "Confirmare vizuală după trimiterea cererii", "Meniu responsive și navigare fluidă pe o singură pagină", "React, TypeScript, Vite și animații CSS"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet și design responsive", "Structura pentru servicii, cursuri, poveste, testimonial și contact", "Conținut centralizat, simplu de personalizat", "Bază pregătită pentru integrarea unei programări online sau a unui CRM"] },
+    ],
+  },
+  10: {
+    summary: "FIXORA Service OS este un sistem de management pentru ateliere auto. Centralizează activitatea zilnică, lucrările, programările, relația cu clienții, devizele, piesele, echipa și indicatorii financiari într-un singur dashboard.",
+    sections: [
+      { title: "Ideea și publicul", items: ["Conceput pentru service-uri auto independente și rețele de ateliere", "Înlocuiește tabelele și evidența fragmentată cu un flux operațional unic", "Oferă managerului o imagine imediată asupra capacității și activității atelierului"] },
+      { title: "Centru de lucru", items: ["Dashboard cu programările zilei, mașinile în lucru și venitul estimat", "Flux vizual pentru fiecare comandă, client, vehicul, lucrare, mecanic și progres", "Filtrare după status și căutare după client sau mașină", "Alerte pentru devize, piese întârziate și clienți care trebuie notificați", "Agenda următoarelor programări și evidența automatizărilor active"] },
+      { title: "Module operaționale", items: ["Programări cu oră, vehicul, serviciu și status", "Clienți și mașini cu date de contact, ultima vizită și valoare totală", "Devize cu aprobare, facturare și valoare", "Stoc de piese cu prag minim, furnizor și alerte", "Echipă cu roluri, specializări, sarcini și eficiență"] },
+      { title: "Rapoarte și funcții", items: ["Venit lunar, marjă brută, valoare medie și clienți recurenți", "Grafic pentru evoluția veniturilor și clasamentul serviciilor profitabile", "Adăugare, căutare, vizualizare și ștergere de înregistrări", "Persistență locală a datelor și export CSV pentru fiecare modul", "Interfață responsive construită cu React, TypeScript și Vite"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet pentru dashboard și toate modulele", "Date demo realiste și interacțiuni funcționale", "Arhitectură pregătită pentru conectarea la o bază de date și autentificare", "Bază solidă pentru notificări, facturare, plăți și aplicație pentru clienți"] },
+    ],
+  },
   9: {
     summary: "Un calendar social colaborativ construit pentru oamenii care vor să transforme intențiile în momente petrecute împreună. iQ Calendar combină planificarea, rețeaua de parteneri și notificările într-o experiență simplă și personală.",
     demo: "https://papaya-lokum-7fc2a9.netlify.app/index.html",
@@ -57,6 +95,9 @@ const projectDetails: Record<number, {
 
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
+    {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small><b>2 400 MDL<em>/ zi</em></b></div><div className="renttech-line"/></>}
+    {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
+    {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>CAPACITATE ATELIER</span><strong>78%</strong><i><em/></i><div><b>12</b> PROGRAMĂRI <b>6</b> ÎN LUCRU</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
     {project.id === 9 && <><div className="iq-brand"><b>iQ</b> Calendar</div><div className="iq-window"><div className="iq-head"><span>August 2026</span><i>•••</i></div><div className="iq-week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div className="iq-days">{[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].map(day=><i className={day===19?"selected":day===23?"event":""} key={day}>{day}</i>)}</div><div className="iq-event"><span>18:30</span><b>🍷 Cină împreună</b><small>2 participanți</small></div></div><div className="iq-float">♥ +3</div><div className="iq-badge">PLANIFICĂ · INVITĂ · CONECTEAZĂ</div></>}
     {project.id === 8 && <><div className="contor-brand">◉ CONTOR ACASĂ</div><div className="contor-ui"><div className="contor-side"><i/><i/><i/><i/></div><div className="contor-main"><small>BUNĂ, CRISTIAN</small><strong>2.840 <em>MDL</em></strong><span>SPRE ACHITARE</span><div className="contor-bars"><i/><i/><i/><i/><i/></div></div><div className="contor-card"><b>+128</b><span>CONSUMATORI</span></div></div><div className="contor-badge">MULTI-ZONĂ · 3 ROLURI</div></>}
       {project.id === 7 && <img className="micora-cover" src="/projects/micora-cover.png" alt="Micora — site premium pentru salon de frumusețe"/>}
