@@ -15,6 +15,46 @@ const categorySlugs: Record<string, string> = {
   Beauty: "beauty",
 };
 
+const projectDetails: Record<number, {
+  summary: string;
+  demo?: string;
+  sections: Array<{ title: string; items: string[] }>;
+}> = {
+  9: {
+    summary: "Un calendar social colaborativ construit pentru oamenii care vor să transforme intențiile în momente petrecute împreună. iQ Calendar combină planificarea, rețeaua de parteneri și notificările într-o experiență simplă și personală.",
+    demo: "https://papaya-lokum-7fc2a9.netlify.app/index.html",
+    sections: [
+      { title: "Ideea și publicul", items: ["Potrivit pentru cupluri, familii, prieteni și grupuri mici", "Centralizează evenimentele comune și reduce discuțiile repetitive despre dată și oră", "Experiență personalizabilă, optimizată pentru telefon și desktop"] },
+      { title: "Planificare și calendar", items: ["Selectare vizuală a datei și orei", "Activități predefinite sau activitate personalizată", "Vizualizare calendar și listă, evenimente viitoare și arhivă", "Editarea, ștergerea și deschiderea directă a unui eveniment", "Mesaje, detalii și remindere configurabile pentru fiecare plan"] },
+      { title: "Colaborare socială", items: ["Profil personal cu nickname unic", "Cereri de parteneriat și listă de contacte", "Grupuri reutilizabile pentru invitații rapide", "Propuneri de modificare cu acceptare sau refuz", "Notificări în aplicație și remindere manuale către participanți"] },
+      { title: "Conturi și integrări", items: ["Autentificare Google prin Firebase Auth", "Firebase Realtime Database și Firebase Admin", "Notificări Telegram prin Telegram Bot API și scheduler dedicat", "Traduceri asistate prin DeepL API și Netlify Functions", "React, TypeScript și build modular cu Esbuild"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul sursă complet și editabil", "Structura pentru utilizatori, evenimente, parteneri, grupuri și notificări", "Configurarea integrărilor și fluxurilor automate", "Bază pregătită pentru branding, monetizare și extindere"] },
+    ],
+  },
+  8: {
+    summary: "O platformă completă de Utility Management pentru asociații și comunități rezidențiale. Digitalizează colectarea indicilor, verificarea dovezilor, calculul consumului, datoriile, achitările și comunicarea cu locatarii.",
+    sections: [
+      { title: "Ideea și publicul", items: ["Creat pentru asociații locative, sectoare de vile și administratori de comunități", "Înlocuiește tabelele, mesajele dispersate și colectarea manuală a datelor", "Arhitectură multi-zonă pentru operarea mai multor comunități din același sistem"] },
+      { title: "Portalul consumatorului", items: ["Transmiterea lunară a indicilor de apă și energie", "Dovadă foto pentru fiecare citire", "Calcul automat al consumului și costurilor", "Situația achitărilor, datoriilor și contribuțiilor recurente", "Istoric de plăți, proiecte comunitare și mesaje", "Interfață în română, engleză și rusă"] },
+      { title: "Panoul administratorului", items: ["Aprobarea și gestionarea conturilor", "Verificarea citirilor și fotografiilor", "Configurarea tarifelor și înregistrarea achitărilor", "Administrarea proiectelor, cotizațiilor și taxelor pentru deșeuri", "Rapoarte financiare și statistici publice", "Mesagerie segmentată și hartă interactivă a consumatorilor"] },
+      { title: "Controlul sistemului", items: ["Rol separat de System Admin", "Crearea și administrarea zonelor", "Administratori dedicați pentru fiecare zonă", "Activarea funcțiilor prin feature flags", "Mutarea conturilor și administrarea drepturilor"] },
+      { title: "Tehnologie și automatizări", items: ["Next.js, React, TypeScript și Tailwind CSS", "Firebase Auth, Realtime Database, Storage și Firebase Admin", "Leaflet și OpenStreetMap pentru hartă", "Netlify Scheduled Functions pentru remindere automate", "Arhitectură securizată pe roluri și reguli Firebase"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet pentru interfață și administrare", "Modele de date, reguli Firebase și scripturi de inițializare", "Fluxuri pentru consumatori, administratori și system admin", "Bază SaaS extensibilă pentru alte tipuri de utilități și comunități"] },
+    ],
+  },
+  7: {
+    summary: "Un website premium pentru salon de frumusețe, construit ca experiență editorială și instrument de conversie. Micora pune serviciile, atmosfera și programarea în centrul unei identități vizuale rafinate.",
+    demo: "https://micora-beauty.cristian-codre495379.chatgpt.site",
+    sections: [
+      { title: "Ideea și publicul", items: ["Potrivit pentru saloane de beauty, studiouri și specialiști independenți", "Poziționare premium prin design editorial și storytelling", "Conceput pentru a transforma vizitatorii în cereri de programare"] },
+      { title: "Pagini și conținut", items: ["Homepage animat cu prezentare memorabilă de brand", "Servicii interactive pentru păr, unghii, îngrijirea pielii și sprâncene", "Pagină dedicată poveștii și filosofiei salonului", "Galerie vizuală extinsă", "Contact, telefon, email și formular de programare"] },
+      { title: "Experiență și conversie", items: ["Română, rusă și engleză incluse", "Navigare responsive pentru telefon și desktop", "Animații premium și tranziții Framer Motion", "Conținut centralizat, ușor de personalizat", "Butoane și trasee clare către programare"] },
+      { title: "Tehnologie și livrare", items: ["Next.js, React și TypeScript", "Tailwind CSS, Framer Motion și Lucide Icons", "Imagistică Unsplash integrată", "Build compatibil Cloudflare/Vinext și Netlify", "SEO și imagine socială Open Graph personalizată"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul sursă complet și editabil", "Design responsive și toate paginile prezentate", "Structură trilingvă pregătită pentru conținut real", "Bază rapidă pentru rebranding și lansarea unui salon"] },
+    ],
+  },
+};
+
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
     {project.id === 9 && <><div className="iq-brand"><b>iQ</b> Calendar</div><div className="iq-window"><div className="iq-head"><span>August 2026</span><i>•••</i></div><div className="iq-week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div className="iq-days">{[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].map(day=><i className={day===19?"selected":day===23?"event":""} key={day}>{day}</i>)}</div><div className="iq-event"><span>18:30</span><b>🍷 Cină împreună</b><small>2 participanți</small></div></div><div className="iq-float">♥ +3</div><div className="iq-badge">PLANIFICĂ · INVITĂ · CONECTEAZĂ</div></>}
@@ -35,6 +75,7 @@ export default function Home() {
   const [menu, setMenu] = useState(false);
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(null);
   const visible = active === "Toate" ? projects : projects.filter((p) => p.type === active);
+  const selectedDetail = selected ? projectDetails[selected.id] : null;
   useEffect(() => {
     const syncFromUrl = () => {
       const slug = new URL(window.location.href).searchParams.get("categorie");
@@ -61,6 +102,6 @@ export default function Home() {
     <section className="process" id="proces"><div className="shell"><span className="kicker light">/ CUM FUNCȚIONEAZĂ</span><h2>DE LA CLICK<br/>LA <i>LAUNCH.</i></h2><div className="steps">{[["01","ALEGI","Explorezi catalogul și găsești proiectul potrivit ideii tale."],["02","PERSONALIZĂM","Adaptăm brandul, culorile și conținutul pentru afacerea ta."],["03","LANSĂM","Primești proiectul complet, configurat și gata să producă."]].map(([n,t,d])=><div className="step" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div><ArrowRight/></div>)}</div></div></section>
     <section className="why shell"><div className="why-main"><span className="kicker">/ DE CE MONO/DEV</span><h2>NU VINDEM<br/>DOAR <i>PIXELI.</i></h2><p>Fiecare proiect este construit să arate impecabil, să se miște rapid și, cel mai important, să transforme vizitatorii în clienți.</p><a href="mailto:hello@monodev.ro">Hai să vorbim <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>COD CURAT<br/>ȘI EDITABIL</span></div><div><strong>48H</strong><span>PÂNĂ LA<br/>PREDARE</span></div><div><strong>30</strong><span>ZILE SUPORT<br/>INCLUS</span></div></div></section>
     <footer id="contact"><div className="shell footer-top"><p>AI GĂSIT CE CĂUTAI?</p><a href="mailto:hello@monodev.ro">SĂ ÎNCEPEM <ArrowRight/></a></div><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
-    <AnimatePresence>{selected && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setSelected(null)}><motion.div className="modal" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSelected(null)}><X/></button><ProjectVisual project={selected}/><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><h2>{selected.title}</h2><p>{selected.id === 9 ? "Calendar social colaborativ pentru cupluri, prieteni și grupuri. Utilizatorii planifică evenimente, invită participanți, trimit sugestii, primesc confirmări și notificări și își organizează toate momentele într-o experiență comună." : selected.id === 8 ? "Platformă SaaS pentru asociații și comunități rezidențiale. Automatizează colectarea indicilor de apă și energie, verificarea fotografiilor, calculul plăților și datoriilor, comunicarea cu locatarii și administrarea mai multor zone dintr-un singur sistem." : selected.id === 7 ? "Site premium pentru salon de frumusețe, cu identitate editorială delicată, experiență trilingvă, prezentare interactivă a serviciilor, galerie și formular de programare. Conceput pentru a transforma vizitatorii în programări." : `${selected.desc}. Primești codul sursă complet, documentație și ajutor la lansare.`}</p><ul><li><Check/> Cod sursă complet și editabil</li><li><Check/> {selected.id === 9 ? "Parteneri, grupuri și evenimente colaborative" : selected.id === 8 ? "Consumator, administrator și system admin" : selected.id === 7 ? "Română, rusă și engleză incluse" : "Personalizare de bază inclusă"}</li><li><Check/> {selected.id === 9 ? "Firebase, Google Auth și notificări Telegram" : selected.id === 8 ? "Firebase, rapoarte, mesagerie și remindere" : selected.id === 7 ? "Servicii, galerie și programări" : "30 de zile de suport"}</li></ul><a href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ExternalLink/></a></motion.div></motion.div>}</AnimatePresence>
+    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setSelected(null)}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSelected(null)} aria-label="Închide detaliile"><X/></button><ProjectVisual project={selected}/><div className="modal-content"><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>PREȚ COMPLET</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">Deschide proiectul <ExternalLink/></a> : <a className="demo-link" href={`mailto:hello@monodev.ro?subject=Solicit acces demo pentru ${selected.title}`}>Solicită acces demo <ExternalLink/></a>}<a className="buy-link" href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
   </main>;
 }
