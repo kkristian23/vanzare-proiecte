@@ -4,7 +4,7 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useEffect, useState } from "react";
 
 const projects = [
-  { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "ChatGPT Sign-In", "Tailwind CSS", "Vinext", "Cloudflare"] },
+  { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "Tailwind CSS", "Vinext", "Cloudflare"] },
   { id: 11, title: "ÉLAN", type: "Beauty & Academy", price: 400, tone: "elan", desc: "Website editorial pentru salon de unghii, servicii premium și cursuri profesionale", stack: ["React", "TypeScript", "Vite", "Responsive Design", "Lead Form", "CSS Animations", "Tailwind CSS", "Cloudflare"] },
   { id: 10, title: "FIXORA", type: "Service Management", price: 1500, tone: "fixora", desc: "Sistem operațional pentru administrarea completă a unui service auto", stack: ["React", "TypeScript", "Vite", "LocalStorage", "CSV Export", "Dashboard", "Responsive UI", "Tailwind CSS", "Cloudflare"] },
   { id: 9, title: "iQ CALENDAR", type: "Calendar & Events", price: 800, tone: "iqcalendar", desc: "Calendar social pentru evenimente, parteneri și grupuri", stack: ["React", "TypeScript", "Firebase Auth", "Realtime Database", "Google Sign-In", "Telegram Bot API", "DeepL API", "Netlify Functions", "Firebase Admin", "Esbuild"] },
@@ -28,18 +28,16 @@ const projectDetails: Record<number, {
 }> = {
   12: {
     summary: "RentTech este o platformă full-stack pentru companii care închiriază utilaje și echipamente profesionale. Combină un catalog comercial rapid cu un panou securizat în care administratorul poate actualiza prețurile afișate clienților.",
-    demo: "https://renttech-moldova.cristian-codre495379.chatgpt.site",
     sections: [
       { title: "Ideea și publicul", items: ["Creat pentru firme de închiriere utilaje, echipamente de șantier și generatoare", "Prezintă oferta într-un format profesionist, cu tarife zilnice transparente", "Conectează rapid clientul cu echipa de vânzări prin solicitări și apel telefonic"] },
       { title: "Catalogul public", items: ["Catalog cu excavatoare, nacele, compactoare, generatoare și echipamente de iluminat", "Filtrare după Construcții, Energie și Lucru la înălțime", "Căutare instant după denumirea utilajului", "Etichete de disponibilitate, specificații, tarif zilnic și opțiune de solicitare", "Secțiuni comerciale cu beneficii, statistici și procesul de închiriere în trei pași"] },
       { title: "Administrare și date", items: ["Panou separat pentru catalog și prețuri", "Actualizarea tarifelor direct din interfața de administrare", "API REST pentru citirea și modificarea echipamentelor", "Persistență în Cloudflare D1 prin Drizzle ORM", "Date implicite de rezervă dacă baza de date nu este disponibilă"] },
-      { title: "Acces și tehnologie", items: ["Autentificare pentru administrator prin Sign in with ChatGPT", "Next.js, React și TypeScript", "Cloudflare D1, Drizzle ORM, Vinext și infrastructură Cloudflare", "Design responsive pentru telefon, tabletă și desktop"] },
+      { title: "Acces și tehnologie", items: ["Panou de administrare securizat", "Next.js, React și TypeScript", "Cloudflare D1, Drizzle ORM, Vinext și infrastructură Cloudflare", "Design responsive pentru telefon, tabletă și desktop"] },
       { title: "Ce primește cumpărătorul", items: ["Codul sursă complet pentru site, API și panoul de administrare", "Schema bazei de date și date demo pentru catalog", "Structură pregătită pentru branding, echipamente și tarife reale", "Bază extensibilă pentru rezervări, disponibilitate și plăți online"] },
     ],
   },
   11: {
     summary: "Élan este un website premium care unește două direcții de business într-o singură experiență: serviciile unui studio de manichiură și vânzarea cursurilor printr-o academie profesională.",
-    demo: "https://elan-nail-studio-academy.cristian-codre495379.chatgpt.site",
     sections: [
       { title: "Ideea și poziționarea", items: ["Potrivit pentru nail artiști, saloane premium și academii de beauty", "Identitate editorială elegantă, construită pentru diferențiere și încredere", "Prezintă experiența, rezultatele și standardele studioului într-un parcurs coerent"] },
       { title: "Servicii pentru cliente", items: ["Prezentare pentru manichiură BIAB, gel și arhitectură, plus nail art editorial", "Durată, preț de pornire și descriere pentru fiecare serviciu", "Trasee clare către programare", "Programul, locația și datele necesare înaintea unei vizite"] },
@@ -82,7 +80,6 @@ const projectDetails: Record<number, {
   },
   7: {
     summary: "Un website premium pentru salon de frumusețe, construit ca experiență editorială și instrument de conversie. Micora pune serviciile, atmosfera și programarea în centrul unei identități vizuale rafinate.",
-    demo: "https://micora-beauty.cristian-codre495379.chatgpt.site",
     sections: [
       { title: "Ideea și publicul", items: ["Potrivit pentru saloane de beauty, studiouri și specialiști independenți", "Poziționare premium prin design editorial și storytelling", "Conceput pentru a transforma vizitatorii în cereri de programare"] },
       { title: "Pagini și conținut", items: ["Homepage animat cu prezentare memorabilă de brand", "Servicii interactive pentru păr, unghii, îngrijirea pielii și sprâncene", "Pagină dedicată poveștii și filosofiei salonului", "Galerie vizuală extinsă", "Contact, telefon, email și formular de programare"] },

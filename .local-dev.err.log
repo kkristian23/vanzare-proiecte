@@ -35,3 +35,5 @@ Detected multiple renderers concurrently rendering the same context provider. Th
 [31mError: Port 3000 is already in use[39m
 [2m14:24:08[22m [31m[1m[vite][22m[39m fetch failed
 [2m14:24:08[22m [31m[1m[vite][22m[39m server restart failed
+[2m14:42:23[22m [31m[1m[vite][22m[39m Unexpected token 'E', "Error: Par"... is not valid JSON
+[2m14:42:23[22m [31m[1m[vite][22m[39m server restart failed
