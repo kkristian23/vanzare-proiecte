@@ -1,0 +1,43 @@
+"use client";
+import { AnimatePresence, motion } from "framer-motion";
+import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } from "lucide-react";
+import { useState } from "react";
+
+const projects = [
+  { id: 1, title: "NEXUS®", type: "SaaS", price: 890, tone: "violet", desc: "Platformă AI pentru echipe creative", stack: ["Next.js", "AI", "Stripe"] },
+  { id: 2, title: "ARCHFORM", type: "Landing", price: 490, tone: "lime", desc: "Portfolio pentru studio de arhitectură", stack: ["React", "Motion", "CMS"] },
+  { id: 3, title: "PULSE", type: "E-commerce", price: 1290, tone: "coral", desc: "Magazin premium de fashion & lifestyle", stack: ["Next.js", "Shopify", "3D"] },
+  { id: 4, title: "FINORA", type: "Dashboard", price: 990, tone: "blue", desc: "Dashboard fintech complet și modular", stack: ["React", "Charts", "API"] },
+  { id: 5, title: "NOCTURNE", type: "Landing", price: 390, tone: "cream", desc: "Experiență editorială pentru evenimente", stack: ["Next.js", "GSAP", "CMS"] },
+  { id: 6, title: "KINETIC", type: "SaaS", price: 790, tone: "pink", desc: "Aplicație de wellness și fitness", stack: ["React", "Mobile", "Stripe"] },
+];
+const filters = ["Toate", "SaaS", "E-commerce", "Landing", "Dashboard"];
+
+function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
+  return <div className={`visual visual-${project.tone}`}>
+    <div className="visual-top"><span>0{project.id}</span><span>{project.type}</span></div>
+    {project.id === 1 && <><div className="orb"/><div className="nexus-word">NEXUS</div><div className="mini-pill">AI POWERED WORKSPACE</div></>}
+    {project.id === 2 && <><div className="arch-shape"/><div className="arch-copy">FORM<br/>FOLLOWS<br/><i>feeling.</i></div></>}
+    {project.id === 3 && <><div className="pulse-circle">P</div><div className="pulse-copy">MOVE<br/>DIFFERENT.</div></>}
+    {project.id === 4 && <><div className="chart"><i/><i/><i/><i/><i/></div><div className="chart-stat">+24.8%<small> GROWTH</small></div></>}
+    {project.id === 5 && <><div className="moon"/><div className="night-copy">NOCTURNE<br/><i>after dark</i></div></>}
+    {project.id === 6 && <><div className="kinetic-ring"/><div className="kinetic-copy">BREATHE.<br/>MOVE. LIVE.</div></>}
+  </div>;
+}
+
+export default function Home() {
+  const [active, setActive] = useState("Toate");
+  const [menu, setMenu] = useState(false);
+  const [selected, setSelected] = useState<(typeof projects)[number] | null>(null);
+  const visible = active === "Toate" ? projects : projects.filter((p) => p.type === active);
+  return <main>
+    <nav className="nav shell"><a className="logo" href="#top">M<span>O</span>NO/DEV</a><div className="nav-links"><a href="#proiecte">Proiecte</a><a href="#proces">Proces</a><a href="#contact">Contact</a></div><a className="nav-cta" href="#proiecte"><ShoppingBag size={16}/> Cumpără un proiect</a><button className="menu-btn" onClick={() => setMenu(!menu)} aria-label="Deschide meniul">{menu ? <X/> : <Menu/>}</button></nav>
+    <AnimatePresence>{menu && <motion.div className="mobile-menu" initial={{opacity:0,y:-10}} animate={{opacity:1,y:0}} exit={{opacity:0}}><a href="#proiecte" onClick={()=>setMenu(false)}>Proiecte</a><a href="#proces" onClick={()=>setMenu(false)}>Proces</a><a href="#contact" onClick={()=>setMenu(false)}>Contact</a></motion.div>}</AnimatePresence>
+    <section className="hero shell" id="top"><motion.div className="eyebrow" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}}><span/> PROIECTE DIGITALE. GATA DE LANSARE.</motion.div><motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:.08}}>IDEI MARI.<br/><em>DEJA CONSTRUITE.</em></motion.h1><motion.div className="hero-bottom" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.2}}><p>Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.</p><a href="#proiecte" className="circle-arrow" aria-label="Vezi proiectele"><ArrowRight/></a></motion.div><div className="marquee"><div>DESIGN CARE VINDE <Sparkles/> COD CURAT <Zap/> LIVRARE RAPIDĂ <Sparkles/> DESIGN CARE VINDE <Zap/> COD CURAT <Sparkles/> LIVRARE RAPIDĂ</div></div></section>
+    <section className="projects shell" id="proiecte"><div className="section-head"><div><span className="kicker">/ CATALOG 2026</span><h2>ALEGE URMĂTORUL<br/>TĂU <i>PROIECT.</i></h2></div><div className="count">{String(visible.length).padStart(2,"0")}<span>PROIECTE<br/>DISPONIBILE</span></div></div><div className="filters">{filters.map((filter)=><button key={filter} onClick={()=>setActive(filter)} className={active===filter ? "active" : ""}>{filter}</button>)}</div><motion.div layout className="grid"><AnimatePresence mode="popLayout">{visible.map((project)=><motion.article layout key={project.id} className="card" initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:.95}} whileHover={{y:-6}}><ProjectVisual project={project}/><div className="card-info"><div><span className="type">{project.type}</span><h3>{project.title}</h3><p>{project.desc}</p></div><div className="price"><small>DE LA</small>€{project.price}</div></div><div className="tags">{project.stack.map(x=><span key={x}>{x}</span>)}<button onClick={()=>setSelected(project)} aria-label={`Detalii ${project.title}`}><ArrowRight/></button></div></motion.article>)}</AnimatePresence></motion.div></section>
+    <section className="process" id="proces"><div className="shell"><span className="kicker light">/ CUM FUNCȚIONEAZĂ</span><h2>DE LA CLICK<br/>LA <i>LAUNCH.</i></h2><div className="steps">{[["01","ALEGI","Explorezi catalogul și găsești proiectul potrivit ideii tale."],["02","PERSONALIZĂM","Adaptăm brandul, culorile și conținutul pentru afacerea ta."],["03","LANSĂM","Primești proiectul complet, configurat și gata să producă."]].map(([n,t,d])=><div className="step" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div><ArrowRight/></div>)}</div></div></section>
+    <section className="why shell"><div className="why-main"><span className="kicker">/ DE CE MONO/DEV</span><h2>NU VINDEM<br/>DOAR <i>PIXELI.</i></h2><p>Fiecare proiect este construit să arate impecabil, să se miște rapid și, cel mai important, să transforme vizitatorii în clienți.</p><a href="mailto:hello@monodev.ro">Hai să vorbim <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>COD CURAT<br/>ȘI EDITABIL</span></div><div><strong>48H</strong><span>PÂNĂ LA<br/>PREDARE</span></div><div><strong>30</strong><span>ZILE SUPORT<br/>INCLUS</span></div></div></section>
+    <footer id="contact"><div className="shell footer-top"><p>AI GĂSIT CE CĂUTAI?</p><a href="mailto:hello@monodev.ro">SĂ ÎNCEPEM <ArrowRight/></a></div><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
+    <AnimatePresence>{selected && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setSelected(null)}><motion.div className="modal" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSelected(null)}><X/></button><ProjectVisual project={selected}/><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><h2>{selected.title}</h2><p>{selected.desc}. Primești codul sursă complet, documentație și ajutor la lansare.</p><ul><li><Check/> Cod sursă complet și editabil</li><li><Check/> Personalizare de bază inclusă</li><li><Check/> 30 de zile de suport</li></ul><a href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ExternalLink/></a></motion.div></motion.div>}</AnimatePresence>
+  </main>;
+}
