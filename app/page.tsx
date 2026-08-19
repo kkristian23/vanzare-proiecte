@@ -6,14 +6,8 @@ import { useState } from "react";
 const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Platformă", price: 2490, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "Firebase", "SaaS"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 790, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "Multilingv", "Booking"] },
-  { id: 1, title: "NEXUS®", type: "SaaS", price: 890, tone: "violet", desc: "Platformă AI pentru echipe creative", stack: ["Next.js", "AI", "Stripe"] },
-  { id: 2, title: "ARCHFORM", type: "Landing", price: 490, tone: "lime", desc: "Portfolio pentru studio de arhitectură", stack: ["React", "Motion", "CMS"] },
-  { id: 3, title: "PULSE", type: "E-commerce", price: 1290, tone: "coral", desc: "Magazin premium de fashion & lifestyle", stack: ["Next.js", "Shopify", "3D"] },
-  { id: 4, title: "FINORA", type: "Dashboard", price: 990, tone: "blue", desc: "Dashboard fintech complet și modular", stack: ["React", "Charts", "API"] },
-  { id: 5, title: "NOCTURNE", type: "Landing", price: 390, tone: "cream", desc: "Experiență editorială pentru evenimente", stack: ["Next.js", "GSAP", "CMS"] },
-  { id: 6, title: "KINETIC", type: "SaaS", price: 790, tone: "pink", desc: "Aplicație de wellness și fitness", stack: ["React", "Mobile", "Stripe"] },
 ];
-const filters = ["Toate", "Platformă", "Beauty", "SaaS", "E-commerce", "Landing", "Dashboard"];
+const filters = ["Toate", "Platformă", "Beauty"];
 
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
