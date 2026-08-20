@@ -4,6 +4,7 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useEffect, useState } from "react";
 
 const projects = [
+  { id: 14, title: "NEO BARBER CLUB", type: "Barber & Academy", price: 650, tone: "neo", desc: "Website premium pentru barber shop, servicii, portofoliu și academie profesională", stack: ["Next.js", "React", "TypeScript", "Motion", "GSAP", "Responsive Design", "Booking Flow", "Tailwind CSS"] },
   { id: 13, title: "GRAPHIFY", type: "AI Token Economy", price: 1800, tone: "graphify", desc: "Platformă de control pentru costuri, consum și optimizarea tokenilor AI", stack: ["Next.js", "React", "TypeScript", "Cost Engine", "Live Simulator", "LocalStorage", "Responsive UI", "Cloudflare"] },
   { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "Tailwind CSS", "Vinext", "Cloudflare"] },
   { id: 11, title: "ÉLAN", type: "Beauty & Academy", price: 400, tone: "elan", desc: "Website editorial pentru salon de unghii, servicii premium și cursuri profesionale", stack: ["React", "TypeScript", "Vite", "Responsive Design", "Lead Form", "CSS Animations", "Tailwind CSS", "Cloudflare"] },
@@ -12,8 +13,9 @@ const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "AI Token Economy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "Barber & Academy", "AI Token Economy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
+  "Barber & Academy": "barber-academy",
   "AI Token Economy": "ai-token-economy",
   "Equipment Rental": "equipment-rental",
   "Beauty & Academy": "beauty-academy",
@@ -28,6 +30,17 @@ const projectDetails: Record<number, {
   demo?: string;
   sections: Array<{ title: string; items: string[] }>;
 }> = {
+  14: {
+    summary: "NEO Barber Club este o experiență digitală premium pentru un barber shop contemporan din Chișinău. Site-ul combină prezentarea serviciilor, portofoliul vizual și o academie profesională într-o identitate cinematografică construită pentru poziționare și rezervări.",
+    sections: [
+      { title: "Ideea și poziționarea", items: ["Creat pentru barber shop-uri premium, studiouri de grooming și master barberi", "Identitate elegantă în tonuri espresso, auriu și champagne", "Mesaj editorial centrat pe precizie, ritual și stil personal", "Experiență de brand coerentă de la primul contact până la rezervare"] },
+      { title: "Servicii și conversie", items: ["Prezentare pentru Signature Cut, Cut & Beard Ritual, Royal Shave și Father & Son", "Tarif și beneficii afișate clar pentru fiecare serviciu", "Trasee directe către rezervare din navigație, hero și profilul barberului", "Integrare pregătită cu o platformă externă de programări"] },
+      { title: "Portofoliu și echipă", items: ["Galerie editorială pentru lucrări, stiluri și transformări", "Carduri animate pentru Modern Texture, Sharp Identity și Classic Refined", "Profil dedicat master barberului, specializări, rating și recenzii", "Program, adresă, contact și legături sociale integrate"] },
+      { title: "Academia NEO", items: ["Secțiune comercială separată pentru cursuri profesionale", "Program intensiv de șase săptămâni, 80% practică și grupe restrânse", "Poziționare potrivită atât pentru începători, cât și pentru module avansate", "Call-to-action dedicat programului academiei"] },
+      { title: "Experiență și tehnologie", items: ["Intro cinematografic cu animație de tăiere și tranziții premium", "Efecte de scroll, apariții animate și microinteracțiuni", "Meniu mobil fullscreen și layout complet responsive", "Next.js, React, TypeScript, Motion, GSAP, Tailwind CSS și Lucide Icons"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul sursă complet și editabil", "Design responsive, animații și toate secțiunile prezentate", "Conținut centralizat pentru servicii, tarife, lucrări și echipă", "Bază pregătită pentru rebranding, rezervări reale, mai mulți barberi și cursuri"] },
+    ],
+  },
   13: {
     summary: "Graphify transformă consumul de tokeni AI într-un sistem financiar clar și controlabil. Echipele pot modela traficul, compara costurile modelelor și identifica instant economiile disponibile înainte ca factura să crească.",
     demo: "/graphify",
@@ -108,6 +121,7 @@ const projectDetails: Record<number, {
 
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
+    {project.id === 14 && <><div className="neo-mark"><b>NEO</b><span>BARBER CLUB</span></div><div className="neo-blade"><i/><i/><span>PRECISION<br/>IS A RITUAL</span></div><div className="neo-service"><small>SIGNATURE CUT</small><strong>450 <em>MDL</em></strong></div><div className="neo-seal">EST.<br/><b>2026</b></div></>}
     {project.id === 13 && <><div className="graphify-brand"><b>G</b> GRAPHIFY <small>TOKEN ECONOMY OS</small></div><div className="graphify-total"><span>MONTHLY AI SPEND</span><strong>€3,842<em> / €5K</em></strong></div><div className="graphify-chart">{[38,52,45,66,61,78,72,91,83,96].map((height,index)=><i key={index} style={{height:`${height}%`}}/>)}</div><div className="graphify-saving">−32% <span>OPTIMIZED</span></div></>}
     {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small><b>2 400 MDL<em>/ zi</em></b></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
