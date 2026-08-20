@@ -87,7 +87,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L138"
+      "source_location": "L140"
     },
     {
       "id": "app_page_projectvisual",
@@ -99,7 +99,7 @@
       "file_type": "code",
       "norm_label": "projectvisual()",
       "source_file": "app/page.tsx",
-      "source_location": "L118"
+      "source_location": "L120"
     },
     {
       "id": "worker_index_executioncontext_passthroughonexception",
@@ -2306,7 +2306,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L118",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -2317,7 +2317,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L138",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -3301,5 +3301,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4b58eac78956965f308ec1f58e16c8190d858b94"
+  "built_at_commit": "f6466147971f0fa8a83822affd2d020f86d3a2a3"
 }

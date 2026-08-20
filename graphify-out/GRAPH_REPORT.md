@@ -1,7 +1,7 @@
 # Graph Report - vanzare proiecte  (2026-08-20)
 
 ## Corpus Check
-- 21 files · ~126,701 words
+- 21 files · ~126,705 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4b58eac7`
+- Built from commit: `f6466147`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

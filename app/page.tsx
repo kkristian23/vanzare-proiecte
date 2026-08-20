@@ -50,6 +50,7 @@ const projectDetails: Record<number, {
   },
   12: {
     summary: "RentTech este o platformă full-stack pentru companii care închiriază utilaje și echipamente profesionale. Combină un catalog comercial rapid cu un panou securizat în care administratorul poate actualiza prețurile afișate clienților.",
+    demo: "https://renttech-moldova.cristian-codre495379.chatgpt.site",
     sections: [
       { title: "Ideea și publicul", items: ["Creat pentru firme de închiriere utilaje, echipamente de șantier și generatoare", "Prezintă oferta într-un format profesionist, cu tarife zilnice transparente", "Conectează rapid clientul cu echipa de vânzări prin solicitări și apel telefonic"] },
       { title: "Catalogul public", items: ["Catalog cu excavatoare, nacele, compactoare, generatoare și echipamente de iluminat", "Filtrare după Construcții, Energie și Lucru la înălțime", "Căutare instant după denumirea utilajului", "Etichete de disponibilitate, specificații, tarif zilnic și opțiune de solicitare", "Secțiuni comerciale cu beneficii, statistici și procesul de închiriere în trei pași"] },
@@ -71,6 +72,7 @@ const projectDetails: Record<number, {
   },
   10: {
     summary: "FIXORA Service OS este un sistem de management pentru ateliere auto. Centralizează activitatea zilnică, lucrările, programările, relația cu clienții, devizele, piesele, echipa și indicatorii financiari într-un singur dashboard.",
+    demo: "https://fixora-service.netlify.app/",
     sections: [
       { title: "Ideea și publicul", items: ["Conceput pentru service-uri auto independente și rețele de ateliere", "Înlocuiește tabelele și evidența fragmentată cu un flux operațional unic", "Oferă managerului o imagine imediată asupra capacității și activității atelierului"] },
       { title: "Centru de lucru", items: ["Dashboard cu programările zilei, mașinile în lucru și venitul estimat", "Flux vizual pentru fiecare comandă, client, vehicul, lucrare, mecanic și progres", "Filtrare după status și căutare după client sau mașină", "Alerte pentru devize, piese întârziate și clienți care trebuie notificați", "Agenda următoarelor programări și evidența automatizărilor active"] },
