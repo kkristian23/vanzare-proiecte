@@ -111,7 +111,8 @@
   margin-top: 24px;
 }
 
-.modal-actions a {
+.modal-actions a,
+.modal-actions .demo-link-disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,6 +126,12 @@
 
 .demo-link {
   border: 1px solid var(--ink);
+}
+
+.demo-link-disabled {
+  opacity: .42;
+  cursor: not-allowed;
+  user-select: none;
 }
 
 .buy-link {
