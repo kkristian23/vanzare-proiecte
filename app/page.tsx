@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const projects = [
   { id: 14, title: "NEO BARBER CLUB", type: "Barber & Academy", price: 650, tone: "neo", desc: "Website premium pentru barber shop, servicii, portofoliu și academie profesională", stack: ["Next.js", "React", "TypeScript", "Motion", "GSAP", "Responsive Design", "Booking Flow", "Tailwind CSS"] },
-  { id: 13, title: "GRAPHIFY", type: "AI Token Economy", price: 1800, tone: "graphify", desc: "Platformă de control pentru costuri, consum și optimizarea tokenilor AI", stack: ["Next.js", "React", "TypeScript", "Cost Engine", "Live Simulator", "LocalStorage", "Responsive UI", "Cloudflare"] },
   { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "Tailwind CSS", "Vinext", "Cloudflare"] },
   { id: 11, title: "ÉLAN", type: "Beauty & Academy", price: 400, tone: "elan", desc: "Website editorial pentru salon de unghii, servicii premium și cursuri profesionale", stack: ["React", "TypeScript", "Vite", "Responsive Design", "Lead Form", "CSS Animations", "Tailwind CSS", "Cloudflare"] },
   { id: 10, title: "FIXORA", type: "Service Management", price: 1500, tone: "fixora", desc: "Sistem operațional pentru administrarea completă a unui service auto", stack: ["React", "TypeScript", "Vite", "LocalStorage", "CSV Export", "Dashboard", "Responsive UI", "Tailwind CSS", "Cloudflare"] },
@@ -13,10 +12,9 @@ const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "Barber & Academy", "AI Token Economy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "Barber & Academy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
   "Barber & Academy": "barber-academy",
-  "AI Token Economy": "ai-token-economy",
   "Equipment Rental": "equipment-rental",
   "Beauty & Academy": "beauty-academy",
   "Service Management": "service-management",
@@ -39,17 +37,6 @@ const projectDetails: Record<number, {
       { title: "Academia NEO", items: ["Secțiune comercială separată pentru cursuri profesionale", "Program intensiv de șase săptămâni, 80% practică și grupe restrânse", "Poziționare potrivită atât pentru începători, cât și pentru module avansate", "Call-to-action dedicat programului academiei"] },
       { title: "Experiență și tehnologie", items: ["Intro cinematografic cu animație de tăiere și tranziții premium", "Efecte de scroll, apariții animate și microinteracțiuni", "Meniu mobil fullscreen și layout complet responsive", "Next.js, React, TypeScript, Motion, GSAP, Tailwind CSS și Lucide Icons"] },
       { title: "Ce primește cumpărătorul", items: ["Codul sursă complet și editabil", "Design responsive, animații și toate secțiunile prezentate", "Conținut centralizat pentru servicii, tarife, lucrări și echipă", "Bază pregătită pentru rebranding, rezervări reale, mai mulți barberi și cursuri"] },
-    ],
-  },
-  13: {
-    summary: "Graphify transformă consumul de tokeni AI într-un sistem financiar clar și controlabil. Echipele pot modela traficul, compara costurile modelelor și identifica instant economiile disponibile înainte ca factura să crească.",
-    demo: "/graphify",
-    sections: [
-      { title: "Control financiar AI", items: ["Buget lunar configurabil și proiecție automată a cheltuielilor", "Cost calculat separat pentru tokenii de intrare și ieșire", "Indicatori pentru cost per request, marjă disponibilă și depășirea bugetului", "Conversie valutară și estimări actualizate instant"] },
-      { title: "Simulator operațional", items: ["Trafic zilnic, volum de tokeni și număr de zile ajustabile", "Distribuție flexibilă între modele rapide, echilibrate și premium", "Scenarii înainte/după pentru caching, routing și reducerea prompturilor", "Recomandări concrete ordonate după impactul financiar"] },
-      { title: "Vizualizare și decizie", items: ["Grafic zilnic al costului și bare de alocare pe modele", "Health score pentru economia tokenilor", "Praguri vizuale de buget și economii anuale estimate", "Interfață responsive pentru desktop, tabletă și telefon"] },
-      { title: "Funcționalitate inclusă", items: ["Calcule reale executate în browser, fără date demonstrative fixe", "Setări salvate local și resetare rapidă la scenariul implicit", "Preseturi de optimizare aplicabile cu un singur click", "Arhitectură pregătită pentru conectarea la API-uri și date de billing reale"] },
-      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet și editabil pentru dashboard", "Motorul de calcul al tokenilor și costurilor", "Design system, componente și experiență responsive", "Bază extensibilă pentru autentificare, echipe, alerte și integrarea furnizorilor AI"] },
     ],
   },
   12: {
@@ -122,7 +109,6 @@ const projectDetails: Record<number, {
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
     {project.id === 14 && <><div className="neo-mark"><b>NEO</b><span>BARBER CLUB</span></div><div className="neo-blade"><i/><i/><span>PRECISION<br/>IS A RITUAL</span></div><div className="neo-service"><small>SIGNATURE CUT</small><strong>450 <em>MDL</em></strong></div><div className="neo-seal">EST.<br/><b>2026</b></div></>}
-    {project.id === 13 && <><div className="graphify-brand"><b>G</b> GRAPHIFY <small>TOKEN ECONOMY OS</small></div><div className="graphify-total"><span>MONTHLY AI SPEND</span><strong>€3,842<em> / €5K</em></strong></div><div className="graphify-chart">{[38,52,45,66,61,78,72,91,83,96].map((height,index)=><i key={index} style={{height:`${height}%`}}/>)}</div><div className="graphify-saving">−32% <span>OPTIMIZED</span></div></>}
     {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small><b>2 400 MDL<em>/ zi</em></b></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
     {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>CAPACITATE ATELIER</span><strong>78%</strong><i><em/></i><div><b>12</b> PROGRAMĂRI <b>6</b> ÎN LUCRU</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
