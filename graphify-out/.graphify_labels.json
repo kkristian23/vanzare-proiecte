@@ -33,5 +33,6 @@
   "31": "postcss.config.mjs",
   "32": "drizzle.config.ts",
   "33": "vite.config.ts",
-  "34": "drizzle-kit"
+  "34": "vinext-starter",
+  "35": "eslint"
 }

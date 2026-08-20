@@ -1275,26 +1275,122 @@
       "source_location": "L1"
     },
     {
-      "id": "package_devdependencies_drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "readme",
+      "label": "README.md",
       "_origin": "ast",
       "community": 34,
-      "community_name": "drizzle-kit",
-      "file_type": "code",
-      "norm_label": "drizzle-kit",
-      "source_file": "package.json",
-      "source_location": "L33"
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
     },
     {
-      "id": "drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "readme_included_shape",
+      "label": "Included Shape",
       "_origin": "ast",
       "community": 34,
-      "community_name": "drizzle-kit",
-      "file_type": "concept",
-      "norm_label": "drizzle-kit",
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "included shape",
+      "source_file": "README.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "readme_learn_more",
+      "label": "Learn More",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "learn more",
+      "source_file": "README.md",
+      "source_location": "L70"
+    },
+    {
+      "id": "readme_prerequisites",
+      "label": "Prerequisites",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prerequisites",
+      "source_file": "README.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "readme_quick_start",
+      "label": "Quick Start",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "quick start",
+      "source_file": "README.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "readme_useful_commands",
+      "label": "Useful Commands",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "useful commands",
+      "source_file": "README.md",
+      "source_location": "L63"
+    },
+    {
+      "id": "readme_vinext_starter",
+      "label": "vinext-starter",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "vinext-starter",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_workspace_auth_headers",
+      "label": "Workspace Auth Headers",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "vinext-starter",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "workspace auth headers",
+      "source_file": "README.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eslint",
+      "file_type": "code",
+      "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L34"
+    },
+    {
+      "id": "eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "eslint",
+      "file_type": "concept",
+      "norm_label": "eslint",
+      "source_file": "package.json",
+      "source_location": "L34"
     },
     {
       "id": "db_index",
@@ -1418,15 +1514,15 @@
       "source_location": "L24"
     },
     {
-      "id": "package_devdependencies_eslint",
-      "label": "eslint",
+      "id": "package_devdependencies_drizzle_kit",
+      "label": "drizzle-kit",
       "_origin": "ast",
       "community": 6,
       "community_name": "devDependencies",
       "file_type": "code",
-      "norm_label": "eslint",
+      "norm_label": "drizzle-kit",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L33"
     },
     {
       "id": "package_devdependencies_eslint_js",
@@ -1451,15 +1547,15 @@
       "source_location": "L28"
     },
     {
-      "id": "eslint",
-      "label": "eslint",
+      "id": "drizzle_kit",
+      "label": "drizzle-kit",
       "_origin": "ast",
       "community": 6,
       "community_name": "devDependencies",
       "file_type": "concept",
-      "norm_label": "eslint",
+      "norm_label": "drizzle-kit",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L33"
     },
     {
       "id": "eslint_js",
@@ -2808,6 +2904,83 @@
       "weight": 1.0
     },
     {
+      "source": "readme",
+      "target": "readme_vinext_starter",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_quick_start",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_included_shape",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_workspace_auth_headers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_useful_commands",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_prerequisites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_vinext_starter",
+      "target": "readme_learn_more",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
       "source": "tests_rendered_html_test",
       "target": "tests_rendered_html_test_render",
       "relation": "contains",
@@ -3106,5 +3279,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e1752e4985b07b34a59190e355049d53b6677790"
+  "built_at_commit": "d1ae7747d1c8a5708af5fae28287b52a7015bd2f"
 }
