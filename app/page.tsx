@@ -109,6 +109,7 @@ const projectDetails: Record<number, {
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
     {project.id === 14 && <><div className="neo-mark"><b>NEO</b><span>BARBER CLUB</span></div><div className="neo-blade"><i/><i/><span>PRECISION<br/>IS A RITUAL</span></div><div className="neo-service"><small>SIGNATURE CUT</small></div><div className="neo-seal">EST.<br/><b>2026</b></div></>}
+    {project.id === 14 && <div className="neo-coming-soon"><span>ÎN CURÂND</span></div>}
     {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
     {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>CAPACITATE ATELIER</span><strong>78%</strong><i><em/></i><div><b>12</b> PROGRAMĂRI <b>6</b> ÎN LUCRU</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}

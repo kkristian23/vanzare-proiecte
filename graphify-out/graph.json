@@ -87,7 +87,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L128"
+      "source_location": "L129"
     },
     {
       "id": "app_page_projectvisual",
@@ -2306,7 +2306,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L128",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -3279,5 +3279,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d1ae7747d1c8a5708af5fae28287b52a7015bd2f"
+  "built_at_commit": "5fac8b6d0d41911d0085656bf04d38dc5c1f3c1a"
 }
