@@ -4,6 +4,7 @@ import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } 
 import { useEffect, useState } from "react";
 
 const projects = [
+  { id: 13, title: "GRAPHIFY", type: "AI Token Economy", price: 1800, tone: "graphify", desc: "Platformă de control pentru costuri, consum și optimizarea tokenilor AI", stack: ["Next.js", "React", "TypeScript", "Cost Engine", "Live Simulator", "LocalStorage", "Responsive UI", "Cloudflare"] },
   { id: 12, title: "RENTECH", type: "Equipment Rental", price: 1200, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "Tailwind CSS", "Vinext", "Cloudflare"] },
   { id: 11, title: "ÉLAN", type: "Beauty & Academy", price: 400, tone: "elan", desc: "Website editorial pentru salon de unghii, servicii premium și cursuri profesionale", stack: ["React", "TypeScript", "Vite", "Responsive Design", "Lead Form", "CSS Animations", "Tailwind CSS", "Cloudflare"] },
   { id: 10, title: "FIXORA", type: "Service Management", price: 1500, tone: "fixora", desc: "Sistem operațional pentru administrarea completă a unui service auto", stack: ["React", "TypeScript", "Vite", "LocalStorage", "CSV Export", "Dashboard", "Responsive UI", "Tailwind CSS", "Cloudflare"] },
@@ -11,8 +12,9 @@ const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "AI Token Economy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
+  "AI Token Economy": "ai-token-economy",
   "Equipment Rental": "equipment-rental",
   "Beauty & Academy": "beauty-academy",
   "Service Management": "service-management",
@@ -26,6 +28,17 @@ const projectDetails: Record<number, {
   demo?: string;
   sections: Array<{ title: string; items: string[] }>;
 }> = {
+  13: {
+    summary: "Graphify transformă consumul de tokeni AI într-un sistem financiar clar și controlabil. Echipele pot modela traficul, compara costurile modelelor și identifica instant economiile disponibile înainte ca factura să crească.",
+    demo: "/graphify",
+    sections: [
+      { title: "Control financiar AI", items: ["Buget lunar configurabil și proiecție automată a cheltuielilor", "Cost calculat separat pentru tokenii de intrare și ieșire", "Indicatori pentru cost per request, marjă disponibilă și depășirea bugetului", "Conversie valutară și estimări actualizate instant"] },
+      { title: "Simulator operațional", items: ["Trafic zilnic, volum de tokeni și număr de zile ajustabile", "Distribuție flexibilă între modele rapide, echilibrate și premium", "Scenarii înainte/după pentru caching, routing și reducerea prompturilor", "Recomandări concrete ordonate după impactul financiar"] },
+      { title: "Vizualizare și decizie", items: ["Grafic zilnic al costului și bare de alocare pe modele", "Health score pentru economia tokenilor", "Praguri vizuale de buget și economii anuale estimate", "Interfață responsive pentru desktop, tabletă și telefon"] },
+      { title: "Funcționalitate inclusă", items: ["Calcule reale executate în browser, fără date demonstrative fixe", "Setări salvate local și resetare rapidă la scenariul implicit", "Preseturi de optimizare aplicabile cu un singur click", "Arhitectură pregătită pentru conectarea la API-uri și date de billing reale"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet și editabil pentru dashboard", "Motorul de calcul al tokenilor și costurilor", "Design system, componente și experiență responsive", "Bază extensibilă pentru autentificare, echipe, alerte și integrarea furnizorilor AI"] },
+    ],
+  },
   12: {
     summary: "RentTech este o platformă full-stack pentru companii care închiriază utilaje și echipamente profesionale. Combină un catalog comercial rapid cu un panou securizat în care administratorul poate actualiza prețurile afișate clienților.",
     sections: [
@@ -38,6 +51,7 @@ const projectDetails: Record<number, {
   },
   11: {
     summary: "Élan este un website premium care unește două direcții de business într-o singură experiență: serviciile unui studio de manichiură și vânzarea cursurilor printr-o academie profesională.",
+    demo: "https://ellann.netlify.app/",
     sections: [
       { title: "Ideea și poziționarea", items: ["Potrivit pentru nail artiști, saloane premium și academii de beauty", "Identitate editorială elegantă, construită pentru diferențiere și încredere", "Prezintă experiența, rezultatele și standardele studioului într-un parcurs coerent"] },
       { title: "Servicii pentru cliente", items: ["Prezentare pentru manichiură BIAB, gel și arhitectură, plus nail art editorial", "Durată, preț de pornire și descriere pentru fiecare serviciu", "Trasee clare către programare", "Programul, locația și datele necesare înaintea unei vizite"] },
@@ -58,7 +72,7 @@ const projectDetails: Record<number, {
   },
   9: {
     summary: "Un calendar social colaborativ construit pentru oamenii care vor să transforme intențiile în momente petrecute împreună. iQ Calendar combină planificarea, rețeaua de parteneri și notificările într-o experiență simplă și personală.",
-    demo: "https://papaya-lokum-7fc2a9.netlify.app/index.html",
+    demo: "https://iqcalendar.netlify.app/",
     sections: [
       { title: "Ideea și publicul", items: ["Potrivit pentru cupluri, familii, prieteni și grupuri mici", "Centralizează evenimentele comune și reduce discuțiile repetitive despre dată și oră", "Experiență personalizabilă, optimizată pentru telefon și desktop"] },
       { title: "Planificare și calendar", items: ["Selectare vizuală a datei și orei", "Activități predefinite sau activitate personalizată", "Vizualizare calendar și listă, evenimente viitoare și arhivă", "Editarea, ștergerea și deschiderea directă a unui eveniment", "Mesaje, detalii și remindere configurabile pentru fiecare plan"] },
@@ -69,6 +83,7 @@ const projectDetails: Record<number, {
   },
   8: {
     summary: "O platformă completă de Utility Management pentru asociații și comunități rezidențiale. Digitalizează colectarea indicilor, verificarea dovezilor, calculul consumului, datoriile, achitările și comunicarea cu locatarii.",
+    demo: "https://colectarea.netlify.app/",
     sections: [
       { title: "Ideea și publicul", items: ["Creat pentru asociații locative, sectoare de vile și administratori de comunități", "Înlocuiește tabelele, mesajele dispersate și colectarea manuală a datelor", "Arhitectură multi-zonă pentru operarea mai multor comunități din același sistem"] },
       { title: "Portalul consumatorului", items: ["Transmiterea lunară a indicilor de apă și energie", "Dovadă foto pentru fiecare citire", "Calcul automat al consumului și costurilor", "Situația achitărilor, datoriilor și contribuțiilor recurente", "Istoric de plăți, proiecte comunitare și mesaje", "Interfață în română, engleză și rusă"] },
@@ -80,6 +95,7 @@ const projectDetails: Record<number, {
   },
   7: {
     summary: "Un website premium pentru salon de frumusețe, construit ca experiență editorială și instrument de conversie. Micora pune serviciile, atmosfera și programarea în centrul unei identități vizuale rafinate.",
+    demo: "https://micoraa.netlify.app/",
     sections: [
       { title: "Ideea și publicul", items: ["Potrivit pentru saloane de beauty, studiouri și specialiști independenți", "Poziționare premium prin design editorial și storytelling", "Conceput pentru a transforma vizitatorii în cereri de programare"] },
       { title: "Pagini și conținut", items: ["Homepage animat cu prezentare memorabilă de brand", "Servicii interactive pentru păr, unghii, îngrijirea pielii și sprâncene", "Pagină dedicată poveștii și filosofiei salonului", "Galerie vizuală extinsă", "Contact, telefon, email și formular de programare"] },
@@ -92,13 +108,14 @@ const projectDetails: Record<number, {
 
 function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
   return <div className={`visual visual-${project.tone}`}>
+    {project.id === 13 && <><div className="graphify-brand"><b>G</b> GRAPHIFY <small>TOKEN ECONOMY OS</small></div><div className="graphify-total"><span>MONTHLY AI SPEND</span><strong>€3,842<em> / €5K</em></strong></div><div className="graphify-chart">{[38,52,45,66,61,78,72,91,83,96].map((height,index)=><i key={index} style={{height:`${height}%`}}/>)}</div><div className="graphify-saving">−32% <span>OPTIMIZED</span></div></>}
     {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small><b>2 400 MDL<em>/ zi</em></b></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
     {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>CAPACITATE ATELIER</span><strong>78%</strong><i><em/></i><div><b>12</b> PROGRAMĂRI <b>6</b> ÎN LUCRU</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
     {project.id === 9 && <><div className="iq-brand"><b>iQ</b> Calendar</div><div className="iq-window"><div className="iq-head"><span>August 2026</span><i>•••</i></div><div className="iq-week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div className="iq-days">{[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].map(day=><i className={day===19?"selected":day===23?"event":""} key={day}>{day}</i>)}</div><div className="iq-event"><span>18:30</span><b>🍷 Cină împreună</b><small>2 participanți</small></div></div><div className="iq-float">♥ +3</div><div className="iq-badge">PLANIFICĂ · INVITĂ · CONECTEAZĂ</div></>}
     {project.id === 8 && <><div className="contor-brand">◉ CONTOR ACASĂ</div><div className="contor-ui"><div className="contor-side"><i/><i/><i/><i/></div><div className="contor-main"><small>BUNĂ, CRISTIAN</small><strong>2.840 <em>MDL</em></strong><span>SPRE ACHITARE</span><div className="contor-bars"><i/><i/><i/><i/><i/></div></div><div className="contor-card"><b>+128</b><span>CONSUMATORI</span></div></div><div className="contor-badge">MULTI-ZONĂ · 3 ROLURI</div></>}
       {project.id === 7 && <img className="micora-cover" src="/projects/micora-cover.png" alt="Micora — site premium pentru salon de frumusețe"/>}
-    <div className="visual-top"><span>0{project.id}</span><span>{project.type}</span></div>
+    <div className="visual-top"><span>{project.type}</span></div>
     {project.id === 1 && <><div className="orb"/><div className="nexus-word">NEXUS</div><div className="mini-pill">AI POWERED WORKSPACE</div></>}
     {project.id === 2 && <><div className="arch-shape"/><div className="arch-copy">FORM<br/>FOLLOWS<br/><i>feeling.</i></div></>}
     {project.id === 3 && <><div className="pulse-circle">P</div><div className="pulse-copy">MOVE<br/>DIFFERENT.</div></>}
