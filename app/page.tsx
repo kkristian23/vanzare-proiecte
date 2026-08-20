@@ -22,6 +22,15 @@ const categorySlugs: Record<string, string> = {
   "Utility Management": "utility-management",
   Beauty: "beauty",
 };
+const projectSlugs: Record<number, string> = {
+  14: "neo-barber-club",
+  12: "rentech",
+  11: "elan",
+  10: "fixora",
+  9: "iq-calendar",
+  8: "contor-acasa",
+  7: "micora",
+};
 
 const projectDetails: Record<number, {
   summary: string;
@@ -134,9 +143,13 @@ export default function Home() {
   const selectedDetail = selected ? projectDetails[selected.id] : null;
   useEffect(() => {
     const syncFromUrl = () => {
-      const slug = new URL(window.location.href).searchParams.get("categorie");
-      const category = Object.entries(categorySlugs).find(([, value]) => value === slug)?.[0];
+      const url = new URL(window.location.href);
+      const categorySlug = url.searchParams.get("categorie");
+      const projectSlug = url.searchParams.get("proiect");
+      const category = Object.entries(categorySlugs).find(([, value]) => value === categorySlug)?.[0];
+      const projectId = Object.entries(projectSlugs).find(([, value]) => value === projectSlug)?.[0];
       setActive(category ?? "Toate");
+      setSelected(projectId ? projects.find((project) => project.id === Number(projectId)) ?? null : null);
     };
     syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
@@ -150,14 +163,27 @@ export default function Home() {
     url.hash = "proiecte";
     window.history.pushState({}, "", url);
   };
+  const openProject = (project: (typeof projects)[number]) => {
+    setSelected(project);
+    const url = new URL(window.location.href);
+    url.searchParams.set("proiect", projectSlugs[project.id]);
+    url.hash = "proiecte";
+    window.history.pushState({}, "", url);
+  };
+  const closeProject = () => {
+    setSelected(null);
+    const url = new URL(window.location.href);
+    url.searchParams.delete("proiect");
+    window.history.replaceState({}, "", url);
+  };
   return <main>
     <nav className="nav shell"><a className="logo" href="#top">M<span>O</span>NO/DEV</a><div className="nav-links"><a href="#proiecte">Proiecte</a><a href="#proces">Proces</a><a href="#contact">Contact</a></div><a className="nav-cta" href="#proiecte"><ShoppingBag size={16}/> Cumpără un proiect</a><button className="menu-btn" onClick={() => setMenu(!menu)} aria-label="Deschide meniul">{menu ? <X/> : <Menu/>}</button></nav>
     <AnimatePresence>{menu && <motion.div className="mobile-menu" initial={{opacity:0,y:-10}} animate={{opacity:1,y:0}} exit={{opacity:0}}><a href="#proiecte" onClick={()=>setMenu(false)}>Proiecte</a><a href="#proces" onClick={()=>setMenu(false)}>Proces</a><a href="#contact" onClick={()=>setMenu(false)}>Contact</a></motion.div>}</AnimatePresence>
     <section className="hero shell" id="top"><motion.div className="eyebrow" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}}><span/> PROIECTE DIGITALE. GATA DE LANSARE.</motion.div><motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:.08}}>IDEI MARI.<br/><em>DEJA CONSTRUITE.</em></motion.h1><motion.div className="hero-bottom" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.2}}><p>Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.</p><a href="#proiecte" className="circle-arrow" aria-label="Vezi proiectele"><ArrowRight/></a></motion.div><div className="marquee"><div>DESIGN CARE VINDE <Sparkles/> COD CURAT <Zap/> LIVRARE RAPIDĂ <Sparkles/> DESIGN CARE VINDE <Zap/> COD CURAT <Sparkles/> LIVRARE RAPIDĂ</div></div></section>
-    <section className="projects shell" id="proiecte"><div className="section-head"><div><span className="kicker">/ CATALOG 2026</span><h2>ALEGE URMĂTORUL<br/>TĂU <i>PROIECT.</i></h2></div><div className="count">{String(visible.length).padStart(2,"0")}<span>PROIECTE<br/>DISPONIBILE</span></div></div><div className="filters">{filters.map((filter)=><button key={filter} onClick={()=>selectCategory(filter)} className={active===filter ? "active" : ""}>{filter}</button>)}</div><motion.div layout className="grid"><AnimatePresence mode="popLayout">{visible.map((project)=><motion.article layout key={project.id} className="card" role="button" tabIndex={0} aria-label={`Vezi detalii ${project.title}`} onClick={()=>setSelected(project)} onKeyDown={(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();setSelected(project)}}} initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:.95}} whileHover={{y:-6}}><ProjectVisual project={project}/><div className="card-info"><div><span className="type">{project.type}</span><h3>{project.title}</h3><p>{project.desc}</p></div><div className="price"><small>DE LA</small>€{project.price}</div></div><div className="tags">{project.stack.map(x=><span key={x}>{x}</span>)}</div></motion.article>)}</AnimatePresence></motion.div></section>
+    <section className="projects shell" id="proiecte"><div className="section-head"><div><span className="kicker">/ CATALOG 2026</span><h2>ALEGE URMĂTORUL<br/>TĂU <i>PROIECT.</i></h2></div><div className="count">{String(visible.length).padStart(2,"0")}<span>PROIECTE<br/>DISPONIBILE</span></div></div><div className="filters">{filters.map((filter)=><button key={filter} onClick={()=>selectCategory(filter)} className={active===filter ? "active" : ""}>{filter}</button>)}</div><motion.div layout className="grid"><AnimatePresence mode="popLayout">{visible.map((project)=><motion.article layout key={project.id} className="card" role="button" tabIndex={0} aria-label={`Vezi detalii ${project.title}`} onClick={()=>openProject(project)} onKeyDown={(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();openProject(project)}}} initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:.95}} whileHover={{y:-6}}><ProjectVisual project={project}/><div className="card-info"><div><span className="type">{project.type}</span><h3>{project.title}</h3><p>{project.desc}</p></div><div className="price"><small>DE LA</small>€{project.price}</div></div><div className="tags">{project.stack.map(x=><span key={x}>{x}</span>)}</div></motion.article>)}</AnimatePresence></motion.div></section>
     <section className="process" id="proces"><div className="shell"><span className="kicker light">/ CUM FUNCȚIONEAZĂ</span><h2>DE LA CLICK<br/>LA <i>LAUNCH.</i></h2><div className="steps">{[["01","ALEGI","Explorezi catalogul și găsești proiectul potrivit ideii tale."],["02","PERSONALIZĂM","Adaptăm brandul, culorile și conținutul pentru afacerea ta."],["03","LANSĂM","Primești proiectul complet, configurat și gata să producă."]].map(([n,t,d])=><div className="step" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div><ArrowRight/></div>)}</div></div></section>
     <section className="why shell"><div className="why-main"><span className="kicker">/ DE CE MONO/DEV</span><h2>NU VINDEM<br/>DOAR <i>PIXELI.</i></h2><p>Fiecare proiect este construit să arate impecabil, să se miște rapid și, cel mai important, să transforme vizitatorii în clienți.</p><a href="mailto:hello@monodev.ro">Hai să vorbim <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>COD CURAT<br/>ȘI EDITABIL</span></div><div><strong>48H</strong><span>PÂNĂ LA<br/>PREDARE</span></div><div><strong>30</strong><span>ZILE SUPORT<br/>INCLUS</span></div></div></section>
     <footer id="contact"><div className="shell footer-top"><p>AI GĂSIT CE CĂUTAI?</p><a href="mailto:hello@monodev.ro">SĂ ÎNCEPEM <ArrowRight/></a></div><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
-    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setSelected(null)}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setSelected(null)} aria-label="Închide detaliile"><X/></button><ProjectVisual project={selected}/><div className="modal-content"><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>PREȚ COMPLET</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 14 ? <span className="demo-link demo-link-disabled" aria-disabled="true">Solicită acces demo <ExternalLink/></span> : selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">Deschide proiectul <ExternalLink/></a> : <a className="demo-link" href={`mailto:hello@monodev.ro?subject=Solicit acces demo pentru ${selected.title}`}>Solicită acces demo <ExternalLink/></a>}<a className="buy-link" href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
+    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={closeProject}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={closeProject} aria-label="Închide detaliile"><X/></button><ProjectVisual project={selected}/><div className="modal-content"><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>PREȚ COMPLET</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 14 ? <span className="demo-link demo-link-disabled" aria-disabled="true">Solicită acces demo <ExternalLink/></span> : selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">Deschide proiectul <ExternalLink/></a> : <a className="demo-link" href={`mailto:hello@monodev.ro?subject=Solicit acces demo pentru ${selected.title}`}>Solicită acces demo <ExternalLink/></a>}<a className="buy-link" href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
   </main>;
 }

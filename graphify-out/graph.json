@@ -87,7 +87,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L129"
+      "source_location": "L138"
     },
     {
       "id": "app_page_projectvisual",
@@ -99,7 +99,7 @@
       "file_type": "code",
       "norm_label": "projectvisual()",
       "source_file": "app/page.tsx",
-      "source_location": "L109"
+      "source_location": "L118"
     },
     {
       "id": "worker_index_executioncontext_passthroughonexception",
@@ -1489,7 +1489,7 @@
       "file_type": "code",
       "norm_label": "projectdetails",
       "source_file": "app/page.tsx",
-      "source_location": "L26"
+      "source_location": "L35"
     },
     {
       "id": "app_page_projects",
@@ -1501,6 +1501,17 @@
       "norm_label": "projects",
       "source_file": "app/page.tsx",
       "source_location": "L6"
+    },
+    {
+      "id": "app_page_projectslugs",
+      "label": "projectSlugs",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "page.tsx",
+      "file_type": "code",
+      "norm_label": "projectslugs",
+      "source_file": "app/page.tsx",
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies",
@@ -2295,7 +2306,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L109",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -2306,7 +2317,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L129",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -2333,13 +2344,24 @@
     },
     {
       "source": "app_page",
+      "target": "app_page_projectslugs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/page.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
       "target": "app_page_projectdetails",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L26",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -3279,5 +3301,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5fac8b6d0d41911d0085656bf04d38dc5c1f3c1a"
+  "built_at_commit": "4b58eac78956965f308ec1f58e16c8190d858b94"
 }

@@ -1,16 +1,16 @@
 # Graph Report - vanzare proiecte  (2026-08-20)
 
 ## Corpus Check
-- 21 files · ~126,600 words
+- 21 files · ~126,701 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 150 nodes · 141 edges · 36 communities (12 shown, 24 thin omitted)
+- 151 nodes · 142 edges · 36 communities (12 shown, 24 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5fac8b6d`
+- Built from commit: `4b58eac7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,8 +94,8 @@ Cohesion: 0.39
 Nodes (5): getDb(), GET(), POST(), toRouteErrorMessage(), notes
 
 ### Community 5 - "page.tsx"
-Cohesion: 0.29
-Nodes (4): categorySlugs, filters, projectDetails, projects
+Cohesion: 0.25
+Nodes (5): categorySlugs, filters, projectDetails, projects, projectSlugs
 
 ### Community 6 - "devDependencies"
 Cohesion: 0.29
@@ -114,7 +114,7 @@ Cohesion: 0.25
 Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Commands, vinext-starter, Workspace Auth Headers
 
 ## Knowledge Gaps
-- **82 isolated node(s):** `geist`, `mono`, `metadata`, `projects`, `filters` (+77 more)
+- **83 isolated node(s):** `geist`, `mono`, `metadata`, `projects`, `filters` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -122,11 +122,11 @@ Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Comman
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `globals`, `@next/eslint-plugin-next`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `vite`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `eslint`?**
-  _High betweenness centrality (0.179) - this node is a cross-community bridge._
+  _High betweenness centrality (0.177) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
   _High betweenness centrality (0.067) - this node is a cross-community bridge._
 - **What connects `geist`, `mono`, `metadata` to the rest of the system?**
-  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
