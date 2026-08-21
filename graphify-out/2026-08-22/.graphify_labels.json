@@ -11,7 +11,7 @@
   "9": "rendered-html.test.mjs",
   "10": "AGENTS.md",
   "11": "eslint.config.mjs",
-  "12": "drizzle-kit",
+  "12": "eslint-plugin-jsx-a11y",
   "13": "eslint-plugin-react",
   "14": "eslint-plugin-react-hooks",
   "15": "globals",

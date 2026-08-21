@@ -1,7 +1,7 @@
 # Graph Report - vanzare proiecte  (2026-08-22)
 
 ## Corpus Check
-- 21 files · ~127,043 words
+- 21 files · ~127,031 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -27,7 +27,7 @@
 - rendered-html.test.mjs
 - AGENTS.md
 - eslint.config.mjs
-- drizzle-kit
+- eslint-plugin-jsx-a11y
 - eslint-plugin-react
 - eslint-plugin-react-hooks
 - globals
@@ -99,7 +99,7 @@ Nodes (5): categorySlugs, filters, projectDetails, projects, projectSlugs
 
 ### Community 6 - "devDependencies"
 Cohesion: 0.29
-Nodes (7): @eslint/js, eslint-plugin-jsx-a11y, devDependencies, @eslint/js, eslint-plugin-jsx-a11y, @types/node, @types/node
+Nodes (7): drizzle-kit, @eslint/js, devDependencies, drizzle-kit, @eslint/js, @types/node, @types/node
 
 ### Community 7 - "worker/index.ts"
 Cohesion: 0.29
@@ -121,7 +121,7 @@ Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Comman
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `devDependencies` to `package.json`, `drizzle-kit`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `globals`, `@next/eslint-plugin-next`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `vite`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `eslint`?**
+- **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint-plugin-jsx-a11y`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `globals`, `@next/eslint-plugin-next`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `vite`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `eslint`?**
   _High betweenness centrality (0.177) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
   _High betweenness centrality (0.067) - this node is a cross-community bridge._

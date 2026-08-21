@@ -87,7 +87,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L156"
+      "source_location": "L155"
     },
     {
       "id": "app_page_projectvisual",
@@ -560,26 +560,26 @@
       "source_location": "L10"
     },
     {
-      "id": "package_devdependencies_drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "package_devdependencies_eslint_plugin_jsx_a11y",
+      "label": "eslint-plugin-jsx-a11y",
       "_origin": "ast",
       "community": 12,
-      "community_name": "drizzle-kit",
+      "community_name": "eslint-plugin-jsx-a11y",
       "file_type": "code",
-      "norm_label": "drizzle-kit",
+      "norm_label": "eslint-plugin-jsx-a11y",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L35"
     },
     {
-      "id": "drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "eslint_plugin_jsx_a11y",
+      "label": "eslint-plugin-jsx-a11y",
       "_origin": "ast",
       "community": 12,
-      "community_name": "drizzle-kit",
+      "community_name": "eslint-plugin-jsx-a11y",
       "file_type": "concept",
-      "norm_label": "drizzle-kit",
+      "norm_label": "eslint-plugin-jsx-a11y",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L35"
     },
     {
       "id": "package_devdependencies_eslint_plugin_react",
@@ -1525,6 +1525,17 @@
       "source_location": "L24"
     },
     {
+      "id": "package_devdependencies_drizzle_kit",
+      "label": "drizzle-kit",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "drizzle-kit",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
       "id": "package_devdependencies_eslint_js",
       "label": "@eslint/js",
       "_origin": "ast",
@@ -1534,17 +1545,6 @@
       "norm_label": "@eslint/js",
       "source_file": "package.json",
       "source_location": "L25"
-    },
-    {
-      "id": "package_devdependencies_eslint_plugin_jsx_a11y",
-      "label": "eslint-plugin-jsx-a11y",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint-plugin-jsx-a11y",
-      "source_file": "package.json",
-      "source_location": "L35"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -1558,6 +1558,17 @@
       "source_location": "L28"
     },
     {
+      "id": "drizzle_kit",
+      "label": "drizzle-kit",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "devDependencies",
+      "file_type": "concept",
+      "norm_label": "drizzle-kit",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
       "id": "eslint_js",
       "label": "@eslint/js",
       "_origin": "ast",
@@ -1567,17 +1578,6 @@
       "norm_label": "@eslint/js",
       "source_file": "package.json",
       "source_location": "L25"
-    },
-    {
-      "id": "eslint_plugin_jsx_a11y",
-      "label": "eslint-plugin-jsx-a11y",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "devDependencies",
-      "file_type": "concept",
-      "norm_label": "eslint-plugin-jsx-a11y",
-      "source_file": "package.json",
-      "source_location": "L35"
     },
     {
       "id": "types_node",
@@ -2317,7 +2317,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L156",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
