@@ -2,8 +2,17 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Check, ExternalLink, Menu, ShoppingBag, Sparkles, X, Zap } from "lucide-react";
 import { useEffect, useState } from "react";
+import { copy, Locale, locales, localDescription, localizedDetail, localType, visualCopy } from "./i18n";
 
 const projects = [
+  { id: 23, title: "STUDIO VELORA", type: "Interior Design", price: 800, tone: "studiovelora", desc: "Website luxury multipagină pentru arhitectură și design interior, cu proiecte, servicii și jurnal editorial", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Multi-page", "Project Portfolio", "Dynamic Routes", "Editorial Journal", "Responsive Design"] },
+  { id: 22, title: "STUDIO FORMA", type: "Interior Design", price: 500, tone: "studioforma", desc: "Website expresiv pentru studio de design interior, cu proiecte, laborator cromatic și formular interactiv", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Color Lab", "Interactive Palettes", "Portfolio", "Lead Form", "Responsive Design"] },
+  { id: 21, title: "NOMA", type: "Interior Design", price: 350, tone: "noma", desc: "Website editorial pentru studio de design interior, cu portofoliu, proces, materiale și cereri de proiect", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Portfolio Filters", "Before / After", "Interactive Materials", "Lead Form", "Responsive Design"] },
+  { id: 20, title: "POPHAUS", type: "Mobilă", price: 600, tone: "pophaus", desc: "Concept store trilingv pentru mobilier contemporan, colecții expresive și instrumente interactive", stack: ["React", "TypeScript", "Vinext", "Framer Motion", "Zustand", "Next Intl", "Room Mixer", "Style Quiz", "Netlify Forms"] },
+  { id: 19, title: "NORD & OAK", type: "Mobilă", price: 800, tone: "nordoak", desc: "Magazin editorial pentru mobilier sustenabil, artizani, materiale și obiecte cu trasabilitate", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Next Intl", "Framer Motion", "GSAP", "MDX", "Zod"] },
+  { id: 18, title: "FORMA LIVING", type: "Mobilă", price: 500, tone: "formaliving", desc: "Platformă premium de mobilier modular cu configuratoare vizuale pentru canapele și biblioteci", stack: ["Next.js", "React", "TypeScript", "React Three Fiber", "Three.js", "Zustand", "Framer Motion", "Next Intl", "Tailwind CSS"] },
+  { id: 17, title: "ARCHICONTRACT", type: "Mobilă", price: 500, tone: "archicontract", desc: "Platformă B2B pentru mobilier contract, specificații profesionale, proiecte și cereri de ofertă", stack: ["Next.js", "React", "TypeScript", "TanStack Table", "Zustand", "React Hook Form", "Zod", "Next Intl", "Tailwind CSS"] },
+  { id: 16, title: "ATELIER NOIRE", type: "Mobilă", price: 400, tone: "ateliernoire", desc: "Experiență editorială trilingvă pentru mobilier premium, colecții, proiecte și servicii", stack: ["Next.js", "React", "TypeScript", "Framer Motion", "Next Intl", "React Hook Form", "Zod", "Tailwind CSS", "Netlify"] },
   { id: 15, title: "MARKET9000", type: "Marketplace", price: 1000, tone: "market9000", desc: "Platformă completă de anunțuri pentru cumpărare, vânzare și promovarea companiilor", stack: ["Next.js", "React", "TypeScript", "Firebase Auth", "Realtime Database", "Admin Panel", "User Accounts", "Responsive Design", "Netlify"] },
   { id: 14, title: "NEO BARBER CLUB", type: "Barber & Academy", price: 350, tone: "neo", desc: "Website premium pentru barber shop, servicii, portofoliu și academie profesională", stack: ["Next.js", "React", "TypeScript", "Motion", "GSAP", "Responsive Design", "Booking Flow", "Tailwind CSS"] },
   { id: 12, title: "RENTECH", type: "Equipment Rental", price: 800, tone: "renttech", desc: "Platformă completă pentru închirierea utilajelor și echipamentelor profesionale", stack: ["Next.js", "React", "TypeScript", "Cloudflare D1", "Drizzle ORM", "REST API", "Admin Panel", "Tailwind CSS", "Vinext", "Cloudflare"] },
@@ -13,8 +22,10 @@ const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "Marketplace", "Barber & Academy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "Interior Design", "Mobilă", "Marketplace", "Barber & Academy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
+  "Interior Design": "interior-design",
+  "Mobilă": "mobila",
   Marketplace: "marketplace",
   "Barber & Academy": "barber-academy",
   "Equipment Rental": "equipment-rental",
@@ -25,6 +36,14 @@ const categorySlugs: Record<string, string> = {
   Beauty: "beauty",
 };
 const projectSlugs: Record<number, string> = {
+  23: "studio-velora",
+  22: "studio-forma",
+  21: "noma",
+  20: "pophaus",
+  19: "nord-and-oak",
+  18: "forma-living",
+  17: "archicontract",
+  16: "atelier-noire",
   15: "market9000",
   14: "neo-barber-club",
   12: "rentech",
@@ -40,8 +59,89 @@ const projectDetails: Record<number, {
   demo?: string;
   sections: Array<{ title: string; items: string[] }>;
 }> = {
+  23: {
+    summary: "Studio Velora este un website luxury multipagină pentru un studio de arhitectură și design interior cu prezență în București, Paris și Milano. Experiența combină portofoliul de reședințe cu servicii complete, conținut editorial și o poziționare premium coerentă.",
+    sections: [
+      { title: "Brand și experiență", items: ["Direcție vizuală luxury construită în jurul proporției, luminii și materialelor", "Hero cinematic cu trei imagini rotative și tranziții ambientale", "Mesaj editorial pentru reședințe premium și proiecte internaționale"] },
+      { title: "Portofoliu complet", items: ["Pagină dedicată proiectelor și rute dinamice pentru fiecare studiu de caz", "Galerii, locații, suprafețe și povești individuale pentru proiecte", "Selecție de proiecte prezentată direct pe pagina principală"] },
+      { title: "Servicii și autoritate", items: ["Arhitectură interioară, decorare, mobilier la comandă și art curation", "Pagini pentru studio, istorie, recenzii, servicii și întrebări frecvente", "Indicatori de experiență, premii, țări și proiecte finalizate"] },
+      { title: "Conținut și conversie", items: ["Jurnal editorial cu articole despre artă, materiale și iluminat", "Pagină de contact și trasee clare din proiecte și servicii", "Structură pregătită pentru conținut real și extinderea portofoliului"] },
+      { title: "Tehnologie și livrare", items: ["React 19, TypeScript, Vinext și Tailwind CSS", "Arhitectură multipagină, rute dinamice și componente reutilizabile", "Cod sursă complet și design responsive pentru toate ecranele"] },
+    ],
+  },
+  22: {
+    summary: "Studio Forma este un website de design interior cu o identitate curajoasă și energică. Conceptul transformă portofoliul într-o experiență memorabilă prin contraste puternice, tipografie expresivă și un laborator cromatic interactiv.",
+    sections: [
+      { title: "Identitate și poziționare", items: ["Direcție vizuală neconvențională pentru interioare cu personalitate", "Hero manifest cu animație orbitală, portal vizual și ticker continuu", "Mesaj construit pentru clienți care caută spații expresive, nu soluții de catalog"] },
+      { title: "Proiecte și manifest", items: ["Portofoliu selectat pentru rezidențial, apartamente și HoReCa", "Prezentări ample cu imagini, locații și categorii", "Manifest de brand, rezultate și proces creativ în patru etape"] },
+      { title: "Laborator cromatic", items: ["Trei palete interactive: Acid Dream, Night Swim și Hot Clay", "Compoziție vizuală care se schimbă instant după selecția paletei", "Descrieri dinamice pentru atmosfera și energia fiecărei direcții"] },
+      { title: "Conversie", items: ["Formular interactiv pentru oraș, tipul spațiului și nivelul de curaj", "Mesaj de confirmare integrat după trimitere", "Trasee directe din navigație, proiecte și footer către contact"] },
+      { title: "Tehnologie și livrare", items: ["React 19, TypeScript, Vinext și Tailwind CSS", "Interacțiuni native, navigare mobilă și layout responsive", "Cod sursă complet, pregătit pentru branding, imagini și formulare reale"] },
+    ],
+  },
+  21: {
+    summary: "NOMA este un website editorial pentru un atelier de design interior din Chișinău. Experiența pune în valoare spațiile calme, materialele tactile și procesul studioului, conducând vizitatorul natural de la inspirație la o cerere de proiect.",
+    sections: [
+      { title: "Poziționare și portofoliu", items: ["Identitate premium pentru un studio de design interior din Chișinău și Europa", "Portofoliu filtrabil pentru proiecte rezidențiale, apartamente și spații comerciale", "Prezentări editoriale cu locație, an și trasee directe spre contact"] },
+      { title: "Experiențe interactive", items: ["Comparație înainte și după controlată printr-un slider vizual", "Bibliotecă tactilă de materiale cu selecție și descrieri dinamice", "Oră locală și disponibilitate pentru proiecte actualizate automat"] },
+      { title: "Conținut și proces", items: ["Filosofia studioului, indicatori de experiență și proces în patru etape", "Jurnal editorial cu ghiduri, materiale și povești despre lumină", "Structură completă pentru servicii, proiecte și consolidarea brandului"] },
+      { title: "Conversie", items: ["Formular pentru cereri de proiect cu tipul spațiului și buget estimativ", "Mesaj de confirmare integrat după trimiterea cererii", "Date de contact și apeluri la acțiune distribuite în punctele-cheie"] },
+      { title: "Tehnologie și livrare", items: ["React 19, TypeScript, Vinext și Tailwind CSS", "Interfață responsive, navigare mobilă și componente interactive", "Cod sursă complet, pregătit pentru imagini proprii, formulare reale și publicare"] },
+    ],
+  },
+  20: {
+    summary: "PopHaus este un concept store digital pentru un brand de mobilier contemporan cu personalitate. Catalogul trilingv combină shopping-ul clasic cu instrumente ludice care ajută clientul să-și descopere stilul și să compună o cameră completă.",
+    sections: [
+      { title: "Magazin și produse", items: ["Catalog cu 24 de obiecte, categorii, căutare și sortare după preț", "Pagini de produs cu galerie, materiale, dimensiuni, culori și disponibilitate", "Favorite, recomandări pentru completarea camerei și colecții editoriale"] },
+      { title: "Instrumente interactive", items: ["Room Mixer pentru combinarea produselor și schimbarea culorii pereților", "Moodboard persistent cu notițe, reordonare și export pentru print", "Quiz de stil cu recomandări personalizate și paletă cromatică"] },
+      { title: "Conținut și localizare", items: ["Română, rusă și engleză pe toate rutele importante", "Lookbook, blog, servicii, colaborări, FAQ și politici", "Formulare de contact și newsletter pregătite pentru Netlify Forms"] },
+      { title: "Tehnologie", items: ["React, TypeScript, Vinext și Framer Motion", "Zustand pentru favorite, cameră, moodboard și notițe persistente", "Next Intl, validare Zod și design responsive"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet, catalog și imagini locale optimizate", "Toate experiențele interactive și structura trilingvă", "Bază pregătită pentru checkout, CMS, stocuri și plăți reale"] },
+    ],
+  },
+  19: {
+    summary: "Nord & Oak este un magazin editorial dedicat mobilierului sustenabil și obiectelor construite pentru a rezista. Experiența conectează produsele cu materialele, artizanii, serviciile de reparație și povestea fiecărei piese.",
+    sections: [
+      { title: "Catalog responsabil", items: ["Catalog filtrabil cu mobilier din lemn, stoc și termene de livrare", "Pagini detaliate cu finisaje, caracteristici și cerere de ofertă", "Pașaport de produs cu proveniență, materiale și informații de întreținere"] },
+      { title: "Brand și conținut", items: ["Poveste vizuală despre traseul obiectului de la material la locuință", "Pagini pentru materiale, artizani, sustenabilitate și atelier", "Jurnal MDX localizat cu articole editoriale și ghiduri"] },
+      { title: "Servicii circulare", items: ["Fluxuri pentru reparații, preluarea mobilierului vechi și mentenanță", "Formulare validate pentru ofertă, contact și solicitări de service", "Conținut clar pentru garanție, livrare și programul profesional"] },
+      { title: "Tehnologie", items: ["Next.js, React, TypeScript, Tailwind CSS și Framer Motion", "Next Intl pentru română, rusă și engleză", "GSAP, MDX, React Hook Form și Zod"] },
+      { title: "Ce primește cumpărătorul", items: ["Website multipagină complet și catalog editabil", "Sistem editorial, formulare și conținut localizat", "Structură pregătită pentru produse reale, CMS și integrare comercială"] },
+    ],
+  },
+  18: {
+    summary: "Forma Living este o platformă digitală pentru mobilier modular, construită în jurul personalizării. Clienții pot explora catalogul, proiectele de interior și configura vizual canapele sau biblioteci adaptate spațiului lor.",
+    sections: [
+      { title: "Catalog modular", items: ["Catalog de produse cu filtre, camere și pagini detaliate", "Galerii cu imagini originale WebP, specificații și module disponibile", "Favorite persistente și recomandări pentru amenajare"] },
+      { title: "Configuratoare", items: ["Configurator dedicat canapelelor modulare", "Configurator pentru biblioteci și compoziții de depozitare", "Actualizarea vizuală a configurației, opțiunilor și estimării"] },
+      { title: "Experiență vizuală", items: ["Scene 3D cu React Three Fiber, Drei și Three.js", "Animații Framer Motion și interfață responsive", "Proiecte, ghiduri, camere și formulare pentru cereri de ofertă"] },
+      { title: "Tehnologie", items: ["Next.js 16, React 19 și TypeScript", "Zustand pentru configurator și favorite", "Next Intl, React Hook Form, Zod și Tailwind CSS"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul complet, imaginile originale și catalogul demonstrativ", "Două experiențe de configurare și structură trilingvă", "Bază pregătită pentru prețuri dinamice, comenzi și producție la comandă"] },
+    ],
+  },
+  17: {
+    summary: "ArchiContract este o platformă B2B pentru producători și furnizori de mobilier contract. Organizează catalogul tehnic, proiectele de referință, selecțiile profesionale și cererile complexe de ofertă pentru arhitecți și echipe de achiziții.",
+    sections: [
+      { title: "Catalog profesional", items: ["Catalog filtrabil cu tabel avansat TanStack și vizualizare pe carduri", "Fișe de produs cu specificații, finisaje, prețuri orientative și documente", "Referințe CAD/BIM și mod de print pentru documentație"] },
+      { title: "Project Board", items: ["Selecție persistentă de produse pentru fiecare proiect", "Cantități, variante și estimarea totalului", "Transfer direct al selecției într-o cerere de ofertă"] },
+      { title: "Vânzare B2B", items: ["Flux RFQ în mai mulți pași cu validare", "Soluții dedicate pentru hoteluri și spații comerciale", "Studii de caz, resurse profesionale și formulare Netlify"] },
+      { title: "Tehnologie", items: ["Next.js, React, TypeScript și Tailwind CSS", "TanStack Table, Zustand, React Hook Form și Zod", "Next Intl și Framer Motion pentru experiență trilingvă"] },
+      { title: "Ce primește cumpărătorul", items: ["Platformă B2B completă, catalog și Project Board", "Structură pentru produse, proiecte, resurse și cereri RFQ", "Bază extensibilă pentru CRM, ofertare automată și conturi profesionale"] },
+    ],
+  },
+  16: {
+    summary: "Atelier Noire este un website editorial pentru un brand de mobilier premium. Direcția vizuală sofisticată pune în valoare colecțiile, obiectele, proiectele de interior și serviciile personalizate într-o experiență trilingvă.",
+    sections: [
+      { title: "Catalog premium", items: ["Catalog cu filtre, sortare și produse prezentate editorial", "Pagini individuale cu galerie, finisaje, dimensiuni și detalii de execuție", "Colecții tematice și recomandări de obiecte complementare"] },
+      { title: "Portofoliu și inspirație", items: ["Proiecte de interior cu poveste, galerie și produse utilizate", "Jurnal cu articole despre materiale, design și meșteșug", "Pagini dedicate atelierului, procesului și serviciilor"] },
+      { title: "Conversie", items: ["Cereri de ofertă și contact prin formulare validate", "Trasee clare din catalog, colecții și proiecte spre ofertare", "Formulare pregătite pentru Netlify cu protecție honeypot"] },
+      { title: "Tehnologie", items: ["Next.js, React, TypeScript strict și Tailwind CSS", "Framer Motion, Next Intl, React Hook Form și Zod", "Română, rusă și engleză, metadata și sitemap localizat"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă complet, catalog, colecții, proiecte și jurnal", "Design responsive și conținut trilingv", "Bază pregătită pentru CMS, produse reale și integrarea unui CRM"] },
+    ],
+  },
   15: {
     summary: "Market9000 este o platformă completă de anunțuri pentru piața din Moldova. Reunește catalogul public, conturile utilizatorilor, paginile companiilor și un panou amplu de administrare într-o aplicație pregătită pentru lansare și extindere.",
+    demo: "https://market9000.netlify.app/",
     sections: [
       { title: "Ideea și publicul", items: ["Creat pentru marketplace-uri locale, portaluri de anunțuri și directoare comerciale", "Acoperă categorii precum imobiliare, auto, servicii, electronice și produse pentru casă", "Interfață familiară și rapidă, optimizată pentru publicarea și descoperirea ofertelor"] },
       { title: "Catalog și anunțuri", items: ["Căutare, categorii, anunțuri VIP și rezultate filtrate", "Pagini individuale cu galerie, preț, descriere și date de contact", "Afișarea controlată a numărului de telefon și trasee clare spre vânzător", "Secțiuni dedicate companiilor verificate și serviciilor oferite"] },
@@ -131,19 +231,27 @@ const projectDetails: Record<number, {
   },
 };
 
-function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
+function ProjectVisual({ project, locale }: { project: (typeof projects)[number]; locale: Locale }) {
+  const v = visualCopy[locale];
   return <div className={`visual visual-${project.tone}`}>
-    {project.id === 15 && <><div className="market-brand"><span>market</span><b>9000</b></div><div className="market-search">Ce cauți astăzi?<i>⌕</i></div><div className="market-categories"><span>🏠<b>Imobil</b></span><span>🚗<b>Auto</b></span><span>🛠️<b>Servicii</b></span><span>📱<b>Electronice</b></span></div><div className="market-listing"><small><i/> MARKETPLACE ACTIV</small><strong>9K<sup>+</sup></strong><em>oportunități într-un singur loc</em></div><div className="market-publish">+ PUBLICĂ ANUNȚ</div></>}
-    {project.id === 15 && <div className="neo-coming-soon"><span>ÎN CURÂND</span></div>}
+    {project.id === 23 && <><div className="velora-brand">STUDIO <b>VELORA</b></div><div className="velora-portal"><i/><span>V</span></div><div className="velora-copy"><small>BUCUREȘTI · PARIS · MILANO</small><b>INTERIOARE<br/><em>DE COLECȚIE.</em></b></div><div className="velora-index">EST. 2012</div></>}
+    {project.id === 22 && <><div className="sforma-brand">STUDIO<span> FORMA</span></div><div className="sforma-orbit"><i/><i/><b>F</b></div><div className="sforma-copy"><small>INTERIOARE CU PULS</small><b>NU FACEM FRUMOS.<br/><em>FACEM VIU.</em></b></div><div className="sforma-swatches"><i/><i/><i/></div></>}
+    {project.id === 21 && <><div className="noma-brand">NOMA<sup>®</sup></div><div className="noma-arch"><i/><span>01</span></div><div className="noma-copy"><small>INTERIOR DESIGN · CHIȘINĂU</small><b>LOCURI CARE<br/>SE SIMT <em>ACASĂ.</em></b></div><div className="noma-materials"><i/><i/><i/></div></>}
+    {project.id === 20 && <><div className="pophaus-logo">POP<span>HAUS</span></div><div className="pophaus-orbit"><i/><i/><b>GOOD<br/>MOOD</b></div><div className="pophaus-sofa"><i/><i/><span/></div><div className="pophaus-copy">SHAPES WITH<br/><b>ATTITUDE.</b></div></>}
+    {project.id === 19 && <><div className="nord-logo">NORD <i>&</i> OAK</div><div className="nord-arch"><span/><b>01</b></div><div className="nord-copy"><small>OBJECTS FOR A LONGER LIFE</small><strong>Quiet form.<br/><i>Honest material.</i></strong></div><div className="nord-seed">✶</div></>}
+    {project.id === 18 && <><div className="forma-logo">FORMA <b>LIVING</b></div><div className="forma-room"><div className="forma-sofa"><i/><i/><i/></div><span/></div><div className="forma-tools"><i/><i/><i/></div><div className="forma-label">{v.configurable}</div></>}
+    {project.id === 17 && <><div className="archi-logo">ARCHI<span>CONTRACT</span></div><div className="archi-grid"><i/><i/><i/><i/><i/><i/></div><div className="archi-chair"><i/><i/><span/></div><div className="archi-spec"><small>PROJECT SPEC</small><b>AC—24</b><em>READY FOR RFQ ↗</em></div></>}
+    {project.id === 16 && <><div className="noire-logo">ATELIER <i>NOIRE</i></div><div className="noire-frame"><span/><i/></div><div className="noire-copy"><small>COLLECTION 01</small><b>OBJECTS OF<br/>QUIET BEAUTY</b></div><div className="noire-number">N° 16</div></>}
+    {project.id === 15 && <><div className="market-brand"><span>market</span><b>9000</b></div><div className="market-search">{v.search}<i>⌕</i></div><div className="market-categories"><span>🏠<b>{v.estate}</b></span><span>🚗<b>{v.auto}</b></span><span>🛠️<b>{v.services}</b></span><span>📱<b>{v.electronics}</b></span></div><div className="market-listing"><small><i/> {v.active}</small><strong>9K<sup>+</sup></strong><em>{v.opportunities}</em></div><div className="market-publish">{v.publish}</div></>}
     {project.id === 14 && <><div className="neo-mark"><b>NEO</b><span>BARBER CLUB</span></div><div className="neo-blade"><i/><i/><span>PRECISION<br/>IS A RITUAL</span></div><div className="neo-service"><small>SIGNATURE CUT</small></div><div className="neo-seal">EST.<br/><b>2026</b></div></>}
-    {project.id === 14 && <div className="neo-coming-soon"><span>ÎN CURÂND</span></div>}
-    {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>UTILAJ DISPONIBIL</small></div><div className="renttech-line"/></>}
+    {project.id === 14 && <div className="neo-coming-soon"><span>{v.coming}</span></div>}
+    {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>{v.available}</small></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
-    {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>CAPACITATE ATELIER</span><strong>78%</strong><i><em/></i><div><b>12</b> PROGRAMĂRI <b>6</b> ÎN LUCRU</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
-    {project.id === 9 && <><div className="iq-brand"><b>iQ</b> Calendar</div><div className="iq-window"><div className="iq-head"><span>August 2026</span><i>•••</i></div><div className="iq-week"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div className="iq-days">{[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].map(day=><i className={day===19?"selected":day===23?"event":""} key={day}>{day}</i>)}</div><div className="iq-event"><span>18:30</span><b>🍷 Cină împreună</b><small>2 participanți</small></div></div><div className="iq-float">♥ +3</div><div className="iq-badge">PLANIFICĂ · INVITĂ · CONECTEAZĂ</div></>}
-    {project.id === 8 && <><div className="contor-brand">◉ CONTOR ACASĂ</div><div className="contor-ui"><div className="contor-side"><i/><i/><i/><i/></div><div className="contor-main"><small>BUNĂ, CRISTIAN</small><div className="contor-bars"><i/><i/><i/><i/><i/></div></div><div className="contor-card"><b>500K+</b><span>CONSUMATORI</span></div></div><div className="contor-badge">MULTI-ZONĂ · 3 ROLURI</div></>}
-      {project.id === 7 && <img className="micora-cover" src="/projects/micora-cover.png" alt="Micora — site premium pentru salon de frumusețe"/>}
-    <div className="visual-top"><span>{project.type}</span></div>
+    {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>{v.capacity}</span><strong>78%</strong><i><em/></i><div><b>12</b> {v.appointments} <b>6</b> {v.working}</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
+    {project.id === 9 && <><div className="iq-brand"><b>iQ</b> Calendar</div><div className="iq-window"><div className="iq-head"><span>August 2026</span><i>•••</i></div><div className="iq-week"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div className="iq-days">{[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30].map(day=><i className={day===19?"selected":day===23?"event":""} key={day}>{day}</i>)}</div><div className="iq-event"><span>18:30</span><b>{v.dinner}</b><small>{v.participants}</small></div></div><div className="iq-float">♥ +3</div><div className="iq-badge">{v.connect}</div></>}
+    {project.id === 8 && <><div className="contor-brand">◉ CONTOR ACASĂ</div><div className="contor-ui"><div className="contor-side"><i/><i/><i/><i/></div><div className="contor-main"><small>{v.hello}</small><div className="contor-bars"><i/><i/><i/><i/><i/></div></div><div className="contor-card"><b>500K+</b><span>{v.consumers}</span></div></div><div className="contor-badge">{v.roles}</div></>}
+      {project.id === 7 && <img className="micora-cover" src="/projects/micora-cover.png" alt={`${project.title} — ${localDescription(project.id, project.desc, locale)}`}/>}
+    <div className="visual-top"><span>{localType(project.type, locale)}</span></div>
     {project.id === 1 && <><div className="orb"/><div className="nexus-word">NEXUS</div><div className="mini-pill">AI POWERED WORKSPACE</div></>}
     {project.id === 2 && <><div className="arch-shape"/><div className="arch-copy">FORM<br/>FOLLOWS<br/><i>feeling.</i></div></>}
     {project.id === 3 && <><div className="pulse-circle">P</div><div className="pulse-copy">MOVE<br/>DIFFERENT.</div></>}
@@ -156,23 +264,41 @@ function ProjectVisual({ project }: { project: (typeof projects)[number] }) {
 export default function Home() {
   const [active, setActive] = useState("Toate");
   const [menu, setMenu] = useState(false);
+  const [locale, setLocale] = useState<Locale>("ro");
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(null);
   const visible = active === "Toate" ? projects : projects.filter((p) => p.type === active);
-  const selectedDetail = selected ? projectDetails[selected.id] : null;
+  const c = copy[locale];
+  const selectedDetail = selected ? locale === "ro" ? projectDetails[selected.id] : localizedDetail(locale, selected) : null;
   useEffect(() => {
     const syncFromUrl = () => {
       const url = new URL(window.location.href);
       const categorySlug = url.searchParams.get("categorie");
       const projectSlug = url.searchParams.get("proiect");
+      const urlLocale = url.searchParams.get("lang");
       const category = Object.entries(categorySlugs).find(([, value]) => value === categorySlug)?.[0];
       const projectId = Object.entries(projectSlugs).find(([, value]) => value === projectSlug)?.[0];
       setActive(category ?? "Toate");
       setSelected(projectId ? projects.find((project) => project.id === Number(projectId)) ?? null : null);
+      const savedLocale = localStorage.getItem("mono-locale");
+      const nextLocale = locales.includes(urlLocale as Locale) ? urlLocale as Locale : locales.includes(savedLocale as Locale) ? savedLocale as Locale : "ro";
+      setLocale(nextLocale);
+      document.documentElement.lang = nextLocale;
     };
     syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
     return () => window.removeEventListener("popstate", syncFromUrl);
   }, []);
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+  const changeLocale = (nextLocale: Locale) => {
+    setLocale(nextLocale);
+    localStorage.setItem("mono-locale", nextLocale);
+    const url = new URL(window.location.href);
+    if (nextLocale === "ro") url.searchParams.delete("lang");
+    else url.searchParams.set("lang", nextLocale);
+    window.history.replaceState({}, "", url);
+  };
   const selectCategory = (category: string) => {
     setActive(category);
     const url = new URL(window.location.href);
@@ -195,13 +321,15 @@ export default function Home() {
     window.history.replaceState({}, "", url);
   };
   return <main>
-    <nav className="nav shell"><a className="logo" href="#top">M<span>O</span>NO/DEV</a><div className="nav-links"><a href="#proiecte">Proiecte</a><a href="#proces">Proces</a><a href="#contact">Contact</a></div><a className="nav-cta" href="#proiecte"><ShoppingBag size={16}/> Cumpără un proiect</a><button className="menu-btn" onClick={() => setMenu(!menu)} aria-label="Deschide meniul">{menu ? <X/> : <Menu/>}</button></nav>
-    <AnimatePresence>{menu && <motion.div className="mobile-menu" initial={{opacity:0,y:-10}} animate={{opacity:1,y:0}} exit={{opacity:0}}><a href="#proiecte" onClick={()=>setMenu(false)}>Proiecte</a><a href="#proces" onClick={()=>setMenu(false)}>Proces</a><a href="#contact" onClick={()=>setMenu(false)}>Contact</a></motion.div>}</AnimatePresence>
-    <section className="hero shell" id="top"><motion.div className="eyebrow" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}}><span/> PROIECTE DIGITALE. GATA DE LANSARE.</motion.div><motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:.08}}>IDEI MARI.<br/><em>DEJA CONSTRUITE.</em></motion.h1><motion.div className="hero-bottom" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.2}}><p>Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.</p><a href="#proiecte" className="circle-arrow" aria-label="Vezi proiectele"><ArrowRight/></a></motion.div><div className="marquee"><div>DESIGN CARE VINDE <Sparkles/> COD CURAT <Zap/> LIVRARE RAPIDĂ <Sparkles/> DESIGN CARE VINDE <Zap/> COD CURAT <Sparkles/> LIVRARE RAPIDĂ</div></div></section>
-    <section className="projects shell" id="proiecte"><div className="section-head"><div><span className="kicker">/ CATALOG 2026</span><h2>ALEGE URMĂTORUL<br/>TĂU <i>PROIECT.</i></h2></div><div className="count">{String(visible.length).padStart(2,"0")}<span>PROIECTE<br/>DISPONIBILE</span></div></div><div className="filters">{filters.map((filter)=><button key={filter} onClick={()=>selectCategory(filter)} className={active===filter ? "active" : ""}>{filter}</button>)}</div><motion.div layout className="grid"><AnimatePresence mode="popLayout">{visible.map((project)=><motion.article layout key={project.id} className="card" role="button" tabIndex={0} aria-label={`Vezi detalii ${project.title}`} onClick={()=>openProject(project)} onKeyDown={(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();openProject(project)}}} initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:.95}} whileHover={{y:-6}}><ProjectVisual project={project}/><div className="card-info"><div><span className="type">{project.type}</span><h3>{project.title}</h3><p>{project.desc}</p></div><div className="price"><small>DE LA</small>€{project.price}</div></div><div className="tags">{project.stack.map(x=><span key={x}>{x}</span>)}</div></motion.article>)}</AnimatePresence></motion.div></section>
-    <section className="process" id="proces"><div className="shell"><span className="kicker light">/ CUM FUNCȚIONEAZĂ</span><h2>DE LA CLICK<br/>LA <i>LAUNCH.</i></h2><div className="steps">{[["01","ALEGI","Explorezi catalogul și găsești proiectul potrivit ideii tale."],["02","PERSONALIZĂM","Adaptăm brandul, culorile și conținutul pentru afacerea ta."],["03","LANSĂM","Primești proiectul complet, configurat și gata să producă."]].map(([n,t,d])=><div className="step" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div><ArrowRight/></div>)}</div></div></section>
-    <section className="why shell"><div className="why-main"><span className="kicker">/ DE CE MONO/DEV</span><h2>NU VINDEM<br/>DOAR <i>PIXELI.</i></h2><p>Fiecare proiect este construit să arate impecabil, să se miște rapid și, cel mai important, să transforme vizitatorii în clienți.</p><a href="mailto:hello@monodev.ro">Hai să vorbim <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>COD CURAT<br/>ȘI EDITABIL</span></div><div><strong>48H</strong><span>PÂNĂ LA<br/>PREDARE</span></div><div><strong>30</strong><span>ZILE SUPORT<br/>INCLUS</span></div></div></section>
-    <footer id="contact"><div className="shell footer-top"><p>AI GĂSIT CE CĂUTAI?</p><a href="mailto:hello@monodev.ro">SĂ ÎNCEPEM <ArrowRight/></a></div><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
-    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={closeProject}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={closeProject} aria-label="Închide detaliile"><X/></button><ProjectVisual project={selected}/><div className="modal-content"><span className="kicker">{selected.type} / LICENȚĂ COMPLETĂ</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>PREȚ COMPLET</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 14 || selected.id === 15 ? <span className="demo-link demo-link-disabled" aria-disabled="true">Solicită acces demo <ExternalLink/></span> : selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">Deschide proiectul <ExternalLink/></a> : <a className="demo-link" href={`mailto:hello@monodev.ro?subject=Solicit acces demo pentru ${selected.title}`}>Solicită acces demo <ExternalLink/></a>}<a className="buy-link" href={`mailto:hello@monodev.ro?subject=Interesat de ${selected.title}`}>Cumpără pentru €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
+    <div className="edge-rail edge-rail-left code-rail" aria-hidden="true"><div className="code-grid"/><div className="code-stream"><span><b>const</b> idea = <em>"bold"</em>;</span><span><b>while</b> (curious) build();</span><span><i>&lt;Launch</i> ready=<em>true</em> /&gt;</span><span>git commit -m <em>"ship"</em></span><span><b>const</b> idea = <em>"bold"</em>;</span><span><b>while</b> (curious) build();</span></div><div className="code-core"><i>{`{`}</i><span>&lt;/&gt;</span><i>{`}`}</i></div><div className="terminal-chip"><b>●</b><span>BUILDING</span><i>_</i></div></div>
+    <div className="edge-rail edge-rail-right code-rail" aria-hidden="true"><div className="code-grid"/><div className="binary-rain"><span>01001101<br/>11001010<br/>00110101<br/>10100110</span><span>10110100<br/>00101101<br/>11010010<br/>01011001</span><span>01101001<br/>10010110<br/>01001101<br/>11100010</span></div><div className="git-branch"><i/><i/><i/><i/><span>main</span><b>HEAD</b></div><div className="deploy-chip"><i/>DEPLOYED <b>200</b></div></div>
+    <nav className="nav shell"><a className="logo" href="#top">M<span>O</span>NO/DEV</a><div className="nav-links"><a href="#proiecte">{c.nav[0]}</a><a href="#proces">{c.nav[1]}</a><a href="/contact">{c.nav[2]}</a></div><div className="language-switch" aria-label="Language">{locales.map(language=><button key={language} className={locale===language?"active":""} onClick={()=>changeLocale(language)} lang={language}>{language.toUpperCase()}</button>)}</div><a className="nav-cta" href="#proiecte"><ShoppingBag size={16}/> {c.buyProject}</a><button className="menu-btn" onClick={() => setMenu(!menu)} aria-label={c.openMenu}>{menu ? <X/> : <Menu/>}</button></nav>
+    <AnimatePresence>{menu && <motion.div className="mobile-menu" initial={{opacity:0,y:-10}} animate={{opacity:1,y:0}} exit={{opacity:0}}><a href="#proiecte" onClick={()=>setMenu(false)}>{c.nav[0]}</a><a href="#proces" onClick={()=>setMenu(false)}>{c.nav[1]}</a><a href="/contact" onClick={()=>setMenu(false)}>{c.nav[2]}</a></motion.div>}</AnimatePresence>
+    <section className="hero shell" id="top"><motion.div className="eyebrow" initial={{opacity:0,y:15}} animate={{opacity:1,y:0}}><span/> {c.eyebrow}</motion.div><motion.h1 initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{delay:.08}}>{c.heroA}<br/><em>{c.heroB}</em></motion.h1><motion.div className="hero-bottom" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.2}}><p>{c.heroText}</p><a href="#proiecte" className="circle-arrow" aria-label={c.viewProjects}><ArrowRight/></a></motion.div><div className="marquee"><div>{c.marquee[0]} <Sparkles/> {c.marquee[1]} <Zap/> {c.marquee[2]} <Sparkles/> {c.marquee[0]} <Zap/> {c.marquee[1]} <Sparkles/> {c.marquee[2]}</div></div></section>
+    <section className="projects shell" id="proiecte"><div className="section-head"><div><span className="kicker">{c.catalog}</span><h2>{c.chooseA}<br/>{c.chooseB} <i>{c.chooseC}</i></h2></div><div className="count">{String(visible.length).padStart(2,"0")}<span>{c.projectsAvailable[0]}<br/>{c.projectsAvailable[1]}</span></div></div><div className="filters">{filters.map((filter)=><button key={filter} onClick={()=>selectCategory(filter)} className={active===filter ? "active" : ""}>{filter==="Toate"?c.all:localType(filter,locale)}</button>)}</div><motion.div layout className="grid"><AnimatePresence mode="popLayout">{visible.map((project)=><motion.article layout key={project.id} className="card" role="button" tabIndex={0} aria-label={`${c.viewDetails} ${project.title}`} onClick={()=>openProject(project)} onKeyDown={(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();openProject(project)}}} initial={{opacity:0,scale:.97}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:.95}} whileHover={{y:-6}}><ProjectVisual project={project} locale={locale}/><div className="card-info"><div><span className="type">{localType(project.type,locale)}</span><h3>{project.title}</h3><p>{localDescription(project.id,project.desc,locale)}</p></div><div className="price"><small>{c.from}</small>€{project.price}</div></div><div className="tags">{project.stack.map(x=><span key={x}>{x}</span>)}</div></motion.article>)}</AnimatePresence></motion.div></section>
+    <section className="process" id="proces"><div className="shell"><span className="kicker light">{c.processKicker}</span><h2>{c.processA}<br/>{c.processB} <i>{c.processC}</i></h2><div className="steps">{c.steps.map(([title,description],index)=><div className="step" key={title}><span>0{index+1}</span><div><h3>{title}</h3><p>{description}</p></div><ArrowRight/></div>)}</div></div></section>
+    <section className="why shell"><div className="why-main"><span className="kicker">{c.whyKicker}</span><h2>{c.whyA}<br/>{c.whyB} <i>{c.whyC}</i></h2><p>{c.whyText}</p><a href="mailto:hello@monodev.ro">{c.talk} <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>{c.metrics[0][0]}<br/>{c.metrics[0][1]}</span></div><div><strong>48H</strong><span>{c.metrics[1][0]}<br/>{c.metrics[1][1]}</span></div><div><strong>30</strong><span>{c.metrics[2][0]}<br/>{c.metrics[2][1]}</span></div></div></section>
+    <footer><div className="shell footer-top"><p>{c.found}</p><a href="/contact">{c.start} <ArrowRight/></a></div><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="https://www.instagram.com/">Instagram</a><a href="https://www.behance.net/">Behance</a><a href="https://www.linkedin.com/">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
+    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={closeProject}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={closeProject} aria-label={c.close}><X/></button><ProjectVisual project={selected} locale={locale}/><div className="modal-content"><span className="kicker">{localType(selected.type,locale)} / {c.fullLicense}</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>{c.fullPrice}</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 14 ? <span className="demo-link demo-link-disabled" aria-disabled="true">{c.requestDemo} <ExternalLink/></span> : "demo" in selectedDetail && selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">{c.openProject} <ExternalLink/></a> : <a className="demo-link" href={`mailto:hello@monodev.ro?subject=${encodeURIComponent(`${c.demoSubject} ${selected.title}`)}`}>{c.requestDemo} <ExternalLink/></a>}<a className="buy-link" href={`mailto:hello@monodev.ro?subject=${encodeURIComponent(`${c.interested} ${selected.title}`)}`}>{c.buyFor} €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
   </main>;
 }
