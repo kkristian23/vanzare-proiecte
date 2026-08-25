@@ -1,14 +1,15 @@
 "use client";
 
-import { ArrowLeft, ArrowUpRight, Check, Copy, Mail, MapPin, Terminal } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Check, Copy, Mail, MapPin, Phone, Terminal } from "lucide-react";
 import { FormEvent, useState } from "react";
 import "./contact.css";
 
 const contactCode = [
   ["const", " contact", " = {"],
-  ["  email:", " \"hello@monodev.ro\"", ","],
-  ["  location:", " \"Chișinău / Remote\"", ","],
-  ["  response:", " \"≤ 48h\"", ","],
+  ["  phone:", " \"+373 78 868 996\"", ","],
+  ["  email:", " \"monodev@gmail.com\"", ","],
+  ["  location:", " \"Moldova\"", ","],
+  ["  response:", " \"≤ 12h\"", ","],
   ["  status:", " true", ""],
   ["};", "", ""],
 ];
@@ -18,7 +19,7 @@ export default function ContactPage() {
   const [sent, setSent] = useState(false);
 
   const copyEmail = async () => {
-    await navigator.clipboard.writeText("hello@monodev.ro");
+    await navigator.clipboard.writeText("monodev@gmail.com");
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   };
@@ -36,7 +37,7 @@ export default function ContactPage() {
       String(data.get("message")),
     ].join("\n");
     setSent(true);
-    window.location.href = `mailto:hello@monodev.ro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:monodev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return <main className="contact-page">
@@ -64,15 +65,16 @@ export default function ContactPage() {
     <section className="contact-workspace">
       <aside className="contact-sidebar">
         <p className="contact-label">/ CONNECTION DETAILS</p>
-        <article><Mail/><div><small>PRIMARY_ENDPOINT</small><a href="mailto:hello@monodev.ro">hello@monodev.ro</a></div><button onClick={copyEmail} aria-label="Copiază adresa de email">{copied?<Check/>:<Copy/>}</button></article>
-        <article><MapPin/><div><small>LOCATION</small><strong>Chișinău · Remote worldwide</strong></div></article>
-        <article><Terminal/><div><small>RESPONSE_TIME</small><strong>maximum 48 hours</strong></div></article>
+        <article><Phone/><div><small>PHONE</small><a href="tel:+37378868996">+373 78 868 996</a></div></article>
+        <article><Mail/><div><small>PRIMARY_ENDPOINT</small><a href="mailto:monodev@gmail.com">monodev@gmail.com</a></div><button onClick={copyEmail} aria-label="Copiază adresa de email">{copied?<Check/>:<Copy/>}</button></article>
+        <article><MapPin/><div><small>LOCATION</small><strong>Moldova</strong></div></article>
+        <article><Terminal/><div><small>RESPONSE_TIME</small><strong>maximum 12 hours</strong></div></article>
         <div className="availability-card"><span><i/> AVAILABLE</span><p>Acceptăm proiecte noi pentru <b>2026</b>.</p><small>STATUS_CODE: 200_OK</small></div>
       </aside>
 
       <div className="brief-panel">
         <div className="brief-head"><div><p className="contact-label">/ NEW_PROJECT.REQUEST</p><h2>Trimite-ne<br/><em>brief-ul.</em></h2></div><span>POST<br/>/api/hello</span></div>
-        {sent ? <div className="request-success"><div><Check/></div><p>REQUEST ACCEPTED</p><h3>Clientul tău de email este pregătit.</h3><span>Dacă nu s-a deschis automat, scrie-ne direct la hello@monodev.ro.</span><button onClick={()=>setSent(false)}>Creează alt request</button></div> : <form onSubmit={submit} className="contact-form">
+        {sent ? <div className="request-success"><div><Check/></div><p>REQUEST ACCEPTED</p><h3>Clientul tău de email este pregătit.</h3><span>Dacă nu s-a deschis automat, scrie-ne direct la monodev@gmail.com.</span><button onClick={()=>setSent(false)}>Creează alt request</button></div> : <form onSubmit={submit} className="contact-form">
           <label><span><b>01</b> name: string</span><input name="name" required placeholder="Cum te numești?"/></label>
           <label><span><b>02</b> email: string</span><input name="email" type="email" required placeholder="tu@companie.md"/></label>
           <label><span><b>03</b> project: enum</span><select name="project" required defaultValue=""><option value="" disabled>Selectează tipul</option><option>Website de prezentare</option><option>Magazin online</option><option>Platformă / aplicație</option><option>Personalizare proiect existent</option><option>Alt proiect digital</option></select></label>
@@ -83,6 +85,6 @@ export default function ContactPage() {
       </div>
     </section>
 
-    <footer className="contact-footer"><span>© 2026 MONO/DEV</span><p>DESIGN → CODE → LAUNCH</p><a href="mailto:hello@monodev.ro">hello@monodev.ro <ArrowUpRight/></a></footer>
+    <footer className="contact-footer"><span>© 2026 MONO/DEV</span><p>DESIGN → CODE → LAUNCH</p><a href="mailto:monodev@gmail.com">monodev@gmail.com <ArrowUpRight/></a></footer>
   </main>;
 }
