@@ -69,7 +69,7 @@ export default function ContactPage() {
         <article><Mail/><div><small>PRIMARY_ENDPOINT</small><a href="mailto:monodev@gmail.com">monodev@gmail.com</a></div><button onClick={copyEmail} aria-label="Copiază adresa de email">{copied?<Check/>:<Copy/>}</button></article>
         <article><MapPin/><div><small>LOCATION</small><strong>Moldova</strong></div></article>
         <article><Terminal/><div><small>RESPONSE_TIME</small><strong>maximum 12 hours</strong></div></article>
-        <div className="availability-card"><span><i/> AVAILABLE</span><p>Acceptăm proiecte noi pentru <b>2026</b>.</p><small>STATUS_CODE: 200_OK</small></div>
+        <div className="availability-card"><span><i/> AVAILABLE</span><p>Acceptăm proiecte noi pentru <b>2027</b>.</p><small>STATUS_CODE: 200_OK</small></div>
       </aside>
 
       <div className="brief-panel">
