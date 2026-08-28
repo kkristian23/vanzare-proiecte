@@ -160,7 +160,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L278"
+      "source_location": "L279"
     },
     {
       "id": "app_page_projectvisual",
@@ -172,7 +172,7 @@
       "file_type": "code",
       "norm_label": "projectvisual()",
       "source_file": "app/page.tsx",
-      "source_location": "L247"
+      "source_location": "L248"
     },
     {
       "id": "worker_index_executioncontext_passthroughonexception",
@@ -688,15 +688,15 @@
       "source_location": "L24"
     },
     {
-      "id": "package_devdependencies_drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "package_devdependencies_cloudflare_vite_plugin",
+      "label": "@cloudflare/vite-plugin",
       "_origin": "ast",
       "community": 14,
       "community_name": "devDependencies",
       "file_type": "code",
-      "norm_label": "drizzle-kit",
+      "norm_label": "@cloudflare/vite-plugin",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies_eslint_plugin_react_hooks",
@@ -721,15 +721,15 @@
       "source_location": "L46"
     },
     {
-      "id": "drizzle_kit",
-      "label": "drizzle-kit",
+      "id": "cloudflare_vite_plugin",
+      "label": "@cloudflare/vite-plugin",
       "_origin": "ast",
       "community": 14,
       "community_name": "devDependencies",
       "file_type": "concept",
-      "norm_label": "drizzle-kit",
+      "norm_label": "@cloudflare/vite-plugin",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L25"
     },
     {
       "id": "eslint_plugin_react_hooks",
@@ -1554,26 +1554,26 @@
       "source_location": "L7"
     },
     {
-      "id": "package_devdependencies_cloudflare_vite_plugin",
-      "label": "@cloudflare/vite-plugin",
+      "id": "package_devdependencies_drizzle_kit",
+      "label": "drizzle-kit",
       "_origin": "ast",
       "community": 37,
-      "community_name": "@cloudflare/vite-plugin",
+      "community_name": "drizzle-kit",
       "file_type": "code",
-      "norm_label": "@cloudflare/vite-plugin",
+      "norm_label": "drizzle-kit",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L35"
     },
     {
-      "id": "cloudflare_vite_plugin",
-      "label": "@cloudflare/vite-plugin",
+      "id": "drizzle_kit",
+      "label": "drizzle-kit",
       "_origin": "ast",
       "community": 37,
-      "community_name": "@cloudflare/vite-plugin",
+      "community_name": "drizzle-kit",
       "file_type": "concept",
-      "norm_label": "@cloudflare/vite-plugin",
+      "norm_label": "drizzle-kit",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L35"
     },
     {
       "id": "package_devdependencies_openai_sites_vite_plugin",
@@ -1950,7 +1950,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L285",
+      "source_location": "L286",
       "weight": 1.0
     },
     {
@@ -1962,7 +1962,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L343",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
@@ -1974,24 +1974,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L343",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
       "source": "app_page_projectvisual",
       "target": "app_i18n_localdescription",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "app/page.tsx",
-      "source_location": "L267",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page_projectvisual",
-      "target": "app_i18n_localtype",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1999,6 +1987,18 @@
       "context": "call",
       "source_file": "app/page.tsx",
       "source_location": "L268",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page_projectvisual",
+      "target": "app_i18n_localtype",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/page.tsx",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
@@ -2879,7 +2879,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L247",
+      "source_location": "L248",
       "weight": 1.0
     },
     {
@@ -2912,7 +2912,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L278",
+      "source_location": "L279",
       "weight": 1.0
     },
     {
