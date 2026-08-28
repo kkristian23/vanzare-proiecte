@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { copy, Locale, locales, localDescription, localizedDetail, localType, visualCopy } from "./i18n";
 
 const projects = [
+  { id: 24, title: "FORGE", type: "AI Website Factory", price: 5000, tone: "forge", desc: "Platformă locală pentru generarea, testarea și îmbunătățirea automată a website-urilor, cu toate serviciile incluse gratuit în primul an", stack: ["TypeScript", "Node.js", "Codex CLI", "Playwright", "Vitest", "Multi-agent Workflow", "Automated QA", "Local Dashboard", "Git Automation"] },
   { id: 23, title: "STUDIO VELORA", type: "Interior Design", price: 800, tone: "studiovelora", desc: "Website luxury multipagină pentru arhitectură și design interior, cu proiecte, servicii și jurnal editorial", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Multi-page", "Project Portfolio", "Dynamic Routes", "Editorial Journal", "Responsive Design"] },
   { id: 22, title: "STUDIO FORMA", type: "Interior Design", price: 500, tone: "studioforma", desc: "Website expresiv pentru studio de design interior, cu proiecte, laborator cromatic și formular interactiv", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Color Lab", "Interactive Palettes", "Portfolio", "Lead Form", "Responsive Design"] },
   { id: 21, title: "NOMA", type: "Interior Design", price: 350, tone: "noma", desc: "Website editorial pentru studio de design interior, cu portofoliu, proces, materiale și cereri de proiect", stack: ["React", "TypeScript", "Vinext", "Tailwind CSS", "Portfolio Filters", "Before / After", "Interactive Materials", "Lead Form", "Responsive Design"] },
@@ -22,8 +23,9 @@ const projects = [
   { id: 8, title: "CONTOR ACASĂ", type: "Utility Management", price: 2900, tone: "contor", desc: "Platformă pentru administrarea inteligentă a comunităților", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase Auth", "Realtime Database", "Firebase Storage", "Firebase Admin", "Leaflet", "OpenStreetMap", "Netlify Functions", "Lucide Icons"] },
   { id: 7, title: "MICORA", type: "Beauty", price: 350, tone: "micora", desc: "Experiență digitală premium pentru salon de frumusețe", stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide Icons", "Unsplash", "Cloudflare", "Vinext", "Netlify"] },
 ];
-const filters = ["Toate", "Interior Design", "Mobilă", "Marketplace", "Barber & Academy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
+const filters = ["Toate", "AI Website Factory", "Interior Design", "Mobilă", "Marketplace", "Barber & Academy", "Equipment Rental", "Beauty & Academy", "Service Management", "Calendar & Events", "Utility Management", "Beauty"];
 const categorySlugs: Record<string, string> = {
+  "AI Website Factory": "ai-website-factory",
   "Interior Design": "interior-design",
   "Mobilă": "mobila",
   Marketplace: "marketplace",
@@ -36,6 +38,7 @@ const categorySlugs: Record<string, string> = {
   Beauty: "beauty",
 };
 const projectSlugs: Record<number, string> = {
+  24: "forge-ai-website-factory",
   23: "studio-velora",
   22: "studio-forma",
   21: "noma",
@@ -59,6 +62,17 @@ const projectDetails: Record<number, {
   demo?: string;
   sections: Array<{ title: string; items: string[] }>;
 }> = {
+  24: {
+    summary: "Forge este o fabrică locală de website-uri care transformă un brief într-un proiect independent, testat și pregătit pentru lansare. Orchestratorul coordonează agenți Codex specializați, verificări automate și un dashboard pentru urmărirea întregului flux de producție. Achiziția include absolut toate serviciile gratuit în primul an, iar după această perioadă continuitatea serviciilor este asigurată printr-un abonament lunar.",
+    sections: [
+      { title: "Generare asistată", items: ["Brief unic transformat într-un plan și într-un website complet", "Agenți separați pentru planificare, dezvoltare, review și corecții", "Proiecte independente create cu repository Git și stare persistentă"] },
+      { title: "Control și automatizare", items: ["Dashboard local pentru creare, îmbunătățire și monitorizare", "Coadă persistentă cu maximum două operațiuni executate simultan", "Comenzi validate și execuție izolată în directoarele proiectelor"] },
+      { title: "QA integrat", items: ["Build, typecheck și teste rulate automat în flux", "Verificare Playwright pe desktop, tabletă și mobil", "Review structurat, corecții iterative și rapoarte de calitate"] },
+      { title: "Tehnologie", items: ["TypeScript, Node.js, Codex CLI și Playwright", "Vitest pentru testele orchestratorului și proceselor", "Dashboard responsive, configurare prin mediu și loguri locale"] },
+      { title: "Servicii și abonament", items: ["Primul an include absolut toate serviciile, fără niciun cost suplimentar", "În această perioadă sunt acoperite suportul, mentenanța și serviciile necesare operării platformei", "După primul an gratuit, serviciile continuă prin achitarea unui abonament lunar"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul sursă complet al platformei și dashboardului", "Fluxul multi-agent pentru generare, QA, review și îmbunătățire", "Documentație de instalare, configurare și operare locală"] },
+    ],
+  },
   23: {
     summary: "Studio Velora este un website luxury multipagină pentru un studio de arhitectură și design interior cu prezență în București, Paris și Milano. Experiența combină portofoliul de reședințe cu servicii complete, conținut editorial și o poziționare premium coerentă.",
     sections: [
@@ -234,6 +248,7 @@ const projectDetails: Record<number, {
 function ProjectVisual({ project, locale }: { project: (typeof projects)[number]; locale: Locale }) {
   const v = visualCopy[locale];
   return <div className={`visual visual-${project.tone}`}>
+    {project.id === 24 && <><div className="forge-brand"><b>F</b><span>FORGE<small>AI WEBSITE FACTORY</small></span></div><div className="forge-window"><div className="forge-sidebar"><i/><i/><i/></div><div className="forge-main"><small>NEW PROJECT / CODEX</small><strong>BUILD.<br/><em>TEST.</em><br/>SHIP.</strong><div className="forge-progress"><i/><i/><i/></div></div><div className="forge-status"><i/> SYSTEM ACTIVE</div></div></>}
     {project.id === 23 && <><div className="velora-brand">STUDIO <b>VELORA</b></div><div className="velora-portal"><i/><span>V</span></div><div className="velora-copy"><small>BUCUREȘTI · PARIS · MILANO</small><b>INTERIOARE<br/><em>DE COLECȚIE.</em></b></div><div className="velora-index">EST. 2012</div></>}
     {project.id === 22 && <><div className="sforma-brand">STUDIO<span> FORMA</span></div><div className="sforma-orbit"><i/><i/><b>F</b></div><div className="sforma-copy"><small>INTERIOARE CU PULS</small><b>NU FACEM FRUMOS.<br/><em>FACEM VIU.</em></b></div><div className="sforma-swatches"><i/><i/><i/></div></>}
     {project.id === 21 && <><div className="noma-brand">NOMA<sup>®</sup></div><div className="noma-arch"><i/><span>01</span></div><div className="noma-copy"><small>INTERIOR DESIGN · CHIȘINĂU</small><b>LOCURI CARE<br/>SE SIMT <em>ACASĂ.</em></b></div><div className="noma-materials"><i/><i/><i/></div></>}
@@ -244,7 +259,7 @@ function ProjectVisual({ project, locale }: { project: (typeof projects)[number]
     {project.id === 16 && <><div className="noire-logo">ATELIER <i>NOIRE</i></div><div className="noire-frame"><span/><i/></div><div className="noire-copy"><small>COLLECTION 01</small><b>OBJECTS OF<br/>QUIET BEAUTY</b></div><div className="noire-number">N° 16</div></>}
     {project.id === 15 && <><div className="market-brand"><span>market</span><b>9000</b></div><div className="market-search">{v.search}<i>⌕</i></div><div className="market-categories"><span>🏠<b>{v.estate}</b></span><span>🚗<b>{v.auto}</b></span><span>🛠️<b>{v.services}</b></span><span>📱<b>{v.electronics}</b></span></div><div className="market-listing"><small><i/> {v.active}</small><strong>9K<sup>+</sup></strong><em>{v.opportunities}</em></div><div className="market-publish">{v.publish}</div></>}
     {project.id === 14 && <><div className="neo-mark"><b>NEO</b><span>BARBER CLUB</span></div><div className="neo-blade"><i/><i/><span>PRECISION<br/>IS A RITUAL</span></div><div className="neo-service"><small>SIGNATURE CUT</small></div><div className="neo-seal">EST.<br/><b>2026</b></div></>}
-    {project.id === 14 && <div className="neo-coming-soon"><span>{v.coming}</span></div>}
+    {(project.id === 24 || project.id === 14) && <div className="coming-soon"><span>{v.coming}</span></div>}
     {project.id === 12 && <><div className="renttech-mark">RT <span>RENTTECH</span></div><div className="renttech-machine">🏗️</div><div className="renttech-price"><small>{v.available}</small></div><div className="renttech-line"/></>}
     {project.id === 11 && <><div className="elan-mark">ÉLAN<small>NAIL STUDIO & ACADEMY</small></div><div className="elan-arch"><span>É</span></div><div className="elan-copy">BEAUTY<br/><i>meets craft.</i></div></>}
     {project.id === 10 && <><div className="fixora-mark"><b>F</b> FIXORA <small>SERVICE OS</small></div><div className="fixora-panel"><span>{v.capacity}</span><strong>78%</strong><i><em/></i><div><b>12</b> {v.appointments} <b>6</b> {v.working}</div></div><div className="fixora-status">● LIVE OPERATIONS</div></>}
@@ -330,6 +345,6 @@ export default function Home() {
     <section className="process" id="proces"><div className="shell"><span className="kicker light">{c.processKicker}</span><h2>{c.processA}<br/>{c.processB} <i>{c.processC}</i></h2><div className="steps">{c.steps.map(([title,description],index)=><div className="step" key={title}><span>0{index+1}</span><div><h3>{title}</h3><p>{description}</p></div><ArrowRight/></div>)}</div></div></section>
     <section className="why shell"><div className="why-main"><span className="kicker">{c.whyKicker}</span><h2>{c.whyA}<br/>{c.whyB} <i>{c.whyC}</i></h2><p>{c.whyText}</p><a href="mailto:monodev@gmail.com">{c.talk} <ArrowRight size={18}/></a></div><div className="metrics"><div><strong>100%</strong><span>{c.metrics[0][0]}<br/>{c.metrics[0][1]}</span></div><div><strong>12H</strong><span>{c.metrics[1][0]}<br/>{c.metrics[1][1]}</span></div><div><strong>30</strong><span>{c.metrics[2][0]}<br/>{c.metrics[2][1]}</span></div></div></section>
     <footer><div className="shell footer-bottom"><div className="logo">M<span>O</span>NO/DEV</div><div><a href="https://www.instagram.com/">Instagram</a><a href="https://www.behance.net/">Behance</a><a href="https://www.linkedin.com/">LinkedIn</a></div><span>© 2026 MONO/DEV</span></div></footer>
-    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={closeProject}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={closeProject} aria-label={c.close}><X/></button><ProjectVisual project={selected} locale={locale}/><div className="modal-content"><span className="kicker">{localType(selected.type,locale)} / {c.fullLicense}</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>{c.fullPrice}</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 14 ? <span className="demo-link demo-link-disabled" aria-disabled="true">{c.requestDemo} <ExternalLink/></span> : "demo" in selectedDetail && selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">{c.openProject} <ExternalLink/></a> : <a className="demo-link" href={`mailto:monodev@gmail.com?subject=${encodeURIComponent(`${c.demoSubject} ${selected.title}`)}`}>{c.requestDemo} <ExternalLink/></a>}<a className="buy-link" href="/contact">{c.buyFor} €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
+    <AnimatePresence>{selected && selectedDetail && <motion.div className="modal-wrap" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={closeProject}><motion.div className="modal modal-detailed" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,opacity:0}} onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={closeProject} aria-label={c.close}><X/></button><ProjectVisual project={selected} locale={locale}/><div className="modal-content"><span className="kicker">{localType(selected.type,locale)} / {c.fullLicense}</span><div className="modal-title-row"><h2>{selected.title}</h2><div className="modal-price"><small>{c.fullPrice}</small>€{selected.price}</div></div><p className="modal-summary">{selectedDetail.summary}</p><div className="detail-sections">{selectedDetail.sections.map(section=><section key={section.title}><h3>{section.title}</h3><ul>{section.items.map(item=><li key={item}><Check/>{item}</li>)}</ul></section>)}</div><div className="modal-actions">{selected.id === 24 || selected.id === 14 ? <span className="demo-link demo-link-disabled" aria-disabled="true">{c.requestDemo} <ExternalLink/></span> : "demo" in selectedDetail && selectedDetail.demo ? <a className="demo-link" href={selectedDetail.demo} target="_blank" rel="noreferrer">{c.openProject} <ExternalLink/></a> : <a className="demo-link" href={`mailto:monodev@gmail.com?subject=${encodeURIComponent(`${c.demoSubject} ${selected.title}`)}`}>{c.requestDemo} <ExternalLink/></a>}<a className="buy-link" href="/contact">{c.buyFor} €{selected.price} <ArrowRight/></a></div></div></motion.div></motion.div>}</AnimatePresence>
   </main>;
 }

@@ -36,7 +36,7 @@
   "34": "vinext-starter",
   "35": "contact/layout.tsx",
   "36": "contact/page.tsx",
-  "37": "drizzle-kit",
+  "37": "@cloudflare/vite-plugin",
   "38": "@openai/sites-vite-plugin",
   "39": "@types/node"
 }

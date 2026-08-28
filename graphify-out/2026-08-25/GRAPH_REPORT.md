@@ -1,7 +1,7 @@
-# Graph Report - vanzare proiecte  (2026-08-28)
+# Graph Report - vanzare proiecte  (2026-08-25)
 
 ## Corpus Check
-- 24 files · ~131,444 words
+- 24 files · ~131,062 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6d902bee`
+- Built from commit: `a467bc90`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,7 +33,7 @@
 - eslint-plugin-jsx-a11y
 - next.config.ts
 - next-env.d.ts
-- @next/eslint-plugin-next
+- @cloudflare/vite-plugin
 - react-server-dom-webpack
 - tailwindcss
 - @tailwindcss/postcss
@@ -117,7 +117,7 @@ Nodes (3): geist, metadata, mono
 
 ### Community 14 - "devDependencies"
 Cohesion: 0.29
-Nodes (7): @cloudflare/vite-plugin, eslint-plugin-react-hooks, devDependencies, @cloudflare/vite-plugin, eslint-plugin-react-hooks, vite, vite
+Nodes (7): eslint-plugin-react-hooks, @next/eslint-plugin-next, devDependencies, eslint-plugin-react-hooks, @next/eslint-plugin-next, vite, vite
 
 ### Community 34 - "vinext-starter"
 Cohesion: 0.25
@@ -131,7 +131,7 @@ Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Comman
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint`, `globals`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, `@next/eslint-plugin-next`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `@eslint/js`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `drizzle-kit`, `@openai/sites-vite-plugin`, `@types/node`?**
+- **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint`, `globals`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, `@cloudflare/vite-plugin`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `@eslint/js`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `drizzle-kit`, `@openai/sites-vite-plugin`, `@types/node`?**
   _High betweenness centrality (0.155) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
   _High betweenness centrality (0.054) - this node is a cross-community bridge._

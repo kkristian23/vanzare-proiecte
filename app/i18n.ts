@@ -42,6 +42,7 @@ export const copy = {
 } as const;
 
 const typeMap: Record<string, [string, string]> = {
+  "AI Website Factory": ["Фабрика сайтов с ИИ", "AI Website Factory"],
   "Interior Design": ["Дизайн интерьера", "Interior Design"],
   "Furniture E-commerce": ["Магазин мебели", "Furniture E-commerce"], "Sustainable Furniture": ["Экологичная мебель", "Sustainable Furniture"],
   "Furniture Configurator": ["Конфигуратор мебели", "Furniture Configurator"], "Contract Furniture": ["Контрактная мебель", "Contract Furniture"],
@@ -53,6 +54,7 @@ const typeMap: Record<string, [string, string]> = {
 export function localType(type: string, locale: Locale) { return locale === "ro" ? type : typeMap[type]?.[locale === "ru" ? 0 : 1] ?? type; }
 
 const descriptions: Record<number, [string, string]> = {
+  24: ["Локальная платформа для автоматической генерации, тестирования и улучшения сайтов; все услуги бесплатно в течение первого года", "A local platform for automatically generating, testing and improving websites, with all services included free for the first year"],
   23: ["Многостраничный luxury-сайт студии архитектуры и дизайна интерьера с проектами, услугами и редакционным журналом", "A multi-page luxury architecture and interior-design website with projects, services and an editorial journal"],
   22: ["Выразительный сайт студии дизайна интерьера с проектами, цветовой лабораторией и интерактивной формой", "An expressive interior-design studio website with projects, a color lab and an interactive enquiry form"],
   21: ["Редакционный сайт студии дизайна интерьера с портфолио, процессом, материалами и заявками на проекты", "An editorial interior-design studio website with portfolio, process, materials and project enquiries"],

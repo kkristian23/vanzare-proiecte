@@ -17,7 +17,7 @@
   "15": "eslint-plugin-jsx-a11y",
   "16": "next.config.ts",
   "17": "next-env.d.ts",
-  "18": "@next/eslint-plugin-next",
+  "18": "@cloudflare/vite-plugin",
   "19": "react-server-dom-webpack",
   "20": "tailwindcss",
   "21": "@tailwindcss/postcss",
