@@ -1392,17 +1392,6 @@
       "source_location": "L1"
     },
     {
-      "id": "vite_plugin",
-      "label": "@cloudflare/vite-plugin",
-      "_origin": "ast",
-      "community": 33,
-      "community_name": "vite.config.ts",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "@cloudflare/vite-plugin",
-      "source_file": "@cloudflare/vite-plugin"
-    },
-    {
       "id": "vite_config",
       "label": "vite.config.ts",
       "_origin": "ast",
@@ -3862,15 +3851,6 @@
       "weight": 1.0
     },
     {
-      "source": "vite_config",
-      "target": "vite_plugin",
-      "relation": "dynamic_import",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "vite.config.ts"
-    },
-    {
       "source": "worker_index_executioncontext",
       "target": "worker_index_executioncontext_waituntil",
       "relation": "method",
@@ -3905,5 +3885,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "085bd883a82273113b5a25a14a2544d8c9b3638c"
+  "built_at_commit": "b29b43f571bf36e4db619733450a8afb2bd4bb97"
 }

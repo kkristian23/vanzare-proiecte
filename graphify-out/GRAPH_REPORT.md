@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 172 nodes · 174 edges · 40 communities (12 shown, 28 thin omitted)
+- 171 nodes · 173 edges · 40 communities (12 shown, 28 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `085bd883`
+- Built from commit: `b29b43f5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,10 +60,10 @@
 3. `include` - 7 edges
 4. `vinext-starter` - 7 edges
 5. `localType()` - 5 edges
-6. `localDescription()` - 4 edges
-7. `localizedDetail()` - 4 edges
-8. `Home()` - 4 edges
-9. `getDb()` - 4 edges
+6. `Home()` - 4 edges
+7. `getDb()` - 4 edges
+8. `localDescription()` - 4 edges
+9. `localizedDetail()` - 4 edges
 10. `lib` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -71,7 +71,7 @@
   examples/d1/app/api/notes/route.ts → db/index.ts
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
-- `Home()` --calls--> `localType()`  [EXTRACTED]
+- `ProjectVisual()` --calls--> `localDescription()`  [EXTRACTED]
   app/page.tsx → app/i18n.ts
 - `ProjectVisual()` --calls--> `localType()`  [EXTRACTED]
   app/page.tsx → app/i18n.ts
@@ -124,7 +124,7 @@ Cohesion: 0.25
 Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Commands, vinext-starter, Workspace Auth Headers
 
 ## Knowledge Gaps
-- **89 isolated node(s):** `metadata`, `contactCode`, `typeMap`, `descriptions`, `geist` (+84 more)
+- **89 isolated node(s):** `projects`, `filters`, `categorySlugs`, `projectSlugs`, `projectDetails` (+84 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -132,10 +132,10 @@ Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Comman
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `devDependencies` to `package.json`, `eslint`, `globals`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, `@next/eslint-plugin-next`, `react-server-dom-webpack`, `tailwindcss`, `@tailwindcss/postcss`, `@types/react`, `@types/react-dom`, `typescript`, `typescript-eslint`, `vinext`, `@eslint/js`, `@vitejs/plugin-react`, `@vitejs/plugin-rsc`, `wrangler`, `drizzle-kit`, `@openai/sites-vite-plugin`, `@types/node`?**
-  _High betweenness centrality (0.155) - this node is a cross-community bridge._
+  _High betweenness centrality (0.157) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
-- **What connects `metadata`, `contactCode`, `typeMap` to the rest of the system?**
+  _High betweenness centrality (0.055) - this node is a cross-community bridge._
+- **What connects `projects`, `filters`, `categorySlugs` to the rest of the system?**
   _89 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
