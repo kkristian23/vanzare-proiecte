@@ -2519,6 +2519,16 @@ export default function Home() {
             <em>{c.heroB}</em>
           </motion.span>
         </motion.h1>
+        <motion.a
+          href="#proiecte"
+          className="circle-arrow hero-scroll-cue"
+          aria-label={c.viewProjects}
+          initial={{ opacity: 0, scale: 0.72, rotate: 45 }}
+          animate={{ opacity: 1, scale: 1, rotate: 45 }}
+          transition={{ duration: 0.65, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <ArrowRight />
+        </motion.a>
         <div className="marquee">
           <div>
             {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]}{" "}

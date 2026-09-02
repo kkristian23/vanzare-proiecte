@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T17:30:51.981510+00:00",
+  "generated_at": "2026-09-02T17:48:48.891747+00:00",
   "nodes": {
     "next_config_nextconfig": {
       "code_fingerprint": "8dd2ca8ad2acef58cb810cb038882d14ba0ee76e356aa434dfe0ff7a18b2bc54",
@@ -12,7 +12,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98034049,
+      "score": 0.980058208,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
@@ -28,7 +28,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98034049,
+      "score": 0.980058208,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
@@ -44,7 +44,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98034049,
+      "score": 0.980058208,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1

@@ -11,6 +11,10 @@
   position: relative;
 }
 
+#top {
+  padding-top: 46px;
+}
+
 .hero > .eyebrow,
 .hero > .hero-intro-copy,
 .hero > .marquee {
@@ -21,6 +25,19 @@
 .hero > h1 {
   position: relative;
   z-index: 3;
+}
+
+.hero > .marquee {
+  margin-top: clamp(160px, 11vw, 205px);
+}
+
+.hero-scroll-cue {
+  position: absolute;
+  right: 0;
+  bottom: 142px;
+  z-index: 7;
+  background: rgb(242 240 233 / 68%);
+  backdrop-filter: blur(10px);
 }
 
 .hero-intro-copy {
@@ -134,6 +151,8 @@
 @keyframes hero-particle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.8) translateY(-8px)}}
 
 @media (max-width: 800px) {
+  #top { padding-top: 35px; }
+
   .hero-intro-copy {
     position: relative !important;
     top: auto;
@@ -142,6 +161,9 @@
     margin: 22px 0 4px;
     font-size: 13px;
   }
+
+  .hero > .marquee { margin-top: 76px; }
+  .hero-scroll-cue { right: 0; bottom: 92px; }
 
   .hero-code-backdrop { top:108px;right:-125px;width:500px;height:330px;opacity:.64 }
   .hero-code-window { left:10%;bottom:5%;width:58%;height:54% }
@@ -153,6 +175,40 @@
   .hero-title-accent::after { animation: none; transform: rotate(-1.2deg) scaleX(1); }
   .hero-code-backdrop * ,
   .hero-code-backdrop:before { animation: none !important; }
+}
+
+/* Exact hero ticker placement: keep it below the entire animated scene. */
+#top > div.marquee {
+  margin-top: clamp(200px, 13.6vw, 260px);
+  padding-block: 22px;
+}
+
+#top > div.marquee > div {
+  gap: 44px;
+  font-size: clamp(15px, .95vw, 18px);
+  letter-spacing: .035em;
+}
+
+#top > div.marquee svg {
+  width: 21px;
+  height: 21px;
+}
+
+@media (max-width: 800px) {
+  #top > div.marquee {
+    margin-top: 84px;
+    padding-block: 17px;
+  }
+
+  #top > div.marquee > div {
+    gap: 30px;
+    font-size: 13px;
+  }
+
+  #top > div.marquee svg {
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .why h2 {

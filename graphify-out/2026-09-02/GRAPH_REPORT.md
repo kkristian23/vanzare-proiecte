@@ -1,7 +1,7 @@
 # Graph Report - vanzare proiecte  (2026-09-02)
 
 ## Corpus Check
-- 31 files · ~200,228 words
+- 31 files · ~200,371 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f1acf0cd`
+- Built from commit: `3acfdc26`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,8 +45,8 @@
 6. `localDescription()` - 4 edges
 7. `localizedDetail()` - 4 edges
 8. `Home()` - 4 edges
-9. `Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?` - 4 edges
-10. `getDb()` - 4 edges
+9. `getDb()` - 4 edges
+10. `lib` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `GET()` --calls--> `getDb()`  [EXTRACTED]
@@ -118,7 +118,7 @@ Cohesion: 0.14
 Nodes (17): buildProject(), buildRequested, exists(), findOutput(), ignoredNames, isInside(), missing, prefixDocument() (+9 more)
 
 ## Knowledge Gaps
-- **117 isolated node(s):** `typeMap`, `romanianTypeMap`, `descriptions`, `geist`, `mono` (+112 more)
+- **117 isolated node(s):** `typeMap`, `romanianTypeMap`, `descriptions`, `projects`, `filters` (+112 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
