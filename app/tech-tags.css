@@ -129,6 +129,11 @@
 }
 
 .demo-link-disabled {
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
   opacity: .42;
   cursor: not-allowed;
   user-select: none;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <title data-i18n="pageTitleApp">Momentul nostru 💘</title>
+    
+    <!-- Meta taguri pentru Telegram și social media -->
+    <meta property="og:title" content="✨ Descoperă ceva special pentru mine">
+    <meta property="og:description" content="O aplicație specială creată cu dragoste. Alege o dată și descopera surpriza!">
+    <meta property="og:image" content="autumn-save-the-date-card-1200x630.jpg">
+    <meta property="og:url" content="app">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="✨ Descoperă ceva special">
+    <meta name="twitter:description" content="O aplicație specială creată cu dragoste!">
+    <meta name="twitter:image" content="autumn-save-the-date-card-1200x630.jpg">
+    <link rel="icon" type="image/jpeg" href="autumn-save-the-date-card-1200x630.jpg">
+
+  <link rel="stylesheet" href="style.css?v=20260824-friend-presence">
+    <script src="shared/interaction-guards.js?v=20260811-enable-clipboard"></script>
+    <script src="shared/global-loader.js?v=20260812-section-loaders"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+</head>
+
+<body data-title-key="pageTitleApp">
+    <!-- React mounts the event creation page here. -->
+    <!-- Legacy markup below is kept out of the document to prevent duplicate UI. -->
+    <!--
+    <div class="stars" id="stars"></div>
+
+    <div class="card app-card app-card--app" id="app">
+        <div class="card-header">
+            <div class="page-header-actions">
+                <button class="page-back" onclick="goBack()" aria-label="Înapoi">←</button>
+                <button class="page-home" onclick="goHome()" aria-label="Home">⌂</button>
+            </div>
+        </div>
+
+        <div class="monthNav">
+            <button onclick="prevMonth()">⬅</button>
+            <div id="monthLabel"></div>
+            <button onclick="nextMonth()">➡</button>
+        </div>
+
+        <div id="calendar" class="calendar"></div>
+
+        <div id="timeWheel" class="wheel"></div>
+
+        <button class="main" onclick="confirmReservation()" data-i18n="confirmReservation"></button>
+
+        <div id="result"></div>
+    </div>
+    -->
+
+    <script src="env-config.js?v=20260820-dynamic-url"></script>
+    <script src="firebase-config.js"></script>
+  <script src="user-manager.js?v=20260824-friend-presence"></script>
+  <script type="module" src="shared/ui/social.js?v=20260824-friend-presence"></script>
+    <script src="ui/onboarding-view.js"></script>
+    <script src="services/onboarding-flow.js?v=20260824-auth-nickname-sequence"></script>
+    <script src="lang.js?v=20260812-language-settings"></script>
+    <script type="module" src="shared/ui/event-create.js?v=20260824-clean-routes"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b0f">
+  <meta name="description" content="Studio local pentru generarea și administrarea website-urilor cu Codex CLI.">
+  <title>Forge — AI Website Factory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/forge/styles.css">
+  <link rel="stylesheet" href="/forge/clarity.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/forge/" aria-label="Forge AI Website Factory">
+        <span class="brand-mark">F</span>
+        <span><b>FORGE</b><small>AI WEBSITE FACTORY</small></span>
+      </a>
+
+      <nav aria-label="Navigare principală">
+        <a href="#create" class="nav-link active"><span>01</span> Creează</a>
+        <a href="#workspace" class="nav-link"><span>02</span> Proiecte</a>
+        <a href="#activity" class="nav-link"><span>03</span> Activitate</a>
+      </nav>
+
+      <div class="system-card">
+        <div class="system-title"><i></i> Sistem activ</div>
+        <p>Codex CLI conectat</p>
+        <div class="system-row"><span>Execuții paralele</span><strong>2</strong></div>
+        <div class="system-row"><span>Mod</span><strong>Local</strong></div>
+      </div>
+
+      <p class="sidebar-foot">Proiectele sunt independente și salvate direct pe discul D:\</p>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <span class="breadcrumb">STUDIO / DASHBOARD</span>
+          <span class="live-status"><i></i> ONLINE</span>
+        </div>
+        <button class="icon-button" id="refresh" type="button" title="Actualizează datele" aria-label="Actualizează datele">↻</button>
+      </header>
+
+      <section class="hero" id="create">
+        <div class="hero-copy">
+          <div class="kicker"><span>NEW PROJECT</span><i></i> BUILD WITH CODEX</div>
+          <h1>Dintr-o idee,<br><em>un produs digital.</em></h1>
+          <p>Descrie website-ul. Forge planifică arhitectura, scrie codul și pregătește proiectul pentru lansare.</p>
+          <div class="feature-strip">
+            <span><b>01</b> Cod independent</span>
+            <span><b>02</b> Git inclus</span>
+            <span><b>03</b> QA automat</span>
+          </div>
+        </div>
+
+        <form id="generate" class="composer">
+          <div class="composer-head">
+            <div><span class="pulse"></span><strong>PROJECT BRIEF</strong></div>
+            <small>Descrie cât mai exact</small>
+          </div>
+          <label for="brief">Ce vrei să construim?</label>
+          <textarea id="brief" required placeholder="Exemplu: O platformă premium pentru închirierea echipamentelor audio, cu catalog, rezervări și administrare..."></textarea>
+          <div class="composer-foot">
+            <span>Poți porni mai multe proiecte simultan</span>
+            <button type="submit">Generează website <b>↗</b></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="workspace section" id="workspace">
+        <div class="section-head">
+          <div>
+            <span class="section-index">02 / WORKSPACE</span>
+            <h2>Proiectele tale</h2>
+          </div>
+          <p>Administrează, îmbunătățește și deschide fiecare website.</p>
+        </div>
+        <div id="projects" class="projects"><div class="loading-card">Se încarcă proiectele…</div></div>
+      </section>
+
+      <section class="activity section" id="activity">
+        <div class="section-head">
+          <div>
+            <span class="section-index">03 / ACTIVITY</span>
+            <h2>Progres și loguri</h2>
+          </div>
+          <p>Urmărește în timp real procesele active și istoricul lor.</p>
+        </div>
+        <div id="jobs" class="jobs"><div class="empty-state">Nicio operațiune pornită.</div></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/forge/app.js" defer></script>
+</body>
+</html>

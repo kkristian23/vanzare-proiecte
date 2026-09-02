@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[45254,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js","/neobarberclub/_next/static/chunks/3lpzhivm5iv-b.js","/neobarberclub/_next/static/chunks/2e7z-9nip1vw_.js"],"default"]
+3:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"ViewportBoundary"]
+9:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"MetadataBoundary"]
+a:I[27201,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"IconMark"]
+c:I[13865,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"LanguageProvider"]
+d:I[43611,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
+e:I[81470,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"VisualEditorBridge"]
+f:I[57872,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"VisualContentRuntime"]
+10:I[39756,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
+11:I[37457,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
+12:I[22016,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js"],""]
+13:I[5014,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js"],"default"]
+:HL["/neobarberclub/_next/static/chunks/3cgm90xuxn2ai.css","style"]
+7:X
+0:{"buildId":"--qBQfC-8nWfjjddMwg4b","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"hero":{"title":"Frumusețe fără limite.","copy":"Beauty și grooming contemporan pentru femei și bărbați, create în jurul identității tale.","image":"/neobarberclub/images/neo-beauty-hero.png"}}],[["$","script","script-0",{"src":"/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js","async":true}],["$","script","script-1",{"src":"/neobarberclub/_next/static/chunks/3lpzhivm5iv-b.js","async":true}],["$","script","script-2",{"src":"/neobarberclub/_next/static/chunks/2e7z-9nip1vw_.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"NEO BarBe Club | Beauty & grooming premium în Strășeni"}],["$","meta","1",{"name":"description","content":"Coafură, culoare, tunsoare, barbă și ritualuri premium pentru femei și bărbați."}],["$","link","2",{"rel":"icon","href":"/neobarberclub/images/neo-barbe-logo.png"}],["$","link","3",{"rel":"apple-touch-icon","href":"/neobarberclub/images/neo-barbe-logo.png"}],["$","$La","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/neobarberclub/_next/static/chunks/3cgm90xuxn2ai.css","precedence":"next"}],["$","script","script-0",{"src":"/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","async":true}]],["$","html",null,{"lang":"ro","className":"cormorant_garamond_85a027cf-module__-tmqmG__variable manrope_49fe7fb2-module__fB9vJW__variable","children":["$","body",null,{"children":["$","$Lc",null,{"initialLocale":"ro","children":[["$","$Ld",null,{}],["$","$Le",null,{}],["$","$Lf",null,{}],["$","$L10",null,{"parallelRouterKey":"children","template":["$","$L11",null,{}],"notFound":[["$","main",null,{"className":"not-found-page section-shell","children":[["$","p",null,{"className":"eyebrow","children":[["$","span",null,{}],"Eroare 404"]}],["$","h1",null,{"children":"Pagina nu există."}],["$","$L12",null,{"className":"button-gold","href":"/ro","children":[["$","$L13",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left","size":18}],"Înapoi la pagina principală"]}]]}],[]]}]]}]}]}]]}],"isPartial":"$@14","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@15","rootVaryParams":null,"needsRuntimeRequest":"$@16"}
+5:null
+7:300
+16:true
+7:C
+15:0
+b:"$undefined"
+14:"$undefined"
+6:"$undefined"
