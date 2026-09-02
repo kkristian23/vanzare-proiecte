@@ -74,3 +74,8 @@ html,
 body {
   touch-action: pan-x pan-y;
 }
+
+/* Hide the Netlify promotional badge injected in production. */
+#nl-badge {
+  display: none !important;
+}

@@ -1,7 +1,7 @@
 # Graph Report - vanzare proiecte  (2026-09-02)
 
 ## Corpus Check
-- 31 files · ~200,371 words
+- 31 files · ~200,407 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3acfdc26`
+- Built from commit: `1f422124`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,10 +42,10 @@
 3. `include` - 7 edges
 4. `vinext-starter` - 7 edges
 5. `localType()` - 5 edges
-6. `localDescription()` - 4 edges
-7. `localizedDetail()` - 4 edges
-8. `Home()` - 4 edges
-9. `getDb()` - 4 edges
+6. `Home()` - 4 edges
+7. `getDb()` - 4 edges
+8. `localDescription()` - 4 edges
+9. `localizedDetail()` - 4 edges
 10. `lib` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -53,7 +53,7 @@
   examples/d1/app/api/notes/route.ts → db/index.ts
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
-- `Home()` --calls--> `localType()`  [EXTRACTED]
+- `ProjectVisual()` --calls--> `localDescription()`  [EXTRACTED]
   app/page.tsx → app/i18n.ts
 - `ProjectVisual()` --calls--> `localType()`  [EXTRACTED]
   app/page.tsx → app/i18n.ts
@@ -118,7 +118,7 @@ Cohesion: 0.14
 Nodes (17): buildProject(), buildRequested, exists(), findOutput(), ignoredNames, isInside(), missing, prefixDocument() (+9 more)
 
 ## Knowledge Gaps
-- **117 isolated node(s):** `typeMap`, `romanianTypeMap`, `descriptions`, `projects`, `filters` (+112 more)
+- **117 isolated node(s):** `projects`, `filters`, `hiddenCategories`, `unavailableProjectIds`, `filterCopy` (+112 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -129,7 +129,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.105) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `scripts`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
-- **What connects `typeMap`, `romanianTypeMap`, `descriptions` to the rest of the system?**
+- **What connects `projects`, `filters`, `hiddenCategories` to the rest of the system?**
   _117 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
