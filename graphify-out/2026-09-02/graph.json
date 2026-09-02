@@ -232,7 +232,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
-      "source_location": "L2062"
+      "source_location": "L2063"
     },
     {
       "id": "app_page_projectvisual",
@@ -244,7 +244,7 @@
       "file_type": "code",
       "norm_label": "projectvisual()",
       "source_file": "app/page.tsx",
-      "source_location": "L1501"
+      "source_location": "L1502"
     },
     {
       "id": "worker_index_executioncontext_passthroughonexception",
@@ -1406,7 +1406,7 @@
       "file_type": "code",
       "norm_label": "missing",
       "source_file": "scripts/sync-showcase.mjs",
-      "source_location": "L142"
+      "source_location": "L147"
     },
     {
       "id": "scripts_sync_showcase_publicroot",
@@ -2165,7 +2165,7 @@
       "file_type": "code",
       "norm_label": "categoryslugs",
       "source_file": "app/page.tsx",
-      "source_location": "L470"
+      "source_location": "L471"
     },
     {
       "id": "app_page_cleanfiltercopy",
@@ -2176,7 +2176,7 @@
       "file_type": "code",
       "norm_label": "cleanfiltercopy",
       "source_file": "app/page.tsx",
-      "source_location": "L441"
+      "source_location": "L442"
     },
     {
       "id": "app_page_filtercopy",
@@ -2187,7 +2187,7 @@
       "file_type": "code",
       "norm_label": "filtercopy",
       "source_file": "app/page.tsx",
-      "source_location": "L409"
+      "source_location": "L410"
     },
     {
       "id": "app_page_filters",
@@ -2220,7 +2220,7 @@
       "file_type": "code",
       "norm_label": "projectdetails",
       "source_file": "app/page.tsx",
-      "source_location": "L525"
+      "source_location": "L526"
     },
     {
       "id": "app_page_projectpaths",
@@ -2231,7 +2231,7 @@
       "file_type": "code",
       "norm_label": "projectpaths",
       "source_file": "app/page.tsx",
-      "source_location": "L503"
+      "source_location": "L504"
     },
     {
       "id": "app_page_projects",
@@ -2253,7 +2253,18 @@
       "file_type": "code",
       "norm_label": "projectslugs",
       "source_file": "app/page.tsx",
-      "source_location": "L481"
+      "source_location": "L482"
+    },
+    {
+      "id": "app_page_unavailableprojectids",
+      "label": "unavailableProjectIds",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "app/page.tsx",
+      "file_type": "code",
+      "norm_label": "unavailableprojectids",
+      "source_file": "app/page.tsx",
+      "source_location": "L409"
     },
     {
       "id": "scripts_install_showcase_schedule",
@@ -2445,7 +2456,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L2093",
+      "source_location": "L2094",
       "weight": 1.0
     },
     {
@@ -2457,7 +2468,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L2119",
+      "source_location": "L2120",
       "weight": 1.0
     },
     {
@@ -2469,7 +2480,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L2141",
+      "source_location": "L2142",
       "weight": 1.0
     },
     {
@@ -2481,7 +2492,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L1989",
+      "source_location": "L1990",
       "weight": 1.0
     },
     {
@@ -2493,7 +2504,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L1993",
+      "source_location": "L1994",
       "weight": 1.0
     },
     {
@@ -3515,7 +3526,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L1501",
+      "source_location": "L1502",
       "weight": 1.0
     },
     {
@@ -3526,7 +3537,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L2062",
+      "source_location": "L2063",
       "weight": 1.0
     },
     {
@@ -3564,7 +3575,7 @@
     },
     {
       "source": "app_page",
-      "target": "app_page_filtercopy",
+      "target": "app_page_unavailableprojectids",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3575,13 +3586,24 @@
     },
     {
       "source": "app_page",
+      "target": "app_page_filtercopy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/page.tsx",
+      "source_location": "L410",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
       "target": "app_page_cleanfiltercopy",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L441",
+      "source_location": "L442",
       "weight": 1.0
     },
     {
@@ -3592,7 +3614,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L470",
+      "source_location": "L471",
       "weight": 1.0
     },
     {
@@ -3603,7 +3625,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L481",
+      "source_location": "L482",
       "weight": 1.0
     },
     {
@@ -3614,7 +3636,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L503",
+      "source_location": "L504",
       "weight": 1.0
     },
     {
@@ -3625,7 +3647,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L525",
+      "source_location": "L526",
       "weight": 1.0
     },
     {
@@ -4483,7 +4505,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/sync-showcase.mjs",
-      "source_location": "L142",
+      "source_location": "L147",
       "weight": 1.0
     },
     {

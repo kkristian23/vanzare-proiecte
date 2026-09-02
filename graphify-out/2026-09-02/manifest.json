@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1788369549.5502238,
-    "seen": 1788369573.4643342,
-    "ast_hash": "9af61996ece6310a1e8f31fac989254c",
+    "mtime": 1788369892.326264,
+    "seen": 1788369906.4971101,
+    "ast_hash": "0ccdc09dbc1e33335c72c399544ec625",
     "semantic_hash": ""
   },
   "db/index.ts": {
@@ -180,9 +180,9 @@
     "semantic_hash": ""
   },
   "scripts/sync-showcase.mjs": {
-    "mtime": 1788357022.3336186,
-    "seen": 1788357100.4223905,
-    "ast_hash": "c9233cf8617e61b098c6ac9e269f1e58",
+    "mtime": 1788369717.3313756,
+    "seen": 1788369748.9218972,
+    "ast_hash": "8532dda8b7faf6ffaeb89b4c79f478e2",
     "semantic_hash": ""
   },
   "showcase-projects/README.md": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T09:06:20.530222+00:00",
+  "generated_at": "2026-09-02T17:30:51.981510+00:00",
   "nodes": {
     "next_config_nextconfig": {
       "code_fingerprint": "8dd2ca8ad2acef58cb810cb038882d14ba0ee76e356aa434dfe0ff7a18b2bc54",
@@ -12,13 +12,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98830868,
+      "score": 0.98034049,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
     },
     "scripts_sync_showcase": {
-      "code_fingerprint": "53af21e53a51dda547b98dbf8d659ee2a34f4ea5763822bff7cd956097b37be3",
+      "code_fingerprint": "4bda57eac52f607aa57fefb32ff04d511243ff6e3aa9b9ab5991688ebdadc979",
       "label": "sync-showcase.mjs",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -28,13 +28,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98830868,
+      "score": 0.98034049,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
     },
     "scripts_sync_showcase_publicroot": {
-      "code_fingerprint": "53af21e53a51dda547b98dbf8d659ee2a34f4ea5763822bff7cd956097b37be3",
+      "code_fingerprint": "4bda57eac52f607aa57fefb32ff04d511243ff6e3aa9b9ab5991688ebdadc979",
       "label": "publicRoot",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -44,7 +44,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.98830868,
+      "score": 0.98034049,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
