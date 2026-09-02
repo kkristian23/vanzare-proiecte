@@ -1,16 +1,16 @@
 # Graph Report - vanzare proiecte  (2026-09-02)
 
 ## Corpus Check
-- 31 files · ~200,228 words
+- 31 files · ~200,333 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 215 nodes · 220 edges · 25 communities (18 shown, 7 thin omitted)
+- 216 nodes · 221 edges · 25 communities (18 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f1acf0cd`
+- Built from commit: `737b40d5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,8 +45,8 @@
 6. `localDescription()` - 4 edges
 7. `localizedDetail()` - 4 edges
 8. `Home()` - 4 edges
-9. `Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?` - 4 edges
-10. `getDb()` - 4 edges
+9. `getDb()` - 4 edges
+10. `lib` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `GET()` --calls--> `getDb()`  [EXTRACTED]
@@ -118,7 +118,7 @@ Cohesion: 0.14
 Nodes (17): buildProject(), buildRequested, exists(), findOutput(), ignoredNames, isInside(), missing, prefixDocument() (+9 more)
 
 ## Knowledge Gaps
-- **117 isolated node(s):** `typeMap`, `romanianTypeMap`, `descriptions`, `geist`, `mono` (+112 more)
+- **117 isolated node(s):** `metadata`, `typeMap`, `romanianTypeMap`, `descriptions`, `geist` (+112 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -126,10 +126,10 @@ Nodes (17): buildProject(), buildRequested, exists(), findOutput(), ignoredNames
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `devDependencies` to `scripts`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `scripts`?**
   _High betweenness centrality (0.036) - this node is a cross-community bridge._
-- **What connects `typeMap`, `romanianTypeMap`, `descriptions` to the rest of the system?**
+- **What connects `metadata`, `typeMap`, `romanianTypeMap` to the rest of the system?**
   _117 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

@@ -8,7 +8,7 @@ export const contactCopy = {
     hero: ["HAI SĂ", "CONSTRUIM", "CEVA", "RAR."], compiled: "compilat cu succes",
     connectionDetails: "/ DATE DE CONTACT", phone: "TELEFON", email: "ADRESA_PRINCIPALĂ", location: "LOCAȚIE",
     responseTime: "TIMP_DE_RĂSPUNS", response: "maximum 12 ore", available: "DISPONIBILI",
-    availability: "Acceptăm proiecte noi pentru", newRequest: "/ CERERE_PROIECT_NOU", brief: ["Trimite-ne", "brief-ul."],
+    availability: "Acceptăm proiecte noi pentru", newRequest: "/ CERERE_PROIECT_NOU", brief: ["Trimite-ne", "mesaj"],
     accepted: "CERERE ACCEPTATĂ", emailReady: "Clientul tău de email este pregătit.",
     emailFallback: "Dacă nu s-a deschis automat, scrie-ne direct la monodev@gmail.com.", another: "Creează altă cerere",
     namePlaceholder: "Cum te numești?", emailPlaceholder: "tu@companie.md", selectType: "Selectează tipul",
@@ -53,7 +53,7 @@ export const contactCopy = {
 export const copy = {
   ro: {
     nav: ["Proiecte", "Proces", "Contact"], buyProject: "Cumpără un proiect", openMenu: "Deschide meniul", language: "Limbă",
-    eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI.", heroB: "DEJA CONSTRUITE.",
+    eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE.",
     heroText: "Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.", viewProjects: "Vezi proiectele",
     marquee: ["DESIGN CARE VINDE", "COD CURAT", "LIVRARE RAPIDĂ"], catalog: "/ CATALOG 2026", chooseA: "ALEGE URMĂTORUL", chooseB: "TĂU", chooseC: "PROIECT.",
     projectsAvailable: ["PROIECTE", "DISPONIBILE"], all: "Toate", viewDetails: "Vezi detalii", from: "DE LA",

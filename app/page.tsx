@@ -1861,7 +1861,7 @@ function ProjectVisual({
           </div>
         </>
       )}
-      {(project.id === 26 || project.id === 24 || project.id === 14) && (
+      {(project.id === 26 || project.id === 24) && (
         <div className="coming-soon">
           <span>{v.coming}</span>
         </div>
@@ -2449,33 +2449,76 @@ export default function Home() {
         >
           <span /> {c.eyebrow}
         </motion.div>
-        <div className="hero-jumper" aria-hidden="true">
-          <img src="/hero-jumper.png" alt="" draggable={false} />
+        <motion.p
+          className="hero-intro-copy"
+          initial={{ opacity: 0, x: 28 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+        >
+          {c.heroText}
+        </motion.p>
+        <div className="hero-code-backdrop" aria-hidden="true">
+          <div className="hero-code-glow" />
+          <div className="hero-code-matrix">
+            <span>101101</span><span>011010</span><span>110001</span><span>001101</span>
+            <span>010110</span><span>100101</span><span>111000</span><span>001011</span>
+          </div>
+          <div className="hero-quantum-core">
+            <div className="quantum-rings"><i /><i /><i /></div>
+            <div className="quantum-center"><span>AI</span><b>ONLINE</b></div>
+            <em>01</em><em>10</em><em>11</em>
+          </div>
+          <div className="hero-code-ribbon ribbon-one">
+            <span>DESIGN</span><b>→</b><span>BUILD</span><b>→</b><span>LAUNCH</span>
+          </div>
+          <div className="hero-code-ribbon ribbon-two">
+            <span>REACT</span><b>+</b><span>AI</span><b>+</b><span>IMAGINATION</span>
+          </div>
+          <div className="hero-code-window">
+            <div className="hero-code-bar">
+              <span><i /><i /><i /></span>
+              <b>mono-dev / launch.ts</b>
+              <em>⌁</em>
+            </div>
+            <div className="hero-code-lines">
+              <span><b>01</b><code><i>const</i> idea = <em>&quot;viitor&quot;</em>;</code></span>
+              <span><b>02</b><code><i>await</i> build(idea);</code></span>
+              <span><b>03</b><code>design.<strong>push</strong>(<em>&quot;wow&quot;</em>);</code></span>
+              <span><b>04</b><code><i>if</i> (ready) launch();</code></span>
+              <span><b>05</b><code>status = <em>&quot;ONLINE&quot;</em>;</code></span>
+            </div>
+            <div className="hero-code-status">
+              <span><i /> LIVE</span>
+              <b>BUILD 100%</b>
+            </div>
+          </div>
+          <div className="hero-code-orbit"><span>{`{ }`}</span><i /><i /><i /></div>
+          <div className="hero-code-particles">
+            {Array.from({ length: 14 }, (_, index) => <i key={index} />)}
+          </div>
         </div>
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.08 }}
-        >
-          {c.heroA}
-          <br />
-          <em>{c.heroB}</em>
-        </motion.h1>
-        <motion.div
-          className="hero-bottom"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
-          <p>{c.heroText}</p>
-          <a
-            href="#proiecte"
-            className="circle-arrow"
-            aria-label={c.viewProjects}
+        <motion.h1 className="hero-title" initial="hidden" animate="visible">
+          <motion.span
+            className="hero-title-line"
+            variants={{
+              hidden: { opacity: 0, y: 70, rotateX: -18, filter: "blur(12px)" },
+              visible: { opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" },
+            }}
+            transition={{ duration: 0.9, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
           >
-            <ArrowRight />
-          </a>
-        </motion.div>
+            {c.heroA}
+          </motion.span>
+          <motion.span
+            className="hero-title-line hero-title-accent"
+            variants={{
+              hidden: { opacity: 0, y: 82, rotateX: -20, filter: "blur(14px)" },
+              visible: { opacity: 1, y: 0, rotateX: 0, filter: "blur(0px)" },
+            }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <em>{c.heroB}</em>
+          </motion.span>
+        </motion.h1>
         <div className="marquee">
           <div>
             {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]}{" "}
