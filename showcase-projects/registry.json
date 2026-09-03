@@ -1,4 +1,10 @@
 [
+  { "id": 32, "slug": "flow-crm", "source": "D:\\Flow CRM", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 31, "slug": "academia", "source": "D:\\Academia", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 30, "slug": "staynest", "source": "D:\\StayNest", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 29, "slug": "tableo", "source": "D:\\Tableo", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 28, "slug": "medora-clinic", "source": "D:\\Medora Clinic", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 27, "slug": "imobilia-one", "source": "D:\\Imobilia One", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
   { "id": 24, "slug": "forge", "source": "D:\\auto create sites", "outputs": ["src/dashboard"] },
   { "id": 23, "slug": "studio-velora", "source": "D:\\Studio Velora", "outputs": ["out", "dist/client"] },
   { "id": 22, "slug": "studio-forma", "source": "D:\\Studio Forma", "outputs": ["dist"] },

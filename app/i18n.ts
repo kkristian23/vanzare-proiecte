@@ -93,6 +93,12 @@ export const copy = {
 } as const;
 
 const typeMap: Record<string, [string, string]> = {
+  "Real Estate": ["Недвижимость", "Real Estate"],
+  "Clinics & Medical": ["Клиники и медицина", "Clinics & Medical"],
+  "Restaurants & Food": ["Рестораны и еда", "Restaurants & Food"],
+  "Hotels & Travel": ["Отели и путешествия", "Hotels & Travel"],
+  "Online Education": ["Онлайн-образование", "Online Education"],
+  "CRM & Sales": ["CRM и продажи", "CRM & Sales"],
   "AI Website Factory": ["Фабрика сайтов с ИИ", "AI Website Factory"],
   "Interior Design": ["Дизайн интерьера", "Interior Design"],
   "Mobilă": ["Мебель", "Furniture"],
@@ -104,6 +110,12 @@ const typeMap: Record<string, [string, string]> = {
 };
 
 const romanianTypeMap: Record<string, string> = {
+  "Real Estate": "Imobiliare",
+  "Clinics & Medical": "Clinici și servicii medicale",
+  "Restaurants & Food": "Restaurante și gastronomie",
+  "Hotels & Travel": "Hoteluri și turism",
+  "Online Education": "Educație online",
+  "CRM & Sales": "CRM și vânzări",
   "AI Website Factory": "Fabrică de site-uri cu AI",
   "Interior Design": "Design interior",
   "Furniture E-commerce": "Magazin online de mobilă",

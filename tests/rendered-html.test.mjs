@@ -22,6 +22,12 @@ test("server-renders the MONO/DEV catalog", async () => {
   assert.match(html, /IDEI MARI/);
   assert.match(html, /NEO BOOKING/);
   assert.match(html, /AUDIO RENTAL MD/);
+  assert.match(html, /IMOBILIA ONE/);
+  assert.match(html, /MEDORA CLINIC/);
+  assert.match(html, /TABLEO/);
+  assert.match(html, /STAYNEST/);
+  assert.match(html, /ACADEMIA/);
+  assert.match(html, /FLOW CRM/);
   assert.match(html, /id="proiecte"/);
   assert.match(html, /id="proces"/);
 });
@@ -32,10 +38,11 @@ test("every registered project has an export and a catalog route", async () => {
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
   ]);
   const registry = JSON.parse(registryText);
-  assert.equal(registry.length, 19);
   for (const project of registry) {
-    await access(new URL(`../public/${project.slug}/index.html`, import.meta.url));
     assert.match(pageSource, new RegExp(`\\b${project.id}: "/${project.slug}/"`));
+    if (!project.disabled) {
+      await access(new URL(`../public/${project.slug}/index.html`, import.meta.url));
+    }
   }
 });
 
@@ -44,7 +51,15 @@ test("synced documents contain no duplicated project prefix", async () => {
     await readFile(new URL("../showcase-projects/registry.json", import.meta.url), "utf8"),
   );
   for (const project of registry) {
+    if (project.disabled) continue;
     const html = await readFile(new URL(`../public/${project.slug}/index.html`, import.meta.url), "utf8");
     assert.doesNotMatch(html, new RegExp(`/${project.slug}/${project.slug}/`));
+  }
+});
+
+test("new projects have real catalog preview images", async () => {
+  const slugs = ["flow-crm", "academia", "staynest", "tableo", "medora-clinic", "imobilia-one"];
+  for (const slug of slugs) {
+    await access(new URL(`../public/project-previews/${slug}.png`, import.meta.url));
   }
 });

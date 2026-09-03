@@ -184,9 +184,25 @@
 }
 
 #top > div.marquee > div {
-  gap: 44px;
+  --marquee-gap: 44px;
+  gap: 0;
   font-size: clamp(15px, .95vw, 18px);
   letter-spacing: .035em;
+  animation: hero-marquee-loop 18s linear infinite;
+  will-change: transform;
+}
+
+#top .marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: var(--marquee-gap);
+  padding-right: var(--marquee-gap);
+  white-space: nowrap;
+}
+
+@keyframes hero-marquee-loop {
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 #top > div.marquee svg {
@@ -201,7 +217,7 @@
   }
 
   #top > div.marquee > div {
-    gap: 30px;
+    --marquee-gap: 30px;
     font-size: 13px;
   }
 
@@ -217,6 +233,10 @@
   font-size: clamp(46px, 6vw, 78px);
   line-height: 0.88;
   letter-spacing: -0.065em;
+}
+
+.projects .section-head h2 {
+  line-height: 1.02;
 }
 
 .why-main p {
@@ -727,5 +747,113 @@
 
   .metrics span {
     font-size: 9px;
+  }
+}
+
+/* Mobile: preserve the expressive direction without crowding the content. */
+@media (max-width: 800px) {
+  #top {
+    padding-top: 28px;
+  }
+
+  .hero-intro-copy {
+    margin-top: 16px;
+    padding: 14px 16px 14px 42px;
+    border-radius: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .hero-title {
+    margin-block: 34px 0;
+    font-size: clamp(51px, 14.2vw, 64px);
+    line-height: 0.88;
+    letter-spacing: -0.065em;
+  }
+
+  .hero-code-backdrop {
+    top: 205px;
+    right: -92px;
+    width: 410px;
+    height: 275px;
+    opacity: 0.42;
+  }
+
+  .hero-code-window {
+    left: 18%;
+    bottom: 7%;
+    width: 62%;
+    height: 50%;
+  }
+
+  .hero-code-matrix,
+  .hero-code-orbit,
+  .hero-code-ribbon,
+  .hero-code-particles,
+  .hero-quantum-core > em {
+    display: none;
+  }
+
+  .hero-quantum-core {
+    top: 31%;
+    right: 6%;
+    width: 132px;
+    opacity: 0.82;
+  }
+
+  .hero-scroll-cue {
+    right: 8px;
+    bottom: 74px;
+    width: 54px;
+    height: 54px;
+  }
+
+  #top > div.marquee {
+    margin-top: 58px;
+    padding-block: 14px;
+  }
+
+  #top > div.marquee > div {
+    --marquee-gap: 24px;
+    font-size: 11px;
+  }
+
+  #top > div.marquee svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .projects {
+    padding-top: 56px;
+  }
+
+  .projects .section-head {
+    position: relative;
+    display: block;
+  }
+
+  .projects .section-head > div:first-child {
+    padding-right: 0;
+  }
+
+  .projects .section-head h2 {
+    max-width: 390px;
+    margin-top: 26px;
+    font-size: clamp(40px, 11.5vw, 52px);
+    line-height: 1.06;
+    letter-spacing: -0.06em;
+  }
+
+  .projects .count {
+    position: absolute;
+    top: -9px;
+    right: 0;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+
+  .filter-toolbar {
+    margin-top: 38px;
   }
 }

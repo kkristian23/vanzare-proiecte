@@ -26,6 +26,60 @@ import {
 
 const projects = [
   {
+    id: 32,
+    title: "FLOW CRM",
+    type: "CRM & Sales",
+    price: 4000,
+    tone: "flowcrm",
+    desc: "Workspace SaaS pentru lead-uri, clienți, pipeline, oferte, automatizări și raportarea completă a vânzărilor",
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "Multi-tenant", "RBAC", "Sales Pipeline", "Automations", "AI Assistant"],
+  },
+  {
+    id: 31,
+    title: "ACADEMIA",
+    type: "Online Education",
+    price: 2500,
+    tone: "academia",
+    desc: "Platformă LMS premium cu programe de studiu, cursuri, lecții, progres, quiz-uri și experiențe pentru instructori",
+    stack: ["Next.js", "React", "TypeScript", "LMS", "Course Player", "Progress Tracking", "Quizzes", "Certificates", "Responsive Design"],
+  },
+  {
+    id: 30,
+    title: "STAYNEST",
+    type: "Hotels & Travel",
+    price: 1800,
+    tone: "staynest",
+    desc: "Experiență digitală pentru boutique hotel, cu proprietăți, camere, disponibilitate, tarife și rezervare directă",
+    stack: ["Next.js", "React", "TypeScript", "Booking Engine", "Room Inventory", "Dynamic Rates", "Stripe", "Supabase", "RO / RU / EN"],
+  },
+  {
+    id: 29,
+    title: "TABLEO",
+    type: "Restaurants & Food",
+    price: 1200,
+    tone: "tableo",
+    desc: "Platformă premium pentru restaurant cu meniu digital, rezervări, comenzi online, checkout și mod operațional",
+    stack: ["Next.js", "React", "TypeScript", "Digital Menu", "Reservations", "Online Orders", "Stripe", "QR Menu", "Responsive Design"],
+  },
+  {
+    id: 28,
+    title: "MEDORA CLINIC",
+    type: "Clinics & Medical",
+    price: 1500,
+    tone: "medora",
+    desc: "Website medical premium cu specialități, medici, prețuri transparente și programare ghidată în șapte pași",
+    stack: ["Next.js", "React", "TypeScript", "Drizzle ORM", "Booking Flow", "Medical Services", "RBAC", "RO / RU / EN", "Responsive Design"],
+  },
+  {
+    id: 27,
+    title: "IMOBILIA ONE",
+    type: "Real Estate",
+    price: 1800,
+    tone: "imobilia",
+    desc: "Platformă imobiliară premium cu proprietăți, căutare avansată, cartiere, favorite, vizionări și administrare",
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "Property Search", "Mapbox", "Saved Searches", "Admin Panel", "RO / RU / EN"],
+  },
+  {
     id: 26,
     title: "NEO BOOKING",
     type: "Service Management",
@@ -394,6 +448,12 @@ const projects = [
 ];
 const filters = [
   "Toate",
+  "Real Estate",
+  "Clinics & Medical",
+  "Restaurants & Food",
+  "Hotels & Travel",
+  "Online Education",
+  "CRM & Sales",
   "AI Website Factory",
   "Interior Design",
   "Mobilă",
@@ -469,6 +529,12 @@ const cleanFilterCopy = {
 } as const;
 
 const categorySlugs: Record<string, string> = {
+  "Real Estate": "real-estate",
+  "Clinics & Medical": "clinics-medical",
+  "Restaurants & Food": "restaurants-food",
+  "Hotels & Travel": "hotels-travel",
+  "Online Education": "online-education",
+  "CRM & Sales": "crm-sales",
   "AI Website Factory": "ai-website-factory",
   "Interior Design": "interior-design",
   Mobilă: "mobila",
@@ -480,6 +546,12 @@ const categorySlugs: Record<string, string> = {
   "Utility Management": "utility-management",
 };
 const projectSlugs: Record<number, string> = {
+  32: "flow-crm",
+  31: "academia",
+  30: "staynest",
+  29: "tableo",
+  28: "medora-clinic",
+  27: "imobilia-one",
   26: "neo-booking",
   25: "audio-rental-md",
   24: "forge-ai-website-factory",
@@ -502,6 +574,12 @@ const projectSlugs: Record<number, string> = {
 };
 
 const projectPaths: Record<number, string> = {
+  32: "/flow-crm/",
+  31: "/academia/",
+  30: "/staynest/",
+  29: "/tableo/",
+  28: "/medora-clinic/",
+  27: "/imobilia-one/",
   26: "/neo-booking/",
   25: "/audio-rental-md/",
   24: "/forge/",
@@ -523,6 +601,8 @@ const projectPaths: Record<number, string> = {
   7: "/micora/",
 };
 
+const launchProjectIds = new Set([27, 28, 29, 30, 31, 32]);
+
 const projectDetails: Record<
   number,
   {
@@ -531,6 +611,60 @@ const projectDetails: Record<
     sections: Array<{ title: string; items: string[] }>;
   }
 > = {
+  32: {
+    summary: "FLOW CRM este un workspace SaaS complet pentru echipe de vânzări. Reunește contactele, companiile, oportunitățile, activitățile, ofertele și automatizările într-o interfață rapidă, multi-tenant și pregătită pentru extindere.",
+    sections: [
+      { title: "Pipeline și relații", items: ["Pipeline Kanban configurabil cu drag-and-drop", "Contacte, companii și oportunități conectate", "Timeline complet pentru fiecare relație comercială"] },
+      { title: "Productivitate", items: ["Taskuri, întâlniri, inbox demonstrativ și comandă rapidă", "Oferte comerciale și produse configurabile", "Import, export, filtre și acțiuni în masă"] },
+      { title: "Automatizare și AI", items: ["Automatizări cu trigger, condiție, acțiune și jurnal", "Rezumate, acțiuni și drafturi AI controlate de utilizator", "Rapoarte pentru conversie, forecast și performanță"] },
+      { title: "Ce primește cumpărătorul", items: ["Aplicație SaaS responsive cu roluri și organizații izolate", "Schema Supabase, politici RLS, seed și teste", "Mod showcase și documentație de producție"] },
+    ],
+  },
+  31: {
+    summary: "ACADEMIA este o platformă modernă de educație online, construită în jurul învățării practice. Include catalog, trasee, pagină de curs, experiență de lecție și progres memorat.",
+    sections: [
+      { title: "Catalog educațional", items: ["12 cursuri demonstrative din design, business și tehnologie", "Căutare, filtre și trasee de învățare", "Pagini editoriale pentru cursuri și instructori"] },
+      { title: "Experiența cursantului", items: ["Player de lecții și navigare între module", "Progres local, stări completate și feedback vizibil", "Curs gratuit complet pentru demonstrație"] },
+      { title: "Administrare și creștere", items: ["Arhitectură pregătită pentru roluri, plăți și certificate", "Conținut modular și extensibil", "Experiență responsive și accesibilă"] },
+      { title: "Ce primește cumpărătorul", items: ["Codul complet al platformei LMS", "Catalog și conținut demonstrativ inclus", "Build pentru producție și mod showcase"] },
+    ],
+  },
+  30: {
+    summary: "STAYNEST este o experiență hotelieră premium pentru rezervări directe. Prezintă două proprietăți boutique, camere, experiențe și un flux clar de la disponibilitate la confirmare.",
+    sections: [
+      { title: "Descoperire", items: ["Proprietăți urbane și în natură cu prezentare editorială", "Camere, facilități, experiențe și oferte", "Galerii și conținut local bogat"] },
+      { title: "Motor de rezervare", items: ["Căutare după perioadă, oaspeți și proprietate", "Inventar, tarife și opțiuni suplimentare", "Checkout și confirmare pregătite pentru Stripe"] },
+      { title: "Operațiuni", items: ["Structură pentru rezervări, oaspeți și inventar zilnic", "Roluri pentru recepție, manager și administrator", "Strategie anti-overbooking și integrare channel manager"] },
+      { title: "Ce primește cumpărătorul", items: ["Website și motor de rezervare complet", "Schema de date, seed și teste de preț", "Export static pentru prezentarea în catalog"] },
+    ],
+  },
+  29: {
+    summary: "TABLEO transformă website-ul unui restaurant într-un canal direct de vânzare. Meniul, rezervările și comenzile online sunt reunite într-o experiență rapidă și memorabilă.",
+    sections: [
+      { title: "Meniu și brand", items: ["Meniu digital cu preparate, categorii și alergeni", "Fotografie culinară și identitate editorială", "Experiență optimizată pentru mobil și QR"] },
+      { title: "Rezervări", items: ["Selectarea datei, orei, numărului de persoane și zonei", "Capacitate și prevenirea suprarezervării", "Confirmare și administrarea solicitărilor"] },
+      { title: "Comenzi", items: ["Coș, variante, note și total transparent", "Pickup sau livrare cu interval selectabil", "Checkout pregătit pentru plăți și statusuri operaționale"] },
+      { title: "Ce primește cumpărătorul", items: ["Platformă restaurant completă și responsive", "Meniu demonstrativ bogat și funcții interactive", "Build standalone și export showcase"] },
+    ],
+  },
+  28: {
+    summary: "MEDORA CLINIC este un website medical premium cu informație clară și programări rapide. Proiectul prezintă specialități, medici și prețuri, într-un flux sigur și empatic.",
+    sections: [
+      { title: "Prezentare medicală", items: ["Specialități, servicii și prețuri transparente", "Profiluri demonstrative pentru medici și locații", "Conținut de siguranță și delimitări medicale clare"] },
+      { title: "Programare ghidată", items: ["Flux în șapte pași pentru alegerea consultației", "Medic, locație, dată, oră și consimțământ", "Confirmare fără transmiterea datelor în modul demo"] },
+      { title: "Arhitectură", items: ["Model de date pentru medici, programe și programări", "Roluri pregătite pentru pacient, recepție și admin", "Confidențialitate și validare orientate spre producție"] },
+      { title: "Ce primește cumpărătorul", items: ["Website clinică și sistem de programare", "Conținut, imagini și date demonstrative", "Export showcase compatibil cu MONO/DEV"] },
+    ],
+  },
+  27: {
+    summary: "IMOBILIA ONE este o platformă imobiliară premium pentru Chișinău și România. Catalogul include proprietăți demonstrative, cartiere, servicii și instrumente pentru găsirea locuinței potrivite.",
+    sections: [
+      { title: "Catalog imobiliar", items: ["24 de proprietăți demonstrative cu imagini reale", "Filtre, căutare și pagini detaliate", "Cartiere, specificații și proprietăți similare"] },
+      { title: "Conversie", items: ["Programarea vizionărilor și cereri de evaluare", "Favorite și căutări salvate", "Contact direct cu agentul potrivit"] },
+      { title: "Administrare", items: ["Structură pentru proprietăți, agenți, media și lead-uri", "Supabase, RLS, roluri și audit log", "Import, export și stări editoriale"] },
+      { title: "Ce primește cumpărătorul", items: ["Platformă trilingvă și responsive", "Date seed, migrații și imagini documentate", "Build producție și showcase static"] },
+    ],
+  },
   26: {
     summary:
       "Neo Booking este o platformă universală de programări care adaptează automat experiența la identitatea fiecărei companii. Sistemul reunește configurarea serviciilor și echipei, disponibilitatea în timp real, rezervarea în mai mulți pași și integrarea în orice website printr-un widget dedicat.",
@@ -1508,8 +1642,17 @@ function ProjectVisual({
 }) {
   const v = visualCopy[locale];
   const s = showcaseCopy[locale];
+  const hasProjectPreview = launchProjectIds.has(project.id);
   return (
     <div className={`visual visual-${project.tone}`}>
+      {hasProjectPreview && (
+        <img
+          className="launch-project-preview"
+          src={`/project-previews/${projectSlugs[project.id]}.png`}
+          alt={`Preview real al proiectului ${project.title}`}
+          loading="lazy"
+        />
+      )}
       {project.id === 26 && (
         <>
           <div className="nbook-brand">
@@ -2530,10 +2673,13 @@ export default function Home() {
           <ArrowRight />
         </motion.a>
         <div className="marquee">
-          <div>
-            {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]}{" "}
-            <Sparkles /> {c.marquee[0]} <Zap /> {c.marquee[1]} <Sparkles />{" "}
-            {c.marquee[2]}
+          <div className="marquee-track">
+            <span className="marquee-group">
+              {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]} <Sparkles />
+            </span>
+            <span className="marquee-group" aria-hidden="true">
+              {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]} <Sparkles />
+            </span>
           </div>
         </div>
       </section>

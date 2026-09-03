@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cont/
+
+Sitemap: https://staynest.example/sitemap.xml

@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1788371775.797732,
-    "seen": 1788371846.0984488,
-    "ast_hash": "63027ce3912b85d5c32a8cc2246b1a8e",
+    "mtime": 1788374499.6730917,
+    "seen": 1788374513.196306,
+    "ast_hash": "d205c7b21f433104b4f579806017e6bf",
     "semantic_hash": ""
   },
   "db/index.ts": {
@@ -98,13 +98,13 @@
   ".openai/hosting.json": {
     "mtime": 1787146521.6338305,
     "seen": 1788373200.7717836,
-    "ast_hash": "13822f76dd15a66a60874acf5df5b975",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "drizzle/meta/_journal.json": {
     "mtime": 1787146521.6395364,
     "seen": 1788373200.7717836,
-    "ast_hash": "e31129c4ba4f6c10ec990065f77922c2",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -158,7 +158,7 @@
   ".codex/hooks.json": {
     "mtime": 1787209994.7439845,
     "seen": 1788373200.7717836,
-    "ast_hash": "5af16b7e1f5a672df8e93b5c0a0f47f3",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "app/i18n.ts": {
@@ -224,7 +224,7 @@
   "showcase-projects/registry.json": {
     "mtime": 1788369717.3313756,
     "seen": 1788373200.772682,
-    "ast_hash": "118ab6cb2c92ff7303404fe81e8d3e3a",
+    "ast_hash": "",
     "semantic_hash": ""
   }
 }
