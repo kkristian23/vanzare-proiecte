@@ -45,6 +45,9 @@
           <span class="breadcrumb">STUDIO / DASHBOARD</span>
           <span class="live-status"><i></i> ONLINE</span>
         </div>
+        <div class="locale-switcher" role="group" aria-label="Limbă">
+          <button type="button" data-locale="ro">RO</button><button type="button" data-locale="ru">RU</button><button type="button" data-locale="en">EN</button>
+        </div>
         <button class="icon-button" id="refresh" type="button" title="Actualizează datele" aria-label="Actualizează datele">↻</button>
       </header>
 
@@ -99,6 +102,7 @@
   </div>
 
   <div id="toast" role="status" aria-live="polite"></div>
+  <script src="/forge/localization.js" defer></script>
   <script src="/forge/app.js" defer></script>
 </body>
 </html>

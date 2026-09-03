@@ -1,16 +1,16 @@
 # Graph Report - vanzare proiecte  (2026-09-03)
 
 ## Corpus Check
-- 108 files · ~688,231 words
+- 116 files · ~915,850 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5443 nodes · 17564 edges · 176 communities (154 shown, 22 thin omitted)
-- Extraction: 83% EXTRACTED · 17% INFERRED · 0% AMBIGUOUS · INFERRED: 3009 edges (avg confidence: 0.85)
+- 6858 nodes · 22374 edges · 209 communities (189 shown, 20 thin omitted)
+- Extraction: 83% EXTRACTED · 17% INFERRED · 0% AMBIGUOUS · INFERRED: 3886 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4ec4f705`
+- Built from commit: `cddb8731`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,7 +18,7 @@
 - compilerOptions
 - scripts
 - dependencies
-- index-DLaChFLh.js
+- t
 - route.ts
 - app/page.tsx
 - worker/index.ts
@@ -27,18 +27,18 @@
 - eslint.config.mjs
 - devDependencies
 - start-server.mjs
-- PROMPT COMPLET — IMOBILIA ONE
+- index-HYoTYWPY.js
 - next.config.ts
 - next-env.d.ts
-- PROMPT COMPLET — MEDORA CLINIC
-- PROMPT COMPLET — ACADEMIA
-- PROMPT COMPLET — FLOW CRM
-- PROMPT COMPLET — TABLEO
-- PROMPT COMPLET — STAYNEST
-- project-prompts/README.md
+- index-Pfkl9f0w.js
+- qd
+- Ji
+- index-BjeMrSCb.js
+- wf
 - academia/_next/static/chunks/framework-D_rUT4EX.js
+- prefetch
 - index-DZIH026o.js
-- index-Dc85E_4y.js
+- index-DPhksrSs.js
 - index-DX07COdD.js
 - index-DAfP7sCC.js
 - f2f58a7e93290fbb.js
@@ -49,156 +49,184 @@
 - 37elybzku8j9j.js
 - 1j_9b-l0n6u-t.js
 - eh
-- t
-- medora-clinic/_next/static/chunks/framework-D_rUT4EX.js
+- wf
+- wf
 - 5d4f98498ae0e5c6.js
 - wf
-- u
-- r
+- n
 - wf
-- o
+- r
+- y
 - t
 - O
 - n
 - n
-- n
-- rg
-- a
 - push
-- hu
+- rg
+- h
+- prefetch
+- e
 - n
-- t
+- a
 - u
-- i
-- id
+- medora-clinic/_next/static/chunks/framework-D_rUT4EX.js
+- vm
 - academia/.vite/manifest.json
 - flow-crm/.vite/manifest.json
-- n
+- prefetch
 - Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?
 - medora-clinic/.vite/manifest.json
 - #r
-- af
+- Xl
 - e8f880eca99a243f.js
-- wd
-- t
-- fu
-- Ou
-- Z
-- q
-- a
-- prefetch
-- 19mx3mg6lkumu.js
-- prefetch
-- push
-- eh
-- prefetch
-- eh
-- sy
 - uu
-- gu
+- np
+- zm
+- vm
+- vm
+- Ou
+- hc
+- o
+- 19mx3mg6lkumu.js
+- n
+- go
 - eh
-- delete
-- af
+- q
 - Z
-- r
-- Z
-- uc
-- c7
-- wd
-- _
-- i2
+- sy
+- n
 - rt
-- u
 - eh
-- ic
+- u
+- Xo
+- eh
+- rv
+- f
+- io
+- c7
+- Ji
+- q
+- i2
+- app-route-prefetch-policy-e4GR00cD.js
+- r
+- fa
+- Z
 - e
 - fa
-- push
-- fa
-- go
-- rt
-- af
-- prefetch
+- Ss
+- eh
+- t
+- @vitejs/plugin-react
+- sl
+- a
 - 4b9eae0c8dc7e975.js
-- h
-- fa
-- xf
-- sh
-- O
-- sr
-- lc
-- i
-- sp
-- rt
-- fa
-- i
-- 0cz1d0mv5g_q7.js
-- fw
-- a6dad97d9634a72d.js
-- medora-clinic/_next/static/chunks/streamed-icons-Bumrcy-j.js
-- Nd
-- zd
-- 3fntmmi971322.js
-- cn
-- ss
-- hc
-- i8
-- ug
-- 35d1u26kqig3x.js
-- q
-- 1x4jhta-338sj.js
 - zm
-- er
-- np
+- Na
+- id
+- hu
+- push
+- eh
+- Pa
+- C
+- app-route-prefetch-policy-CS4bqQxx.js
+- sp
+- t
+- rt
+- eh
+- 0cz1d0mv5g_q7.js
+- fa
+- a6dad97d9634a72d.js
+- af
+- af
+- zm
+- medora-clinic/_next/static/chunks/streamed-icons-Bumrcy-j.js
+- layout-segment-context-Di5H6bt8.js
+- n
+- @types/react
+- 0vlm5hhfvrvxn.js
+- go
+- Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are.
+- af
+- lc
+- turbopack-2pe6gm71vwu13.js
+- push
+- O
+- i8
+- af
 - get
-- ke
+- L0
 - package.json
+- Fa
+- rt
+- O
 - ai
-- eslint
+- eslint-plugin-react-hooks
 - eslint-plugin-jsx-a11y
-- eslint-plugin-react
+- @tailwindcss/postcss
 - globals
 - @next/eslint-plugin-next
-- @openai/sites-vite-plugin
-- react-server-dom-webpack
-- @types/react
+- @types/react-dom
+- fa
+- u
 - typescript
-- typescript-eslint
+- index-B97UzVyg.js
 - vinext
 - vite
 - sync-showcase.mjs
-- @vitejs/plugin-react
-- wrangler
+- go
+- ov
+- Ji
+- 3f9kpwr14xosk.js
+- 3fntmmi971322.js
+- fa
+- wd
+- 18llx4g7jfl2n.js
+- 2x8_766p-q0kf.js
+- Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect
+- 31sx5i3efv50f.js
+- 3rkgl73w6if-z.js
+- c0
+- i
+- aj
+- pf
+- zm
+- push
+- n
+- @vitejs/plugin-rsc
+- zm
+- Bt
+- Ss
+- typescript-eslint
 - Proiecte incluse în catalog
 
 ## God Nodes (most connected - your core abstractions)
-1. `t()` - 154 edges
-2. `o()` - 116 edges
-3. `a()` - 110 edges
-4. `a()` - 88 edges
-5. `a()` - 88 edges
-6. `#r()` - 83 edges
-7. `e()` - 77 edges
-8. `rv()` - 70 edges
-9. `u()` - 60 edges
-10. `t()` - 54 edges
+1. `qd()` - 326 edges
+2. `t()` - 254 edges
+3. `o()` - 181 edges
+4. `a()` - 131 edges
+5. `e()` - 126 edges
+6. `a()` - 88 edges
+7. `a()` - 88 edges
+8. `#r()` - 83 edges
+9. `rv()` - 70 edges
+10. `y()` - 62 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Zr()` --indirect_call--> `Rr()`  [INFERRED]
-  public/flow-crm/_next/static/chunks/index-DAfP7sCC.js → public/flow-crm/_next/static/chunks/framework-D_rUT4EX.js
-- `Zr()` --indirect_call--> `Rr()`  [INFERRED]
-  public/flow-crm/_next/static/chunks/index-DX07COdD.js → public/flow-crm/_next/static/chunks/framework-D_rUT4EX.js
-- `nz()` --indirect_call--> `nG()`  [INFERRED]
-  public/staynest/_next/static/chunks/1j_9b-l0n6u-t.js → public/tableo/_next/static/chunks/f2f58a7e93290fbb.js
+- `es()` --indirect_call--> `J()`  [INFERRED]
+  public/staynest/_next/static/chunks/37elybzku8j9j.js → public/staynest/_next/static/chunks/1j_9b-l0n6u-t.js
 - `GET()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
+- `C()` --indirect_call--> `Ii()`  [INFERRED]
+  public/academia/_next/static/chunks/framework-D_rUT4EX.js → public/academia/_next/static/chunks/index-B97UzVyg.js
+- `C()` --indirect_call--> `Gi()`  [INFERRED]
+  public/academia/_next/static/chunks/framework-D_rUT4EX.js → public/drivolt/assets/index-BjeMrSCb.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (176 total, 22 thin omitted)
+## Communities (209 total, 20 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.07
@@ -212,9 +240,9 @@ Nodes (10): scripts, build, db:generate, dev, lint, showcase:refresh, showcase:s
 Cohesion: 0.15
 Nodes (13): drizzle-orm, framer-motion, lucide-react, magic-string, dependencies, drizzle-orm, framer-motion, lucide-react (+5 more)
 
-### Community 3 - "index-DLaChFLh.js"
-Cohesion: 0.01
-Nodes (209): ai(), br(), Bt(), Na(), Or(), so(), aa(), ad() (+201 more)
+### Community 3 - "t"
+Cohesion: 0.03
+Nodes (126): a(), s(), e(), t(), Uo(), Vd(), ac(), n() (+118 more)
 
 ### Community 4 - "route.ts"
 Cohesion: 0.39
@@ -234,167 +262,171 @@ Nodes (4): geist, metadata, mono, viewport
 
 ### Community 12 - "devDependencies"
 Cohesion: 0.11
-Nodes (19): @cloudflare/vite-plugin, drizzle-kit, @eslint/js, eslint-plugin-react-hooks, devDependencies, @cloudflare/vite-plugin, drizzle-kit, @eslint/js (+11 more)
+Nodes (19): @cloudflare/vite-plugin, drizzle-kit, eslint, @eslint/js, eslint-plugin-react, devDependencies, @cloudflare/vite-plugin, drizzle-kit (+11 more)
 
 ### Community 14 - "start-server.mjs"
 Cohesion: 0.29
 Nodes (6): extraArgs, refreshScript, refreshTimer, root, server, vinextCli
 
-### Community 15 - "PROMPT COMPLET — IMOBILIA ONE"
-Cohesion: 0.20
-Nodes (9): Criteriu final, Date și imagini, Funcții reale, Identitate vizuală, Mod showcase MONO/DEV, Obiectiv și public, Pagini publice, PROMPT COMPLET — IMOBILIA ONE (+1 more)
+### Community 15 - "index-HYoTYWPY.js"
+Cohesion: 0.02
+Nodes (111): ad(), Ai(), allocateNavigationHistoryTraversalIndex(), am(), at(), bi(), bm(), bn() (+103 more)
 
-### Community 18 - "PROMPT COMPLET — MEDORA CLINIC"
-Cohesion: 0.20
-Nodes (9): Arhitectură de producție, Date și imagini, Definition of done, Design, Mod showcase, Pagini, Poziționare și conținut, Programare și portal (+1 more)
+### Community 18 - "index-Pfkl9f0w.js"
+Cohesion: 0.02
+Nodes (97): ad(), Ai(), allocateNavigationHistoryTraversalIndex(), am(), at(), bc(), bi(), Ci() (+89 more)
 
-### Community 19 - "PROMPT COMPLET — ACADEMIA"
+### Community 19 - "qd"
+Cohesion: 0.04
+Nodes (89): qd(), A0(), Aa(), ad(), Ae(), An(), B(), bs() (+81 more)
+
+### Community 20 - "Ji"
 Cohesion: 0.22
-Nodes (8): Brand și experiență, Conținut demonstrativ, Experiența studentului, Instructor și admin, Pagini publice, PROMPT COMPLET — ACADEMIA, Showcase, Tehnologie
+Nodes (15): en(), fd(), Ji(), ln(), Nd(), on(), pd(), Q() (+7 more)
 
-### Community 20 - "PROMPT COMPLET — FLOW CRM"
-Cohesion: 0.22
-Nodes (8): AI util și controlabil, Date și multi-tenancy, Definition of done, Module, Produs și design, PROMPT COMPLET — FLOW CRM, Showcase, Tehnologie și securitate
+### Community 21 - "index-BjeMrSCb.js"
+Cohesion: 0.05
+Nodes (68): af, am, Bd(), A(), Cd(), cf(), cm(), e1() (+60 more)
 
-### Community 21 - "PROMPT COMPLET — TABLEO"
-Cohesion: 0.25
-Nodes (7): Concept vizual, Conținut și pagini, Date și media, Funcționalități, PROMPT COMPLET — TABLEO, Showcase, Tehnologie și calitate
+### Community 22 - "wf"
+Cohesion: 0.07
+Nodes (79): A(), ae(), append(), b(), be(), bn(), c(), ce() (+71 more)
 
-### Community 22 - "PROMPT COMPLET — STAYNEST"
-Cohesion: 0.25
-Nodes (7): Date, Direcție creativă, Motor de rezervare, Pagini, Producție, PROMPT COMPLET — STAYNEST, Showcase
-
-### Community 24 - "academia/_next/static/chunks/framework-D_rUT4EX.js"
+### Community 23 - "academia/_next/static/chunks/framework-D_rUT4EX.js"
 Cohesion: 0.03
-Nodes (241): a(), aa(), ac(), af(), an(), Ao(), ap(), as() (+233 more)
+Nodes (223): a(), aa(), ac(), af(), Al(), an(), Ao(), ap() (+215 more)
+
+### Community 24 - "prefetch"
+Cohesion: 0.07
+Nodes (46): Au(), bl(), bm(), bu(), cd(), clear(), cu(), delete() (+38 more)
 
 ### Community 25 - "index-DZIH026o.js"
 Cohesion: 0.02
-Nodes (103): Or(), ad(), allocateNavigationHistoryTraversalIndex(), ao(), at(), bc(), bi(), bn() (+95 more)
+Nodes (99): _c(), Lc(), ad(), Ai(), allocateNavigationHistoryTraversalIndex(), at(), bc(), bi() (+91 more)
 
-### Community 26 - "index-Dc85E_4y.js"
+### Community 26 - "index-DPhksrSs.js"
 Cohesion: 0.02
-Nodes (102): Or(), ad(), Ai(), allocateNavigationHistoryTraversalIndex(), at(), bc(), bi(), bn() (+94 more)
+Nodes (90): Or(), ad(), Ai(), allocateNavigationHistoryTraversalIndex(), at(), bc(), bi(), bn() (+82 more)
 
 ### Community 27 - "index-DX07COdD.js"
 Cohesion: 0.02
-Nodes (121): br(), xr(), ad(), Ai(), allocateNavigationHistoryTraversalIndex(), ao(), at(), bc() (+113 more)
+Nodes (119): Or(), ad(), af(), Ai(), allocateNavigationHistoryTraversalIndex(), am(), append(), ar() (+111 more)
 
 ### Community 28 - "index-DAfP7sCC.js"
 Cohesion: 0.02
-Nodes (96): ad(), Ai(), allocateNavigationHistoryTraversalIndex(), am(), append(), at(), bi(), bn() (+88 more)
+Nodes (97): ad(), Ai(), allocateNavigationHistoryTraversalIndex(), append(), at(), bc(), bi(), bn() (+89 more)
 
 ### Community 29 - "f2f58a7e93290fbb.js"
 Cohesion: 0.04
-Nodes (93): fD(), a0(), a2(), a3(), a4(), a5(), a6(), a8() (+85 more)
+Nodes (81): a0(), a2(), a3(), a4(), a5(), a6(), a8(), a9() (+73 more)
 
 ### Community 30 - "flow-crm/_next/static/chunks/framework-D_rUT4EX.js"
 Cohesion: 0.04
-Nodes (91): ae(), ap(), Ar(), at(), bu(), C(), cf(), cs() (+83 more)
+Nodes (103): ad(), ae(), ap(), Ar(), bu(), cr(), cs(), ct() (+95 more)
 
 ### Community 34 - "vinext-starter"
 Cohesion: 0.25
 Nodes (7): Included Shape, Learn More, Prerequisites, Quick Start, Useful Commands, vinext-starter, Workspace Auth Headers
 
 ### Community 36 - "37elybzku8j9j.js"
-Cohesion: 0.10
-Nodes (92): ch(), cm(), ea(), ei(), eo(), eu(), J(), c() (+84 more)
+Cohesion: 0.23
+Nodes (58): ei(), a(), b(), c(), d(), E(), ea(), eb() (+50 more)
 
 ### Community 37 - "1j_9b-l0n6u-t.js"
 Cohesion: 0.03
-Nodes (80): a0(), a1(), a3(), a4(), a5(), a7(), a8(), a9() (+72 more)
+Nodes (125): a0(), a1(), a3(), a4(), a5(), a7(), a8(), a9() (+117 more)
 
 ### Community 38 - "eh"
-Cohesion: 0.05
-Nodes (103): Ji(), zo(), A(), ae(), append(), b(), be(), c() (+95 more)
+Cohesion: 0.07
+Nodes (85): o(), zo(), A(), ae(), b(), be(), c(), ce() (+77 more)
 
-### Community 39 - "t"
-Cohesion: 0.05
-Nodes (86): a(), s(), e(), t(), o(), ua(), Ai(), n() (+78 more)
+### Community 39 - "wf"
+Cohesion: 0.07
+Nodes (71): A(), ae(), append(), be(), c(), ce(), D(), de() (+63 more)
 
-### Community 40 - "medora-clinic/_next/static/chunks/framework-D_rUT4EX.js"
-Cohesion: 0.05
-Nodes (62): ad(), ae(), ai(), Ar(), br(), bu(), cr(), ct() (+54 more)
+### Community 40 - "wf"
+Cohesion: 0.08
+Nodes (69): A(), ae(), append(), b(), be(), c(), ce(), D() (+61 more)
 
 ### Community 41 - "5d4f98498ae0e5c6.js"
 Cohesion: 0.09
 Nodes (56): a(), B(), c(), D(), E(), ea(), ee(), ei() (+48 more)
 
 ### Community 42 - "wf"
-Cohesion: 0.07
-Nodes (73): A(), ae(), append(), b(), be(), c(), ce(), D() (+65 more)
-
-### Community 43 - "u"
-Cohesion: 0.06
-Nodes (70): ab(), aC(), ak(), aL(), aS(), av(), aw(), ax() (+62 more)
-
-### Community 44 - "r"
 Cohesion: 0.08
-Nodes (75): A(), ae(), b(), be(), c(), ce(), D(), de() (+67 more)
+Nodes (74): A(), ae(), b(), be(), c(), ce(), D(), de() (+66 more)
 
-### Community 45 - "wf"
-Cohesion: 0.08
-Nodes (66): A(), ae(), append(), be(), c(), ce(), D(), de() (+58 more)
+### Community 43 - "n"
+Cohesion: 0.12
+Nodes (59): ac(), b(), bd(), bi(), bs(), C(), ce(), Ci() (+51 more)
 
-### Community 46 - "o"
+### Community 44 - "wf"
 Cohesion: 0.09
-Nodes (64): o(), A(), ae(), append(), be(), c(), ce(), D() (+56 more)
+Nodes (66): A(), ae(), be(), c(), ce(), D(), de(), i() (+58 more)
+
+### Community 45 - "r"
+Cohesion: 0.08
+Nodes (70): A(), ae(), append(), be(), c(), ce(), D(), de() (+62 more)
+
+### Community 46 - "y"
+Cohesion: 0.08
+Nodes (56): Ac(), au(), bo(), br(), ce(), Dc(), dl(), dr() (+48 more)
 
 ### Community 47 - "t"
-Cohesion: 0.06
-Nodes (70): a(), s(), e(), t(), n(), bo(), dd(), i() (+62 more)
+Cohesion: 0.09
+Nodes (63): b(), bs(), ce(), Ci(), de(), Dn(), ds(), ef() (+55 more)
 
 ### Community 48 - "O"
-Cohesion: 0.09
-Nodes (53): i(), nf(), O(), r(), back(), fn(), a(), o() (+45 more)
+Cohesion: 0.11
+Nodes (46): da(), j(), O(), r(), B(), m(), ee(), G() (+38 more)
 
 ### Community 49 - "n"
-Cohesion: 0.12
-Nodes (57): a(), aw(), c(), ct(), cu(), D(), E(), eH() (+49 more)
+Cohesion: 0.06
+Nodes (63): a(), s(), ac(), n(), bl(), bp(), cc(), dd() (+55 more)
 
 ### Community 50 - "n"
-Cohesion: 0.12
-Nodes (50): a(), a7(), ah(), aQ(), cl(), l(), d(), E() (+42 more)
+Cohesion: 0.11
+Nodes (55): fD(), a(), a7(), aQ(), cl(), l(), cn(), cr() (+47 more)
 
-### Community 51 - "n"
+### Community 51 - "push"
 Cohesion: 0.07
-Nodes (46): n(), bc(), bf(), bs(), dd(), ed(), el(), en() (+38 more)
+Nodes (44): ao(), bo(), bt(), co(), ct(), dc(), Do(), dt() (+36 more)
 
 ### Community 52 - "rg"
-Cohesion: 0.07
-Nodes (51): add(), clearNamespace(), #e(), e7(), eb(), entries(), ep(), eV() (+43 more)
+Cohesion: 0.12
+Nodes (30): add(), addKeyframes(), clearNamespace(), getOptions(), hasDefault(), m(), namespace(), rA() (+22 more)
 
-### Community 53 - "a"
+### Community 53 - "h"
+Cohesion: 0.09
+Nodes (53): ae(), ce(), Ci(), de(), df(), Dn(), Ee(), ef() (+45 more)
+
+### Community 54 - "prefetch"
+Cohesion: 0.06
+Nodes (52): Au(), bl(), bm(), bu(), cd(), clear(), cu(), Fl() (+44 more)
+
+### Community 55 - "e"
 Cohesion: 0.11
-Nodes (52): a(), aa(), ac(), Ao(), bc(), bd(), be(), ca() (+44 more)
-
-### Community 54 - "push"
-Cohesion: 0.07
-Nodes (39): Uo(), ac(), bs(), cc(), dc(), dp(), fp(), gc() (+31 more)
-
-### Community 55 - "hu"
-Cohesion: 0.07
-Nodes (48): at(), Au(), Cu(), dd(), di(), es(), Eu(), fi() (+40 more)
+Nodes (53): ai(), Al(), at(), cs(), Cu(), di(), dn(), Et() (+45 more)
 
 ### Community 56 - "n"
-Cohesion: 0.07
-Nodes (54): a(), s(), n(), bo(), bp(), dd(), i(), r() (+46 more)
+Cohesion: 0.05
+Nodes (68): ac(), n(), bf(), cc(), dd(), r(), df(), dp() (+60 more)
 
-### Community 57 - "t"
-Cohesion: 0.11
-Nodes (46): b(), bi(), bs(), ce(), Ci(), de(), Ei(), ep() (+38 more)
+### Community 57 - "a"
+Cohesion: 0.07
+Nodes (60): a(), aa(), af(), Ao(), bc(), be(), ca(), cc() (+52 more)
 
 ### Community 58 - "u"
 Cohesion: 0.08
 Nodes (18): a(), b(), c(), E(), g(), h(), j(), l() (+10 more)
 
-### Community 59 - "i"
-Cohesion: 0.13
-Nodes (45): ce(), Ci(), de(), df(), ds(), Ei(), ep(), Et() (+37 more)
+### Community 59 - "medora-clinic/_next/static/chunks/framework-D_rUT4EX.js"
+Cohesion: 0.05
+Nodes (72): ad(), ae(), ai(), Ar(), br(), bu(), cp(), cr() (+64 more)
 
-### Community 60 - "id"
-Cohesion: 0.10
-Nodes (45): ak(), aP(), aS(), ax(), cY(), eB(), eV(), fc() (+37 more)
+### Community 60 - "vm"
+Cohesion: 0.06
+Nodes (52): am(), Au(), bl(), bm(), bu(), cd(), clear(), cu() (+44 more)
 
 ### Community 61 - "academia/.vite/manifest.json"
 Cohesion: 0.05
@@ -404,9 +436,9 @@ Nodes (45): app/page.tsx, file, imports, isDynamicEntry, name, src, _framework-D
 Cohesion: 0.05
 Nodes (45): app/page.tsx, file, imports, isDynamicEntry, name, src, _framework-D_rUT4EX.js, file (+37 more)
 
-### Community 63 - "n"
-Cohesion: 0.07
-Nodes (54): aa(), ac(), as(), b(), bd(), bi(), Bo(), bs() (+46 more)
+### Community 63 - "prefetch"
+Cohesion: 0.08
+Nodes (44): Au(), bu(), cd(), cu(), du(), Fl(), Fu(), g() (+36 more)
 
 ### Community 64 - "Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
 Cohesion: 0.40
@@ -417,340 +449,456 @@ Cohesion: 0.05
 Nodes (45): app/page.tsx, file, imports, isDynamicEntry, name, src, _framework-D_rUT4EX.js, file (+37 more)
 
 ### Community 66 - "#r"
-Cohesion: 0.16
-Nodes (45): addKeyframes(), compound(), compoundsWith(), e0(), l(), eF(), eG(), eH() (+37 more)
+Cohesion: 0.27
+Nodes (23): eF(), eG(), eH(), eJ(), ek(), eN(), eq(), functional() (+15 more)
 
-### Community 67 - "af"
-Cohesion: 0.09
-Nodes (25): Bt(), af(), back(), bd(), cf(), dn(), ei(), fn() (+17 more)
+### Community 67 - "Xl"
+Cohesion: 0.11
+Nodes (34): Bi(), Bu(), cl(), dd(), Ed(), _f(), Ff(), Gu() (+26 more)
 
 ### Community 68 - "e8f880eca99a243f.js"
 Cohesion: 0.08
-Nodes (32): compare(), constructor(), D(), e2(), e3(), e5(), ea(), ee() (+24 more)
+Nodes (28): constructor(), D(), ea(), ee(), ei(), eV(), ez(), g() (+20 more)
 
-### Community 69 - "wd"
-Cohesion: 0.06
-Nodes (46): ad(), Ar(), cr(), dr(), Ed(), Er(), fn(), fr() (+38 more)
+### Community 69 - "uu"
+Cohesion: 0.13
+Nodes (18): c4(), c6(), cx(), e2(), fm(), fp(), ix(), n$() (+10 more)
 
-### Community 70 - "t"
-Cohesion: 0.05
-Nodes (98): a(), s(), e(), t(), Uo(), o(), ac(), Ai() (+90 more)
+### Community 70 - "np"
+Cohesion: 0.43
+Nodes (7): kp(), np(), t(), tp(), gp(), hp(), vp()
 
-### Community 71 - "fu"
+### Community 71 - "zm"
 Cohesion: 0.07
-Nodes (45): ab(), aH(), aU(), aV(), c7(), e4(), e5(), e8() (+37 more)
+Nodes (34): An(), ar(), bf(), bs(), ca(), da(), _f(), ga() (+26 more)
 
-### Community 72 - "Ou"
-Cohesion: 0.15
-Nodes (26): Au(), cd(), Cu(), Eu(), gu(), id(), it(), ku() (+18 more)
+### Community 72 - "vm"
+Cohesion: 0.08
+Nodes (33): am(), bs(), cd(), cu(), Fl(), gl(), gr(), Il() (+25 more)
 
-### Community 73 - "Z"
+### Community 73 - "vm"
+Cohesion: 0.08
+Nodes (31): Vd(), am(), bs(), cd(), cu(), Fl(), gr(), hd() (+23 more)
+
+### Community 74 - "Ou"
+Cohesion: 0.13
+Nodes (30): at(), Au(), cd(), Cu(), Du(), Eu(), gu(), hu() (+22 more)
+
+### Community 75 - "hc"
 Cohesion: 0.14
-Nodes (26): Al(), bl(), cl(), dl(), el(), fl(), ga(), Il() (+18 more)
+Nodes (24): be(), co(), E(), fc(), gc(), go(), hc(), Hd() (+16 more)
 
-### Community 74 - "q"
-Cohesion: 0.08
-Nodes (37): Au(), bl(), bm(), bu(), cd(), clear(), Fu(), gl() (+29 more)
-
-### Community 75 - "a"
-Cohesion: 0.11
-Nodes (37): a(), an(), C(), cf(), Du(), ec(), en(), f() (+29 more)
-
-### Community 76 - "prefetch"
-Cohesion: 0.08
-Nodes (31): am(), An(), ca(), cu(), da(), Fl(), ga(), Gd() (+23 more)
+### Community 76 - "o"
+Cohesion: 0.09
+Nodes (43): i(), t(), e(), o(), exit(), back(), exit(), fn() (+35 more)
 
 ### Community 77 - "19mx3mg6lkumu.js"
 Cohesion: 0.07
 Nodes (10): a(), d, f(), i(), l(), n(), T(), u() (+2 more)
 
-### Community 78 - "prefetch"
-Cohesion: 0.05
-Nodes (66): am(), Au(), bl(), bm(), bu(), cd(), clear(), Cm() (+58 more)
+### Community 78 - "n"
+Cohesion: 0.06
+Nodes (63): a(), s(), br(), xr(), ac(), n(), bf(), cc() (+55 more)
 
-### Community 79 - "push"
-Cohesion: 0.07
-Nodes (43): Vd(), ac(), bs(), cc(), dc(), gt(), hd(), ht() (+35 more)
+### Community 79 - "go"
+Cohesion: 0.11
+Nodes (24): ao(), bo(), co(), dc(), Do(), Eo(), Fd(), fo() (+16 more)
 
 ### Community 80 - "eh"
-Cohesion: 0.07
-Nodes (36): An(), ar(), b(), bf(), Cm(), cp(), eh(), y() (+28 more)
-
-### Community 81 - "prefetch"
-Cohesion: 0.06
-Nodes (51): Au(), bl(), bm(), bu(), cd(), clear(), cu(), Fl() (+43 more)
-
-### Community 82 - "eh"
-Cohesion: 0.08
-Nodes (32): ba(), Cm(), cp(), delete(), Dm(), eh(), Em(), Fm() (+24 more)
-
-### Community 83 - "sy"
-Cohesion: 0.12
-Nodes (30): ae(), an(), ao(), ar(), at(), c1(), c3(), cg() (+22 more)
-
-### Community 84 - "uu"
-Cohesion: 0.08
-Nodes (35): c4(), c6(), ci(), co(), cx(), e2(), e6(), fB() (+27 more)
-
-### Community 85 - "gu"
-Cohesion: 0.17
-Nodes (21): Au(), Cu(), Eu(), gu(), kp(), ku(), mi(), np() (+13 more)
-
-### Community 86 - "eh"
 Cohesion: 0.09
-Nodes (29): ba(), Cm(), cp(), delete(), Dm(), eh(), Em(), Fm() (+21 more)
+Nodes (27): b(), ba(), Cm(), cp(), Dm(), eh(), y(), Em() (+19 more)
 
-### Community 87 - "delete"
-Cohesion: 0.08
-Nodes (40): Au(), bm(), clear(), delete(), Dm(), du(), Fu(), g() (+32 more)
-
-### Community 88 - "af"
+### Community 81 - "q"
 Cohesion: 0.10
-Nodes (22): af(), ca(), cf(), da(), ei(), ga(), ha(), Ii() (+14 more)
+Nodes (31): Au(), b(), bm(), clear(), du(), g(), gu(), Hl() (+23 more)
 
-### Community 89 - "Z"
-Cohesion: 0.12
-Nodes (30): Al(), bl(), cl(), dl(), el(), fl(), ga(), gl() (+22 more)
-
-### Community 90 - "r"
-Cohesion: 0.16
-Nodes (29): c(), e1(), eX(), ey(), fromAst(), h(), K(), keysInNamespaces() (+21 more)
-
-### Community 91 - "Z"
+### Community 82 - "Z"
 Cohesion: 0.13
 Nodes (29): Al(), bl(), cl(), dl(), el(), fl(), ga(), Hf() (+21 more)
 
-### Community 92 - "uc"
+### Community 83 - "sy"
+Cohesion: 0.10
+Nodes (37): aa(), ae(), aj(), an(), ao(), ar(), at(), c1() (+29 more)
+
+### Community 84 - "n"
+Cohesion: 0.06
+Nodes (96): a(), aF(), aw(), c(), ci(), co(), cR(), ct() (+88 more)
+
+### Community 85 - "rt"
+Cohesion: 0.11
+Nodes (23): bt(), ct(), dt(), ft(), gt(), ht(), If(), it() (+15 more)
+
+### Community 86 - "eh"
+Cohesion: 0.06
+Nodes (39): An(), ba(), Cm(), cp(), Dm(), eh(), Em(), Fl() (+31 more)
+
+### Community 87 - "u"
+Cohesion: 0.08
+Nodes (44): Au(), bl(), bm(), bu(), clear(), delete(), du(), Fu() (+36 more)
+
+### Community 88 - "Xo"
+Cohesion: 0.09
+Nodes (31): as(), Bo(), dd(), ds(), Fo(), Fu(), is(), Iu() (+23 more)
+
+### Community 89 - "eh"
+Cohesion: 0.09
+Nodes (29): ba(), Cm(), cp(), delete(), eh(), Em(), Fm(), gm() (+21 more)
+
+### Community 90 - "rv"
 Cohesion: 0.12
-Nodes (28): be(), co(), E(), Ea(), fc(), go(), Hd(), ho() (+20 more)
+Nodes (31): compound(), compoundsWith(), #e(), e1(), e4(), e9(), ec(), ed() (+23 more)
+
+### Community 91 - "f"
+Cohesion: 0.20
+Nodes (23): c(), e0(), l(), e2(), e5(), f(), K(), L() (+15 more)
+
+### Community 92 - "io"
+Cohesion: 0.08
+Nodes (41): ar(), at(), aw(), cc(), cf(), cH(), cs(), el() (+33 more)
 
 ### Community 93 - "c7"
 Cohesion: 0.12
 Nodes (28): c2(), c3(), c4(), c5(), c6(), c7(), c8(), c9() (+20 more)
 
-### Community 94 - "wd"
-Cohesion: 0.12
-Nodes (25): ad(), cr(), dr(), Ed(), Er(), fn(), fr(), Gd() (+17 more)
+### Community 94 - "Ji"
+Cohesion: 0.21
+Nodes (16): an(), en(), fd(), hn(), Ji(), ln(), Nd(), on() (+8 more)
 
-### Community 95 - "_"
-Cohesion: 0.13
-Nodes (17): _, a(), b, c(), d(), f(), j, l() (+9 more)
+### Community 95 - "q"
+Cohesion: 0.11
+Nodes (28): Au(), bm(), clear(), Fu(), gl(), gu(), Hl(), iu() (+20 more)
 
 ### Community 96 - "i2"
 Cohesion: 0.14
 Nodes (27): fo(), i1(), i2(), i7(), i9(), ia(), ib(), iF() (+19 more)
 
-### Community 97 - "rt"
-Cohesion: 0.10
-Nodes (23): a(), s(), bt(), Cn(), ft(), gt(), ht(), it() (+15 more)
+### Community 97 - "app-route-prefetch-policy-e4GR00cD.js"
+Cohesion: 0.20
+Nodes (9): a(), s(), Cn(), me(), _n(), $r(), T(), vt() (+1 more)
 
-### Community 98 - "u"
-Cohesion: 0.16
-Nodes (20): bt(), du(), ft(), g(), gt(), ht(), it(), jt() (+12 more)
+### Community 98 - "r"
+Cohesion: 0.29
+Nodes (14): eX(), h(), keysInNamespaces(), n(), r(), i(), rh(), ru() (+6 more)
 
-### Community 99 - "eh"
-Cohesion: 0.06
-Nodes (41): An(), ar(), b(), ba(), bf(), ca(), da(), eh() (+33 more)
+### Community 99 - "fa"
+Cohesion: 0.12
+Nodes (22): aa(), Ap(), bp(), fa(), fp(), gp(), hp(), jp() (+14 more)
 
-### Community 100 - "ic"
-Cohesion: 0.14
-Nodes (26): Ao(), bc(), ca(), cc(), da(), dc(), fs(), ha() (+18 more)
+### Community 100 - "Z"
+Cohesion: 0.12
+Nodes (31): Al(), bl(), cl(), dl(), el(), fl(), ga(), gf() (+23 more)
 
 ### Community 101 - "e"
-Cohesion: 0.13
-Nodes (26): cb(), cG(), cw(), cy(), e0(), fa(), t(), i3() (+18 more)
+Cohesion: 0.12
+Nodes (27): cb(), cG(), cw(), cy(), e0(), fa(), t(), i3() (+19 more)
 
 ### Community 102 - "fa"
-Cohesion: 0.09
-Nodes (27): aa(), Ap(), bp(), dp(), fa(), fp(), gp(), hp() (+19 more)
-
-### Community 103 - "push"
-Cohesion: 0.09
-Nodes (33): Uo(), ac(), cc(), dc(), gc(), hc(), he(), ic() (+25 more)
-
-### Community 104 - "fa"
-Cohesion: 0.14
-Nodes (20): aa(), Ap(), bp(), dp(), fa(), fp(), jp(), ka() (+12 more)
-
-### Community 105 - "go"
-Cohesion: 0.10
-Nodes (25): ao(), bo(), co(), dc(), Do(), Eo(), fo(), go() (+17 more)
-
-### Community 106 - "rt"
-Cohesion: 0.20
-Nodes (14): bt(), ft(), gt(), ht(), it(), jt(), kt(), mt() (+6 more)
-
-### Community 107 - "af"
-Cohesion: 0.09
-Nodes (25): Bt(), af(), back(), bd(), cf(), dn(), ei(), fn() (+17 more)
-
-### Community 108 - "prefetch"
 Cohesion: 0.11
-Nodes (23): am(), cd(), cu(), Fl(), gr(), Il(), ku(), ld() (+15 more)
+Nodes (23): aa(), Ap(), dp(), fa(), fp(), gp(), hp(), jo() (+15 more)
+
+### Community 103 - "Ss"
+Cohesion: 0.50
+Nodes (5): bs(), Ss(), ws(), xs(), Ys()
+
+### Community 104 - "eh"
+Cohesion: 0.09
+Nodes (30): ba(), Cm(), cp(), delete(), Dm(), eh(), Em(), Fm() (+22 more)
+
+### Community 105 - "t"
+Cohesion: 0.06
+Nodes (68): a(), s(), e(), t(), o(), n(), bp(), dd() (+60 more)
+
+### Community 107 - "sl"
+Cohesion: 0.11
+Nodes (27): _0(), da(), fe(), id(), io(), Kt(), Le(), lr() (+19 more)
+
+### Community 108 - "a"
+Cohesion: 0.09
+Nodes (45): a(), aa(), ac(), Ao(), bc(), cc(), co(), da() (+37 more)
 
 ### Community 109 - "4b9eae0c8dc7e975.js"
 Cohesion: 0.13
 Nodes (10): c(), f(), i(), l(), M(), o(), p(), R() (+2 more)
 
-### Community 110 - "h"
-Cohesion: 0.16
-Nodes (21): af(), df(), Dn(), ef(), gf(), If(), jf(), Jt() (+13 more)
+### Community 110 - "zm"
+Cohesion: 0.09
+Nodes (23): An(), ar(), bf(), ca(), da(), _f(), ga(), Gd() (+15 more)
 
-### Community 111 - "fa"
+### Community 111 - "Na"
+Cohesion: 0.08
+Nodes (30): Na(), aa(), Ap(), bp(), ca(), da(), fa(), fp() (+22 more)
+
+### Community 112 - "id"
+Cohesion: 0.07
+Nodes (68): ak(), aP(), aS(), ax(), c7(), cY(), e5(), e8() (+60 more)
+
+### Community 113 - "hu"
+Cohesion: 0.07
+Nodes (53): ap(), at(), Au(), Cu(), di(), dt(), Eu(), fi() (+45 more)
+
+### Community 114 - "push"
+Cohesion: 0.06
+Nodes (46): ao(), bo(), bt(), ct(), dc(), dt(), Eo(), fo() (+38 more)
+
+### Community 115 - "eh"
+Cohesion: 0.08
+Nodes (34): ba(), bp(), Cm(), cp(), delete(), Dm(), eh(), Em() (+26 more)
+
+### Community 116 - "Pa"
 Cohesion: 0.13
-Nodes (20): aa(), Ap(), dp(), fa(), fp(), gp(), hp(), jp() (+12 more)
+Nodes (27): ar(), ct(), D0(), eu(), Is(), jc(), jo(), Kc() (+19 more)
 
-### Community 112 - "xf"
-Cohesion: 0.20
-Nodes (10): ar(), bf(), _f(), Gf(), Jf(), or(), qf(), vf() (+2 more)
-
-### Community 113 - "sh"
-Cohesion: 0.18
-Nodes (22): eM(), eR(), eV(), lP(), rs(), sa(), sb(), sc() (+14 more)
-
-### Community 115 - "O"
-Cohesion: 0.17
-Nodes (21): af(), ef(), gf(), Hf(), If(), jf(), Jt(), kf() (+13 more)
-
-### Community 116 - "sr"
-Cohesion: 0.17
-Nodes (21): ed(), ef(), ej(), eM(), es(), lY(), rp(), rz() (+13 more)
-
-### Community 117 - "lc"
+### Community 117 - "C"
 Cohesion: 0.14
-Nodes (19): ac(), cc(), ea(), gc(), ia(), ic(), jo(), lc() (+11 more)
+Nodes (28): be(), bi(), C(), ca(), cf(), Du(), E(), ec() (+20 more)
 
-### Community 118 - "i"
-Cohesion: 0.18
-Nodes (15): cN(), cR(), i, i5(), ij(), iQ(), iv(), iw() (+7 more)
+### Community 118 - "app-route-prefetch-policy-CS4bqQxx.js"
+Cohesion: 0.10
+Nodes (23): a(), s(), af(), cf(), Cn(), ei(), et(), Ii() (+15 more)
 
 ### Community 119 - "sp"
 Cohesion: 0.19
 Nodes (23): aE(), an(), ea(), ei(), ii(), im(), ip(), J() (+15 more)
 
-### Community 120 - "rt"
-Cohesion: 0.10
-Nodes (25): af(), bt(), cf(), ei(), ft(), Ii(), it(), jt() (+17 more)
+### Community 120 - "t"
+Cohesion: 0.06
+Nodes (70): t(), ac(), n(), bl(), bu(), cc(), dd(), r() (+62 more)
 
-### Community 121 - "fa"
-Cohesion: 0.10
-Nodes (24): aa(), Ap(), ca(), da(), fa(), ga(), gp(), ha() (+16 more)
+### Community 121 - "rt"
+Cohesion: 0.11
+Nodes (23): bt(), ct(), dt(), ft(), gt(), ht(), If(), it() (+15 more)
 
-### Community 122 - "i"
-Cohesion: 0.25
-Nodes (5): ck(), cu(), cx(), i(), id()
+### Community 122 - "eh"
+Cohesion: 0.07
+Nodes (37): Vm(), b(), ba(), bs(), Cm(), cp(), delete(), Dm() (+29 more)
 
 ### Community 123 - "0cz1d0mv5g_q7.js"
 Cohesion: 0.18
 Nodes (9): e(), eb(), hb(), ib(), nb(), ob(), rb(), sb() (+1 more)
 
-### Community 124 - "fw"
-Cohesion: 0.14
-Nodes (16): aO(), aU(), eH(), ej(), fw(), lH(), lQ(), lu() (+8 more)
+### Community 124 - "fa"
+Cohesion: 0.10
+Nodes (26): aa(), Ap(), bp(), dp(), fa(), fp(), gp(), hp() (+18 more)
 
 ### Community 125 - "a6dad97d9634a72d.js"
 Cohesion: 0.18
 Nodes (9): e(), eb(), hb(), ib(), nb(), ob(), rb(), sb() (+1 more)
 
-### Community 126 - "medora-clinic/_next/static/chunks/streamed-icons-Bumrcy-j.js"
-Cohesion: 0.47
-Nodes (4): i(), a(), i(), o()
+### Community 126 - "af"
+Cohesion: 0.10
+Nodes (22): af(), ca(), cf(), da(), ei(), ga(), ha(), If() (+14 more)
 
-### Community 127 - "Nd"
-Cohesion: 0.22
-Nodes (14): en(), fd(), ln(), Nd(), on(), pd(), Q(), Qt() (+6 more)
+### Community 127 - "af"
+Cohesion: 0.09
+Nodes (25): Bt(), af(), back(), bd(), cf(), dn(), ei(), fn() (+17 more)
 
-### Community 128 - "zd"
-Cohesion: 0.15
-Nodes (15): df(), Fd(), ff(), hf(), Kd(), lf(), mf(), Ns() (+7 more)
-
-### Community 129 - "3fntmmi971322.js"
-Cohesion: 0.15
-Nodes (4): R(), s(), T(), x()
-
-### Community 130 - "cn"
-Cohesion: 0.16
-Nodes (14): vn(), vn(), vn(), vn(), vn(), cn(), cr(), ta() (+6 more)
-
-### Community 131 - "ss"
-Cohesion: 0.11
-Nodes (24): as(), Bo(), Fo(), fs(), Fu(), ha(), is(), Iu() (+16 more)
-
-### Community 132 - "hc"
-Cohesion: 0.14
-Nodes (26): an(), E(), en(), fd(), gc(), hc(), hn(), ia() (+18 more)
-
-### Community 134 - "i8"
-Cohesion: 0.22
-Nodes (13): f0(), f1(), f2(), f6(), t(), i8(), ik(), l0() (+5 more)
-
-### Community 135 - "ug"
-Cohesion: 0.21
-Nodes (13): fg(), fh(), ih(), im(), lp(), sc(), uE(), ug() (+5 more)
-
-### Community 136 - "35d1u26kqig3x.js"
-Cohesion: 0.23
-Nodes (10): b(), c(), f(), g(), l(), l(), o(), s() (+2 more)
-
-### Community 137 - "q"
-Cohesion: 0.08
-Nodes (37): be(), Hd(), Mf(), Vd(), Au(), bm(), cd(), clear() (+29 more)
-
-### Community 138 - "1x4jhta-338sj.js"
-Cohesion: 0.24
-Nodes (8): a(), c(), f(), g(), l(), l(), o(), u()
-
-### Community 139 - "zm"
+### Community 128 - "zm"
 Cohesion: 0.11
 Nodes (20): An(), ar(), back(), bd(), dn(), fn(), Gd(), getDerivedStateFromError() (+12 more)
 
-### Community 140 - "er"
-Cohesion: 0.24
-Nodes (11): e4(), e9(), ed(), l(), er(), a(), rn(), t5() (+3 more)
+### Community 129 - "medora-clinic/_next/static/chunks/streamed-icons-Bumrcy-j.js"
+Cohesion: 0.47
+Nodes (4): i(), a(), i(), o()
 
-### Community 141 - "np"
-Cohesion: 0.29
-Nodes (10): ap(), kp(), np(), t(), Qa(), tp(), ut(), wp() (+2 more)
+### Community 130 - "layout-segment-context-Di5H6bt8.js"
+Cohesion: 0.24
+Nodes (10): back(), bd(), dn(), fn(), mn(), pn(), un(), vd() (+2 more)
+
+### Community 131 - "n"
+Cohesion: 0.11
+Nodes (29): n(), dd(), dp(), ed(), el(), en(), id(), kl() (+21 more)
+
+### Community 133 - "0vlm5hhfvrvxn.js"
+Cohesion: 0.13
+Nodes (13): a(), b, c(), d(), E, i(), l(), m() (+5 more)
+
+### Community 134 - "go"
+Cohesion: 0.11
+Nodes (24): ao(), bo(), co(), dc(), Do(), Eo(), Fd(), fo() (+16 more)
+
+### Community 135 - "Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are., Source Nodes
+
+### Community 136 - "af"
+Cohesion: 0.12
+Nodes (19): af(), ca(), cf(), da(), ei(), ga(), ha(), Ii() (+11 more)
+
+### Community 137 - "lc"
+Cohesion: 0.14
+Nodes (19): ac(), cc(), fc(), gc(), hc(), Hs(), ic(), jc() (+11 more)
+
+### Community 138 - "turbopack-2pe6gm71vwu13.js"
+Cohesion: 0.20
+Nodes (15): a(), b(), c(), E(), f(), g(), get(), h() (+7 more)
+
+### Community 139 - "push"
+Cohesion: 0.07
+Nodes (41): Uo(), ac(), bo(), cc(), co(), dc(), Do(), dp() (+33 more)
+
+### Community 140 - "O"
+Cohesion: 0.17
+Nodes (14): i(), v(), y(), back(), fn(), a(), o(), A() (+6 more)
+
+### Community 141 - "i8"
+Cohesion: 0.13
+Nodes (19): f0(), f1(), f2(), f6(), t(), i8(), ie(), ik() (+11 more)
+
+### Community 142 - "af"
+Cohesion: 0.12
+Nodes (18): af(), ca(), cf(), da(), ei(), ga(), ha(), Ii() (+10 more)
 
 ### Community 143 - "get"
-Cohesion: 0.39
-Nodes (9): b(), ec(), el(), eo(), es(), eU(), eW(), get() (+1 more)
+Cohesion: 0.15
+Nodes (27): b(), compare(), e3(), e7(), eb(), l(), eo(), er() (+19 more)
 
-### Community 144 - "ke"
-Cohesion: 0.67
-Nodes (4): ae(), Ee(), ke(), Oe()
+### Community 144 - "L0"
+Cohesion: 0.20
+Nodes (18): _a(), ao(), bd(), Ea(), eo(), fr(), G0(), ga() (+10 more)
 
 ### Community 145 - "package.json"
 Cohesion: 0.29
 Nodes (6): engines, node, name, private, type, version
 
+### Community 146 - "Fa"
+Cohesion: 0.16
+Nodes (18): df(), ef(), Et(), Fa(), gf(), If(), jf(), kf() (+10 more)
+
+### Community 147 - "rt"
+Cohesion: 0.14
+Nodes (18): bt(), ft(), gt(), ht(), it(), jt(), kt(), me() (+10 more)
+
+### Community 148 - "O"
+Cohesion: 0.16
+Nodes (18): af(), df(), es(), If(), Jt(), kt(), Lf(), mu() (+10 more)
+
 ### Community 149 - "ai"
-Cohesion: 0.50
-Nodes (4): ai(), Ri(), Ri(), Ri()
+Cohesion: 0.33
+Nodes (6): ai(), Ri(), Ri(), Ri(), Ri(), Ri()
+
+### Community 156 - "fa"
+Cohesion: 0.11
+Nodes (23): aa(), Ap(), dp(), fa(), fp(), gp(), hp(), jo() (+15 more)
+
+### Community 157 - "u"
+Cohesion: 0.09
+Nodes (35): aC(), ah(), ca(), cD(), cj(), cM(), cO(), eM() (+27 more)
+
+### Community 159 - "index-B97UzVyg.js"
+Cohesion: 0.01
+Nodes (194): ai(), br(), Bt(), Na(), Or(), aa(), ad(), af() (+186 more)
 
 ### Community 162 - "sync-showcase.mjs"
 Cohesion: 0.14
 Nodes (17): buildProject(), buildRequested, exists(), findOutput(), ignoredNames, isInside(), missing, prefixDocument() (+9 more)
 
+### Community 163 - "go"
+Cohesion: 0.12
+Nodes (20): ao(), bo(), co(), Do(), Eo(), Fd(), fo(), go() (+12 more)
+
+### Community 164 - "ov"
+Cohesion: 0.09
+Nodes (40): ab(), ak(), aL(), aS(), av(), ay(), az(), eH() (+32 more)
+
+### Community 165 - "Ji"
+Cohesion: 0.21
+Nodes (16): an(), en(), fd(), hn(), Ji(), ln(), Nd(), on() (+8 more)
+
+### Community 167 - "3f9kpwr14xosk.js"
+Cohesion: 0.30
+Nodes (14): b(), c(), d(), f(), g(), i(), j(), l() (+6 more)
+
+### Community 168 - "3fntmmi971322.js"
+Cohesion: 0.15
+Nodes (4): R(), s(), T(), x()
+
+### Community 175 - "fa"
+Cohesion: 0.20
+Nodes (14): aa(), Ap(), fa(), ia(), jp(), ka(), kp(), na() (+6 more)
+
+### Community 176 - "wd"
+Cohesion: 0.08
+Nodes (35): ad(), Ar(), cr(), dr(), Ed(), Er(), fn(), fr() (+27 more)
+
+### Community 177 - "18llx4g7jfl2n.js"
+Cohesion: 0.23
+Nodes (10): c(), f(), l(), m(), n(), s(), s(), u() (+2 more)
+
+### Community 178 - "2x8_766p-q0kf.js"
+Cohesion: 0.23
+Nodes (10): d(), j(), l(), m(), o(), p(), s(), s() (+2 more)
+
+### Community 179 - "Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect, Source Nodes
+
+### Community 180 - "31sx5i3efv50f.js"
+Cohesion: 0.23
+Nodes (10): b(), c(), f(), l(), m(), n(), s(), s() (+2 more)
+
+### Community 181 - "3rkgl73w6if-z.js"
+Cohesion: 0.26
+Nodes (11): a(), a(), b(), d(), i(), l(), m(), n() (+3 more)
+
+### Community 183 - "c0"
+Cohesion: 0.45
+Nodes (11): bc(), c0(), H0(), Lt(), Pu(), Ru(), su(), wr() (+3 more)
+
+### Community 184 - "i"
+Cohesion: 0.25
+Nodes (5): ck(), cu(), cx(), i(), id()
+
+### Community 185 - "aj"
+Cohesion: 0.67
+Nodes (4): aA(), aD(), aF(), aj()
+
+### Community 186 - "pf"
+Cohesion: 0.25
+Nodes (8): df(), ff(), lf(), Ns(), of(), pf(), sf(), uf()
+
+### Community 187 - "zm"
+Cohesion: 0.09
+Nodes (26): An(), ar(), back(), bd(), bf(), dn(), _f(), fn() (+18 more)
+
+### Community 188 - "push"
+Cohesion: 0.07
+Nodes (38): bc(), bt(), ct(), dc(), dt(), ft(), gt(), ht() (+30 more)
+
+### Community 190 - "n"
+Cohesion: 0.13
+Nodes (27): as(), bd(), Bo(), cd(), Fo(), gs(), id(), it() (+19 more)
+
+### Community 194 - "zm"
+Cohesion: 0.09
+Nodes (26): An(), ar(), back(), bd(), bf(), dn(), _f(), fn() (+18 more)
+
+### Community 195 - "Bt"
+Cohesion: 0.12
+Nodes (16): a(), s(), Bt(), bd(), Cn(), dn(), me(), mn() (+8 more)
+
+### Community 197 - "Ss"
+Cohesion: 0.50
+Nodes (5): bs(), Ss(), ws(), xs(), Ys()
+
 ## Knowledge Gaps
-- **246 isolated node(s):** `metadata`, `typeMap`, `romanianTypeMap`, `descriptions`, `geist` (+241 more)
+- **229 isolated node(s):** `metadata`, `typeMap`, `romanianTypeMap`, `descriptions`, `geist` (+224 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `cn` to `1j_9b-l0n6u-t.js`, `u`, `f2f58a7e93290fbb.js`, `n`, `c7`?**
-  _High betweenness centrality (0.300) - this node is a cross-community bridge._
-- **Why does `ci()` connect `uu` to `index-DLaChFLh.js`, `1j_9b-l0n6u-t.js`, `n`, `index-DZIH026o.js`, `index-Dc85E_4y.js`, `index-DX07COdD.js`, `index-DAfP7sCC.js`?**
+- **Why does `qd()` connect `qd` to `Xl`, `sl`, `y`, `L0`, `Pa`, `index-BjeMrSCb.js`, `e`, `c0`, `eh`, `index-DZIH026o.js`?**
   _High betweenness centrality (0.287) - this node is a cross-community bridge._
-- **Why does `mi()` connect `index-DLaChFLh.js` to `academia/_next/static/chunks/framework-D_rUT4EX.js`, `uu`?**
-  _High betweenness centrality (0.146) - this node is a cross-community bridge._
-- **Are the 118 inferred relationships involving `t()` (e.g. with `a()` and `bd()`) actually correct?**
-  _`t()` has 118 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 37 inferred relationships involving `o()` (e.g. with `ep()` and `gu()`) actually correct?**
-  _`o()` has 37 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 38 inferred relationships involving `a()` (e.g. with `ac()` and `as()`) actually correct?**
-  _`a()` has 38 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 24 inferred relationships involving `a()` (e.g. with `ac()` and `as()`) actually correct?**
-  _`a()` has 24 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `u0()` connect `qd` to `1j_9b-l0n6u-t.js`, `y`, `e`?**
+  _High betweenness centrality (0.241) - this node is a cross-community bridge._
+- **Why does `sc()` connect `1j_9b-l0n6u-t.js` to `qd`, `n`?**
+  _High betweenness centrality (0.241) - this node is a cross-community bridge._
+- **Are the 18 inferred relationships involving `qd()` (e.g. with `ad()` and `cd()`) actually correct?**
+  _`qd()` has 18 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 196 inferred relationships involving `t()` (e.g. with `a()` and `bd()`) actually correct?**
+  _`t()` has 196 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 55 inferred relationships involving `o()` (e.g. with `ep()` and `gu()`) actually correct?**
+  _`o()` has 55 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 52 inferred relationships involving `a()` (e.g. with `ac()` and `as()`) actually correct?**
+  _`a()` has 52 INFERRED edges - model-reasoned connections that need verification._

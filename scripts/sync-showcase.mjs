@@ -67,8 +67,13 @@ function prefixDocument(content, slug) {
   const prefix = `/${slug}/`;
   const basePath = prefix.slice(0, -1);
   const prefixRootPath = (target) => {
+    if (["ro", "ru", "en"].some((locale) => target === `${basePath}/${locale}`))
+      return `${target}.html`;
     if (target === basePath || target.startsWith(prefix)) return target;
-    return `${basePath}${target}`;
+    const prefixed = `${basePath}${target}`;
+    return ["ro", "ru", "en"].some((locale) => prefixed === `${basePath}/${locale}`)
+      ? `${prefixed}.html`
+      : prefixed;
   };
 
   return content
@@ -135,6 +140,18 @@ for (const project of registry) {
   }
   if (project.entrypoint && !(await exists(path.join(destination, "index.html")))) {
     await cp(path.join(destination, project.entrypoint), path.join(destination, "index.html"));
+  }
+  // Next static exports use flat `ro.html`/`ru.html`/`en.html` files while also
+  // emitting RSC payload directories with the same names. Static hosts resolve
+  // `/ro` to the directory first, so give each locale directory a real entry.
+  for (const locale of ["ro", "ru", "en"]) {
+    const flatLocale = path.join(destination, `${locale}.html`);
+    const localeDirectory = path.join(destination, locale);
+    const localeIndex = path.join(localeDirectory, "index.html");
+    if (await exists(flatLocale)) {
+      await mkdir(localeDirectory, { recursive: true });
+      if (!(await exists(localeIndex))) await cp(flatLocale, localeIndex);
+    }
   }
   await rewriteTree(destination, project.slug);
   results.push({ slug: project.slug, status: "synced", output });

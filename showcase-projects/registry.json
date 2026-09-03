@@ -1,4 +1,5 @@
 [
+  { "id": 33, "slug": "drivolt", "source": "D:\\DRIVOLT", "outputs": ["dist"], "buildArgs": ["run", "build"] },
   { "id": 32, "slug": "flow-crm", "source": "D:\\Flow CRM", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
   { "id": 31, "slug": "academia", "source": "D:\\Academia", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
   { "id": 30, "slug": "staynest", "source": "D:\\StayNest", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },

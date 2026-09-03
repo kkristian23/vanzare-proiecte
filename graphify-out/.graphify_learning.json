@@ -1,6 +1,70 @@
 {
-  "generated_at": "2026-09-03T07:39:12.060279+00:00",
+  "generated_at": "2026-09-03T07:44:23.953175+00:00",
   "nodes": {
+    "app_i18n": {
+      "code_fingerprint": "635bb06f2a9020cfaa5ebc51def72c85dc1bc315412434a97e6b929e862563c9",
+      "label": "i18n.ts",
+      "last": "2026-09-03T07:42:33.445094+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-03T07:42:33.445094+00:00",
+          "outcome": "useful",
+          "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
+        }
+      ],
+      "score": 0.999970449,
+      "source_file": "app/i18n.ts",
+      "status": "tentative",
+      "uses": 1
+    },
+    "app_i18n_locales": {
+      "code_fingerprint": "635bb06f2a9020cfaa5ebc51def72c85dc1bc315412434a97e6b929e862563c9",
+      "label": "locales",
+      "last": "2026-09-03T07:42:33.445094+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-03T07:42:33.445094+00:00",
+          "outcome": "useful",
+          "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
+        }
+      ],
+      "score": 0.999970449,
+      "source_file": "app/i18n.ts",
+      "status": "tentative",
+      "uses": 1
+    },
+    "app_page_projects": {
+      "code_fingerprint": "ed4ffb93a5678121b4bc37c9de41dfafb6d26934744d205c3d11c5454c08b0b3",
+      "label": "projects",
+      "last": "2026-09-03T07:42:33.445094+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-03T07:42:33.445094+00:00",
+          "outcome": "useful",
+          "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
+        }
+      ],
+      "score": 0.999970449,
+      "source_file": "app/page.tsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "app_page_projectslugs": {
+      "code_fingerprint": "ed4ffb93a5678121b4bc37c9de41dfafb6d26934744d205c3d11c5454c08b0b3",
+      "label": "projectSlugs",
+      "last": "2026-09-03T07:42:33.445094+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-03T07:42:33.445094+00:00",
+          "outcome": "useful",
+          "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
+        }
+      ],
+      "score": 0.999970449,
+      "source_file": "app/page.tsx",
+      "status": "tentative",
+      "uses": 1
+    },
     "next_config_nextconfig": {
       "code_fingerprint": "8dd2ca8ad2acef58cb810cb038882d14ba0ee76e356aa434dfe0ff7a18b2bc54",
       "label": "nextConfig",
@@ -12,7 +76,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967086902,
+      "score": 0.967006244,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
@@ -28,7 +92,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967086902,
+      "score": 0.967006244,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
@@ -44,7 +108,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967086902,
+      "score": 0.967006244,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1

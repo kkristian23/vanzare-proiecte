@@ -26,6 +26,15 @@ import {
 
 const projects = [
   {
+    id: 33,
+    title: "DRIVOLT",
+    type: "E-commerce & Auto",
+    price: 1800,
+    tone: "drivolt",
+    desc: "Magazin online auto cu catalog, promoții, căutare, favorite, coș, branduri și servicii de instalare într-o experiență responsive",
+    stack: ["React", "Vite", "JavaScript", "E-commerce", "Product Search", "Shopping Cart", "Responsive Design", "Interactive UI"],
+  },
+  {
     id: 32,
     title: "FLOW CRM",
     type: "CRM & Sales",
@@ -529,6 +538,7 @@ const cleanFilterCopy = {
 } as const;
 
 const categorySlugs: Record<string, string> = {
+  "E-commerce & Auto": "ecommerce-auto",
   "Real Estate": "real-estate",
   "Clinics & Medical": "clinics-medical",
   "Restaurants & Food": "restaurants-food",
@@ -546,6 +556,7 @@ const categorySlugs: Record<string, string> = {
   "Utility Management": "utility-management",
 };
 const projectSlugs: Record<number, string> = {
+  33: "drivolt",
   32: "flow-crm",
   31: "academia",
   30: "staynest",
@@ -574,6 +585,7 @@ const projectSlugs: Record<number, string> = {
 };
 
 const projectPaths: Record<number, string> = {
+  33: "/drivolt/",
   32: "/flow-crm/",
   31: "/academia/",
   30: "/staynest/",
@@ -601,7 +613,7 @@ const projectPaths: Record<number, string> = {
   7: "/micora/",
 };
 
-const launchProjectIds = new Set([27, 28, 29, 30, 31, 32]);
+const launchProjectIds = new Set([27, 28, 29, 30, 31, 32, 33]);
 
 const projectDetails: Record<
   number,
@@ -611,6 +623,15 @@ const projectDetails: Record<
     sections: Array<{ title: string; items: string[] }>;
   }
 > = {
+  33: {
+    summary: "DRIVOLT este un magazin digital de tehnologie și accesorii auto, construit în jurul unei identități electrice și contemporane. Proiectul combină un catalog vizual bogat cu funcții interactive de căutare, favorite și coș.",
+    sections: [
+      { title: "Catalog auto", items: ["Categorii vizuale pentru multimedia, audio, alarme și accesorii", "Produse demonstrative cu disponibilitate și prețuri", "Căutare instantanee și navigare rapidă în catalog"] },
+      { title: "Experiență de cumpărare", items: ["Favorite și coș interactive", "Slider promoțional automat și oferte evidențiate", "Interfață optimizată pentru desktop și mobil"] },
+      { title: "Brand și servicii", items: ["Identitate electrică proprie în verde volt, cyan și petrol", "Secțiune pentru branduri, instalare și contact", "Program de lucru și legături directe"] },
+      { title: "Ce primește cumpărătorul", items: ["Cod sursă React și Vite complet editabil", "Active locale și build static pentru producție", "Bază pregătită pentru conectarea unui catalog și checkout real"] },
+    ],
+  },
   32: {
     summary: "FLOW CRM este un workspace SaaS complet pentru echipe de vânzări. Reunește contactele, companiile, oportunitățile, activitățile, ofertele și automatizările într-o interfață rapidă, multi-tenant și pregătită pentru extindere.",
     sections: [
@@ -2213,6 +2234,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("newest");
   const [menu, setMenu] = useState(false);
+  const [activeNav, setActiveNav] = useState<"proiecte" | "proces" | null>(null);
   const [locale, setLocale] = useState<Locale>("ro");
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(
     null,
@@ -2322,6 +2344,38 @@ export default function Home() {
   useEffect(() => {
     document.documentElement.lang = locale;
   }, [locale]);
+  useEffect(() => {
+    let frame = 0;
+    const updateActiveNav = () => {
+      frame = 0;
+      const projectsSection = document.getElementById("proiecte");
+      const processSection = document.getElementById("proces");
+      if (!projectsSection || !processSection) return;
+
+      const activationLine = Math.min(160, window.innerHeight * 0.28);
+      const nextActive =
+        processSection.getBoundingClientRect().top <= activationLine
+          ? "proces"
+          : projectsSection.getBoundingClientRect().top <= activationLine
+            ? "proiecte"
+            : null;
+      setActiveNav((current) => current === nextActive ? current : nextActive);
+    };
+    const requestUpdate = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateActiveNav);
+    };
+
+    updateActiveNav();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    window.addEventListener("hashchange", requestUpdate);
+    return () => {
+      if (frame) window.cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", requestUpdate);
+      window.removeEventListener("resize", requestUpdate);
+      window.removeEventListener("hashchange", requestUpdate);
+    };
+  }, []);
   useLayoutEffect(() => {
     const row = filterRowRef.current;
     const measure = filterMeasureRef.current;
@@ -2350,14 +2404,10 @@ export default function Home() {
       if (rowsNeeded(widths, row.clientWidth) > 2) {
         const moreWidth =
           categoryMenuRef.current?.getBoundingClientRect().width ?? 150;
+        const filtersWidth = Math.max(0, row.clientWidth - moreWidth - gap);
         nextCount = 1;
         for (let count = filters.length - 1; count >= 1; count -= 1) {
-          if (
-            rowsNeeded(
-              [...widths.slice(0, count), moreWidth],
-              row.clientWidth,
-            ) <= 2
-          ) {
+          if (rowsNeeded(widths.slice(0, count), filtersWidth) <= 2) {
             nextCount = count;
             break;
           }
@@ -2371,7 +2421,15 @@ export default function Home() {
     calculateVisibleFilters();
     const observer = new ResizeObserver(calculateVisibleFilters);
     observer.observe(row);
-    return () => observer.disconnect();
+    observer.observe(measure);
+    let cancelled = false;
+    document.fonts.ready.then(() => {
+      if (!cancelled) calculateVisibleFilters();
+    });
+    return () => {
+      cancelled = true;
+      observer.disconnect();
+    };
   }, [locale]);
   useEffect(() => {
     const closeDropdowns = (event: PointerEvent) => {
@@ -2488,9 +2546,34 @@ export default function Home() {
           <i>_</i>
         </div>
       </div>
-      <div className="edge-rail edge-rail-right code-rail" aria-hidden="true">
-        <div className="code-grid" />
-        <div className="binary-rain">
+      <div className="edge-rail edge-rail-right code-rail">
+        <div className="rail-language-switch" aria-label={c.language} role="group">
+          <span className="rail-language-label" aria-hidden="true">LANG</span>
+          <div className="rail-language-options">
+            {locales.map((language) => (
+              <button
+                type="button"
+                key={language}
+                className={locale === language ? "active" : ""}
+                onClick={() => changeLocale(language)}
+                lang={language}
+                aria-label={`${c.language}: ${language.toUpperCase()}`}
+                aria-pressed={locale === language}
+              >
+                {locale === language && (
+                  <motion.span
+                    className="rail-language-active"
+                    layoutId="rail-language-active"
+                    transition={{ type: "spring", stiffness: 460, damping: 30 }}
+                  />
+                )}
+                <span>{language.toUpperCase()}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="code-grid" aria-hidden="true" />
+        <div className="binary-rain" aria-hidden="true">
           <span>
             01001101
             <br />
@@ -2519,7 +2602,7 @@ export default function Home() {
             11100010
           </span>
         </div>
-        <div className="git-branch">
+        <div className="git-branch" aria-hidden="true">
           <i />
           <i />
           <i />
@@ -2527,18 +2610,58 @@ export default function Home() {
           <span>main</span>
           <b>HEAD</b>
         </div>
-        <div className="deploy-chip">
+        <div className="deploy-chip" aria-hidden="true">
           <i />
           DEPLOYED <b>200</b>
         </div>
       </div>
       <nav className="nav shell">
-        <a className="logo" href="#top">
-          M<span>O</span>NO/DEV
+        <a className="logo" href="#top" aria-label="Mono Dev — pagina principală">
+          Mono<span>/dev</span>
         </a>
         <div className="nav-links">
-          <a href="#proiecte">{c.nav[0]}</a>
-          <a href="#proces">{c.nav[1]}</a>
+          <a
+            href="#proiecte"
+            className={activeNav === "proiecte" ? "active" : ""}
+            aria-current={activeNav === "proiecte" ? "location" : undefined}
+          >
+            {activeNav === "proiecte" && (
+              <motion.span
+                className="nav-active-pill"
+                layoutId="nav-active-pill"
+                transition={{ type: "spring", stiffness: 420, damping: 27, mass: 0.72 }}
+              >
+                <motion.i
+                  key="proiecte"
+                  initial={{ y: 7, scale: 0.82, rotate: -3 }}
+                  animate={{ y: [7, -13, 2, 0], scale: [0.82, 1.08, 0.97, 1], rotate: [-3, 2, 0] }}
+                  transition={{ duration: 0.52, ease: [0.2, 0.85, 0.25, 1] }}
+                />
+              </motion.span>
+            )}
+            <span>{c.nav[0]}</span>
+          </a>
+          <a
+            href="#proces"
+            className={activeNav === "proces" ? "active" : ""}
+            aria-current={activeNav === "proces" ? "location" : undefined}
+          >
+            {activeNav === "proces" && (
+              <motion.span
+                className="nav-active-pill"
+                layoutId="nav-active-pill"
+                transition={{ type: "spring", stiffness: 420, damping: 27, mass: 0.72 }}
+              >
+                <motion.i
+                  key="proces"
+                  initial={{ y: 7, scale: 0.82, rotate: 3 }}
+                  animate={{ y: [7, -13, 2, 0], scale: [0.82, 1.08, 0.97, 1], rotate: [3, -2, 0] }}
+                  transition={{ duration: 0.52, ease: [0.2, 0.85, 0.25, 1] }}
+                />
+              </motion.span>
+            )}
+            <span>{c.nav[1]}</span>
+          </a>
           <a href={contactHref}>{c.nav[2]}</a>
         </div>
         <div className="language-switch" aria-label={c.language}>

@@ -52,7 +52,7 @@ export const contactCopy = {
 
 export const copy = {
   ro: {
-    nav: ["Proiecte", "Proces", "Contact"], buyProject: "Cumpără un proiect", openMenu: "Deschide meniul", language: "Limbă",
+    nav: ["Proiecte", "Proces", "Contact"], buyProject: "Proiect la comandă", openMenu: "Deschide meniul", language: "Limbă",
     eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE.",
     heroText: "Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.", viewProjects: "Vezi proiectele",
     marquee: ["DESIGN CARE VINDE", "COD CURAT", "LIVRARE RAPIDĂ"], catalog: "/ CATALOG 2026", chooseA: "ALEGE URMĂTORUL", chooseB: "TĂU", chooseC: "PROIECT.",

@@ -1,25 +1,26 @@
 1:"$Sreact.fragment"
-3:I[39756,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
-4:I[37457,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
-6:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"OutletBoundary"]
+3:I[7121,[],""]
+4:I[4581,[],""]
+6:I[484,[],"OutletBoundary"]
 7:"$Sreact.suspense"
-a:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"ViewportBoundary"]
-c:I[97367,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"MetadataBoundary"]
-e:I[68027,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default",1]
-:HL["/neobarberclub/_next/static/chunks/3cgm90xuxn2ai.css","style"]
+a:I[484,[],"ViewportBoundary"]
+c:I[484,[],"MetadataBoundary"]
+e:I[7123,[],"default",1]
+:HL["/neobarberclub/_next/static/css/59993dc72181462c.css","style"]
+:HL["/neobarberclub/_next/static/css/4ef810911a5d6088.css","style"]
 9:X
-0:{"P":null,"c":["","_not-found"],"q":"","i":false,"f":[[["",{"children":["/_not-found",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/neobarberclub/_next/static/chunks/3cgm90xuxn2ai.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","async":true,"nonce":"$undefined"}]],"$L2"]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,"$9"]},null,false,null],["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$La",null,{"children":"$Lb"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Ld"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$e",[["$","link","0",{"rel":"stylesheet","href":"/neobarberclub/_next/static/chunks/3cgm90xuxn2ai.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"--qBQfC-8nWfjjddMwg4b"}
-f:I[13865,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"LanguageProvider"]
-10:I[43611,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"default"]
-11:I[81470,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"VisualEditorBridge"]
-12:I[57872,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"VisualContentRuntime"]
-14:I[22016,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js"],""]
-15:I[5014,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js","/neobarberclub/_next/static/chunks/1aw3_o8xskx7m.js"],"default"]
+0:{"P":null,"c":["","_not-found"],"q":"","i":false,"f":[[["",{"children":["_not-found",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/neobarberclub/_next/static/css/59993dc72181462c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/neobarberclub/_next/static/css/4ef810911a5d6088.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L2"]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,"$9"]},null,false,null],["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$La",null,{"children":"$Lb"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Ld"}]}]}],null]}],false]],"m":"$undefined","G":["$e",[]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ngHErCoaqFKBdSTcwPmD1"}
+f:I[7415,["177","static/chunks/app/layout-c99491b205764138.js"],"LanguageProvider"]
+10:I[8337,["177","static/chunks/app/layout-c99491b205764138.js"],"default"]
+11:I[5214,["177","static/chunks/app/layout-c99491b205764138.js"],"VisualEditorBridge"]
+12:I[6527,["177","static/chunks/app/layout-c99491b205764138.js"],"VisualContentRuntime"]
+14:I[8500,["674","static/chunks/674-24baaf66294733e6.js","345","static/chunks/app/not-found-7b0968e118034560.js"],""]
+15:I[1265,["674","static/chunks/674-24baaf66294733e6.js","345","static/chunks/app/not-found-7b0968e118034560.js"],"default"]
 9:C
-2:["$","html",null,{"lang":"ro","className":"cormorant_garamond_85a027cf-module__-tmqmG__variable manrope_49fe7fb2-module__fB9vJW__variable","children":["$","body",null,{"children":["$","$Lf",null,{"initialLocale":"ro","children":[["$","$L10",null,{}],["$","$L11",null,{}],["$","$L12",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$L13",[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]}]
+2:["$","html",null,{"lang":"ro","className":"__variable_349ccb __variable_bdadd8","children":["$","body",null,{"children":["$","$Lf",null,{"initialLocale":"ro","children":[["$","$L10",null,{}],["$","$L11",null,{}],["$","$L12",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$L13",[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]}]
 5:["$","main",null,{"className":"not-found-page section-shell","children":[["$","p",null,{"className":"eyebrow","children":[["$","span",null,{}],"Eroare 404"]}],["$","h1",null,{"children":"Pagina nu există."}],["$","$L14",null,{"className":"button-gold","href":"/ro","children":[["$","$L15",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left","size":18}],"Înapoi la pagina principală"]}]]}]
 13:["$","main",null,{"className":"not-found-page section-shell","children":[["$","p",null,{"className":"eyebrow","children":[["$","span",null,{}],"Eroare 404"]}],["$","h1",null,{"children":"Pagina nu există."}],["$","$L14",null,{"className":"button-gold","href":"/ro","children":[["$","$L15",null,{"ref":"$undefined","iconNode":"$5:props:children:2:props:children:0:props:iconNode","className":"lucide-arrow-left","size":18}],"Înapoi la pagina principală"]}]]}]
 b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-16:I[27201,["/neobarberclub/_next/static/chunks/099w0-1nb23v8.js"],"IconMark"]
+16:I[6869,[],"IconMark"]
 8:null
 d:[["$","title","0",{"children":"NEO BarBe Club | Beauty & grooming premium în Strășeni"}],["$","meta","1",{"name":"description","content":"Coafură, culoare, tunsoare, barbă și ritualuri premium pentru femei și bărbați."}],["$","link","2",{"rel":"icon","href":"/neobarberclub/images/neo-barbe-logo.png"}],["$","link","3",{"rel":"apple-touch-icon","href":"/neobarberclub/images/neo-barbe-logo.png"}],["$","$L16","4",{}]]
