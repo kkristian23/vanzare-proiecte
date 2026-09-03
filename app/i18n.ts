@@ -135,6 +135,7 @@ const romanianTypeMap: Record<string, string> = {
 export function localType(type: string, locale: Locale) { return locale === "ro" ? romanianTypeMap[type] ?? type : typeMap[type]?.[locale === "ru" ? 0 : 1] ?? type; }
 
 const descriptions: Record<number, [string, string]> = {
+  34: ["Мультитенантная операционная платформа для автосервисов: записи, работы, клиенты, склад, партнёры и отчёты в одной системе", "A multi-tenant operations platform for automotive service companies, combining appointments, work orders, customers, inventory, partners and reporting"],
   26: ["Универсальная система онлайн-записи для услуг, команд и доступности, автоматически адаптируемая под каждую компанию", "A universal booking system for services, teams and availability, automatically customized for each company"],
   25: ["Универсальная платформа аренды с инвентарём, доступностью, ценообразованием, депозитами и полным управлением бронированиями", "A universal rental platform with inventory, availability, pricing, deposits and complete reservation management"],
   24: ["Локальная платформа для автоматической генерации, тестирования и улучшения сайтов; все услуги бесплатно в течение первого года", "A local platform for automatically generating, testing and improving websites, with all services included free for the first year"],

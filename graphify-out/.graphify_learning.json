@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T07:44:23.953175+00:00",
+  "generated_at": "2026-09-03T11:37:05.993446+00:00",
   "nodes": {
     "app_i18n": {
-      "code_fingerprint": "635bb06f2a9020cfaa5ebc51def72c85dc1bc315412434a97e6b929e862563c9",
+      "code_fingerprint": "9c30f8ec13f61d81012aab3c555c54cbbb6ea7599b19d3237a81750204968f7d",
       "label": "i18n.ts",
       "last": "2026-09-03T07:42:33.445094+00:00",
       "provenance": [
@@ -12,58 +12,73 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.999970449,
+      "score": 0.996243821,
       "source_file": "app/i18n.ts",
       "status": "tentative",
       "uses": 1
     },
     "app_i18n_locales": {
-      "code_fingerprint": "635bb06f2a9020cfaa5ebc51def72c85dc1bc315412434a97e6b929e862563c9",
+      "code_fingerprint": "9c30f8ec13f61d81012aab3c555c54cbbb6ea7599b19d3237a81750204968f7d",
       "label": "locales",
-      "last": "2026-09-03T07:42:33.445094+00:00",
+      "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
+        {
+          "date": "2026-09-03T08:00:26.405269+00:00",
+          "outcome": "useful",
+          "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
+        },
         {
           "date": "2026-09-03T07:42:33.445094+00:00",
           "outcome": "useful",
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.999970449,
+      "score": 1.992773534,
       "source_file": "app/i18n.ts",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "app_page_projects": {
-      "code_fingerprint": "ed4ffb93a5678121b4bc37c9de41dfafb6d26934744d205c3d11c5454c08b0b3",
+      "code_fingerprint": "7cc4f5011fdfee6e957cb86a4a21a6c1e8e02e53a1306da3c810cb071deb3286",
       "label": "projects",
-      "last": "2026-09-03T07:42:33.445094+00:00",
+      "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
+        {
+          "date": "2026-09-03T08:00:26.405269+00:00",
+          "outcome": "useful",
+          "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
+        },
         {
           "date": "2026-09-03T07:42:33.445094+00:00",
           "outcome": "useful",
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.999970449,
+      "score": 1.992773534,
       "source_file": "app/page.tsx",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "app_page_projectslugs": {
-      "code_fingerprint": "ed4ffb93a5678121b4bc37c9de41dfafb6d26934744d205c3d11c5454c08b0b3",
+      "code_fingerprint": "7cc4f5011fdfee6e957cb86a4a21a6c1e8e02e53a1306da3c810cb071deb3286",
       "label": "projectSlugs",
-      "last": "2026-09-03T07:42:33.445094+00:00",
+      "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
+        {
+          "date": "2026-09-03T08:00:26.405269+00:00",
+          "outcome": "useful",
+          "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
+        },
         {
           "date": "2026-09-03T07:42:33.445094+00:00",
           "outcome": "useful",
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.999970449,
+      "score": 1.992773534,
       "source_file": "app/page.tsx",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "next_config_nextconfig": {
       "code_fingerprint": "8dd2ca8ad2acef58cb810cb038882d14ba0ee76e356aa434dfe0ff7a18b2bc54",
@@ -76,13 +91,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967006244,
+      "score": 0.963402466,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
     },
     "scripts_sync_showcase": {
-      "code_fingerprint": "4bda57eac52f607aa57fefb32ff04d511243ff6e3aa9b9ab5991688ebdadc979",
+      "code_fingerprint": "987abc5851fb124849e1cbdcdc42a967c1cf6841f356b330007d347c082c9026",
       "label": "sync-showcase.mjs",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -92,13 +107,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967006244,
+      "score": 0.963402466,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
     },
     "scripts_sync_showcase_publicroot": {
-      "code_fingerprint": "4bda57eac52f607aa57fefb32ff04d511243ff6e3aa9b9ab5991688ebdadc979",
+      "code_fingerprint": "987abc5851fb124849e1cbdcdc42a967c1cf6841f356b330007d347c082c9026",
       "label": "publicRoot",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -108,8 +123,24 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.967006244,
+      "score": 0.963402466,
       "source_file": "scripts/sync-showcase.mjs",
+      "status": "tentative",
+      "uses": 1
+    },
+    "showcase_projects_readme": {
+      "code_fingerprint": "33810a4f9516ac18d52bd3046f1d56d140a6fade8331d38b9d339570a818235f",
+      "label": "showcase-projects/README.md",
+      "last": "2026-09-03T08:00:26.405269+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-03T08:00:26.405269+00:00",
+          "outcome": "useful",
+          "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
+        }
+      ],
+      "score": 0.996529713,
+      "source_file": "showcase-projects/README.md",
       "status": "tentative",
       "uses": 1
     }

@@ -10,8 +10,20 @@ const registry = JSON.parse(await readFile(registryPath, "utf8"));
 const requested = new Set(process.argv.slice(2).filter((arg) => !arg.startsWith("--")));
 const strict = process.argv.includes("--strict");
 const buildRequested = process.argv.includes("--build");
+const changedOnly = process.argv.includes("--changed");
 const textExtensions = new Set([".html", ".css", ".js", ".mjs", ".json", ".rsc", ".txt", ".xml", ".webmanifest"]);
 const ignoredNames = new Set([".git", ".next", ".vinext", "node_modules", "graphify-out", "logs", "reports", "tests"]);
+const sourceIgnoredNames = new Set([
+  ...ignoredNames,
+  ".cache",
+  ".output",
+  ".turbo",
+  ".vercel",
+  ".wrangler",
+  "coverage",
+  "dist",
+  "out",
+]);
 
 function isInside(parent, child) {
   const relative = path.relative(parent, child);
@@ -20,6 +32,38 @@ function isInside(parent, child) {
 
 async function exists(filePath) {
   try { await stat(filePath); return true; } catch { return false; }
+}
+
+async function newestModifiedAt(target, ignored = sourceIgnoredNames) {
+  let newest = 0;
+  const targetStat = await stat(target);
+  if (!targetStat.isDirectory()) return targetStat.mtimeMs;
+
+  for (const entry of await readdir(target, { withFileTypes: true })) {
+    if (ignored.has(entry.name) || entry.name.endsWith(".showcase-disabled")) continue;
+    const entryPath = path.join(target, entry.name);
+    if (entry.isDirectory()) newest = Math.max(newest, await newestModifiedAt(entryPath, ignored));
+    else newest = Math.max(newest, (await stat(entryPath)).mtimeMs);
+  }
+  return newest;
+}
+
+async function projectChanged(project, destination) {
+  const publicEntry = path.join(destination, "index.html");
+  if (!(await exists(publicEntry))) return true;
+  const publishedAt = (await stat(publicEntry)).mtimeMs;
+
+  if (project.include) {
+    for (const relativePath of project.include) {
+      const sourcePath = path.resolve(project.source, relativePath);
+      if (isInside(path.resolve(project.source), sourcePath) && await exists(sourcePath)) {
+        if (await newestModifiedAt(sourcePath, new Set()) > publishedAt) return true;
+      }
+    }
+    return false;
+  }
+
+  return await newestModifiedAt(path.resolve(project.source)) > publishedAt;
 }
 
 async function findOutput(project) {
@@ -107,6 +151,10 @@ for (const project of registry) {
     results.push({ slug: project.slug, status: "disabled" });
     continue;
   }
+  if (changedOnly && !(await projectChanged(project, destination))) {
+    results.push({ slug: project.slug, status: "unchanged" });
+    continue;
+  }
   let output = null;
   if (buildRequested) {
     try {
@@ -158,10 +206,10 @@ for (const project of registry) {
 }
 
 for (const result of results) {
-  console.log(`${result.status === "synced" ? "✓" : "!"} ${result.slug}: ${result.status}${result.output ? ` (${result.output})` : ""}${result.error ? ` — ${result.error}` : ""}`);
+  console.log(`${result.status === "synced" || result.status === "unchanged" ? "✓" : "!"} ${result.slug}: ${result.status}${result.output ? ` (${result.output})` : ""}${result.error ? ` — ${result.error}` : ""}`);
 }
 
 const missing = results.filter(
-  (result) => result.status !== "synced" && result.status !== "disabled",
+  (result) => result.status !== "synced" && result.status !== "unchanged" && result.status !== "disabled",
 );
 if (strict && missing.length) process.exitCode = 1;

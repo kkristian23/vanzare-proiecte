@@ -26,6 +26,15 @@ import {
 
 const projects = [
   {
+    id: 34,
+    title: "AUTOFLOW PARTNER",
+    type: "Service Management",
+    price: 4500,
+    tone: "autoflow",
+    desc: "Platformă operațională multi-tenant pentru service-uri auto, cu programări, lucrări, clienți, stoc, parteneri și rapoarte într-un singur sistem",
+    stack: ["Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "Prisma", "Multi-tenant", "RBAC", "PWA", "Inventory Ledger"],
+  },
+  {
     id: 33,
     title: "DRIVOLT",
     type: "E-commerce & Auto",
@@ -556,6 +565,7 @@ const categorySlugs: Record<string, string> = {
   "Utility Management": "utility-management",
 };
 const projectSlugs: Record<number, string> = {
+  34: "autoflow-partner",
   33: "drivolt",
   32: "flow-crm",
   31: "academia",
@@ -585,6 +595,7 @@ const projectSlugs: Record<number, string> = {
 };
 
 const projectPaths: Record<number, string> = {
+  34: "/autoflow-partner/",
   33: "/drivolt/",
   32: "/flow-crm/",
   31: "/academia/",
@@ -613,7 +624,7 @@ const projectPaths: Record<number, string> = {
   7: "/micora/",
 };
 
-const launchProjectIds = new Set([27, 28, 29, 30, 31, 32, 33]);
+const launchProjectIds = new Set([27, 28, 29, 30, 31, 32, 33, 34]);
 
 const projectDetails: Record<
   number,
@@ -623,6 +634,15 @@ const projectDetails: Record<
     sections: Array<{ title: string; items: string[] }>;
   }
 > = {
+  34: {
+    summary: "AUTOFLOW PARTNER este un sistem complet de operare pentru service-uri și companii de servicii auto. Platforma unește planificarea, execuția lucrărilor, relația cu clienții, stocul și indicatorii de management într-un workspace multi-tenant.",
+    sections: [
+      { title: "Operațiuni zilnice", items: ["Dashboard cu programări, lucrări active, încasări și alerte de stoc", "Calendar vizual pentru echipă și resurse", "Comenzi de lucru urmărite de la recepție până la predare"] },
+      { title: "Clienți și parteneri", items: ["Profiluri pentru clienți, automobile și istoricul vizitelor", "Furnizori și colaboratori administrați centralizat", "Roluri separate pentru owner, manager, recepție, specialist și depozit"] },
+      { title: "Stoc și control", items: ["Ledger de inventar, rezervări și praguri de reaprovizionare", "Rapoarte operaționale și financiare", "Izolare multi-tenant, audit și permisiuni verificate în backend"] },
+      { title: "Tehnologie și livrare", items: ["Next.js, NestJS, TypeScript, Prisma și PostgreSQL", "Aplicație responsive/PWA și API documentat", "Infrastructură Docker, seed demonstrativ și suită de teste"] },
+    ],
+  },
   33: {
     summary: "DRIVOLT este un magazin digital de tehnologie și accesorii auto, construit în jurul unei identități electrice și contemporane. Proiectul combină un catalog vizual bogat cu funcții interactive de căutare, favorite și coș.",
     sections: [

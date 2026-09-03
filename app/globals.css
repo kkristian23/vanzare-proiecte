@@ -252,7 +252,7 @@ body {
 }
 
 /* Real homepage previews for the six newest products. */
-.visual-drivolt,.visual-flowcrm,.visual-academia,.visual-staynest,.visual-tableo,.visual-medora,.visual-imobilia{padding:0;background:#071b22}
+.visual-autoflow,.visual-drivolt,.visual-flowcrm,.visual-academia,.visual-staynest,.visual-tableo,.visual-medora,.visual-imobilia{padding:0;background:#071b22}
 .launch-project-preview{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:filter .35s ease}
 .card:hover .launch-project-preview,.card:focus-visible .launch-project-preview{filter:saturate(1.04) contrast(1.02)}
 @media(prefers-reduced-motion:reduce){.launch-project-preview{transition:none}}

@@ -1,5 +1,6 @@
 param(
-  [switch]$SyncOnly
+  [switch]$SyncOnly,
+  [switch]$ChangedOnly
 )
 
 $ErrorActionPreference = "Stop"
@@ -12,11 +13,16 @@ $logPath = Join-Path $runtimeDirectory "showcase-refresh.log"
 New-Item -ItemType Directory -Path $runtimeDirectory -Force | Out-Null
 
 if (Test-Path -LiteralPath $lockPath) {
-  $lockAge = (Get-Date) - (Get-Item -LiteralPath $lockPath).LastWriteTime
-  if ($lockAge.TotalHours -lt 4) {
-    Add-Content -LiteralPath $logPath -Value "[$(Get-Date -Format s)] Sar peste rulare: sincronizarea precedenta este activa."
+  $lockPid = Get-Content -LiteralPath $lockPath -ErrorAction SilentlyContinue | Select-Object -First 1
+  $lockProcess = $null
+  if ($lockPid -match '^\d+$') {
+    $lockProcess = Get-Process -Id ([int]$lockPid) -ErrorAction SilentlyContinue
+  }
+  if ($null -ne $lockProcess) {
+    Add-Content -LiteralPath $logPath -Value "[$(Get-Date -Format s)] Sar peste rulare: sincronizarea precedenta este activa (PID $lockPid)."
     exit 0
   }
+  Add-Content -LiteralPath $logPath -Value "[$(Get-Date -Format s)] Elimin lock-ul ramas de la un proces inactiv."
   Remove-Item -LiteralPath $lockPath -Force
 }
 
@@ -26,7 +32,9 @@ try {
   Push-Location $projectRoot
   try {
     if ($SyncOnly) {
-      & npm.cmd run showcase:sync -- --build --strict *>> $logPath
+      $syncArguments = @("run", "showcase:sync", "--", "--build", "--strict")
+      if ($ChangedOnly) { $syncArguments += "--changed" }
+      & npm.cmd @syncArguments *>> $logPath
     } else {
       & npm.cmd run showcase:refresh *>> $logPath
     }
