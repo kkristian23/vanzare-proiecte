@@ -1,6 +1,5 @@
 param(
-  [switch]$SyncOnly,
-  [switch]$ChangedOnly
+  [switch]$SyncOnly
 )
 
 $ErrorActionPreference = "Stop"
@@ -33,7 +32,6 @@ try {
   try {
     if ($SyncOnly) {
       $syncArguments = @("run", "showcase:sync", "--", "--build", "--strict")
-      if ($ChangedOnly) { $syncArguments += "--changed" }
       & npm.cmd @syncArguments *>> $logPath
     } else {
       & npm.cmd run showcase:refresh *>> $logPath

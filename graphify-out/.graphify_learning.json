@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T11:37:05.993446+00:00",
+  "generated_at": "2026-09-04T07:28:45.357125+00:00",
   "nodes": {
     "app_i18n": {
-      "code_fingerprint": "9c30f8ec13f61d81012aab3c555c54cbbb6ea7599b19d3237a81750204968f7d",
+      "code_fingerprint": "c02c08941e924a7436671237888cbea13411a5d98203680f03a4e73fb984b4e4",
       "label": "i18n.ts",
       "last": "2026-09-03T07:42:33.445094+00:00",
       "provenance": [
@@ -12,13 +12,13 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.996243821,
+      "score": 0.97737638,
       "source_file": "app/i18n.ts",
       "status": "tentative",
       "uses": 1
     },
     "app_i18n_locales": {
-      "code_fingerprint": "9c30f8ec13f61d81012aab3c555c54cbbb6ea7599b19d3237a81750204968f7d",
+      "code_fingerprint": "c02c08941e924a7436671237888cbea13411a5d98203680f03a4e73fb984b4e4",
       "label": "locales",
       "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
@@ -33,13 +33,13 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.992773534,
+      "score": 1.955033238,
       "source_file": "app/i18n.ts",
       "status": "preferred",
       "uses": 2
     },
     "app_page_projects": {
-      "code_fingerprint": "7cc4f5011fdfee6e957cb86a4a21a6c1e8e02e53a1306da3c810cb071deb3286",
+      "code_fingerprint": "71b30eb14ae8864f65511e52f3264459feb1c585439f2f6d832bdf510e11e725",
       "label": "projects",
       "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
@@ -54,13 +54,13 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.992773534,
+      "score": 1.955033238,
       "source_file": "app/page.tsx",
       "status": "preferred",
       "uses": 2
     },
     "app_page_projectslugs": {
-      "code_fingerprint": "7cc4f5011fdfee6e957cb86a4a21a6c1e8e02e53a1306da3c810cb071deb3286",
+      "code_fingerprint": "71b30eb14ae8864f65511e52f3264459feb1c585439f2f6d832bdf510e11e725",
       "label": "projectSlugs",
       "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
@@ -75,7 +75,7 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.992773534,
+      "score": 1.955033238,
       "source_file": "app/page.tsx",
       "status": "preferred",
       "uses": 2
@@ -91,13 +91,61 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.963402466,
+      "score": 0.945156993,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
     },
+    "package_scripts": {
+      "code_fingerprint": "8029bb05f109d157b74e7360b8c7a7cdb3c0594eb097b8527fbabade9dbbcf4f",
+      "label": "scripts",
+      "last": "2026-09-04T07:27:15.216251+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-04T07:27:15.216251+00:00",
+          "outcome": "useful",
+          "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
+        }
+      ],
+      "score": 0.999975895,
+      "source_file": "package.json",
+      "status": "tentative",
+      "uses": 1
+    },
+    "scripts_start_server_findavailableport": {
+      "code_fingerprint": "70f5c034a991d416a676947962d408f55f3abc9cc5213ebb77fdd2044c4d85a1",
+      "label": "findAvailablePort()",
+      "last": "2026-09-04T07:27:15.216251+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-04T07:27:15.216251+00:00",
+          "outcome": "useful",
+          "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
+        }
+      ],
+      "score": 0.999975895,
+      "source_file": "scripts/start-server.mjs",
+      "status": "tentative",
+      "uses": 1
+    },
+    "scripts_start_server_portisavailable": {
+      "code_fingerprint": "70f5c034a991d416a676947962d408f55f3abc9cc5213ebb77fdd2044c4d85a1",
+      "label": "portIsAvailable()",
+      "last": "2026-09-04T07:27:15.216251+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-04T07:27:15.216251+00:00",
+          "outcome": "useful",
+          "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
+        }
+      ],
+      "score": 0.999975895,
+      "source_file": "scripts/start-server.mjs",
+      "status": "tentative",
+      "uses": 1
+    },
     "scripts_sync_showcase": {
-      "code_fingerprint": "987abc5851fb124849e1cbdcdc42a967c1cf6841f356b330007d347c082c9026",
+      "code_fingerprint": "d1ca5c2def116fa8782f2be46c5d7b512721d22539db09c7a88f0bc820dfed27",
       "label": "sync-showcase.mjs",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -107,13 +155,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.963402466,
+      "score": 0.945156993,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
     },
     "scripts_sync_showcase_publicroot": {
-      "code_fingerprint": "987abc5851fb124849e1cbdcdc42a967c1cf6841f356b330007d347c082c9026",
+      "code_fingerprint": "d1ca5c2def116fa8782f2be46c5d7b512721d22539db09c7a88f0bc820dfed27",
       "label": "publicRoot",
       "last": "2026-09-01T20:53:23.664623+00:00",
       "provenance": [
@@ -123,13 +171,13 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.963402466,
+      "score": 0.945156993,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
     },
     "showcase_projects_readme": {
-      "code_fingerprint": "33810a4f9516ac18d52bd3046f1d56d140a6fade8331d38b9d339570a818235f",
+      "code_fingerprint": "30d0e7c5b5c92a23cc45036795031c47fa963c381a155e383b2482c2ab46ed46",
       "label": "showcase-projects/README.md",
       "last": "2026-09-03T08:00:26.405269+00:00",
       "provenance": [
@@ -139,7 +187,7 @@
           "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
         }
       ],
-      "score": 0.996529713,
+      "score": 0.977656858,
       "source_file": "showcase-projects/README.md",
       "status": "tentative",
       "uses": 1

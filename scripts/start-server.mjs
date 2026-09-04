@@ -18,7 +18,7 @@ const hasExplicitHost = extraArgs.some((argument) =>
 function startShowcaseRefresh() {
   const refresh = spawn(
     "powershell.exe",
-    ["-NoProfile", "-ExecutionPolicy", "Bypass", "-WindowStyle", "Hidden", "-File", refreshScript, "-SyncOnly", "-ChangedOnly"],
+    ["-NoProfile", "-ExecutionPolicy", "Bypass", "-WindowStyle", "Hidden", "-File", refreshScript, "-SyncOnly"],
     {
       cwd: root,
       detached: true,
@@ -27,7 +27,7 @@ function startShowcaseRefresh() {
     },
   );
   refresh.unref();
-  console.log("Verificarea proiectelor modificate a pornit în fundal.");
+  console.log("Actualizarea tuturor proiectelor a pornit în fundal.");
 }
 
 function readRunningDevServer() {
@@ -70,11 +70,9 @@ async function findAvailablePort(startPort = 3000) {
   throw new Error(`Nu a fost găsit niciun port liber începând cu ${startPort}.`);
 }
 
-// Acest proiect are o adresă stabilă: nu căutăm și nu acceptăm un port alternativ.
+// Pornim de la 3000, dar alegem întotdeauna primul port liber pentru a permite
+// rularea simultană a mai multor proiecte fără coliziuni.
 const selectedPort = await findAvailablePort(3000);
-if (selectedPort !== 3000) {
-  throw new Error("Portul 3000 este ocupat. Oprește procesul respectiv și pornește din nou acest proiect.");
-}
 const hostArgs = hasExplicitHost ? [] : ["--host", "127.0.0.1"];
 const serverArgs = [vinextCli, mode, "--port", String(selectedPort), ...hostArgs, ...extraArgs];
 

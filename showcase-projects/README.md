@@ -32,19 +32,10 @@ necesită mai întâi configurarea `output: "export"`; `.next` nu poate fi copia
 Conținutul sincronizat ajunge în `public/<slug>/` și este inclus automat de buildul
 principal. Astfel, un singur deploy publică atât catalogul, cât și toate exporturile.
 
-## Actualizare automată la pornirea serverului și la fiecare oră
-
-Instalarea sarcinii Windows (o singură dată):
-
-```powershell
-npm run showcase:schedule
-```
-
-Sarcina reconstruiește toate proiectele, le sincronizează în `public/`, apoi
-reconstruiește catalogul. Rulează numai când utilizatorul este autentificat, iar
-rulările suprapuse sunt ignorate. Jurnalul se află în `logs/showcase-refresh.log`.
+## Actualizare automată numai la pornirea serverului
 
 Comenzile `npm run dev` și `npm start` pornesc prioritar serverul catalogului, apoi
-reconstruiesc și sincronizează automat proiectele secundare în fundal. În plus,
-sarcina Windows repetă procesul complet o dată pe oră cât timp calculatorul este
-pornit și utilizatorul autentificat.
+reconstruiesc și sincronizează toate proiectele secundare în fundal. Nu există o
+actualizare periodică: procesul rulează o singură dată la fiecare pornire a
+serverului. Rulările suprapuse sunt ignorate, iar jurnalul se află în
+`logs/showcase-refresh.log`.

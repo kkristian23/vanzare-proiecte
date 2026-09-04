@@ -174,9 +174,9 @@
     "semantic_hash": ""
   },
   "scripts/sync-showcase.mjs": {
-    "mtime": 1788423636.8108604,
-    "seen": 1788423756.7036214,
-    "ast_hash": "72ab7918af77158e82976bc9da17bda1",
+    "mtime": 1788442261.64415,
+    "seen": 1788442412.6783803,
+    "ast_hash": "312403ce2ea3993bdfba5a8c40468465",
     "semantic_hash": ""
   },
   "showcase-projects/README.md": {
@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "scripts/run-showcase-refresh.ps1": {
-    "mtime": 1788357663.7069957,
-    "seen": 1788357693.8814695,
-    "ast_hash": "2e5c22692bcb5bd3f764523994b39e38",
+    "mtime": 1788442261.64415,
+    "seen": 1788442412.6783803,
+    "ast_hash": "0a97506594911e295bc3d10b36c58848",
     "semantic_hash": ""
   },
   "public/hero-jumper.png": {
@@ -210,9 +210,9 @@
     "semantic_hash": ""
   },
   "scripts/start-server.mjs": {
-    "mtime": 1788439119.6051774,
-    "seen": 1788439314.6169012,
-    "ast_hash": "4d5471d70d982137c03231017120b89b",
+    "mtime": 1788442329.7540858,
+    "seen": 1788442412.6783803,
+    "ast_hash": "ccbe652fa63b5555065502d28e285dc5",
     "semantic_hash": ""
   },
   "showcase-projects/registry.json": {

@@ -10,7 +10,6 @@
     "build": "vinext build",
     "showcase:sync": "node scripts/sync-showcase.mjs",
     "showcase:refresh": "npm run showcase:sync -- --build --strict && npm run build",
-    "showcase:schedule": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-showcase-schedule.ps1",
     "start": "node scripts/start-server.mjs start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

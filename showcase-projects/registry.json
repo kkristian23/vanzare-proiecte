@@ -1,5 +1,5 @@
 [
-  { "id": 34, "slug": "autoflow-partner", "source": "D:\\services and automation for carmarket", "outputs": ["apps/web/out"], "buildArgs": ["run", "build:showcase"] },
+  { "id": 34, "slug": "autoflow-partner", "source": "D:\\AutoFlow Partner", "outputs": ["apps/web/out"], "buildArgs": ["run", "build:showcase"] },
   { "id": 33, "slug": "drivolt", "source": "D:\\DRIVOLT", "outputs": ["dist"], "buildArgs": ["run", "build"] },
   { "id": 32, "slug": "flow-crm", "source": "D:\\Flow CRM", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
   { "id": 31, "slug": "academia", "source": "D:\\Academia", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
