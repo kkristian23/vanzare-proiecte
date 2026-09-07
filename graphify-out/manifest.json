@@ -97,7 +97,7 @@
   },
   "drizzle/meta/_journal.json": {
     "mtime": 1787146521.6395364,
-    "seen": 1788442515.4788108,
+    "seen": 1788514316.3020475,
     "ast_hash": "",
     "semantic_hash": ""
   },
@@ -151,7 +151,7 @@
   },
   ".codex/hooks.json": {
     "mtime": 1787209994.7439845,
-    "seen": 1788442515.475657,
+    "seen": 1788514316.3000395,
     "ast_hash": "",
     "semantic_hash": ""
   },
@@ -2493,6 +2493,12 @@
     "mtime": 1788506835.2172549,
     "seen": 1788507235.8965342,
     "ast_hash": "3c74119063f77b7fae4636f2b9bfb9e6",
+    "semantic_hash": ""
+  },
+  "tools/migrate-frontends-to-next.mjs": {
+    "mtime": 1788517315.8919199,
+    "seen": 1788518387.8879268,
+    "ast_hash": "8c8459dba3a288262be7586fa6f95c32",
     "semantic_hash": ""
   }
 }

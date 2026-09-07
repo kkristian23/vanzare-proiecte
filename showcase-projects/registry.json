@@ -1,29 +1,744 @@
 [
-  { "id": 34, "slug": "autoflow-partner", "source": "D:\\AutoFlow Partner", "outputs": ["apps/web/out"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 33, "slug": "drivolt", "source": "D:\\DRIVOLT", "outputs": ["dist"], "buildArgs": ["run", "build"] },
-  { "id": 32, "slug": "flow-crm", "source": "D:\\Flow CRM", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 31, "slug": "academia", "source": "D:\\Academia", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 30, "slug": "staynest", "source": "D:\\StayNest", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 29, "slug": "tableo", "source": "D:\\Tableo", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 28, "slug": "medora-clinic", "source": "D:\\Medora Clinic", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 27, "slug": "imobilia-one", "source": "D:\\Imobilia One", "outputs": ["out", "dist/client"], "buildArgs": ["run", "build:showcase"] },
-  { "id": 24, "slug": "forge", "source": "D:\\auto create sites", "outputs": ["src/dashboard"] },
-  { "id": 23, "slug": "studio-velora", "source": "D:\\Studio Velora", "outputs": ["out", "dist/client"] },
-  { "id": 22, "slug": "studio-forma", "source": "D:\\Studio Forma", "outputs": ["dist"] },
-  { "id": 21, "slug": "noma", "source": "D:\\Noma", "outputs": ["out", "dist/client"] },
-  { "id": 20, "slug": "pophaus", "source": "D:\\PopHaus", "outputs": ["out", "dist/client"], "buildHide": ["app/robots.ts", "app/sitemap.ts"] },
-  { "id": 19, "slug": "nord-and-oak", "source": "D:\\Nord & Oak", "outputs": ["out", "dist/client"], "entrypoint": "ro.html", "buildHide": ["app/robots.ts", "app/sitemap.ts"], "directNext": true },
-  { "id": 18, "slug": "forma-living", "source": "D:\\Forma Living", "outputs": ["out", "dist/client"], "buildHide": ["src/app/robots.ts", "src/app/sitemap.ts", "src/app/[locale]/[slug]/page.tsx"] },
-  { "id": 17, "slug": "archicontract", "source": "D:\\ArchiContract", "outputs": ["out", "dist/client"], "buildHide": ["src/app/robots.ts", "src/app/sitemap.ts", "src/app/[locale]/[...slug]/page.tsx"] },
-  { "id": 16, "slug": "atelier-noire", "source": "D:\\Atelier Noire", "outputs": ["out", "dist/client"], "buildHide": ["app/robots.ts", "app/sitemap.ts", "app/favicon.ico/route.ts"] },
-  { "id": 15, "slug": "market9000", "source": "D:\\market9000copy", "outputs": ["out", "dist/client"], "buildHide": ["src/app/[...slug]/page.tsx"] },
-  { "id": 14, "slug": "neobarberclub", "source": "D:\\neo barber club", "outputs": ["out", "dist/client"], "buildHide": ["src/proxy.ts", "src/app/api/admin/session/route.ts", "src/app/api/content/route.ts", "src/app/admin/page.tsx", "src/app/admin/login/page.tsx", "src/app/academia/page.tsx", "src/app/maestri/page.tsx", "src/app/rezervare/page.tsx", "src/app/servicii/page.tsx", "src/app/servicii/[category]/page.tsx"], "buildArgs": ["run", "build", "--", "--webpack"] },
-  { "id": 12, "slug": "rentech", "source": "D:\\chirie tehnica", "outputs": ["out", "dist/client"], "buildHide": ["app/api/equipment/route.ts"] },
-  { "id": 11, "slug": "elan", "source": "D:\\servicii unghii", "outputs": ["dist"] },
-  { "id": 10, "slug": "fixora", "source": "D:\\Fix service", "outputs": ["dist"] },
-  { "id": 9, "slug": "iqcalendar", "source": "D:\\site", "outputs": ["."], "include": ["index.html", "app.html", "calendar.html", "activity.html", "result.html", "style.css", "activities-config.js", "activity.js", "calendar.js", "env-config.js", "firebase-config.js", "firebase-messaging-sw.js", "lang.js", "result.js", "settings.js", "user-manager.js", "favicon.svg", "services", "shared", "ui"] },
-  { "id": 8, "slug": "contor-acasa", "source": "D:\\Colectarea Datelor Buruiana", "outputs": ["out", "dist/client"], "buildHide": ["src/app/api/admin/consumers/route.ts", "src/app/api/system-admin/route.ts", "src/app/favicon.ico/route.ts"], "buildArgs": ["run", "build", "--", "--webpack"] },
-  { "id": 7, "slug": "micora", "source": "D:\\Micora", "outputs": ["out", "dist/client"] },
-  { "id": 25, "slug": "audio-rental-md", "source": "D:\\audio-rental-md", "outputs": ["out", "dist/client"] },
-  { "id": 26, "slug": "neo-booking", "source": "D:\\neo-booking", "outputs": ["out", "dist/client"], "buildHide": ["app/api/appointments/route.ts", "app/api/tenants/route.ts", "app/api/tenants/[slug]/route.ts", "app/api/theme/scan/route.ts", "app/embed.js/route.ts"], "disabled": true }
+  {
+    "id": 34,
+    "slug": "autoflow-partner",
+    "source": "D:\\AutoFlow Partner",
+    "outputs": [
+      "apps/web/out"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "drivolt",
+    "source": "D:\\DRIVOLT",
+    "outputs": [
+      "dist"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 32,
+    "slug": "flow-crm",
+    "source": "D:\\Flow CRM",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 31,
+    "slug": "academia",
+    "source": "D:\\Academia",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "staynest",
+    "source": "D:\\StayNest",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "tableo",
+    "source": "D:\\Tableo",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "medora-clinic",
+    "source": "D:\\Medora Clinic",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "imobilia-one",
+    "source": "D:\\Imobilia One",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildArgs": [
+      "run",
+      "build:showcase"
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "forge",
+    "source": "D:\\auto create sites",
+    "outputs": [
+      "src/dashboard"
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "studio-velora",
+    "source": "D:\\Studio Velora",
+    "outputs": [
+      "out",
+      "dist/client"
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "studio-forma",
+    "source": "D:\\Studio Forma",
+    "outputs": [
+      "dist"
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "noma",
+    "source": "D:\\Noma",
+    "outputs": [
+      "out",
+      "dist/client"
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "pophaus",
+    "source": "D:\\PopHaus",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "app/robots.ts",
+      "app/sitemap.ts"
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "nord-and-oak",
+    "source": "D:\\Nord & Oak",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "entrypoint": "ro.html",
+    "buildHide": [
+      "app/robots.ts",
+      "app/sitemap.ts"
+    ],
+    "directNext": true
+  },
+  {
+    "id": 18,
+    "slug": "forma-living",
+    "source": "D:\\Forma Living",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "src/app/robots.ts",
+      "src/app/sitemap.ts",
+      "src/app/[locale]/[slug]/page.tsx"
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "archicontract",
+    "source": "D:\\ArchiContract",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "src/app/robots.ts",
+      "src/app/sitemap.ts",
+      "src/app/[locale]/[...slug]/page.tsx"
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "atelier-noire",
+    "source": "D:\\Atelier Noire",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "app/robots.ts",
+      "app/sitemap.ts",
+      "app/favicon.ico/route.ts"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "market9000",
+    "source": "D:\\market9000copy",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "src/app/[...slug]/page.tsx"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "neobarberclub",
+    "source": "D:\\neo barber club",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "src/proxy.ts",
+      "src/app/api/admin/session/route.ts",
+      "src/app/api/content/route.ts",
+      "src/app/admin/page.tsx",
+      "src/app/admin/login/page.tsx",
+      "src/app/academia/page.tsx",
+      "src/app/maestri/page.tsx",
+      "src/app/rezervare/page.tsx",
+      "src/app/servicii/page.tsx",
+      "src/app/servicii/[category]/page.tsx"
+    ],
+    "buildArgs": [
+      "run",
+      "build",
+      "--",
+      "--webpack"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "rentech",
+    "source": "D:\\chirie tehnica",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "app/api/equipment/route.ts"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "elan",
+    "source": "D:\\servicii unghii",
+    "outputs": [
+      "dist"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "fixora",
+    "source": "D:\\Fix service",
+    "outputs": [
+      "dist"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "iqcalendar",
+    "source": "D:\\site",
+    "outputs": [
+      "."
+    ],
+    "include": [
+      "index.html",
+      "app.html",
+      "calendar.html",
+      "activity.html",
+      "result.html",
+      "style.css",
+      "activities-config.js",
+      "activity.js",
+      "calendar.js",
+      "env-config.js",
+      "firebase-config.js",
+      "firebase-messaging-sw.js",
+      "lang.js",
+      "result.js",
+      "settings.js",
+      "user-manager.js",
+      "favicon.svg",
+      "services",
+      "shared",
+      "ui"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "contor-acasa",
+    "source": "D:\\Colectarea Datelor Buruiana",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "src/app/api/admin/consumers/route.ts",
+      "src/app/api/system-admin/route.ts",
+      "src/app/favicon.ico/route.ts"
+    ],
+    "buildArgs": [
+      "run",
+      "build",
+      "--",
+      "--webpack"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "micora",
+    "source": "D:\\Micora",
+    "outputs": [
+      "out",
+      "dist/client"
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "audio-rental-md",
+    "source": "D:\\audio-rental-md",
+    "outputs": [
+      "out",
+      "dist/client"
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "neo-booking",
+    "source": "D:\\neo-booking",
+    "outputs": [
+      "out",
+      "dist/client"
+    ],
+    "buildHide": [
+      "app/api/appointments/route.ts",
+      "app/api/tenants/route.ts",
+      "app/api/tenants/[slug]/route.ts",
+      "app/api/theme/scan/route.ts",
+      "app/embed.js/route.ts"
+    ],
+    "disabled": true
+  },
+  {
+    "id": 66,
+    "slug": "01-eventora",
+    "source": "D:\\proiecte-front-end\\01-eventora",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 65,
+    "slug": "02-scena-city",
+    "source": "D:\\proiecte-front-end\\02-scena-city",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 64,
+    "slug": "03-pulse-tickets",
+    "source": "D:\\proiecte-front-end\\03-pulse-tickets",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 63,
+    "slug": "04-clinica-nova",
+    "source": "D:\\proiecte-front-end\\04-clinica-nova",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 62,
+    "slug": "05-laboris",
+    "source": "D:\\proiecte-front-end\\05-laboris",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 61,
+    "slug": "06-doctor-aproape",
+    "source": "D:\\proiecte-front-end\\06-doctor-aproape",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 60,
+    "slug": "07-med-slot",
+    "source": "D:\\proiecte-front-end\\07-med-slot",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 59,
+    "slug": "08-lead-pilot",
+    "source": "D:\\proiecte-front-end\\08-lead-pilot",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 58,
+    "slug": "09-growth-desk",
+    "source": "D:\\proiecte-front-end\\09-growth-desk",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 57,
+    "slug": "10-closeflow",
+    "source": "D:\\proiecte-front-end\\10-closeflow",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 56,
+    "slug": "11-partmatch",
+    "source": "D:\\proiecte-front-end\\11-partmatch",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 55,
+    "slug": "12-garage-box",
+    "source": "D:\\proiecte-front-end\\12-garage-box",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 54,
+    "slug": "13-motor-supply",
+    "source": "D:\\proiecte-front-end\\13-motor-supply",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 53,
+    "slug": "14-auto-grid",
+    "source": "D:\\proiecte-front-end\\14-auto-grid",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 52,
+    "slug": "15-park-suites-demo",
+    "source": "D:\\proiecte-front-end\\15-park-suites-demo",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 51,
+    "slug": "16-urban-haven",
+    "source": "D:\\proiecte-front-end\\16-urban-haven",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 50,
+    "slug": "17-nest-collection",
+    "source": "D:\\proiecte-front-end\\17-nest-collection",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 49,
+    "slug": "18-moldova-escape",
+    "source": "D:\\proiecte-front-end\\18-moldova-escape",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 48,
+    "slug": "19-bazar-local",
+    "source": "D:\\proiecte-front-end\\19-bazar-local",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 47,
+    "slug": "20-pret-bun",
+    "source": "D:\\proiecte-front-end\\20-pret-bun",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 46,
+    "slug": "21-local-craft",
+    "source": "D:\\proiecte-front-end\\21-local-craft",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 45,
+    "slug": "22-skillup",
+    "source": "D:\\proiecte-front-end\\22-skillup",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 44,
+    "slug": "23-civic-learn",
+    "source": "D:\\proiecte-front-end\\23-civic-learn",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 43,
+    "slug": "24-mentor-cloud",
+    "source": "D:\\proiecte-front-end\\24-mentor-cloud",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "25-casa-check",
+    "source": "D:\\proiecte-front-end\\25-casa-check",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 41,
+    "slug": "26-direct-home",
+    "source": "D:\\proiecte-front-end\\26-direct-home",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 40,
+    "slug": "27-area-insight",
+    "source": "D:\\proiecte-front-end\\27-area-insight",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 39,
+    "slug": "28-table-flow",
+    "source": "D:\\proiecte-front-end\\28-table-flow",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "29-food-route",
+    "source": "D:\\proiecte-front-end\\29-food-route",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 37,
+    "slug": "30-menu-studio",
+    "source": "D:\\proiecte-front-end\\30-menu-studio",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 36,
+    "slug": "31-my-utility",
+    "source": "D:\\proiecte-front-end\\31-my-utility",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 35,
+    "slug": "32-block-admin",
+    "source": "D:\\proiecte-front-end\\32-block-admin",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  }
 ]

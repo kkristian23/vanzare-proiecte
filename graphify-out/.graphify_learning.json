@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T07:28:45.357125+00:00",
+  "generated_at": "2026-09-04T09:31:57.411390+00:00",
   "nodes": {
     "app_i18n": {
       "code_fingerprint": "c02c08941e924a7436671237888cbea13411a5d98203680f03a4e73fb984b4e4",
@@ -12,7 +12,7 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 0.97737638,
+      "score": 0.975446243,
       "source_file": "app/i18n.ts",
       "status": "tentative",
       "uses": 1
@@ -33,7 +33,7 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.955033238,
+      "score": 1.951172409,
       "source_file": "app/i18n.ts",
       "status": "preferred",
       "uses": 2
@@ -54,7 +54,7 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.955033238,
+      "score": 1.951172409,
       "source_file": "app/page.tsx",
       "status": "preferred",
       "uses": 2
@@ -75,7 +75,7 @@
           "q": "analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
         }
       ],
-      "score": 1.955033238,
+      "score": 1.951172409,
       "source_file": "app/page.tsx",
       "status": "preferred",
       "uses": 2
@@ -91,7 +91,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.945156993,
+      "score": 0.943290483,
       "source_file": "next.config.ts",
       "status": "tentative",
       "uses": 1
@@ -107,13 +107,13 @@
           "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
         }
       ],
-      "score": 0.999975895,
+      "score": 0.998001128,
       "source_file": "package.json",
       "status": "tentative",
       "uses": 1
     },
     "scripts_start_server_findavailableport": {
-      "code_fingerprint": "70f5c034a991d416a676947962d408f55f3abc9cc5213ebb77fdd2044c4d85a1",
+      "code_fingerprint": "7e939e8e38d0ed60eff2d16a47b53d9e853c0adf7fc894fbb13850430d15c6fc",
       "label": "findAvailablePort()",
       "last": "2026-09-04T07:27:15.216251+00:00",
       "provenance": [
@@ -123,13 +123,13 @@
           "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
         }
       ],
-      "score": 0.999975895,
+      "score": 0.998001128,
       "source_file": "scripts/start-server.mjs",
       "status": "tentative",
       "uses": 1
     },
     "scripts_start_server_portisavailable": {
-      "code_fingerprint": "70f5c034a991d416a676947962d408f55f3abc9cc5213ebb77fdd2044c4d85a1",
+      "code_fingerprint": "7e939e8e38d0ed60eff2d16a47b53d9e853c0adf7fc894fbb13850430d15c6fc",
       "label": "portIsAvailable()",
       "last": "2026-09-04T07:27:15.216251+00:00",
       "provenance": [
@@ -139,7 +139,7 @@
           "q": "ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?"
         }
       ],
-      "score": 0.999975895,
+      "score": 0.998001128,
       "source_file": "scripts/start-server.mjs",
       "status": "tentative",
       "uses": 1
@@ -155,7 +155,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.945156993,
+      "score": 0.943290483,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
@@ -171,7 +171,7 @@
           "q": "De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?"
         }
       ],
-      "score": 0.945156993,
+      "score": 0.943290483,
       "source_file": "scripts/sync-showcase.mjs",
       "status": "tentative",
       "uses": 1
@@ -187,7 +187,7 @@
           "q": "mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
         }
       ],
-      "score": 0.977656858,
+      "score": 0.975726166,
       "source_file": "showcase-projects/README.md",
       "status": "tentative",
       "uses": 1
