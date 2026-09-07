@@ -1,0 +1,1059 @@
+{
+  "date": "2026-09-07T13:34:04.004Z",
+  "environment": "Node v24.18.0 / jsdom 26.1.0 / React 19.1.1",
+  "scope": "Actual React DOM interactions, storage effects, input validity, persistence. Excludes browser layout, networking, native dialog focus and download initiation.",
+  "passed": 210,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "01-eventora accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 72
+    },
+    {
+      "name": "01-eventora rejects wrong top-level shape: eventora-tickets",
+      "status": "PASS",
+      "ms": 80
+    },
+    {
+      "name": "01-eventora rejects invalid nested values: eventora-tickets",
+      "status": "PASS",
+      "ms": 70
+    },
+    {
+      "name": "01-eventora handles empty collection: eventora-tickets",
+      "status": "PASS",
+      "ms": 82
+    },
+    {
+      "name": "02-scena-city accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 66
+    },
+    {
+      "name": "02-scena-city rejects wrong top-level shape: scena-agenda",
+      "status": "PASS",
+      "ms": 58
+    },
+    {
+      "name": "02-scena-city rejects invalid nested values: scena-agenda",
+      "status": "PASS",
+      "ms": 50
+    },
+    {
+      "name": "02-scena-city handles empty collection: scena-agenda",
+      "status": "PASS",
+      "ms": 55
+    },
+    {
+      "name": "03-pulse-tickets accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 66
+    },
+    {
+      "name": "03-pulse-tickets rejects wrong top-level shape: pulse-guests",
+      "status": "PASS",
+      "ms": 62
+    },
+    {
+      "name": "03-pulse-tickets rejects invalid nested values: pulse-guests",
+      "status": "PASS",
+      "ms": 57
+    },
+    {
+      "name": "03-pulse-tickets handles empty collection: pulse-guests",
+      "status": "PASS",
+      "ms": 46
+    },
+    {
+      "name": "03-pulse-tickets rejects wrong top-level shape: pulse-title",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "03-pulse-tickets rejects wrong top-level shape: pulse-capacity",
+      "status": "PASS",
+      "ms": 38
+    },
+    {
+      "name": "04-clinica-nova accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 46
+    },
+    {
+      "name": "04-clinica-nova rejects wrong top-level shape: nova-bookings",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "04-clinica-nova rejects invalid nested values: nova-bookings",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "04-clinica-nova handles empty collection: nova-bookings",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "05-laboris accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 104
+    },
+    {
+      "name": "05-laboris rejects wrong top-level shape: laboris-basket",
+      "status": "PASS",
+      "ms": 65
+    },
+    {
+      "name": "05-laboris rejects invalid nested values: laboris-basket",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "05-laboris handles empty collection: laboris-basket",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "05-laboris rejects wrong top-level shape: laboris-orders",
+      "status": "PASS",
+      "ms": 71
+    },
+    {
+      "name": "05-laboris rejects invalid nested values: laboris-orders",
+      "status": "PASS",
+      "ms": 54
+    },
+    {
+      "name": "05-laboris handles empty collection: laboris-orders",
+      "status": "PASS",
+      "ms": 54
+    },
+    {
+      "name": "06-doctor-aproape accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 66
+    },
+    {
+      "name": "06-doctor-aproape rejects wrong top-level shape: aproape-appointments",
+      "status": "PASS",
+      "ms": 68
+    },
+    {
+      "name": "06-doctor-aproape rejects invalid nested values: aproape-appointments",
+      "status": "PASS",
+      "ms": 106
+    },
+    {
+      "name": "06-doctor-aproape handles empty collection: aproape-appointments",
+      "status": "PASS",
+      "ms": 89
+    },
+    {
+      "name": "07-med-slot accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 23
+    },
+    {
+      "name": "07-med-slot rejects wrong top-level shape: medslot-booked",
+      "status": "PASS",
+      "ms": 17
+    },
+    {
+      "name": "07-med-slot rejects invalid nested values: medslot-booked",
+      "status": "PASS",
+      "ms": 27
+    },
+    {
+      "name": "07-med-slot handles empty collection: medslot-booked",
+      "status": "PASS",
+      "ms": 18
+    },
+    {
+      "name": "08-lead-pilot accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 110
+    },
+    {
+      "name": "08-lead-pilot rejects wrong top-level shape: leadpilot-deals",
+      "status": "PASS",
+      "ms": 116
+    },
+    {
+      "name": "08-lead-pilot rejects invalid nested values: leadpilot-deals",
+      "status": "PASS",
+      "ms": 73
+    },
+    {
+      "name": "08-lead-pilot handles empty collection: leadpilot-deals",
+      "status": "PASS",
+      "ms": 65
+    },
+    {
+      "name": "09-growth-desk accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "09-growth-desk rejects wrong top-level shape: growth-contacts",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "09-growth-desk rejects invalid nested values: growth-contacts",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "09-growth-desk handles empty collection: growth-contacts",
+      "status": "PASS",
+      "ms": 75
+    },
+    {
+      "name": "09-growth-desk rejects wrong top-level shape: growth-campaigns",
+      "status": "PASS",
+      "ms": 69
+    },
+    {
+      "name": "09-growth-desk rejects invalid nested values: growth-campaigns",
+      "status": "PASS",
+      "ms": 50
+    },
+    {
+      "name": "09-growth-desk handles empty collection: growth-campaigns",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "10-closeflow accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "10-closeflow rejects wrong top-level shape: close-messages",
+      "status": "PASS",
+      "ms": 29
+    },
+    {
+      "name": "10-closeflow rejects invalid nested values: close-messages",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "10-closeflow handles empty collection: close-messages",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "10-closeflow rejects wrong top-level shape: close-notes",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "10-closeflow rejects invalid nested values: close-notes",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "10-closeflow handles empty collection: close-notes",
+      "status": "PASS",
+      "ms": 36
+    },
+    {
+      "name": "10-closeflow rejects wrong top-level shape: close-closed",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "10-closeflow rejects invalid nested values: close-closed",
+      "status": "PASS",
+      "ms": 31
+    },
+    {
+      "name": "10-closeflow handles empty collection: close-closed",
+      "status": "PASS",
+      "ms": 41
+    },
+    {
+      "name": "10-closeflow rejects wrong top-level shape: close-reminders",
+      "status": "PASS",
+      "ms": 151
+    },
+    {
+      "name": "10-closeflow rejects invalid nested values: close-reminders",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "10-closeflow handles empty collection: close-reminders",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "10-closeflow rejects wrong top-level shape: close-drafts",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "10-closeflow rejects invalid nested values: close-drafts",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "10-closeflow handles empty collection: close-drafts",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "11-partmatch accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 64
+    },
+    {
+      "name": "11-partmatch rejects wrong top-level shape: partmatch-car",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "11-partmatch rejects stale identifier: partmatch-car",
+      "status": "PASS",
+      "ms": 50
+    },
+    {
+      "name": "11-partmatch preserves valid null: partmatch-car",
+      "status": "PASS",
+      "ms": 64
+    },
+    {
+      "name": "11-partmatch rejects wrong top-level shape: partmatch-cart",
+      "status": "PASS",
+      "ms": 55
+    },
+    {
+      "name": "11-partmatch rejects invalid nested values: partmatch-cart",
+      "status": "PASS",
+      "ms": 79
+    },
+    {
+      "name": "11-partmatch handles empty collection: partmatch-cart",
+      "status": "PASS",
+      "ms": 57
+    },
+    {
+      "name": "11-partmatch rejects wrong top-level shape: partmatch-orders",
+      "status": "PASS",
+      "ms": 56
+    },
+    {
+      "name": "11-partmatch rejects invalid nested values: partmatch-orders",
+      "status": "PASS",
+      "ms": 76
+    },
+    {
+      "name": "11-partmatch handles empty collection: partmatch-orders",
+      "status": "PASS",
+      "ms": 70
+    },
+    {
+      "name": "12-garage-box accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "12-garage-box rejects wrong top-level shape: garage-kit",
+      "status": "PASS",
+      "ms": 48
+    },
+    {
+      "name": "12-garage-box rejects invalid nested values: garage-kit",
+      "status": "PASS",
+      "ms": 57
+    },
+    {
+      "name": "12-garage-box handles empty collection: garage-kit",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "12-garage-box rejects wrong top-level shape: garage-jobs",
+      "status": "PASS",
+      "ms": 99
+    },
+    {
+      "name": "12-garage-box rejects invalid nested values: garage-jobs",
+      "status": "PASS",
+      "ms": 56
+    },
+    {
+      "name": "12-garage-box handles empty collection: garage-jobs",
+      "status": "PASS",
+      "ms": 62
+    },
+    {
+      "name": "12-garage-box rejects wrong top-level shape: garage-car",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "13-motor-supply accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 44
+    },
+    {
+      "name": "13-motor-supply rejects wrong top-level shape: motor-quote-items",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "13-motor-supply rejects invalid nested values: motor-quote-items",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "13-motor-supply handles empty collection: motor-quote-items",
+      "status": "PASS",
+      "ms": 36
+    },
+    {
+      "name": "13-motor-supply rejects wrong top-level shape: motor-quotes",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "13-motor-supply rejects invalid nested values: motor-quotes",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "13-motor-supply handles empty collection: motor-quotes",
+      "status": "PASS",
+      "ms": 42
+    },
+    {
+      "name": "14-auto-grid accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "14-auto-grid rejects wrong top-level shape: autogrid-vehicle",
+      "status": "PASS",
+      "ms": 77
+    },
+    {
+      "name": "14-auto-grid rejects wrong top-level shape: autogrid-compare",
+      "status": "PASS",
+      "ms": 63
+    },
+    {
+      "name": "14-auto-grid rejects invalid nested values: autogrid-compare",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "14-auto-grid handles empty collection: autogrid-compare",
+      "status": "PASS",
+      "ms": 42
+    },
+    {
+      "name": "14-auto-grid rejects wrong top-level shape: autogrid-fitting",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "14-auto-grid rejects invalid nested values: autogrid-fitting",
+      "status": "PASS",
+      "ms": 34
+    },
+    {
+      "name": "14-auto-grid handles empty collection: autogrid-fitting",
+      "status": "PASS",
+      "ms": 39
+    },
+    {
+      "name": "15-park-suites-demo accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 41
+    },
+    {
+      "name": "15-park-suites-demo rejects wrong top-level shape: parksuites-stays",
+      "status": "PASS",
+      "ms": 73
+    },
+    {
+      "name": "15-park-suites-demo rejects invalid nested values: parksuites-stays",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "15-park-suites-demo handles empty collection: parksuites-stays",
+      "status": "PASS",
+      "ms": 48
+    },
+    {
+      "name": "16-urban-haven accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 17
+    },
+    {
+      "name": "16-urban-haven rejects wrong top-level shape: urban-reservations",
+      "status": "PASS",
+      "ms": 20
+    },
+    {
+      "name": "16-urban-haven rejects invalid nested values: urban-reservations",
+      "status": "PASS",
+      "ms": 21
+    },
+    {
+      "name": "16-urban-haven handles empty collection: urban-reservations",
+      "status": "PASS",
+      "ms": 21
+    },
+    {
+      "name": "17-nest-collection accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 38
+    },
+    {
+      "name": "17-nest-collection rejects wrong top-level shape: nest-favorites",
+      "status": "PASS",
+      "ms": 44
+    },
+    {
+      "name": "17-nest-collection rejects invalid nested values: nest-favorites",
+      "status": "PASS",
+      "ms": 44
+    },
+    {
+      "name": "17-nest-collection handles empty collection: nest-favorites",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "17-nest-collection rejects wrong top-level shape: nest-requests",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "17-nest-collection rejects invalid nested values: nest-requests",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "17-nest-collection handles empty collection: nest-requests",
+      "status": "PASS",
+      "ms": 61
+    },
+    {
+      "name": "18-moldova-escape accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 62
+    },
+    {
+      "name": "18-moldova-escape rejects wrong top-level shape: escape-nights",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "18-moldova-escape rejects wrong top-level shape: escape-stay",
+      "status": "PASS",
+      "ms": 41
+    },
+    {
+      "name": "18-moldova-escape preserves valid null: escape-stay",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "18-moldova-escape rejects wrong top-level shape: escape-activities",
+      "status": "PASS",
+      "ms": 44
+    },
+    {
+      "name": "18-moldova-escape rejects invalid nested values: escape-activities",
+      "status": "PASS",
+      "ms": 46
+    },
+    {
+      "name": "18-moldova-escape handles empty collection: escape-activities",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "19-bazar-local accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "19-bazar-local rejects wrong top-level shape: bazar-listings",
+      "status": "PASS",
+      "ms": 67
+    },
+    {
+      "name": "19-bazar-local rejects invalid nested values: bazar-listings",
+      "status": "PASS",
+      "ms": 52
+    },
+    {
+      "name": "19-bazar-local handles empty collection: bazar-listings",
+      "status": "PASS",
+      "ms": 48
+    },
+    {
+      "name": "19-bazar-local rejects wrong top-level shape: bazar-favorites",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "19-bazar-local rejects invalid nested values: bazar-favorites",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "19-bazar-local handles empty collection: bazar-favorites",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "20-pret-bun accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 80
+    },
+    {
+      "name": "20-pret-bun rejects wrong top-level shape: pretbun-alerts",
+      "status": "PASS",
+      "ms": 63
+    },
+    {
+      "name": "20-pret-bun rejects invalid nested values: pretbun-alerts",
+      "status": "PASS",
+      "ms": 53
+    },
+    {
+      "name": "20-pret-bun handles empty collection: pretbun-alerts",
+      "status": "PASS",
+      "ms": 55
+    },
+    {
+      "name": "21-local-craft accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "21-local-craft rejects wrong top-level shape: craft-cart",
+      "status": "PASS",
+      "ms": 27
+    },
+    {
+      "name": "21-local-craft rejects invalid nested values: craft-cart",
+      "status": "PASS",
+      "ms": 31
+    },
+    {
+      "name": "21-local-craft handles empty collection: craft-cart",
+      "status": "PASS",
+      "ms": 30
+    },
+    {
+      "name": "21-local-craft rejects wrong top-level shape: craft-orders",
+      "status": "PASS",
+      "ms": 28
+    },
+    {
+      "name": "21-local-craft rejects invalid nested values: craft-orders",
+      "status": "PASS",
+      "ms": 34
+    },
+    {
+      "name": "21-local-craft handles empty collection: craft-orders",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "22-skillup accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "22-skillup rejects wrong top-level shape: skillup-enrolled",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "22-skillup rejects invalid nested values: skillup-enrolled",
+      "status": "PASS",
+      "ms": 31
+    },
+    {
+      "name": "22-skillup handles empty collection: skillup-enrolled",
+      "status": "PASS",
+      "ms": 60
+    },
+    {
+      "name": "22-skillup rejects wrong top-level shape: skillup-passed",
+      "status": "PASS",
+      "ms": 64
+    },
+    {
+      "name": "22-skillup rejects invalid nested values: skillup-passed",
+      "status": "PASS",
+      "ms": 59
+    },
+    {
+      "name": "22-skillup handles empty collection: skillup-passed",
+      "status": "PASS",
+      "ms": 36
+    },
+    {
+      "name": "23-civic-learn accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "23-civic-learn rejects wrong top-level shape: civic-read",
+      "status": "PASS",
+      "ms": 27
+    },
+    {
+      "name": "23-civic-learn rejects invalid nested values: civic-read",
+      "status": "PASS",
+      "ms": 24
+    },
+    {
+      "name": "23-civic-learn handles empty collection: civic-read",
+      "status": "PASS",
+      "ms": 84
+    },
+    {
+      "name": "23-civic-learn rejects wrong top-level shape: civic-score",
+      "status": "PASS",
+      "ms": 31
+    },
+    {
+      "name": "23-civic-learn preserves valid null: civic-score",
+      "status": "PASS",
+      "ms": 25
+    },
+    {
+      "name": "23-civic-learn rejects wrong top-level shape: civic-name",
+      "status": "PASS",
+      "ms": 23
+    },
+    {
+      "name": "24-mentor-cloud accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 45
+    },
+    {
+      "name": "24-mentor-cloud rejects wrong top-level shape: mentor-path",
+      "status": "PASS",
+      "ms": 41
+    },
+    {
+      "name": "24-mentor-cloud rejects stale identifier: mentor-path",
+      "status": "PASS",
+      "ms": 77
+    },
+    {
+      "name": "24-mentor-cloud rejects wrong top-level shape: mentor-weekly",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "24-mentor-cloud rejects wrong top-level shape: mentor-work",
+      "status": "PASS",
+      "ms": 58
+    },
+    {
+      "name": "24-mentor-cloud rejects invalid nested values: mentor-work",
+      "status": "PASS",
+      "ms": 49
+    },
+    {
+      "name": "24-mentor-cloud handles empty collection: mentor-work",
+      "status": "PASS",
+      "ms": 50
+    },
+    {
+      "name": "24-mentor-cloud rejects wrong top-level shape: mentor-sessions",
+      "status": "PASS",
+      "ms": 57
+    },
+    {
+      "name": "24-mentor-cloud rejects invalid nested values: mentor-sessions",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "24-mentor-cloud handles empty collection: mentor-sessions",
+      "status": "PASS",
+      "ms": 46
+    },
+    {
+      "name": "25-casa-check accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 68
+    },
+    {
+      "name": "25-casa-check rejects wrong top-level shape: casa-compare",
+      "status": "PASS",
+      "ms": 65
+    },
+    {
+      "name": "25-casa-check rejects invalid nested values: casa-compare",
+      "status": "PASS",
+      "ms": 100
+    },
+    {
+      "name": "25-casa-check handles empty collection: casa-compare",
+      "status": "PASS",
+      "ms": 65
+    },
+    {
+      "name": "26-direct-home accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 61
+    },
+    {
+      "name": "26-direct-home rejects wrong top-level shape: direct-homes",
+      "status": "PASS",
+      "ms": 57
+    },
+    {
+      "name": "26-direct-home rejects invalid nested values: direct-homes",
+      "status": "PASS",
+      "ms": 69
+    },
+    {
+      "name": "26-direct-home handles empty collection: direct-homes",
+      "status": "PASS",
+      "ms": 37
+    },
+    {
+      "name": "26-direct-home rejects wrong top-level shape: direct-visits",
+      "status": "PASS",
+      "ms": 48
+    },
+    {
+      "name": "26-direct-home rejects invalid nested values: direct-visits",
+      "status": "PASS",
+      "ms": 85
+    },
+    {
+      "name": "26-direct-home handles empty collection: direct-visits",
+      "status": "PASS",
+      "ms": 56
+    },
+    {
+      "name": "26-direct-home rejects wrong top-level shape: direct-checklist",
+      "status": "PASS",
+      "ms": 67
+    },
+    {
+      "name": "26-direct-home rejects invalid nested values: direct-checklist",
+      "status": "PASS",
+      "ms": 81
+    },
+    {
+      "name": "26-direct-home handles empty collection: direct-checklist",
+      "status": "PASS",
+      "ms": 61
+    },
+    {
+      "name": "27-area-insight accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 72
+    },
+    {
+      "name": "27-area-insight rejects wrong top-level shape: area-selected",
+      "status": "PASS",
+      "ms": 76
+    },
+    {
+      "name": "27-area-insight rejects stale identifier: area-selected",
+      "status": "PASS",
+      "ms": 79
+    },
+    {
+      "name": "27-area-insight rejects wrong top-level shape: area-saved",
+      "status": "PASS",
+      "ms": 52
+    },
+    {
+      "name": "27-area-insight rejects invalid nested values: area-saved",
+      "status": "PASS",
+      "ms": 59
+    },
+    {
+      "name": "27-area-insight handles empty collection: area-saved",
+      "status": "PASS",
+      "ms": 78
+    },
+    {
+      "name": "28-table-flow accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 54
+    },
+    {
+      "name": "28-table-flow rejects wrong top-level shape: tableflow-bookings",
+      "status": "PASS",
+      "ms": 46
+    },
+    {
+      "name": "28-table-flow rejects invalid nested values: tableflow-bookings",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "28-table-flow handles empty collection: tableflow-bookings",
+      "status": "PASS",
+      "ms": 52
+    },
+    {
+      "name": "29-food-route accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 58
+    },
+    {
+      "name": "29-food-route rejects wrong top-level shape: foodroute-cart",
+      "status": "PASS",
+      "ms": 38
+    },
+    {
+      "name": "29-food-route rejects invalid nested values: foodroute-cart",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "29-food-route handles empty collection: foodroute-cart",
+      "status": "PASS",
+      "ms": 51
+    },
+    {
+      "name": "29-food-route rejects wrong top-level shape: foodroute-orders",
+      "status": "PASS",
+      "ms": 117
+    },
+    {
+      "name": "29-food-route rejects invalid nested values: foodroute-orders",
+      "status": "PASS",
+      "ms": 94
+    },
+    {
+      "name": "29-food-route handles empty collection: foodroute-orders",
+      "status": "PASS",
+      "ms": 56
+    },
+    {
+      "name": "30-menu-studio accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "30-menu-studio rejects wrong top-level shape: menustudio-tasting",
+      "status": "PASS",
+      "ms": 48
+    },
+    {
+      "name": "30-menu-studio rejects invalid nested values: menustudio-tasting",
+      "status": "PASS",
+      "ms": 47
+    },
+    {
+      "name": "30-menu-studio handles empty collection: menustudio-tasting",
+      "status": "PASS",
+      "ms": 43
+    },
+    {
+      "name": "30-menu-studio rejects wrong top-level shape: menustudio-visits",
+      "status": "PASS",
+      "ms": 50
+    },
+    {
+      "name": "30-menu-studio rejects invalid nested values: menustudio-visits",
+      "status": "PASS",
+      "ms": 54
+    },
+    {
+      "name": "30-menu-studio handles empty collection: menustudio-visits",
+      "status": "PASS",
+      "ms": 44
+    },
+    {
+      "name": "31-my-utility accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 56
+    },
+    {
+      "name": "31-my-utility rejects wrong top-level shape: utility-invoices",
+      "status": "PASS",
+      "ms": 33
+    },
+    {
+      "name": "31-my-utility rejects invalid nested values: utility-invoices",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "31-my-utility handles empty collection: utility-invoices",
+      "status": "PASS",
+      "ms": 33
+    },
+    {
+      "name": "31-my-utility rejects wrong top-level shape: utility-readings",
+      "status": "PASS",
+      "ms": 37
+    },
+    {
+      "name": "31-my-utility rejects invalid nested values: utility-readings",
+      "status": "PASS",
+      "ms": 33
+    },
+    {
+      "name": "31-my-utility handles empty collection: utility-readings",
+      "status": "PASS",
+      "ms": 35
+    },
+    {
+      "name": "32-block-admin accepts valid baseline saved state",
+      "status": "PASS",
+      "ms": 32
+    },
+    {
+      "name": "32-block-admin rejects wrong top-level shape: block-issues",
+      "status": "PASS",
+      "ms": 31
+    },
+    {
+      "name": "32-block-admin rejects invalid nested values: block-issues",
+      "status": "PASS",
+      "ms": 36
+    },
+    {
+      "name": "32-block-admin handles empty collection: block-issues",
+      "status": "PASS",
+      "ms": 34
+    },
+    {
+      "name": "32-block-admin rejects wrong top-level shape: block-votes",
+      "status": "PASS",
+      "ms": 64
+    },
+    {
+      "name": "32-block-admin rejects invalid nested values: block-votes",
+      "status": "PASS",
+      "ms": 40
+    },
+    {
+      "name": "32-block-admin handles empty collection: block-votes",
+      "status": "PASS",
+      "ms": 30
+    },
+    {
+      "name": "32-block-admin rejects wrong top-level shape: block-area",
+      "status": "PASS",
+      "ms": 33
+    }
+  ]
+}

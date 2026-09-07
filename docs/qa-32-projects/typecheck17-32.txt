@@ -1,0 +1,29 @@
+TypeScript verification: projects 17–32
+
+Executed from D:/proiecte-front-end during the post-fix QA pass on 2026-09-07.
+
+Command:
+pnpm --filter '@frontends/17-*' --filter '@frontends/18-*' --filter '@frontends/19-*' --filter '@frontends/20-*' --filter '@frontends/21-*' --filter '@frontends/22-*' --filter '@frontends/23-*' --filter '@frontends/24-*' --filter '@frontends/25-*' --filter '@frontends/26-*' --filter '@frontends/27-*' --filter '@frontends/28-*' --filter '@frontends/29-*' --filter '@frontends/30-*' --filter '@frontends/31-*' --filter '@frontends/32-*' --workspace-concurrency=4 typecheck
+
+Each selected project's typecheck script ran: tsc --noEmit
+Process completed successfully with exit code 0.
+
+PASS 17-nest-collection
+PASS 18-moldova-escape
+PASS 19-bazar-local
+PASS 20-pret-bun
+PASS 21-local-craft
+PASS 22-skillup
+PASS 23-civic-learn
+PASS 24-mentor-cloud
+PASS 25-casa-check
+PASS 26-direct-home
+PASS 27-area-insight
+PASS 28-table-flow
+PASS 29-food-route
+PASS 30-menu-studio
+PASS 31-my-utility
+PASS 32-block-admin
+
+Summary: 16 projects checked, 16 passed, 0 TypeScript errors.
+This is a concise summary of the actual completed tool output, not a new run.

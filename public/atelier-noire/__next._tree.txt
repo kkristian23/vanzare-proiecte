@@ -1,2 +1,2 @@
 :HL["/atelier-noire/_next/static/chunks/03h2tij02t6kv.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4180,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"BKmRFCEUER8Rw1kjrUgEE"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4180,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"UDtGwsCDqdAf2BCOsKKi4"}

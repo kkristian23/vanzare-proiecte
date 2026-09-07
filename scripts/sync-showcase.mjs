@@ -2,6 +2,7 @@ import { cp, mkdir, readFile, readdir, rename, rm, stat, writeFile } from "node:
 import path from "node:path";
 import process from "node:process";
 import { spawn } from "node:child_process";
+import { writeProjectPreview } from "./project-previews.mjs";
 
 const root = process.cwd();
 const registryPath = path.join(root, "showcase-projects", "registry.json");
@@ -152,6 +153,7 @@ for (const project of registry) {
     continue;
   }
   if (changedOnly && !(await projectChanged(project, destination))) {
+    if (project.id >= 35 && project.id <= 66) await writeProjectPreview(destination);
     results.push({ slug: project.slug, status: "unchanged" });
     continue;
   }
@@ -202,6 +204,7 @@ for (const project of registry) {
     }
   }
   await rewriteTree(destination, project.slug);
+  if (project.id >= 35 && project.id <= 66) await writeProjectPreview(destination);
   results.push({ slug: project.slug, status: "synced", output });
 }
 

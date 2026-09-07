@@ -1,0 +1,237 @@
+[
+  {
+    "app": "17-nest-collection",
+    "name": "favorites, district filter and remount",
+    "status": "PASS"
+  },
+  {
+    "app": "17-nest-collection",
+    "name": "booking saves selected property, date and nights",
+    "status": "PASS"
+  },
+  {
+    "app": "17-nest-collection",
+    "name": "required booking email retained in saved request",
+    "status": "PASS"
+  },
+  {
+    "app": "17-nest-collection",
+    "name": "request history survives reload and cancels only chosen request",
+    "status": "PASS"
+  },
+  {
+    "app": "18-moldova-escape",
+    "name": "stay/activity budget, download and remount",
+    "status": "PASS"
+  },
+  {
+    "app": "18-moldova-escape",
+    "name": "reset clears persisted itinerary",
+    "status": "PASS"
+  },
+  {
+    "app": "18-moldova-escape",
+    "name": "night quantity remains integral",
+    "status": "PASS"
+  },
+  {
+    "app": "19-bazar-local",
+    "name": "publish contact, favorite, withdraw and remount",
+    "status": "PASS"
+  },
+  {
+    "app": "19-bazar-local",
+    "name": "search/locality filter and reset",
+    "status": "PASS"
+  },
+  {
+    "app": "19-bazar-local",
+    "name": "listing form rejects alphabetic phone number",
+    "status": "PASS"
+  },
+  {
+    "app": "20-pret-bun",
+    "name": "stock switch, sorting, alert threshold and remount",
+    "status": "PASS"
+  },
+  {
+    "app": "20-pret-bun",
+    "name": "new product controls actual offers and independent alert",
+    "status": "PASS"
+  },
+  {
+    "app": "21-local-craft",
+    "name": "customization quantity gift total and persistent order",
+    "status": "PASS"
+  },
+  {
+    "app": "21-local-craft",
+    "name": "checkout rejects fractional product quantity",
+    "status": "PASS"
+  },
+  {
+    "app": "21-local-craft",
+    "name": "workshop-only basket has no physical gift-packaging fee",
+    "status": "PASS"
+  },
+  {
+    "app": "22-skillup",
+    "name": "cohort enrollment wrong/correct quiz and learning remount",
+    "status": "PASS"
+  },
+  {
+    "app": "22-skillup",
+    "name": "topic filtering changes selectable course",
+    "status": "PASS"
+  },
+  {
+    "app": "22-skillup",
+    "name": "enrolled cohort remains selected after reload",
+    "status": "PASS"
+  },
+  {
+    "app": "22-skillup",
+    "name": "empty enrolled subject filter has visible feedback",
+    "status": "PASS"
+  },
+  {
+    "app": "23-civic-learn",
+    "name": "assessment remains gated until all modules read",
+    "status": "PASS"
+  },
+  {
+    "app": "23-civic-learn",
+    "name": "passing evaluation creates personalized persistent confirmation",
+    "status": "PASS"
+  },
+  {
+    "app": "24-mentor-cloud",
+    "name": "portfolio prerequisites, path isolation and remount",
+    "status": "PASS"
+  },
+  {
+    "app": "24-mentor-cloud",
+    "name": "mentorship schedule persists and cancels",
+    "status": "PASS"
+  },
+  {
+    "app": "24-mentor-cloud",
+    "name": "same mentor slot cannot be double-booked",
+    "status": "PASS"
+  },
+  {
+    "app": "25-casa-check",
+    "name": "composite filters, empty state and price-area sorting",
+    "status": "PASS"
+  },
+  {
+    "app": "25-casa-check",
+    "name": "three-property compare cap, computed row and persistence",
+    "status": "PASS"
+  },
+  {
+    "app": "25-casa-check",
+    "name": "property dossier adds the actual inspected property",
+    "status": "PASS"
+  },
+  {
+    "app": "26-direct-home",
+    "name": "viewing and checklist persist, cancellation works",
+    "status": "PASS"
+  },
+  {
+    "app": "26-direct-home",
+    "name": "owner listing persists and can be withdrawn",
+    "status": "PASS"
+  },
+  {
+    "app": "26-direct-home",
+    "name": "conflicting viewing is rejected with in-dialog feedback",
+    "status": "PASS"
+  },
+  {
+    "app": "27-area-insight",
+    "name": "keyboard map selection, metric layer and estimator",
+    "status": "PASS"
+  },
+  {
+    "app": "27-area-insight",
+    "name": "saved neighborhood and export describe selected data after reload",
+    "status": "PASS"
+  },
+  {
+    "app": "28-table-flow",
+    "name": "capacity gating, occupied table, persistence and cancellation",
+    "status": "PASS"
+  },
+  {
+    "app": "28-table-flow",
+    "name": "past-date reservation is rejected",
+    "status": "PASS"
+  },
+  {
+    "app": "28-table-flow",
+    "name": "required contact phone survives reservation",
+    "status": "PASS"
+  },
+  {
+    "app": "29-food-route",
+    "name": "delivery arithmetic, kitchen note and order stages persist",
+    "status": "PASS"
+  },
+  {
+    "app": "29-food-route",
+    "name": "basket upper limit and removal",
+    "status": "PASS"
+  },
+  {
+    "app": "29-food-route",
+    "name": "pickup order does not enter courier-delivery workflow",
+    "status": "PASS"
+  },
+  {
+    "app": "30-menu-studio",
+    "name": "allergen/vegetarian filters and actual saved menu payload",
+    "status": "PASS"
+  },
+  {
+    "app": "30-menu-studio",
+    "name": "restaurant visit persists and can be cancelled",
+    "status": "PASS"
+  },
+  {
+    "app": "31-my-utility",
+    "name": "decreasing reading rejected and valid index persists",
+    "status": "PASS"
+  },
+  {
+    "app": "31-my-utility",
+    "name": "payment updates balance, stored status and receipt",
+    "status": "PASS"
+  },
+  {
+    "app": "31-my-utility",
+    "name": "zero-consumption meter reading is permitted",
+    "status": "PASS"
+  },
+  {
+    "app": "31-my-utility",
+    "name": "invoice download preserves its fractional monetary amount",
+    "status": "PASS"
+  },
+  {
+    "app": "32-block-admin",
+    "name": "maintenance ticket persists and resolved count updates",
+    "status": "PASS"
+  },
+  {
+    "app": "32-block-admin",
+    "name": "vote replacement counts exactly one resident and persists",
+    "status": "PASS"
+  },
+  {
+    "app": "32-block-admin",
+    "name": "displayed expense shares reconcile with displayed total",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "date": "2026-09-07T13:33:51.836Z",
+  "environment": "Node v24.18.0 / jsdom 26.1.0 / React 19.1.1",
+  "scope": "Actual React DOM interactions, storage effects, input validity, persistence. Excludes browser layout, networking, native dialog focus and download initiation.",
+  "passed": 26,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "01 Eventora: category/search intersection, ticket price and refresh persistence",
+      "status": "PASS",
+      "ms": 1419
+    },
+    {
+      "name": "01 Eventora: downloaded ticket retains event date, time and location",
+      "status": "PASS",
+      "ms": 346
+    },
+    {
+      "name": "02 Scena City: date/category filtering, agenda export and refresh",
+      "status": "PASS",
+      "ms": 296
+    },
+    {
+      "name": "03 Pulse: filtered check-in/undo, add and duplicate prevention",
+      "status": "PASS",
+      "ms": 615
+    },
+    {
+      "name": "03 Pulse: General ticket-card action retains chosen tier",
+      "status": "PASS",
+      "ms": 224
+    },
+    {
+      "name": "04 Nova: specialty filter, duplicate-slot rejection, saved booking and cancellation",
+      "status": "PASS",
+      "ms": 479
+    },
+    {
+      "name": "04 Nova: Sunday booking is rejected visibly without discarding entered fields",
+      "status": "PASS",
+      "ms": 193
+    },
+    {
+      "name": "05 Laboris: unique basket, combined filters, exact total and collection persistence",
+      "status": "PASS",
+      "ms": 739
+    },
+    {
+      "name": "05 Laboris: saved collection request identifies required patient",
+      "status": "PASS",
+      "ms": 329
+    },
+    {
+      "name": "06 Doctor Aproape: combined provider filters, reserve slot, refresh and release slot",
+      "status": "PASS",
+      "ms": 622
+    },
+    {
+      "name": "06 Doctor Aproape: patient identity survives submission",
+      "status": "PASS",
+      "ms": 275
+    },
+    {
+      "name": "07 MedSlot: guided filter, reservation persistence and cancellation",
+      "status": "PASS",
+      "ms": 348
+    },
+    {
+      "name": "07 MedSlot: saved visit uses an absolute date and patient identity",
+      "status": "PASS",
+      "ms": 191
+    },
+    {
+      "name": "08 LeadPilot: create deal, move stage, task completion and refresh",
+      "status": "PASS",
+      "ms": 551
+    },
+    {
+      "name": "09 GrowthDesk: contact filtering, subscription-aware audience and saved campaign",
+      "status": "PASS",
+      "ms": 643
+    },
+    {
+      "name": "10 CloseFlow: lead-scoped messages, notes, reminders and persistent close/reopen",
+      "status": "PASS",
+      "ms": 1198
+    },
+    {
+      "name": "10 CloseFlow: draft remains associated with lead when switching conversations",
+      "status": "PASS",
+      "ms": 435
+    },
+    {
+      "name": "10 CloseFlow: independent message/note drafts survive refresh and resolved thread blocks editing",
+      "status": "PASS",
+      "ms": 847
+    },
+    {
+      "name": "11 PartMatch: dependent vehicle choices, product filters and bounded persistent cart",
+      "status": "PASS",
+      "ms": 1784
+    },
+    {
+      "name": "11 PartMatch: completed order remains recorded after checkout and refresh",
+      "status": "PASS",
+      "ms": 380
+    },
+    {
+      "name": "12 GarageBox: OEM search, service kit, work order status and persistence",
+      "status": "PASS",
+      "ms": 620
+    },
+    {
+      "name": "12 GarageBox: opening work order keeps allocated stock unavailable",
+      "status": "PASS",
+      "ms": 320
+    },
+    {
+      "name": "13 Motor Supply: category/warehouse filter, stock clamp, volume discount and quote persistence",
+      "status": "PASS",
+      "ms": 385
+    },
+    {
+      "name": "14 AutoGrid: budget/sort, comparison, fitting total and saved booking",
+      "status": "PASS",
+      "ms": 804
+    },
+    {
+      "name": "15 Park Suites: occupancy/date validation, calculated stay, refresh and cancellation",
+      "status": "PASS",
+      "ms": 543
+    },
+    {
+      "name": "16 Urban Haven: experience tabs, per-night extras and one-time transfer, persistence",
+      "status": "PASS",
+      "ms": 509
+    }
+  ]
+}

@@ -1,4 +1,10 @@
-# vinext-starter
+# MONO/DEV — catalog de proiecte
+
+Cele 32 de proiecte noi au implementări separate pentru design, structură și fluxuri. Vezi [lista proiectelor, referințele și verificările](docs/32-project-redesign.md). Sursele lor sunt în directoarele numerotate din `D:/proiecte-front-end`, iar exporturile integrate sunt în `public/<slug>/`.
+
+Previzualizările celor 32 de proiecte redau paginile curente. Descrierile și fișele proiectelor sunt disponibile în română, rusă și engleză. Funcțiile proiectelor sunt demonstrații cu date salvate local; serviciile reale se conectează separat.
+
+## Catalog runtime
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
@@ -63,7 +69,7 @@ export default async function Home() {
 
 - `npm run dev`: start local development
 - `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
+- `npm test`: build the catalog and verify rendered content, registered routes, export prefixes and current project previews
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
 ## Learn More

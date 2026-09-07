@@ -6,13 +6,25 @@ import {
   ChevronDown,
   ExternalLink,
   Menu,
+  Monitor,
+  Smartphone,
   Search,
   ShoppingBag,
   Sparkles,
   X,
   Zap,
 } from "lucide-react";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from "react";
+import { LiveProjectPreview } from "./live-project-preview";
+import { newProjectDetails } from "./new-project-details";
+import { newProjectTranslations } from "./new-project-translations";
+import projectPrices from "./project-prices.json";
 import {
   copy,
   Locale,
@@ -24,15 +36,27 @@ import {
   visualCopy,
 } from "./i18n";
 
-const projects = [
+type Platform = "web" | "mobile";
+type MobileOS = "all" | "android" | "ios";
+type Project = {
+  id: number; title: string; type: string; price: number; tone: string;
+  desc: string; stack: string[]; platform?: Platform;
+  mobileOS?: ("android" | "ios")[];
+};
+const platformCopy = {
+  ro: {"label":"Alege platforma","web":"Proiecte Web","mobile":"Aplica\u021bii Mobile","webDesc":"Site-uri, magazine online \u0219i platforme web","mobileDesc":"Aplica\u021bii pentru Android \u0219i iOS","soon":"\u00cen cur\u00e2nd","all":"Toate","empty":"Urm\u0103toarea idee \u00eencape \u00een buzunar.","detail":"Proiectele mobile pentru Android \u0219i iOS vor ap\u0103rea aici. Ai deja o idee de aplica\u021bie? Hai s\u0103 o discut\u0103m.","contact":"Discut\u0103m aplica\u021bia ta","available":"proiecte","os":"Sistem de operare"},
+  en: { label: "Choose a platform", web: "Web Projects", mobile: "Mobile Apps", webDesc: "Websites, online stores and web platforms", mobileDesc: "Apps for Android and iOS", soon: "Coming soon", all: "All", empty: "Your next idea fits in your pocket.", detail: "Mobile projects for Android and iOS will appear here. Already have an app idea? Let's talk.", contact: "Let's discuss your app", available: "projects", os: "Operating system" },
+  ru: {"label":"\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0443","web":"\u0412\u0435\u0431-\u043f\u0440\u043e\u0435\u043a\u0442\u044b","mobile":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f","webDesc":"\u0421\u0430\u0439\u0442\u044b, \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u044b \u0438 \u0432\u0435\u0431-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b","mobileDesc":"\u041f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0434\u043b\u044f Android \u0438 iOS","soon":"\u0421\u043a\u043e\u0440\u043e","all":"\u0412\u0441\u0435","empty":"\u0412\u0430\u0448\u0430 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f \u0438\u0434\u0435\u044f \u2014 \u0432 \u043a\u0430\u0440\u043c\u0430\u043d\u0435.","detail":"\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u044b \u0434\u043b\u044f Android \u0438 iOS. \u0423\u0436\u0435 \u0435\u0441\u0442\u044c \u0438\u0434\u0435\u044f \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f? \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043e\u0431\u0441\u0443\u0434\u0438\u043c.","contact":"\u041e\u0431\u0441\u0443\u0434\u0438\u0442\u044c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435","available":"\u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432","os":"\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430"},
+};
+const projectCatalog: Project[] = [
   {
     id: 66,
     title: "EVENTORA",
     type: "Calendar & Events",
     price: 650,
     tone: "eventora",
-    desc: "Bilete digitale pentru concerte, teatru și festivaluri din Moldova.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Afișe de concerte și catalog de bilete.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 65,
@@ -40,8 +64,8 @@ const projects = [
     type: "Calendar & Events",
     price: 650,
     tone: "scena-city",
-    desc: "Un calendar editorial pentru cultură, localuri și comunități creative.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Ghid cultural editorial cu agendă cronologică.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 64,
@@ -49,8 +73,8 @@ const projects = [
     type: "Calendar & Events",
     price: 650,
     tone: "pulse-tickets",
-    desc: "Instrumente pentru evenimente, participanți și bilete QR.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Consolă pentru organizatori și registru de participanți.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 63,
@@ -58,8 +82,8 @@ const projects = [
     type: "Clinics & Medical",
     price: 950,
     tone: "clinica-nova",
-    desc: "Programări, specialiști și rezultate într-un portal medical modern.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Prezentare de clinică, specialități și echipă.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 62,
@@ -67,8 +91,8 @@ const projects = [
     type: "Clinics & Medical",
     price: 950,
     tone: "laboris",
-    desc: "Alege investigația, centrul și ora potrivită în câteva minute.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Catalog de analize cu listă de recoltare.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 61,
@@ -76,8 +100,8 @@ const projects = [
     type: "Clinics & Medical",
     price: 950,
     tone: "doctor-aproape",
-    desc: "Căutare după specialitate, disponibilitate și tipul consultației.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Director de medici cu disponibilitate pe zile.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 60,
@@ -85,8 +109,8 @@ const projects = [
     type: "Clinics & Medical",
     price: 950,
     tone: "med-slot",
-    desc: "Profiluri verificate, intervale disponibile și consultații video.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Selecție ghidată de consultații în trei pași.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 59,
@@ -94,8 +118,8 @@ const projects = [
     type: "CRM & Sales",
     price: 1200,
     tone: "lead-pilot",
-    desc: "Pipeline vizual pentru echipe comerciale rapide.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Panou de oportunități pe etape comerciale.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 58,
@@ -103,8 +127,8 @@ const projects = [
     type: "CRM & Sales",
     price: 1200,
     tone: "growth-desk",
-    desc: "Contacte, campanii și suport într-un workspace unificat.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Bază de contacte și segmentare pentru marketing.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 57,
@@ -112,8 +136,8 @@ const projects = [
     type: "CRM & Sales",
     price: 1200,
     tone: "closeflow",
-    desc: "Inbox comercial cu apeluri, email și follow-up inteligent.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Inbox comercial cu conversații și fișe de contact.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 56,
@@ -121,8 +145,8 @@ const projects = [
     type: "E-commerce & Auto",
     price: 850,
     tone: "partmatch",
-    desc: "Catalog auto cu selecție după marcă, model și motorizare.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Magazin de piese cu selecție dependentă de vehicul.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 55,
@@ -130,8 +154,8 @@ const projects = [
     type: "E-commerce & Auto",
     price: 850,
     tone: "garage-box",
-    desc: "Căutare rapidă după cod OEM și compatibilitate.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Banc de lucru pentru atelier și inventar OEM.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 54,
@@ -139,8 +163,8 @@ const projects = [
     type: "E-commerce & Auto",
     price: 850,
     tone: "motor-supply",
-    desc: "Piese de caroserie și mecanică pentru profesioniști.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Aprovizionare angro prin tabel și deviz.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 53,
@@ -148,8 +172,8 @@ const projects = [
     type: "E-commerce & Auto",
     price: 850,
     tone: "auto-grid",
-    desc: "Alternative aftermarket, comparații și service partener.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Comparație de kituri aftermarket și service.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 52,
@@ -157,8 +181,8 @@ const projects = [
     type: "Hotels & Travel",
     price: 900,
     tone: "park-suites-demo",
-    desc: "Rezervare directă pentru apartamente urbane luminoase.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Prezentare arhitecturală de apartamente urbane.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 51,
@@ -166,8 +190,8 @@ const projects = [
     type: "Hotels & Travel",
     price: 900,
     tone: "urban-haven",
-    desc: "Camere, wellness, restaurant și transfer aeroport.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Hotel cu experiențe de cazare, spa și restaurant.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 50,
@@ -175,8 +199,8 @@ const projects = [
     type: "Hotels & Travel",
     price: 900,
     tone: "nest-collection",
-    desc: "O colecție de apartamente și hoteluri boutique.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Colecție de apartamente cu galerie asimetrică.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 49,
@@ -184,8 +208,8 @@ const projects = [
     type: "Hotels & Travel",
     price: 900,
     tone: "moldova-escape",
-    desc: "Cazări, experiențe și trasee într-o singură căutare.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Planificator de escapade și itinerar.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 48,
@@ -193,8 +217,8 @@ const projects = [
     type: "Marketplace",
     price: 1000,
     tone: "bazar-local",
-    desc: "Marketplace local pentru obiecte, servicii și comunități.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Anunțuri locale pe categorii și localități.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 47,
@@ -202,8 +226,8 @@ const projects = [
     type: "Marketplace",
     price: 1000,
     tone: "pret-bun",
-    desc: "Prețuri din magazine locale, alerte și istoric.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Comparator de oferte și istoric de preț.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 46,
@@ -211,8 +235,8 @@ const projects = [
     type: "Marketplace",
     price: 1000,
     tone: "local-craft",
-    desc: "Piață digitală pentru artizani și mici producători.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Piață de artizanat cu povești și personalizare.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 45,
@@ -220,8 +244,8 @@ const projects = [
     type: "Online Education",
     price: 750,
     tone: "skillup",
-    desc: "Cursuri practice create de experți locali.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Studio de cursuri practice și lecții de probă.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 44,
@@ -229,8 +253,8 @@ const projects = [
     type: "Online Education",
     price: 750,
     tone: "civic-learn",
-    desc: "Portal de instruire pentru instituții și organizații.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Portal instituțional cu program și evaluare.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 43,
@@ -238,8 +262,8 @@ const projects = [
     type: "Online Education",
     price: 750,
     tone: "mentor-cloud",
-    desc: "Academii, trasee de învățare și certificate verificabile.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Trasee de carieră cu exerciții și mentorat.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 42,
@@ -247,8 +271,8 @@ const projects = [
     type: "Real Estate",
     price: 900,
     tone: "casa-check",
-    desc: "Proprietăți verificate, hartă și comparație pe cartiere.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Catalog de proprietăți și dosare comparative.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 41,
@@ -256,8 +280,8 @@ const projects = [
     type: "Real Estate",
     price: 900,
     tone: "direct-home",
-    desc: "Anunțuri transparente, vizionări și documente organizate.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Locuințe direct de la proprietar și agendă.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 40,
@@ -265,8 +289,8 @@ const projects = [
     type: "Real Estate",
     price: 900,
     tone: "area-insight",
-    desc: "Prețuri pe m², școli, transport și evoluția pieței.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Atlas interactiv de cartiere și indicatori.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 39,
@@ -274,8 +298,8 @@ const projects = [
     type: "Restaurants & Food",
     price: 700,
     tone: "table-flow",
-    desc: "Descoperă localuri și rezervă în timp real.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Restaurante și plan interactiv de sală.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 38,
@@ -283,8 +307,8 @@ const projects = [
     type: "Restaurants & Food",
     price: 700,
     tone: "food-route",
-    desc: "Comandă locală cu urmărirea livrării în timp real.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Meniu de livrare cu coș lateral și urmărire.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 37,
@@ -292,8 +316,8 @@ const projects = [
     type: "Restaurants & Food",
     price: 700,
     tone: "menu-studio",
-    desc: "Prezență digitală completă pentru restaurante independente.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Bistro editorial și meniu sezonier.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 36,
@@ -301,8 +325,8 @@ const projects = [
     type: "Utility Management",
     price: 1100,
     tone: "my-utility",
-    desc: "Facturi, contoare și consum într-un singur tablou de bord.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Cont de consumator pentru facturi și contor.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 35,
@@ -310,8 +334,8 @@ const projects = [
     type: "Utility Management",
     price: 1100,
     tone: "block-admin",
-    desc: "Cheltuieli, contoare, sesizări și voturi pentru locatari.",
-    stack: ["Next.js 15","React 19","TypeScript 5.9","Tailwind CSS 3","Firebase","Lucide React","Recharts","React Hook Form","Zod"],
+    desc: "Comunitate de bloc, avizier și participare.",
+    stack: ["Next.js 15","React 19","TypeScript 5.9","CSS responsive","Stocare locală"],
   },
   {
     id: 34,
@@ -752,6 +776,16 @@ const projects = [
     ],
   },
 ];
+
+const pricesByProjectId = new Map(
+  projectPrices.map(({ id, price }) => [id, price]),
+);
+
+const projects: Project[] = projectCatalog.map((project) => ({
+  ...project,
+  price: pricesByProjectId.get(project.id) ?? project.price,
+}));
+
 const filters = [
   "Toate",
   ...new Set(projects.map((project) => project.type)),
@@ -793,14 +827,18 @@ const filterCopy = {
 // otherwise interpret UTF-8 text using a legacy code page.
 const cleanFilterCopy = {
   ro: {
+    moreCategories: "Mai multe categorii",
+    categories: "Toate categoriile",
+    less: "Ascunde categoriile",
     search: "Caut\u0103 proiecte, categorii sau tehnologii",
     sort: "Cele mai noi",
     low: "Pre\u021b cresc\u0103tor",
     high: "Pre\u021b descresc\u0103tor",
     more: "Mai multe",
-    empty: "Nu am g\u0103sit proiecte pentru aceste filtre.",
+    empty: "Nu exist\u0103 proiect cu a\u0219a nume.",
   },
   ru: {
+    moreCategories: "Ещё категории",
     search:
       "\u041f\u043e\u0438\u0441\u043a \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0439 \u0438\u043b\u0438 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0439",
     sort: "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 \u043d\u043e\u0432\u044b\u0435",
@@ -815,6 +853,7 @@ const cleanFilterCopy = {
   },
   en: {
     ...filterCopy.en,
+    moreCategories: "More categories",
     categories: "All categories",
     less: "Hide categories",
   },
@@ -962,7 +1001,7 @@ const projectPaths: Record<number, string> = {
   7: "/micora/",
 };
 
-const launchProjectIds = new Set([27, 28, 29, 30, 31, 32, 33, 34]);
+const launchProjectIds = new Set(Array.from({ length: 40 }, (_, index) => 27 + index));
 
 const projectDetails: Record<
   number,
@@ -2022,9 +2061,11 @@ function ProjectVisual({
   const v = visualCopy[locale];
   const s = showcaseCopy[locale];
   const hasProjectPreview = launchProjectIds.has(project.id);
+  const hasLivePreview = project.id >= 35 && project.id <= 66;
   return (
-    <div className={`visual visual-${project.tone}`}>
-      {hasProjectPreview && (
+    <div className={`visual visual-${project.tone}${hasProjectPreview ? " visual-with-preview" : ""}`}>
+      {hasLivePreview && <LiveProjectPreview slug={projectSlugs[project.id]} title={project.title} />}
+      {hasProjectPreview && !hasLivePreview && (
         <img
           className="launch-project-preview"
           src={`/project-previews/${projectSlugs[project.id]}.png`}
@@ -2582,15 +2623,39 @@ function ProjectVisual({
   );
 }
 
+const PROJECT_PAGE_SIZE = 15;
+
+const productReferenceTitles = new Set([
+  "Referință de produs",
+  "Product reference",
+  "Продукт для вдохновения",
+]);
+
+const subscribeToLocalHost = () => () => {};
+const isLocalHost = () =>
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1" ||
+  window.location.hostname === "::1";
+const isServerHost = () => false;
+
 export default function Home() {
   const categoryMenuRef = useRef<HTMLDetailsElement>(null);
   const sortMenuRef = useRef<HTMLDetailsElement>(null);
   const filterRowRef = useRef<HTMLDivElement>(null);
   const filterMeasureRef = useRef<HTMLDivElement>(null);
   const [visibleFilterCount, setVisibleFilterCount] = useState(6);
-  const [activeCategories, setActiveCategories] = useState<string[]>([]);
+  const [categoriesDiscovered, setCategoriesDiscovered] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [platform, setPlatform] = useState<Platform>("web");
+  const [mobileOS, setMobileOS] = useState<MobileOS>("all");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("newest");
+  const showProductReferences = useSyncExternalStore(
+    subscribeToLocalHost,
+    isLocalHost,
+    isServerHost,
+  );
+  const [visibleProjectCount, setVisibleProjectCount] = useState(PROJECT_PAGE_SIZE);
   const [menu, setMenu] = useState(false);
   const [activeNav, setActiveNav] = useState<"proiecte" | "proces" | null>(null);
   const [locale, setLocale] = useState<Locale>("ro");
@@ -2599,14 +2664,18 @@ export default function Home() {
   );
   const c = copy[locale];
   const fc = cleanFilterCopy[locale];
+  const pc = platformCopy[locale];
   const sortOptions = [
     { value: "newest", label: fc.sort },
     { value: "low", label: fc.low },
     { value: "high", label: fc.high },
   ];
   const selectedSortLabel = sortOptions.find((option) => option.value === sort)?.label ?? fc.sort;
-  const listedProjects = projects.filter(
-    (project) => !hiddenCategories.has(project.type),
+  const publicProjects = projects.filter((project) => !hiddenCategories.has(project.type));
+  const platformCount = (value: Platform) => publicProjects.filter((project) => (project.platform ?? "web") === value).length;
+  const listedProjects = publicProjects.filter((project) =>
+    (project.platform ?? "web") === platform &&
+    (platform === "web" || mobileOS === "all" || project.mobileOS?.includes(mobileOS)),
   );
   const sortedFilters = [
     filters[0],
@@ -2622,18 +2691,17 @@ export default function Home() {
   const primaryFilters = sortedFilters.slice(0, visibleFilterCount);
   const secondaryFilters = sortedFilters.slice(visibleFilterCount);
   const activeSecondaryFilters = secondaryFilters.filter((filter) =>
-    activeCategories.includes(filter),
+    activeCategory === filter,
   );
-  const categoryLimitReached = activeCategories.length >= 3;
   const isCategoryActive = (filter: string) =>
     filter === "Toate"
-      ? activeCategories.length === 0
-      : activeCategories.includes(filter);
+      ? activeCategory === null
+      : activeCategory === filter;
   const normalizedQuery = query.trim().toLocaleLowerCase(locale);
-  const visible = listedProjects
+  const matchingProjects = listedProjects
     .filter(
       (project) =>
-        activeCategories.length === 0 || activeCategories.includes(project.type),
+        activeCategory === null || activeCategory === project.type,
     )
     .filter((project) => {
       if (!normalizedQuery) return true;
@@ -2654,6 +2722,10 @@ export default function Home() {
           ? b.price - a.price
           : b.id - a.id,
     );
+  const visible = activeCategory === null
+    ? matchingProjects.slice(0, visibleProjectCount)
+    : matchingProjects;
+  const hasMoreProjects = activeCategory === null && visible.length < matchingProjects.length;
   const categoryCount = (filter: string) =>
     filter === "Toate"
       ? listedProjects.length
@@ -2661,7 +2733,7 @@ export default function Home() {
   const contactHref = locale === "ro" ? "/contact" : `/contact?lang=${locale}`;
   const selectedDetail = selected
     ? locale === "ro"
-      ? projectDetails[selected.id] ?? {
+      ? newProjectDetails[selected.id] ?? projectDetails[selected.id] ?? {
           summary: selected.desc,
           sections: [
             { title: "Produsul", items: ["Interfață completă și responsive", "Experiență demonstrativă pregătită pentru personalizare", "Conținut și structură originale"] },
@@ -2670,12 +2742,12 @@ export default function Home() {
             { title: "Ce primește cumpărătorul", items: ["Cod sursă complet editabil", "Build static pentru prezentare", "Configurație Firebase opțională"] },
           ],
         }
-      : localizedDetail(locale, selected)
+      : newProjectTranslations[locale].newProjectDetails[selected.id] ?? localizedDetail(locale, selected)
     : null;
   useEffect(() => {
     const syncFromUrl = () => {
       const url = new URL(window.location.href);
-      const categorySlugsFromUrl = url.searchParams.getAll("categorie").slice(0, 3);
+      const categorySlugsFromUrl = url.searchParams.getAll("categorie");
       const projectSlug = url.searchParams.get("proiect");
       const urlLocale = url.searchParams.get("lang");
       const categories = categorySlugsFromUrl
@@ -2687,7 +2759,11 @@ export default function Home() {
       const projectId = Object.entries(projectSlugs).find(
         ([, value]) => value === projectSlug,
       )?.[0];
-      setActiveCategories([...new Set(categories)]);
+      setPlatform(url.searchParams.get("platforma") === "mobile" ? "mobile" : "web");
+      const os = url.searchParams.get("os");
+      setMobileOS(os === "android" || os === "ios" ? os : "all");
+      setActiveCategory(categories[0] ?? null);
+      setVisibleProjectCount(PROJECT_PAGE_SIZE);
       setSelected(
         projectId
           ? (projects.find((project) => project.id === Number(projectId)) ??
@@ -2705,7 +2781,9 @@ export default function Home() {
     };
     syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
-    return () => window.removeEventListener("popstate", syncFromUrl);
+    return () => {
+      window.removeEventListener("popstate", syncFromUrl);
+    };
   }, []);
   useEffect(() => {
     document.documentElement.lang = locale;
@@ -2799,9 +2877,10 @@ export default function Home() {
   }, [locale]);
   useEffect(() => {
     const closeDropdowns = (event: PointerEvent) => {
-      if (!(event.target instanceof Node)) return;
+      const target = event.target;
+      if (!(target instanceof Node)) return;
       [categoryMenuRef.current, sortMenuRef.current].forEach((details) => {
-        if (details?.open && !details.contains(event.target)) details.removeAttribute("open");
+        if (details?.open && !details.contains(target)) details.removeAttribute("open");
       });
     };
     const closeDropdownsWithEscape = (event: KeyboardEvent) => {
@@ -2825,21 +2904,39 @@ export default function Home() {
     else url.searchParams.set("lang", nextLocale);
     window.history.replaceState({}, "", url);
   };
+  const selectPlatform = (nextPlatform: Platform, nextOS: MobileOS = "all", scrollToProjects = false) => {
+    setPlatform(nextPlatform);
+    setMobileOS(nextOS);
+    setActiveCategory(null);
+    setQuery("");
+    setVisibleProjectCount(PROJECT_PAGE_SIZE);
+    const url = new URL(window.location.href);
+    url.searchParams.set("platforma", nextPlatform);
+    url.searchParams.delete("categorie");
+    url.searchParams.delete("os");
+    if (nextPlatform === "mobile" && nextOS !== "all") url.searchParams.set("os", nextOS);
+    url.hash = "proiecte";
+    window.history.pushState({}, "", url);
+    if (scrollToProjects) {
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          document.getElementById(nextPlatform === "mobile" ? "mobile-projects-start" : "project-grid")?.scrollIntoView({
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+            block: "start",
+          });
+        });
+      });
+    }
+  };
   const selectCategory = (category: string) => {
-    const nextCategories =
-      category === "Toate"
-        ? []
-        : activeCategories.includes(category)
-          ? activeCategories.filter((item) => item !== category)
-          : categoryLimitReached
-            ? activeCategories
-            : [...activeCategories, category];
-    setActiveCategories(nextCategories);
+    const nextCategory = category === "Toate" ? null : category;
+    setActiveCategory(nextCategory);
+    setVisibleProjectCount(PROJECT_PAGE_SIZE);
     const url = new URL(window.location.href);
     url.searchParams.delete("categorie");
-    nextCategories.forEach((item) =>
-      url.searchParams.append("categorie", categorySlugs[item]),
-    );
+    if (nextCategory) {
+      url.searchParams.set("categorie", categorySlugs[nextCategory]);
+    }
     url.hash = "proiecte";
     window.history.pushState({}, "", url);
   };
@@ -3183,7 +3280,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="count">
-            {String(visible.length).padStart(2, "0")}
+            {String(matchingProjects.length).padStart(2, "0")}
             <span>
               {c.projectsAvailable[0]}
               <br />
@@ -3191,18 +3288,36 @@ export default function Home() {
             </span>
           </div>
         </div>
+        <div className="platform-picker" role="group" aria-label={pc.label}>
+          {(["web", "mobile"] as const).map((value) => (
+            <button type="button" key={value} className={`platform-option platform-${value}${platform === value ? " is-selected" : ""}`} aria-pressed={platform === value} aria-controls="project-grid" onClick={() => selectPlatform(value, "all", true)}>
+              <span className="platform-art" aria-hidden="true">
+                {value === "web" ? <span className="platform-browser"><span className="browser-chrome"><i /><i /><i /><b>mono.dev</b></span><span className="browser-body"><span className="browser-sidebar"><i /><i /><i /></span><span className="browser-content"><b>Make it<br />happen<span>.</span></b><i /><span className="browser-tiles"><i /><i /><i /></span></span></span><span className="browser-code">&lt;/&gt;</span></span> : <span className="platform-phones"><span className="platform-phone phone-back"><i /><span className="phone-orbit" /><b>iOS</b></span><span className="platform-phone phone-front"><i /><span className="phone-app-icon"><Zap size={22} /></span><b>Go beyond.</b><span className="phone-app-lines"><i /><i /></span><span className="phone-app-button">Let&apos;s go <ArrowRight size={10} /></span></span><span className="phone-float-icon"><Sparkles size={18} /></span></span>}
+              </span>
+              <span className="platform-icon">{value === "web" ? <Monitor aria-hidden="true" /> : <Smartphone aria-hidden="true" />}</span>
+              <span className="platform-text"><strong>{pc[value]}</strong><span>{value === "web" ? pc.webDesc : pc.mobileDesc}</span><span className="platform-devices">{value === "web" ? "WEB / BROWSER" : "ANDROID / iOS"}</span></span>
+            </button>
+          ))}
+        </div>
+        {platform === "mobile" && <div id="mobile-projects-start" className="mobile-os" role="group" aria-label={pc.os}>
+          {(["all", "android", "ios"] as const).map((os) => <button type="button" key={os} aria-pressed={mobileOS === os} onClick={() => selectPlatform("mobile", os)}><span className="os-filter-icon" aria-hidden="true">{os === "all" ? <Sparkles size={15} /> : os === "android" ? <Smartphone size={15} /> : <span className="ios-filter-mark">i</span>}</span><span>{os === "all" ? pc.all : os === "android" ? "Android" : "iOS"}</span>{mobileOS === os && <span className="os-selected-dot" aria-hidden="true" />}</button>)}
+        </div>}
+        <div className="catalog-controls" hidden={platform === "mobile" && platformCount("mobile") === 0}>
         <div className="filter-toolbar">
           <label className="project-search">
             <Search size={18} aria-hidden="true" />
             <input
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setVisibleProjectCount(PROJECT_PAGE_SIZE);
+              }}
               placeholder={fc.search}
               aria-label={fc.search}
             />
           </label>
           <details ref={sortMenuRef} className="project-sort">
-            <summary aria-label={fc.sort}>
+            <summary aria-label={selectedSortLabel}>
               <span>{selectedSortLabel}</span>
               <ChevronDown size={16} aria-hidden="true" />
             </summary>
@@ -3215,6 +3330,7 @@ export default function Home() {
                   aria-pressed={sort === option.value}
                   onClick={(event) => {
                     setSort(option.value);
+                    setVisibleProjectCount(PROJECT_PAGE_SIZE);
                     event.currentTarget.closest("details")?.removeAttribute("open");
                   }}
                 >
@@ -3244,11 +3360,7 @@ export default function Home() {
                 key={filter}
                 onClick={() => selectCategory(filter)}
                 className={isCategoryActive(filter) ? "active" : ""}
-                disabled={
-                  filter !== "Toate" &&
-                  categoryLimitReached &&
-                  !activeCategories.includes(filter)
-                }
+                aria-pressed={isCategoryActive(filter)}
               >
                 {filter === "Toate" ? c.all : localType(filter, locale)}{" "}
                 <span>{categoryCount(filter)}</span>
@@ -3256,20 +3368,22 @@ export default function Home() {
             ))}
           </div>
           {secondaryFilters.length > 0 && (
-            <details ref={categoryMenuRef} className="filter-more">
+            <details
+              ref={categoryMenuRef}
+              className={`filter-more${categoriesDiscovered ? "" : " filter-more-discover"}`}
+              onToggle={(event) => {
+                if (event.currentTarget.open) setCategoriesDiscovered(true);
+              }}
+            >
               <summary
                 className={activeSecondaryFilters.length > 0 ? "active" : ""}
               >
                 <span className="filter-more-label">
-                  {activeSecondaryFilters.length === 1
-                    ? localType(activeSecondaryFilters[0], locale)
-                    : fc.categories}
+                  {fc.moreCategories}
                 </span>
-                <b aria-hidden="true">
-                  {activeSecondaryFilters.length > 0
-                    ? `${activeSecondaryFilters.length}/3`
-                    : `+${secondaryFilters.length}`}
-                </b>
+                {activeSecondaryFilters.length > 0 && (
+                  <b>{activeSecondaryFilters.length}</b>
+                )}
                 <ChevronDown size={15} aria-hidden="true" />
               </summary>
               <div className="filter-menu">
@@ -3280,9 +3394,7 @@ export default function Home() {
                       selectCategory(filter);
                     }}
                     className={isCategoryActive(filter) ? "active" : ""}
-                    disabled={
-                      categoryLimitReached && !activeCategories.includes(filter)
-                    }
+                    aria-pressed={isCategoryActive(filter)}
                   >
                     <span>{localType(filter, locale)}</span>
                     <b>{categoryCount(filter)}</b>
@@ -3292,7 +3404,8 @@ export default function Home() {
             </details>
           )}
         </div>
-        <motion.div layout className="grid">
+        </div>
+        <motion.div layout className="grid" id="project-grid">
           <AnimatePresence mode="popLayout">
             {visible.map((project) => (
               <motion.article
@@ -3336,7 +3449,46 @@ export default function Home() {
             ))}
           </AnimatePresence>
         </motion.div>
-        {!visible.length && <p className="projects-empty">{fc.empty}</p>}
+        {hasMoreProjects && (
+          <div className="projects-load-more">
+            <button
+              type="button"
+              aria-controls="project-grid"
+              onClick={() => setVisibleProjectCount((count) => count + PROJECT_PAGE_SIZE)}
+            >
+              <span>{fc.more}</span>
+              <span className="projects-load-more-icon" aria-hidden="true">
+                <ChevronDown size={18} />
+              </span>
+            </button>
+          </div>
+        )}
+        {platform === "mobile" && platformCount("mobile") === 0 ? (
+          <div className="mobile-coming-soon" role="status">
+            <div className="mobile-launch-copy">
+              <span className="launch-status"><span />{pc.soon}<span className="launch-status-divider" />MOBILE COLLECTION</span>
+              <h3>{pc.empty}</h3><p>{pc.detail}</p>
+              <a href={contactHref}>{pc.contact}<span><ArrowRight size={18} /></span></a>
+              <div className="launch-platforms"><span><Smartphone size={14} />Android</span><i /> <span><span className="ios-filter-mark">i</span>iOS</span><span className="launch-platform-line" /></div>
+            </div>
+            <div className="mobile-preview-art launch-art" aria-hidden="true">
+              <span className="launch-orbit orbit-one" /><span className="launch-orbit orbit-two" /><span className="launch-orbit orbit-three" />
+              <span className="launch-art-caption">SMALL SCREEN. BIG POSSIBILITIES.</span>
+              <div className="launch-device">
+                <div className="launch-device-top"><span>9:41</span><i /><span>100%</span></div>
+                <div className="launch-app-header"><span>mono<span>/</span>mobile</span><span className="launch-app-avatar">m.</span></div>
+                <div className="launch-app-greeting">YOUR NEXT BIG THING</div>
+                <strong className="launch-app-title">Dream it.<br /><em>Launch it.</em></strong>
+                <div className="launch-app-feature"><span className="launch-feature-orb" /><Sparkles size={20} /><span>Built for<br /><b>your everyday.</b></span><span className="launch-feature-arrow"><ArrowRight size={16} /></span></div>
+                <div className="launch-app-widgets"><span><Zap size={17} /><b>Fast.</b><i /></span><span><span className="launch-widget-dots"><i /><i /><i /><i /></span><b>Intuitive.</b><i /></span></div>
+                <div className="launch-app-nav"><span /><span /><span /><span /></div><span className="launch-home-indicator" />
+              </div>
+              <div className="launch-float float-android"><Smartphone size={20} /><span>Android<small>MADE TO CONNECT</small></span></div>
+              <div className="launch-float float-ios"><span className="launch-ios-symbol">i</span><span>iOS<small>DESIGNED TO FEEL</small></span></div>
+              <span className="launch-spark"><Sparkles size={27} /></span>
+            </div>
+          </div>
+        ) : !visible.length && <p className="projects-empty" role="status">{fc.empty}</p>}
       </section>
       <section className="process" id="proces">
         <div className="shell">
@@ -3454,7 +3606,13 @@ export default function Home() {
                 </div>
                 <p className="modal-summary">{selectedDetail.summary}</p>
                 <div className="detail-sections">
-                  {selectedDetail.sections.map((section) => (
+                  {selectedDetail.sections
+                    .filter(
+                      (section) =>
+                        showProductReferences ||
+                        !productReferenceTitles.has(section.title),
+                    )
+                    .map((section) => (
                     <section key={section.title}>
                       <h3>{section.title}</h3>
                       <ul>
@@ -3481,7 +3639,7 @@ export default function Home() {
                     <a className="demo-link" href={projectPaths[selected.id]}>
                       {c.openProject} <ExternalLink />
                     </a>
-                  ) : "demo" in selectedDetail && selectedDetail.demo ? (
+                  ) : "demo" in selectedDetail && typeof selectedDetail.demo === "string" && selectedDetail.demo ? (
                     <a
                       className="demo-link"
                       href={selectedDetail.demo}

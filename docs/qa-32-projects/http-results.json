@@ -1,0 +1,657 @@
+{
+  "date": "2026-09-07T14:02:53.945Z",
+  "origin": "http://127.0.0.1:3000",
+  "passed": 32,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "01-eventora",
+      "title": "Eventora — Calendar &amp; Events",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "02-scena-city",
+      "title": "Scena City — Calendar &amp; Events",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "03-pulse-tickets",
+      "title": "Pulse Tickets — Calendar &amp; Events",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "04-clinica-nova",
+      "title": "Clinica Nova — Clinics &amp; Medical",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "05-laboris",
+      "title": "Laboris — Clinics &amp; Medical",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "06-doctor-aproape",
+      "title": "Doctor Aproape — Clinics &amp; Medical",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "07-med-slot",
+      "title": "MedSlot — Clinics &amp; Medical",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "08-lead-pilot",
+      "title": "LeadPilot — CRM &amp; Sales",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "09-growth-desk",
+      "title": "GrowthDesk — CRM &amp; Sales",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "10-closeflow",
+      "title": "CloseFlow — CRM &amp; Sales",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "11-partmatch",
+      "title": "PartMatch — E-commerce &amp; Auto",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "12-garage-box",
+      "title": "GarageBox — E-commerce &amp; Auto",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "13-motor-supply",
+      "title": "MotorSupply — E-commerce &amp; Auto",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "14-auto-grid",
+      "title": "AutoGrid — E-commerce &amp; Auto",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "15-park-suites-demo",
+      "title": "Luma Suites — Hotels &amp; Travel",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "16-urban-haven",
+      "title": "Urban Haven — Hotels &amp; Travel",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "17-nest-collection",
+      "title": "Nest Collection — Hotels &amp; Travel",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "18-moldova-escape",
+      "title": "Moldova Escape — Hotels &amp; Travel",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "19-bazar-local",
+      "title": "Bazar Local — Marketplace",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "20-pret-bun",
+      "title": "Preț Bun — Marketplace",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/webp"
+        }
+      ]
+    },
+    {
+      "slug": "21-local-craft",
+      "title": "LocalCraft — Marketplace",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "22-skillup",
+      "title": "SkillUp — Online Education",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "23-civic-learn",
+      "title": "CivicLearn — Online Education",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "24-mentor-cloud",
+      "title": "MentorCloud — Online Education",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "25-casa-check",
+      "title": "CasaCheck — Real Estate",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "26-direct-home",
+      "title": "DirectHome — Real Estate",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "27-area-insight",
+      "title": "Area Insight — Real Estate",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "28-table-flow",
+      "title": "TableFlow — Restaurants &amp; Food",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "29-food-route",
+      "title": "FoodRoute — Restaurants &amp; Food",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "30-menu-studio",
+      "title": "Menu Studio — Restaurants &amp; Food",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        },
+        {
+          "kind": "photo",
+          "status": 200,
+          "contentType": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "slug": "31-my-utility",
+      "title": "MyUtility — Utility Management",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    },
+    {
+      "slug": "32-block-admin",
+      "title": "BlockAdmin — Utility Management",
+      "status": 200,
+      "assets": [
+        {
+          "kind": "script",
+          "status": 200,
+          "contentType": "application/javascript"
+        },
+        {
+          "kind": "style",
+          "status": 200,
+          "contentType": "text/css"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "id": 66,
+    "slug": "01-eventora",
+    "name": "Eventora",
+    "reference": "iTicket",
+    "referenceUrl": "https://iticket.md/",
+    "design": "Afișe de concerte și catalog de bilete",
+    "features": [
+      "Filtrare evenimente",
+      "categorii de bilete și cantități",
+      "comenzi persistente și confirmări descărcabile"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\01-eventora"
+  },
+  {
+    "id": 65,
+    "slug": "02-scena-city",
+    "name": "Scena City",
+    "reference": "Fest.md",
+    "referenceUrl": "https://www.fest.md/",
+    "design": "Ghid cultural editorial cu agendă cronologică",
+    "features": [
+      "Filtre după zi și interes",
+      "agendă personală",
+      "exportul programului de weekend"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\02-scena-city"
+  },
+  {
+    "id": 64,
+    "slug": "03-pulse-tickets",
+    "name": "Pulse Tickets",
+    "reference": "Eventbrite",
+    "referenceUrl": "https://www.eventbrite.com/",
+    "design": "Consolă pentru organizatori și registru de participanți",
+    "features": [
+      "Emitere bilete demo",
+      "check-in și anulare",
+      "export CSV și capacitate de eveniment"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\03-pulse-tickets"
+  },
+  {
+    "id": 63,
+    "slug": "04-clinica-nova",
+    "name": "Clinica Nova",
+    "reference": "Medpark",
+    "referenceUrl": "https://medpark.md/",
+    "design": "Prezentare de clinică, specialități și echipă",
+    "features": [
+      "Selecție specialist",
+      "programări cu verificarea intervalului",
+      "istoric și anulare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\04-clinica-nova"
+  },
+  {
+    "id": 62,
+    "slug": "05-laboris",
+    "name": "Laboris",
+    "reference": "Clinica Sante",
+    "referenceUrl": "https://www.sante.md/",
+    "design": "Catalog de analize cu listă de recoltare",
+    "features": [
+      "Căutare după analiză sau cod",
+      "coș de investigații",
+      "alegerea centrului și istoricul cererilor"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\05-laboris"
+  },
+  {
+    "id": 61,
+    "slug": "06-doctor-aproape",
+    "name": "Doctor Aproape",
+    "reference": "Doctolib",
+    "referenceUrl": "https://www.doctolib.fr/",
+    "design": "Director de medici cu disponibilitate pe zile",
+    "features": [
+      "Filtre specialitate/cartier",
+      "rezervarea unui interval",
+      "eliberarea intervalului prin anulare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\06-doctor-aproape"
+  },
+  {
+    "id": 60,
+    "slug": "07-med-slot",
+    "name": "MedSlot",
+    "reference": "Zocdoc",
+    "referenceUrl": "https://www.zocdoc.com/",
+    "design": "Selecție ghidată de consultații în trei pași",
+    "features": [
+      "Potrivire după specialitate, limbă și tip de consultație",
+      "rezervare",
+      "agendă de vizite"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\07-med-slot"
+  },
+  {
+    "id": 59,
+    "slug": "08-lead-pilot",
+    "name": "LeadPilot",
+    "reference": "Pipedrive",
+    "referenceUrl": "https://www.pipedrive.com/",
+    "design": "Panou de oportunități pe etape comerciale",
+    "features": [
+      "Creare și editare oportunități",
+      "mutare între etape prin tragere sau selector",
+      "activități și totaluri"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\08-lead-pilot"
+  },
+  {
+    "id": 58,
+    "slug": "09-growth-desk",
+    "name": "GrowthDesk",
+    "reference": "HubSpot",
+    "referenceUrl": "https://www.hubspot.com/",
+    "design": "Bază de contacte și segmentare pentru marketing",
+    "features": [
+      "Contacte editabile",
+      "gestionarea abonării",
+      "campanii locale pentru destinatarii eligibili"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\09-growth-desk"
+  },
+  {
+    "id": 57,
+    "slug": "10-closeflow",
+    "name": "CloseFlow",
+    "reference": "Close",
+    "referenceUrl": "https://www.close.com/",
+    "design": "Inbox comercial cu conversații și fișe de contact",
+    "features": [
+      "Răspunsuri demo și note interne",
+      "schițe separate pe conversație",
+      "follow-up și rezolvare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\10-closeflow"
+  },
+  {
+    "id": 56,
+    "slug": "11-partmatch",
+    "name": "PartMatch",
+    "reference": "AutoDoc.md",
+    "referenceUrl": "https://autodoc.md/",
+    "design": "Magazin de piese cu selecție dependentă de vehicul",
+    "features": [
+      "Marcă/model/motor",
+      "filtrare compatibilitate demonstrativă",
+      "coș, cantități și istoric de comenzi"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\11-partmatch"
+  },
+  {
+    "id": 55,
+    "slug": "12-garage-box",
+    "name": "GarageBox",
+    "reference": "FixBox.md",
+    "referenceUrl": "https://fixbox.md/",
+    "design": "Banc de lucru pentru atelier și inventar OEM",
+    "features": [
+      "Căutare OEM",
+      "kit de revizie",
+      "alocare de stoc în fișe de lucru și export"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\12-garage-box"
+  },
+  {
+    "id": 54,
+    "slug": "13-motor-supply",
+    "name": "MotorSupply",
+    "reference": "Signeda",
+    "referenceUrl": "https://www.signeda.md/",
+    "design": "Aprovizionare angro prin tabel și deviz",
+    "features": [
+      "Categorii și depozite",
+      "cantități limitate de stoc",
+      "reduceri de volum și oferte descărcabile"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\13-motor-supply"
+  },
+  {
+    "id": 53,
+    "slug": "14-auto-grid",
+    "name": "AutoGrid",
+    "reference": "AUTODOC Europe",
+    "referenceUrl": "https://www.autodoc.co.uk/",
+    "design": "Comparație de kituri aftermarket și service",
+    "features": [
+      "Garaj și buget",
+      "comparație de specificații",
+      "estimare cu montaj și programări consultabile"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\14-auto-grid"
+  },
+  {
+    "id": 52,
+    "slug": "15-park-suites-demo",
+    "name": "Luma Suites",
+    "reference": "Park Suites",
+    "referenceUrl": "https://parksuites.md/en-gb/",
+    "design": "Prezentare arhitecturală de apartamente urbane",
+    "features": [
+      "Filtrare după capacitate",
+      "calculul nopților și totalului",
+      "istoric de sejururi și anulare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\15-park-suites-demo"
+  },
+  {
+    "id": 51,
+    "slug": "16-urban-haven",
+    "name": "Urban Haven",
+    "reference": "Manhattan Hotel",
+    "referenceUrl": "https://manhattan-hotel.md/",
+    "design": "Hotel cu experiențe de cazare, spa și restaurant",
+    "features": [
+      "Schimbarea experienței",
+      "configurare cameră și servicii suplimentare",
+      "pachete de sejur persistente"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\16-urban-haven"
+  },
+  {
+    "id": 50,
+    "slug": "17-nest-collection",
+    "name": "Nest Collection",
+    "reference": "Sonder",
+    "referenceUrl": "https://www.sonder.com/",
+    "design": "Colecție de apartamente cu galerie asimetrică",
+    "features": [
+      "Filtrare cartiere",
+      "colecție personală",
+      "solicitări de cazare cu istoric și anulare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\17-nest-collection"
+  },
+  {
+    "id": 49,
+    "slug": "18-moldova-escape",
+    "name": "Moldova Escape",
+    "reference": "Booking.com Moldova",
+    "referenceUrl": "https://www.booking.com/country/md.html",
+    "design": "Planificator de escapade și itinerar",
+    "features": [
+      "Cazări după regiune și buget",
+      "experiențe locale",
+      "calcul și export de plan personal"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\18-moldova-escape"
+  },
+  {
+    "id": 48,
+    "slug": "19-bazar-local",
+    "name": "Bazar Local",
+    "reference": "999.md",
+    "referenceUrl": "https://999.md/",
+    "design": "Anunțuri locale pe categorii și localități",
+    "features": [
+      "Publicare și retragere de anunțuri demo",
+      "favorite",
+      "afișarea datelor de contact"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\19-bazar-local"
+  },
+  {
+    "id": 47,
+    "slug": "20-pret-bun",
+    "name": "Preț Bun",
+    "reference": "Cât Costă",
+    "referenceUrl": "https://catcosta.md/",
+    "design": "Comparator de oferte și istoric de preț",
+    "features": [
+      "Sortare cu livrare și disponibilitate",
+      "istoric demonstrativ",
+      "praguri de preț persistente"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\20-pret-bun"
+  },
+  {
+    "id": 46,
+    "slug": "21-local-craft",
+    "name": "LocalCraft",
+    "reference": "Etsy",
+    "referenceUrl": "https://www.etsy.com/",
+    "design": "Piață de artizanat cu povești și personalizare",
+    "features": [
+      "Glazură și inscripție",
+      "cantități și ambalaj pentru obiecte",
+      "comenzi cu opțiunile păstrate"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\21-local-craft"
+  },
+  {
+    "id": 45,
+    "slug": "22-skillup",
+    "name": "SkillUp",
+    "reference": "TiRoDemy",
+    "referenceUrl": "https://tirodemy.md/",
+    "design": "Studio de cursuri practice și lecții de probă",
+    "features": [
+      "Catalog pe subiecte",
+      "alegerea grupei",
+      "lecții, evaluare și progres salvat"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\22-skillup"
+  },
+  {
+    "id": 44,
+    "slug": "23-civic-learn",
+    "name": "CivicLearn",
+    "reference": "MLearn",
+    "referenceUrl": "https://mlearn.gov.md/",
+    "design": "Portal instituțional cu program și evaluare",
+    "features": [
+      "Module de lectură",
+      "evaluare deblocată prin progres",
+      "confirmare demonstrativă descărcabilă"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\23-civic-learn"
+  },
+  {
+    "id": 43,
+    "slug": "24-mentor-cloud",
+    "name": "MentorCloud",
+    "reference": "Coursera / Teachable",
+    "referenceUrl": "https://www.coursera.org/",
+    "design": "Trasee de carieră cu exerciții și mentorat",
+    "features": [
+      "Plan în funcție de timpul disponibil",
+      "portofoliu cu etape succesive",
+      "sesiuni fără suprapunere"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\24-mentor-cloud"
+  },
+  {
+    "id": 42,
+    "slug": "25-casa-check",
+    "name": "CasaCheck",
+    "reference": "Immobiliare.md",
+    "referenceUrl": "https://immobiliare.md/",
+    "design": "Catalog de proprietăți și dosare comparative",
+    "features": [
+      "Filtre combinate",
+      "fișe de proprietate",
+      "comparație de suprafețe, camere și preț pe m²"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\25-casa-check"
+  },
+  {
+    "id": 41,
+    "slug": "26-direct-home",
+    "name": "DirectHome",
+    "reference": "999.md Imobiliare",
+    "referenceUrl": "https://999.md/",
+    "design": "Locuințe direct de la proprietar și agendă",
+    "features": [
+      "Anunțuri proprii",
+      "programări de vizionare fără suprapuneri",
+      "listă personală de verificare"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\26-direct-home"
+  },
+  {
+    "id": 40,
+    "slug": "27-area-insight",
+    "name": "Area Insight",
+    "reference": "Zillow / Rightmove",
+    "referenceUrl": "https://www.rightmove.co.uk/",
+    "design": "Atlas interactiv de cartiere și indicatori",
+    "features": [
+      "Schemă interactivă",
+      "straturi de preț, transport și verdeață",
+      "estimare orientativă și export"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\27-area-insight"
+  },
+  {
+    "id": 39,
+    "slug": "28-table-flow",
+    "name": "TableFlow",
+    "reference": "RezervaMasa.md",
+    "referenceUrl": "https://rezervamasa.md/",
+    "design": "Restaurante și plan interactiv de sală",
+    "features": [
+      "Selecție dată, oră și persoane",
+      "masă conform capacității",
+      "rezervări și eliberarea mesei"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\28-table-flow"
+  },
+  {
+    "id": 38,
+    "slug": "29-food-route",
+    "name": "FoodRoute",
+    "reference": "Straus.md",
+    "referenceUrl": "https://straus.md/",
+    "design": "Meniu de livrare cu coș lateral și urmărire",
+    "features": [
+      "Produse și observații",
+      "taxe pe zonă sau ridicare",
+      "comenzi și simularea etapelor de pregătire"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\29-food-route"
+  },
+  {
+    "id": 37,
+    "slug": "30-menu-studio",
+    "name": "Menu Studio",
+    "reference": "Greko Fresh / OpenTable",
+    "referenceUrl": "https://www.opentable.com/",
+    "design": "Bistro editorial și meniu sezonier",
+    "features": [
+      "Filtre vegetariene și alergeni declarați",
+      "selecție de preparate exportabilă",
+      "vizite planificate"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\30-menu-studio"
+  },
+  {
+    "id": 36,
+    "slug": "31-my-utility",
+    "name": "MyUtility",
+    "reference": "Premier Energy",
+    "referenceUrl": "https://premierenergy.md/",
+    "design": "Cont de consumator pentru facturi și contor",
+    "features": [
+      "Achitare simulată cu sold actualizat",
+      "indici validați",
+      "istoric de consum și facturi descărcabile"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\31-my-utility"
+  },
+  {
+    "id": 35,
+    "slug": "32-block-admin",
+    "name": "BlockAdmin",
+    "reference": "Portaluri de administrare rezidențială",
+    "referenceUrl": "https://www.buildium.com/",
+    "design": "Comunitate de bloc, avizier și participare",
+    "features": [
+      "Sesizări cu stări",
+      "un vot per propunere în demo",
+      "repartizarea cheltuielilor pe apartament și suprafață"
+    ],
+    "state": "device-local demo",
+    "source": "D:\\proiecte-front-end\\32-block-admin"
+  }
+]

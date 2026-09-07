@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "node scripts/start-server.mjs dev",
+    "prebuild": "node scripts/project-previews.mjs",
     "build": "vinext build",
     "showcase:sync": "node scripts/sync-showcase.mjs",
     "showcase:refresh": "npm run showcase:sync -- --build --strict && npm run build",

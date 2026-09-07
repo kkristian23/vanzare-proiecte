@@ -1,3 +1,5 @@
+import { newProjectTranslations } from "./new-project-translations";
+
 export type Locale = "ro" | "ru" | "en";
 
 export const locales: Locale[] = ["ro", "ru", "en"];
@@ -52,8 +54,8 @@ export const contactCopy = {
 
 export const copy = {
   ro: {
-    nav: ["Proiecte", "Proces", "Contact"], buyProject: "Proiect la comandă", openMenu: "Deschide meniul", language: "Limbă",
-    eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE.",
+    nav: ["Proiecte", "Proces", "Contact"], buyProject: "Proiect personalizat", openMenu: "Deschide meniul", language: "Limbă",
+    eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE",
     heroText: "Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.", viewProjects: "Vezi proiectele",
     marquee: ["DESIGN CARE VINDE", "COD CURAT", "LIVRARE RAPIDĂ"], catalog: "/ CATALOG 2026", chooseA: "ALEGE URMĂTORUL", chooseB: "TĂU", chooseC: "PROIECT.",
     projectsAvailable: ["PROIECTE", "DISPONIBILE"], all: "Toate", viewDetails: "Vezi detalii", from: "DE LA",
@@ -157,7 +159,7 @@ const descriptions: Record<number, [string, string]> = {
   7: ["Премиальный цифровой опыт для салона красоты", "A premium digital experience for a beauty salon"],
 };
 
-export function localDescription(id: number, fallback: string, locale: Locale) { return locale === "ro" ? fallback : descriptions[id]?.[locale === "ru" ? 0 : 1] ?? fallback; }
+export function localDescription(id: number, fallback: string, locale: Locale) { return locale === "ro" ? fallback : newProjectTranslations[locale].descriptions[id] ?? descriptions[id]?.[locale === "ru" ? 0 : 1] ?? fallback; }
 
 export function localizedDetail(locale: Exclude<Locale, "ro">, project: { title: string; type: string; stack: string[] }) {
   const ru = locale === "ru", type = localType(project.type, locale);

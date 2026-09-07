@@ -17,3 +17,6 @@ public/market9000/
 public/neobarberclub/
 public/rentech/
 public/contor-acasa/
+worker/runtime.d.ts
+# Generated Next.js exports; editable project sources are listed in the registry.
+public/**/_next/
