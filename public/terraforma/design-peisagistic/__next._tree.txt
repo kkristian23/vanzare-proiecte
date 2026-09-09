@@ -1,0 +1,3 @@
+:HL["/terraforma/_next/static/css/777118c1f485aa03.css","style"]
+:HL["/terraforma/images/hero.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"d","key":"design-peisagistic","siblings":["_not-found","_global-error","catalog-plante","portofoliu","robots.txt","sitemap.xml"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"nhKd8yA7qp8fS6MK4o1tP"}

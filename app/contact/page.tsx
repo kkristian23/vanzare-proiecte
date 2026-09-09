@@ -4,13 +4,16 @@ import { ArrowLeft, ArrowUpRight, Check, Copy, Mail, MapPin, Phone, Terminal } f
 import { FormEvent, useEffect, useState } from "react";
 import { contactCopy, Locale, locales } from "../i18n";
 import "./contact.css";
+import "../page-language-switch.css";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
   const [sent, setSent] = useState(false);
   const [locale, setLocale] = useState<Locale>("ro");
+  const [message, setMessage] = useState("");
   const c = contactCopy[locale];
   const backHref = locale === "ro" ? "/" : `/?lang=${locale}`;
+  const [catalogRequest, setCatalogRequest] = useState({ project: "", option: "" });
   const contactCode = [
     ["const", " contact", " = {"], ["  phone:", " \"+373 78 868 996\"", ","],
     ["  email:", " \"monodev@gmail.com\"", ","], ["  location:", " \"Moldova\"", ","],
@@ -23,12 +26,26 @@ export default function ContactPage() {
     const nextLocale = locales.includes(urlLocale as Locale) ? urlLocale as Locale : locales.includes(savedLocale as Locale) ? savedLocale as Locale : "ro";
     setLocale(nextLocale);
     document.documentElement.lang = nextLocale;
+    const project = new URL(window.location.href).searchParams.get("project") ?? "";
+    const option = new URL(window.location.href).searchParams.get("option") ?? "";
+    setCatalogRequest({ project, option });
+    if (project) setMessage(`Sunt interesat(ă) de ${option === "rental" ? "arendarea" : "cumpărarea"} proiectului ${project}.`);
   }, []);
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText("monodev@gmail.com");
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
+  };
+
+  const changeLocale = (nextLocale: Locale) => {
+    localStorage.setItem("mono-locale", nextLocale);
+    const url = new URL(window.location.href);
+    if (nextLocale === "ro") url.searchParams.delete("lang");
+    else url.searchParams.set("lang", nextLocale);
+    window.history.replaceState({}, "", url);
+    document.documentElement.lang = nextLocale;
+    setLocale(nextLocale);
   };
 
   const submit = (event: FormEvent<HTMLFormElement>) => {
@@ -40,6 +57,7 @@ export default function ContactPage() {
       `${c.mailEmail}: ${data.get("email")}`,
       `${c.mailProject}: ${data.get("project")}`,
       `${c.mailBudget}: ${data.get("budget")}`,
+      catalogRequest.project ? `Catalog: ${catalogRequest.project} (${catalogRequest.option === "rental" ? "arendă" : "cumpărare"})` : "",
       "",
       String(data.get("message")),
     ].join("\n");
@@ -52,7 +70,12 @@ export default function ContactPage() {
     <header className="contact-nav">
       <a className="contact-logo" href={backHref}>M<span>O</span>NO/DEV</a>
       <div className="contact-runtime"><i/> {c.systemOnline} <b>v2.6.0</b></div>
-      <a className="contact-back" href={backHref}><ArrowLeft/> {c.back}</a>
+      <div className="page-nav-tools">
+        <div className="page-language-switch" aria-label="Limbă">
+          {locales.map((language) => <button key={language} className={locale === language ? "active" : ""} onClick={() => changeLocale(language)} lang={language}>{language.toUpperCase()}</button>)}
+        </div>
+        <a className="contact-back" href={backHref}><ArrowLeft/> {c.back}</a>
+      </div>
     </header>
 
     <section className="contact-hero">
@@ -86,7 +109,7 @@ export default function ContactPage() {
           <label><span><b>02</b> email: string</span><input name="email" type="email" required placeholder={c.emailPlaceholder}/></label>
           <label><span><b>03</b> project: enum</span><select name="project" required defaultValue=""><option value="" disabled>{c.selectType}</option>{c.projectTypes.map(type=><option key={type}>{type}</option>)}</select></label>
           <label><span><b>04</b> budget: enum</span><select name="budget" required defaultValue=""><option value="" disabled>{c.selectBudget}</option><option>350 — 700 €</option><option>700 — 1.500 €</option><option>1.500 — 3.000 €</option><option>3.000 € +</option></select></label>
-          <label className="form-wide"><span><b>05</b> message: string</span><textarea name="message" required rows={5} placeholder={c.messagePlaceholder}/></label>
+          <label className="form-wide"><span><b>05</b> message: string</span><textarea name="message" required rows={5} value={message} onChange={(event) => setMessage(event.target.value)} placeholder={c.messagePlaceholder}/></label>
           <button className="contact-submit" type="submit"><span>{c.submit}</span><ArrowUpRight/></button>
         </form>}
       </div>

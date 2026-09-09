@@ -1,0 +1,3 @@
+:HL["/ecohabitat/_next/static/css/9f74a44238056125.css","style"]
+:HL["/ecohabitat/images/garden.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"d","key":"curtea-polenizatorilor","siblings":["_not-found","_global-error","robots.txt","sitemap.xml"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"P0XSHVqFOltGHdUnmujUx"}

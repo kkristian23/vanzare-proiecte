@@ -1,5 +1,7 @@
 # MONO/DEV — catalog de proiecte
 
+AquaVerde, TerraForma, GazonPro, EcoHabitat și YardCraft sunt disponibile în categoria **Grădini și peisagistică**. Vezi [sursele, stilurile și fluxul de actualizare](docs/garden-projects.md).
+
 Cele 32 de proiecte noi au implementări separate pentru design, structură și fluxuri. Vezi [lista proiectelor, referințele și verificările](docs/32-project-redesign.md). Sursele lor sunt în directoarele numerotate din `D:/proiecte-front-end`, iar exporturile integrate sunt în `public/<slug>/`.
 
 Previzualizările celor 32 de proiecte redau paginile curente. Descrierile și fișele proiectelor sunt disponibile în română, rusă și engleză. Funcțiile proiectelor sunt demonstrații cu date salvate local; serviciile reale se conectează separat.

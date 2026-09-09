@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ecohabitat-jurnal-naturalist.cristian-codre495379.chatgpt.site/sitemap.xml

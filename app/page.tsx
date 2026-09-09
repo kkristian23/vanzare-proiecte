@@ -5,6 +5,7 @@ import {
   Check,
   ChevronDown,
   ExternalLink,
+  Gamepad2,
   Menu,
   Monitor,
   Smartphone,
@@ -21,10 +22,11 @@ import {
   useState,
   useSyncExternalStore,
 } from "react";
-import { LiveProjectPreview } from "./live-project-preview";
+import { StaticProjectPreview } from "./live-project-preview";
 import { newProjectDetails } from "./new-project-details";
 import { newProjectTranslations } from "./new-project-translations";
 import projectPrices from "./project-prices.json";
+import { gardenProjects } from "./garden-projects";
 import {
   copy,
   Locale,
@@ -36,7 +38,7 @@ import {
   visualCopy,
 } from "./i18n";
 
-type Platform = "web" | "mobile";
+type Platform = "web" | "mobile" | "games";
 type MobileOS = "all" | "android" | "ios";
 type Project = {
   id: number; title: string; type: string; price: number; tone: string;
@@ -48,7 +50,32 @@ const platformCopy = {
   en: { label: "Choose a platform", web: "Web Projects", mobile: "Mobile Apps", webDesc: "Websites, online stores and web platforms", mobileDesc: "Apps for Android and iOS", soon: "Coming soon", all: "All", empty: "Your next idea fits in your pocket.", detail: "Mobile projects for Android and iOS will appear here. Already have an app idea? Let's talk.", contact: "Let's discuss your app", available: "projects", os: "Operating system" },
   ru: {"label":"\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0443","web":"\u0412\u0435\u0431-\u043f\u0440\u043e\u0435\u043a\u0442\u044b","mobile":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f","webDesc":"\u0421\u0430\u0439\u0442\u044b, \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u044b \u0438 \u0432\u0435\u0431-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b","mobileDesc":"\u041f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0434\u043b\u044f Android \u0438 iOS","soon":"\u0421\u043a\u043e\u0440\u043e","all":"\u0412\u0441\u0435","empty":"\u0412\u0430\u0448\u0430 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f \u0438\u0434\u0435\u044f \u2014 \u0432 \u043a\u0430\u0440\u043c\u0430\u043d\u0435.","detail":"\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u044b \u0434\u043b\u044f Android \u0438 iOS. \u0423\u0436\u0435 \u0435\u0441\u0442\u044c \u0438\u0434\u0435\u044f \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f? \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043e\u0431\u0441\u0443\u0434\u0438\u043c.","contact":"\u041e\u0431\u0441\u0443\u0434\u0438\u0442\u044c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435","available":"\u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432","os":"\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430"},
 };
+const monthlyInstallmentPrice = (price: number) => Math.ceil(price / 18 / 5) * 5;
+const installmentPlans = [
+  { months: 3, surcharge: 0 },
+  { months: 6, surcharge: 0.02 },
+  { months: 12, surcharge: 0.04 },
+] as const;
+const gamesPlatformCopy = {
+  ro: { empty: "Următorul tău joc începe aici.", detail: "Jocurile pentru Android și iOS vor apărea aici. Ai o idee de joc? Hai să o discutăm.", contact: "Discutăm jocul tău", collection: "GAME COLLECTION", caption: "SMALL SCREEN. BIG ADVENTURES." },
+  en: { empty: "Your next game starts here.", detail: "Games for Android and iOS will appear here. Already have a game idea? Let's talk.", contact: "Let's discuss your game", collection: "GAME COLLECTION", caption: "SMALL SCREEN. BIG ADVENTURES." },
+  ru: { empty: "Ваша следующая игра начинается здесь.", detail: "Здесь появятся игры для Android и iOS. Уже есть идея игры? Давайте обсудим.", contact: "Обсудить вашу игру", collection: "GAME COLLECTION", caption: "SMALL SCREEN. BIG ADVENTURES." },
+};
+const platformLabels: Record<Platform, { title: string; description: string; devices: string }> = {
+  web: { title: "WEB", description: "Site-uri, magazine online și platforme web", devices: "WEB / BROWSER" },
+  mobile: { title: "MOBILE", description: "Aplicații pentru Android și iOS", devices: "ANDROID / iOS" },
+  games: { title: "JOCURI", description: "Jocuri pentru Android și iOS", devices: "ANDROID / iOS" },
+};
 const projectCatalog: Project[] = [
+  ...gardenProjects.map((project) => ({
+    id: project.id,
+    title: project.title,
+    type: "Gardens & Landscaping",
+    price: project.price,
+    tone: project.slug,
+    desc: project.copy.ro.description,
+    stack: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "React Hook Form", "Zod"],
+  })),
   {
     id: 66,
     title: "EVENTORA",
@@ -792,7 +819,7 @@ const filters = [
 ];
 // Păstrăm proiectele și categoriile în cod, dar le putem retrage temporar din catalog.
 const hiddenCategories = new Set(["AI Website Factory"]);
-const unavailableProjectIds = new Set([26]);
+const unavailableProjectIds = new Set<number>();
 const filterCopy = {
   ro: {
     search: "CautÄƒ proiecte, categorii sau tehnologii",
@@ -830,7 +857,7 @@ const cleanFilterCopy = {
     moreCategories: "Mai multe categorii",
     categories: "Toate categoriile",
     less: "Ascunde categoriile",
-    search: "Caut\u0103 proiecte, categorii sau tehnologii",
+    search: "Caut\u0103 proiecte",
     sort: "Cele mai noi",
     low: "Pre\u021b cresc\u0103tor",
     high: "Pre\u021b descresc\u0103tor",
@@ -860,6 +887,7 @@ const cleanFilterCopy = {
 } as const;
 
 const categorySlugs: Record<string, string> = {
+  "Gardens & Landscaping": "gardens-landscaping",
   "E-commerce & Auto": "ecommerce-auto",
   "Real Estate": "real-estate",
   "Clinics & Medical": "clinics-medical",
@@ -878,6 +906,11 @@ const categorySlugs: Record<string, string> = {
   "Utility Management": "utility-management",
 };
 const projectSlugs: Record<number, string> = {
+  71: "aquaverde",
+  70: "terraforma",
+  69: "gazonpro",
+  68: "ecohabitat",
+  67: "yardcraft",
   66: "01-eventora",
   65: "02-scena-city",
   64: "03-pulse-tickets",
@@ -940,6 +973,11 @@ const projectSlugs: Record<number, string> = {
 };
 
 const projectPaths: Record<number, string> = {
+  71: "/aquaverde/",
+  70: "/terraforma/",
+  69: "/gazonpro/",
+  68: "/ecohabitat/",
+  67: "/yardcraft/",
   66: "/01-eventora/",
   65: "/02-scena-city/",
   64: "/03-pulse-tickets/",
@@ -2060,11 +2098,11 @@ function ProjectVisual({
 }) {
   const v = visualCopy[locale];
   const s = showcaseCopy[locale];
-  const hasProjectPreview = launchProjectIds.has(project.id);
-  const hasLivePreview = project.id >= 35 && project.id <= 66;
+  const hasLivePreview = (project.id >= 35 && project.id <= 66) || gardenProjects.some((item) => item.id === project.id);
+  const hasProjectPreview = launchProjectIds.has(project.id) || hasLivePreview;
   return (
     <div className={`visual visual-${project.tone}${hasProjectPreview ? " visual-with-preview" : ""}`}>
-      {hasLivePreview && <LiveProjectPreview slug={projectSlugs[project.id]} title={project.title} />}
+      {hasLivePreview && <StaticProjectPreview slug={projectSlugs[project.id]} title={project.title} />}
       {hasProjectPreview && !hasLivePreview && (
         <img
           className="launch-project-preview"
@@ -2623,7 +2661,8 @@ function ProjectVisual({
   );
 }
 
-const PROJECT_PAGE_SIZE = 15;
+// Keep each initial batch even so the two-column catalog never ends on a lone card.
+const PROJECT_PAGE_SIZE = 8;
 
 const productReferenceTitles = new Set([
   "Referință de produs",
@@ -2662,9 +2701,22 @@ export default function Home() {
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(
     null,
   );
+  const [installmentMonths, setInstallmentMonths] = useState<3 | 6 | 12>(6);
+  useEffect(() => {
+    const removeNetlifyBadge = () => document.getElementById("nl-badge")?.remove();
+    removeNetlifyBadge();
+
+    const observer = new MutationObserver(removeNetlifyBadge);
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
+  }, []);
   const c = copy[locale];
   const fc = cleanFilterCopy[locale];
   const pc = platformCopy[locale];
+  const gc = gamesPlatformCopy[locale];
+  const supportsMobileOS = platform === "mobile" || platform === "games";
+  const launchCopy = platform === "games" ? gc : { empty: pc.empty, detail: pc.detail, contact: pc.contact, collection: "MOBILE COLLECTION", caption: "SMALL SCREEN. BIG POSSIBILITIES." };
   const sortOptions = [
     { value: "newest", label: fc.sort },
     { value: "low", label: fc.low },
@@ -2675,7 +2727,7 @@ export default function Home() {
   const platformCount = (value: Platform) => publicProjects.filter((project) => (project.platform ?? "web") === value).length;
   const listedProjects = publicProjects.filter((project) =>
     (project.platform ?? "web") === platform &&
-    (platform === "web" || mobileOS === "all" || project.mobileOS?.includes(mobileOS)),
+    (!supportsMobileOS || mobileOS === "all" || project.mobileOS?.includes(mobileOS)),
   );
   const sortedFilters = [
     filters[0],
@@ -2731,6 +2783,21 @@ export default function Home() {
       ? listedProjects.length
       : listedProjects.filter((project) => project.type === filter).length;
   const contactHref = locale === "ro" ? "/contact" : `/contact?lang=${locale}`;
+  const selectedInstallmentPlan = installmentPlans.find(
+    (plan) => plan.months === installmentMonths,
+  ) ?? installmentPlans[1];
+  const installmentTotal = selected
+    ? Math.ceil(selected.price * (1 + selectedInstallmentPlan.surcharge))
+    : 0;
+  const rentalPrice = installmentTotal / installmentMonths;
+  const installmentLabel = locale === "ro"
+    ? installmentMonths === 12 ? "1 an" : `${installmentMonths} luni`
+    : locale === "ru"
+      ? installmentMonths === 12 ? "1 год" : `${installmentMonths} мес.`
+      : installmentMonths === 12 ? "1 year" : `${installmentMonths} months`;
+  const rentalHref = selected
+    ? `/contact?${new URLSearchParams({ project: selected.title, option: `installments-${installmentMonths}-months`, ...(locale === "ro" ? {} : { lang: locale }) })}`
+    : contactHref;
   const selectedDetail = selected
     ? locale === "ro"
       ? newProjectDetails[selected.id] ?? projectDetails[selected.id] ?? {
@@ -2759,7 +2826,8 @@ export default function Home() {
       const projectId = Object.entries(projectSlugs).find(
         ([, value]) => value === projectSlug,
       )?.[0];
-      setPlatform(url.searchParams.get("platforma") === "mobile" ? "mobile" : "web");
+      const urlPlatform = url.searchParams.get("platforma");
+      setPlatform(urlPlatform === "mobile" || urlPlatform === "games" ? urlPlatform : "web");
       const os = url.searchParams.get("os");
       setMobileOS(os === "android" || os === "ios" ? os : "all");
       setActiveCategory(categories[0] ?? null);
@@ -2845,7 +2913,12 @@ export default function Home() {
       };
 
       let nextCount = filters.length;
-      if (rowsNeeded(widths, row.clientWidth) > 2) {
+      const isMobile = window.matchMedia("(max-width: 800px)").matches;
+      if (isMobile) {
+        while (nextCount > 1 && rowsNeeded(widths.slice(0, nextCount), row.clientWidth) > 3) {
+          nextCount -= 1;
+        }
+      } else if (rowsNeeded(widths, row.clientWidth) > 2) {
         const moreWidth =
           categoryMenuRef.current?.getBoundingClientRect().width ?? 150;
         const filtersWidth = Math.max(0, row.clientWidth - moreWidth - gap);
@@ -2914,13 +2987,13 @@ export default function Home() {
     url.searchParams.set("platforma", nextPlatform);
     url.searchParams.delete("categorie");
     url.searchParams.delete("os");
-    if (nextPlatform === "mobile" && nextOS !== "all") url.searchParams.set("os", nextOS);
+    if ((nextPlatform === "mobile" || nextPlatform === "games") && nextOS !== "all") url.searchParams.set("os", nextOS);
     url.hash = "proiecte";
     window.history.pushState({}, "", url);
     if (scrollToProjects) {
       window.requestAnimationFrame(() => {
         window.requestAnimationFrame(() => {
-          document.getElementById(nextPlatform === "mobile" ? "mobile-projects-start" : "project-grid")?.scrollIntoView({
+          document.getElementById(nextPlatform === "mobile" || nextPlatform === "games" ? "mobile-projects-start" : "project-grid")?.scrollIntoView({
             behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
             block: "start",
           });
@@ -3079,8 +3152,8 @@ export default function Home() {
         </div>
       </div>
       <nav className="nav shell">
-        <a className="logo" href="#top" aria-label="Mono Dev — pagina principală">
-          Mono<span>/dev</span>
+        <a className="logo" href="#top" aria-label="mono/dev — pagina principală">
+          <span className="logo-mono">mono</span><span className="logo-dev">/dev</span>
         </a>
         <div className="nav-links">
           <a
@@ -3125,6 +3198,7 @@ export default function Home() {
             )}
             <span>{c.nav[1]}</span>
           </a>
+          <a href={locale === "ro" ? "/intrebari" : `/intrebari?lang=${locale}`}>{c.questions}</a>
           <a href={contactHref}>{c.nav[2]}</a>
         </div>
         <div className="language-switch" aria-label={c.language}>
@@ -3163,6 +3237,9 @@ export default function Home() {
             </a>
             <a href="#proces" onClick={() => setMenu(false)}>
               {c.nav[1]}
+            </a>
+            <a href={locale === "ro" ? "/intrebari" : `/intrebari?lang=${locale}`} onClick={() => setMenu(false)}>
+              {c.questions}
             </a>
             <a href={contactHref} onClick={() => setMenu(false)}>
               {c.nav[2]}
@@ -3260,12 +3337,11 @@ export default function Home() {
         </motion.a>
         <div className="marquee">
           <div className="marquee-track">
-            <span className="marquee-group">
-              {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]} <Sparkles />
-            </span>
-            <span className="marquee-group" aria-hidden="true">
-              {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]} <Sparkles />
-            </span>
+            {Array.from({ length: 6 }, (_, index) => (
+              <span className="marquee-group" aria-hidden={index > 0 ? "true" : undefined} key={index}>
+                {c.marquee[0]} <Sparkles /> {c.marquee[1]} <Zap /> {c.marquee[2]} <Sparkles />
+              </span>
+            ))}
           </div>
         </div>
       </section>
@@ -3279,32 +3355,25 @@ export default function Home() {
               {c.chooseB} <i>{c.chooseC}</i>
             </h2>
           </div>
-          <div className="count">
-            {String(matchingProjects.length).padStart(2, "0")}
-            <span>
-              {c.projectsAvailable[0]}
-              <br />
-              {c.projectsAvailable[1]}
-            </span>
-          </div>
         </div>
-        <div className="platform-picker" role="group" aria-label={pc.label}>
-          {(["web", "mobile"] as const).map((value) => (
+        <div className="platform-picker" role="group" aria-label="Alege categoria">
+          {(["web", "mobile", "games"] as const).map((value) => (
             <button type="button" key={value} className={`platform-option platform-${value}${platform === value ? " is-selected" : ""}`} aria-pressed={platform === value} aria-controls="project-grid" onClick={() => selectPlatform(value, "all", true)}>
               <span className="platform-art" aria-hidden="true">
-                {value === "web" ? <span className="platform-browser"><span className="browser-chrome"><i /><i /><i /><b>mono.dev</b></span><span className="browser-body"><span className="browser-sidebar"><i /><i /><i /></span><span className="browser-content"><b>Make it<br />happen<span>.</span></b><i /><span className="browser-tiles"><i /><i /><i /></span></span></span><span className="browser-code">&lt;/&gt;</span></span> : <span className="platform-phones"><span className="platform-phone phone-back"><i /><span className="phone-orbit" /><b>iOS</b></span><span className="platform-phone phone-front"><i /><span className="phone-app-icon"><Zap size={22} /></span><b>Go beyond.</b><span className="phone-app-lines"><i /><i /></span><span className="phone-app-button">Let&apos;s go <ArrowRight size={10} /></span></span><span className="phone-float-icon"><Sparkles size={18} /></span></span>}
+                {value === "web" ? <span className="platform-browser"><span className="browser-chrome"><i /><i /><i /><b>mono.dev</b></span><span className="browser-body"><span className="browser-sidebar"><i /><i /><i /></span><span className="browser-content"><b>Make it<br />happen<span>.</span></b><i /><span className="browser-tiles"><i /><i /><i /></span></span></span><span className="browser-code">&lt;/&gt;</span></span> : value === "mobile" ? <span className="platform-phones"><span className="platform-phone phone-back"><i /><span className="phone-orbit" /><b>iOS</b></span><span className="platform-phone phone-front"><i /><span className="phone-app-icon"><Zap size={22} /></span><b>Go beyond.</b><span className="phone-app-lines"><i /><i /></span><span className="phone-app-button">Let&apos;s go <ArrowRight size={10} /></span></span><span className="phone-float-icon"><Sparkles size={18} /></span></span> : <span className="platform-games-art"><Gamepad2 size={106} /><i /><i /><b>PLAY</b></span>}
               </span>
-              <span className="platform-icon">{value === "web" ? <Monitor aria-hidden="true" /> : <Smartphone aria-hidden="true" />}</span>
-              <span className="platform-text"><strong>{pc[value]}</strong><span>{value === "web" ? pc.webDesc : pc.mobileDesc}</span><span className="platform-devices">{value === "web" ? "WEB / BROWSER" : "ANDROID / iOS"}</span></span>
+              <span className="platform-icon">{value === "web" ? <Monitor aria-hidden="true" /> : value === "mobile" ? <Smartphone aria-hidden="true" /> : <Gamepad2 aria-hidden="true" />}</span>
+              <span className="platform-text"><strong>{platformLabels[value].title}</strong><span>{platformLabels[value].description}</span><span className="platform-devices">{platformLabels[value].devices}</span></span>
+              {platform === value && <span className="platform-status"><b>{String(platformCount(value)).padStart(2, "0")}</b> {pc.available}</span>}
             </button>
           ))}
         </div>
-        {platform === "mobile" && <div id="mobile-projects-start" className="mobile-os" role="group" aria-label={pc.os}>
-          {(["all", "android", "ios"] as const).map((os) => <button type="button" key={os} aria-pressed={mobileOS === os} onClick={() => selectPlatform("mobile", os)}><span className="os-filter-icon" aria-hidden="true">{os === "all" ? <Sparkles size={15} /> : os === "android" ? <Smartphone size={15} /> : <span className="ios-filter-mark">i</span>}</span><span>{os === "all" ? pc.all : os === "android" ? "Android" : "iOS"}</span>{mobileOS === os && <span className="os-selected-dot" aria-hidden="true" />}</button>)}
+        {supportsMobileOS && <div id="mobile-projects-start" className="mobile-os" role="group" aria-label={pc.os}>
+          {(["all", "android", "ios"] as const).map((os) => <button type="button" key={os} aria-pressed={mobileOS === os} onClick={() => selectPlatform(platform, os)}><span className="os-filter-icon" aria-hidden="true">{os === "all" ? <Sparkles size={15} /> : os === "android" ? <Smartphone size={15} /> : <span className="ios-filter-mark">i</span>}</span><span>{os === "all" ? pc.all : os === "android" ? "Android" : "iOS"}</span>{mobileOS === os && <span className="os-selected-dot" aria-hidden="true" />}</button>)}
         </div>}
-        <div className="catalog-controls" hidden={platform === "mobile" && platformCount("mobile") === 0}>
+        <div className="catalog-controls" hidden={platform !== "web" && platformCount(platform) === 0}>
         <div className="filter-toolbar">
-          <label className="project-search">
+          <div className="project-search">
             <Search size={18} aria-hidden="true" />
             <input
               value={query}
@@ -3315,7 +3384,21 @@ export default function Home() {
               placeholder={fc.search}
               aria-label={fc.search}
             />
-          </label>
+            {query && (
+              <button
+                type="button"
+                className="project-search-clear"
+                onClick={() => {
+                  setQuery("");
+                  setVisibleProjectCount(PROJECT_PAGE_SIZE);
+                }}
+                aria-label="\u0218terge c\u0103utarea"
+                title="\u0218terge c\u0103utarea"
+              >
+                <X size={18} aria-hidden="true" />
+              </button>
+            )}
+          </div>
           <details ref={sortMenuRef} className="project-sort">
             <summary aria-label={selectedSortLabel}>
               <span>{selectedSortLabel}</span>
@@ -3437,7 +3520,16 @@ export default function Home() {
                     <p>{localDescription(project.id, project.desc, locale)}</p>
                   </div>
                   <div className="price">
-                    <small>{c.from}</small>€{project.price}
+                    <span className="price-sale">
+                      <small>{c.from}</small>
+                      <strong className="price-main">€{project.price}</strong>
+                    </span>
+                    <span className="price-option-separator" aria-hidden="true">
+                      {locale === "ro" ? "sau" : locale === "ru" ? "или" : "or"}
+                    </span>
+                    <span className="price-rental">
+                      <b>€{monthlyInstallmentPrice(project.price)}<em>{c.perMonth}</em></b>
+                    </span>
                   </div>
                 </div>
                 <div className="tags">
@@ -3463,17 +3555,17 @@ export default function Home() {
             </button>
           </div>
         )}
-        {platform === "mobile" && platformCount("mobile") === 0 ? (
+        {supportsMobileOS && platformCount(platform) === 0 ? (
           <div className="mobile-coming-soon" role="status">
             <div className="mobile-launch-copy">
-              <span className="launch-status"><span />{pc.soon}<span className="launch-status-divider" />MOBILE COLLECTION</span>
-              <h3>{pc.empty}</h3><p>{pc.detail}</p>
-              <a href={contactHref}>{pc.contact}<span><ArrowRight size={18} /></span></a>
+              <span className="launch-status"><span />{pc.soon}<span className="launch-status-divider" />{launchCopy.collection}</span>
+              <h3>{launchCopy.empty}</h3><p>{launchCopy.detail}</p>
+              <a href={contactHref}>{launchCopy.contact}<span><ArrowRight size={18} /></span></a>
               <div className="launch-platforms"><span><Smartphone size={14} />Android</span><i /> <span><span className="ios-filter-mark">i</span>iOS</span><span className="launch-platform-line" /></div>
             </div>
             <div className="mobile-preview-art launch-art" aria-hidden="true">
               <span className="launch-orbit orbit-one" /><span className="launch-orbit orbit-two" /><span className="launch-orbit orbit-three" />
-              <span className="launch-art-caption">SMALL SCREEN. BIG POSSIBILITIES.</span>
+              <span className="launch-art-caption">{launchCopy.caption}</span>
               <div className="launch-device">
                 <div className="launch-device-top"><span>9:41</span><i /><span>100%</span></div>
                 <div className="launch-app-header"><span>mono<span>/</span>mobile</span><span className="launch-app-avatar">m.</span></div>
@@ -3553,8 +3645,8 @@ export default function Home() {
       </section>
       <footer>
         <div className="shell footer-main">
-          <a className="footer-brand" href="#top" aria-label="MONO/DEV">
-            M<span>O</span>NO/DEV
+          <a className="footer-brand" href="#top" aria-label="mono/dev">
+            <span className="logo-mono">mono</span><span className="logo-dev">/dev</span>
           </a>
           <nav className="footer-actions" aria-label={c.footer.navigation}>
             <a href="#proiecte">{c.footer.projects}</a>
@@ -3605,6 +3697,50 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="modal-summary">{selectedDetail.summary}</p>
+                <aside className="rental-offer" aria-label={c.rentalLabel}>
+                  <div className="installment-heading">
+                    <span>{c.rentalLabel}</span>
+                    <strong>{locale === "ro" ? "Calculează rata" : locale === "ru" ? "Рассчитайте платёж" : "Calculate your payment"}</strong>
+                  </div>
+                  <div className="installment-calculator">
+                    <div className="installment-options" role="radiogroup" aria-label={c.rentalLabel}>
+                      {installmentPlans.map((plan) => {
+                        const label = locale === "ro"
+                          ? plan.months === 12 ? "1 an" : `${plan.months} luni`
+                          : locale === "ru"
+                            ? plan.months === 12 ? "1 год" : `${plan.months} мес.`
+                            : plan.months === 12 ? "1 year" : `${plan.months} months`;
+                        return (
+                          <button
+                            key={plan.months}
+                            type="button"
+                            className={plan.months === installmentMonths ? "is-active" : ""}
+                            onClick={() => setInstallmentMonths(plan.months)}
+                            role="radio"
+                            aria-checked={plan.months === installmentMonths}
+                          >
+                            <b>{label}</b>
+                            <small>{plan.surcharge ? `+${plan.surcharge * 100}%` : locale === "ro" ? "fără cost" : locale === "ru" ? "без доплат" : "no extra cost"}</small>
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <div className="installment-result" aria-live="polite">
+                      <div>
+                        <span>{locale === "ro" ? "Rata ta lunară" : locale === "ru" ? "Ваш ежемесячный платёж" : "Your monthly payment"}</span>
+                        <strong>€{rentalPrice.toFixed(2)}<em>{c.perMonth}</em></strong>
+                      </div>
+                      <p>
+                        {locale === "ro" ? "Total" : locale === "ru" ? "Итого" : "Total"} <b>€{installmentTotal}</b>
+                        {selectedInstallmentPlan.surcharge > 0 && ` · +${selectedInstallmentPlan.surcharge * 100}%`}
+                        <small> / {installmentLabel}</small>
+                      </p>
+                    </div>
+                  </div>
+                  <ul>
+                    {c.rentalIncludes.map((item) => <li key={item}><Check />{item}</li>)}
+                  </ul>
+                </aside>
                 <div className="detail-sections">
                   {selectedDetail.sections
                     .filter(
@@ -3651,6 +3787,9 @@ export default function Home() {
                   ) : null}
                   <a className="buy-link" href={contactHref}>
                     {c.buyFor} €{selected.price} <ArrowRight />
+                  </a>
+                  <a className="rent-link" href={rentalHref}>
+                    <span>{c.rentFor} €{rentalPrice.toFixed(2)}<small>{c.perMonth}</small></span> <ArrowRight />
                   </a>
                 </div>
               </div>

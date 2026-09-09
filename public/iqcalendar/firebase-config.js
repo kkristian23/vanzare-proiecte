@@ -317,7 +317,7 @@ function buildPlanEditTelegramChanges(previousPlan, nextPlan) {
 function buildPlanEditDeepLink(planId) {
   const scope = getCurrentDataScope();
   const configuredBaseUrl = String(window.APP_ENV?.appUrls?.[scope] || '').trim();
-  const eventUrl = new URL('/calendar', configuredBaseUrl || window.location.href);
+  const eventUrl = new URL('/iqcalendar/calendar.html', configuredBaseUrl || window.location.href);
   eventUrl.searchParams.set('event', String(planId));
   if (scope === 'test') eventUrl.searchParams.set('scope', 'test');
   return eventUrl.href;
@@ -678,7 +678,7 @@ async function deletePlanificationFromFirestore(id) {
 
 // Fallback pentru localStorage dacă Firebase nu este disponibil
 function isFirebaseAvailable() {
-    const available = typeof firebase !== 'undefined' && typeof rdb !== 'undefined';
+    const available = typeof firebase !== 'undefined' && typeof rdb !== 'undefined' && rdb !== null && typeof rdb.ref === 'function';
     console.log('Firebase available:', available);
     return available;
 }

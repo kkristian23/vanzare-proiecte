@@ -1,0 +1,4 @@
+:HL["/gazonpro/_next/static/css/8d12b3fb625659cc.css","style"]
+:HL["/gazonpro/fonts/manrope-latin.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
+:HL["/gazonpro/fonts/manrope-latin-ext.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"slug","param":{"type":"d","key":"gazon-rulou","siblings":["_not-found","_global-error","magazin","robots.txt","sitemap.xml"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"0291evkrbu43ljFVeB8-x"}

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://yardcraft-curtea-ta.cristian-codre495379.chatgpt.site/sitemap.xml

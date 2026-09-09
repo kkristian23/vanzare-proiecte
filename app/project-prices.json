@@ -1,5 +1,30 @@
 [
     {
+        "id": 71,
+        "name": "AquaVerde",
+        "price": 600
+    },
+    {
+        "id": 70,
+        "name": "TerraForma",
+        "price": 650
+    },
+    {
+        "id": 69,
+        "name": "GazonPro",
+        "price": 550
+    },
+    {
+        "id": 68,
+        "name": "EcoHabitat",
+        "price": 600
+    },
+    {
+        "id": 67,
+        "name": "YardCraft",
+        "price": 600
+    },
+    {
         "id":  66,
         "name":  "EVENTORA",
         "price":  600
@@ -17,57 +42,57 @@
     {
         "id":  63,
         "name":  "CLINICA NOVA",
-        "price":  950
+        "price":  580
     },
     {
         "id":  62,
         "name":  "LABORIS",
-        "price":  950
+        "price":  600
     },
     {
         "id":  61,
         "name":  "DOCTOR APROAPE",
-        "price":  950
+        "price":  1000
     },
     {
         "id":  60,
         "name":  "MEDSLOT",
-        "price":  950
+        "price":  350
     },
     {
         "id":  59,
         "name":  "LEADPILOT",
-        "price":  1200
+        "price":  680
     },
     {
         "id":  58,
         "name":  "GROWTHDESK",
-        "price":  1200
+        "price":  470
     },
     {
         "id":  57,
         "name":  "CLOSEFLOW",
-        "price":  1200
+        "price":  800
     },
     {
         "id":  56,
         "name":  "PARTMATCH",
-        "price":  850
+        "price":  500
     },
     {
         "id":  55,
         "name":  "GARAGEBOX",
-        "price":  850
+        "price":  600
     },
     {
         "id":  54,
         "name":  "MOTORSUPPLY",
-        "price":  850
+        "price":  550
     },
     {
         "id":  53,
         "name":  "AUTOGRID",
-        "price":  850
+        "price":  1000
     },
     {
         "id":  52,
@@ -77,32 +102,32 @@
     {
         "id":  51,
         "name":  "URBAN HAVEN",
-        "price":  900
+        "price":  600
     },
     {
         "id":  50,
         "name":  "NEST COLLECTION",
-        "price":  900
+        "price":  600
     },
     {
         "id":  49,
         "name":  "MOLDOVA ESCAPE",
-        "price":  900
+        "price":  500
     },
     {
         "id":  48,
         "name":  "BAZAR LOCAL",
-        "price":  1000
+        "price":  400
     },
     {
         "id":  47,
         "name":  "PREȚ BUN",
-        "price":  1000
+        "price":  699
     },
     {
         "id":  46,
         "name":  "LOCALCRAFT",
-        "price":  1000
+        "price":  590
     },
     {
         "id":  45,
@@ -117,22 +142,22 @@
     {
         "id":  43,
         "name":  "MENTORCLOUD",
-        "price":  750
+        "price":  700
     },
     {
         "id":  42,
         "name":  "CASACHECK",
-        "price":  900
+        "price":  699
     },
     {
         "id":  41,
         "name":  "DIRECTHOME",
-        "price":  900
+        "price":  599
     },
     {
         "id":  40,
         "name":  "AREA INSIGHT",
-        "price":  900
+        "price":  400
     },
     {
         "id":  39,
@@ -192,7 +217,7 @@
     {
         "id":  28,
         "name":  "MEDORA CLINIC",
-        "price":  1300
+        "price":  999
     },
     {
         "id":  27,

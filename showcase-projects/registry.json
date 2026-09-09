@@ -173,8 +173,7 @@
     ],
     "buildHide": [
       "src/app/robots.ts",
-      "src/app/sitemap.ts",
-      "src/app/[locale]/[slug]/page.tsx"
+      "src/app/sitemap.ts"
     ]
   },
   {
@@ -187,8 +186,7 @@
     ],
     "buildHide": [
       "src/app/robots.ts",
-      "src/app/sitemap.ts",
-      "src/app/[locale]/[...slug]/page.tsx"
+      "src/app/sitemap.ts"
     ]
   },
   {
@@ -213,9 +211,7 @@
       "out",
       "dist/client"
     ],
-    "buildHide": [
-      "src/app/[...slug]/page.tsx"
-    ]
+    "buildHide": []
   },
   {
     "id": 14,
@@ -230,12 +226,7 @@
       "src/app/api/admin/session/route.ts",
       "src/app/api/content/route.ts",
       "src/app/admin/page.tsx",
-      "src/app/admin/login/page.tsx",
-      "src/app/academia/page.tsx",
-      "src/app/maestri/page.tsx",
-      "src/app/rezervare/page.tsx",
-      "src/app/servicii/page.tsx",
-      "src/app/servicii/[category]/page.tsx"
+      "src/app/admin/login/page.tsx"
     ],
     "buildArgs": [
       "run",
@@ -325,6 +316,10 @@
   {
     "id": 7,
     "slug": "micora",
+    "buildArgs": [
+      "run",
+      "build:netlify"
+    ],
     "source": "D:\\Micora",
     "outputs": [
       "out",
@@ -355,7 +350,12 @@
       "app/api/theme/scan/route.ts",
       "app/embed.js/route.ts"
     ],
-    "disabled": true
+    "buildArgs": [
+      "run",
+      "build",
+      "--",
+      "--webpack"
+    ]
   },
   {
     "id": 66,
@@ -733,6 +733,66 @@
     "id": 35,
     "slug": "32-block-admin",
     "source": "D:\\proiecte-front-end\\32-block-admin",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 71,
+    "slug": "aquaverde",
+    "source": "D:\\AquaVerde",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 70,
+    "slug": "terraforma",
+    "source": "D:\\TerraForma",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 69,
+    "slug": "gazonpro",
+    "source": "D:\\GazonPro",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 68,
+    "slug": "ecohabitat",
+    "source": "D:\\EcoHabitat",
+    "outputs": [
+      "out"
+    ],
+    "buildArgs": [
+      "run",
+      "build"
+    ]
+  },
+  {
+    "id": 67,
+    "slug": "yardcraft",
+    "source": "D:\\YardCraft",
     "outputs": [
       "out"
     ],

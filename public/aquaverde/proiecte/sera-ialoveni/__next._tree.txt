@@ -1,0 +1,3 @@
+:HL["/aquaverde/_next/static/css/9789b115f41b4e93.css","style"]
+:HL["/aquaverde/images/greenhouse.webp","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"proiecte","param":null,"prefetchHints":4192,"slots":{"children":{"name":"id","param":{"type":"d","key":"sera-ialoveni","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"Gqk3lqAe5D4MWP594tYyh"}

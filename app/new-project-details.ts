@@ -1,4 +1,7 @@
+import { gardenDetails } from "./garden-projects";
+
 export const newProjectDetails: Record<number,{summary:string;sections:{title:string;items:string[]}[]}> = {
+  ...gardenDetails("ro"),
   "35": {
     "summary": "Comunitate de bloc, avizier și participare.",
     "sections": [

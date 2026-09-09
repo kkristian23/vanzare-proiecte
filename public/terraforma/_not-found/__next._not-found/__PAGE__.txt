@@ -1,0 +1,25 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","974","static/chunks/app/page-d215a1475c1a37ac.js"],""]
+3:I[484,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[484,[],"ViewportBoundary"]
+9:I[484,[],"MetadataBoundary"]
+a:I[6869,[],"IconMark"]
+c:I[7121,[],""]
+d:I[4581,[],""]
+10:I[3232,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","974","static/chunks/app/page-d215a1475c1a37ac.js"],"Header"]
+11:I[3232,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","974","static/chunks/app/page-d215a1475c1a37ac.js"],"Footer"]
+:HL["/terraforma/_next/static/css/777118c1f485aa03.css","style"]
+7:X
+f:X
+f:C
+0:{"buildId":"nhKd8yA7qp8fS6MK4o1tP","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"id":"main","className":"page-head","children":[["$","p",null,{"className":"eyebrow","children":"404 / O ALEE NEEXPLORATĂ"}],["$","h1",null,{"children":["Ai ieșit puțin",["$","br",null,{}],"din grădină."]}],["$","p",null,{"children":"Pagina căutată nu există. Te conducem Înapoi spre un loc cunoscut."}],["$","$L2",null,{"className":"text-link","href":"/","children":"Înapoi acasă ↗"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"TerraForma — Grădini cu sens. Spații cu suflet."}],["$","meta","1",{"name":"description","content":"Studio de peisagistică: grădini premium, terase și spații verzi. Explorează concepte, plante și construiește local brieful grădinii tale."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"TerraForma — Grădini cu sens. Spații cu suflet."}],["$","meta","4",{"property":"og:description","content":"Arhitectură peisagistică. Natură, în forma ta."}],["$","meta","5",{"property":"og:locale","content":"ro_RO"}],["$","meta","6",{"property":"og:image","content":"https://terraforma-landscape-studio.cristian-codre495379.chatgpt.site/og.png"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"TerraForma — Grădini cu sens. Spații cu suflet."}],["$","meta","10",{"name":"twitter:description","content":"Arhitectură peisagistică. Natură, în forma ta."}],["$","meta","11",{"name":"twitter:image","content":"https://terraforma-landscape-studio.cristian-codre495379.chatgpt.site/og.png"}],["$","link","12",{"rel":"icon","href":"/terraforma/favicon.svg"}],["$","$La","13",{}]]}]}]}],null]}],"isPartial":"$@b","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}]}]]}],"isPartial":"$@e","staleTime":"$7","varyParams":"$f"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/terraforma/_next/static/css/777118c1f485aa03.css","precedence":"next"}]],["$","html",null,{"lang":"ro","children":["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main","children":"Sari la conținut"}],["$","$L10",null,{}],["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","main",null,{"id":"main","className":"page-head","children":[["$","p",null,{"className":"eyebrow","children":"404 / O ALEE NEEXPLORATĂ"}],["$","h1",null,{"children":["Ai ieșit puțin",["$","br",null,{}],"din grădină."]}],["$","p",null,{"children":"Pagina căutată nu există. Te conducem Înapoi spre un loc cunoscut."}],["$","$L2",null,{"className":"text-link","href":"/","children":"Înapoi acasă ↗"}]]}],[]]}],["$","$L11",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"TerraForma\",\"description\":\"Studio fictiv de arhitectură peisagistică. Website demonstrativ.\"}"}}]]}]}]]}],"isPartial":"$@12","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+5:null
+7:300
+14:true
+7:C
+13:0
+b:"$undefined"
+e:"$undefined"
+12:"$undefined"
+6:"$undefined"

@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","182","static/chunks/app/%5Bslug%5D/page-5a91aab1c9393866.js"],""]
+3:I[3232,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","182","static/chunks/app/%5Bslug%5D/page-5a91aab1c9393866.js"],"PlantCatalog"]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[484,[],"ViewportBoundary"]
+a:I[484,[],"MetadataBoundary"]
+b:I[6869,[],"IconMark"]
+d:I[7121,[],""]
+e:I[4581,[],""]
+11:I[3232,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","182","static/chunks/app/%5Bslug%5D/page-5a91aab1c9393866.js"],"Header"]
+12:I[3232,["500","static/chunks/500-b13bb91f5a6311b6.js","413","static/chunks/413-9d4f8597515b1792.js","232","static/chunks/232-4ac1c485c77d5f4e.js","182","static/chunks/app/%5Bslug%5D/page-5a91aab1c9393866.js"],"Footer"]
+:HL["/terraforma/_next/static/css/777118c1f485aa03.css","style"]
+8:X
+10:X
+10:C
+0:{"buildId":"nhKd8yA7qp8fS6MK4o1tP","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"id":"main","children":[["$","div",null,{"className":"page-head","children":[["$","div",null,{"className":"breadcrumb","children":[["$","$L2",null,{"href":"/","children":"Acasă"}]," / ","Catalog de plante"]}],["$","p",null,{"className":"eyebrow","children":["TERRAFORMA / ","CATALOG DE PLANTE"]}],["$","h1",null,{"children":"Planta potrivită. Locul potrivit."}],["$","p",null,{"children":"40 de specii pentru o grădină gândită în timp. Explorează expunerea, apa, dimensiunea matură și toleranța orientativă la frig."}]]}],["$","div",null,{"className":"page-content","children":[null,false,["$","$L3",null,{}],false,false,false,false,false,false]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Catalog de plante | TerraForma"}],["$","meta","1",{"name":"description","content":"40 de specii pentru o grădină gândită în timp. Explorează expunerea, apa, dimensiunea matură și toleranța orientativă la frig."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","link","3",{"rel":"canonical","href":"https://terraforma-landscape-studio.cristian-codre495379.chatgpt.site/catalog-plante/"}],["$","meta","4",{"property":"og:title","content":"Catalog de plante | TerraForma"}],["$","meta","5",{"property":"og:description","content":"40 de specii pentru o grădină gândită în timp. Explorează expunerea, apa, dimensiunea matură și toleranța orientativă la frig."}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"Catalog de plante | TerraForma"}],["$","meta","8",{"name":"twitter:description","content":"40 de specii pentru o grădină gândită în timp. Explorează expunerea, apa, dimensiunea matură și toleranța orientativă la frig."}],["$","meta","9",{"name":"twitter:image","content":"https://terraforma-landscape-studio.cristian-codre495379.chatgpt.site/og.png"}],["$","link","10",{"rel":"icon","href":"/terraforma/favicon.svg"}],["$","$Lb","11",{}]]}]}]}],null]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}]}]]}],"isPartial":"$@f","staleTime":"$8","varyParams":"$10"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/terraforma/_next/static/css/777118c1f485aa03.css","precedence":"next"}]],["$","html",null,{"lang":"ro","children":["$","body",null,{"children":[["$","a",null,{"className":"skip-link","href":"#main","children":"Sari la conținut"}],["$","$L11",null,{}],["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}],"notFound":[["$","main",null,{"id":"main","className":"page-head","children":[["$","p",null,{"className":"eyebrow","children":"404 / O ALEE NEEXPLORATĂ"}],["$","h1",null,{"children":["Ai ieșit puțin",["$","br",null,{}],"din grădină."]}],["$","p",null,{"children":"Pagina căutată nu există. Te conducem Înapoi spre un loc cunoscut."}],["$","$L2",null,{"className":"text-link","href":"/","children":"Înapoi acasă ↗"}]]}],[]]}],["$","$L12",null,{}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"TerraForma\",\"description\":\"Studio fictiv de arhitectură peisagistică. Website demonstrativ.\"}"}}]]}]}]]}],"isPartial":"$@13","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+6:null
+8:300
+15:true
+8:C
+14:0
+c:"$undefined"
+f:"$undefined"
+13:"$undefined"
+7:"$undefined"

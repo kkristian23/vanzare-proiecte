@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[locale]","\u002F[locale]\u002F[slug]","\u002F[locale]\u002Fconfigurator-biblioteca","\u002F[locale]\u002Fconfigurator-canapea","\u002F[locale]\u002Fguide\u002F[id]","\u002F[locale]\u002Fmodule\u002F[id]","\u002F[locale]\u002Fproject\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

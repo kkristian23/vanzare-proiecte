@@ -1,0 +1,38 @@
+{
+  "license": "https://www.pexels.com/license/",
+  "retrieved": "2026-09-08",
+  "note": "Photographs illustrate fictional projects and do not imply photographer endorsement.",
+  "images": [
+    {
+      "file": "hero.webp",
+      "source": "https://www.pexels.com/photo/3351909/"
+    },
+    {
+      "file": "lawn.webp",
+      "source": "https://www.pexels.com/photo/8791457/"
+    },
+    {
+      "file": "garden.webp",
+      "source": "https://www.pexels.com/photo/34396586/"
+    },
+    {
+      "file": "greenhouse.webp",
+      "source": "https://www.pexels.com/photo/12152936/"
+    },
+    {
+      "file": "sprinkler.webp",
+      "source": "https://www.pexels.com/photo/8443729/"
+    },
+    {
+      "file": "pipe.webp",
+      "source": "https://www.pexels.com/photo/pipe-over-farm-15339062/"
+    }
+  ],
+  "generatedAssets": [
+    {
+      "file": "og.webp",
+      "source": "OpenAI ImageGen",
+      "note": "Card de brand generat, nu fotografie a unui proiect real."
+    }
+  ]
+}

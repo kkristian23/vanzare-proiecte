@@ -144,6 +144,131 @@
   color: white;
 }
 
+.rental-offer {
+  display: grid;
+  grid-template-columns: minmax(130px, .7fr) minmax(0, 1.5fr);
+  gap: 14px 24px;
+  margin: 22px 0 4px;
+  padding: 16px 18px;
+  border: 1px solid #b5d95a;
+  background: #eaffb9;
+}
+
+.installment-heading > span {
+  display: block;
+  margin-bottom: 4px;
+  font: 700 9px var(--font-mono);
+  letter-spacing: 1px;
+}
+
+.installment-heading strong { display: block; font-size: 21px; line-height: 1.05; letter-spacing: -1px; }
+
+.installment-calculator { min-width: 0; }
+
+.installment-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.installment-options button {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  padding: 9px 7px;
+  border: 1px solid #b0cb61;
+  background: #f4ffd6;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.installment-options button:hover { transform: translateY(-1px); border-color: var(--ink); }
+.installment-options button.is-active { border-color: var(--ink); background: var(--ink); color: white; }
+.installment-options b { font: 800 11px var(--font-mono); white-space: nowrap; }
+.installment-options small { font: 500 8px var(--font-mono); opacity: .72; white-space: nowrap; }
+
+.installment-result {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 7px;
+  padding: 8px 10px;
+  border: 1px solid #c6df7e;
+  background: rgba(255, 255, 255, .34);
+}
+
+.installment-result span,
+.installment-result p,
+.installment-result small {
+  font: 500 10px var(--font-mono);
+  letter-spacing: 0;
+}
+.installment-result strong { display: block; margin-top: 2px; font-size: 22px; letter-spacing: -1px; }
+.installment-result strong em { margin-left: 4px; font: 500 10px var(--font-mono); font-style: normal; letter-spacing: 0; }
+.installment-result p { margin: 0; text-align: right; color: #3c4c1b; }
+.installment-result p b { color: var(--ink); }
+.installment-result p small { display: block; margin-top: 2px; }
+
+.modal .rental-offer ul {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal .rental-offer li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #3c4c1b;
+  font: 500 10px var(--font-mono);
+}
+
+.rental-offer li svg { width: 12px; color: #526b12; }
+
+.rent-link {
+  grid-column: 1 / -1;
+  border: 1px solid #a8ce47;
+  background: #eaffb9;
+  color: var(--ink);
+}
+
+.rent-link small { margin-left: 4px; font: 500 10px var(--font-mono); }
+
+.price-rental {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px 3px 5px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--lime);
+  font: 800 6px var(--font-mono);
+  letter-spacing: .6px;
+  line-height: 1;
+}
+
+.price-rental i { font-style: normal; white-space: nowrap; }
+
+.price-rental b {
+  color: white;
+  font: 800 12px/1 var(--font-mono);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.price-rental em { margin-left: 2px; color: #b8b7ae; font: 600 6px var(--font-mono); font-style: normal; }
+
 @media (max-width: 700px) {
   .modal-detailed .visual { height: 230px; }
   .modal-content { padding: 8px 4px 6px; }
@@ -152,4 +277,10 @@
   .modal-price { font-size: 25px; }
   .detail-sections { grid-template-columns: 1fr; }
   .modal-actions { grid-template-columns: 1fr; }
+  .rental-offer { grid-template-columns: 1fr; gap: 12px; }
+  .installment-heading strong { font-size: 19px; }
+  .installment-result { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .installment-result p { text-align: left; }
+  .price-rental { margin-top: 6px; padding: 5px 2px 4px; font-size: 5px; }
+  .price-rental b { font-size: 10px; }
 }

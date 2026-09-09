@@ -1,6 +1,16 @@
+import { gardenDetails, gardenDescriptions } from "./garden-projects";
+
 export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<number, string>; newProjectDetails: Record<number, { summary: string; sections: { title: string; items: string[] }[] }> }> = {
   "en": {
     "descriptions": {
+      ...gardenDescriptions("en"),
+      "27": "A premium real-estate platform with listings, advanced search, neighborhoods, saved favorites, viewings and administration.",
+      "28": "A premium medical website with specialties, doctors, transparent pricing and a guided seven-step booking journey.",
+      "29": "A premium restaurant platform with a digital menu, reservations, online orders, checkout and an operational workspace.",
+      "30": "A boutique-hotel digital experience with properties, rooms, availability, rates and direct booking.",
+      "31": "A premium learning platform with study paths, courses, lessons, progress, quizzes and instructor experiences.",
+      "32": "A SaaS workspace for leads, customers, pipelines, offers, automations and complete sales reporting.",
+      "33": "An automotive e-commerce experience with a product catalog, promotions, search, favorites, cart, brands and installation services.",
       "35": "An apartment-building community with notices and resident participation.",
       "36": "A customer account for bills and meter readings.",
       "37": "An editorial bistro website with a seasonal menu.",
@@ -35,6 +45,7 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
       "66": "Concert posters and a ticket catalog."
     },
     "newProjectDetails": {
+      ...gardenDetails("en"),
       "35": {
         "summary": "An apartment-building community with notices and resident participation.",
         "sections": [
@@ -1159,6 +1170,14 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
   },
   "ru": {
     "descriptions": {
+      ...gardenDescriptions("ru"),
+      "27": "Премиальная платформа недвижимости с объектами, расширенным поиском, районами, избранным, просмотрами и администрированием.",
+      "28": "Премиальный медицинский сайт со специальностями, врачами, прозрачными ценами и записью в семь понятных шагов.",
+      "29": "Премиальная платформа ресторана с цифровым меню, бронированием, онлайн-заказами, оплатой и рабочим кабинетом.",
+      "30": "Цифровой опыт для бутик-отеля с объектами, номерами, доступностью, тарифами и прямым бронированием.",
+      "31": "Премиальная LMS-платформа с учебными программами, курсами, уроками, прогрессом, тестами и опытом для преподавателей.",
+      "32": "SaaS-рабочее пространство для лидов, клиентов, воронок, предложений, автоматизаций и полной отчётности по продажам.",
+      "33": "Автомобильный интернет-магазин с каталогом, акциями, поиском, избранным, корзиной, брендами и услугами установки.",
       "35": "Сообщество многоквартирного дома с объявлениями и участием жильцов.",
       "36": "Личный кабинет потребителя со счетами и показаниями счётчика.",
       "37": "Сайт бистро в журнальном стиле с сезонным меню.",
@@ -1193,6 +1212,7 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
       "66": "Концертная афиша и каталог билетов."
     },
     "newProjectDetails": {
+      ...gardenDetails("ru"),
       "35": {
         "summary": "Сообщество многоквартирного дома с объявлениями и участием жильцов.",
         "sections": [

@@ -1,0 +1,3 @@
+:HL["/yardcraft/_next/static/css/95c17efdce136132.css","style"]
+:HL["/yardcraft/images/pergola-960.webp","image",{"imageSrcSet":"/yardcraft/images/pergola-480.webp 480w, /yardcraft/images/pergola-960.webp 960w, /yardcraft/images/pergola-1600.webp 1600w","imageSizes":"(max-width: 700px) 100vw, 50vw","fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"eu9GCvr0mTd63EdMb22kY"}

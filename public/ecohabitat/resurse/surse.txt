@@ -1,0 +1,51 @@
+ECOHABITAT — SURSE, LICENȚE ȘI MODELE
+Consultare: 8 septembrie 2026
+
+IMAGINI LOCALE
+public/images/meadow.jpg
+Madeleine Wilson — Field of green trees (fotografie de pajiște montană, inspirație).
+https://unsplash.com/photos/field-of-green-trees--F5ik109zfU
+https://images.unsplash.com/photo-1567626619457-44ed86db0ec9
+Licență Unsplash: https://unsplash.com/license
+
+public/images/garden.jpg
+https://images.unsplash.com/photo-1416879595882-3373a0480b5b
+public/images/vegetables.jpg
+https://images.unsplash.com/photo-1464226184884-fa280b87c399
+Licență pentru ambele fotografii: https://unsplash.com/license
+Fotografiile sunt de inspirație, nu reprezintă lucrări executate de EcoHabitat.
+
+public/images/botanical.jpg
+https://commons.wikimedia.org/wiki/File:Achillea_millefolium001.jpg
+O. W. Thomé, Flora von Deutschland, Österreich und der Schweiz (1905), planșa 582.
+Scanare: Oceancetaceen / Alice Chodura. Domeniu public conform fișei Commons.
+Original: https://upload.wikimedia.org/wikipedia/commons/a/ae/Achillea_millefolium001.jpg
+
+Iconuri: Lucide, licență ISC. https://lucide.dev/license
+
+DOCUMENTARE
+https://www.rhs.org.uk/wildlife/in-gardens
+https://www.rhs.org.uk/garden-features/rain-gardens
+https://www.rhs.org.uk/science/conservation-biodiversity/wildlife/encourage-wildlife-to-your-garden/
+https://powo.science.kew.org/
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:2294-2
+
+Catalogul este orientativ pentru România și regiunea Republicii Moldova.
+Distribuția exactă și proveniența trebuie verificate local. Datele nu sunt un inventar botanic oficial.
+Înflorirea, înălțimea și vizitatorii variază după climă, soi și amplasament.
+Nu se recomandă recoltarea plantelor din natură.
+
+FORMULE (implementare: lib/calculators.ts și components/tools.tsx)
+Scor ecologic: 20 puncte pentru fiecare dintre 5 practici. Indice educațional.
+Potențial pluvial L/an = acoperiș m² × precipitații mm/an × coeficient 0–1.
+Model rezervor: 365 pași zilnici, alimentare uniformă = potențial/365;
+umplere până la capacitate, pierdere a surplusului, consum zilnic limitat la apa disponibilă.
+Volum propus = consum zilnic × 14 zile fără ploaie, rotunjit în sus la 50 L.
+Udare: 20/10/5 L/m²/săptămână × 20 săptămâni pentru gazon intensiv/grădină mixtă/plante adaptate.
+Suprafață verde în plan: 70% pentru obiectiv polenizatori, 60% pentru celelalte.
+Acces: 20%; restul pentru apă, compost și lucru. Nu este plan de execuție.
+Indicator insecte: 1–3 specii per plantă recomandată, fără corecție pentru suprapunere.
+Acest ultim indicator este ilustrativ, nu o prognoză sau validare biologică.
+Niciun rezultat nu este măsurătoare, certificare sau promisiune de economie.
+
+Textele și fișele sunt originale. Aplicația nu transmite răspunsurile utilizatorului.

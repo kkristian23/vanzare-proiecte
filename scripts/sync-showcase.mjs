@@ -3,6 +3,7 @@ import path from "node:path";
 import process from "node:process";
 import { spawn } from "node:child_process";
 import { writeProjectPreview } from "./project-previews.mjs";
+import { normalizeNextExport } from "./normalize-next-export.mjs";
 
 const root = process.cwd();
 const registryPath = path.join(root, "showcase-projects", "registry.json");
@@ -109,25 +110,34 @@ async function buildProject(project) {
 }
 
 function prefixDocument(content, slug) {
+  if (slug === "iqcalendar") {
+    content = content.replace(/(['"`])\/(app|calendar|activity|result)(?=['"`?#])/g, (_match, quote, page) => `${quote}/${slug}/${page}.html`);
+  }
   const prefix = `/${slug}/`;
   const basePath = prefix.slice(0, -1);
   const prefixRootPath = (target) => {
-    if (["ro", "ru", "en"].some((locale) => target === `${basePath}/${locale}`))
-      return `${target}.html`;
     if (target === basePath || target.startsWith(prefix)) return target;
-    const prefixed = `${basePath}${target}`;
-    return ["ro", "ru", "en"].some((locale) => prefixed === `${basePath}/${locale}`)
-      ? `${prefixed}.html`
-      : prefixed;
+    return `${basePath}${target}`;
   };
 
   return content
     .replace(/(href|src|action)=(['"])(\/(?!\/)[^'"]*)/g, (_match, attribute, quote, target) =>
       `${attribute}=${quote}${prefixRootPath(target)}`)
+    // Plain React anchors must keep their project prefix after hydration too.
+    .replace(/(\bhref\s*:\s*)(['"`])(\/(?!\/)[^'"`\\\s]*)/g, (_match, property, quote, target) =>
+      `${property}${quote}${slug === 'studio-velora' ? prefixRootPath(target) : target}`)
     .replace(/url\((['"]?)(\/(?!\/)[^'")\s]*)/g, (_match, quote, target) =>
       `url(${quote}${prefixRootPath(target)}`)
-    .replace(/(['"])(\/(?:_next|assets|images|fonts)\/)/g, (_match, quote, target) =>
-      `${quote}${prefixRootPath(target)}`);
+    .replace(/(['"`])(\/(?:_next|assets|images|fonts|products|resurse)\/)/g, (_match, quote, target) =>
+      `${quote}${prefixRootPath(target)}`)
+    // Responsive image candidates also appear after commas in HTML/RSC srcsets.
+    .replace(/(,\s+)(\/(?:assets|images|products)\/)/g, (_match, separator, target) =>
+      `${separator}${prefixRootPath(target)}`)
+    .replace(/(['"`])(\/(?!\/)[^'"`\s]*\.(?:png|jpe?g|webp|svg|ico|woff2?|avif))(?=[?\\'"`])/gi, (_match, quote, target) =>
+      `${quote}${prefixRootPath(target)}`)
+    // Vite's dependency preloader prepends '/' to these relative manifest entries.
+    .replace(/(['"`])(_next\/static\/)/g, (_match, quote, target) =>
+      `${quote}${slug}/${target}`);
 }
 
 async function rewriteTree(directory, slug) {
@@ -153,7 +163,7 @@ for (const project of registry) {
     continue;
   }
   if (changedOnly && !(await projectChanged(project, destination))) {
-    if (project.id >= 35 && project.id <= 66) await writeProjectPreview(destination);
+    if (project.id >= 35) await writeProjectPreview(destination);
     results.push({ slug: project.slug, status: "unchanged" });
     continue;
   }
@@ -174,6 +184,22 @@ for (const project of registry) {
     continue;
   }
 
+  // A standalone Next build embeds its base path in the router, beyond HTML URLs.
+  // Only trust metadata belonging to the exact exported build, and preserve the
+  // working showcase if an unrelated standalone build is offered for copying.
+  const nextMetadata = path.join(project.source, ".next", "required-server-files.json");
+  const nextBuildId = path.join(project.source, ".next", "BUILD_ID");
+  if (await exists(nextMetadata) && await exists(nextBuildId)) {
+    const buildId = (await readFile(nextBuildId, "utf8")).trim();
+    if (await exists(path.join(output, "_next", "static", buildId))) {
+      const metadata = JSON.parse(await readFile(nextMetadata, "utf8"));
+      if (metadata.config?.basePath !== `/${project.slug}`) {
+        results.push({slug:project.slug,status:"base-path-mismatch",error:`Rebuild with npm run showcase:sync -- ${project.slug} --build --strict; existing public export preserved.`});
+        continue;
+      }
+    }
+  }
+
   await rm(destination, { recursive: true, force: true });
   await mkdir(destination, { recursive: true });
   if (project.include) {
@@ -185,11 +211,14 @@ for (const project of registry) {
   } else {
     await cp(output, destination, {
       recursive: true,
-      filter: (source) => !ignoredNames.has(path.basename(source)),
+      // Built routes may legitimately be named reports, logs or tests.
+      // Excluding source-only names here removed their JavaScript chunks.
+      filter: (source) => ![".git", "node_modules", "graphify-out"].includes(path.basename(source)),
     });
   }
   if (project.entrypoint && !(await exists(path.join(destination, "index.html")))) {
-    await cp(path.join(destination, project.entrypoint), path.join(destination, "index.html"));
+    const target = `/${project.slug}/${project.entrypoint.replace(/(?:\/index)?\.html$/, '')}`;
+    await writeFile(path.join(destination, "index.html"), `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=${target}"></head><body><a href="${target}">Deschide proiectul</a><script>location.replace(${JSON.stringify(target)})</script></body></html>`);
   }
   // Next static exports use flat `ro.html`/`ru.html`/`en.html` files while also
   // emitting RSC payload directories with the same names. Static hosts resolve
@@ -203,8 +232,13 @@ for (const project of registry) {
       if (!(await exists(localeIndex))) await cp(flatLocale, localeIndex);
     }
   }
-  await rewriteTree(destination, project.slug);
-  if (project.id >= 35 && project.id <= 66) await writeProjectPreview(destination);
+    await normalizeNextExport(destination);
+    await rewriteTree(destination, project.slug);
+    // Next 14/15 requests the base-path root payload as /project.txt.
+    if (await exists(path.join(destination, "index.txt"))) {
+      await cp(path.join(destination, "index.txt"), path.join(publicRoot, `${project.slug}.txt`));
+    }
+  if (project.id >= 35) await writeProjectPreview(destination);
   results.push({ slug: project.slug, status: "synced", output });
 }
 

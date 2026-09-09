@@ -54,7 +54,7 @@ export const contactCopy = {
 
 export const copy = {
   ro: {
-    nav: ["Proiecte", "Proces", "Contact"], buyProject: "Proiect personalizat", openMenu: "Deschide meniul", language: "Limbă",
+    nav: ["Proiecte", "Proces", "Contact"], questions: "Întrebări", buyProject: "Proiect personalizat", openMenu: "Deschide meniul", language: "Limbă",
     eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE",
     heroText: "Site-uri și produse digitale premium, construite cu grijă și pregătite să devină următoarea ta afacere.", viewProjects: "Vezi proiectele",
     marquee: ["DESIGN CARE VINDE", "COD CURAT", "LIVRARE RAPIDĂ"], catalog: "/ CATALOG 2026", chooseA: "ALEGE URMĂTORUL", chooseB: "TĂU", chooseC: "PROIECT.",
@@ -63,11 +63,11 @@ export const copy = {
     steps: [["Alegi proiectul", "Selectezi din catalog soluția potrivită pentru afacerea ta."], ["Îl personalizăm", "Adaptăm designul, textele și funcțiile pentru brandul tău."], ["Îl lansăm", "Primești proiectul configurat, verificat și gata de publicare."]],
     whyKicker: "/ DE CE MONO/DEV", whyA: "NU VINDEM", whyB: "DOAR", whyC: "PIXELI.", whyText: "Fiecare proiect este construit să arate impecabil, să se miște rapid și, cel mai important, să transforme vizitatorii în clienți.", talk: "Hai să vorbim",
     metrics: [["COD CURAT", "ȘI EDITABIL"], ["PÂNĂ LA", "PREDARE"], ["ZILE SUPORT", "INCLUS"]], found: "AI GĂSIT CE CĂUTAI?", start: "SĂ ÎNCEPEM",
-    close: "Închide detaliile", fullLicense: "LICENȚĂ COMPLETĂ", fullPrice: "PREȚ COMPLET", requestDemo: "Solicită acces demo", openProject: "Deschide proiectul", buyFor: "Cumpără pentru", interested: "Interesat de", demoSubject: "Solicit acces demo pentru",
+    close: "Închide detaliile", fullLicense: "LICENȚĂ COMPLETĂ", fullPrice: "PREȚ COMPLET", requestDemo: "Solicită acces demo", openProject: "Deschide proiectul", buyFor: "Cumpără pentru", interested: "Interesat de", demoSubject: "Solicit acces demo pentru", rentalLabel: "CHIRIE LUNARĂ", rentalFrom: "de la", perMonth: "/lunar", rentalIncludes: ["Chirie fixă pentru 18 luni", "Lansare și găzduire incluse", "Mentenanță tehnică lunară", "Poți cumpăra ulterior"], rentFor: "Închiriază de la",
     footer: { label: "MONO/DEV — PRODUSE DIGITALE", title: "Ai găsit proiectul potrivit?", text: "Îți explicăm ce include, cum îl personalizăm și care sunt pașii până la lansare.", contact: "Discută proiectul", navigation: "Navigare", projects: "Proiecte", process: "Proces", contactPage: "Contact", email: "Email", availability: "Disponibil pentru proiecte noi", legal: "Website-uri și produse digitale gata de lansare." },
   },
   ru: {
-    nav: ["Проекты", "Процесс", "Контакты"], buyProject: "Купить проект", openMenu: "Открыть меню", language: "Язык",
+    nav: ["Проекты", "Процесс", "Контакты"], questions: "Вопросы", buyProject: "Купить проект", openMenu: "Открыть меню", language: "Язык",
     eyebrow: "ЦИФРОВЫЕ ПРОЕКТЫ. ГОТОВЫ К ЗАПУСКУ.", heroA: "БОЛЬШИЕ ИДЕИ.", heroB: "УЖЕ СОЗДАНЫ.",
     heroText: "Премиальные сайты и цифровые продукты, готовые стать вашим следующим бизнесом.", viewProjects: "Смотреть проекты",
     marquee: ["ДИЗАЙН, КОТОРЫЙ ПРОДАЁТ", "ЧИСТЫЙ КОД", "БЫСТРАЯ ЗАПУСК"], catalog: "/ КАТАЛОГ 2026", chooseA: "ВЫБЕРИТЕ СВОЙ", chooseB: "СЛЕДУЮЩИЙ", chooseC: "ПРОЕКТ.",
@@ -76,11 +76,11 @@ export const copy = {
     steps: [["ВЫБИРАЕТЕ", "Изучаете каталог и находите проект для своей идеи."], ["НАСТРАИВАЕМ", "Адаптируем бренд, цвета и контент под ваш бизнес."], ["ЗАПУСКАЕМ", "Вы получаете готовый, настроенный проект."]],
     whyKicker: "/ ПОЧЕМУ MONO/DEV", whyA: "МЫ ПРОДАЁМ", whyB: "НЕ ТОЛЬКО", whyC: "ПИКСЕЛИ.", whyText: "Каждый проект безупречно выглядит, быстро работает и превращает посетителей в клиентов.", talk: "Обсудим",
     metrics: [["ЧИСТЫЙ КОД", "И РЕДАКТИРУЕМЫЙ"], ["ДО", "ПЕРЕДАЧИ"], ["ДНЕЙ ПОДДЕРЖКИ", "ВКЛЮЧЕНО"]], found: "НАШЛИ ТО, ЧТО ИСКАЛИ?", start: "НАЧНЁМ",
-    close: "Закрыть", fullLicense: "ПОЛНАЯ ЛИЦЕНЗИЯ", fullPrice: "ПОЛНАЯ ЦЕНА", requestDemo: "Запросить демо", openProject: "Открыть проект", buyFor: "Купить за", interested: "Интересует", demoSubject: "Запрос демо для",
+    close: "Закрыть", fullLicense: "ПОЛНАЯ ЛИЦЕНЗИЯ", fullPrice: "ПОЛНАЯ ЦЕНА", requestDemo: "Запросить демо", openProject: "Открыть проект", buyFor: "Купить за", interested: "Интересует", demoSubject: "Запрос демо для", rentalLabel: "ЕЖЕМЕСЯЧНАЯ АРЕНДА", rentalFrom: "от", perMonth: "/ месяц", rentalIncludes: ["Фиксированная аренда на 18 месяцев", "Запуск и хостинг включены", "Ежемесячная техподдержка", "Можно выкупить позже"], rentFor: "Арендовать от",
     footer: { label: "MONO/DEV — ЦИФРОВЫЕ ПРОДУКТЫ", title: "Нашли подходящий проект?", text: "Расскажем, что входит в проект, как проходит настройка и какие шаги ведут к запуску.", contact: "Обсудить проект", navigation: "Навигация", projects: "Проекты", process: "Процесс", contactPage: "Контакты", email: "Email", availability: "Доступны для новых проектов", legal: "Сайты и цифровые продукты, готовые к запуску." },
   },
   en: {
-    nav: ["Projects", "Process", "Contact"], buyProject: "Buy a project", openMenu: "Open menu", language: "Language",
+    nav: ["Projects", "Process", "Contact"], questions: "Questions", buyProject: "Buy a project", openMenu: "Open menu", language: "Language",
     eyebrow: "DIGITAL PROJECTS. READY TO LAUNCH.", heroA: "BIG IDEAS.", heroB: "ALREADY BUILT.",
     heroText: "Premium websites and digital products, carefully built and ready to become your next business.", viewProjects: "View projects",
     marquee: ["DESIGN THAT SELLS", "CLEAN CODE", "FAST DELIVERY"], catalog: "/ 2026 CATALOG", chooseA: "CHOOSE YOUR", chooseB: "NEXT", chooseC: "PROJECT.",
@@ -89,12 +89,13 @@ export const copy = {
     steps: [["CHOOSE", "Explore the catalog and find the right project for your idea."], ["CUSTOMIZE", "We adapt the brand, colors and content to your business."], ["LAUNCH", "Receive a complete, configured project ready to perform."]],
     whyKicker: "/ WHY MONO/DEV", whyA: "WE DON'T SELL", whyB: "JUST", whyC: "PIXELS.", whyText: "Every project is built to look impeccable, move fast and, most importantly, turn visitors into customers.", talk: "Let's talk",
     metrics: [["CLEAN CODE", "AND EDITABLE"], ["UNTIL", "DELIVERY"], ["DAYS SUPPORT", "INCLUDED"]], found: "FOUND WHAT YOU NEEDED?", start: "LET'S START",
-    close: "Close details", fullLicense: "FULL LICENSE", fullPrice: "FULL PRICE", requestDemo: "Request demo access", openProject: "Open project", buyFor: "Buy for", interested: "Interested in", demoSubject: "Demo access request for",
+    close: "Close details", fullLicense: "FULL LICENSE", fullPrice: "FULL PRICE", requestDemo: "Request demo access", openProject: "Open project", buyFor: "Buy for", interested: "Interested in", demoSubject: "Demo access request for", rentalLabel: "MONTHLY RENTAL", rentalFrom: "from", perMonth: "/ month", rentalIncludes: ["Fixed rental for 18 months", "Launch and hosting included", "Monthly technical care", "Option to buy later"], rentFor: "Rent from",
     footer: { label: "MONO/DEV — DIGITAL PRODUCTS", title: "Found the right project?", text: "We’ll explain what is included, how customization works and every step leading to launch.", contact: "Discuss your project", navigation: "Navigation", projects: "Projects", process: "Process", contactPage: "Contact", email: "Email", availability: "Available for new projects", legal: "Launch-ready websites and digital products." },
   },
 } as const;
 
 const typeMap: Record<string, [string, string]> = {
+  "Gardens & Landscaping": ["Сады и ландшафтный дизайн", "Gardens & Landscaping"],
   "Real Estate": ["Недвижимость", "Real Estate"],
   "Clinics & Medical": ["Клиники и медицина", "Clinics & Medical"],
   "Restaurants & Food": ["Рестораны и еда", "Restaurants & Food"],
@@ -112,6 +113,7 @@ const typeMap: Record<string, [string, string]> = {
 };
 
 const romanianTypeMap: Record<string, string> = {
+  "Gardens & Landscaping": "Grădini și peisagistică",
   "Real Estate": "Imobiliare",
   "Clinics & Medical": "Clinici și servicii medicale",
   "Restaurants & Food": "Restaurante și gastronomie",
@@ -159,7 +161,12 @@ const descriptions: Record<number, [string, string]> = {
   7: ["Премиальный цифровой опыт для салона красоты", "A premium digital experience for a beauty salon"],
 };
 
-export function localDescription(id: number, fallback: string, locale: Locale) { return locale === "ro" ? fallback : newProjectTranslations[locale].descriptions[id] ?? descriptions[id]?.[locale === "ru" ? 0 : 1] ?? fallback; }
+export function localDescription(id: number, fallback: string, locale: Locale) {
+  if (locale === "ro") return fallback;
+  return newProjectTranslations[locale].descriptions[id]
+    ?? descriptions[id]?.[locale === "ru" ? 0 : 1]
+    ?? `[${locale.toUpperCase()} translation missing for project ${id}]`;
+}
 
 export function localizedDetail(locale: Exclude<Locale, "ro">, project: { title: string; type: string; stack: string[] }) {
   const ru = locale === "ru", type = localType(project.type, locale);

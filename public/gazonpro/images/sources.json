@@ -1,0 +1,16 @@
+{
+  "license": "Unsplash License — https://unsplash.com/license",
+  "note": "Fotografii reale de inspirație. Imaginile de categorie nu reprezintă ambalajele produselor fictive.",
+  "photos": {
+    "hero": "https://images.unsplash.com/photo-1558904541-efa843a96f01",
+    "lawn": "https://images.unsplash.com/photo-1558904541-efa843a96f01",
+    "care": "https://images.unsplash.com/photo-1749862441344-e0ebe182ff78",
+    "seed": "https://images.unsplash.com/photo-1599320092708-8a9dde49fc2c",
+    "mower": "https://images.unsplash.com/photo-1458245201577-fc8a130b8829",
+    "fertilizer": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "tools": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "water": "https://images.unsplash.com/photo-1749862441344-e0ebe182ff78",
+    "edge": "https://images.unsplash.com/photo-1558904541-efa843a96f01",
+    "before": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9"
+  }
+}

@@ -1,0 +1,1 @@
+import{a,e as s}from"./chunk-O5C3CWVD.js";var e=a(s());function t({message:n="Se \xEEncarc\u0103\u2026",section:o}){return(0,e.jsxs)("div",{className:"section-loader","data-section":o,role:"status","aria-live":"polite",children:[(0,e.jsx)("span",{className:"spinner","aria-hidden":"true"}),(0,e.jsx)("span",{className:"loader-text",children:n})]})}export{t as a};

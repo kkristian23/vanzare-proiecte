@@ -21,7 +21,7 @@ messaging.onBackgroundMessage((payload) => {
   const body = payload.notification?.body || payload.data?.body || '';
   const options = {
     body,
-    icon: '/icon-192x192.png'
+    icon: '/iqcalendar/icon-192x192.png'
   };
   self.registration.showNotification(title, options);
 });

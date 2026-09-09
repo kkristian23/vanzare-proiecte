@@ -151,6 +151,7 @@ function updateIdeasToggleButton() {
 
 function renderActivities() {
   const grid = document.getElementById('activityGrid');
+  if (!grid) return;
   grid.innerHTML = '';
 
   activities.forEach((activity) => {
@@ -390,7 +391,7 @@ function buildEventDeepLink(planId) {
     : (typeof isTestEnvironment === 'boolean' && isTestEnvironment ? 'test' : 'production');
   const configuredBaseUrl = String(window.APP_ENV?.appUrls?.[scope] || '').trim();
   const baseUrl = configuredBaseUrl || window.location.href;
-  const eventUrl = new URL('/calendar', baseUrl);
+  const eventUrl = new URL('/iqcalendar/calendar.html', baseUrl);
   eventUrl.searchParams.set('event', String(planId));
   if (scope === 'test') {
     eventUrl.searchParams.set('scope', 'test');
@@ -564,6 +565,6 @@ async function confirmActivity() {
     }
   }
 
-  window.location.href = '/result';
+  window.location.href = '/iqcalendar/result.html';
 }
 

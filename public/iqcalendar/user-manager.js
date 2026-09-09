@@ -78,17 +78,17 @@ function getDeviceId() {
 function getBackTarget() {
   const currentPage = window.location.pathname.split('/').pop() || 'app';
   const backTargets = {
-    'activity': '/app',
-    'activity.html': '/app',
-    'result': '/activity',
-    'result.html': '/activity',
-    'calendar': '/app',
-    'calendar.html': '/app',
-    'app': '/app',
-    'app.html': '/app'
+    'activity': '/iqcalendar/app.html',
+    'activity.html': '/iqcalendar/app.html',
+    'result': '/iqcalendar/activity.html',
+    'result.html': '/iqcalendar/activity.html',
+    'calendar': '/iqcalendar/app.html',
+    'calendar.html': '/iqcalendar/app.html',
+    'app': '/iqcalendar/app.html',
+    'app.html': '/iqcalendar/app.html'
   };
 
-  return backTargets[currentPage] || '/app';
+  return backTargets[currentPage] || '/iqcalendar/app.html';
 }
 
 function goBack() {
@@ -1526,7 +1526,7 @@ async function saveLocalPartnerNickname(userId, nickname) {
 async function loadPartnerNicknamesFromFirebase() {
   const localCache = loadPartnerNicknamesFromLocalStorage();
 
-  if (!isFirebaseAvailable() || !currentUser) {
+  if (!isFirebaseAvailable() || !currentUser?.id) {
     partnerNicknamesCache = localCache;
     console.log('✅ Nicknames încărcate din localStorage:', partnerNicknamesCache);
     return;
@@ -1583,7 +1583,7 @@ function getPartnerGroups() {
 async function loadPartnerGroupsFromFirebase() {
   const localCache = loadPartnerGroupsFromLocalStorage();
 
-  if (!isFirebaseAvailable() || !currentUser) {
+  if (!isFirebaseAvailable() || !currentUser?.id) {
     partnerGroupsCache = localCache;
     return;
   }
@@ -1720,7 +1720,7 @@ async function loadUserProfile() {
       console.log('✅ User loaded from localStorage:', currentUser);
       // If this is a Firebase-authenticated user, try to refresh from remote.
       // Do not discard an anonymous local profile when no remote record exists.
-      if (isFirebaseAvailable() && currentUser && !currentUser.id.startsWith('user_')) {
+      if (isFirebaseAvailable() && currentUser && typeof currentUser.id === 'string' && !currentUser.id.startsWith('user_')) {
         try {
           const scope = getCurrentDataScope();
           const snapshot = await getUserProfileRef(currentUser.id, scope).once('value');
@@ -1782,7 +1782,7 @@ async function loadUserProfile() {
 
 // Update last login timestamp
 async function updateLastLogin() {
-  if (!currentUser) return;
+  if (!currentUser?.id) return;
 
   currentUser.lastLogin = new Date().toISOString();
   localStorage.setItem('currentUser', JSON.stringify(currentUser));

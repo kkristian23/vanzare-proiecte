@@ -184,6 +184,7 @@
 }
 
 #top > div.marquee > div {
+  --marquee-copies: 6;
   --marquee-gap: 44px;
   gap: 0;
   font-size: clamp(15px, .95vw, 18px);
@@ -202,7 +203,7 @@
 }
 
 @keyframes hero-marquee-loop {
-  to { transform: translate3d(-50%, 0, 0); }
+  to { transform: translate3d(calc(-100% / var(--marquee-copies)), 0, 0); }
 }
 
 #top > div.marquee svg {
@@ -307,7 +308,7 @@
   display: grid;
   grid-template-columns: minmax(260px, 1fr) auto;
   gap: 10px;
-  margin: 64px 0 18px;
+  margin: 64px 0 13px;
 }
 
 .project-search {
@@ -333,12 +334,37 @@
 }
 
 .project-search input {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   border: 0;
   outline: 0;
   background: transparent;
   color: var(--ink);
   font: 500 14px var(--font-geist);
+}
+
+.project-search-clear {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-search-clear:hover {
+  background: rgb(132 102 255 / 12%);
+  color: var(--violet);
+}
+
+.project-search-clear:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 2px;
 }
 
 .project-sort {
@@ -719,12 +745,27 @@
 
 @media (max-width: 800px) {
   .filter-toolbar {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(138px, 42%);
     margin-top: 44px;
   }
 
   .project-sort {
     width: 100%;
+  }
+
+  .project-search {
+    gap: 8px;
+    padding-inline: 14px;
+  }
+
+  .project-sort summary {
+    gap: 8px;
+    padding-inline: 14px;
+    font-size: 12px;
+  }
+
+  .project-sort .sort-menu {
+    min-width: 100%;
   }
 
   .filter-row {
@@ -733,19 +774,26 @@
     gap: 10px;
   }
 
-  .primary-filters {
+  .primary-filters:not(.filter-measure) {
     width: 100%;
   }
 
   .filter-more {
-    width: auto;
+    width: 100%;
     max-width: 100%;
   }
 
   .filter-more summary {
     justify-content: space-between;
-    width: auto;
+    width: fit-content;
     max-width: 100%;
+  }
+
+  .filter-more .filter-menu {
+    left: 0;
+    right: auto;
+    width: 100%;
+    transform-origin: top left;
   }
 
   .filter-more-label {

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://terraforma-landscape-studio.cristian-codre495379.chatgpt.site/sitemap.xml

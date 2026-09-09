@@ -49,7 +49,9 @@ Suitele independente DOM folosesc React 19, jsdom și Testing Library, montează
 
 Auditul exporturilor finale a verificat 32 de builduri reușite, 352 de referințe locale fără fișiere lipsă și 496 de comparații între structuri DOM. Nu există componente principale cu hash identic sau structuri principale identice după eliminarea textelor, claselor și culorilor. Acest control static documentează diferențele de implementare, fără a pretinde o evaluare vizuală în browser.
 
-Cele 32 de previzualizări folosesc `preview.html`, generat din exportul real la sincronizare și înainte de construirea catalogului. Acesta păstrează conținutul, stilurile și imaginile, eliminând scripturile și preîncărcările lor. Cadrul păstrează originea locală, cu scripturile și formularele dezactivate. Pagina `index.html` rămâne complet interactivă când proiectul este deschis separat.
+Cardurile folosesc screenshot-uri statice responsive, servite prin Netlify Image CDN în AVIF/WebP la 480, 800 sau 1200 px. Exportul interactiv nu se mai încarcă în iframe; este solicitat doar când vizitatorul apasă „Deschide proiectul” în modal. `preview.html` rămâne doar ca pagină de compatibilitate sub 1 KiB, fără scripturi, stiluri sau imagini.
+
+Pentru audit local rulează `npm run audit:bandwidth`. După deploy, verifică traficul real în Netlify Observability → Web requests, grupat după Content-Type și Path; optimizarea trebuie începută cu căile care transferă cei mai mulți bytes, nu doar cu cele mai mari fișiere din repository.
 
 Descrierile și fișele proiectelor sunt specifice fiecăruia în română, rusă și engleză. Ele precizează ce funcții sunt demonstrative și care servicii externe trebuie conectate separat.
 
@@ -59,4 +61,4 @@ Sursele editabile se află în cele 32 de directoare numerotate din `D:/proiecte
 
 La adăugarea sau schimbarea unui model salvat în browser, actualizează schema lui din `components/storage-schema.ts` în proiectul respectiv. Datele necunoscute nu sunt restaurate automat.
 
-Adresele cadrelor includ versiunea SHA-256 a con?inutului din `app/project-preview-versions.json`, actualizat? la generare ?i sincronizare, pentru a evita folosirea coper?ilor vechi din cache.
+Imaginile sursă au URL-uri stabile, iar Netlify invalidează transformările Image CDN la un deploy atomic nou. Fișierele cu hash din `_next/static` și `assets` folosesc cache browser `immutable`.

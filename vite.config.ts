@@ -13,11 +13,11 @@ export default defineConfig(async () => {
 
   return {
     server: {
-      host: "127.0.0.1", port: 3000, strictPort: false,
+      host: "0.0.0.0", port: 3000, strictPort: false,
       allowedHosts: ["vanzare-proiecte.localhost"],
       ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
     },
-    preview: { host: "127.0.0.1", port: 3000, strictPort: false, allowedHosts: ["vanzare-proiecte.localhost"] },
+    preview: { host: "0.0.0.0", port: 3000, strictPort: false, allowedHosts: ["vanzare-proiecte.localhost"] },
     plugins: [
       vinext(),
       cloudflare({

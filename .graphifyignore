@@ -12,6 +12,11 @@ public/pophaus/
 public/nord-and-oak/
 public/forma-living/
 public/archicontract/
+public/aquaverde/
+public/terraforma/
+public/gazonpro/
+public/ecohabitat/
+public/yardcraft/
 public/atelier-noire/
 public/market9000/
 public/neobarberclub/
@@ -20,3 +25,6 @@ public/contor-acasa/
 worker/runtime.d.ts
 # Generated Next.js exports; editable project sources are listed in the registry.
 public/**/_next/
+# Generated browser traces, screenshots and audit reports are not source code.
+reports/showcase-audit/
+public/*.txt

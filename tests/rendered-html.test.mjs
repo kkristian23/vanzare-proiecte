@@ -1,20 +1,6 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
-import { createHash } from "node:crypto";
-import { previewDocument } from "../scripts/project-previews.mjs";
-
-test("previews discard image preloads that would fail inside the isolated frame", () => {
-  const html = '<link rel="preload" as="image" href="./images/phone.webp"/>' +
-    "<link href='./images/food.jpg' rel='preload' as='image'>" +
-    '<link rel="prefetch" href="./images/salad.jpg">' +
-    '<link rel="stylesheet" href="/project/styles.css">' +
-    '<img src="./images/phone.webp" alt="Phone">';
-  const preview = previewDocument(html);
-  assert.doesNotMatch(preview, /<link\b[^>]*(?:phone\.webp|food\.jpg|salad\.jpg)/i);
-  assert.match(preview, /<link rel="stylesheet"/);
-  assert.match(preview, /<img src="\.\/images\/phone\.webp"/);
-});
 
 async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -36,6 +22,10 @@ test("server-renders the MONO/DEV catalog", async () => {
   assert.match(html, /IDEI MARI/);
   assert.match(html, /EVENTORA/);
   assert.match(html, /CLINICA NOVA/);
+  for (const title of ["AquaVerde", "TerraForma", "GazonPro", "EcoHabitat", "YardCraft"]) {
+    assert.ok(html.includes(title), `${title}: new project missing from first catalog page`);
+  }
+  assert.match(html, /Grădini și peisagistică/);
   assert.match(html, /id="proiecte"/);
   assert.match(html, /id="proces"/);
   const catalogSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
@@ -71,12 +61,24 @@ test("synced documents contain no duplicated project prefix", async () => {
   }
 });
 
+test("exported root RSC payloads are available at their browser-requested base paths", async () => {
+  const registry = JSON.parse(await readFile(new URL("../showcase-projects/registry.json", import.meta.url), "utf8"));
+  for (const project of registry) {
+    const hasPayload = await access(new URL(`../public/${project.slug}/index.txt`, import.meta.url)).then(() => true, () => false);
+    if (hasPayload) {
+      const expected = await readFile(new URL(`../public/${project.slug}.txt`, import.meta.url), "utf8");
+      const built = await readFile(new URL(`../dist/client/${project.slug}.txt`, import.meta.url), "utf8");
+      assert.equal(built, expected, `${project.slug}: built root payload differs from the published export`);
+    }
+  }
+});
+
 test("project directory URLs redirect to their static entry and preserve the query", async () => {
   const { default: worker } = await import(new URL("../dist/server/index.js", import.meta.url).href);
   const registry = JSON.parse(await readFile(new URL("../showcase-projects/registry.json", import.meta.url), "utf8"));
   const env = { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } };
   const ctx = { waitUntil() {}, passThroughOnException() {} };
-  for (const project of registry.filter(project => project.id >= 35 && project.id <= 66)) {
+  for (const project of registry.filter(project => project.id >= 35)) {
     let response = await worker.fetch(new Request(`http://localhost/${project.slug}/?source=catalog`), env, ctx);
     if (response.status === 308) {
       const canonical = new URL(response.headers.get("location"), "http://localhost");
@@ -92,36 +94,23 @@ test("project directory URLs redirect to their static entry and preserve the que
 
 test("redesigned projects preview their current static exports", async () => {
   const registry = JSON.parse(await readFile(new URL("../showcase-projects/registry.json", import.meta.url), "utf8"));
-  const newProjects = registry.filter(project => project.id >= 35 && project.id <= 66);
-  assert.equal(newProjects.length, 32);
+  const newProjects = registry.filter(project => project.id >= 35 && !project.disabled);
+  for (const slug of ["aquaverde", "terraforma", "gazonpro", "ecohabitat", "yardcraft"]) {
+    assert.ok(newProjects.some(project => project.slug === slug), `${slug}: missing registration`);
+  }
   const html = await (await render()).text();
   const pageSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
-  const versions = JSON.parse(await readFile(new URL("../app/project-preview-versions.json", import.meta.url), "utf8"));
+  assert.doesNotMatch(html, /<iframe\b/i, "catalog must not preload interactive project exports");
+  assert.doesNotMatch(html, /\/\.netlify\/images/, "local and server-rendered previews must not require Netlify Image CDN");
+  assert.match(html, /\/aquaverde\/images\/hero\.webp/, "catalog must render the original preview as its safe fallback");
   for (const project of newProjects) {
     assert.ok(pageSource.includes(`"/${project.slug}/"`), `${project.slug}: preview path absent from catalog`);
-    const frame = [...html.matchAll(/<iframe\b[^>]*>/g)].map(match => match[0]).find(tag => tag.includes(`src="/${project.slug}/preview.html?`));
-    if (frame) {
-      assert.ok(frame.includes(`src="/${project.slug}/preview.html?v=${versions[project.slug]}"`), `${project.slug}: rendered preview version is stale`);
-      assert.ok(frame.includes('sandbox="allow-scripts"'), `${project.slug}: preview must use an isolated origin without blocking injected scripts`);
-      assert.ok(!frame.includes('allow-same-origin'), `${project.slug}: preview must not share the catalog origin`);
-    }
-    assert.ok(!html.includes(`src="/project-previews/${project.slug}.png"`), `${project.slug}: stale template screenshot still in catalog`);
+    assert.ok(!html.includes(`/${project.slug}/preview.html`), `${project.slug}: heavyweight preview must not be loaded by the catalog`);
     const page = await readFile(new URL(`../public/${project.slug}/index.html`, import.meta.url), "utf8");
     const preview = await readFile(new URL(`../public/${project.slug}/preview.html`, import.meta.url), "utf8");
-    assert.equal(versions[project.slug], createHash("sha256").update(preview).digest("hex").slice(0, 16), `${project.slug}: preview cache version does not match its content`);
-    assert.doesNotMatch(preview, /<script\b|<link\b[^>]*\bas="script"|<link\b[^>]*\brel="modulepreload"/i);
-    assert.ok(preview.includes("<main") && preview.includes("<style>"), `${project.slug}: preview lost content or styles`);
-    const mainWithoutImages = document => document.match(/<main\b[\s\S]*?<\/main>/)?.[0].replace(/(<img\b[^>]*\bsrc=")[^"]+/g, '$1');
-    assert.equal(mainWithoutImages(preview), mainWithoutImages(page), `${project.slug}: preview changed the main content`);
-    assert.doesNotMatch(preview, /<link\b[^>]*rel="stylesheet"/i, `${project.slug}: preview still requests external styles`);
-    assert.doesNotMatch(preview, /<link\b/i, `${project.slug}: preview still issues resource hints or external link requests`);
-    for (const [, imageUrl] of preview.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/gi)) {
-      assert.match(imageUrl, /^data:image\/[a-z+]+;base64,/, `${project.slug}: preview still requests an external image`);
-    }
-    for (const [, cssUrl] of page.matchAll(/<link\b[^>]*href="([^"]+\.css)"[^>]*>/gi)) {
-      const css = await readFile(new URL(`../public${cssUrl}`, import.meta.url), "utf8");
-      assert.ok(preview.includes(css.replace(/<\/style/gi, "<\\/style")), `${project.slug}: embedded stylesheet differs from export`);
-    }
+    assert.ok(Buffer.byteLength(preview) < 1024, `${project.slug}: retired preview entrypoint exceeds 1 KiB`);
+    assert.doesNotMatch(preview, /<script\b|<img\b|<link\b[^>]*rel="stylesheet"/i, `${project.slug}: retired preview loads resources`);
+    assert.ok(preview.includes(`href="/${project.slug}/index.html?source=catalog"`), `${project.slug}: explicit demo link is missing`);
     assert.match(page, /<script\b/, `${project.slug}: interactive page lost its scripts`);
     assert.ok(page.includes("<main"), `${project.slug}: export is not a usable page`);
     assert.ok(!page.includes("Recharts transformă datele demonstrative"), `${project.slug}: old template was published`);

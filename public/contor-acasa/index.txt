@@ -19,4 +19,4 @@ b:"$0:f:0:1:1:children:0:props:children:0:props:serverProvidedParams:params"
 10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 14:I[6869,[],"IconMark"]
 e:null
-12:[["$","title","0",{"children":"Contor Acasă"}],["$","meta","1",{"name":"description","content":"Colectarea sigură a datelor contoarelor"}],["$","link","2",{"rel":"icon","href":"/icon.svg"}],["$","$L14","3",{}]]
+12:[["$","title","0",{"children":"Contor Acasă"}],["$","meta","1",{"name":"description","content":"Colectarea sigură a datelor contoarelor"}],["$","link","2",{"rel":"icon","href":"/contor-acasa/icon.svg"}],["$","$L14","3",{}]]
