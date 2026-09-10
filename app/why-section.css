@@ -369,15 +369,16 @@
 
 .project-sort {
   position: relative;
-  flex: 0 0 220px;
+  flex: 0 0 176px;
 }
 
 .project-sort summary {
+  position: relative;
   display: flex;
   min-height: 52px;
   padding: 0 18px 0 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 18px;
   border: 1px solid rgb(132 102 255 / 22%);
   border-radius: 999px;
@@ -404,6 +405,8 @@
 }
 
 .project-sort summary svg {
+  position: absolute;
+  right: 18px;
   flex: 0 0 auto;
   transition: transform 180ms ease;
 }
@@ -415,18 +418,27 @@
 .project-sort .sort-menu {
   top: calc(100% + 10px);
   width: 100%;
-  min-width: 220px;
+  min-width: 176px;
   padding: 8px;
   border-radius: 18px;
 }
 
 .project-sort .sort-menu button {
   min-height: 44px;
-  padding-inline: 13px;
+  padding: 10px 38px 10px 13px;
+}
+
+.project-sort .sort-menu button > span {
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
 }
 
 .project-sort .sort-menu button > svg {
+  position: absolute;
+  top: 50%;
+  right: 13px;
   flex: 0 0 auto;
+  transform: translateY(-50%);
 }
 
 .filter-row {
@@ -745,7 +757,7 @@
 
 @media (max-width: 800px) {
   .filter-toolbar {
-    grid-template-columns: minmax(0, 1fr) minmax(138px, 42%);
+    grid-template-columns: minmax(0, 1fr) minmax(138px, 34%);
     margin-top: 44px;
   }
 
@@ -762,6 +774,10 @@
     gap: 8px;
     padding-inline: 14px;
     font-size: 12px;
+  }
+
+  .project-sort summary svg {
+    right: 14px;
   }
 
   .project-sort .sort-menu {

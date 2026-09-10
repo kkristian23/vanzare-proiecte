@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LS">
+  <rect width="64" height="64" rx="15" fill="#3b4135"/>
+  <path d="M8 50 50 8h6v12L20 56H8Z" fill="#c8b994" opacity=".22"/>
+  <circle cx="51" cy="13" r="5" fill="#c8b994"/>
+  <text x="32" y="41" fill="#c8b994" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" text-anchor="middle" letter-spacing="-2">LS</text>
+</svg>

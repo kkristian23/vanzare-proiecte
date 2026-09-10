@@ -3,6 +3,7 @@
 import { ArrowLeft, ArrowUpRight, ChevronDown, CircleHelp, Search, Sparkles, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Locale, locales } from "../i18n";
+import { BrandLogo } from "../brand-logo";
 import "./intrebari.css";
 import "../page-language-switch.css";
 
@@ -161,7 +162,7 @@ export default function QuestionsPage() {
   return <main className="faq-page">
     <div className="faq-noise" aria-hidden="true" />
     <header className="faq-nav">
-      <a className="faq-logo" href="/">M<span>O</span>NO/DEV</a>
+      <BrandLogo className="faq-logo" href="/" inverse />
       <div className="faq-runtime"><i /> KNOWLEDGE BASE <b>v1.0.0</b></div>
       <div className="page-nav-tools">
         <div className="page-language-switch" aria-label="Limbă">{locales.map(language => <button key={language} className={locale === language ? "active" : ""} onClick={() => changeLocale(language)} lang={language}>{language.toUpperCase()}</button>)}</div>

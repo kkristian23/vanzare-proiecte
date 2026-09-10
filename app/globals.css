@@ -225,6 +225,7 @@
   box-shadow:8px 8px 0 var(--acid);
 }
 .nav-cta:hover svg{transform:rotate(-8deg) scale(1.08)}
+.account-link{min-height:42px;display:inline-flex;align-items:center;gap:8px;padding:0 13px;border:1px solid #cbc8bf;background:#fff8;border-radius:12px;color:var(--ink);font:700 10px var(--font-mono);letter-spacing:.1px;white-space:nowrap;transition:.2s}.account-link:hover{border-color:var(--violet);background:#f4f0ff;transform:translateY(-1px)}.account-link svg{color:var(--violet)}.mobile-account-link{display:flex!important;align-items:center;gap:9px;width:max-content;padding:12px 14px!important;border:1px solid var(--violet)!important;border-radius:10px;color:var(--violet)!important}
 .nav a:focus-visible,.nav button:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
 
 @media(max-width:800px){
@@ -237,6 +238,7 @@
     border-radius:18px;
   }
   .nav .logo{font-size:17px}
+  .account-link{display:none}
   .menu-btn{
     width:40px;
     height:40px;
@@ -276,6 +278,30 @@ html,
 body {
   touch-action: pan-x pan-y;
 }
+
+/* Shared MONO/DEV wordmark: one responsive, animated treatment on every page. */
+.brand-logo.brand-logo{
+  --brand-logo-mono:var(--ink);
+  --brand-logo-dev:var(--violet);
+  display:inline-flex;
+  align-items:center;
+  gap:0;
+  padding:0;
+  color:var(--brand-logo-mono);
+  font:800 20px/1 var(--font-geist);
+  letter-spacing:-.65px;
+  transform-origin:left center;
+  transition:letter-spacing .3s ease,transform .3s ease;
+  animation:logo-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite;
+}
+.brand-logo.brand-logo--inverse{--brand-logo-mono:#f2f0e9}
+.brand-logo>span{display:inline-block;font:inherit;letter-spacing:inherit;will-change:transform}
+.brand-logo>.logo-mono{color:var(--brand-logo-mono);transform-origin:right center;animation:logo-mono-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite}
+.brand-logo>.logo-dev{color:var(--brand-logo-dev);transform-origin:left center;animation:logo-dev-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite}
+.brand-logo:hover{letter-spacing:-.25px;transform:translateY(-1px)}
+.brand-logo:focus-visible{border-radius:3px;outline:2px solid var(--brand-logo-dev);outline-offset:5px}
+@media(max-width:800px){.brand-logo.brand-logo{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.brand-logo,.brand-logo>span{animation:none}}
 
 /* Real homepage previews for the six newest products. */
 .visual-autoflow,.visual-drivolt,.visual-flowcrm,.visual-academia,.visual-staynest,.visual-tableo,.visual-medora,.visual-imobilia{padding:0;background:#071b22}
@@ -583,6 +609,7 @@ body {
 
 #project-grid .price-rental {
   display: flex;
+  flex-direction: column;
   width: 100%;
   min-width: 0;
   margin: 0;

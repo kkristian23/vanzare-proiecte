@@ -3,6 +3,7 @@
 import { ArrowLeft, ArrowUpRight, Check, Copy, Mail, MapPin, Phone, Terminal } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 import { contactCopy, Locale, locales } from "../i18n";
+import { BrandLogo } from "../brand-logo";
 import "./contact.css";
 import "../page-language-switch.css";
 
@@ -68,7 +69,7 @@ export default function ContactPage() {
   return <main className="contact-page">
     <div className="contact-noise" aria-hidden="true"/>
     <header className="contact-nav">
-      <a className="contact-logo" href={backHref}>M<span>O</span>NO/DEV</a>
+      <BrandLogo className="contact-logo" href={backHref} inverse />
       <div className="contact-runtime"><i/> {c.systemOnline} <b>v2.6.0</b></div>
       <div className="page-nav-tools">
         <div className="page-language-switch" aria-label="Limbă">

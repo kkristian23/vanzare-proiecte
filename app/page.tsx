@@ -12,6 +12,7 @@ import {
   Search,
   ShoppingBag,
   Sparkles,
+  UserRound,
   X,
   Zap,
 } from "lucide-react";
@@ -20,9 +21,9 @@ import {
   useLayoutEffect,
   useRef,
   useState,
-  useSyncExternalStore,
 } from "react";
 import { StaticProjectPreview } from "./live-project-preview";
+import { BrandLogo } from "./brand-logo";
 import { newProjectDetails } from "./new-project-details";
 import { newProjectTranslations } from "./new-project-translations";
 import projectPrices from "./project-prices.json";
@@ -40,6 +41,8 @@ import {
 
 type Platform = "web" | "mobile" | "games";
 type MobileOS = "all" | "android" | "ios";
+type PaymentMode = "installments" | "rental";
+type RentalServiceTier = "with-services" | "without-services";
 type Project = {
   id: number; title: string; type: string; price: number; tone: string;
   desc: string; stack: string[]; platform?: Platform;
@@ -50,11 +53,12 @@ const platformCopy = {
   en: { label: "Choose a platform", web: "Web Projects", mobile: "Mobile Apps", webDesc: "Websites, online stores and web platforms", mobileDesc: "Apps for Android and iOS", soon: "Coming soon", all: "All", empty: "Your next idea fits in your pocket.", detail: "Mobile projects for Android and iOS will appear here. Already have an app idea? Let's talk.", contact: "Let's discuss your app", available: "projects", os: "Operating system" },
   ru: {"label":"\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0443","web":"\u0412\u0435\u0431-\u043f\u0440\u043e\u0435\u043a\u0442\u044b","mobile":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f","webDesc":"\u0421\u0430\u0439\u0442\u044b, \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u044b \u0438 \u0432\u0435\u0431-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b","mobileDesc":"\u041f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0434\u043b\u044f Android \u0438 iOS","soon":"\u0421\u043a\u043e\u0440\u043e","all":"\u0412\u0441\u0435","empty":"\u0412\u0430\u0448\u0430 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f \u0438\u0434\u0435\u044f \u2014 \u0432 \u043a\u0430\u0440\u043c\u0430\u043d\u0435.","detail":"\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u044f\u0442\u0441\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u044b \u0434\u043b\u044f Android \u0438 iOS. \u0423\u0436\u0435 \u0435\u0441\u0442\u044c \u0438\u0434\u0435\u044f \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f? \u0414\u0430\u0432\u0430\u0439\u0442\u0435 \u043e\u0431\u0441\u0443\u0434\u0438\u043c.","contact":"\u041e\u0431\u0441\u0443\u0434\u0438\u0442\u044c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435","available":"\u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432","os":"\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430"},
 };
-const monthlyInstallmentPrice = (price: number) => Math.ceil(price / 18 / 5) * 5;
+const monthlyRentalPrice = (price: number) => Number((price / 18).toFixed(2));
+const annualInstallmentPrice = (price: number) => Math.ceil(price / 12 / 5) * 5;
 const installmentPlans = [
   { months: 3, surcharge: 0 },
-  { months: 6, surcharge: 0.02 },
-  { months: 12, surcharge: 0.04 },
+  { months: 6, surcharge: 0.05 },
+  { months: 12, surcharge: 0.08 },
 ] as const;
 const gamesPlatformCopy = {
   ro: { empty: "Următorul tău joc începe aici.", detail: "Jocurile pentru Android și iOS vor apărea aici. Ai o idee de joc? Hai să o discutăm.", contact: "Discutăm jocul tău", collection: "GAME COLLECTION", caption: "SMALL SCREEN. BIG ADVENTURES." },
@@ -820,6 +824,18 @@ const filters = [
 // Păstrăm proiectele și categoriile în cod, dar le putem retrage temporar din catalog.
 const hiddenCategories = new Set(["AI Website Factory"]);
 const unavailableProjectIds = new Set<number>();
+const recommendedClickStorageKey = "mono-recommended-clicks";
+const recommendedOpeningStorageKey = "mono-recommended-openings";
+
+const shuffledProjectIds = () => {
+  const ids = projects.map((project) => project.id);
+  for (let index = ids.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [ids[index], ids[randomIndex]] = [ids[randomIndex], ids[index]];
+  }
+  return ids;
+};
+
 const filterCopy = {
   ro: {
     search: "CautÄƒ proiecte, categorii sau tehnologii",
@@ -858,6 +874,7 @@ const cleanFilterCopy = {
     categories: "Toate categoriile",
     less: "Ascunde categoriile",
     search: "Caut\u0103 proiecte",
+    recommended: "Recomandate",
     sort: "Cele mai noi",
     low: "Pre\u021b cresc\u0103tor",
     high: "Pre\u021b descresc\u0103tor",
@@ -868,6 +885,7 @@ const cleanFilterCopy = {
     moreCategories: "Ещё категории",
     search:
       "\u041f\u043e\u0438\u0441\u043a \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u0439 \u0438\u043b\u0438 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0439",
+    recommended: "\u0420\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u043c\u044b\u0435",
     sort: "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 \u043d\u043e\u0432\u044b\u0435",
     low: "\u0426\u0435\u043d\u0430: \u043f\u043e \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0430\u043d\u0438\u044e",
     high: "\u0426\u0435\u043d\u0430: \u043f\u043e \u0443\u0431\u044b\u0432\u0430\u043d\u0438\u044e",
@@ -880,6 +898,7 @@ const cleanFilterCopy = {
   },
   en: {
     ...filterCopy.en,
+    recommended: "Recommended",
     moreCategories: "More categories",
     categories: "All categories",
     less: "Hide categories",
@@ -2661,21 +2680,54 @@ function ProjectVisual({
   );
 }
 
+function AutoFitProjectTitle({ title }: { title: string }) {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  useLayoutEffect(() => {
+    const heading = titleRef.current;
+    const row = heading?.parentElement;
+    if (!heading || !row) return;
+
+    let frame = 0;
+    let active = true;
+    const fitTitle = () => {
+      if (!active) return;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        heading.style.removeProperty("font-size");
+        const naturalSize = Number.parseFloat(getComputedStyle(heading).fontSize);
+
+        if (heading.scrollWidth > heading.clientWidth) {
+          const fittedSize = Math.max(
+            14,
+            naturalSize * (heading.clientWidth / heading.scrollWidth),
+          );
+          heading.style.fontSize = `${fittedSize}px`;
+        }
+      });
+    };
+
+    fitTitle();
+    const observer = new ResizeObserver(fitTitle);
+    observer.observe(row);
+    void document.fonts.ready.then(fitTitle);
+
+    return () => {
+      active = false;
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [title]);
+
+  return (
+    <h2 id="project-modal-title" ref={titleRef}>
+      {title}
+    </h2>
+  );
+}
+
 // Keep each initial batch even so the two-column catalog never ends on a lone card.
 const PROJECT_PAGE_SIZE = 8;
-
-const productReferenceTitles = new Set([
-  "Referință de produs",
-  "Product reference",
-  "Продукт для вдохновения",
-]);
-
-const subscribeToLocalHost = () => () => {};
-const isLocalHost = () =>
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1" ||
-  window.location.hostname === "::1";
-const isServerHost = () => false;
 
 export default function Home() {
   const categoryMenuRef = useRef<HTMLDetailsElement>(null);
@@ -2688,12 +2740,8 @@ export default function Home() {
   const [platform, setPlatform] = useState<Platform>("web");
   const [mobileOS, setMobileOS] = useState<MobileOS>("all");
   const [query, setQuery] = useState("");
-  const [sort, setSort] = useState("newest");
-  const showProductReferences = useSyncExternalStore(
-    subscribeToLocalHost,
-    isLocalHost,
-    isServerHost,
-  );
+  const [sort, setSort] = useState("recommended");
+  const [recommendedOrder, setRecommendedOrder] = useState<number[] | null>(null);
   const [visibleProjectCount, setVisibleProjectCount] = useState(PROJECT_PAGE_SIZE);
   const [menu, setMenu] = useState(false);
   const [activeNav, setActiveNav] = useState<"proiecte" | "proces" | null>(null);
@@ -2701,7 +2749,10 @@ export default function Home() {
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(
     null,
   );
-  const [installmentMonths, setInstallmentMonths] = useState<3 | 6 | 12>(6);
+  const [installmentMonths, setInstallmentMonths] = useState<3 | 6 | 12>(12);
+  const [paymentMode, setPaymentMode] = useState<PaymentMode>("installments");
+  const [rentalServiceTier, setRentalServiceTier] = useState<RentalServiceTier>("with-services");
+  const [rentalServicesInfoOpen, setRentalServicesInfoOpen] = useState<RentalServiceTier | null>(null);
   useEffect(() => {
     const removeNetlifyBadge = () => document.getElementById("nl-badge")?.remove();
     removeNetlifyBadge();
@@ -2711,6 +2762,12 @@ export default function Home() {
 
     return () => observer.disconnect();
   }, []);
+  useEffect(() => {
+    const openings = Number.parseInt(localStorage.getItem(recommendedOpeningStorageKey) ?? "0", 10) || 0;
+    const nextOpenings = openings + 1;
+    localStorage.setItem(recommendedOpeningStorageKey, String(nextOpenings));
+    if (nextOpenings % 3 === 0) setRecommendedOrder(shuffledProjectIds());
+  }, []);
   const c = copy[locale];
   const fc = cleanFilterCopy[locale];
   const pc = platformCopy[locale];
@@ -2718,11 +2775,13 @@ export default function Home() {
   const supportsMobileOS = platform === "mobile" || platform === "games";
   const launchCopy = platform === "games" ? gc : { empty: pc.empty, detail: pc.detail, contact: pc.contact, collection: "MOBILE COLLECTION", caption: "SMALL SCREEN. BIG POSSIBILITIES." };
   const sortOptions = [
+    { value: "recommended", label: fc.recommended },
     { value: "newest", label: fc.sort },
     { value: "low", label: fc.low },
     { value: "high", label: fc.high },
   ];
-  const selectedSortLabel = sortOptions.find((option) => option.value === sort)?.label ?? fc.sort;
+  const selectedSortLabel = sortOptions.find((option) => option.value === sort)?.label ?? fc.recommended;
+  const recommendedRanks = new Map(recommendedOrder?.map((id, index) => [id, index]));
   const publicProjects = projects.filter((project) => !hiddenCategories.has(project.type));
   const platformCount = (value: Platform) => publicProjects.filter((project) => (project.platform ?? "web") === value).length;
   const listedProjects = publicProjects.filter((project) =>
@@ -2772,6 +2831,8 @@ export default function Home() {
         ? a.price - b.price
         : sort === "high"
           ? b.price - a.price
+          : sort === "recommended" && recommendedOrder
+            ? (recommendedRanks.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (recommendedRanks.get(b.id) ?? Number.MAX_SAFE_INTEGER)
           : b.id - a.id,
     );
   const visible = activeCategory === null
@@ -2790,14 +2851,56 @@ export default function Home() {
     ? Math.ceil(selected.price * (1 + selectedInstallmentPlan.surcharge))
     : 0;
   const rentalPrice = installmentTotal / installmentMonths;
-  const installmentLabel = locale === "ro"
-    ? installmentMonths === 12 ? "1 an" : `${installmentMonths} luni`
-    : locale === "ru"
-      ? installmentMonths === 12 ? "1 год" : `${installmentMonths} мес.`
-      : installmentMonths === 12 ? "1 year" : `${installmentMonths} months`;
-  const rentalHref = selected
+  const siteRentalPrice = selected ? monthlyRentalPrice(selected.price) : 0;
+  const rentalServicesFee = { min: 40, max: 40 };
+  const rentalPriceWithServices = {
+    min: siteRentalPrice + rentalServicesFee.min,
+    max: siteRentalPrice + rentalServicesFee.max,
+  };
+  const rentalMonthlyPriceLabel = rentalServiceTier === "with-services"
+    ? `€${rentalPriceWithServices.min.toFixed(2)}`
+    : `€${siteRentalPrice.toFixed(2)}`;
+  const rentalServicesSummary = rentalServiceTier === "with-services"
+    ? {
+        title: locale === "ro" ? "Incluse în abonament" : locale === "ru" ? "Включено в подписку" : "Included in the subscription",
+        items: locale === "ro"
+          ? ["Găzduire web — €10", "Mentenanță tehnică — €20", "Securitate și backup — €10"]
+          : locale === "ru"
+            ? ["Веб-хостинг — €10", "Техническая поддержка — €20", "Безопасность и резервные копии — €10"]
+            : ["Web hosting — €10", "Technical maintenance — €20", "Security and backups — €10"],
+      }
+    : {
+        title: locale === "ro" ? "Nu sunt incluse" : locale === "ru" ? "Не включено" : "Not included",
+        items: locale === "ro"
+          ? ["Găzduire web", "Mentenanță tehnică", "Securitate și backup"]
+          : locale === "ru"
+            ? ["Веб-хостинг", "Техническая поддержка", "Безопасность и резервные копии"]
+            : ["Web hosting", "Technical maintenance", "Security and backups"],
+      };
+  const installmentHref = selected
     ? `/contact?${new URLSearchParams({ project: selected.title, option: `installments-${installmentMonths}-months`, ...(locale === "ro" ? {} : { lang: locale }) })}`
     : contactHref;
+  const rentalHref = selected
+    ? `/contact?${new URLSearchParams({ project: selected.title, option: `site-rental-${rentalServiceTier}`, ...(locale === "ro" ? {} : { lang: locale }) })}`
+    : contactHref;
+  const paymentHref = paymentMode === "installments" ? installmentHref : rentalHref;
+  const paymentIncludes = paymentMode === "rental"
+    ? rentalServiceTier === "with-services"
+      ? locale === "ro"
+        ? ["Găzduire web", "Mentenanță tehnică", "Securitate și backup"]
+        : locale === "ru"
+          ? ["Веб-хостинг", "Техническая поддержка", "Безопасность и резервные копии"]
+          : ["Web hosting", "Technical maintenance", "Security and backups"]
+      : locale === "ro"
+        ? ["Site pregătit pentru utilizare", "Fără găzduire și mentenanță incluse", "Îți alegi propriul furnizor de servicii", "Poți activa serviciile ulterior"]
+        : locale === "ru"
+          ? ["Сайт готов к использованию", "Хостинг и техподдержка не включены", "Вы выбираете своего поставщика услуг", "Услуги можно подключить позже"]
+          : ["Website ready to use", "Hosting and maintenance not included", "Choose your own service provider", "Services can be activated later"]
+    : locale === "ro"
+      ? ["Devii proprietarul siteului", "Găzduire gratuită primele 2 luni", "Mentenanță tehnică lunară gratuită primele 2 luni", "Plată flexibilă în rate"]
+      : locale === "ru"
+        ? ["Сайт становится вашей собственностью", "Запуск и хостинг включены", "Ежемесячная техподдержка", "Гибкая оплата в рассрочку"]
+        : ["You own the website", "Launch and hosting included", "Monthly technical care", "Flexible installment payments"];
   const selectedDetail = selected
     ? locale === "ro"
       ? newProjectDetails[selected.id] ?? projectDetails[selected.id] ?? {
@@ -2832,6 +2935,7 @@ export default function Home() {
       setMobileOS(os === "android" || os === "ios" ? os : "all");
       setActiveCategory(categories[0] ?? null);
       setVisibleProjectCount(PROJECT_PAGE_SIZE);
+      if (projectId) setInstallmentMonths(12);
       setSelected(
         projectId
           ? (projects.find((project) => project.id === Number(projectId)) ??
@@ -2918,13 +3022,13 @@ export default function Home() {
         while (nextCount > 1 && rowsNeeded(widths.slice(0, nextCount), row.clientWidth) > 3) {
           nextCount -= 1;
         }
-      } else if (rowsNeeded(widths, row.clientWidth) > 2) {
+      } else if (rowsNeeded(widths, row.clientWidth) > 3) {
         const moreWidth =
           categoryMenuRef.current?.getBoundingClientRect().width ?? 150;
         const filtersWidth = Math.max(0, row.clientWidth - moreWidth - gap);
         nextCount = 1;
         for (let count = filters.length - 1; count >= 1; count -= 1) {
-          if (rowsNeeded(widths.slice(0, count), filtersWidth) <= 2) {
+          if (rowsNeeded(widths.slice(0, count), filtersWidth) <= 3) {
             nextCount = count;
             break;
           }
@@ -3014,6 +3118,7 @@ export default function Home() {
     window.history.pushState({}, "", url);
   };
   const openProject = (project: (typeof projects)[number]) => {
+    setInstallmentMonths(12);
     setSelected(project);
     const url = new URL(window.location.href);
     url.searchParams.set("proiect", projectSlugs[project.id]);
@@ -3152,9 +3257,7 @@ export default function Home() {
         </div>
       </div>
       <nav className="nav shell">
-        <a className="logo" href="#top" aria-label="mono/dev — pagina principală">
-          <span className="logo-mono">mono</span><span className="logo-dev">/dev</span>
-        </a>
+        <BrandLogo className="logo" href="#top" />
         <div className="nav-links">
           <a
             href="#proiecte"
@@ -3213,6 +3316,9 @@ export default function Home() {
             </button>
           ))}
         </div>
+        <a className="account-link" href={locale === "ro" ? "/cabinet" : `/cabinet?lang=${locale}`}>
+          <UserRound size={15} /> {{ ro: "Cabinet personal", ru: "Личный кабинет", en: "Personal area" }[locale]}
+        </a>
         <a className="nav-cta" href={contactHref}>
           <ShoppingBag size={16} /> {c.buyProject}
         </a>
@@ -3243,6 +3349,9 @@ export default function Home() {
             </a>
             <a href={contactHref} onClick={() => setMenu(false)}>
               {c.nav[2]}
+            </a>
+            <a className="mobile-account-link" href={locale === "ro" ? "/cabinet" : `/cabinet?lang=${locale}`} onClick={() => setMenu(false)}>
+              <UserRound size={16} /> {{ ro: "Cabinet personal", ru: "Личный кабинет", en: "Personal area" }[locale]}
             </a>
           </motion.div>
         )}
@@ -3413,6 +3522,12 @@ export default function Home() {
                   aria-pressed={sort === option.value}
                   onClick={(event) => {
                     setSort(option.value);
+                    if (option.value === "recommended") {
+                      const clicks = Number.parseInt(localStorage.getItem(recommendedClickStorageKey) ?? "0", 10) || 0;
+                      const nextClicks = clicks + 1;
+                      localStorage.setItem(recommendedClickStorageKey, String(nextClicks));
+                      if (nextClicks % 3 === 0) setRecommendedOrder(shuffledProjectIds());
+                    }
                     setVisibleProjectCount(PROJECT_PAGE_SIZE);
                     event.currentTarget.closest("details")?.removeAttribute("open");
                   }}
@@ -3527,8 +3642,11 @@ export default function Home() {
                     <span className="price-option-separator" aria-hidden="true">
                       {locale === "ro" ? "sau" : locale === "ru" ? "или" : "or"}
                     </span>
-                    <span className="price-rental">
-                      <b>€{monthlyInstallmentPrice(project.price)}<em>{c.perMonth}</em></b>
+                    <span
+                      className="price-rental"
+                      aria-label={locale === "ro" ? "Rată lunară pentru plata în 12 luni" : locale === "ru" ? "Ежемесячный платёж на 12 месяцев" : "Monthly payment over 12 months"}
+                    >
+                      <b>€{annualInstallmentPrice(project.price)}<em>{c.perMonth}</em></b>
                     </span>
                   </div>
                 </div>
@@ -3645,9 +3763,7 @@ export default function Home() {
       </section>
       <footer>
         <div className="shell footer-main">
-          <a className="footer-brand" href="#top" aria-label="mono/dev">
-            <span className="logo-mono">mono</span><span className="logo-dev">/dev</span>
-          </a>
+          <BrandLogo className="footer-brand" href="#top" inverse ariaLabel="mono/dev" />
           <nav className="footer-actions" aria-label={c.footer.navigation}>
             <a href="#proiecte">{c.footer.projects}</a>
             <a href="mailto:monodev@gmail.com">{c.footer.email}</a>
@@ -3673,6 +3789,9 @@ export default function Home() {
           >
             <motion.div
               className="modal modal-detailed"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="project-modal-title"
               initial={{ y: 30, scale: 0.97 }}
               animate={{ y: 0, scale: 1 }}
               exit={{ y: 20, opacity: 0 }}
@@ -3687,68 +3806,92 @@ export default function Home() {
               </button>
               <ProjectVisual project={selected} locale={locale} />
               <div className="modal-content">
-                <span className="kicker">
-                  {localType(selected.type, locale)} / {c.fullLicense}
-                </span>
+                <div className="modal-toolbar">
+                  <span className="kicker">{localType(selected.type, locale)}</span>
+                  <span className="modal-status"><i />{locale === "ro" ? "DISPONIBIL" : locale === "ru" ? "ЛИЦЕНЗИЯ ДОСТУПНА" : "LICENSE AVAILABLE"}</span>
+                </div>
                 <div className="modal-title-row">
-                  <h2>{selected.title}</h2>
+                  <AutoFitProjectTitle title={selected.title} />
                   <div className="modal-price">
                     <small>{c.fullPrice}</small>€{selected.price}
                   </div>
                 </div>
                 <p className="modal-summary">{selectedDetail.summary}</p>
                 <aside className="rental-offer" aria-label={c.rentalLabel}>
-                  <div className="installment-heading">
-                    <span>{c.rentalLabel}</span>
-                    <strong>{locale === "ro" ? "Calculează rata" : locale === "ru" ? "Рассчитайте платёж" : "Calculate your payment"}</strong>
+                  <div className="installment-side">
+                    <div className="installment-heading">
+                      <span>{locale === "ro" ? "ALEGE MODALITATEA" : locale === "ru" ? "ВЫБЕРИТЕ ВАРИАНТ" : "CHOOSE YOUR OPTION"}</span>
+                      <strong>{paymentMode === "installments"
+                        ? locale === "ro" ? "Cumpără în rate" : locale === "ru" ? "Купить в рассрочку" : "Buy in installments"
+                        : c.rentalLabel}</strong>
+                    </div>
+                    {paymentMode === "rental" && (
+                      <div className={`rental-services-summary ${rentalServiceTier === "without-services" ? "is-excluded" : ""}`} aria-live="polite">
+                        <b>{rentalServicesSummary.title}</b>
+                        <ul>
+                          {rentalServicesSummary.items.map((item) => (
+                            <li key={item}><span aria-hidden="true">{rentalServiceTier === "with-services" ? "✓" : "×"}</span>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                   <div className="installment-calculator">
-                    <div className="installment-options" role="radiogroup" aria-label={c.rentalLabel}>
-                      {installmentPlans.map((plan) => {
-                        const label = locale === "ro"
-                          ? plan.months === 12 ? "1 an" : `${plan.months} luni`
-                          : locale === "ru"
-                            ? plan.months === 12 ? "1 год" : `${plan.months} мес.`
-                            : plan.months === 12 ? "1 year" : `${plan.months} months`;
-                        return (
-                          <button
-                            key={plan.months}
-                            type="button"
-                            className={plan.months === installmentMonths ? "is-active" : ""}
-                            onClick={() => setInstallmentMonths(plan.months)}
-                            role="radio"
-                            aria-checked={plan.months === installmentMonths}
-                          >
-                            <b>{label}</b>
-                            <small>{plan.surcharge ? `+${plan.surcharge * 100}%` : locale === "ro" ? "fără cost" : locale === "ru" ? "без доплат" : "no extra cost"}</small>
-                          </button>
-                        );
-                      })}
+                    <div className="payment-mode-options" role="radiogroup" aria-label={locale === "ro" ? "Modalitate de plată" : locale === "ru" ? "Способ оплаты" : "Payment option"}>
+                      <button type="button" className={paymentMode === "installments" ? "is-active" : ""} onClick={() => setPaymentMode("installments")} role="radio" aria-checked={paymentMode === "installments"}>
+                        {locale === "ro" ? "Cumpără în rate" : locale === "ru" ? "В рассрочку" : "Installments"}
+                      </button>
+                      <button type="button" className={paymentMode === "rental" ? "is-active" : ""} onClick={() => setPaymentMode("rental")} role="radio" aria-checked={paymentMode === "rental"}>
+                        {c.rentalLabel}
+                      </button>
                     </div>
-                    <div className="installment-result" aria-live="polite">
-                      <div>
-                        <span>{locale === "ro" ? "Rata ta lunară" : locale === "ru" ? "Ваш ежемесячный платёж" : "Your monthly payment"}</span>
-                        <strong>€{rentalPrice.toFixed(2)}<em>{c.perMonth}</em></strong>
-                      </div>
-                      <p>
-                        {locale === "ro" ? "Total" : locale === "ru" ? "Итого" : "Total"} <b>€{installmentTotal}</b>
-                        {selectedInstallmentPlan.surcharge > 0 && ` · +${selectedInstallmentPlan.surcharge * 100}%`}
-                        <small> / {installmentLabel}</small>
-                      </p>
-                    </div>
+                    {paymentMode === "installments" ? (
+                      <>
+                        <div className="installment-options" role="radiogroup" aria-label={locale === "ro" ? "Perioada de plată" : locale === "ru" ? "Срок оплаты" : "Payment term"}>
+                          {installmentPlans.map((plan) => {
+                            const label = locale === "ro"
+                              ? `${plan.months} luni`
+                              : locale === "ru"
+                                ? plan.months === 12 ? "1 год" : `${plan.months} мес.`
+                                : plan.months === 12 ? "1 year" : `${plan.months} months`;
+                            return <button key={plan.months} type="button" className={plan.months === installmentMonths ? "is-active" : ""} onClick={() => setInstallmentMonths(plan.months)} role="radio" aria-checked={plan.months === installmentMonths}><b>{label}</b></button>;
+                          })}
+                        </div>
+                        <div className="installment-result" aria-live="polite"><div><span>{locale === "ro" ? "Rata lunara" : locale === "ru" ? "Ваш ежемесячный платёж" : "Your monthly payment"}</span><strong>€{rentalPrice.toFixed(2)}<em>{c.perMonth}</em></strong></div><p>{locale === "ro" ? "Total:" : locale === "ru" ? "Итого:" : "Total:"} <b>€{installmentTotal}</b></p></div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="rental-service-options" role="radiogroup" aria-label={locale === "ro" ? "Servicii pentru chirie" : locale === "ru" ? "Услуги для аренды" : "Rental services"}>
+                          <div className="rental-service-choice">
+                            <button type="button" className={`rental-service-option ${rentalServiceTier === "with-services" ? "is-active" : ""}`} onClick={() => setRentalServiceTier("with-services")} role="radio" aria-checked={rentalServiceTier === "with-services"}>
+                              <b>{locale === "ro" ? "Cu servicii suplimentare" : locale === "ru" ? "С дополнительными услугами" : "With additional services"}</b>
+                              <span className="rental-service-supplement">+€40{c.perMonth}</span>
+                            </button>
+                            <div className="rental-services-info" onMouseEnter={() => setRentalServicesInfoOpen("with-services")} onMouseLeave={() => setRentalServicesInfoOpen(null)}>
+                              <button type="button" className="rental-services-info-button" aria-label={locale === "ro" ? "Vezi serviciile incluse" : locale === "ru" ? "Посмотреть включённые услуги" : "View included services"} aria-expanded={rentalServicesInfoOpen === "with-services"} aria-describedby={rentalServicesInfoOpen === "with-services" ? "with-services-tooltip" : undefined} onClick={() => setRentalServicesInfoOpen("with-services")} onFocus={() => setRentalServicesInfoOpen("with-services")} onBlur={() => setRentalServicesInfoOpen(null)}>i</button>
+                              {rentalServicesInfoOpen === "with-services" && <div id="with-services-tooltip" className="rental-services-tooltip" role="tooltip"><strong>{locale === "ro" ? "Incluse în abonament" : locale === "ru" ? "Включено в подписку" : "Included in the subscription"}</strong><span>{locale === "ro" ? "Găzduire web — €10" : locale === "ru" ? "Веб-хостинг — €10" : "Web hosting — €10"}</span><span>{locale === "ro" ? "Mentenanță tehnică — €20" : locale === "ru" ? "Техническая поддержка — €20" : "Technical maintenance — €20"}</span><span>{locale === "ro" ? "Securitate și backup — €10" : locale === "ru" ? "Безопасность и резервные копии — €10" : "Security and backups — €10"}</span></div>}
+                            </div>
+                          </div>
+                          <div className="rental-service-choice">
+                            <button type="button" className={`rental-service-option ${rentalServiceTier === "without-services" ? "is-active" : ""}`} onClick={() => setRentalServiceTier("without-services")} role="radio" aria-checked={rentalServiceTier === "without-services"}>
+                              <b>{locale === "ro" ? "Fără servicii suplimentare" : locale === "ru" ? "Без дополнительных услуг" : "Without additional services"}</b>
+                            </button>
+                            <div className="rental-services-info" onMouseEnter={() => setRentalServicesInfoOpen("without-services")} onMouseLeave={() => setRentalServicesInfoOpen(null)}>
+                              <button type="button" className="rental-services-info-button" aria-label={locale === "ro" ? "Vezi serviciile neincluse" : locale === "ru" ? "Посмотреть услуги, которые не включены" : "View services not included"} aria-expanded={rentalServicesInfoOpen === "without-services"} aria-describedby={rentalServicesInfoOpen === "without-services" ? "without-services-tooltip" : undefined} onClick={() => setRentalServicesInfoOpen("without-services")} onFocus={() => setRentalServicesInfoOpen("without-services")} onBlur={() => setRentalServicesInfoOpen(null)}>i</button>
+                              {rentalServicesInfoOpen === "without-services" && <div id="without-services-tooltip" className="rental-services-tooltip" role="tooltip"><strong>{locale === "ro" ? "Nu sunt incluse" : locale === "ru" ? "Не включено" : "Not included"}</strong><span>{locale === "ro" ? "Găzduire web" : locale === "ru" ? "Веб-хостинг" : "Web hosting"}</span><span>{locale === "ro" ? "Mentenanță tehnică" : locale === "ru" ? "Техническая поддержка" : "Technical maintenance"}</span><span>{locale === "ro" ? "Securitate și backup" : locale === "ru" ? "Безопасность и резервные копии" : "Security and backups"}</span></div>}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="installment-result rental-result" aria-live="polite"><div><span>{locale === "ro" ? "Chiria ta lunară" : locale === "ru" ? "Ваша ежемесячная аренда" : "Your monthly rental"}</span><strong>{rentalMonthlyPriceLabel}<em>{c.perMonth}</em></strong></div></div>
+                      </>
+                    )}
                   </div>
-                  <ul>
-                    {c.rentalIncludes.map((item) => <li key={item}><Check />{item}</li>)}
-                  </ul>
+                  {paymentMode !== "rental" && <ul>
+                    {paymentIncludes.map((item) => <li key={item}><Check />{item}</li>)}
+                  </ul>}
                 </aside>
-                <div className="detail-sections">
-                  {selectedDetail.sections
-                    .filter(
-                      (section) =>
-                        showProductReferences ||
-                        !productReferenceTitles.has(section.title),
-                    )
-                    .map((section) => (
+                <div className="detail-sections" aria-label={locale === "ro" ? "Ce primești" : locale === "ru" ? "Что входит" : "What is included"}>
+                  {selectedDetail.sections.map((section) => (
                     <section key={section.title}>
                       <h3>{section.title}</h3>
                       <ul>
@@ -3788,8 +3931,8 @@ export default function Home() {
                   <a className="buy-link" href={contactHref}>
                     {c.buyFor} €{selected.price} <ArrowRight />
                   </a>
-                  <a className="rent-link" href={rentalHref}>
-                    <span>{c.rentFor} €{rentalPrice.toFixed(2)}<small>{c.perMonth}</small></span> <ArrowRight />
+                  <a className="rent-link" href={paymentHref}>
+                    <span>{paymentMode === "installments" ? `${locale === "ro" ? "Cumpără în rate de la" : locale === "ru" ? "Купить в рассрочку от" : "Buy in installments from"} €${rentalPrice.toFixed(2)}` : `${c.rentFor} ${rentalMonthlyPriceLabel}`}<small>{c.perMonth}</small></span> <ArrowRight />
                   </a>
                 </div>
               </div>

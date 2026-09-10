@@ -1,16 +1,16 @@
-# Graph Report - vanzare proiecte  (2026-09-09)
+# Graph Report - vanzare proiecte  (2026-09-10)
 
 ## Corpus Check
-- 95 files · ~1,855,244 words
+- 109 files · ~1,394,375 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1031 nodes · 2027 edges · 83 communities (68 shown, 15 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 149 edges (avg confidence: 0.85)
+- 1109 nodes · 2113 edges · 97 communities (81 shown, 16 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 147 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `af4cfaff`
+- Built from commit: `cb59f608`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,13 +32,13 @@
 - Home
 - next.config.ts
 - next-env.d.ts
+- dl
+- c0
 - Hi
-- Ki
-- Ql
-- h
+- L
 - L0
-- Nd
 - J
+- Ud
 - proxy.ts
 - audit-translations.mjs
 - audit-showcase.mjs
@@ -55,26 +55,40 @@
 - audit-interactions-recheck.mjs
 - refresh-32-project-covers.mjs
 - probe-nord.mjs
-- Hd
+- Bd
 - optimize-png-lossless.mjs
 - audit-control-source.mjs
 - Q: primesc asa eroara la pornire proiect, de ce? middleware-to-proxy internal error getWorkerEntryExportTypes
 - probe-nord-product.mjs
 - audit-bandwidth.mjs
-- Wl
+- Q: pretul vreau sa fie in rand cu titlul, cum era
 - probe-nord-dom.mjs
 - academia/.vite/manifest.json
 - flow-crm/.vite/manifest.json
 - Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?
 - medora-clinic/.vite/manifest.json
-- du
+- Q: cand userul aleje cu servicii sau fara, sa i se afiseze aici ce intra in aceste servicii. Fix textul din i sa se arate
 - audit-showcase-locales.mjs
-- i18n.ts
+- intrebari/page.tsx
 - Audit Network – localhost:3000
 - live-project-preview.tsx
-- Bd
+- optimize-images-aggressive.mjs
+- zr
 - Audit Network – localhost:3000
-- _f
+- Wl
+- Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus
+- i18n.ts
+- Q: vreau mereu cand deschide un proiect, sa fie default 12 luni selectat; textul Cumpără în rate sa fie cu litere mari totul
+- Q: aici textul schimbal in de la
+- Q: butonul I fal de 2 ori mai mic
+- cabinet/layout.tsx
+- Nd
+- showcase-favicons.test.mjs
+- Ki
+- h
+- Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta
+- ss
+- Il
 - Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are.
 - sync-showcase.mjs
 - Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect
@@ -90,7 +104,7 @@
 3. `e()` - 47 edges
 4. `zr()` - 46 edges
 5. `n()` - 27 edges
-6. `scripts` - 25 edges
+6. `scripts` - 26 edges
 7. `u()` - 24 edges
 8. `rl()` - 23 edges
 9. `Ud()` - 22 edges
@@ -111,7 +125,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (83 total, 15 thin omitted)
+## Communities (97 total, 16 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.06
@@ -123,23 +137,23 @@ Nodes (10): delivery, GardenCopy, gardenDescriptions(), GardenDetail, gardenDeta
 
 ### Community 2 - "scripts"
 Cohesion: 0.04
-Nodes (44): drizzle-orm, framer-motion, lucide-react, magic-string, dependencies, drizzle-orm, framer-motion, lucide-react (+36 more)
+Nodes (45): drizzle-orm, framer-motion, lucide-react, magic-string, dependencies, drizzle-orm, framer-motion, lucide-react (+37 more)
 
 ### Community 3 - "e"
-Cohesion: 0.06
-Nodes (95): ai(), Al(), at(), Cc(), cn(), Cu(), da(), Dc() (+87 more)
+Cohesion: 0.08
+Nodes (78): Hd(), C(), ai(), Al(), at(), cn(), cs(), Cu() (+70 more)
 
 ### Community 4 - "route.ts"
 Cohesion: 0.39
 Nodes (5): getDb(), GET(), POST(), toRouteErrorMessage(), notes
 
 ### Community 5 - "app/page.tsx"
-Cohesion: 0.10
-Nodes (20): categorySlugs, cleanFilterCopy, filterCopy, filters, gamesPlatformCopy, hiddenCategories, launchProjectIds, MobileOS (+12 more)
+Cohesion: 0.08
+Nodes (22): categorySlugs, cleanFilterCopy, filterCopy, filters, gamesPlatformCopy, hiddenCategories, installmentPlans, launchProjectIds (+14 more)
 
 ### Community 6 - "qd"
-Cohesion: 0.08
-Nodes (37): qd(), Ac(), ad(), bo(), ci(), cs(), df(), Em() (+29 more)
+Cohesion: 0.06
+Nodes (34): qd(), A0(), ad(), bs(), ci(), De(), dm(), ds() (+26 more)
 
 ### Community 7 - "worker/index.ts"
 Cohesion: 0.29
@@ -162,36 +176,36 @@ Cohesion: 0.17
 Nodes (10): devLockPath, extraArgs, findAvailablePort(), hasExplicitHost, portIsAvailable(), refreshScript, root, server (+2 more)
 
 ### Community 15 - "Home"
-Cohesion: 0.28
-Nodes (9): localDescription(), localizedDetail(), localType(), Home(), isLocalHost(), isServerHost(), monthlyInstallmentPrice(), ProjectVisual() (+1 more)
+Cohesion: 0.32
+Nodes (8): localDescription(), localizedDetail(), localType(), annualInstallmentPrice(), Home(), monthlyRentalPrice(), ProjectVisual(), shuffledProjectIds()
 
-### Community 18 - "Hi"
-Cohesion: 0.13
-Nodes (21): Aa(), An(), bs(), Ca(), cd(), e0(), f0(), Hi() (+13 more)
+### Community 18 - "dl"
+Cohesion: 0.22
+Nodes (14): _0(), ce(), dl(), ee(), Es(), Ff(), If(), Mu() (+6 more)
 
-### Community 19 - "Ki"
+### Community 19 - "c0"
+Cohesion: 0.47
+Nodes (11): bc(), c0(), H0(), Lt(), Ru(), su(), wr(), yc() (+3 more)
+
+### Community 20 - "Hi"
 Cohesion: 0.15
-Nodes (16): Ae(), Gc(), Ht(), id(), Is(), K0(), Ke(), Ki() (+8 more)
+Nodes (18): Aa(), Ca(), e0(), f0(), Hi(), i0(), In(), jf() (+10 more)
 
-### Community 20 - "Ql"
-Cohesion: 0.19
-Nodes (20): Bl(), Bu(), Ed(), Gu(), hd(), Hu(), Il(), t() (+12 more)
-
-### Community 21 - "h"
-Cohesion: 0.06
-Nodes (68): _0(), A0(), ar(), au(), bc(), Bi(), br(), c0() (+60 more)
+### Community 21 - "L"
+Cohesion: 0.33
+Nodes (6): h(), L(), x(), L(), nm(), um()
 
 ### Community 22 - "L0"
-Cohesion: 0.23
-Nodes (17): _a(), ao(), bd(), Ea(), eo(), fr(), G0(), ga() (+9 more)
+Cohesion: 0.20
+Nodes (19): _a(), ao(), bd(), Ea(), eo(), fr(), G0(), ga() (+11 more)
 
-### Community 23 - "Nd"
-Cohesion: 0.25
-Nodes (10): Cd(), Nd(), h(), x(), yl(), j(), M(), w() (+2 more)
+### Community 23 - "J"
+Cohesion: 0.29
+Nodes (18): J(), Bl(), dd(), Ed(), hd(), Je(), md(), mo() (+10 more)
 
-### Community 25 - "J"
-Cohesion: 0.17
-Nodes (18): C(), ft(), J(), Tl(), Hl(), nl(), O(), q() (+10 more)
+### Community 25 - "Ud"
+Cohesion: 0.16
+Nodes (14): cf(), O(), q(), r(), Ud(), Cl(), D(), ft() (+6 more)
 
 ### Community 27 - "audit-translations.mjs"
 Cohesion: 0.13
@@ -233,9 +247,9 @@ Nodes (3): args, base, only
 Cohesion: 0.50
 Nodes (3): output, projects, registry
 
-### Community 46 - "Hd"
-Cohesion: 0.19
-Nodes (13): cf(), e1(), h(), Hd(), L(), Nl(), x(), L() (+5 more)
+### Community 46 - "Bd"
+Cohesion: 0.67
+Nodes (4): Bd(), p(), Yd(), p()
 
 ### Community 47 - "optimize-png-lossless.mjs"
 Cohesion: 0.33
@@ -253,9 +267,9 @@ Nodes (4): Answer, Outcome, Q: primesc asa eroara la pornire proiect, de ce? mid
 Cohesion: 0.25
 Nodes (6): byKind, limits, oversized, publicRoot, records, total
 
-### Community 55 - "Wl"
-Cohesion: 0.17
-Nodes (19): ct(), D0(), jc(), jo(), Ku(), ms(), Pa(), rs() (+11 more)
+### Community 55 - "Q: pretul vreau sa fie in rand cu titlul, cum era"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: pretul vreau sa fie in rand cu titlul, cum era, Source Nodes
 
 ### Community 61 - "academia/.vite/manifest.json"
 Cohesion: 0.05
@@ -273,17 +287,17 @@ Nodes (4): Answer, Outcome, Q: De ce arata rau /neo-booking/ pe portul 3004, dar
 Cohesion: 0.05
 Nodes (45): app/page.tsx, file, imports, isDynamicEntry, name, src, _framework-D_rUT4EX.js, file (+37 more)
 
-### Community 67 - "du"
+### Community 67 - "Q: cand userul aleje cu servicii sau fara, sa i se afiseze aici ce intra in aceste servicii. Fix textul din i sa se arate"
 Cohesion: 0.40
-Nodes (6): co(), du(), hf(), oo(), Rn(), Sa()
+Nodes (4): Answer, Outcome, Q: cand userul aleje cu servicii sau fara, sa i se afiseze aici ce intra in aceste servicii. Fix textul din i sa se arate, Source Nodes
 
 ### Community 68 - "audit-showcase-locales.mjs"
 Cohesion: 0.29
 Nodes (4): locales, projects, registry, report
 
-### Community 69 - "i18n.ts"
-Cohesion: 0.15
-Nodes (12): contactCopy, copy, descriptions, Locale, locales, romanianTypeMap, showcaseCopy, typeMap (+4 more)
+### Community 69 - "intrebari/page.tsx"
+Cohesion: 0.18
+Nodes (9): BrandLogo(), BrandLogoProps, content, contactCopy, Locale, locales, categories, Category (+1 more)
 
 ### Community 70 - "Audit Network – localhost:3000"
 Cohesion: 0.40
@@ -293,25 +307,77 @@ Nodes (4): Audit Network – localhost:3000, Candidați de optimizare, Catalog, 
 Cohesion: 0.50
 Nodes (4): gardenPreviewSources, StaticProjectPreview(), transformed(), widths
 
-### Community 73 - "Bd"
-Cohesion: 0.40
-Nodes (6): Bd(), p(), D(), pt(), Yd(), p()
+### Community 72 - "optimize-images-aggressive.mjs"
+Cohesion: 0.17
+Nodes (10): after, before, changed, concurrency, extensions, files, optimize(), results (+2 more)
+
+### Community 73 - "zr"
+Cohesion: 0.11
+Nodes (36): Ac(), au(), bo(), br(), Cc(), D(), Dc(), dr() (+28 more)
 
 ### Community 74 - "Audit Network – localhost:3000"
 Cohesion: 0.40
 Nodes (4): Audit Network – localhost:3000, Candidați de optimizare, Catalog, Toate proiectele
 
-### Community 75 - "_f"
+### Community 75 - "Wl"
+Cohesion: 0.13
+Nodes (26): ar(), ct(), D0(), eu(), io(), Is(), jc(), jo() (+18 more)
+
+### Community 76 - "Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus, Source Nodes
+
+### Community 77 - "i18n.ts"
+Cohesion: 0.29
+Nodes (6): copy, descriptions, romanianTypeMap, showcaseCopy, typeMap, visualCopy
+
+### Community 78 - "Q: vreau mereu cand deschide un proiect, sa fie default 12 luni selectat; textul Cumpără în rate sa fie cu litere mari totul"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: vreau mereu cand deschide un proiect, sa fie default 12 luni selectat; textul Cumpără în rate sa fie cu litere mari totul, Source Nodes
+
+### Community 79 - "Q: aici textul schimbal in de la"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: aici textul schimbal in de la, Source Nodes
+
+### Community 80 - "Q: butonul I fal de 2 ori mai mic"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: butonul I fal de 2 ori mai mic, Source Nodes
+
+### Community 82 - "Nd"
+Cohesion: 0.19
+Nodes (17): Cd(), e1(), Nl(), Nd(), ft(), h(), Tl(), x() (+9 more)
+
+### Community 83 - "showcase-favicons.test.mjs"
+Cohesion: 0.40
+Nodes (3): registry, root, visibleProjects
+
+### Community 84 - "Ki"
+Cohesion: 0.10
+Nodes (26): Ae(), An(), cd(), co(), du(), _f(), Gc(), hf() (+18 more)
+
+### Community 85 - "h"
 Cohesion: 0.15
-Nodes (16): _f(), Ff(), If(), $n(), of(), p0(), pf(), qu() (+8 more)
+Nodes (19): _e(), fe(), Gi(), h(), li(), M0(), Mr(), mt() (+11 more)
+
+### Community 86 - "Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta, Source Nodes
+
+### Community 87 - "ss"
+Cohesion: 0.15
+Nodes (13): df(), Em(), gd(), ir(), of(), pf(), qu(), ss() (+5 more)
+
+### Community 88 - "Il"
+Cohesion: 0.25
+Nodes (9): Bi(), Bu(), Gu(), Hu(), Il(), t(), Rf(), Tm() (+1 more)
 
 ### Community 135 - "Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are., Source Nodes
 
 ### Community 162 - "sync-showcase.mjs"
-Cohesion: 0.10
-Nodes (23): normalizeNextExport(), writeProjectPreview(), buildProject(), buildRequested, changedOnly, exists(), findOutput(), ignoredNames (+15 more)
+Cohesion: 0.07
+Nodes (34): registry, root, normalizeNextExport(), writeProjectPreview(), ensureShowcaseFavicon(), escapeXml(), exists(), faviconSvg() (+26 more)
 
 ### Community 179 - "Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
 Cohesion: 0.40
@@ -326,22 +392,24 @@ Cohesion: 0.15
 Nodes (12): catalogRoot, configs, folders, known, pagePath, pathEntries, priceByDomain, projectEntries (+4 more)
 
 ## Knowledge Gaps
-- **377 isolated node(s):** `metadata`, `GardenDetail`, `GardenCopy`, `GardenProject`, `headings` (+372 more)
+- **418 isolated node(s):** `BrandLogoProps`, `metadata`, `content`, `metadata`, `GardenDetail` (+413 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Work-memory lessons
 
 **Preferred sources** — corroborated by past sessions; start here.
-- `locales` (2× useful, score=1.773544695) _(code changed — re-verify)_
-- `projectSlugs` (2× useful, score=1.773544695) _(code changed — re-verify)_
+- `RentalServiceTier` (3× useful, score=2.945709365) _(code changed — re-verify)_
+- `projectSlugs` (2× useful, score=1.701020714) _(code changed — re-verify)_
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `qd()` connect `qd` to `e`, `du`, `Bd`, `index-CKwsJXdb.js`, `_f`, `Hd`, `Hi`, `Ki`, `Ql`, `h`, `L0`, `Nd`, `Wl`, `J`?**
-  _High betweenness centrality (0.121) - this node is a cross-community bridge._
+- **Why does `qd()` connect `qd` to `e`, `index-CKwsJXdb.js`, `zr`, `Wl`, `Bd`, `Nd`, `dl`, `Hi`, `Ki`, `L0`, `J`, `c0`, `Ud`, `ss`, `Il`, `h`?**
+  _High betweenness centrality (0.125) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `devDependencies` to `scripts`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `Ud()` connect `Ud` to `index-CKwsJXdb.js`, `Nd`, `e`, `Ki`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Are the 20 inferred relationships involving `qd()` (e.g. with `ad()` and `cd()`) actually correct?**
   _`qd()` has 20 INFERRED edges - model-reasoned connections that need verification._
@@ -351,5 +419,3 @@ _Questions this graph is uniquely positioned to answer:_
   _`zr()` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 15 inferred relationships involving `n()` (e.g. with `ai()` and `Cu()`) actually correct?**
   _`n()` has 15 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `metadata`, `GardenDetail`, `GardenCopy` to the rest of the system?**
-  _377 weakly-connected nodes found - possible documentation gaps or missing edges._

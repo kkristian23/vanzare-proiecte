@@ -13,3 +13,5 @@ Product and editorial photography is stored locally and used under the Pexels Li
 - Rachel Claire — https://www.pexels.com/photo/5490360/
 
 The PopHaus Open Graph card (`/og.png`) is an original AI-generated campaign visual created for this fictional project.
+
+Responsive derivatives in `/images/responsive/` were generated locally from the licensed source photographs above. Each photograph has 480 px and 900 px variants in WebP and AVIF; no additional third-party image source is used.

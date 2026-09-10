@@ -65,12 +65,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Residential property management portals — https://www.buildium.com/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -97,12 +91,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Simulated payment with an updated balance",
               "Validated meter readings",
               "Consumption history and downloadable bills"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Premier Energy — https://premierenergy.md/"
             ]
           },
           {
@@ -135,12 +123,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Greko Fresh / OpenTable — https://www.opentable.com/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -167,12 +149,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Products and order notes",
               "Zone-based delivery fees or pickup",
               "Orders with simulated preparation stages"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Straus.md — https://straus.md/"
             ]
           },
           {
@@ -205,12 +181,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "RezervaMasa.md — https://rezervamasa.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -237,12 +207,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "An interactive schematic map",
               "Price, transport and green-space layers",
               "An indicative estimate and export"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Zillow / Rightmove — https://www.rightmove.co.uk/"
             ]
           },
           {
@@ -275,12 +239,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "999.md Real Estate — https://999.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -307,12 +265,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Combined filters",
               "Property profiles",
               "Comparison of floor area, rooms and price per m²"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Immobiliare.md — https://immobiliare.md/"
             ]
           },
           {
@@ -345,12 +297,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Coursera / Teachable — https://www.coursera.org/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -377,12 +323,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Reading modules",
               "An assessment unlocked through progress",
               "A downloadable demonstration completion record"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "MLearn — https://mlearn.gov.md/"
             ]
           },
           {
@@ -415,12 +355,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "TiRoDemy — https://tirodemy.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -447,12 +381,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Glaze and inscription choices",
               "Item quantities and gift packaging",
               "Orders that retain the selected options"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Etsy — https://www.etsy.com/"
             ]
           },
           {
@@ -485,12 +413,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Cât Costă — https://catcosta.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -517,12 +439,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Publish and withdraw demo listings",
               "Favorites",
               "Reveal contact details"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "999.md — https://999.md/"
             ]
           },
           {
@@ -555,12 +471,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Booking.com Moldova — https://www.booking.com/country/md.html"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -587,12 +497,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Neighborhood filters",
               "A personal collection",
               "Accommodation requests with history and cancellation"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Sonder — https://www.sonder.com/"
             ]
           },
           {
@@ -625,12 +529,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Manhattan Hotel — https://manhattan-hotel.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -657,12 +555,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Filtering by guest capacity",
               "Night count and total-price calculation",
               "Stay history and cancellation"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Park Suites — https://parksuites.md/en-gb/"
             ]
           },
           {
@@ -695,12 +587,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "AUTODOC Europe — https://www.autodoc.co.uk/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -727,12 +613,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Categories and warehouses",
               "Quantities limited by stock",
               "Volume discounts and downloadable quotations"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Signeda — https://www.signeda.md/"
             ]
           },
           {
@@ -765,12 +645,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "FixBox.md — https://fixbox.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -797,12 +671,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Make, model and engine selection",
               "Demonstration compatibility filters",
               "Cart, quantities and order history"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "AutoDoc.md — https://autodoc.md/"
             ]
           },
           {
@@ -835,12 +703,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Close — https://www.close.com/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -867,12 +729,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Editable contacts",
               "Subscription management",
               "Local demo campaigns for eligible recipients"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "HubSpot — https://www.hubspot.com/"
             ]
           },
           {
@@ -905,12 +761,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Pipedrive — https://www.pipedrive.com/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -937,12 +787,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Matching by specialty, language and consultation type",
               "Demo appointment booking",
               "A visit agenda"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Zocdoc — https://www.zocdoc.com/"
             ]
           },
           {
@@ -975,12 +819,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Doctolib — https://www.doctolib.fr/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -1007,12 +845,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Search by test name or code",
               "A basket of selected tests",
               "Collection-center selection and request history"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Clinica Sante — https://www.sante.md/"
             ]
           },
           {
@@ -1045,12 +877,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Medpark — https://medpark.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -1077,12 +903,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Demo ticket issuance",
               "Attendee check-in and cancellation",
               "CSV export and event capacity tracking"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "Eventbrite — https://www.eventbrite.com/"
             ]
           },
           {
@@ -1115,12 +935,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Product reference",
-            "items": [
-              "Fest.md — https://www.fest.md/"
-            ]
-          },
-          {
             "title": "What the buyer receives",
             "items": [
               "Independent, editable source code",
@@ -1147,12 +961,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Event filtering",
               "Ticket categories and quantities",
               "Saved demo orders and downloadable confirmations"
-            ]
-          },
-          {
-            "title": "Product reference",
-            "items": [
-              "iTicket — https://iticket.md/"
             ]
           },
           {
@@ -1232,12 +1040,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Порталы управления жилыми домами — https://www.buildium.com/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1264,12 +1066,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Имитация оплаты с обновлением баланса",
               "Проверка показаний счётчика",
               "История потребления и скачивание счетов"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Premier Energy — https://premierenergy.md/"
             ]
           },
           {
@@ -1302,12 +1098,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Greko Fresh / OpenTable — https://www.opentable.com/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1334,12 +1124,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Блюда и комментарии к заказу",
               "Стоимость доставки по зонам или самовывоз",
               "Заказы с имитацией этапов приготовления"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Straus.md — https://straus.md/"
             ]
           },
           {
@@ -1372,12 +1156,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "RezervaMasa.md — https://rezervamasa.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1404,12 +1182,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Интерактивная схематическая карта",
               "Слои цен, транспорта и зелёных зон",
               "Ориентировочный расчёт и экспорт"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Zillow / Rightmove — https://www.rightmove.co.uk/"
             ]
           },
           {
@@ -1442,12 +1214,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "999.md Недвижимость — https://999.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1474,12 +1240,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Комбинированные фильтры",
               "Карточки объектов",
               "Сравнение площади, числа комнат и цены за м²"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Immobiliare.md — https://immobiliare.md/"
             ]
           },
           {
@@ -1512,12 +1272,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Coursera / Teachable — https://www.coursera.org/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1544,12 +1298,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Учебные модули для чтения",
               "Открытие проверки знаний по мере прохождения",
               "Скачивание демонстрационного подтверждения прохождения"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "MLearn — https://mlearn.gov.md/"
             ]
           },
           {
@@ -1582,12 +1330,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "TiRoDemy — https://tirodemy.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1614,12 +1356,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Выбор глазури и надписи",
               "Количество изделий и подарочная упаковка",
               "Заказы с сохранением выбранных параметров"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Etsy — https://www.etsy.com/"
             ]
           },
           {
@@ -1652,12 +1388,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Cât Costă — https://catcosta.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1684,12 +1414,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Публикация и снятие демонстрационных объявлений",
               "Избранное",
               "Просмотр контактных данных"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "999.md — https://999.md/"
             ]
           },
           {
@@ -1722,12 +1446,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Booking.com Moldova — https://www.booking.com/country/md.html"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1754,12 +1472,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Фильтрация по районам",
               "Личная подборка",
               "Заявки на проживание с историей и отменой"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Sonder — https://www.sonder.com/"
             ]
           },
           {
@@ -1792,12 +1504,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Manhattan Hotel — https://manhattan-hotel.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1824,12 +1530,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Фильтрация по числу гостей",
               "Расчёт количества ночей и общей стоимости",
               "История проживания и отмена"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Park Suites — https://parksuites.md/en-gb/"
             ]
           },
           {
@@ -1862,12 +1562,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "AUTODOC Europe — https://www.autodoc.co.uk/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1894,12 +1588,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Категории и склады",
               "Количество в пределах складского остатка",
               "Скидки за объём и скачивание коммерческого предложения"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Signeda — https://www.signeda.md/"
             ]
           },
           {
@@ -1932,12 +1620,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "FixBox.md — https://fixbox.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -1964,12 +1646,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Выбор марки, модели и двигателя",
               "Демонстрационная фильтрация совместимости",
               "Корзина, количество товаров и история заказов"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "AutoDoc.md — https://autodoc.md/"
             ]
           },
           {
@@ -2002,12 +1678,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Close — https://www.close.com/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -2034,12 +1704,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Редактирование контактов",
               "Управление подпиской",
               "Локальные демокампании для подходящих получателей"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "HubSpot — https://www.hubspot.com/"
             ]
           },
           {
@@ -2072,12 +1736,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Pipedrive — https://www.pipedrive.com/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -2104,12 +1762,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Подбор по специальности, языку и формату консультации",
               "Демонстрационная запись на приём",
               "Расписание визитов"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Zocdoc — https://www.zocdoc.com/"
             ]
           },
           {
@@ -2142,12 +1794,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Doctolib — https://www.doctolib.fr/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -2174,12 +1820,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Поиск по названию или коду анализа",
               "Корзина выбранных исследований",
               "Выбор пункта сдачи анализов и история заявок"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Clinica Sante — https://www.sante.md/"
             ]
           },
           {
@@ -2212,12 +1852,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Medpark — https://medpark.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -2244,12 +1878,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Выпуск демонстрационных билетов",
               "Отметка о прибытии и отмена билета",
               "Экспорт CSV и учёт вместимости события"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Eventbrite — https://www.eventbrite.com/"
             ]
           },
           {
@@ -2282,12 +1910,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
             ]
           },
           {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "Fest.md — https://www.fest.md/"
-            ]
-          },
-          {
             "title": "Что получает покупатель",
             "items": [
               "Отдельный редактируемый исходный код",
@@ -2314,12 +1936,6 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
               "Фильтрация событий",
               "Категории и количество билетов",
               "Сохранение демозаказов и скачивание подтверждений"
-            ]
-          },
-          {
-            "title": "Продукт для вдохновения",
-            "items": [
-              "iTicket — https://iticket.md/"
             ]
           },
           {

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=22.13.0 <24"
   },
   "scripts": {
     "audit:serve": "node scripts/serve-audit.mjs",
@@ -23,6 +23,7 @@
     "prebuild": "node scripts/project-previews.mjs",
     "build": "vinext build",
     "showcase:sync": "node scripts/sync-showcase.mjs",
+    "showcase:favicons": "node scripts/apply-showcase-favicons.mjs",
     "showcase:refresh": "npm run showcase:sync -- --build --strict && npm run build",
     "start": "node scripts/start-server.mjs start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs tests/normalize-next-export.test.mjs",

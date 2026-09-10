@@ -1,2 +1,0 @@
-:HL["/pophaus/_next/static/chunks/0o8u22qaf9~by.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"locale","param":{"type":"d","key":"ru","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"blog/inside-a-colourful-home","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"_RLkvzUbjw2rIOJJbqPSv"}

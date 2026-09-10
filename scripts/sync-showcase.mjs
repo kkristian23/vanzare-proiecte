@@ -4,6 +4,7 @@ import process from "node:process";
 import { spawn } from "node:child_process";
 import { writeProjectPreview } from "./project-previews.mjs";
 import { normalizeNextExport } from "./normalize-next-export.mjs";
+import { ensureShowcaseFavicon } from "./showcase-favicons.mjs";
 
 const root = process.cwd();
 const registryPath = path.join(root, "showcase-projects", "registry.json");
@@ -234,6 +235,7 @@ for (const project of registry) {
   }
     await normalizeNextExport(destination);
     await rewriteTree(destination, project.slug);
+    await ensureShowcaseFavicon(destination, project);
     // Next 14/15 requests the base-path root payload as /project.txt.
     if (await exists(path.join(destination, "index.txt"))) {
       await cp(path.join(destination, "index.txt"), path.join(publicRoot, `${project.slug}.txt`));

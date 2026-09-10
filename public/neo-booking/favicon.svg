@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NB">
+  <rect width="64" height="64" rx="15" fill="#1b100a"/>
+  <path d="M8 50 50 8h6v12L20 56H8Z" fill="#d99a45" opacity=".22"/>
+  <circle cx="51" cy="13" r="5" fill="#d99a45"/>
+  <text x="32" y="41" fill="#d99a45" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="800" text-anchor="middle" letter-spacing="-2">NB</text>
+</svg>

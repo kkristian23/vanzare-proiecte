@@ -21,12 +21,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Portaluri de administrare rezidențială — https://www.buildium.com/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -52,12 +46,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Achitare simulată cu sold actualizat",
           "indici validați",
           "istoric de consum și facturi descărcabile"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Premier Energy — https://premierenergy.md/"
         ]
       },
       {
@@ -89,12 +77,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Greko Fresh / OpenTable — https://www.opentable.com/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -120,12 +102,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Produse și observații",
           "taxe pe zonă sau ridicare",
           "comenzi și simularea etapelor de pregătire"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Straus.md — https://straus.md/"
         ]
       },
       {
@@ -157,12 +133,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "RezervaMasa.md — https://rezervamasa.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -188,12 +158,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Schemă interactivă",
           "straturi de preț, transport și verdeață",
           "estimare orientativă și export"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Zillow / Rightmove — https://www.rightmove.co.uk/"
         ]
       },
       {
@@ -225,12 +189,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "999.md Imobiliare — https://999.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -256,12 +214,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Filtre combinate",
           "fișe de proprietate",
           "comparație de suprafețe, camere și preț pe m²"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Immobiliare.md — https://immobiliare.md/"
         ]
       },
       {
@@ -293,12 +245,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Coursera / Teachable — https://www.coursera.org/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -324,12 +270,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Module de lectură",
           "evaluare deblocată prin progres",
           "confirmare demonstrativă descărcabilă"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "MLearn — https://mlearn.gov.md/"
         ]
       },
       {
@@ -361,12 +301,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "TiRoDemy — https://tirodemy.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -392,12 +326,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Glazură și inscripție",
           "cantități și ambalaj pentru obiecte",
           "comenzi cu opțiunile păstrate"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Etsy — https://www.etsy.com/"
         ]
       },
       {
@@ -429,12 +357,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Cât Costă — https://catcosta.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -460,12 +382,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Publicare și retragere de anunțuri demo",
           "favorite",
           "afișarea datelor de contact"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "999.md — https://999.md/"
         ]
       },
       {
@@ -497,12 +413,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Booking.com Moldova — https://www.booking.com/country/md.html"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -528,12 +438,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Filtrare cartiere",
           "colecție personală",
           "solicitări de cazare cu istoric și anulare"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Sonder — https://www.sonder.com/"
         ]
       },
       {
@@ -565,12 +469,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Manhattan Hotel — https://manhattan-hotel.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -596,12 +494,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Filtrare după capacitate",
           "calculul nopților și totalului",
           "istoric de sejururi și anulare"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Park Suites — https://parksuites.md/en-gb/"
         ]
       },
       {
@@ -633,12 +525,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "AUTODOC Europe — https://www.autodoc.co.uk/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -664,12 +550,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Categorii și depozite",
           "cantități limitate de stoc",
           "reduceri de volum și oferte descărcabile"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Signeda — https://www.signeda.md/"
         ]
       },
       {
@@ -701,12 +581,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "FixBox.md — https://fixbox.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -732,12 +606,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Marcă/model/motor",
           "filtrare compatibilitate demonstrativă",
           "coș, cantități și istoric de comenzi"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "AutoDoc.md — https://autodoc.md/"
         ]
       },
       {
@@ -769,12 +637,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Close — https://www.close.com/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -800,12 +662,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Contacte editabile",
           "gestionarea abonării",
           "campanii locale pentru destinatarii eligibili"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "HubSpot — https://www.hubspot.com/"
         ]
       },
       {
@@ -837,12 +693,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Pipedrive — https://www.pipedrive.com/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -868,12 +718,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Potrivire după specialitate, limbă și tip de consultație",
           "rezervare",
           "agendă de vizite"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Zocdoc — https://www.zocdoc.com/"
         ]
       },
       {
@@ -905,12 +749,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Doctolib — https://www.doctolib.fr/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -936,12 +774,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Căutare după analiză sau cod",
           "coș de investigații",
           "alegerea centrului și istoricul cererilor"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Clinica Sante — https://www.sante.md/"
         ]
       },
       {
@@ -973,12 +805,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Medpark — https://medpark.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -1004,12 +830,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Emitere bilete demo",
           "check-in și anulare",
           "export CSV și capacitate de eveniment"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "Eventbrite — https://www.eventbrite.com/"
         ]
       },
       {
@@ -1041,12 +861,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
         ]
       },
       {
-        "title": "Referință de produs",
-        "items": [
-          "Fest.md — https://www.fest.md/"
-        ]
-      },
-      {
         "title": "Ce primește cumpărătorul",
         "items": [
           "Cod sursă independent, editabil",
@@ -1072,12 +886,6 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
           "Filtrare evenimente",
           "categorii de bilete și cantități",
           "comenzi persistente și confirmări descărcabile"
-        ]
-      },
-      {
-        "title": "Referință de produs",
-        "items": [
-          "iTicket — https://iticket.md/"
         ]
       },
       {
