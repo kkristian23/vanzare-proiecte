@@ -1,0 +1,3032 @@
+{
+  "generatedAt": "2026-09-10T08:52:34.881Z",
+  "mode": "apply",
+  "thresholdKb": 250,
+  "projects": 63,
+  "missingProjects": [],
+  "audit": {
+    "images": 963,
+    "valid": 962,
+    "invalid": [
+      {
+        "path": "public\\autoflow-partner\\favicon.ico",
+        "error": "Invalid ICO header"
+      }
+    ],
+    "bytes": 92381418,
+    "overThreshold": 96
+  },
+  "sourceMatches": 114,
+  "optimization": {
+    "files": 210,
+    "optimized": 9,
+    "beforeBytes": 92996644,
+    "afterBytes": 92993473,
+    "savedBytes": 3171,
+    "publicRemainingOverThreshold": 96
+  },
+  "results": [
+    {
+      "scope": "public-project",
+      "project": "drivolt",
+      "path": "public\\drivolt\\assets\\drivolt-product-atlas.png",
+      "bytes": 417356,
+      "format": "png",
+      "width": 1774,
+      "height": 887,
+      "pages": 1,
+      "valid": true,
+      "before": 417356,
+      "after": 417356,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "drivolt",
+      "path": "public\\drivolt\\assets\\real-audio.jpg",
+      "bytes": 486329,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 932,
+      "pages": 1,
+      "valid": true,
+      "before": 486329,
+      "after": 486329,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "drivolt",
+      "path": "public\\drivolt\\assets\\real-battery.jpg",
+      "bytes": 288522,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 288522,
+      "after": 288522,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "drivolt",
+      "path": "public\\drivolt\\assets\\real-comfort.jpg",
+      "bytes": 314758,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 314758,
+      "after": 314758,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "drivolt",
+      "path": "public\\drivolt\\assets\\real-visibility.jpg",
+      "bytes": 278741,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 278741,
+      "after": 278741,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "staynest",
+      "path": "public\\staynest\\images\\chisinau.jpg",
+      "bytes": 742735,
+      "format": "jpeg",
+      "width": 1600,
+      "height": 2001,
+      "pages": 1,
+      "valid": true,
+      "before": 742735,
+      "after": 742735,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "staynest",
+      "path": "public\\staynest\\images\\forest.jpg",
+      "bytes": 632240,
+      "format": "jpeg",
+      "width": 1600,
+      "height": 1067,
+      "pages": 1,
+      "valid": true,
+      "before": 632240,
+      "after": 632240,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "staynest",
+      "path": "public\\staynest\\images\\hero.jpg",
+      "bytes": 914015,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 2700,
+      "pages": 1,
+      "valid": true,
+      "before": 914015,
+      "after": 914015,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "staynest",
+      "path": "public\\staynest\\images\\table.jpg",
+      "bytes": 296729,
+      "format": "jpeg",
+      "width": 1600,
+      "height": 1067,
+      "pages": 1,
+      "valid": true,
+      "before": 296729,
+      "after": 296729,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "tableo",
+      "path": "public\\tableo\\food\\beet.jpg",
+      "bytes": 287941,
+      "format": "jpeg",
+      "width": 1200,
+      "height": 800,
+      "pages": 1,
+      "valid": true,
+      "before": 287941,
+      "after": 287941,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "tableo",
+      "path": "public\\tableo\\food\\chef.jpg",
+      "bytes": 320911,
+      "format": "jpeg",
+      "width": 1200,
+      "height": 1847,
+      "pages": 1,
+      "valid": true,
+      "before": 320911,
+      "after": 320911,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "studio-velora",
+      "path": "public\\studio-velora\\og.png",
+      "bytes": 403402,
+      "format": "png",
+      "width": 1730,
+      "height": 909,
+      "pages": 1,
+      "valid": true,
+      "before": 403402,
+      "after": 403402,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "studio-forma",
+      "path": "public\\studio-forma\\og.png",
+      "bytes": 406420,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 406420,
+      "after": 406420,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "pophaus",
+      "path": "public\\pophaus\\og.png",
+      "bytes": 531636,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 531636,
+      "after": 531636,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\04.jpg",
+      "bytes": 350736,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1867,
+      "pages": 1,
+      "valid": true,
+      "before": 350736,
+      "after": 350156,
+      "saved": 580,
+      "status": "optimized"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\05.jpg",
+      "bytes": 366840,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 933,
+      "pages": 1,
+      "valid": true,
+      "before": 366840,
+      "after": 366840,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\11.jpg",
+      "bytes": 271080,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 271080,
+      "after": 270692,
+      "saved": 388,
+      "status": "optimized"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\13.jpg",
+      "bytes": 357480,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1400,
+      "pages": 1,
+      "valid": true,
+      "before": 357480,
+      "after": 357480,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\14.jpg",
+      "bytes": 454965,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1400,
+      "pages": 1,
+      "valid": true,
+      "before": 454965,
+      "after": 454965,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\18.jpg",
+      "bytes": 386229,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 386229,
+      "after": 386229,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\22.jpg",
+      "bytes": 361762,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2010,
+      "pages": 1,
+      "valid": true,
+      "before": 361762,
+      "after": 361762,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\25.jpg",
+      "bytes": 314777,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 935,
+      "pages": 1,
+      "valid": true,
+      "before": 314777,
+      "after": 314777,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\32.jpg",
+      "bytes": 379807,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 379807,
+      "after": 379807,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\images\\furniture\\35.jpg",
+      "bytes": 335409,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 961,
+      "pages": 1,
+      "valid": true,
+      "before": 335409,
+      "after": 335409,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "nord-and-oak",
+      "path": "public\\nord-and-oak\\og.png",
+      "bytes": 374908,
+      "format": "png",
+      "width": 1730,
+      "height": 909,
+      "pages": 1,
+      "valid": true,
+      "before": 374908,
+      "after": 374908,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "archicontract",
+      "path": "public\\archicontract\\images\\hero.png",
+      "bytes": 451786,
+      "format": "png",
+      "width": 1672,
+      "height": 941,
+      "pages": 1,
+      "valid": true,
+      "before": 451786,
+      "after": 451786,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "archicontract",
+      "path": "public\\archicontract\\images\\hotel-project.png",
+      "bytes": 473445,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 473445,
+      "after": 473445,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "archicontract",
+      "path": "public\\archicontract\\images\\seating.png",
+      "bytes": 391135,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 391135,
+      "after": 391135,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "archicontract",
+      "path": "public\\archicontract\\images\\tables-storage.png",
+      "bytes": 388223,
+      "format": "png",
+      "width": 1535,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 388223,
+      "after": 388223,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "archicontract",
+      "path": "public\\archicontract\\images\\workplace-project.png",
+      "bytes": 571159,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 571159,
+      "after": 571159,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "atelier-noire",
+      "path": "public\\atelier-noire\\images\\atelier\\interior-03.avif",
+      "bytes": 406634,
+      "format": "heif",
+      "width": 1400,
+      "height": 1400,
+      "pages": 1,
+      "valid": true,
+      "before": 406634,
+      "after": 406634,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "public-project",
+      "project": "atelier-noire",
+      "path": "public\\atelier-noire\\images\\atelier\\interior-07.avif",
+      "bytes": 315867,
+      "format": "heif",
+      "width": 1400,
+      "height": 2489,
+      "pages": 1,
+      "valid": true,
+      "before": 315867,
+      "after": 315867,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "public-project",
+      "project": "atelier-noire",
+      "path": "public\\atelier-noire\\images\\atelier\\interior-08.avif",
+      "bytes": 299063,
+      "format": "heif",
+      "width": 1400,
+      "height": 933,
+      "pages": 1,
+      "valid": true,
+      "before": 299063,
+      "after": 299063,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\academy.png",
+      "bytes": 392467,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 392467,
+      "after": 392467,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-beard.png",
+      "bytes": 343495,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 343495,
+      "after": 343495,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-complex.png",
+      "bytes": 375870,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 375870,
+      "after": 375870,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-eyebrows.png",
+      "bytes": 442668,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 442668,
+      "after": 442668,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-facial-mask.png",
+      "bytes": 377894,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 377894,
+      "after": 377894,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-facial.png",
+      "bytes": 440877,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 440877,
+      "after": 440877,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-full.png",
+      "bytes": 359544,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 359544,
+      "after": 359544,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-haircut.png",
+      "bytes": 488334,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 488334,
+      "after": 488334,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-shave.png",
+      "bytes": 397688,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 397688,
+      "after": 397688,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\barber-toning.png",
+      "bytes": 413353,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 413353,
+      "after": 413353,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\beauty-balayage.png",
+      "bytes": 501442,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 501442,
+      "after": 501442,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\beauty-event.png",
+      "bytes": 327944,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 327944,
+      "after": 327944,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\beauty-haircut.png",
+      "bytes": 371698,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 371698,
+      "after": 371698,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\club-collaboration.png",
+      "bytes": 341664,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 341664,
+      "after": 341664,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\club-events.png",
+      "bytes": 403235,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 403235,
+      "after": 403235,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\nails-classic.png",
+      "bytes": 423781,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 423781,
+      "after": 423781,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\nails-gel.png",
+      "bytes": 417140,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 417140,
+      "after": 417140,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\nails-pedicure-gel.png",
+      "bytes": 367604,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 367604,
+      "after": 367604,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\nails-pedicure.png",
+      "bytes": 354206,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 354206,
+      "after": 354206,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\podology.png",
+      "bytes": 335252,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 335252,
+      "after": 335252,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\catalog\\shop-products.png",
+      "bytes": 352927,
+      "format": "png",
+      "width": 1122,
+      "height": 1402,
+      "pages": 1,
+      "valid": true,
+      "before": 352927,
+      "after": 352927,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\neo-barbe-logo.png",
+      "bytes": 340972,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "pages": 1,
+      "valid": true,
+      "before": 340972,
+      "after": 340972,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\service-beard-styling.png",
+      "bytes": 328873,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 328873,
+      "after": 328873,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neobarberclub",
+      "path": "public\\neobarberclub\\images\\service-haircut.png",
+      "bytes": 430075,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 430075,
+      "after": 430075,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "rentech",
+      "path": "public\\rentech\\og.png",
+      "bytes": 328063,
+      "format": "png",
+      "width": 1730,
+      "height": 909,
+      "pages": 1,
+      "valid": true,
+      "before": 328063,
+      "after": 328063,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "elan",
+      "path": "public\\elan\\hero-editorial.png",
+      "bytes": 382122,
+      "format": "png",
+      "width": 1024,
+      "height": 1536,
+      "pages": 1,
+      "valid": true,
+      "before": 382122,
+      "after": 382122,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "micora",
+      "path": "public\\micora\\og.png",
+      "bytes": 380641,
+      "format": "png",
+      "width": 1731,
+      "height": 909,
+      "pages": 1,
+      "valid": true,
+      "before": 380641,
+      "after": 380641,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "neo-booking",
+      "path": "public\\neo-booking\\images\\neo-barbe-logo.png",
+      "bytes": 340972,
+      "format": "png",
+      "width": 1254,
+      "height": 1254,
+      "pages": 1,
+      "valid": true,
+      "before": 340972,
+      "after": 340972,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "01-eventora",
+      "path": "public\\01-eventora\\images\\festival.jpg",
+      "bytes": 897887,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1756,
+      "pages": 1,
+      "valid": true,
+      "before": 897887,
+      "after": 897887,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "01-eventora",
+      "path": "public\\01-eventora\\images\\theatre.jpg",
+      "bytes": 449230,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2097,
+      "pages": 1,
+      "valid": true,
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "02-scena-city",
+      "path": "public\\02-scena-city\\images\\city.jpg",
+      "bytes": 573178,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1751,
+      "pages": 1,
+      "valid": true,
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "02-scena-city",
+      "path": "public\\02-scena-city\\images\\craft.jpg",
+      "bytes": 512178,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "02-scena-city",
+      "path": "public\\02-scena-city\\images\\theatre.jpg",
+      "bytes": 449230,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2097,
+      "pages": 1,
+      "valid": true,
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "15-park-suites-demo",
+      "path": "public\\15-park-suites-demo\\images\\suite.jpg",
+      "bytes": 263187,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "16-urban-haven",
+      "path": "public\\16-urban-haven\\images\\restaurant.jpg",
+      "bytes": 345875,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 892,
+      "pages": 1,
+      "valid": true,
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "16-urban-haven",
+      "path": "public\\16-urban-haven\\images\\spa.jpg",
+      "bytes": 280467,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 280467,
+      "after": 280467,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "16-urban-haven",
+      "path": "public\\16-urban-haven\\images\\suite.jpg",
+      "bytes": 263187,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "17-nest-collection",
+      "path": "public\\17-nest-collection\\images\\suite.jpg",
+      "bytes": 263187,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "18-moldova-escape",
+      "path": "public\\18-moldova-escape\\images\\suite.jpg",
+      "bytes": 263187,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "19-bazar-local",
+      "path": "public\\19-bazar-local\\images\\city.jpg",
+      "bytes": 573178,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1751,
+      "pages": 1,
+      "valid": true,
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "19-bazar-local",
+      "path": "public\\19-bazar-local\\images\\craft.jpg",
+      "bytes": 512178,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "21-local-craft",
+      "path": "public\\21-local-craft\\images\\craft.jpg",
+      "bytes": 512178,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "25-casa-check",
+      "path": "public\\25-casa-check\\images\\suite.jpg",
+      "bytes": 263187,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 1050,
+      "pages": 1,
+      "valid": true,
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "28-table-flow",
+      "path": "public\\28-table-flow\\images\\bistro.jpg",
+      "bytes": 310145,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 933,
+      "pages": 1,
+      "valid": true,
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "28-table-flow",
+      "path": "public\\28-table-flow\\images\\restaurant.jpg",
+      "bytes": 345875,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 892,
+      "pages": 1,
+      "valid": true,
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "29-food-route",
+      "path": "public\\29-food-route\\images\\food.jpg",
+      "bytes": 446020,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 933,
+      "pages": 1,
+      "valid": true,
+      "before": 446020,
+      "after": 446020,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "29-food-route",
+      "path": "public\\29-food-route\\images\\salad.jpg",
+      "bytes": 329675,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "30-menu-studio",
+      "path": "public\\30-menu-studio\\images\\bistro.jpg",
+      "bytes": 310145,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 933,
+      "pages": 1,
+      "valid": true,
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "30-menu-studio",
+      "path": "public\\30-menu-studio\\images\\salad.jpg",
+      "bytes": 329675,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\courtyard.jpg",
+      "bytes": 608505,
+      "format": "jpeg",
+      "width": 1333,
+      "height": 2000,
+      "pages": 1,
+      "valid": true,
+      "before": 608505,
+      "after": 608505,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\garden-path.jpg",
+      "bytes": 470054,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1013,
+      "pages": 1,
+      "valid": true,
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\garden.jpg",
+      "bytes": 387952,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1200,
+      "pages": 1,
+      "valid": true,
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\hero.jpg",
+      "bytes": 470054,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1013,
+      "pages": 1,
+      "valid": true,
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\house.jpg",
+      "bytes": 485232,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1510,
+      "pages": 1,
+      "valid": true,
+      "before": 485232,
+      "after": 485232,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\lavender.jpg",
+      "bytes": 579506,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1200,
+      "pages": 1,
+      "valid": true,
+      "before": 579506,
+      "after": 579506,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\leaves.jpg",
+      "bytes": 387952,
+      "format": "jpeg",
+      "width": 1800,
+      "height": 1200,
+      "pages": 1,
+      "valid": true,
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\pergola.jpg",
+      "bytes": 270871,
+      "format": "jpeg",
+      "width": 1394,
+      "height": 2000,
+      "pages": 1,
+      "valid": true,
+      "before": 270871,
+      "after": 270871,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\images\\terrace.jpg",
+      "bytes": 506829,
+      "format": "jpeg",
+      "width": 1333,
+      "height": 2000,
+      "pages": 1,
+      "valid": true,
+      "before": 506829,
+      "after": 506829,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "terraforma",
+      "path": "public\\terraforma\\og.png",
+      "bytes": 806979,
+      "format": "png",
+      "width": 1536,
+      "height": 1024,
+      "pages": 1,
+      "valid": true,
+      "before": 806979,
+      "after": 806979,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "gazonpro",
+      "path": "public\\gazonpro\\og.png",
+      "bytes": 319145,
+      "format": "png",
+      "width": 1200,
+      "height": 630,
+      "pages": 1,
+      "valid": true,
+      "before": 319145,
+      "after": 319145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "ecohabitat",
+      "path": "public\\ecohabitat\\images\\botanical.jpg",
+      "bytes": 2585446,
+      "format": "jpeg",
+      "width": 2079,
+      "height": 3260,
+      "pages": 1,
+      "valid": true,
+      "before": 2585446,
+      "after": 2585446,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "public-project",
+      "project": "ecohabitat",
+      "path": "public\\ecohabitat\\images\\garden.jpg",
+      "bytes": 373281,
+      "format": "jpeg",
+      "width": 1600,
+      "height": 1067,
+      "pages": 1,
+      "valid": true,
+      "before": 373281,
+      "after": 373192,
+      "saved": 89,
+      "status": "optimized"
+    },
+    {
+      "scope": "public-project",
+      "project": "ecohabitat",
+      "path": "public\\ecohabitat\\images\\meadow.jpg",
+      "bytes": 581498,
+      "format": "jpeg",
+      "width": 1400,
+      "height": 2100,
+      "pages": 1,
+      "valid": true,
+      "before": 581498,
+      "after": 581498,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\dist\\assets\\real-audio.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-audio.jpg"
+      ],
+      "format": "jpeg",
+      "before": 486329,
+      "after": 486329,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\dist\\assets\\real-battery.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-battery.jpg"
+      ],
+      "format": "jpeg",
+      "before": 288522,
+      "after": 288522,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\dist\\assets\\real-comfort.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-comfort.jpg"
+      ],
+      "format": "jpeg",
+      "before": 314758,
+      "after": 314758,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\dist\\assets\\real-visibility.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-visibility.jpg"
+      ],
+      "format": "jpeg",
+      "before": 278741,
+      "after": 278741,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\public\\assets\\real-audio.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-audio.jpg"
+      ],
+      "format": "jpeg",
+      "before": 486329,
+      "after": 486329,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\public\\assets\\real-battery.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-battery.jpg"
+      ],
+      "format": "jpeg",
+      "before": 288522,
+      "after": 288522,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\public\\assets\\real-comfort.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-comfort.jpg"
+      ],
+      "format": "jpeg",
+      "before": 314758,
+      "after": 314758,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "drivolt",
+      "path": "D:\\DRIVOLT\\public\\assets\\real-visibility.jpg",
+      "matches": [
+        "public\\drivolt\\assets\\real-visibility.jpg"
+      ],
+      "format": "jpeg",
+      "before": 278741,
+      "after": 278741,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\out\\images\\chisinau.jpg",
+      "matches": [
+        "public\\staynest\\images\\chisinau.jpg"
+      ],
+      "format": "jpeg",
+      "before": 742735,
+      "after": 742735,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\out\\images\\forest.jpg",
+      "matches": [
+        "public\\staynest\\images\\forest.jpg"
+      ],
+      "format": "jpeg",
+      "before": 632240,
+      "after": 632240,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\out\\images\\hero.jpg",
+      "matches": [
+        "public\\staynest\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 914015,
+      "after": 914015,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\out\\images\\table.jpg",
+      "matches": [
+        "public\\staynest\\images\\table.jpg"
+      ],
+      "format": "jpeg",
+      "before": 296729,
+      "after": 296729,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\public\\images\\chisinau.jpg",
+      "matches": [
+        "public\\staynest\\images\\chisinau.jpg"
+      ],
+      "format": "jpeg",
+      "before": 742735,
+      "after": 742735,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\public\\images\\forest.jpg",
+      "matches": [
+        "public\\staynest\\images\\forest.jpg"
+      ],
+      "format": "jpeg",
+      "before": 632240,
+      "after": 632240,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\public\\images\\hero.jpg",
+      "matches": [
+        "public\\staynest\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 914015,
+      "after": 914015,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "staynest",
+      "path": "D:\\StayNest\\public\\images\\table.jpg",
+      "matches": [
+        "public\\staynest\\images\\table.jpg"
+      ],
+      "format": "jpeg",
+      "before": 296729,
+      "after": 296729,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\dist\\client\\food\\beet.jpg",
+      "matches": [
+        "public\\tableo\\food\\beet.jpg"
+      ],
+      "format": "jpeg",
+      "before": 287941,
+      "after": 287941,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\dist\\client\\food\\chef.jpg",
+      "matches": [
+        "public\\tableo\\food\\chef.jpg"
+      ],
+      "format": "jpeg",
+      "before": 320911,
+      "after": 320911,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\out\\food\\beet.jpg",
+      "matches": [
+        "public\\tableo\\food\\beet.jpg"
+      ],
+      "format": "jpeg",
+      "before": 287941,
+      "after": 287941,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\out\\food\\chef.jpg",
+      "matches": [
+        "public\\tableo\\food\\chef.jpg"
+      ],
+      "format": "jpeg",
+      "before": 320911,
+      "after": 320911,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\public\\food\\beet.jpg",
+      "matches": [
+        "public\\tableo\\food\\beet.jpg"
+      ],
+      "format": "jpeg",
+      "before": 287941,
+      "after": 287941,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "tableo",
+      "path": "D:\\Tableo\\public\\food\\chef.jpg",
+      "matches": [
+        "public\\tableo\\food\\chef.jpg"
+      ],
+      "format": "jpeg",
+      "before": 320911,
+      "after": 320911,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\04.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\04.jpg"
+      ],
+      "format": "jpeg",
+      "before": 350736,
+      "after": 350156,
+      "saved": 580,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\05.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\05.jpg"
+      ],
+      "format": "jpeg",
+      "before": 366840,
+      "after": 366840,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\11.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\11.jpg"
+      ],
+      "format": "jpeg",
+      "before": 271080,
+      "after": 270692,
+      "saved": 388,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\13.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\13.jpg"
+      ],
+      "format": "jpeg",
+      "before": 357480,
+      "after": 357480,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\14.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\14.jpg"
+      ],
+      "format": "jpeg",
+      "before": 454965,
+      "after": 454965,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\18.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\18.jpg"
+      ],
+      "format": "jpeg",
+      "before": 386229,
+      "after": 386229,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\22.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\22.jpg"
+      ],
+      "format": "jpeg",
+      "before": 361762,
+      "after": 361762,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\25.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\25.jpg"
+      ],
+      "format": "jpeg",
+      "before": 314777,
+      "after": 314777,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\32.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\32.jpg"
+      ],
+      "format": "jpeg",
+      "before": 379807,
+      "after": 379807,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\out\\images\\furniture\\35.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\35.jpg"
+      ],
+      "format": "jpeg",
+      "before": 335409,
+      "after": 335409,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\04.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\04.jpg"
+      ],
+      "format": "jpeg",
+      "before": 350736,
+      "after": 350156,
+      "saved": 580,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\05.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\05.jpg"
+      ],
+      "format": "jpeg",
+      "before": 366840,
+      "after": 366840,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\11.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\11.jpg"
+      ],
+      "format": "jpeg",
+      "before": 271080,
+      "after": 270692,
+      "saved": 388,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\13.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\13.jpg"
+      ],
+      "format": "jpeg",
+      "before": 357480,
+      "after": 357480,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\14.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\14.jpg"
+      ],
+      "format": "jpeg",
+      "before": 454965,
+      "after": 454965,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\18.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\18.jpg"
+      ],
+      "format": "jpeg",
+      "before": 386229,
+      "after": 386229,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\22.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\22.jpg"
+      ],
+      "format": "jpeg",
+      "before": 361762,
+      "after": 361762,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\25.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\25.jpg"
+      ],
+      "format": "jpeg",
+      "before": 314777,
+      "after": 314777,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\32.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\32.jpg"
+      ],
+      "format": "jpeg",
+      "before": 379807,
+      "after": 379807,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "nord-and-oak",
+      "path": "D:\\Nord & Oak\\public\\images\\furniture\\35.jpg",
+      "matches": [
+        "public\\nord-and-oak\\images\\furniture\\35.jpg"
+      ],
+      "format": "jpeg",
+      "before": 335409,
+      "after": 335409,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\out\\images\\atelier\\interior-03.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-03.avif"
+      ],
+      "format": "heif",
+      "before": 406634,
+      "after": 406634,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\out\\images\\atelier\\interior-07.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-07.avif"
+      ],
+      "format": "heif",
+      "before": 315867,
+      "after": 315867,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\out\\images\\atelier\\interior-08.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-08.avif"
+      ],
+      "format": "heif",
+      "before": 299063,
+      "after": 299063,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\public\\images\\atelier\\interior-03.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-03.avif"
+      ],
+      "format": "heif",
+      "before": 406634,
+      "after": 406634,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\public\\images\\atelier\\interior-07.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-07.avif"
+      ],
+      "format": "heif",
+      "before": 315867,
+      "after": 315867,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "atelier-noire",
+      "path": "D:\\Atelier Noire\\public\\images\\atelier\\interior-08.avif",
+      "matches": [
+        "public\\atelier-noire\\images\\atelier\\interior-08.avif"
+      ],
+      "format": "heif",
+      "before": 299063,
+      "after": 299063,
+      "saved": 0,
+      "status": "unsupported-lossless-format"
+    },
+    {
+      "scope": "source-match",
+      "project": "01-eventora",
+      "path": "D:\\proiecte-front-end\\01-eventora\\out\\images\\festival.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\festival.jpg"
+      ],
+      "format": "jpeg",
+      "before": 897887,
+      "after": 897887,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "01-eventora",
+      "path": "D:\\proiecte-front-end\\01-eventora\\out\\images\\theatre.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\theatre.jpg",
+        "public\\02-scena-city\\images\\theatre.jpg"
+      ],
+      "format": "jpeg",
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "01-eventora",
+      "path": "D:\\proiecte-front-end\\01-eventora\\public\\images\\festival.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\festival.jpg"
+      ],
+      "format": "jpeg",
+      "before": 897887,
+      "after": 897887,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "01-eventora",
+      "path": "D:\\proiecte-front-end\\01-eventora\\public\\images\\theatre.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\theatre.jpg",
+        "public\\02-scena-city\\images\\theatre.jpg"
+      ],
+      "format": "jpeg",
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\out\\images\\city.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\city.jpg",
+        "public\\19-bazar-local\\images\\city.jpg"
+      ],
+      "format": "jpeg",
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\out\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\out\\images\\theatre.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\theatre.jpg",
+        "public\\02-scena-city\\images\\theatre.jpg"
+      ],
+      "format": "jpeg",
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\public\\images\\city.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\city.jpg",
+        "public\\19-bazar-local\\images\\city.jpg"
+      ],
+      "format": "jpeg",
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\public\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "02-scena-city",
+      "path": "D:\\proiecte-front-end\\02-scena-city\\public\\images\\theatre.jpg",
+      "matches": [
+        "public\\01-eventora\\images\\theatre.jpg",
+        "public\\02-scena-city\\images\\theatre.jpg"
+      ],
+      "format": "jpeg",
+      "before": 449230,
+      "after": 449230,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "15-park-suites-demo",
+      "path": "D:\\proiecte-front-end\\15-park-suites-demo\\out\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "15-park-suites-demo",
+      "path": "D:\\proiecte-front-end\\15-park-suites-demo\\public\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\out\\images\\restaurant.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\restaurant.jpg",
+        "public\\28-table-flow\\images\\restaurant.jpg"
+      ],
+      "format": "jpeg",
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\out\\images\\spa.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\spa.jpg"
+      ],
+      "format": "jpeg",
+      "before": 280467,
+      "after": 280467,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\out\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\public\\images\\restaurant.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\restaurant.jpg",
+        "public\\28-table-flow\\images\\restaurant.jpg"
+      ],
+      "format": "jpeg",
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\public\\images\\spa.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\spa.jpg"
+      ],
+      "format": "jpeg",
+      "before": 280467,
+      "after": 280467,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "16-urban-haven",
+      "path": "D:\\proiecte-front-end\\16-urban-haven\\public\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "17-nest-collection",
+      "path": "D:\\proiecte-front-end\\17-nest-collection\\out\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "17-nest-collection",
+      "path": "D:\\proiecte-front-end\\17-nest-collection\\public\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "18-moldova-escape",
+      "path": "D:\\proiecte-front-end\\18-moldova-escape\\out\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "18-moldova-escape",
+      "path": "D:\\proiecte-front-end\\18-moldova-escape\\public\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "19-bazar-local",
+      "path": "D:\\proiecte-front-end\\19-bazar-local\\out\\images\\city.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\city.jpg",
+        "public\\19-bazar-local\\images\\city.jpg"
+      ],
+      "format": "jpeg",
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "19-bazar-local",
+      "path": "D:\\proiecte-front-end\\19-bazar-local\\out\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "19-bazar-local",
+      "path": "D:\\proiecte-front-end\\19-bazar-local\\public\\images\\city.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\city.jpg",
+        "public\\19-bazar-local\\images\\city.jpg"
+      ],
+      "format": "jpeg",
+      "before": 573178,
+      "after": 573178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "19-bazar-local",
+      "path": "D:\\proiecte-front-end\\19-bazar-local\\public\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "21-local-craft",
+      "path": "D:\\proiecte-front-end\\21-local-craft\\out\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "21-local-craft",
+      "path": "D:\\proiecte-front-end\\21-local-craft\\public\\images\\craft.jpg",
+      "matches": [
+        "public\\02-scena-city\\images\\craft.jpg",
+        "public\\19-bazar-local\\images\\craft.jpg",
+        "public\\21-local-craft\\images\\craft.jpg"
+      ],
+      "format": "jpeg",
+      "before": 512178,
+      "after": 512178,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "25-casa-check",
+      "path": "D:\\proiecte-front-end\\25-casa-check\\out\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "25-casa-check",
+      "path": "D:\\proiecte-front-end\\25-casa-check\\public\\images\\suite.jpg",
+      "matches": [
+        "public\\15-park-suites-demo\\images\\suite.jpg",
+        "public\\16-urban-haven\\images\\suite.jpg",
+        "public\\17-nest-collection\\images\\suite.jpg",
+        "public\\18-moldova-escape\\images\\suite.jpg",
+        "public\\25-casa-check\\images\\suite.jpg"
+      ],
+      "format": "jpeg",
+      "before": 263187,
+      "after": 263187,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "28-table-flow",
+      "path": "D:\\proiecte-front-end\\28-table-flow\\out\\images\\bistro.jpg",
+      "matches": [
+        "public\\28-table-flow\\images\\bistro.jpg",
+        "public\\30-menu-studio\\images\\bistro.jpg"
+      ],
+      "format": "jpeg",
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "28-table-flow",
+      "path": "D:\\proiecte-front-end\\28-table-flow\\out\\images\\restaurant.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\restaurant.jpg",
+        "public\\28-table-flow\\images\\restaurant.jpg"
+      ],
+      "format": "jpeg",
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "28-table-flow",
+      "path": "D:\\proiecte-front-end\\28-table-flow\\public\\images\\bistro.jpg",
+      "matches": [
+        "public\\28-table-flow\\images\\bistro.jpg",
+        "public\\30-menu-studio\\images\\bistro.jpg"
+      ],
+      "format": "jpeg",
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "28-table-flow",
+      "path": "D:\\proiecte-front-end\\28-table-flow\\public\\images\\restaurant.jpg",
+      "matches": [
+        "public\\16-urban-haven\\images\\restaurant.jpg",
+        "public\\28-table-flow\\images\\restaurant.jpg"
+      ],
+      "format": "jpeg",
+      "before": 345875,
+      "after": 345875,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "29-food-route",
+      "path": "D:\\proiecte-front-end\\29-food-route\\out\\images\\food.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\food.jpg"
+      ],
+      "format": "jpeg",
+      "before": 446020,
+      "after": 446020,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "29-food-route",
+      "path": "D:\\proiecte-front-end\\29-food-route\\out\\images\\salad.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\salad.jpg",
+        "public\\30-menu-studio\\images\\salad.jpg"
+      ],
+      "format": "jpeg",
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "29-food-route",
+      "path": "D:\\proiecte-front-end\\29-food-route\\public\\images\\food.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\food.jpg"
+      ],
+      "format": "jpeg",
+      "before": 446020,
+      "after": 446020,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "29-food-route",
+      "path": "D:\\proiecte-front-end\\29-food-route\\public\\images\\salad.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\salad.jpg",
+        "public\\30-menu-studio\\images\\salad.jpg"
+      ],
+      "format": "jpeg",
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "30-menu-studio",
+      "path": "D:\\proiecte-front-end\\30-menu-studio\\out\\images\\bistro.jpg",
+      "matches": [
+        "public\\28-table-flow\\images\\bistro.jpg",
+        "public\\30-menu-studio\\images\\bistro.jpg"
+      ],
+      "format": "jpeg",
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "30-menu-studio",
+      "path": "D:\\proiecte-front-end\\30-menu-studio\\out\\images\\salad.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\salad.jpg",
+        "public\\30-menu-studio\\images\\salad.jpg"
+      ],
+      "format": "jpeg",
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "30-menu-studio",
+      "path": "D:\\proiecte-front-end\\30-menu-studio\\public\\images\\bistro.jpg",
+      "matches": [
+        "public\\28-table-flow\\images\\bistro.jpg",
+        "public\\30-menu-studio\\images\\bistro.jpg"
+      ],
+      "format": "jpeg",
+      "before": 310145,
+      "after": 310145,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "30-menu-studio",
+      "path": "D:\\proiecte-front-end\\30-menu-studio\\public\\images\\salad.jpg",
+      "matches": [
+        "public\\29-food-route\\images\\salad.jpg",
+        "public\\30-menu-studio\\images\\salad.jpg"
+      ],
+      "format": "jpeg",
+      "before": 329675,
+      "after": 329675,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\courtyard.jpg",
+      "matches": [
+        "public\\terraforma\\images\\courtyard.jpg"
+      ],
+      "format": "jpeg",
+      "before": 608505,
+      "after": 608505,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\garden-path.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden-path.jpg",
+        "public\\terraforma\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\garden.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden.jpg",
+        "public\\terraforma\\images\\leaves.jpg"
+      ],
+      "format": "jpeg",
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\hero.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden-path.jpg",
+        "public\\terraforma\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\house.jpg",
+      "matches": [
+        "public\\terraforma\\images\\house.jpg"
+      ],
+      "format": "jpeg",
+      "before": 485232,
+      "after": 485232,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\lavender.jpg",
+      "matches": [
+        "public\\terraforma\\images\\lavender.jpg"
+      ],
+      "format": "jpeg",
+      "before": 579506,
+      "after": 579506,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\leaves.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden.jpg",
+        "public\\terraforma\\images\\leaves.jpg"
+      ],
+      "format": "jpeg",
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\pergola.jpg",
+      "matches": [
+        "public\\terraforma\\images\\pergola.jpg"
+      ],
+      "format": "jpeg",
+      "before": 270871,
+      "after": 270871,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\out\\images\\terrace.jpg",
+      "matches": [
+        "public\\terraforma\\images\\terrace.jpg"
+      ],
+      "format": "jpeg",
+      "before": 506829,
+      "after": 506829,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\courtyard.jpg",
+      "matches": [
+        "public\\terraforma\\images\\courtyard.jpg"
+      ],
+      "format": "jpeg",
+      "before": 608505,
+      "after": 608505,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\garden-path.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden-path.jpg",
+        "public\\terraforma\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\garden.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden.jpg",
+        "public\\terraforma\\images\\leaves.jpg"
+      ],
+      "format": "jpeg",
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\hero.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden-path.jpg",
+        "public\\terraforma\\images\\hero.jpg"
+      ],
+      "format": "jpeg",
+      "before": 470054,
+      "after": 470054,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\house.jpg",
+      "matches": [
+        "public\\terraforma\\images\\house.jpg"
+      ],
+      "format": "jpeg",
+      "before": 485232,
+      "after": 485232,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\lavender.jpg",
+      "matches": [
+        "public\\terraforma\\images\\lavender.jpg"
+      ],
+      "format": "jpeg",
+      "before": 579506,
+      "after": 579506,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\leaves.jpg",
+      "matches": [
+        "public\\terraforma\\images\\garden.jpg",
+        "public\\terraforma\\images\\leaves.jpg"
+      ],
+      "format": "jpeg",
+      "before": 387952,
+      "after": 387952,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\pergola.jpg",
+      "matches": [
+        "public\\terraforma\\images\\pergola.jpg"
+      ],
+      "format": "jpeg",
+      "before": 270871,
+      "after": 270871,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "terraforma",
+      "path": "D:\\TerraForma\\public\\images\\terrace.jpg",
+      "matches": [
+        "public\\terraforma\\images\\terrace.jpg"
+      ],
+      "format": "jpeg",
+      "before": 506829,
+      "after": 506829,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\out\\images\\botanical.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\botanical.jpg"
+      ],
+      "format": "jpeg",
+      "before": 2585446,
+      "after": 2585446,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\out\\images\\garden.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\garden.jpg"
+      ],
+      "format": "jpeg",
+      "before": 373281,
+      "after": 373192,
+      "saved": 89,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\out\\images\\meadow.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\meadow.jpg"
+      ],
+      "format": "jpeg",
+      "before": 581498,
+      "after": 581498,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\public\\images\\botanical.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\botanical.jpg"
+      ],
+      "format": "jpeg",
+      "before": 2585446,
+      "after": 2585446,
+      "saved": 0,
+      "status": "already-optimal"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\public\\images\\garden.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\garden.jpg"
+      ],
+      "format": "jpeg",
+      "before": 373281,
+      "after": 373192,
+      "saved": 89,
+      "status": "optimized"
+    },
+    {
+      "scope": "source-match",
+      "project": "ecohabitat",
+      "path": "D:\\EcoHabitat\\public\\images\\meadow.jpg",
+      "matches": [
+        "public\\ecohabitat\\images\\meadow.jpg"
+      ],
+      "format": "jpeg",
+      "before": 581498,
+      "after": 581498,
+      "saved": 0,
+      "status": "already-optimal"
+    }
+  ]
+}

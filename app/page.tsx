@@ -2120,7 +2120,8 @@ function ProjectVisual({
   const hasLivePreview = (project.id >= 35 && project.id <= 66) || gardenProjects.some((item) => item.id === project.id);
   const hasProjectPreview = launchProjectIds.has(project.id) || hasLivePreview;
   return (
-    <div className={`visual visual-${project.tone}${hasProjectPreview ? " visual-with-preview" : ""}`}>
+    <div className={`visual-frame${hasProjectPreview ? " visual-frame-preview" : ""}`}>
+      <div className={`visual visual-${project.tone}${hasProjectPreview ? " visual-with-preview" : ""}`}>
       {hasLivePreview && <StaticProjectPreview slug={projectSlugs[project.id]} title={project.title} />}
       {hasProjectPreview && !hasLivePreview && (
         <img
@@ -2676,6 +2677,7 @@ function ProjectVisual({
           </div>
         </>
       )}
+      </div>
     </div>
   );
 }
@@ -2741,7 +2743,13 @@ export default function Home() {
   const [mobileOS, setMobileOS] = useState<MobileOS>("all");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("recommended");
-  const [recommendedOrder, setRecommendedOrder] = useState<number[] | null>(null);
+  const [recommendedOrder, setRecommendedOrder] = useState<number[] | null>(() => {
+    if (typeof window === "undefined") return null;
+    const openings = Number.parseInt(localStorage.getItem(recommendedOpeningStorageKey) ?? "0", 10) || 0;
+    const nextOpenings = openings + 1;
+    localStorage.setItem(recommendedOpeningStorageKey, String(nextOpenings));
+    return nextOpenings % 3 === 0 ? shuffledProjectIds() : null;
+  });
   const [visibleProjectCount, setVisibleProjectCount] = useState(PROJECT_PAGE_SIZE);
   const [menu, setMenu] = useState(false);
   const [activeNav, setActiveNav] = useState<"proiecte" | "proces" | null>(null);
@@ -2761,12 +2769,6 @@ export default function Home() {
     observer.observe(document.documentElement, { childList: true, subtree: true });
 
     return () => observer.disconnect();
-  }, []);
-  useEffect(() => {
-    const openings = Number.parseInt(localStorage.getItem(recommendedOpeningStorageKey) ?? "0", 10) || 0;
-    const nextOpenings = openings + 1;
-    localStorage.setItem(recommendedOpeningStorageKey, String(nextOpenings));
-    if (nextOpenings % 3 === 0) setRecommendedOrder(shuffledProjectIds());
   }, []);
   const c = copy[locale];
   const fc = cleanFilterCopy[locale];

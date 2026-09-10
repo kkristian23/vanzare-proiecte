@@ -19,6 +19,7 @@
     "audit:bandwidth": "node scripts/audit-bandwidth.mjs",
     "audit:network": "node scripts/audit-network.mjs --base=http://127.0.0.1:3000",
     "optimize:png": "node scripts/optimize-png-lossless.mjs",
+    "optimize:project-images": "node scripts/optimize-project-images.mjs --threshold-kb=250 --include-source-images",
     "dev": "node scripts/start-server.mjs dev",
     "prebuild": "node scripts/project-previews.mjs",
     "build": "vinext build",

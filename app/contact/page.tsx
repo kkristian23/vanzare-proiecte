@@ -10,11 +10,26 @@ import "../page-language-switch.css";
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
   const [sent, setSent] = useState(false);
-  const [locale, setLocale] = useState<Locale>("ro");
-  const [message, setMessage] = useState("");
+  const [locale, setLocale] = useState<Locale>(() => {
+    if (typeof window === "undefined") return "ro";
+    const urlLocale = new URL(window.location.href).searchParams.get("lang");
+    const savedLocale = localStorage.getItem("mono-locale");
+    return locales.includes(urlLocale as Locale) ? urlLocale as Locale : locales.includes(savedLocale as Locale) ? savedLocale as Locale : "ro";
+  });
+  const [message, setMessage] = useState(() => {
+    if (typeof window === "undefined") return "";
+    const url = new URL(window.location.href);
+    const project = url.searchParams.get("project") ?? "";
+    const option = url.searchParams.get("option") ?? "";
+    return project ? `Sunt interesat(ă) de ${option === "rental" ? "arendarea" : "cumpărarea"} proiectului ${project}.` : "";
+  });
   const c = contactCopy[locale];
   const backHref = locale === "ro" ? "/" : `/?lang=${locale}`;
-  const [catalogRequest, setCatalogRequest] = useState({ project: "", option: "" });
+  const [catalogRequest] = useState(() => {
+    if (typeof window === "undefined") return { project: "", option: "" };
+    const url = new URL(window.location.href);
+    return { project: url.searchParams.get("project") ?? "", option: url.searchParams.get("option") ?? "" };
+  });
   const contactCode = [
     ["const", " contact", " = {"], ["  phone:", " \"+373 78 868 996\"", ","],
     ["  email:", " \"monodev@gmail.com\"", ","], ["  location:", " \"Moldova\"", ","],
@@ -22,16 +37,8 @@ export default function ContactPage() {
   ];
 
   useEffect(() => {
-    const urlLocale = new URL(window.location.href).searchParams.get("lang");
-    const savedLocale = localStorage.getItem("mono-locale");
-    const nextLocale = locales.includes(urlLocale as Locale) ? urlLocale as Locale : locales.includes(savedLocale as Locale) ? savedLocale as Locale : "ro";
-    setLocale(nextLocale);
-    document.documentElement.lang = nextLocale;
-    const project = new URL(window.location.href).searchParams.get("project") ?? "";
-    const option = new URL(window.location.href).searchParams.get("option") ?? "";
-    setCatalogRequest({ project, option });
-    if (project) setMessage(`Sunt interesat(ă) de ${option === "rental" ? "arendarea" : "cumpărarea"} proiectului ${project}.`);
-  }, []);
+    document.documentElement.setAttribute("lang", locale);
+  }, [locale]);
 
   const copyEmail = async () => {
     await navigator.clipboard.writeText("monodev@gmail.com");
@@ -45,7 +52,7 @@ export default function ContactPage() {
     if (nextLocale === "ro") url.searchParams.delete("lang");
     else url.searchParams.set("lang", nextLocale);
     window.history.replaceState({}, "", url);
-    document.documentElement.lang = nextLocale;
+    document.documentElement.setAttribute("lang", nextLocale);
     setLocale(nextLocale);
   };
 
@@ -75,12 +82,12 @@ export default function ContactPage() {
         <div className="page-language-switch" aria-label="Limbă">
           {locales.map((language) => <button key={language} className={locale === language ? "active" : ""} onClick={() => changeLocale(language)} lang={language}>{language.toUpperCase()}</button>)}
         </div>
-        <a className="contact-back" href={backHref}><ArrowLeft/> {c.back}</a>
       </div>
     </header>
 
     <section className="contact-hero">
       <div className="contact-heading">
+        <a className="contact-back contact-hero-back" href={backHref}><ArrowLeft/> {c.back}</a>
         <p><span>01</span> {c.initialize}</p>
         <h1>{c.hero[0]}<br/><em>{c.hero[1]}</em><br/>{c.hero[2]} <i>{c.hero[3]}</i></h1>
         <div className="contact-command"><Terminal/><span>mono@dev:~$</span><b>start --project</b><i>_</i></div>
