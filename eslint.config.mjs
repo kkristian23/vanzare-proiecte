@@ -13,6 +13,14 @@ const eslintConfig = defineConfig([
     "dist/**",
     "out/**",
     "build/**",
+    // Published demo bundles and tooling outputs are generated artifacts. Their
+    // maintained source is linted in the corresponding showcase projects.
+    "public/**",
+    "work/**",
+    "outputs/**",
+    "node_modules_broken/**",
+    "graphify-out/**",
+    "worker/runtime.d.ts",
     "next-env.d.ts",
   ]),
   eslint.configs.recommended,

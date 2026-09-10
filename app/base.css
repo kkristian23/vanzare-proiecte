@@ -1,0 +1,45 @@
+@import "tailwindcss" source("./");
+/* Shared document styles only. Homepage artwork and layout styles are imported by home-client.tsx. */#nl-badge {
+  display: none !important;
+}:root{--ink:#10100f;--paper:#f2f0e9;--acid:#cbff36;--violet:#8466ff;--line:#cbc8bf}*{box-sizing:border-box}html{max-width:100%;overflow-x:clip;scroll-behavior:smooth}body{max-width:100%;overflow-x:clip;margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-geist),sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}footer{background:var(--violet);padding-top:80px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}@media(max-width:800px){main{max-width:100%;overflow-x:hidden}}:root{--edge-rail-width:max(0px,calc((100vw - 1240px)/4 - 5px))}@keyframes logo-alive{
+  0%,12%,29%,46%,64%,82%,100%{transform:translateY(0) rotate(0) scale(1)}
+  15%{transform:translateY(-5px) rotate(-2deg) scale(.98,1.04)}
+  18%{transform:translateY(1px) rotate(1deg) scale(1.02,.98)}
+  49%{transform:translateY(0) rotate(0) scale(.88,1.06)}
+  52%{transform:translateY(-7px) rotate(2deg) scale(1.08,.94)}
+  55%{transform:translateY(1px) rotate(-1deg) scale(.98,1.02)}
+  85%{transform:translateY(-3px) rotate(-1deg) scale(1.03)}
+  88%{transform:translateY(0) rotate(0) scale(1)}
+}@keyframes logo-mono-alive{
+  0%,12%,29%,46%,64%,82%,100%{transform:translateX(0) scaleX(1)}
+  14%{transform:translateX(5px) scaleX(.82)}
+  18%{transform:translateX(-2px) scaleX(1.04)}
+  49%{transform:translateX(8px) scaleX(.72)}
+  54%{transform:translateX(-3px) scaleX(1.06)}
+  85%{transform:translateX(2px) scaleX(.94)}
+}@keyframes logo-dev-alive{
+  0%,12%,29%,46%,64%,82%,100%{transform:translateX(0) scaleX(1);color:var(--violet);text-shadow:none}
+  14%{transform:translateX(-4px) scaleX(.84)}
+  18%{transform:translateX(3px) scaleX(1.05)}
+  32%{transform:translateY(-2px);color:var(--acid);text-shadow:0 0 12px #cbff3666}
+  35%{transform:translateY(0);color:var(--violet);text-shadow:none}
+  49%{transform:translateX(-7px) scaleX(.7)}
+  54%{transform:translateX(4px) scaleX(1.08)}
+  58%{transform:translateX(0) scaleX(1)}
+  85%{transform:translateX(-2px) scaleX(.94);color:var(--acid);text-shadow:0 0 10px #cbff3655}
+}footer{background:#121211;color:#f2f0e9;padding:0}html, body {
+  touch-action: auto;
+}.brand-logo.brand-logo{
+  --brand-logo-mono:var(--ink);
+  --brand-logo-dev:var(--violet);
+  display:inline-flex;
+  align-items:center;
+  gap:0;
+  padding:0;
+  color:var(--brand-logo-mono);
+  font:800 20px/1 var(--font-geist);
+  letter-spacing:-.65px;
+  transform-origin:left center;
+  transition:letter-spacing .3s ease,transform .3s ease;
+  animation:logo-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite;
+}.brand-logo.brand-logo--inverse{--brand-logo-mono:#f2f0e9}.brand-logo>span{display:inline-block;font:inherit;letter-spacing:inherit;will-change:transform}.brand-logo>.logo-mono{color:var(--brand-logo-mono);transform-origin:right center;animation:logo-mono-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite}.brand-logo>.logo-dev{color:var(--brand-logo-dev);transform-origin:left center;animation:logo-dev-alive 9.6s cubic-bezier(.22,.8,.24,1) infinite}.brand-logo:hover{letter-spacing:-.25px;transform:translateY(-1px)}.brand-logo:focus-visible{border-radius:3px;outline:2px solid var(--brand-logo-dev);outline-offset:5px}@media(max-width:800px){.brand-logo.brand-logo{font-size:17px}}@media(prefers-reduced-motion:reduce){.brand-logo, .brand-logo>span{animation:none}}

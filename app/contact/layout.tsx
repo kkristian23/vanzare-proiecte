@@ -1,9 +1,6 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "../lib/site-config";
 
-export const metadata: Metadata = {
-  title: "Contact — MONO/DEV",
-  description: "Pornește un proiect digital cu MONO/DEV. Trimite brief-ul și primești un răspuns în maximum 48 de ore.",
-};
+export const metadata = pageMetadata("ro", "contact", "Contact pentru proiectul tău web", "Discută un site, un magazin online sau personalizarea unui proiect MONO/DEV. Contact direct prin email și telefon, în Moldova și internațional.");
 
 export default function ContactLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return children;

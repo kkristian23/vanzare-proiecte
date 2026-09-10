@@ -1,16 +1,16 @@
 # Graph Report - vanzare proiecte  (2026-09-10)
 
 ## Corpus Check
-- 113 files · ~1,359,426 words
+- 194 files · ~3,293,927 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1160 nodes · 2175 edges · 100 communities (84 shown, 16 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 148 edges (avg confidence: 0.85)
+- 1446 nodes · 2830 edges · 119 communities (102 shown, 17 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 151 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c338f412`
+- Built from commit: `2810b2a0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -18,27 +18,27 @@
 - compilerOptions
 - garden-projects.ts
 - scripts
-- h
+- e
 - route.ts
-- app/page.tsx
+- Inventarul fișierelor pentru implementarea SEO
 - qd
 - worker/index.ts
-- app/layout.tsx
+- site-config.ts
 - index-CKwsJXdb.js
 - AGENTS.md
 - eslint.config.mjs
 - devDependencies
 - start-server.mjs
-- Home
+- trust-page.tsx
 - next.config.ts
 - next-env.d.ts
 - dl
-- du
-- Hi
-- e1
-- L0
-- Ql
-- Ud
+- zr
+- MONO/DEV — raport SEO final
+- rl
+- Wl
+- c0
+- J
 - proxy.ts
 - audit-translations.mjs
 - audit-showcase.mjs
@@ -46,7 +46,7 @@
 - audit-batches.mjs
 - postcss.config.mjs
 - MONO/DEV — catalog de proiecte
-- contact/layout.tsx
+- isLocale
 - audit-report.mjs
 - audit-catalog.mjs
 - serve-audit.mjs
@@ -63,35 +63,52 @@
 - audit-bandwidth.mjs
 - Q: pretul vreau sa fie in rand cu titlul, cum era
 - probe-nord-dom.mjs
+- showcase-archi-actions.test.mjs
 - academia/.vite/manifest.json
 - flow-crm/.vite/manifest.json
 - Q: De ce arata rau /neo-booking/ pe portul 3004, dar bine pe portul 3001?
 - medora-clinic/.vite/manifest.json
 - Q: cand userul aleje cu servicii sau fara, sa i se afiseze aici ce intra in aceste servicii. Fix textul din i sa se arate
 - audit-showcase-locales.mjs
-- intrebari/page.tsx
+- json-ld.tsx
 - Audit Network – localhost:3000
 - live-project-preview.tsx
 - optimize-images-aggressive.mjs
-- rl
+- audit-seo.mjs
 - Audit Network – localhost:3000
-- c0
+- js
 - Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus
-- i18n.ts
+- home-client.tsx
 - Q: vreau mereu cand deschide un proiect, sa fie default 12 luni selectat; textul Cumpără în rate sa fie cu litere mari totul
 - Q: aici textul schimbal in de la
 - Q: butonul I fal de 2 ori mai mic
 - cabinet/layout.tsx
-- J
+- Nd
 - showcase-favicons.test.mjs
-- Ki
-- Wl
+- Bd
+- L0
 - Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta
-- _f
+- i18n.ts
 - optimize-project-images.mjs
-- yo
+- contact-client.tsx
 - Q: acest buton punel la fel ca in pagina de intrebari
 - Q: pe ecrane mai mici, poza proiectului se strica tare, corecteaza ca sa nu se scrice pe nici o dimensiune de ecran
+- Q: eu vreau sa fie in 2 randuri si tot o data sa nu se strice pozele la carduri
+- localePath
+- projects/[slug]/page.tsx
+- dependencies
+- package.json
+- Q: analizeaza toate priectele, cee 63, si fiecare imagine din ele, si daca imaginea depastete greutatea de 250 kb, comprima la maxim daca e posibil fara a pierde calitatea ei
+- serve-seo.mjs
+- project-catalog.ts
+- h
+- brand-logo.tsx
+- Ki
+- SEO_IMPLEMENTATION_REPORT.md
+- Arhitectura SEO statică
+- Implementarea SEO MONO/DEV
+- MONO/DEV — checklist de lansare SEO
+- Cercetare și hartă keyword → pagină
 - Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are.
 - sync-showcase.mjs
 - Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect
@@ -106,29 +123,29 @@
 2. `h()` - 61 edges
 3. `e()` - 47 edges
 4. `zr()` - 46 edges
-5. `scripts` - 27 edges
-6. `n()` - 27 edges
-7. `u()` - 24 edges
-8. `rl()` - 23 edges
-9. `Ud()` - 22 edges
-10. `J()` - 22 edges
+5. `scripts` - 32 edges
+6. `localePath()` - 31 edges
+7. `isLocale()` - 27 edges
+8. `n()` - 27 edges
+9. `u()` - 24 edges
+10. `rl()` - 23 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `LocaleLayout()` --calls--> `isLocale()`  [EXTRACTED]
+  app/[locale]/layout.tsx → app/lib/site-config.ts
+- `indexablePaths()` --indirect_call--> `isProjectSeoEnabled()`  [INFERRED]
+  app/lib/seo-routes.ts → app/lib/project-seo.ts
 - `GET()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
 - `POST()` --calls--> `getDb()`  [EXTRACTED]
   examples/d1/app/api/notes/route.ts → db/index.ts
-- `Home()` --calls--> `localType()`  [EXTRACTED]
-  app/page.tsx → app/i18n.ts
-- `ProjectVisual()` --calls--> `localType()`  [EXTRACTED]
-  app/page.tsx → app/i18n.ts
-- `Home()` --calls--> `localDescription()`  [EXTRACTED]
-  app/page.tsx → app/i18n.ts
+- `generateMetadata()` --calls--> `trustMetadata()`  [EXTRACTED]
+  app/[locale]/about/page.tsx → app/components/trust-page.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (100 total, 16 thin omitted)
+## Communities (119 total, 17 thin omitted)
 
 ### Community 0 - "compilerOptions"
 Cohesion: 0.06
@@ -139,32 +156,32 @@ Cohesion: 0.19
 Nodes (10): delivery, GardenCopy, gardenDescriptions(), GardenDetail, gardenDetails(), GardenProject, gardenProjects, headings (+2 more)
 
 ### Community 2 - "scripts"
-Cohesion: 0.04
-Nodes (46): drizzle-orm, framer-motion, lucide-react, magic-string, dependencies, drizzle-orm, framer-motion, lucide-react (+38 more)
-
-### Community 3 - "h"
 Cohesion: 0.06
-Nodes (108): ai(), Al(), at(), au(), br(), cn(), Cu(), da() (+100 more)
+Nodes (32): scripts, audit:bandwidth, audit:batches, audit:browser, audit:catalog, audit:http, audit:interactions:recheck, audit:network (+24 more)
+
+### Community 3 - "e"
+Cohesion: 0.16
+Nodes (41): ai(), Al(), Cu(), di(), dn(), Et(), Fu(), go() (+33 more)
 
 ### Community 4 - "route.ts"
 Cohesion: 0.39
 Nodes (5): getDb(), GET(), POST(), toRouteErrorMessage(), notes
 
-### Community 5 - "app/page.tsx"
-Cohesion: 0.08
-Nodes (22): categorySlugs, cleanFilterCopy, filterCopy, filters, gamesPlatformCopy, hiddenCategories, installmentPlans, launchProjectIds (+14 more)
+### Community 5 - "Inventarul fișierelor pentru implementarea SEO"
+Cohesion: 0.15
+Nodes (12): Artefacte locale generate și excluse din Git, Capturi reale noi ale proiectelor (23), Cod și stiluri (51), Configurație și fișiere SEO publice (10), Documentație (5), Iconuri și corecturi ale demo-urilor (5), Inventarul fișierelor pentru implementarea SEO, Modificări preexistente păstrate (+4 more)
 
 ### Community 6 - "qd"
-Cohesion: 0.08
-Nodes (32): qd(), A0(), ad(), bo(), Ca(), Cc(), df(), ds() (+24 more)
+Cohesion: 0.05
+Nodes (73): qd(), A0(), Aa(), Ac(), ad(), An(), bo(), Ca() (+65 more)
 
 ### Community 7 - "worker/index.ts"
 Cohesion: 0.29
 Nodes (3): Env, ExecutionContext, worker
 
-### Community 8 - "app/layout.tsx"
-Cohesion: 0.33
-Nodes (4): geist, metadata, mono, viewport
+### Community 8 - "site-config.ts"
+Cohesion: 0.18
+Nodes (10): HtmlDocument(), organizationSchema(), metadata, geist, metadata, mono, RootLayout(), viewport (+2 more)
 
 ### Community 9 - "index-CKwsJXdb.js"
 Cohesion: 0.08
@@ -178,37 +195,37 @@ Nodes (47): @cloudflare/vite-plugin, drizzle-kit, eslint, @eslint/js, eslint-plu
 Cohesion: 0.17
 Nodes (10): devLockPath, extraArgs, findAvailablePort(), hasExplicitHost, portIsAvailable(), refreshScript, root, server (+2 more)
 
-### Community 15 - "Home"
-Cohesion: 0.32
-Nodes (8): localDescription(), localizedDetail(), localType(), annualInstallmentPrice(), Home(), monthlyRentalPrice(), ProjectVisual(), shuffledProjectIds()
+### Community 15 - "trust-page.tsx"
+Cohesion: 0.09
+Nodes (19): trustMetadata(), TrustPage(), TrustPageProps, locales, TrustContent, TrustPath, trustPaths, dynamicParams (+11 more)
 
 ### Community 18 - "dl"
-Cohesion: 0.24
-Nodes (13): _0(), ce(), dl(), ee(), Es(), Ff(), If(), Mu() (+5 more)
+Cohesion: 0.16
+Nodes (20): _0(), ce(), dl(), ee(), Es(), Ff(), gr(), If() (+12 more)
 
-### Community 19 - "du"
-Cohesion: 0.40
-Nodes (6): co(), du(), hf(), oo(), Rn(), Sa()
+### Community 19 - "zr"
+Cohesion: 0.12
+Nodes (35): au(), br(), Cc(), Dc(), dr(), Dt(), _e(), ei() (+27 more)
 
-### Community 20 - "Hi"
-Cohesion: 0.17
-Nodes (16): Aa(), An(), bs(), cd(), e0(), Hi(), In(), jf() (+8 more)
+### Community 20 - "MONO/DEV — raport SEO final"
+Cohesion: 0.18
+Nodes (11): Activarea SEO în viitor, Baza inițială și protejarea modificărilor, Cercetare și strategie comercială, Dimensiuni și aspect, Fișiere și motive, Limite rămase, MONO/DEV — raport SEO final, Măsurare, autoritate și pași următori (+3 more)
 
-### Community 21 - "e1"
-Cohesion: 0.31
-Nodes (9): e1(), x(), nm(), Hl(), j(), M(), ft(), uf() (+1 more)
-
-### Community 22 - "L0"
-Cohesion: 0.24
-Nodes (16): _a(), ao(), bd(), Ea(), eo(), fr(), G0(), ga() (+8 more)
-
-### Community 23 - "Ql"
+### Community 21 - "rl"
 Cohesion: 0.15
-Nodes (26): Bi(), Bl(), Bu(), dd(), Ed(), Gu(), hd(), Hu() (+18 more)
+Nodes (21): at(), da(), io(), Kt(), Le(), lr(), M0(), ma() (+13 more)
 
-### Community 25 - "Ud"
-Cohesion: 0.25
-Nodes (8): O(), q(), r(), Ud(), Cl(), D(), J(), pt()
+### Community 22 - "Wl"
+Cohesion: 0.14
+Nodes (27): ar(), ct(), D0(), eu(), fe(), Is(), jc(), jo() (+19 more)
+
+### Community 23 - "c0"
+Cohesion: 0.12
+Nodes (36): bc(), Bi(), Bl(), Bu(), c0(), dd(), Ed(), Gu() (+28 more)
+
+### Community 25 - "J"
+Cohesion: 0.18
+Nodes (15): C(), ft(), J(), Tl(), Hl(), yl(), Ud(), At() (+7 more)
 
 ### Community 27 - "audit-translations.mjs"
 Cohesion: 0.13
@@ -229,6 +246,10 @@ Nodes (9): args, output, persist(), registry, run, selected, worker(), workers (
 ### Community 34 - "MONO/DEV — catalog de proiecte"
 Cohesion: 0.11
 Nodes (15): Catalog, Limitele demonstrațiilor, Refacerea celor 32 de proiecte, Surse și întreținere, Verificare, Actualizare, Proiecte de grădină și peisagistică, Catalog runtime (+7 more)
+
+### Community 35 - "isLocale"
+Cohesion: 0.19
+Nodes (16): breadcrumbSchema(), websiteSchema(), absoluteUrl(), alternateLanguages(), canonicalUrl(), isLocale(), pageMetadata(), Contact() (+8 more)
 
 ### Community 36 - "audit-report.mjs"
 Cohesion: 0.22
@@ -251,8 +272,8 @@ Cohesion: 0.50
 Nodes (3): output, projects, registry
 
 ### Community 46 - "Hd"
-Cohesion: 0.25
-Nodes (9): Bd(), p(), cf(), Hd(), Nl(), D(), fd(), Yd() (+1 more)
+Cohesion: 0.19
+Nodes (13): cf(), e1(), h(), Hd(), L(), Nl(), x(), L() (+5 more)
 
 ### Community 47 - "optimize-png-lossless.mjs"
 Cohesion: 0.33
@@ -298,9 +319,9 @@ Nodes (4): Answer, Outcome, Q: cand userul aleje cu servicii sau fara, sa i se a
 Cohesion: 0.29
 Nodes (4): locales, projects, registry, report
 
-### Community 69 - "intrebari/page.tsx"
-Cohesion: 0.18
-Nodes (9): BrandLogo(), BrandLogoProps, content, contactCopy, Locale, locales, categories, Category (+1 more)
+### Community 69 - "json-ld.tsx"
+Cohesion: 0.12
+Nodes (18): faqSchema(), JsonLd(), serializeJsonLd(), labels, SeoLinks(), QuestionsPage(), metadata, Category (+10 more)
 
 ### Community 70 - "Audit Network – localhost:3000"
 Cohesion: 0.40
@@ -308,31 +329,31 @@ Nodes (4): Audit Network – localhost:3000, Candidați de optimizare, Catalog, 
 
 ### Community 71 - "live-project-preview.tsx"
 Cohesion: 0.50
-Nodes (4): gardenPreviewSources, StaticProjectPreview(), transformed(), widths
+Nodes (3): projectCardImages, gardenPreviewSources, StaticProjectPreview()
 
 ### Community 72 - "optimize-images-aggressive.mjs"
 Cohesion: 0.17
 Nodes (10): after, before, changed, concurrency, extensions, files, optimize(), results (+2 more)
 
-### Community 73 - "rl"
-Cohesion: 0.15
-Nodes (18): cs(), fo(), gn(), Ht(), io(), Le(), lr(), mf() (+10 more)
+### Community 73 - "audit-seo.mjs"
+Cohesion: 0.11
+Nodes (34): auditProduction(), auditSeo(), exists(), expectedRoutes(), exportedFile(), flattenSchemas(), HREFLANG, LOCALES (+26 more)
 
 ### Community 74 - "Audit Network – localhost:3000"
 Cohesion: 0.40
 Nodes (4): Audit Network – localhost:3000, Candidați de optimizare, Catalog, Toate proiectele
 
-### Community 75 - "c0"
-Cohesion: 0.28
-Nodes (16): bc(), c0(), _e(), Gi(), H0(), Lt(), Qa(), qu() (+8 more)
+### Community 75 - "js"
+Cohesion: 0.24
+Nodes (11): bs(), cn(), fn(), js(), Ls(), nn(), Ns(), oa() (+3 more)
 
 ### Community 76 - "Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus"
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: da, fal asa. Dar el trebuie sa stea in drepata in colt sus. si trebuie sa file la ambele butoane in coltul din dreapt asus, Source Nodes
 
-### Community 77 - "i18n.ts"
-Cohesion: 0.29
-Nodes (6): copy, descriptions, romanianTypeMap, showcaseCopy, typeMap, visualCopy
+### Community 77 - "home-client.tsx"
+Cohesion: 0.13
+Nodes (15): categorySlugs, cleanFilterCopy, filters, gamesPlatformCopy, Home(), platformCopy, readPreference(), shuffledProjectIds() (+7 more)
 
 ### Community 78 - "Q: vreau mereu cand deschide un proiect, sa fie default 12 luni selectat; textul Cumpără în rate sa fie cu litere mari totul"
 Cohesion: 0.40
@@ -346,37 +367,37 @@ Nodes (4): Answer, Outcome, Q: aici textul schimbal in de la, Source Nodes
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: butonul I fal de 2 ori mai mic, Source Nodes
 
-### Community 82 - "J"
-Cohesion: 0.17
-Nodes (20): Cd(), h(), L(), Nd(), C(), ft(), h(), J() (+12 more)
+### Community 82 - "Nd"
+Cohesion: 0.29
+Nodes (9): Cd(), Nd(), h(), x(), yl(), j(), M(), w() (+1 more)
 
 ### Community 83 - "showcase-favicons.test.mjs"
 Cohesion: 0.40
 Nodes (3): registry, root, visibleProjects
 
-### Community 84 - "Ki"
-Cohesion: 0.12
-Nodes (21): Ae(), ct(), Gc(), id(), Is(), jo(), K0(), Ke() (+13 more)
+### Community 84 - "Bd"
+Cohesion: 0.40
+Nodes (6): Bd(), p(), D(), pt(), Yd(), p()
 
-### Community 85 - "Wl"
-Cohesion: 0.18
-Nodes (19): ar(), D0(), jc(), Kc(), Ku(), lo(), ms(), Pa() (+11 more)
+### Community 85 - "L0"
+Cohesion: 0.20
+Nodes (19): _a(), ao(), bd(), Ea(), eo(), fr(), G0(), ga() (+11 more)
 
 ### Community 86 - "Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta"
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: cand deschid orice card, popupul nu e vizibil intreg si trebuie scroll stanga-dreapta, Source Nodes
 
-### Community 87 - "_f"
-Cohesion: 0.32
-Nodes (8): _f(), $n(), of(), p0(), st(), we(), wn(), zf()
+### Community 87 - "i18n.ts"
+Cohesion: 0.15
+Nodes (15): ProjectVisual(), contactCopy, copy, descriptions, localDescription(), Locale, localizedDetail(), localType() (+7 more)
 
 ### Community 88 - "optimize-project-images.mjs"
 Cohesion: 0.07
-Nodes (37): apply, audit, candidates, concurrency, decodedFingerprint(), fileHash(), imageExtensions, includeSourceMatches (+29 more)
+Nodes (37): apply, audit, candidates, concurrency, decodedFingerprint(), fileHash(), imageExtensions, includeSourceImages (+29 more)
 
-### Community 89 - "yo"
-Cohesion: 0.12
-Nodes (17): Ac(), ci(), eu(), fe(), gt(), Mr(), ni(), O0() (+9 more)
+### Community 89 - "contact-client.tsx"
+Cohesion: 0.25
+Nodes (9): AnalyticsConsent(), text, ContactPage(), analyticsConsentKey, AnalyticsEvent, trackEvent(), Window, contactOptionLabel() (+1 more)
 
 ### Community 90 - "Q: acest buton punel la fel ca in pagina de intrebari"
 Cohesion: 0.40
@@ -386,13 +407,73 @@ Nodes (4): Answer, Outcome, Q: acest buton punel la fel ca in pagina de intrebar
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: pe ecrane mai mici, poza proiectului se strica tare, corecteaza ca sa nu se scrice pe nici o dimensiune de ecran, Source Nodes
 
+### Community 92 - "Q: eu vreau sa fie in 2 randuri si tot o data sa nu se strice pozele la carduri"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: eu vreau sa fie in 2 randuri si tot o data sa nu se strice pozele la carduri, Source Nodes
+
+### Community 93 - "localePath"
+Cohesion: 0.16
+Nodes (16): SeoShell(), projectHref(), getService(), Service, ServiceContent, serviceLabels, services, localePath() (+8 more)
+
+### Community 94 - "projects/[slug]/page.tsx"
+Cohesion: 0.19
+Nodes (17): getProject(), monthlyRentalPrice(), publicProjects, isProjectSeoEnabled(), LocalizedProject, projectMetadata(), projectStructuredData(), projectTitle() (+9 more)
+
+### Community 95 - "dependencies"
+Cohesion: 0.15
+Nodes (13): drizzle-orm, framer-motion, lucide-react, magic-string, dependencies, drizzle-orm, framer-motion, lucide-react (+5 more)
+
+### Community 97 - "package.json"
+Cohesion: 0.29
+Nodes (6): engines, node, name, private, type, version
+
+### Community 98 - "Q: analizeaza toate priectele, cee 63, si fiecare imagine din ele, si daca imaginea depastete greutatea de 250 kb, comprima la maxim daca e posibil fara a pierde calitatea ei"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: analizeaza toate priectele, cee 63, si fiecare imagine din ele, si daca imaginea depastete greutatea de 250 kb, comprima la maxim daca e posibil fara a pierde calitatea ei, Source Nodes
+
+### Community 99 - "serve-seo.mjs"
+Cohesion: 0.40
+Nodes (4): compress, mime, port, root
+
+### Community 103 - "project-catalog.ts"
+Cohesion: 0.13
+Nodes (14): categoryServiceSlugs, hiddenCategories, installmentPlans, MobileOS, PaymentMode, Platform, pricesByProjectId, Project (+6 more)
+
+### Community 104 - "h"
+Cohesion: 0.15
+Nodes (16): co(), du(), h(), hf(), li(), nc(), on(), oo() (+8 more)
+
+### Community 105 - "brand-logo.tsx"
+Cohesion: 0.33
+Nodes (4): BrandLogo(), BrandLogoProps, content, locales
+
+### Community 106 - "Ki"
+Cohesion: 0.13
+Nodes (20): Ae(), Gc(), id(), K0(), Ke(), Ki(), ld(), nl() (+12 more)
+
+### Community 108 - "Arhitectura SEO statică"
+Cohesion: 0.25
+Nodes (8): Arhitectura SEO statică, Controlul indexării și redirecturi, Date structurate și limitări, Generarea build-ului, Imaginile cardurilor, Politica actuală de indexare — 10 septembrie 2026, URL-uri și limbi, Validarea configurației Netlify
+
+### Community 109 - "Implementarea SEO MONO/DEV"
+Cohesion: 0.25
+Nodes (8): Ce necesită proprietarul, Ce s-a implementat, Export și controlul indexării, Fișiere, Implementarea SEO MONO/DEV, Performanță măsurată și limite, URL-uri și sitemap, Verificări
+
+### Community 110 - "MONO/DEV — checklist de lansare SEO"
+Cohesion: 0.29
+Nodes (7): Analytics: configurare explicită și consimțământ, Google Business Profile, Google Search Console și alte instrumente, MONO/DEV — checklist de lansare SEO, Netlify și verificări după un deploy autorizat, Priorități 30 / 60 / 90 de zile, Înainte de publicare
+
+### Community 111 - "Cercetare și hartă keyword → pagină"
+Cohesion: 0.50
+Nodes (4): Ce s-a implementat și ce necesită validare, Cercetare și hartă keyword → pagină, Constatări pe limbi, Distribuția intențiilor
+
 ### Community 135 - "Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are."
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: analizeaza cele 24 proiecte, daca toate sunt integral traduse in RO/RU/EN? daca nu, dami lista si ce probleme are., Source Nodes
 
 ### Community 162 - "sync-showcase.mjs"
-Cohesion: 0.07
-Nodes (34): registry, root, normalizeNextExport(), writeProjectPreview(), ensureShowcaseFavicon(), escapeXml(), exists(), faviconSvg() (+26 more)
+Cohesion: 0.06
+Nodes (37): registry, root, normalizeNextExport(), normalizeArchiNavigation(), normalizeShowcaseInteractions(), walk(), writeProjectPreview(), ensureShowcaseFavicon() (+29 more)
 
 ### Community 179 - "Q: mai verifica din nou toate cele 24 proiecte daca sunt traduse in 3 limibi si lucreaza corect"
 Cohesion: 0.40
@@ -403,29 +484,31 @@ Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: ok. Cand pornesc acest proiect pe portul 3000, automat cand pornesc si alt proiect, se porneste pe perturile disponibile? sau tot pe 3000 se va porni?, Source Nodes
 
 ### Community 1516 - "integrate-new-projects.mjs"
-Cohesion: 0.15
-Nodes (12): catalogRoot, configs, folders, known, pagePath, pathEntries, priceByDomain, projectEntries (+4 more)
+Cohesion: 0.14
+Nodes (13): catalogPath, catalogRoot, configs, folders, known, pagePath, pathEntries, priceByDomain (+5 more)
 
 ## Knowledge Gaps
-- **450 isolated node(s):** `BrandLogoProps`, `metadata`, `content`, `metadata`, `GardenDetail` (+445 more)
+- **540 isolated node(s):** `dynamicParams`, `copy`, `dynamicParams`, `dynamicParams`, `dynamicParams` (+535 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Work-memory lessons
 
 **Preferred sources** — corroborated by past sessions; start here.
-- `RentalServiceTier` (3× useful, score=2.943780031) _(code changed — re-verify)_
-- `i18n.ts` (2× useful, score=1.849216899)
-- `projectSlugs` (2× useful, score=1.699906607) _(code changed — re-verify)_
+- `RentalServiceTier` (3× useful, score=2.929327903) _(code changed — re-verify)_
+- `ProjectVisual()` (2× useful, score=1.990262807) _(code changed — re-verify)_
+- `i18n.ts` (2× useful, score=1.840138395)
+- `sync-showcase.mjs` (2× useful, score=1.813446333)
+- `projectSlugs` (2× useful, score=1.691561123) _(code changed — re-verify)_
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `qd()` connect `qd` to `h`, `index-CKwsJXdb.js`, `rl`, `c0`, `Hd`, `J`, `dl`, `Hi`, `Ki`, `L0`, `Wl`, `Ql`, `yo`, `du`, `_f`, `e1`, `Ud`?**
-  _High betweenness centrality (0.115) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `scripts`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **Why does `Ud()` connect `Ud` to `index-CKwsJXdb.js`, `Hd`, `J`, `Ki`, `e1`?**
+- **Why does `qd()` connect `qd` to `e`, `h`, `index-CKwsJXdb.js`, `Ki`, `js`, `Hd`, `Nd`, `dl`, `Bd`, `L0`, `Wl`, `rl`, `zr`, `J`, `c0`?**
+  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+- **Why does `Nd()` connect `Nd` to `index-CKwsJXdb.js`, `Hd`, `J`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `localePath()` connect `localePath` to `isLocale`, `json-ld.tsx`, `project-catalog.ts`, `site-config.ts`, `home-client.tsx`, `trust-page.tsx`, `contact-client.tsx`, `projects/[slug]/page.tsx`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Are the 20 inferred relationships involving `qd()` (e.g. with `ad()` and `cd()`) actually correct?**
   _`qd()` has 20 INFERRED edges - model-reasoned connections that need verification._
@@ -433,5 +516,5 @@ _Questions this graph is uniquely positioned to answer:_
   _`e()` has 18 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `zr()` (e.g. with `A0()` and `a()`) actually correct?**
   _`zr()` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `BrandLogoProps`, `metadata`, `content` to the rest of the system?**
-  _450 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `dynamicParams`, `copy`, `dynamicParams` to the rest of the system?**
+  _540 weakly-connected nodes found - possible documentation gaps or missing edges._

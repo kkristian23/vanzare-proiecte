@@ -9,7 +9,7 @@ export function BrandLogo({
   href,
   className,
   inverse = false,
-  ariaLabel = "mono/dev — pagina principală",
+  ariaLabel = "mono/dev",
 }: BrandLogoProps) {
   const classes = ["brand-logo", inverse && "brand-logo--inverse", className]
     .filter(Boolean)

@@ -1,13 +1,13 @@
 type GardenDetail = { summary: string; sections: { title: string; items: string[] }[] };
 type GardenCopy = { description: string; design: string; features: string[] };
 type GardenProject = {
-  id: number; title: string; slug: string; price: number;
+  id: number; title: string; slug: string; price: number; seoEnabled: boolean;
   copy: Record<"ro" | "en" | "ru", GardenCopy>;
 };
 
 export const gardenProjects: GardenProject[] = [
   {
-    id: 71, title: "AquaVerde", slug: "aquaverde", price: 900,
+    id: 71, seoEnabled: false, title: "AquaVerde", slug: "aquaverde", price: 900,
     copy: {
       ro: { description: "Sisteme inteligente de irigare, cu simulator și calculator de consum.", design: "Verde-mentă, suprafețe albe și o prezentare tehnică a circuitului apei.", features: ["Calculator de investiție în trei pași", "Estimări de aspersoare, conducte și consum de apă", "Selector de sisteme, simulator și diagnosticare"] },
       en: { description: "Smart irrigation systems with a simulator and water-use calculator.", design: "Mint green, white surfaces and a technical presentation of water flow.", features: ["Three-step investment calculator", "Sprinkler, pipe and water-use estimates", "System selector, simulator and troubleshooting"] },
@@ -15,7 +15,7 @@ export const gardenProjects: GardenProject[] = [
     },
   },
   {
-    id: 70, title: "TerraForma", slug: "terraforma", price: 1000,
+    id: 70, seoEnabled: false, title: "TerraForma", slug: "terraforma", price: 1000,
     copy: {
       ro: { description: "Arhitectură peisagistică premium, portofoliu editorial și moodboard de grădină.", design: "Fundal crem, accente măslinii și teracotă, titluri elegante și fotografii ample.", features: ["Portofoliu și catalog cu 40 de plante filtrabile", "Moodboard, test de stil și configurator de atmosferă", "Calculatoare de densitate și buget; brief exportabil"] },
       en: { description: "Premium landscape architecture, an editorial portfolio and a garden moodboard.", design: "Cream backgrounds, olive and terracotta accents, elegant headings and large photographs.", features: ["Portfolio and a filterable catalog of 40 plants", "Moodboard, style quiz and atmosphere configurator", "Plant-density and budget calculators; exportable brief"] },
@@ -23,7 +23,7 @@ export const gardenProjects: GardenProject[] = [
     },
   },
   {
-    id: 69, title: "GazonPro", slug: "gazonpro", price: 900,
+    id: 69, seoEnabled: false, title: "GazonPro", slug: "gazonpro", price: 900,
     copy: {
       ro: { description: "Instalare și întreținere gazon, cu magazin demonstrativ și calculator de suprafață.", design: "Verde intens, tipografie Manrope și fotografii de gazon în cadre generoase.", features: ["Calcul de suprafață, rulouri, semințe și fertilizant", "Catalog de 16 produse cu filtre, sortare și coș local", "Diagnostic interactiv și calendar lunar de îngrijire"] },
       en: { description: "Lawn installation and care with a demo shop and an area calculator.", design: "Rich green, Manrope typography and generously framed lawn photography.", features: ["Area, turf-roll, seed and fertilizer calculations", "16-product catalog with filters, sorting and a local cart", "Interactive diagnosis and a monthly care calendar"] },
@@ -31,7 +31,7 @@ export const gardenProjects: GardenProject[] = [
     },
   },
   {
-    id: 68, title: "EcoHabitat", slug: "ecohabitat", price: 850,
+    id: 68, seoEnabled: false, title: "EcoHabitat", slug: "ecohabitat", price: 850,
     copy: {
       ro: { description: "Grădini ecologice și biodiversitate, cu plante locale și instrumente educaționale.", design: "Verde-pădure, salvie și nuanțe de nisip, fotografii de pajiște și temă întunecată.", features: ["Catalog de 40 de plante cu filtre", "Evaluare ecologică și plan de grădină descărcabil", "Calculatoare pentru compost, sol și apă; fișe imprimabile"] },
       en: { description: "Ecological gardens and biodiversity with local plants and educational tools.", design: "Forest green, sage and sand tones, meadow photography and a dark theme.", features: ["Filterable catalog of 40 plants", "Ecological assessment and a downloadable garden plan", "Compost, soil and water calculators; printable resources"] },
@@ -39,7 +39,7 @@ export const gardenProjects: GardenProject[] = [
     },
   },
   {
-    id: 67, title: "YardCraft", slug: "yardcraft", price: 1200,
+    id: 67, seoEnabled: false, title: "YardCraft", slug: "yardcraft", price: 1200,
     copy: {
       ro: { description: "Amenajarea completă a curții, cu plan schematic și configurator de buget.", design: "Accente lime, suprafețe deschise și o interfață orientată spre configurarea curții.", features: ["Configurator pentru suprafață, finisaje și servicii", "Estimări de buget, materiale și durată a lucrărilor", "Comparație de pachete, salvare locală și rezumat imprimabil"] },
       en: { description: "Complete yard landscaping with a schematic plan and a budget configurator.", design: "Lime accents, light surfaces and an interface centered on planning the yard.", features: ["Configurator for area, finishes and services", "Budget, material and project-duration estimates", "Package comparison, local saving and a printable summary"] },

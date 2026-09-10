@@ -1,4 +1,5 @@
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
+import { stripVTControlCharacters } from 'node:util';
 import { chromium } from '@playwright/test';
 
 const args=process.argv.slice(2);
@@ -154,7 +155,7 @@ try {
               await page.goBack({waitUntil:'domcontentloaded'});
             }
           }
-        } catch(error){item.result=original.slug==='iqcalendar'&&await page.locator('#onboardingModal').isVisible()?'authentication-required-manual':'reproduced-error';item.error=error.message.replace(/\u001b\[[0-9;]*m/g,'').slice(0,3000);}
+        } catch(error){item.result=original.slug==='iqcalendar'&&await page.locator('#onboardingModal').isVisible()?'authentication-required-manual':'reproduced-error';item.error=stripVTControlCharacters(error.message).slice(0,3000);}
         finally {await writeFile(`${root}/interaction-rechecks/${original.slug}.json`,JSON.stringify(report,null,2));}
       }
     } finally {await context.close();}

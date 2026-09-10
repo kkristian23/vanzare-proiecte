@@ -27,14 +27,18 @@ const projectEntries = configs.map((p) => `  {\n    id: ${p.id},\n    title: ${J
 const slugEntries = configs.map((p) => `  ${p.id}: ${JSON.stringify(p.folder)},`).join("\n");
 const pathEntries = configs.map((p) => `  ${p.id}: ${JSON.stringify(`/${p.folder}/`)},`).join("\n");
 
-const pagePath = path.join(catalogRoot, "app", "page.tsx");
-let page = await readFile(pagePath, "utf8");
-if (!page.includes('title: "EVENTORA"')) {
-  page = page.replace("const projects = [\n", `const projects = [\n${projectEntries}\n`);
-  page = page.replace("const projectSlugs: Record<number, string> = {\n", `const projectSlugs: Record<number, string> = {\n${slugEntries}\n`);
-  page = page.replace("const projectPaths: Record<number, string> = {\n", `const projectPaths: Record<number, string> = {\n${pathEntries}\n`);
+const catalogPath = path.join(catalogRoot, "app", "lib", "project-catalog.ts");
+let catalog = await readFile(catalogPath, "utf8");
+if (!catalog.includes('title: "EVENTORA"')) {
+  for (const [declaration, entries] of [[/export const projectCatalog: Project\[\] = \[\r?\n/, projectEntries], [/export const projectSlugs: Record<number, string> = \{\r?\n/, slugEntries], [/export const projectPaths: Record<number, string> = \{\r?\n/, pathEntries]]) {
+    if (!declaration.test(catalog)) throw new Error(`Catalog declaration missing: ${declaration}`);
+    catalog = catalog.replace(declaration, (match) => `${match}${entries}\n`);
+  }
 }
+await writeFile(catalogPath, catalog, "utf8");
 
+const pagePath = path.join(catalogRoot, "app", "home-client.tsx");
+let page = await readFile(pagePath, "utf8");
 const oldDetail = `  const selectedDetail = selected\n    ? locale === "ro"\n      ? projectDetails[selected.id]\n      : localizedDetail(locale, selected)\n    : null;`;
 const newDetail = `  const selectedDetail = selected\n    ? locale === "ro"\n      ? projectDetails[selected.id] ?? {\n          summary: selected.desc,\n          sections: [\n            { title: "Produsul", items: ["Interfață completă și responsive", "Experiență demonstrativă pregătită pentru personalizare", "Conținut și structură originale"] },\n            { title: "Funcționalități", items: ["Căutare, filtrare și favorite", "Formulare validate și notificări", "Temă luminoasă și întunecată"] },\n            { title: "Tehnologii", items: selected.stack },\n            { title: "Ce primește cumpărătorul", items: ["Cod sursă complet editabil", "Build static pentru prezentare", "Configurație Firebase opțională"] },\n          ],\n        }\n      : localizedDetail(locale, selected)\n    : null;`;
 if (page.includes(oldDetail)) page = page.replace(oldDetail, newDetail);

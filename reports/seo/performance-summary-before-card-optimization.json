@@ -1,0 +1,1018 @@
+{
+  "method": "Lighthouse 13.4.1, default simulated mobile, local static export served with compression on 4012. Single lab run per route; not production field data. Original 4010 reports used uncompressed responses and are not a controlled performance baseline.",
+  "pages": [
+    {
+      "name": "home",
+      "url": "http://127.0.0.1:4012/ro",
+      "fetchTime": "2026-09-10T10:22:00.263Z",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 3183.605,
+          "display": "3.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 4723.6865,
+          "display": "4.7 s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "total-blocking-time": {
+          "value": 149,
+          "display": "150 ms"
+        },
+        "speed-index": {
+          "value": 3183.605,
+          "display": "3.2 s"
+        }
+      },
+      "failingAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.44,
+          "title": "First Contentful Paint",
+          "value": "3.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.32,
+          "title": "Largest Contentful Paint",
+          "value": "4.7 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.92,
+          "title": "Speed Index",
+          "value": "3.2 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.95,
+          "title": "Total Blocking Time",
+          "value": "150 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.32,
+          "title": "Max Potential First Input Delay",
+          "value": "320 ms"
+        },
+        {
+          "id": "interactive",
+          "score": 0.78,
+          "title": "Time to Interactive",
+          "value": "4.9 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work",
+          "value": "4.1 s"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript",
+          "value": "Est savings of 77 KiB"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "title": "Improve image delivery",
+          "value": "Est savings of 874 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "value": "Est savings of 410 ms"
+        }
+      ],
+      "audits": {
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 410 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                "totalBytes": 34014,
+                "wastedMs": 1207
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                "totalBytes": 1283,
+                "wastedMs": 307
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/home-client.JvoGII7g.css",
+                "totalBytes": 1730,
+                "wastedMs": 307
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                "totalBytes": 583,
+                "wastedMs": 307
+              }
+            ]
+          }
+        },
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 77 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-CH0ulDO4.js",
+                "totalBytes": 49806,
+                "wastedBytes": 32466,
+                "wastedPercent": 65.18559764544116
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59096,
+                "wastedBytes": 24437,
+                "wastedPercent": 41.35060372754428
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/home-client-DXb7ElOE.js",
+                "totalBytes": 87227,
+                "wastedBytes": 21555,
+                "wastedPercent": 24.711868727526433
+              }
+            ],
+            "overallSavingsMs": 520,
+            "overallSavingsBytes": 78458,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 300,
+                "LCP": 520
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "details": {
+            "type": "opportunity",
+            "headings": [],
+            "items": [],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 0,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "total-byte-weight": {
+          "score": 1,
+          "displayValue": "Total size was 1,466 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/ecohabitat/images/garden.jpg",
+                "totalBytes": 373393
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-previews/01-eventora.png",
+                "totalBytes": 168705
+              },
+              {
+                "url": "http://127.0.0.1:4012/yardcraft/images/hero-1600.webp",
+                "totalBytes": 167949
+              },
+              {
+                "url": "http://127.0.0.1:4012/gazonpro/images/hero.webp",
+                "totalBytes": 129957
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-previews/02-scena-city.png",
+                "totalBytes": 109261
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/home-client-DXb7ElOE.js",
+                "totalBytes": 91496
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-previews/terraforma.webp",
+                "totalBytes": 80408
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59352
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-CH0ulDO4.js",
+                "totalBytes": 50065
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-previews/aquaverde.webp",
+                "totalBytes": 37150
+              }
+            ],
+            "sortedBy": [
+              "totalBytes"
+            ]
+          }
+        },
+        "lcp-breakdown-insight": {
+          "score": 1,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 45.909
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 378.587
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-H2",
+                "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,0,DIV,0,DIV,1,H2",
+                "selector": "section#proiecte > div.section-head > div > h2",
+                "boundingRect": {
+                  "top": 608,
+                  "bottom": 760,
+                  "left": 14,
+                  "right": 398,
+                  "width": 384,
+                  "height": 152
+                },
+                "snippet": "<h2>",
+                "nodeLabel": "ALEGE URMĂTORUL\nTĂU PROIECT."
+              }
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "7132B4737FEA586A6F6AD8A0869D6E35": {
+                      "url": "http://127.0.0.1:4012/ro",
+                      "navStartToEndTime": 89,
+                      "transferSize": 15278,
+                      "isLongest": true,
+                      "children": {
+                        "22588.8": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                          "navStartToEndTime": 162,
+                          "transferSize": 59352,
+                          "isLongest": true,
+                          "children": {
+                            "22588.85": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/link-QLV1oFc3.js",
+                              "navStartToEndTime": 389,
+                              "transferSize": 5389,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "22588.86": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/query-B3quLZp9.js",
+                              "navStartToEndTime": 360,
+                              "transferSize": 741,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "22588.17": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/navigation-errors-wvgRKjB-.js",
+                          "navStartToEndTime": 159,
+                          "transferSize": 1876,
+                          "children": {}
+                        },
+                        "22588.16": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/deployment-id-DFhHa9wO.js",
+                          "navStartToEndTime": 159,
+                          "transferSize": 357,
+                          "children": {}
+                        },
+                        "22588.15": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/protocol-headers-URL33uU5.js",
+                          "navStartToEndTime": 159,
+                          "transferSize": 416,
+                          "children": {}
+                        },
+                        "22588.14": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/headers-CeAbe3am.js",
+                          "navStartToEndTime": 158,
+                          "transferSize": 1433,
+                          "children": {}
+                        },
+                        "22588.13": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-render-mode-IDJu5NEE.js",
+                          "navStartToEndTime": 158,
+                          "transferSize": 573,
+                          "children": {}
+                        },
+                        "22588.12": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-cache-busting-CVjBOH4c.js",
+                          "navStartToEndTime": 120,
+                          "transferSize": 2233,
+                          "children": {}
+                        },
+                        "22588.11": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/record-BdkTR7AP.js",
+                          "navStartToEndTime": 120,
+                          "transferSize": 347,
+                          "children": {}
+                        },
+                        "22588.9": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-elements-Drg5O4vw.js",
+                          "navStartToEndTime": 119,
+                          "transferSize": 4275,
+                          "children": {}
+                        },
+                        "22588.10": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/hash-D0ldriCF.js",
+                          "navStartToEndTime": 119,
+                          "transferSize": 435,
+                          "children": {}
+                        },
+                        "22588.7": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+                          "navStartToEndTime": 118,
+                          "transferSize": 676,
+                          "children": {}
+                        },
+                        "22588.2": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                          "navStartToEndTime": 108,
+                          "transferSize": 34014,
+                          "children": {}
+                        },
+                        "22588.5": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                          "navStartToEndTime": 104,
+                          "transferSize": 1283,
+                          "children": {}
+                        },
+                        "22588.4": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/home-client.JvoGII7g.css",
+                          "navStartToEndTime": 102,
+                          "transferSize": 1730,
+                          "children": {}
+                        },
+                        "22588.3": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                          "navStartToEndTime": 101,
+                          "transferSize": 583,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 389
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "project",
+      "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+      "fetchTime": "2026-09-10T10:22:11.858Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2304.2129999999997,
+          "display": "2.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3004.8559999999998,
+          "display": "3.0 s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "total-blocking-time": {
+          "value": 14.5,
+          "display": "10 ms"
+        },
+        "speed-index": {
+          "value": 2304.2129999999997,
+          "display": "2.3 s"
+        }
+      },
+      "failingAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.74,
+          "title": "First Contentful Paint",
+          "value": "2.3 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.78,
+          "title": "Largest Contentful Paint",
+          "value": "3.0 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index",
+          "value": "2.3 s"
+        },
+        {
+          "id": "interactive",
+          "score": 0.96,
+          "title": "Time to Interactive",
+          "value": "3.0 s"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "value": "Est savings of 24 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript",
+          "value": "Est savings of 57 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "title": "Improve image delivery",
+          "value": "Est savings of 48 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "value": "Est savings of 300 ms"
+        }
+      ],
+      "audits": {
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 300 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                "totalBytes": 583,
+                "wastedMs": 306
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                "totalBytes": 1283,
+                "wastedMs": 306
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/page.JvoGII7g.css",
+                "totalBytes": 1730,
+                "wastedMs": 306
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                "totalBytes": 34014,
+                "wastedMs": 1206
+              }
+            ]
+          }
+        },
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 57 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-CH0ulDO4.js",
+                "totalBytes": 49806,
+                "wastedBytes": 32950,
+                "wastedPercent": 66.15605770487333
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59096,
+                "wastedBytes": 25650,
+                "wastedPercent": 43.40317219908284
+              }
+            ],
+            "overallSavingsMs": 450,
+            "overallSavingsBytes": 58600,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 300,
+                "LCP": 450
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "score": 0,
+          "displayValue": "Est savings of 24 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                "wastedBytes": 25077,
+                "wastedPercent": 74.26841252217416,
+                "totalBytes": 33765
+              }
+            ],
+            "overallSavingsMs": 130,
+            "overallSavingsBytes": 25077,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 150,
+                "LCP": 130
+              }
+            }
+          }
+        },
+        "total-byte-weight": {
+          "score": 1,
+          "displayValue": "Total size was 322 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/project-previews/aquaverde-screenshot.webp",
+                "totalBytes": 69862
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59352
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-CH0ulDO4.js",
+                "totalBytes": 50065
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                "totalBytes": 34014
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+                "totalBytes": 29515
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2",
+                "totalBytes": 23335
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2",
+                "totalBytes": 15127
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2",
+                "totalBytes": 13099
+              },
+              {
+                "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+                "totalBytes": 9110
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/link-QLV1oFc3.js",
+                "totalBytes": 5389
+              }
+            ],
+            "sortedBy": [
+              "totalBytes"
+            ]
+          }
+        },
+        "lcp-breakdown-insight": {
+          "score": 1,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 5.293
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 169.71
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-H1",
+                "path": "1,HTML,1,BODY,0,DIV,1,MAIN,1,HEADER,1,H1",
+                "selector": "div.seo-page > main > header.seo-hero > h1",
+                "boundingRect": {
+                  "top": 311,
+                  "bottom": 445,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 134
+                },
+                "snippet": "<h1>",
+                "nodeLabel": "Web project: Smart irrigation systems with a simulator and water-use calculator…"
+              }
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "8656003627AA9982482414A372B89D64": {
+                      "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+                      "navStartToEndTime": 50,
+                      "transferSize": 9110,
+                      "isLongest": true,
+                      "children": {
+                        "20216.8": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                          "navStartToEndTime": 88,
+                          "transferSize": 59352,
+                          "isLongest": true,
+                          "children": {
+                            "20216.66": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/link-QLV1oFc3.js",
+                              "navStartToEndTime": 166,
+                              "transferSize": 5389,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "20216.67": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/query-B3quLZp9.js",
+                              "navStartToEndTime": 163,
+                              "transferSize": 741,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "20216.17": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/navigation-errors-wvgRKjB-.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 1876,
+                          "children": {}
+                        },
+                        "20216.15": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/protocol-headers-URL33uU5.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 416,
+                          "children": {}
+                        },
+                        "20216.16": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/deployment-id-DFhHa9wO.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 357,
+                          "children": {}
+                        },
+                        "20216.14": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/headers-CeAbe3am.js",
+                          "navStartToEndTime": 80,
+                          "transferSize": 1433,
+                          "children": {}
+                        },
+                        "20216.13": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-render-mode-IDJu5NEE.js",
+                          "navStartToEndTime": 80,
+                          "transferSize": 573,
+                          "children": {}
+                        },
+                        "20216.12": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-cache-busting-CVjBOH4c.js",
+                          "navStartToEndTime": 72,
+                          "transferSize": 2233,
+                          "children": {}
+                        },
+                        "20216.11": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/record-BdkTR7AP.js",
+                          "navStartToEndTime": 72,
+                          "transferSize": 347,
+                          "children": {}
+                        },
+                        "20216.10": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/hash-D0ldriCF.js",
+                          "navStartToEndTime": 72,
+                          "transferSize": 435,
+                          "children": {}
+                        },
+                        "20216.9": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-elements-Drg5O4vw.js",
+                          "navStartToEndTime": 71,
+                          "transferSize": 4275,
+                          "children": {}
+                        },
+                        "20216.7": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+                          "navStartToEndTime": 71,
+                          "transferSize": 676,
+                          "children": {}
+                        },
+                        "20216.5": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                          "navStartToEndTime": 62,
+                          "transferSize": 583,
+                          "children": {}
+                        },
+                        "20216.4": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                          "navStartToEndTime": 61,
+                          "transferSize": 1283,
+                          "children": {}
+                        },
+                        "20216.3": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/page.JvoGII7g.css",
+                          "navStartToEndTime": 61,
+                          "transferSize": 1730,
+                          "children": {}
+                        },
+                        "20216.2": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/index.CD4tyC7a.css",
+                          "navStartToEndTime": 60,
+                          "transferSize": 34014,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 166
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "22.13.0"
 
+# scripts/netlify-seo.mjs generates public/_redirects and public/_headers during
+# prebuild. Vinext copies both to dist/client. They are the only SEO routing and
+# noindex-header implementation; keep cache headers below in this file.
+# Missing static routes use the exported 404.html (HTTP 404), without a 200 rewrite.
+
+[build.processing]
+  skip_processing = true
+
 # Source assets inherit these browser-cache headers when transformed by Netlify Image CDN.
 [[headers]]
   for = "/project-previews/*"

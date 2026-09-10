@@ -1,0 +1,150 @@
+{
+  "pages": [
+    {
+      "route": "/ro",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "MONO/DEV — Site-uri și proiecte web pentru Moldova",
+      "lang": "ro",
+      "h1": "IDEI MARI\nDEJA CONSTRUITE",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/en",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "MONO/DEV — Launch-ready websites and custom web development",
+      "lang": "en",
+      "h1": "BIG IDEAS.\nALREADY BUILT.",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ru",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "MONO/DEV — Сайты и веб-проекты для бизнеса в Молдове",
+      "lang": "ru",
+      "h1": "БОЛЬШИЕ ИДЕИ.\nУЖЕ СОЗДАНЫ.",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ru/contact",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Обсудим ваш веб-проект | MONO/DEV",
+      "lang": "ru",
+      "h1": "ДАВАЙТЕ\nСОЗДАДИМ\nНЕЧТО ОСОБЕННОЕ.",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/en/intrebari",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "Questions about projects, pricing and launch | MONO/DEV",
+      "lang": "en",
+      "h1": "ANSWERS\nFOR BETTER\nDECISIONS.",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/en/projects/aquaverde",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Web project: Smart irrigation systems with a simulator and water-use calculator — AquaVerde | MONO/DEV",
+      "lang": "en",
+      "h1": "Web project: Smart irrigation systems with a simulator and water-use calculator — AquaVerde",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ru/projects/04-clinica-nova",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Веб-проект: Сайт клиники с направлениями лечения и командой специалистов — CLINICA NOVA | MONO/DEV",
+      "lang": "ru",
+      "h1": "Веб-проект: Сайт клиники с направлениями лечения и командой специалистов — CLINICA NOVA",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ro/projects/flow-crm",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "Proiect web: Workspace SaaS pentru lead-uri, clienți, pipeline, oferte, automatizări și raportarea completă a vânzărilor — FLOW CRM | MONO/DEV",
+      "lang": "ro",
+      "h1": "Proiect web: Workspace SaaS pentru lead-uri, clienți, pipeline, oferte, automatizări și raportarea completă a vânzărilor — FLOW CRM",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ru/services/ecommerce",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Разработка интернет-магазинов | MONO/DEV",
+      "lang": "ru",
+      "h1": "Разработка интернет-магазинов",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/ro/services/business-websites",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "title": "Creare site pentru afaceri din Moldova | MONO/DEV",
+      "lang": "ro",
+      "h1": "Creare site pentru afaceri din Moldova",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    },
+    {
+      "route": "/en/services/website-customization",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "title": "Website customization | MONO/DEV",
+      "lang": "en",
+      "h1": "Website customization",
+      "overflow": false,
+      "analytics": false,
+      "touchAction": "auto"
+    }
+  ],
+  "withoutJavaScript": {
+    "text": "BIG IDEAS.\nALREADY BUILT.",
+    "spans": [
+      {
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  "missingPageStatus": 404
+}

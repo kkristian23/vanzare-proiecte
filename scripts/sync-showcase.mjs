@@ -4,6 +4,7 @@ import process from "node:process";
 import { spawn } from "node:child_process";
 import { writeProjectPreview } from "./project-previews.mjs";
 import { normalizeNextExport } from "./normalize-next-export.mjs";
+import { normalizeShowcaseInteractions } from "./normalize-showcase-interactions.mjs";
 import { ensureShowcaseFavicon } from "./showcase-favicons.mjs";
 
 const root = process.cwd();
@@ -164,6 +165,7 @@ for (const project of registry) {
     continue;
   }
   if (changedOnly && !(await projectChanged(project, destination))) {
+    await normalizeShowcaseInteractions(destination, project.slug);
     if (project.id >= 35) await writeProjectPreview(destination);
     results.push({ slug: project.slug, status: "unchanged" });
     continue;
@@ -234,6 +236,7 @@ for (const project of registry) {
     }
   }
     await normalizeNextExport(destination);
+    await normalizeShowcaseInteractions(destination, project.slug);
     await rewriteTree(destination, project.slug);
     await ensureShowcaseFavicon(destination, project);
     // Next 14/15 requests the base-path root payload as /project.txt.

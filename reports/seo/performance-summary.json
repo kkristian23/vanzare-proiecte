@@ -1,0 +1,1507 @@
+{
+  "method": "Lighthouse 13.4.1, default simulated mobile, local static export served with gzip compression on 4012. One lab run per route on each artifact; not production field data. Before-card-optimization reports use the same server and Lighthouse settings, before responsive card derivatives, CSS route splitting, CSS hero entrance and native card controls. Earlier 4010 reports used uncompressed responses and are not a controlled baseline. TBT is a lab responsiveness proxy; field INP remains unmeasured.",
+  "pages": [
+    {
+      "name": "home",
+      "url": "http://127.0.0.1:4012/ro",
+      "fetchTime": "2026-09-10T10:44:17.052Z",
+      "scores": {
+        "performance": 75,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 3204.60475,
+          "display": "3.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 4557.2275,
+          "display": "4.6 s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "total-blocking-time": {
+          "value": 162,
+          "display": "160 ms"
+        },
+        "speed-index": {
+          "value": 3204.60475,
+          "display": "3.2 s"
+        },
+        "total-byte-weight": {
+          "value": 694672,
+          "display": "Total size was 678 KiB"
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:4012/ro",
+        "fetchTime": "2026-09-10T10:22:00.263Z",
+        "scores": {
+          "performance": 75,
+          "accessibility": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 3183.605,
+            "display": "3.2 s"
+          },
+          "largest-contentful-paint": {
+            "value": 4723.6865,
+            "display": "4.7 s"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "total-blocking-time": {
+            "value": 149,
+            "display": "150 ms"
+          },
+          "speed-index": {
+            "value": 3183.605,
+            "display": "3.2 s"
+          },
+          "total-byte-weight": {
+            "value": 1501659,
+            "display": "Total size was 1,466 KiB"
+          }
+        }
+      },
+      "failingAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.43,
+          "title": "First Contentful Paint",
+          "value": "3.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.36,
+          "title": "Largest Contentful Paint",
+          "value": "4.6 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.92,
+          "title": "Speed Index",
+          "value": "3.2 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.93,
+          "title": "Total Blocking Time",
+          "value": "160 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.31,
+          "title": "Max Potential First Input Delay",
+          "value": "320 ms"
+        },
+        {
+          "id": "interactive",
+          "score": 0.8,
+          "title": "Time to Interactive",
+          "value": "4.7 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work",
+          "value": "3.9 s"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS",
+          "value": "Est savings of 21 KiB"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript",
+          "value": "Est savings of 77 KiB"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "title": "Improve image delivery",
+          "value": "Est savings of 145 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0,
+          "title": "Render-blocking requests",
+          "value": "Est savings of 400 ms"
+        }
+      ],
+      "audits": {
+        "label-content-name-mismatch": {
+          "score": 1,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 400 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/home-client.D2zxDPz2.css",
+                "totalBytes": 33149,
+                "wastedMs": 1355
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                "totalBytes": 1283,
+                "wastedMs": 305
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                "totalBytes": 583,
+                "wastedMs": 305
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.Dq3rmF1e.css",
+                "totalBytes": 3192,
+                "wastedMs": 155
+              }
+            ]
+          }
+        },
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 77 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-D_BV5Sp8.js",
+                "totalBytes": 49799,
+                "wastedBytes": 32462,
+                "wastedPercent": 65.18559764544116
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59096,
+                "wastedBytes": 24437,
+                "wastedPercent": 41.35060372754428
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/home-client-DLoHyr_6.js",
+                "totalBytes": 88049,
+                "wastedBytes": 21526,
+                "wastedPercent": 24.447258650965136
+              }
+            ],
+            "overallSavingsMs": 510,
+            "overallSavingsBytes": 78425,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 150,
+                "LCP": 510
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "score": 0,
+          "displayValue": "Est savings of 21 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/home-client.D2zxDPz2.css",
+                "wastedBytes": 21729,
+                "wastedPercent": 66.04533484793721,
+                "totalBytes": 32900
+              }
+            ],
+            "overallSavingsMs": 210,
+            "overallSavingsBytes": 21729,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 150,
+                "LCP": 210
+              }
+            }
+          }
+        },
+        "total-byte-weight": {
+          "score": 1,
+          "displayValue": "Total size was 678 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/home-client-DLoHyr_6.js",
+                "totalBytes": 92247
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-card-previews/yardcraft-480.webp",
+                "totalBytes": 63034
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59352
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-D_BV5Sp8.js",
+                "totalBytes": 50058
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-card-previews/terraforma-480.webp",
+                "totalBytes": 49514
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-card-previews/gazonpro-480.webp",
+                "totalBytes": 43334
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-card-previews/ecohabitat-480.webp",
+                "totalBytes": 39162
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/home-client.D2zxDPz2.css",
+                "totalBytes": 33149
+              },
+              {
+                "url": "http://127.0.0.1:4012/project-card-previews/aquaverde-480.webp",
+                "totalBytes": 31850
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+                "totalBytes": 29515
+              }
+            ],
+            "sortedBy": [
+              "totalBytes"
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 145 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-7-IMG",
+                  "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,3,DIV,4,ARTICLE,1,DIV,0,DIV,0,PICTURE,0,IMG",
+                  "selector": "div.visual-frame > div.visual > picture.static-project-preview > img",
+                  "boundingRect": {
+                    "top": 2247,
+                    "bottom": 2433,
+                    "left": 14,
+                    "right": 200,
+                    "width": 186,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"http://127.0.0.1:4012/project-card-previews/yardcraft-480.webp\" srcset=\"/project-card-previews/yardcraft-480.webp 480w, /project-card-previews/yar…\" sizes=\"(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw…\" alt=\"YardCraft — Amenajarea completă a curții, cu plan schematic și configurato…\" loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"600\">",
+                  "nodeLabel": "YardCraft — Amenajarea completă a curții, cu plan schematic și configurator de …"
+                },
+                "url": "http://127.0.0.1:4012/project-card-previews/yardcraft-480.webp",
+                "totalBytes": 62834,
+                "wastedBytes": 41234,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 41234
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-8-IMG",
+                  "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,3,DIV,1,ARTICLE,1,DIV,0,DIV,0,PICTURE,0,IMG",
+                  "selector": "div.visual-frame > div.visual > picture.static-project-preview > img",
+                  "boundingRect": {
+                    "top": 1431,
+                    "bottom": 1617,
+                    "left": 212,
+                    "right": 398,
+                    "width": 186,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"http://127.0.0.1:4012/project-card-previews/terraforma-480.webp\" srcset=\"/project-card-previews/terraforma-480.webp 480w, /project-card-previews/te…\" sizes=\"(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw…\" alt=\"TerraForma — Arhitectură peisagistică premium, portofoliu editorial și moo…\" loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"450\">",
+                  "nodeLabel": "TerraForma — Arhitectură peisagistică premium, portofoliu editorial și moodboar…"
+                },
+                "url": "http://127.0.0.1:4012/project-card-previews/terraforma-480.webp",
+                "totalBytes": 49314,
+                "wastedBytes": 37139,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 37139
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-9-IMG",
+                  "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,3,DIV,2,ARTICLE,1,DIV,0,DIV,0,PICTURE,0,IMG",
+                  "selector": "div.visual-frame > div.visual > picture.static-project-preview > img",
+                  "boundingRect": {
+                    "top": 1839,
+                    "bottom": 2025,
+                    "left": 14,
+                    "right": 200,
+                    "width": 186,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"http://127.0.0.1:4012/project-card-previews/gazonpro-480.webp\" srcset=\"/project-card-previews/gazonpro-480.webp 480w, /project-card-previews/gazo…\" sizes=\"(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw…\" alt=\"GazonPro — Instalare și întreținere gazon, cu magazin demonstrativ și calc…\" loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"450\">",
+                  "nodeLabel": "GazonPro — Instalare și întreținere gazon, cu magazin demonstrativ și calculato…"
+                },
+                "url": "http://127.0.0.1:4012/project-card-previews/gazonpro-480.webp",
+                "totalBytes": 43134,
+                "wastedBytes": 30959,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 30959
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-10-IMG",
+                  "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,3,DIV,3,ARTICLE,1,DIV,0,DIV,0,PICTURE,0,IMG",
+                  "selector": "div.visual-frame > div.visual > picture.static-project-preview > img",
+                  "boundingRect": {
+                    "top": 1839,
+                    "bottom": 2025,
+                    "left": 212,
+                    "right": 398,
+                    "width": 186,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"http://127.0.0.1:4012/project-card-previews/ecohabitat-480.webp\" srcset=\"/project-card-previews/ecohabitat-480.webp 480w, /project-card-previews/ec…\" sizes=\"(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw…\" alt=\"EcoHabitat — Grădini ecologice și biodiversitate, cu plante locale și inst…\" loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"534\">",
+                  "nodeLabel": "EcoHabitat — Grădini ecologice și biodiversitate, cu plante locale și instrumen…"
+                },
+                "url": "http://127.0.0.1:4012/project-card-previews/ecohabitat-480.webp",
+                "totalBytes": 38962,
+                "wastedBytes": 21895,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 21895
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-11-IMG",
+                  "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,3,DIV,0,ARTICLE,1,DIV,0,DIV,0,PICTURE,0,IMG",
+                  "selector": "div.visual-frame > div.visual > picture.static-project-preview > img",
+                  "boundingRect": {
+                    "top": 1431,
+                    "bottom": 1617,
+                    "left": 14,
+                    "right": 200,
+                    "width": 186,
+                    "height": 186
+                  },
+                  "snippet": "<img src=\"http://127.0.0.1:4012/project-card-previews/aquaverde-480.webp\" srcset=\"/project-card-previews/aquaverde-480.webp 480w, /project-card-previews/aqu…\" sizes=\"(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw…\" alt=\"AquaVerde — Sisteme inteligente de irigare, cu simulator și calculator de …\" loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"497\">",
+                  "nodeLabel": "AquaVerde — Sisteme inteligente de irigare, cu simulator și calculator de consu…"
+                },
+                "url": "http://127.0.0.1:4012/project-card-previews/aquaverde-480.webp",
+                "totalBytes": 31650,
+                "wastedBytes": 16869,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 16869
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 148096
+            }
+          }
+        },
+        "lcp-breakdown-insight": {
+          "score": 1,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 25.378
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 379.379
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-H2",
+                "path": "1,HTML,1,BODY,0,MAIN,4,SECTION,0,DIV,0,DIV,1,H2",
+                "selector": "section#proiecte > div.section-head > div > h2",
+                "boundingRect": {
+                  "top": 608,
+                  "bottom": 760,
+                  "left": 14,
+                  "right": 398,
+                  "width": 384,
+                  "height": 152
+                },
+                "snippet": "<h2>",
+                "nodeLabel": "ALEGE URMĂTORUL\nTĂU PROIECT."
+              }
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "C6A711E781496445815C138C49FF36C1": {
+                      "url": "http://127.0.0.1:4012/ro",
+                      "navStartToEndTime": 64,
+                      "transferSize": 15510,
+                      "isLongest": true,
+                      "children": {
+                        "25412.8": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                          "navStartToEndTime": 139,
+                          "transferSize": 59352,
+                          "isLongest": true,
+                          "children": {
+                            "25412.85": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/link-9awS8-UE.js",
+                              "navStartToEndTime": 344,
+                              "transferSize": 5390,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "25412.86": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/query-B3quLZp9.js",
+                              "navStartToEndTime": 343,
+                              "transferSize": 741,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "25412.17": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/navigation-errors-wvgRKjB-.js",
+                          "navStartToEndTime": 137,
+                          "transferSize": 1876,
+                          "children": {}
+                        },
+                        "25412.16": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/deployment-id-DFhHa9wO.js",
+                          "navStartToEndTime": 103,
+                          "transferSize": 357,
+                          "children": {}
+                        },
+                        "25412.14": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/headers-CeAbe3am.js",
+                          "navStartToEndTime": 103,
+                          "transferSize": 1433,
+                          "children": {}
+                        },
+                        "25412.15": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/protocol-headers-URL33uU5.js",
+                          "navStartToEndTime": 102,
+                          "transferSize": 416,
+                          "children": {}
+                        },
+                        "25412.13": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-render-mode-IDJu5NEE.js",
+                          "navStartToEndTime": 102,
+                          "transferSize": 573,
+                          "children": {}
+                        },
+                        "25412.12": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-cache-busting-BouentL7.js",
+                          "navStartToEndTime": 101,
+                          "transferSize": 2235,
+                          "children": {}
+                        },
+                        "25412.9": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-elements-Drg5O4vw.js",
+                          "navStartToEndTime": 92,
+                          "transferSize": 4275,
+                          "children": {}
+                        },
+                        "25412.4": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/home-client.D2zxDPz2.css",
+                          "navStartToEndTime": 91,
+                          "transferSize": 33149,
+                          "children": {}
+                        },
+                        "25412.10": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/hash-D0ldriCF.js",
+                          "navStartToEndTime": 87,
+                          "transferSize": 435,
+                          "children": {}
+                        },
+                        "25412.11": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/record-BdkTR7AP.js",
+                          "navStartToEndTime": 86,
+                          "transferSize": 347,
+                          "children": {}
+                        },
+                        "25412.7": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+                          "navStartToEndTime": 85,
+                          "transferSize": 676,
+                          "children": {}
+                        },
+                        "25412.5": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                          "navStartToEndTime": 79,
+                          "transferSize": 1283,
+                          "children": {}
+                        },
+                        "25412.3": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                          "navStartToEndTime": 79,
+                          "transferSize": 583,
+                          "children": {}
+                        },
+                        "25412.2": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/index.Dq3rmF1e.css",
+                          "navStartToEndTime": 78,
+                          "transferSize": 3192,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 344
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "mainthread-work-breakdown": {
+          "score": 0,
+          "displayValue": "3.9 s",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "groupLabel",
+                "valueType": "text",
+                "label": "Category"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Time Spent"
+              }
+            ],
+            "items": [
+              {
+                "group": "other",
+                "groupLabel": "Other",
+                "duration": 1576.2559999999924
+              },
+              {
+                "group": "styleLayout",
+                "groupLabel": "Style & Layout",
+                "duration": 1225.3919999999996
+              },
+              {
+                "group": "paintCompositeRender",
+                "groupLabel": "Rendering",
+                "duration": 556.1320000000516
+              },
+              {
+                "group": "scriptEvaluation",
+                "groupLabel": "Script Evaluation",
+                "duration": 467.9680000000055
+              },
+              {
+                "group": "parseHTML",
+                "groupLabel": "Parse HTML & CSS",
+                "duration": 43.132
+              },
+              {
+                "group": "scriptParseCompile",
+                "groupLabel": "Script Parsing & Compilation",
+                "duration": 12.731999999999994
+              }
+            ],
+            "sortedBy": [
+              "duration"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "project",
+      "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+      "fetchTime": "2026-09-10T10:44:28.446Z",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2036.545,
+          "display": "2.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2805.9619999999995,
+          "display": "2.8 s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "total-blocking-time": {
+          "value": 13,
+          "display": "10 ms"
+        },
+        "speed-index": {
+          "value": 2036.545,
+          "display": "2.0 s"
+        },
+        "total-byte-weight": {
+          "value": 299377,
+          "display": "Total size was 292 KiB"
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+        "fetchTime": "2026-09-10T10:22:11.858Z",
+        "scores": {
+          "performance": 92,
+          "accessibility": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": {
+            "value": 2304.2129999999997,
+            "display": "2.3 s"
+          },
+          "largest-contentful-paint": {
+            "value": 3004.8559999999998,
+            "display": "3.0 s"
+          },
+          "cumulative-layout-shift": {
+            "value": 0,
+            "display": "0"
+          },
+          "total-blocking-time": {
+            "value": 14.5,
+            "display": "10 ms"
+          },
+          "speed-index": {
+            "value": 2304.2129999999997,
+            "display": "2.3 s"
+          },
+          "total-byte-weight": {
+            "value": 330150,
+            "display": "Total size was 322 KiB"
+          }
+        }
+      },
+      "failingAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.83,
+          "title": "First Contentful Paint",
+          "value": "2.0 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.83,
+          "title": "Largest Contentful Paint",
+          "value": "2.8 s"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index",
+          "value": "2.0 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.99,
+          "title": "Max Potential First Input Delay",
+          "value": "70 ms"
+        },
+        {
+          "id": "interactive",
+          "score": 0.97,
+          "title": "Time to Interactive",
+          "value": "2.8 s"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript",
+          "value": "Est savings of 57 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "score": 0.5,
+          "title": "Improve image delivery",
+          "value": "Est savings of 48 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ],
+      "audits": {
+        "label-content-name-mismatch": {
+          "score": 1,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                "totalBytes": 583,
+                "wastedMs": 305
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                "totalBytes": 1283,
+                "wastedMs": 305
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/page.DZs3t0TK.css",
+                "totalBytes": 1801,
+                "wastedMs": 305
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/css/index.Dq3rmF1e.css",
+                "totalBytes": 3192,
+                "wastedMs": 155
+              }
+            ]
+          }
+        },
+        "unused-javascript": {
+          "score": 0,
+          "displayValue": "Est savings of 57 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-D_BV5Sp8.js",
+                "totalBytes": 49799,
+                "wastedBytes": 32945,
+                "wastedPercent": 66.15605770487333
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59096,
+                "wastedBytes": 25650,
+                "wastedPercent": 43.40317219908284
+              }
+            ],
+            "overallSavingsMs": 330,
+            "overallSavingsBytes": 58595,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 150,
+                "LCP": 330
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "score": 1,
+          "displayValue": "",
+          "details": {
+            "type": "opportunity",
+            "headings": [],
+            "items": [],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 0,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "total-byte-weight": {
+          "score": 1,
+          "displayValue": "Total size was 292 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4012/project-previews/aquaverde-screenshot.webp",
+                "totalBytes": 69862
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                "totalBytes": 59352
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/index-D_BV5Sp8.js",
+                "totalBytes": 50058
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+                "totalBytes": 29515
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2",
+                "totalBytes": 23335
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2",
+                "totalBytes": 15127
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2",
+                "totalBytes": 13099
+              },
+              {
+                "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+                "totalBytes": 9086
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/link-9awS8-UE.js",
+                "totalBytes": 5390
+              },
+              {
+                "url": "http://127.0.0.1:4012/_next/static/chunks/app-elements-Drg5O4vw.js",
+                "totalBytes": 4275
+              }
+            ],
+            "sortedBy": [
+              "totalBytes"
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 48 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-2-IMG",
+                  "path": "1,HTML,1,BODY,0,DIV,1,MAIN,2,DIV,0,ARTICLE,1,FIGURE,0,IMG",
+                  "selector": "div.project-product > article.project-content > figure.project-shot > img",
+                  "boundingRect": {
+                    "top": 753,
+                    "bottom": 1032,
+                    "left": 21,
+                    "right": 391,
+                    "width": 371,
+                    "height": 279
+                  },
+                  "snippet": "<img src=\"/project-previews/aquaverde-screenshot.webp\" alt=\"Screenshot AquaVerde — Smart irrigation systems with a simulator and water…\" width=\"1200\" height=\"900\" decoding=\"async\" loading=\"lazy\">",
+                  "nodeLabel": "Screenshot AquaVerde — Smart irrigation systems with a simulator and water-use …"
+                },
+                "url": "http://127.0.0.1:4012/project-previews/aquaverde-screenshot.webp",
+                "totalBytes": 69662,
+                "wastedBytes": 49510,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1200x900) for its displayed dimensions (645x484). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 49510
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 49510
+            }
+          }
+        },
+        "lcp-breakdown-insight": {
+          "score": 1,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 5.255
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 152.087
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-H1",
+                "path": "1,HTML,1,BODY,0,DIV,1,MAIN,1,HEADER,1,H1",
+                "selector": "div.seo-page > main > header.seo-hero > h1",
+                "boundingRect": {
+                  "top": 311,
+                  "bottom": 445,
+                  "left": 21,
+                  "right": 391,
+                  "width": 371,
+                  "height": 134
+                },
+                "snippet": "<h1>",
+                "nodeLabel": "Web project: Smart irrigation systems with a simulator and water-use calculator…"
+              }
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "5C3FA24E0A684D3B2BBE10225618FEB9": {
+                      "url": "http://127.0.0.1:4012/en/projects/aquaverde",
+                      "navStartToEndTime": 26,
+                      "transferSize": 9086,
+                      "isLongest": true,
+                      "children": {
+                        "15124.8": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/framework-BaE7mD_r.js",
+                          "navStartToEndTime": 65,
+                          "transferSize": 59352,
+                          "isLongest": true,
+                          "children": {
+                            "15124.66": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/link-9awS8-UE.js",
+                              "navStartToEndTime": 146,
+                              "transferSize": 5390,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "15124.67": {
+                              "url": "http://127.0.0.1:4012/_next/static/chunks/query-B3quLZp9.js",
+                              "navStartToEndTime": 142,
+                              "transferSize": 741,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "15124.17": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/navigation-errors-wvgRKjB-.js",
+                          "navStartToEndTime": 60,
+                          "transferSize": 1876,
+                          "children": {}
+                        },
+                        "15124.16": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/deployment-id-DFhHa9wO.js",
+                          "navStartToEndTime": 56,
+                          "transferSize": 357,
+                          "children": {}
+                        },
+                        "15124.14": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/headers-CeAbe3am.js",
+                          "navStartToEndTime": 56,
+                          "transferSize": 1433,
+                          "children": {}
+                        },
+                        "15124.15": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/protocol-headers-URL33uU5.js",
+                          "navStartToEndTime": 55,
+                          "transferSize": 416,
+                          "children": {}
+                        },
+                        "15124.13": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-render-mode-IDJu5NEE.js",
+                          "navStartToEndTime": 55,
+                          "transferSize": 573,
+                          "children": {}
+                        },
+                        "15124.12": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-rsc-cache-busting-BouentL7.js",
+                          "navStartToEndTime": 54,
+                          "transferSize": 2235,
+                          "children": {}
+                        },
+                        "15124.11": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/record-BdkTR7AP.js",
+                          "navStartToEndTime": 47,
+                          "transferSize": 347,
+                          "children": {}
+                        },
+                        "15124.10": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/hash-D0ldriCF.js",
+                          "navStartToEndTime": 47,
+                          "transferSize": 435,
+                          "children": {}
+                        },
+                        "15124.9": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/app-elements-Drg5O4vw.js",
+                          "navStartToEndTime": 46,
+                          "transferSize": 4275,
+                          "children": {}
+                        },
+                        "15124.7": {
+                          "url": "http://127.0.0.1:4012/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+                          "navStartToEndTime": 46,
+                          "transferSize": 676,
+                          "children": {}
+                        },
+                        "15124.5": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/analytics-consent.C29hUGgH.css",
+                          "navStartToEndTime": 37,
+                          "transferSize": 583,
+                          "children": {}
+                        },
+                        "15124.4": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/seo-shell.B1f8zJEz.css",
+                          "navStartToEndTime": 35,
+                          "transferSize": 1283,
+                          "children": {}
+                        },
+                        "15124.3": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/page.DZs3t0TK.css",
+                          "navStartToEndTime": 34,
+                          "transferSize": 1801,
+                          "children": {}
+                        },
+                        "15124.2": {
+                          "url": "http://127.0.0.1:4012/_next/static/css/index.Dq3rmF1e.css",
+                          "navStartToEndTime": 32,
+                          "transferSize": 3192,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 146
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "mainthread-work-breakdown": {
+          "score": 1,
+          "displayValue": "0.9 s",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "groupLabel",
+                "valueType": "text",
+                "label": "Category"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Time Spent"
+              }
+            ],
+            "items": [
+              {
+                "group": "other",
+                "groupLabel": "Other",
+                "duration": 471.00399999999934
+              },
+              {
+                "group": "styleLayout",
+                "groupLabel": "Style & Layout",
+                "duration": 208.16400000000027
+              },
+              {
+                "group": "scriptEvaluation",
+                "groupLabel": "Script Evaluation",
+                "duration": 178.42800000000025
+              },
+              {
+                "group": "paintCompositeRender",
+                "groupLabel": "Rendering",
+                "duration": 42.564000000000085
+              },
+              {
+                "group": "scriptParseCompile",
+                "groupLabel": "Script Parsing & Compilation",
+                "duration": 18.79199999999998
+              },
+              {
+                "group": "parseHTML",
+                "groupLabel": "Parse HTML & CSS",
+                "duration": 18.427999999999997
+              }
+            ],
+            "sortedBy": [
+              "duration"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

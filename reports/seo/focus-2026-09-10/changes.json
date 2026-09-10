@@ -1,0 +1,1708 @@
+{
+  "files": [
+    {
+      "file": "scripts/generate-seo.mjs",
+      "reason": "Sitemap numai din indexablePaths.",
+      "beforeSha256": "c415fd96d45c652862559e8c9188ee9388f77e34c053541eb89fb414e7c74116",
+      "afterSha256": "8e803ea9e88c510a89be9e6493f644963416675e018f356dfa87182a46543dd7"
+    },
+    {
+      "file": "app/intrebari/faq-client.tsx",
+      "reason": "Răspunsurile acordeoanelor existente sunt prezente în HTML inițial; vizibilitatea păstrează starea deschis/închis.",
+      "beforeSha256": "d75929d7de451752b5b84512dbe5a73f3596f3fb467f13810bc915fc700673e8",
+      "afterSha256": "7b649101d948ccfeaa2836bf4b8d5a75c6464bdbb35c513d2d41b89b0a6e912b"
+    },
+    {
+      "file": "scripts/audit-seo.mjs",
+      "reason": "Separă paginile accesibile de cele indexabile; verifică toate 189 proiecte, sitemap hreflang, Twitter, prețuri și demo robots; audit HTTP public extins.",
+      "beforeSha256": "eb9494f021bf866c0960d56c9c71d135702c6d10e81b084020afe51f78c3a363",
+      "afterSha256": "c7733ed883c5b084697295eb47607149b4a9c958d91c2db3a10c2adfebb13714"
+    },
+    {
+      "file": "graphify-out/graph.json",
+      "reason": "Actualizare automată graphify.",
+      "beforeSha256": "1fda2c86121aeccab5f7b2e582c2d0a0a6e401c48ce3cec100b4d38be3e05485",
+      "afterSha256": "70858c2ea8954eb9dd5712c652e0d064999c86528651c8789bbe3630066d0750"
+    },
+    {
+      "file": "docs/seo-architecture.md",
+      "reason": "Documentează activarea individuală viitoare și delimitarea acces/indexare.",
+      "beforeSha256": "f4264ea71f8f450f79e4ddec148b516f11de1086990e64b1d06067985e593cfe",
+      "afterSha256": "6bb970c2190e18a32dbdca15c29a0f578af2689a6081d91360c0be0b51e8a830"
+    },
+    {
+      "file": "app/lib/project-catalog.ts",
+      "reason": "Flag seoEnabled explicit pe proiectele catalogului; datele comerciale păstrate.",
+      "beforeSha256": "2693f4e67145a795eb608134a2511c53a1f0e41341924e007246a163a23fcce2",
+      "afterSha256": "e3eb63e82934f256d4d61d33808377375c2f3e6902c5c07314f22bad05410f75"
+    },
+    {
+      "file": "SEO_LAUNCH_CHECKLIST.md",
+      "reason": "Actualizează noindex, verificarea CDN și instrucțiunile GSC.",
+      "beforeSha256": "7712f39694a76eff9330ea2ddeb35587021b3cff5731b86db40a3ac6c73d47ec",
+      "afterSha256": "4794a88294267f91ca03411929f87fcc66ca23ba80895b9ef5ab530463c31f5c"
+    },
+    {
+      "file": "public/_headers",
+      "reason": "Regenerat: 1.134 căi exacte de proiect (189 × 6 forme), demo follow, fără reguli pentru resurse.",
+      "beforeSha256": "3529ab3859e7005860a8aaef1c9276b071d95f3b7c2167eeac0b7c56517ef80b",
+      "afterSha256": "f0ba4748dd5c798adeea9b4cb789c224d0673eb63c19e57221e5b3bf295eb386"
+    },
+    {
+      "file": "app/project-pages.css",
+      "reason": "Eliminarea exclusivă a selectorilor catalog-directory; stilurile cardurilor/modalurilor păstrate.",
+      "beforeSha256": "54f6ec7becc7c35c1bf16e9406010f6d1ca6f3c4f3ca4a5696df0f496ef8ef7a",
+      "afterSha256": "22fcd1027b6c8640d87a370870c572b2549e5fdffa10d5c0561a73d2010288a4"
+    },
+    {
+      "file": "app/lib/site-config.ts",
+      "reason": "Title/description RO/RU/EN pentru homepage, orientate către Moldova și oferta reală.",
+      "beforeSha256": "c11cf97dfbcd4db8ff791de04106ddfdfba4fee1ac7957fb965cf2ae89265b7a",
+      "afterSha256": "ea3f959b20a1074837f34975d4752e1521c61915a8cdb103a2ce2c852af9d950"
+    },
+    {
+      "file": "app/[locale]/projects/[slug]/page.tsx",
+      "reason": "Utilizează politica centrală pentru metadata și Product/Offer; rutele și UI păstrate.",
+      "beforeSha256": "d90243771cbb455f2504b169d40efdcc4e1ad5007fb11e31dfcace7de83ecabf",
+      "afterSha256": "28c3f9375fc5546b4531a4ba54f7c15cd9704a6ca5eb06e9bd2f4d7628843565"
+    },
+    {
+      "file": "public/sitemap.xml",
+      "reason": "Eliminarea a 189 URL-uri de proiect și a grupurilor lor hreflang; păstrarea a 57 pagini generale.",
+      "beforeSha256": "31c10b8ee9e1af1932386a925446e135d33062b2a1c81258f0b4a2b14a2c49aa",
+      "afterSha256": "98717413f5c4c7f4ce527847625d960d3425843f6d5339b265907e5ca421b543"
+    },
+    {
+      "file": "SEO_IMPLEMENTATION_REPORT.md",
+      "reason": "Trimite la raportul actual; păstrează istoricul utilizatorului.",
+      "beforeSha256": "fd07feddd77340a8a071e3ff5c4d02af44b92adeb7f1acf01ca1624fe1b9580a",
+      "afterSha256": "c75ea3c48558c5aa43a899e404d7b613fdb9ddb2a84f744d5ed4ab8a5b71ce55"
+    },
+    {
+      "file": "app/lib/services.ts",
+      "reason": "Metadata separată pentru patru servicii × trei limbi; conținutul vizibil păstrat.",
+      "beforeSha256": "86fd6614c96dc4f2081b3b1a78b4658c3c10ec386e7566f13cc8c263bae886c4",
+      "afterSha256": "67747348e86b94dceee6fd69493a240b03547de8134e8e4257edf84dda1ea289"
+    },
+    {
+      "file": "scripts/netlify-seo.mjs",
+      "reason": "Headere exacte pentru proiectele noindex; demo HTML/aliasuri noindex, follow; corectarea punctuală a meta contradictorii la prebuild.",
+      "beforeSha256": "0932b0810761001b1ef72ee5159a3a85d5e9c97eff7af2529a9d56b7b1bcb223",
+      "afterSha256": "a4ea34dacd230f69955cb3f2e2173cecd40778c350eed89bca32890e09829c11"
+    },
+    {
+      "file": "package.json",
+      "reason": "Include testele de politică SEO în npm test și test:seo.",
+      "beforeSha256": "c442c5074463f6cb8df2837724317b8c44aad5fcb42d86b48c51b1292cbe67ff",
+      "afterSha256": "3d00d7e1beba25a50a114f3ae59b0c6f150f17843416c8234aae74662df0ff7b"
+    },
+    {
+      "file": "app/[locale]/services/[slug]/page.tsx",
+      "reason": "Folosește metadata dedicată, fără schimbarea H1 sau a descrierii vizibile.",
+      "beforeSha256": "1aa8c86c12da95fe0487bb3718a7ffab3875b01350b0d933de4dff6c1cb0a142",
+      "afterSha256": "1ae986361b288a0e4a1ff488752f4207b28e2cd35d6f4bce6752f8e9d5365060"
+    },
+    {
+      "file": "app/home-client.tsx",
+      "reason": "Eliminarea markup-ului catalog-directory și a importului devenit inutil.",
+      "beforeSha256": "788a1f346b10bb24ec91fcff0f1ff67aa5ef5059674c695d184dc39ce5c06836",
+      "afterSha256": "99ff5aad5c92ee011ffea513111105897d1fb4968ce5d1c527aad21e37fd2c8e"
+    },
+    {
+      "file": "tests/rendered-html.test.mjs",
+      "reason": "Înlocuiește verificarea unui titlu aflat numai în directorul eliminat; păstrează testarea primei pagini de carduri și verifică lipsa directorului.",
+      "beforeSha256": "8c250cb22e258bd60f07000f95af7374840b1563df64ecc65047a49f6a8fea23",
+      "afterSha256": "33d67a1ae06aa7212b568b4bae6d1f349bc94c02f9367d807de27db96db40aa1"
+    },
+    {
+      "file": "tests/seo-browser.test.mjs",
+      "reason": "Adaptează testul FAQ la interfața existentă și verifică fluxurile catalogului în RO/RU/EN pe desktop/mobil.",
+      "beforeSha256": "517add4f8dcb07fa55d119423e3c320335f84cf10b521b8b6117e8565a3f827b",
+      "afterSha256": "76228c1ab9972d5f077d0552a5e6b4d5838ac2291f3c1cc7a66459c1753798ad"
+    },
+    {
+      "file": "graphify-out/GRAPH_REPORT.md",
+      "reason": "Actualizare automată graphify.",
+      "beforeSha256": "4b992b0098d8235dc0c4a962689cbff486f178fdacd2ec1f9f27009b1fde9f66",
+      "afterSha256": "f63407056ecedc11f6792e86e06642261e486edf9407c65b7d8e2a295a5a5369"
+    },
+    {
+      "file": "public/audio-rental-md/404.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9574712b960791e6307880ddebfc4424768a42cacdb4d4c266457f5139cb7904",
+      "afterSha256": "236e5465e8e9ef9e186267e4d8ed46390cd468a1659cbf5a6c98be9b69e992e0"
+    },
+    {
+      "file": "public/audio-rental-md/en.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9d5bd0108aa1d316426bd60365cab8a7c4fb4ec5e951d10c7cb4d0047b6bfb18",
+      "afterSha256": "0791008b3d8ed99e17fe82484b7b516e4190f9b6da4a451cfa03ac3cd2a59643"
+    },
+    {
+      "file": "public/audio-rental-md/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0cdaf6751594a527abe5c9869130ff377f7a1fe9d306660697c6ca0450262cc4",
+      "afterSha256": "6e9c2cee61261e30ea9aaf72db2a3886e334d804994980bc1f93675a6db52d1f"
+    },
+    {
+      "file": "public/audio-rental-md/ro.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "83c82f51dba996605dc84552ad7709dd475c3bc538e0b6eaec1710cf60b3ab6d",
+      "afterSha256": "11015d869a29942c5d6d42ed35177abc7cffb2d17bf8ce5fcee0a84619488dcc"
+    },
+    {
+      "file": "public/audio-rental-md/ru.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a2dbe30519a1d3b0744b8c6073434d8edc8973b7838a2c2a90b426a66cd35240",
+      "afterSha256": "8d0978f704209082764bcb4077e71d6cd5e72d27760fc3ed7cd5268b885e1dea"
+    },
+    {
+      "file": "public/gazonpro/404.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b141008c59f544511e0a85b1308880dd0f018a0b0233ce00674f4807b93906d4",
+      "afterSha256": "49a6b507e75250fae36c84cc8a54bc552cda9922beccf384e1e38e6351c0cfa6"
+    },
+    {
+      "file": "public/gazonpro/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "205105569721ff7dc0d58c7a185cf784a684b49c549820b0acedd2cfbad84e18",
+      "afterSha256": "3b57410165e6a43c16aadd3cb2c0e644ecc2e92502758fb9707e812a1151e819"
+    },
+    {
+      "file": "public/terraforma/404.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2eb2ccf429556581adbbe1b86e188eac07b6f61fff5895c00305e30ccc04be5d",
+      "afterSha256": "2f8308b1a75283653d690177eda28f7076fa1c98d066d7b867118e21fb909da2"
+    },
+    {
+      "file": "public/terraforma/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2e5440e18ca8b51feb266613c0492247c46c7d5e4ec0dc128ee9343763fe55bf",
+      "afterSha256": "387346db65a0cb0cc19a9761639715395310948d354192fc8a8aa66c3bf61079"
+    },
+    {
+      "file": "public/yardcraft/404.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cd83211d90830518971328f82ed32b969b317ba7fe8673dbd03a03d98e43f8b8",
+      "afterSha256": "ba53d8c28e729352f893d8fc3fc679e0836fae78585076730c7ab69f38141264"
+    },
+    {
+      "file": "public/yardcraft/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0a2c7d1cdb748c45347cabcfd33133bcc3911faf8b8aced04e50851a04a54b1a",
+      "afterSha256": "eeace5574680097d1d27d1f05c4ffc67d139e7d14543ad1e03e3e86691056864"
+    },
+    {
+      "file": "public/audio-rental-md/en/account.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a1d675f17f77908c5c330a143370d5ca1923d30fb9424322a1083cf6e391b6a3",
+      "afterSha256": "0867e06d6ea1c5ec37688c4e5b39a42127e856820f9655045055002f4ce61717"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "dd6a4aa92ae17780ccae7c314aab167120b8453a746783de70a3d21ffe7a763d",
+      "afterSha256": "bd9f24c1e6bef460e9e73ded0bfff17c6ff72831c85dc279fb896d295a599679"
+    },
+    {
+      "file": "public/audio-rental-md/en/cart.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f455d636c51c969fa54367d4f079a6be3765be5a04525cfe983fb18b59a14483",
+      "afterSha256": "58fc7857dfc098ae8b3b23e4e8b495fb0e990f5c4898b38d99f377d7d5b96863"
+    },
+    {
+      "file": "public/audio-rental-md/en/catalog.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7a40d339ba2a8378d2c41b9ef7de2d0c8864a5e78aedcc847a1b0c0f066162df",
+      "afterSha256": "8b15e0631a90ea44ee0f9b5666302b2f55754b6da546749c01738d154e18aa54"
+    },
+    {
+      "file": "public/audio-rental-md/en/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9c22fc23ca7c234cd241a30738f04a94b06dbe978079509c7b77bbd3672410e7",
+      "afterSha256": "0eb1842b3b690289326c45777d41b47f1fe4e82a0266f8f4c7d0c1119829c8f0"
+    },
+    {
+      "file": "public/audio-rental-md/en/checkout.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7de9c9f5e3ff752ef51c18e5d8cac9d58cf0324ccfa9414d4cb533c4c31656d8",
+      "afterSha256": "1487453cc7fdda7a64d9332c136db257ee967eceaa476038774a1e028e94f440"
+    },
+    {
+      "file": "public/audio-rental-md/en/contact.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2bbd661072b12c89257e90b386a09aecc74636d8a0045ed007fe4429cc64dbd8",
+      "afterSha256": "ed867f0905d585001a33ff36b8a7ec387a3135dab89558a6e7cdf43027b2267b"
+    },
+    {
+      "file": "public/audio-rental-md/en/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9d5bd0108aa1d316426bd60365cab8a7c4fb4ec5e951d10c7cb4d0047b6bfb18",
+      "afterSha256": "0791008b3d8ed99e17fe82484b7b516e4190f9b6da4a451cfa03ac3cd2a59643"
+    },
+    {
+      "file": "public/audio-rental-md/en/privacy.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "3c304faf51b54d617f2a2fd46a1ab2e956e75e221235f2772af930edb4a69aff",
+      "afterSha256": "49d9894d9b031f239ace824477560c45ea0209ec5589e68bee8a3e3fa06627b9"
+    },
+    {
+      "file": "public/audio-rental-md/en/rental-terms.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "894b53b30f5f4a3e1d1642b324be2bb6297c5760f1412504b5cc9b7649c28773",
+      "afterSha256": "f4d6a2f353284f474affd2fcb8fc61e169451945f54427567615347a925e4d68"
+    },
+    {
+      "file": "public/audio-rental-md/ro/account.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "34baf6b5ed57e239f75ed6da86484e31bee41bda3377437d682d10a6c7a8fe7b",
+      "afterSha256": "3a3cc546fee0151ed8e2c14a42bdf235e41055061801ed72f21f97dd2195dba0"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "43946b966ee5cb5f622af6fa1b378a32e905b85248b03a9f77e7ec0f649342bd",
+      "afterSha256": "57c7cfe5e07474f1f3ae9c3f1fd16cbff50b4aa174823d79c6fb94d4c070e8de"
+    },
+    {
+      "file": "public/audio-rental-md/ro/cart.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "49e717ba9786ed2fba5acb2e3264a76490c24603933c498693a7c32595271340",
+      "afterSha256": "b1b9bbeb68f0a1ed30c312c55d19ee3fdad2ed3068022c3a74b5d523c0f34426"
+    },
+    {
+      "file": "public/audio-rental-md/ro/catalog.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "701fae79ebadeb782c351e90685ae5ffedb7330f41b445db4d8119fb8fc6a1f5",
+      "afterSha256": "6f761b5d783fbf8551039fe833f0e1ca98425fea76b0718cec290307d8385a3a"
+    },
+    {
+      "file": "public/audio-rental-md/ro/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e35d21577fde1398f7bcd272d3dd0f2f4b7dfdd53b316be3084d3770426fd1fc",
+      "afterSha256": "67dda0659ca214614b9414c20d0a4746c8c8f4f6f42aafcc4e27e1f8678f68c4"
+    },
+    {
+      "file": "public/audio-rental-md/ro/checkout.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c9d46adcedf8079d91a1d69420b2af395e56bea2fd45a91b5a958d4c1d128244",
+      "afterSha256": "cb6c0da206b6c91b645ed7543c20b47784faddce16e6b9c5bf196ab90d09f005"
+    },
+    {
+      "file": "public/audio-rental-md/ro/contact.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2864f27695e9966f9ad3c5c38013f50f13d10641c70d3fed6d0c34b62699f825",
+      "afterSha256": "abaebee48835b237c8dd4db6f8dcd59b836302efed690b40ddd52b8c49ecfaaf"
+    },
+    {
+      "file": "public/audio-rental-md/ro/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "83c82f51dba996605dc84552ad7709dd475c3bc538e0b6eaec1710cf60b3ab6d",
+      "afterSha256": "11015d869a29942c5d6d42ed35177abc7cffb2d17bf8ce5fcee0a84619488dcc"
+    },
+    {
+      "file": "public/audio-rental-md/ro/privacy.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b2decc892b312de49a18ed4089633f6f644867df348f5e53521c4bb46067191b",
+      "afterSha256": "fef96dc935b6deee6463ca71015fc160893f90dfd72b42a87f5600e9bb6bf004"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rental-terms.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "5eb3293c36d3d46433090335f42c17ad0c5433fad5ea33c870609516b62d3996",
+      "afterSha256": "ed3f29df2fef2a728e07bce91823d2075873582dacd86d4ffc1d99b2d60da2b2"
+    },
+    {
+      "file": "public/audio-rental-md/ru/account.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c442470fe51dadcea887e7de661e88006cc21a470aea18e007a1230070213e05",
+      "afterSha256": "1b3c39a28c07ceba6859c9151aa8061c25980bc80a0faf7bb7eed6488729700f"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6199507099882f5cbab3e69dafa84c71f9ef4655c909926a54604e5346912995",
+      "afterSha256": "6c379b7774a7c60b015a461bae9030bbd28cafaa69dac707ec806d38189b0806"
+    },
+    {
+      "file": "public/audio-rental-md/ru/cart.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "370fee0d17d9d3ed7c2ed74348ee816434ede3800a0492b2b4296accc9614582",
+      "afterSha256": "3f83ead74a2d114bd520c72e9bd4ee2acd65794c3001cbcc3500ac0003584b72"
+    },
+    {
+      "file": "public/audio-rental-md/ru/catalog.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6da4615977685ad7978c412587becbfaf15a148b4e9a02409b4cfe547ca81903",
+      "afterSha256": "ed126a4693d2e8a77e8937bbdb1bfb7a3141ef48e1a2651b400787ca079980cb"
+    },
+    {
+      "file": "public/audio-rental-md/ru/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a9589688dd0688f0879010f822c6c05d49006e3bab49655199529afdcae6b725",
+      "afterSha256": "8075419af32169e4509d862daf61accbc9a03d715db1377a3dee64078809e2f4"
+    },
+    {
+      "file": "public/audio-rental-md/ru/checkout.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "321e4c92b39b2fd0c156d6ac0e66280218b4bf6d348b0078872ba78e4c8712d9",
+      "afterSha256": "b706e64b8e5508dbe1977c85d53cb185f706f9d2e3443d2b33cf2f9e81d972fc"
+    },
+    {
+      "file": "public/audio-rental-md/ru/contact.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0995a804a3ba92287e8fcb1ecf80787cdb5b64fb947d34a2253452f3ab806f46",
+      "afterSha256": "fa687a53b8ff3d9f765178a60d71f07c153f16caf11253900d5eec3248a89a0a"
+    },
+    {
+      "file": "public/audio-rental-md/ru/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a2dbe30519a1d3b0744b8c6073434d8edc8973b7838a2c2a90b426a66cd35240",
+      "afterSha256": "8d0978f704209082764bcb4077e71d6cd5e72d27760fc3ed7cd5268b885e1dea"
+    },
+    {
+      "file": "public/audio-rental-md/ru/privacy.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "081b0a0ac29de055b5d220620c6b47b1e9d762dfb83e1d2d117a4ed1ae9bf3b8",
+      "afterSha256": "b517929155a9ed7490c1edf1d8dc6da4b6ca89a59c9a3fd454f60e4dea5506b1"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rental-terms.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "fee27e1940d789865d8ead9d55fe0b5cab4a445cef0f5a259a12deee85d1b0b2",
+      "afterSha256": "e3525bcf4fbfcf90bed341bf35e9ebb4c4daabcceb8d7e635b432a2761028a05"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/calendar.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "554abfc725ec54cfb1f186bfa1529501f08b02562cdf23f530f9764fb982db37",
+      "afterSha256": "ab7fca94a90d1875bb7f06a0b88cfd8f198777ae2c3e8d3f8bfa9844bb5c76c5"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f42cbc27308ceffd704076b4cc85040cf9e30321fd816843e9bbb659a9a697ea",
+      "afterSha256": "e3dfca67e315f3172b30dfa961be13a920ee10f304004c02b760fe4303ee5efe"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/contracts.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "5f8194722257644dec3f24fe0959cb1bdc7237700b299a19b275d69a8a8d5410",
+      "afterSha256": "6efe7096cd8230aedd90dc369c010799c2c3ab4511c22753300ff7b4ae6a183e"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/customers.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cb3dc360b079572dd6b49408332cc9becbe4d6e44b1ceafb82c040d9e0847782",
+      "afterSha256": "c3fa83f197e01a97f58cf461bd4127bd8286c9a46a24fa675b44081b374aa688"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/incidents.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "4c26893cc79882fcde67b2bcff5cdcd29a63e174d2cda1c41b994f99ac3498c1",
+      "afterSha256": "6e0702a5a3b2489849b6c948331d9a98a7db3922ebdc2b83768cfe589fdd1212"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/inventory.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "966324e942a64422b0d885296f3ce2b84a16730d25e678ef1afedf2acb76b961",
+      "afterSha256": "c11ed41d4f49576497c648c5d6fb1e122a35214f0cac76193c7dd602be9e6430"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/maintenance.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0649cdbc388d76ffb85b831c928e1a66b5cb76aa34ae38109ddaef0ca1516212",
+      "afterSha256": "fe703e4bd82224dc0bcdacf60820c60143d12d9222f05125da4af22c90df73c8"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/payments.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a4b10407ec2e6547891c7b67d9a6187324a8bc8767aeb0e3da0914caba20d622",
+      "afterSha256": "b938e8411be2d67066509a9b97e48b23e1fffa3d0b5024a558e41e39675ee18d"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/products.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "793778649c679035d13604e2e4b2804bd1f5348e24a3d42fd1abff40f9c1b3e4",
+      "afterSha256": "e9a0a798b82067cf87c318b54fb385c680b7f680abb143d901665742665e32c6"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/reports.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "963ccb72be8e3a40f719910a307dd0327d033d1c05bda8309612bca9932d0ca4",
+      "afterSha256": "7effc6e7594bf5095ca0f6fadd3cfdfb23a5f8687f00c0b3853128697fefcc74"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/reservations.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "18ae09478654ace51348b428db793c79d4a978fc41d0f656ed8f06dc09015f28",
+      "afterSha256": "48a827edd05c8fe9d5a7261b1cc9b968bac9efdcec63348fc170a79832f2ce5e"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/risk-center.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8af1ba7b457d0db74679aceb611240c5edc3e82501a1d1630bd24781907e69c2",
+      "afterSha256": "9dd4d3b9c2bfe5f587047cadbc24d4eaaaaadeae389c49a85889e87b899fa97e"
+    },
+    {
+      "file": "public/audio-rental-md/en/admin/settings.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f9ff2150612f5a398cf3972ec8db7f0d307e8cd27702ac0e7de2e51910fef275",
+      "afterSha256": "95b2d2c1c14974d339c164718f7637ab855539c37b2043b2345ea8a70068af15"
+    },
+    {
+      "file": "public/audio-rental-md/en/rent/audio/jbl-partybox-710.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6178dc0e780146eb940929eb6971c6da2f075dfd4144fc43c98ff0c30d55536e",
+      "afterSha256": "4c9a21cc32d39cbdad2ef888b882b4b81d2527ee9d78abc1b7860ef0ac16f432"
+    },
+    {
+      "file": "public/audio-rental-md/en/rent/bicycles/trek-x-caliber.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2d037e77a719533b1bca556fd428914c983ca77245dca048a070c4bd41458cca",
+      "afterSha256": "9440fbc700f1b5720e919cc9d247a2f0b205b3ee50d572e972996f379c5b7d35"
+    },
+    {
+      "file": "public/audio-rental-md/en/rent/event-furniture/wedding-chair-white.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9b2a9173abac923b55d728012afcac18d0e560c5e4edfcf3fd9c93667a08068d",
+      "afterSha256": "34d7169dbcd07002eb40daa141bdc5222d0b898ae9646c36a14fe6218c6a0c71"
+    },
+    {
+      "file": "public/audio-rental-md/en/rent/photography/canon-eos-r6.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "52e2825a8e7f0a668f24e07c6458145209cefcad5cc45cfb7a1903818a026115",
+      "afterSha256": "021d2033b0d8beb4006fe1afb810abfc711f8d8ed9170739072c9f469030425a"
+    },
+    {
+      "file": "public/audio-rental-md/en/rent/tools/bosch-professional-drill.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d03c95a40b387fe2d22818d4ca44885f994716050f27ca3755434a037b2b51a7",
+      "afterSha256": "2b3be9ab89769736e3e999ea913efb58621960389238cf189fef245aa144c10b"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/calendar.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "fc541cda29af3ec73363193aaa32a2134298097e92d218d2bfcb518a27e9205c",
+      "afterSha256": "4612b9afee26263ad164eba97d118ad95079185a07eee6db89767165da86f295"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7f0f1ec2dee252a773baadc29cb1db90f4e5ceadacc89e8c49e6d0b7903a2270",
+      "afterSha256": "e0865fa34d286d08d14cc558b2a49f3598b6e2b2ae09e5106892ea90ae071fd3"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/contracts.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b3c6b2283b48d0978cdd2cc6a3261ff68e469e32fde5ad1f13afd84090583adc",
+      "afterSha256": "68eb953f6224ec349c0b2b12a2955cfad8964a5384fa2031d5408ad044148026"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/customers.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "3f402f8c24700e1cd17d362fec4f8f250c1e76f4c634dfc39cebe8bb4327a35b",
+      "afterSha256": "310d15be831f648aa585ccae86830d866df0289eb556b03e15d9fab0ca618eef"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/incidents.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c5e82f6b681398f5c623a967f3e6296f7945a535125f110e2ca50e7212aaf7e8",
+      "afterSha256": "871c0ae2352eadeecbad207dd8131ba256bd4e728a82acf47ca7bd710e1fc2aa"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/inventory.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "430cbf05faaa02b91008cd1200ec6453cda3b0aa7e5b781072c849b7c63cf129",
+      "afterSha256": "ab3ff01df172a6dd6fa7b99a39c2ea5009430c4984d72dc5856acd380b6e94d9"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/maintenance.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "33d4defa25ea200c379f319eaef907780f74a68408d84e7e9879c5ba1ef99bbb",
+      "afterSha256": "122556d8db67cb39cf31ed9a8322caf3aaa923c1cb93379b8cd4370ebd7a8568"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/payments.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "682aac69b3de3c9e206417ab1fe9110d40820c105a8665c6caa8c2203cfb034b",
+      "afterSha256": "b31ee7fe85e0c5ca7c2a01ab85ba7e79f82e3333ee1d86c9e25e46e41f7a276c"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/products.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "72fda00d67962327a49e827ac3ba379ada6f378865a78027ba60272066b0921f",
+      "afterSha256": "1f3cc9d7c5083c4e41cd46b1d13c049fc914a39043b2522e7219e7461386fcf6"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/reports.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "63443e0dcc1f7d291f2d639974fe83b3cb850b1c11cd2b231a71cc85d3bcda13",
+      "afterSha256": "2bb7913b5e7d090740be928b5f1f1b5b0cbe669ed2ebee59bbde9681d6304376"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/reservations.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "763b19b2a85d7feb4f36cdf69a360c9233cc7e7a0d6ce4be9b8711d45e03a5c3",
+      "afterSha256": "ee407ae21a74bbface59e344ec95a2c71552d882e7497f37b5f138a5de556657"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/risk-center.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c0c109e87d137a0c77b2cfb5bac4c4175ef3dc3b91def3bd1b0d72670e35d33b",
+      "afterSha256": "b6a4de720ac8eabfea9c01a016c13d10646450444614c70e372deaf3326cc4f6"
+    },
+    {
+      "file": "public/audio-rental-md/ro/admin/settings.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f11a307f79bb7b9a1e22f1b6e012f45d7bb515243ccf3b08ac1af8429064b964",
+      "afterSha256": "12d3de6653f2dc12aacdeaf0de611635199f8ba15259a8d0acca92175e05757a"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rent/audio/jbl-partybox-710.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9072babec538d0de32bea9087d617a374f6b78c1f40f06861574da1bc46aed93",
+      "afterSha256": "be3055439b1806249f353199c8e52435714f55b3195dbf8fa8fa3ee202b56ed1"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rent/bicycles/trek-x-caliber.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f9029a69712c1ccd2e4da216fa2f9232ced9b50dbaa6359f42fdbca539cfa1ac",
+      "afterSha256": "9547ad7b1f0f3e29d02c1c8170b36fe69077687163e08ba1cdf88323eb30000b"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rent/event-furniture/wedding-chair-white.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a90a39df5edd41e8b4e6e6cdef42f085e62881e482c5fa9b0db4c00610deec7c",
+      "afterSha256": "acfe2d925b759a19fa4eee5d98fc0db3b29d44be28b22356f2c65b7c244ea5f1"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rent/photography/canon-eos-r6.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a4f6c39831c0063297cd4917de92ad597ae25f94e3d7640533ae357434230f57",
+      "afterSha256": "7515ca2671a8509133e56db6f78b6c2ef56228839511a05cc765d11ec760e111"
+    },
+    {
+      "file": "public/audio-rental-md/ro/rent/tools/bosch-professional-drill.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9b69017e9edfa66e131d680055e944cfaa8a9c15e89e0a46c05b2210ce7ff0e7",
+      "afterSha256": "542eaf0bda554beb9673697e033cdfcf65dcbad68b352f04c4f7d91a0960bbe0"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/calendar.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cf489bdc4ebe48f37126e8f76f502b0aec5e76b3a69057d511403cba58740432",
+      "afterSha256": "5d5f96690be637cbc2fe42a9a405982c2d5715a518ac3d3c1f24685f5d136955"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/categories.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "10a9e486f35b5124c74d103fab4d54a161c46fe5d308e8077517a57c1c298ba3",
+      "afterSha256": "223c320b82772e43b1ef90f5d915a5bb975136fc013547a913dc4114ff935e2f"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/contracts.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6c0632809815cd0c7bdea2cf27085f1c7dad25ac7c91bb657abf04e7cce4caaa",
+      "afterSha256": "f113500a9c65d6b1985991de5591c50ed5f9929a4f9867fe241acb820ebb7c4f"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/customers.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9b069d5a9a48def5061cfd1eac07c21537e0e04fa56e98a42b740aa1580384c5",
+      "afterSha256": "3c013283933bef57e3e6661defb85c288a46d2ca426b19406eca01f0def4b565"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/incidents.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6a3bfd6165c31725d09aeff67435a8ab11776f60626d6dea629c49001a0b9196",
+      "afterSha256": "4a4bb0d24cb856893ad2cab46c73065d50348d125ce652ade3a9823526e7b640"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/inventory.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "edc5289dc6ad2a2c3acbdcc16c31f4e4ab26dd90617ec17539260fb5ca96ddc3",
+      "afterSha256": "a577df91bac3be0132e20966d157c9ed37f1dec3738c1550b68241a090e43d10"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/maintenance.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "70e5d0ef254a077c2cf99604c3e89ed55a48717efdb83a3783240d8a40610791",
+      "afterSha256": "02a18c1053c335b486c3ba44654389578bc60e0c9d6973be9a2bb8b097cc42a4"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/payments.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "982124d02b8b800ee7543053f32a518a2c37373ee6add254f78a888f0af259fd",
+      "afterSha256": "169d68b23777dd31aabc5f94d5d23b40aebcdbeeb6fd3793972d040cc2e04289"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/products.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "54e458d861a055bd0a3068d12f6f0e8ba89d23f6cb3b6ad2865491a4bfc325c9",
+      "afterSha256": "a13f7889b95d638de8ce7a987591fa68f0b3124a21617c799cf6f5e4d2fed541"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/reports.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0cb89f6cc908d03b5d9d839fd006ccf0f91ba6bdb545144e4865b2a54a67738f",
+      "afterSha256": "43209470fa3213bb7eb1f78da9bccfdf5fbb162fb3d89462de50169afb8c9112"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/reservations.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "85d01e0924d9f7aac454626c018604d146e7087c42d634e7f2299259fabe1869",
+      "afterSha256": "1f020c2f7e32dda1dc69a2046ada842e525629726e3ee3e036f7a8362f9cd666"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/risk-center.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7bd1f9062f4bdfa3c265dc314516434cede4fc5458867d632dc0f54b815a94d2",
+      "afterSha256": "53369fa14d93ed9682e36219583ab8f34634dca8a9d4a5bc859ddec638e481a8"
+    },
+    {
+      "file": "public/audio-rental-md/ru/admin/settings.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2694d5d02da672b7edf8bd1dddfe9b9b5272fce4a035e60072d05c53d3609879",
+      "afterSha256": "88f2600dcfe7f0c959d4d1b922e742248aefce06089fb4e3b65bf11b4038d681"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rent/audio/jbl-partybox-710.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "5040b7823481a4d4ca5f05b916468ac51969f3d02a3bef2bb0c881d6f13e6d3f",
+      "afterSha256": "46ebc88ea4607edf0e4170ef78303b6b7381bc05e977965268513e37f89dab31"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rent/bicycles/trek-x-caliber.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e164e437a897f3c6ebfa2408e5ecebd784086632766c5d3be1edadbaac23b7a1",
+      "afterSha256": "b5e5c9c44e4446cbb61e3b99784bd0979488caf09c61765af6518643c467095e"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rent/event-furniture/wedding-chair-white.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "16306808f6f20961851338a33722e09ebede35e5d40bb765cd7e8fcbe908a6ac",
+      "afterSha256": "e0fdfd6366f80cd4e41bf32a3b2462ac52ae0e6dc546235c1e34e32242458220"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rent/photography/canon-eos-r6.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "354d6f2889c7985f91957ec20d625131ea3ec88bbd63a3d54412579de3296d68",
+      "afterSha256": "7aa89c092aee043a40134433c5abb71d8254cef2f6c644c5d234cf1adb07449f"
+    },
+    {
+      "file": "public/audio-rental-md/ru/rent/tools/bosch-professional-drill.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "425c3b1db686075f85442cee9a081f41bfdc8fe0de63264d074a5f91dbaf7bee",
+      "afterSha256": "ce79d0fe24170ce2ed765888e36c590ca8394fb482ad4d60cf980a4011aefd7e"
+    },
+    {
+      "file": "public/gazonpro/404/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b141008c59f544511e0a85b1308880dd0f018a0b0233ce00674f4807b93906d4",
+      "afterSha256": "49a6b507e75250fae36c84cc8a54bc552cda9922beccf384e1e38e6351c0cfa6"
+    },
+    {
+      "file": "public/gazonpro/calculator/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7d1a5c71c362cace27a159d53c5125b8763975f788864a47788c8de128c8ff7c",
+      "afterSha256": "6d455123354eb63125abdd9ffe40a4cf87b3d108782866b5834c8c43fc08aa63"
+    },
+    {
+      "file": "public/gazonpro/confidentialitate/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "98da048def96a707e29a4895b1a1eb59de2bcb105c7c350746be6f61a4ddb63d",
+      "afterSha256": "2d4ed694a0df1a74d87a780ed16fdbf43ce12426360d2daf29cc987a260ad07a"
+    },
+    {
+      "file": "public/gazonpro/contact/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "ba08f151379120505653915da28e931f00b03bb7a9569355569f29a68ee6b476",
+      "afterSha256": "49eda52774db11ffd12b523644bf148e14e908272ace2190b82efe6d168b2448"
+    },
+    {
+      "file": "public/gazonpro/cookies/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "ff63ccd263e044f277825c5f876c91a45346c7638d3191051d95da00221d1002",
+      "afterSha256": "3fbe66dec36b681c32c3939ae0c920ff4f7efb951865dc29430081b09e2f21d6"
+    },
+    {
+      "file": "public/gazonpro/despre-noi/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "fd867afa917a8ab98fbbec1e1d2a9a3cef38fd33e31f9eeacac4f97cd920ba79",
+      "afterSha256": "39be494040f9249eb20b823f2b3036593fb358f5a021f338d2f874fbb64ebeae"
+    },
+    {
+      "file": "public/gazonpro/diagnostic/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b63989b22a3555b3b5c379afc824ae7bacc38f2f58bfb7656dc76037f6a9f5af",
+      "afterSha256": "0096866ed23f5f260e348d53a87a47d3c63c9f328c5a7103b9539ed58347f0af"
+    },
+    {
+      "file": "public/gazonpro/faq/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f24a8a95a797f2e890b7a9fb194cf1dd383cd535a806ab06ec9f9cb2927ad729",
+      "afterSha256": "4b7331cd935d6f42b16b541163bbb00c37d130888478928a16eb48482ed58076"
+    },
+    {
+      "file": "public/gazonpro/gazon-insamantare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "bb18a3725029ef29283540eccbbcd3d742a755554c96eed36c6b4f298c1726a7",
+      "afterSha256": "9a757b522328e805ced540fa1bad91a673f25fecd1a1c01eba8ebf50ebbdbcc5"
+    },
+    {
+      "file": "public/gazonpro/gazon-rulou/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cc7a3338d4bf790ab58103a0d961b33d4544edba956af75e14cade2440481b02",
+      "afterSha256": "2c400047970171a6c88b7182f13fa8b8d9a03b4a0bdc9cf8402fd08a5dc55aae"
+    },
+    {
+      "file": "public/gazonpro/ghid-ingrijire/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "367d749b3a828f4123ab84904689afdf7607b46cacb229b9372b8f4069835c20",
+      "afterSha256": "dc8f577f1ffd69b02ee3719c573d9bca0c9fa39551e46cec04ea77d782606777"
+    },
+    {
+      "file": "public/gazonpro/intretinere/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6b737ee703c6854536300c0623906baf3587c2409a975a506789d117bdaaf4f4",
+      "afterSha256": "0ba3a02841b76f40c9751de2268425446ec07b0f12873a95eebd1f53b8c01f23"
+    },
+    {
+      "file": "public/gazonpro/magazin/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "271cbc8426843e8f0c3a2e6ceeb451f4152138547cc82c4b131208de235366c7",
+      "afterSha256": "260f67b89b61a8210b392fe45edc21c19a3773469681a9b3f985fa7bfa93a766"
+    },
+    {
+      "file": "public/gazonpro/preturi/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a873f645da29ed99e578372ac9e2dde7833dbdd49ded7a30d28e7f16459a712e",
+      "afterSha256": "de94e4c5ac3a328968b2bd932f13a00077cabda5871cf51aea6a19c061722381"
+    },
+    {
+      "file": "public/gazonpro/proiecte/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a833c3154c192d6a74de4d66b56825d70beef9df921bd875d43bbebc9e9577fd",
+      "afterSha256": "b5e28d164e2e5fe27594457e78a3f7cefcd194c469cc9994f9f5ddba2e03953b"
+    },
+    {
+      "file": "public/gazonpro/regenerare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "93a3a81ae3bb25b2461830b87fc1f033649ad424b62f5bf2262d2ec0c5b69205",
+      "afterSha256": "2e4aeeffb697e9f37fb4f28cae77d15481e18dab0dd0a43a0765dadc028981f5"
+    },
+    {
+      "file": "public/gazonpro/termeni-conditii/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "eec3e88d70258193b4647709c775a4a243ebd9eebebbed6e474274e0a4f08a06",
+      "afterSha256": "cee9b9842d25d033e37fa63fc7b3b8d9c211132b9302fa182b6c4e8092b5cdc6"
+    },
+    {
+      "file": "public/gazonpro/_not-found/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b141008c59f544511e0a85b1308880dd0f018a0b0233ce00674f4807b93906d4",
+      "afterSha256": "49a6b507e75250fae36c84cc8a54bc552cda9922beccf384e1e38e6351c0cfa6"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-1/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2380c69e020ef0cb96079b5b8f890805e2984476f3c4b6d9a753a4c96bd5c1d0",
+      "afterSha256": "a61b113c224415802b98175c2051d84b83b4ab0d600619f12d768fcc89058a66"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-10/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f6de767104422bf7c66a0969b58df054110b45c96cfa65381da6bbfefc626289",
+      "afterSha256": "c81ed6037c49607cadb047af98034667d12842f7dd72fa5a549d51d86514b2fa"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-11/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2a73b0d6e2fe34f5dd61643d63512d3ca4805302205d3dfe1326f4be378c6d81",
+      "afterSha256": "40189440005e3e31f703440e6bedcf5fa193f65a39eb0522a528bb7f28e0b706"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-12/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "62d674961f6546a0e141b9d90f0028fe090784ee9c779bfd8e6e4abd69977fe6",
+      "afterSha256": "565428925cd4ab817b5ec5821f218651340d1a32c82d933ead5aeebfc79ffa71"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-13/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "460770da18ca73b1a90500b29605600c45a6f9def0fa9f2d26a01c34b2758b18",
+      "afterSha256": "9852452c4dcf980aad392b1f67d41dc3e719ee751b4f2a582a879b3443a399fa"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-14/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cdfe32d9b982240009e63c9b186ffd8f51ab63d2470c36eacaf6ff570698a68e",
+      "afterSha256": "eab63e480cc190244e4ad0aa08b76b85fa93d2843581932ba5a879b855e655e1"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-15/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9e1ca86f8fa8d0a377eac0f05a3da09cc568991aee362e0bed11f114e7725e11",
+      "afterSha256": "662fde476b165c8a671ac59391b2de1fd1a855cea712a6fa1aa2c26ececea2c4"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-16/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2bd5c4568601dda8d20ffd49fdc59b6f1d081b490ca2fc1984545083bfd54f11",
+      "afterSha256": "e801eecbe5bfd14658bcc4855e15fd95f5997047a3d556cbde9c817c504a1308"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-2/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "ed30e4de1b3390fa92bad5448bc4eef8478d46014586cf1e07800a16f9149bc0",
+      "afterSha256": "27fe588d0c23e5afc0885f55af2e42a355a0fb43d8d267ae76fc47dab5ddcf7f"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-3/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d054ad872805d28f9857f1734b4337b45b609ad1b86e9c005d0d7c10c4bdf8fc",
+      "afterSha256": "c6a5ac9246d34563df655cb56488f0f01a894ccb04b9131379e4675c2b9284bd"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-4/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6dc4eae0a2aa08925d611e640aabbcd50c5e8f31fe18d5a2fe4f7abf7c99510f",
+      "afterSha256": "139782993e5a5795d2e0c0f3c463b7e4ca64febb65b360706aa65805038b8f0c"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-5/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d2fb5718225f254d44211eea27d66b6554d300fbd7f33e2b9486e3044ff4b681",
+      "afterSha256": "32829d9d6cd220994e2165001b60a810494d0731b9a96f855dde8146c9240d58"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-6/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7178ab4643a4367038ad52a215de06727d01acdbebf9a864d98e17e006e1f84c",
+      "afterSha256": "5fc95f2cf8665a85192c48c1be6b233af75c88af29c29903cabad2c6f2ac459c"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-7/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e3cce08336ce24ebec65cc93609cab7c99847c286f19e2afe7b6dc7d86c51496",
+      "afterSha256": "710e1c24a765e2fa9c78af34e2e1c7ad983d3ff3fef4a8ea7edd5163c828c9e1"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-8/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "170c7ec0410eae89c6ca9287c9a1f01977927061fb41c2d92e221df5ca1c0228",
+      "afterSha256": "a93f30f0477974e518ebe771ca55163a76a926b085fb18ea764108e2cd883863"
+    },
+    {
+      "file": "public/gazonpro/magazin/gp-9/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "194d28968b795280930f0a298c646c70e6e572b482918da24e15d4738e1aca81",
+      "afterSha256": "7c847f3338272bc727658cfb763dfeef61e45c77527a1b380cbf5bd2140341e5"
+    },
+    {
+      "file": "public/nord-and-oak/en/dashboard.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "aab6e452a6addd88315281037cf6602caf4b9148b2e5f95b9ff3acd9ba9c65e0",
+      "afterSha256": "33d3e8602931054335b725153a63779245e9a27c6940821c6654e3afc3d6f741"
+    },
+    {
+      "file": "public/nord-and-oak/ro/dashboard.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "090b4c02c9ddad5b335dc35b3a17ef3db1c85aee6fd0f7dea94c967fc690126d",
+      "afterSha256": "6db5f5557d0866943193b93576efa7a164b84de91b2533c4efed1a4dbc3a5f28"
+    },
+    {
+      "file": "public/nord-and-oak/ru/dashboard.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d35d8605e27beb855ed3849d85a3fdacfcf23ddb6f606073c7393994dc68aa74",
+      "afterSha256": "95f83add7e9ae7ef183c664149ae277225f4c0626470b43706ae104912d756e2"
+    },
+    {
+      "file": "public/terraforma/404/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2eb2ccf429556581adbbe1b86e188eac07b6f61fff5895c00305e30ccc04be5d",
+      "afterSha256": "2f8308b1a75283653d690177eda28f7076fa1c98d066d7b867118e21fb909da2"
+    },
+    {
+      "file": "public/terraforma/amenajari-comerciale/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "facff8c9a60242a3beb3accd832a1d93c000ff77c05b3dd301205b7cf1a864c1",
+      "afterSha256": "df0484aebb494a331d70fa386e50e92e5df87b7cb2df644ee516a60d7e77ef61"
+    },
+    {
+      "file": "public/terraforma/amenajari-rezidentiale/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e1487f672b9e45f0192bbcf901782311133ef6c79a082b86c882072c1c39106e",
+      "afterSha256": "d2d4d259a7217196cbffbb366d789704f27fe2fff2be0050d4c847aaecd6c7c4"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "1da4f0177a5c4cb10e8fae02c0a65a0084a8ad1257fedb0cf42f5457ec1cd5ac",
+      "afterSha256": "15cde6a9783874cfd16fae8050a9f0c152ce53b9d57d7fa2fa323821a625d403"
+    },
+    {
+      "file": "public/terraforma/confidentialitate/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "47ba0271e5c067dbc9e55eecf3995ec42439c7f4e75d925d8e8fff50cb808be5",
+      "afterSha256": "a163fdf91311d4e594cbc80821d9213a5ba7bfbb9e57a297fae206fe2e5938f5"
+    },
+    {
+      "file": "public/terraforma/contact/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9ccfc43be0783430f1499e2cf1722f5996160baf7bfb5b50e1333e4bf19b1f74",
+      "afterSha256": "5fdc3f21fcb1cab9cef0afe8bd27b63d19a3d895337f87c375f4c69f78759c26"
+    },
+    {
+      "file": "public/terraforma/cookies/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "861e6ef08810537768141648a2a4a8c6acf99e634ead829cc6b6e46c2bbfd965",
+      "afterSha256": "978866216a24465c579e0cce7b7807f6c98b6eec972fbacea4de6d4d8e4824f5"
+    },
+    {
+      "file": "public/terraforma/credite/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d1044016ddcaa819a5aeb32e59a863f029b30dd6ce93e9797db773a7241fc15c",
+      "afterSha256": "1358eec2649751786e24b032b14887d350f82c8884cffdfcb442f30566db536f"
+    },
+    {
+      "file": "public/terraforma/design-peisagistic/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "eec4ae4e93879434d85b02f634fefcf838fbddffa2767f1b6287870b9db1f518",
+      "afterSha256": "8fac33d518f83cfd3218b2d8abc0c0ebd94d30c663f4c59ad945e39c224ad4e4"
+    },
+    {
+      "file": "public/terraforma/despre-noi/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e031077a2a1a7c4e83024a9a6e5c21d2e0966c12501b6b5fb36d03baeac3cbea",
+      "afterSha256": "bb2627b1bbc7d9389023011baa8de11cdd466c6e8605b1a143e964658c709731"
+    },
+    {
+      "file": "public/terraforma/echipa/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "37488152db8369a84cee378c0768373c549657a5ad3d87e236a4a98562398abe",
+      "afterSha256": "7de33cb58cec4e18b1abf95ebbfaa6194c586bb8092d746eca460381b97de3ba"
+    },
+    {
+      "file": "public/terraforma/ghidul-gradinii/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6d527c3513feeab43b944108ae36cd66465c87b5c4ed16be9007cbe2da53100d",
+      "afterSha256": "009ac4c23eaa3cedd572010281efbe4f403310e09355db34fc81834217439d51"
+    },
+    {
+      "file": "public/terraforma/iluminat-exterior/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "17b57b4a4f6ee02311a96b6043fef54b1cd5d5867fdde65342e0d25dff0a396f",
+      "afterSha256": "aba13434532274b13068facc56fd57d4de79abd3128b083f96d67d9fadbdc729"
+    },
+    {
+      "file": "public/terraforma/pavaj-si-alei/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "dc79cdbbb14341e8bd89fad963594ad4d0b67141af6c375d81fa0947b5e1b909",
+      "afterSha256": "594f3de231c5d4362dd335aa9e5a1fc57f89c7b20500a3f98d4833492c95a37c"
+    },
+    {
+      "file": "public/terraforma/plantare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e7361806ee0c395111cef39bd0cbbd1816c01bd0e0bc276408ab46244bcf53f2",
+      "afterSha256": "5b01c5b8cec9cb85b41785c250e5d94186316cea3e0ce6c5b4078025501907f6"
+    },
+    {
+      "file": "public/terraforma/portofoliu/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9d0195eb77bc0d68005d7fd41305873f8c71274fc2d83fba93b54d30a0a996fe",
+      "afterSha256": "a7c9b96d87aedb9287864c288590d028267973b4f8df2c679b1c7aa95d340408"
+    },
+    {
+      "file": "public/terraforma/solicita-concept/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8ad4111a7962473663d774a81166898ca97b2f0c84acefa9c0f1f09fbf8e10ee",
+      "afterSha256": "19329edf684923978f90bbbb730d9016c05abf6e0bf5cd01a92307c8d3d70742"
+    },
+    {
+      "file": "public/terraforma/termeni/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7ee730a0f16a3e1decce62a477f05334661b2e9bef254ad9797d5bf59aa5781d",
+      "afterSha256": "7e7eb0e8e880117b1b2709f5cac9fbbe488d7f32008f146b993c8412919ccc92"
+    },
+    {
+      "file": "public/terraforma/_not-found/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2eb2ccf429556581adbbe1b86e188eac07b6f61fff5895c00305e30ccc04be5d",
+      "afterSha256": "2f8308b1a75283653d690177eda28f7076fa1c98d066d7b867118e21fb909da2"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-1/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6d70fdde78bbfdf099c96f5da41e4748336e1aef7285d6340dd3cd0fc92f253d",
+      "afterSha256": "c27031c0401d54bda4ce8eb58de70ff0952293fba341d94fcc540195a70c26de"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-10/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "287e204d0f1802024616fe84af7b19f4fccd629724120a42a459f420c03ebc64",
+      "afterSha256": "edc770a37803816e2435860d1b07e57d87d6de66d4a0caf893421da1ed3ce9e5"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-11/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6c10c6fa0c3c9e529e1958d8153e21dd745df3eb7798da8f50a287344ba12361",
+      "afterSha256": "4570df10224cf1e40fa0548054ea9b67479468f3ee96d1bce00432131af68c6f"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-12/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "26679466a1166f453ccab4d3738c0714af3a435a68c079fe2a2aa09e83d530b9",
+      "afterSha256": "4fe557571936a04b0b6b0bb176b7c923ee0ee28a670dc0b3765bf79f3cc91876"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-13/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cd731defafc2f19773c48b02a605d2ab937fd56828641584c6567c6b17077eab",
+      "afterSha256": "719f764b345b4d22660238172faa03e836f7594bf1fc6373c6f33e0424a91da6"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-14/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6335973e1a7fb884e0ba3d9396d3bad4fb82fbc355c7ef2a8dbf4944a0ad45c4",
+      "afterSha256": "990c52b4b559cef1bd0f1d15003a12c33b1c905b61872dfb11dc525eef924963"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-15/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7b7139f42d391e271e242f8b6eed301ea4135ca9a0df4e26d489799be62f2744",
+      "afterSha256": "80327df78583daf09422732b72ace30ddf59bd62b08ae083dbf370443802e69e"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-16/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "ff357b411623e1b4cca92f8756e094e3746c2c3691a62432010008745881afdf",
+      "afterSha256": "505d06b0ef0f5f5efc7921a9d43f7b064a30fc3c66062cc2909114204f3cd876"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-17/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8b303d0a3a81a01e94113580bbf872b675e841cabd8f8ac3834497ebe398f68e",
+      "afterSha256": "9f1bcd89e97c6c546c3f89abbb376e9be408ec3de3108d4af88b9a2582b7e173"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-18/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "992c264a2833380c93d12a4dd2dd638e5fe5cce442db4d908d88d6c547b849e9",
+      "afterSha256": "2406e2c22f59f23e3ef9de678483c09ad9c8fad17177538ad7cd9b99a2cb98b4"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-19/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "5726d13c812356f3f8a537a975674d1edd6e30858c82fcf5010219d043670bdc",
+      "afterSha256": "85425aee0a2989668ac284041195abefe5e3f597e4654f3335d23e43fc78e2fa"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-2/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "accf50ac1b1f66480f07b99415788ccc87ccc8c251ef1272dd14a19d12010bb7",
+      "afterSha256": "9aee5cce8c7725f3e7f448a12b3333e35bb9545a3ec9bf26b3e0ab822444cf4b"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-20/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9fddedb800317907951d20d5113d8b7552f0382d63dc6e7041b394f149d66d2b",
+      "afterSha256": "8eb6fa54f3811d7559d7143d22d121c464a7818332a7c89750ba1f9599789da9"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-21/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c95add47412bc3a147fc479c12ec92caf38d5a742583f2ee2c4b2ec8b56e802e",
+      "afterSha256": "4624b05caecbd336223d530d48f1bccf6dadaa206388c00e0d59a0f8bcb6399d"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-22/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "44ecc6b6305c1a63d135bf5085aecee4a4e0203d2f87a3c3335a3297ef89c8cb",
+      "afterSha256": "d6ea42208c653ce1e8df94b6264ec560de1b0f2d1ca70751efd4775675081a91"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-23/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "9199718d83459a64b6ca1a391d0dfecea9d0755234ecc9772d4d641acd033464",
+      "afterSha256": "9e5a53a10d29efd30d7214adee99fdb573e9cca0006f8ecf4b536bc225ce3908"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-24/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a98e53f7d54f5d30dd69875459357abdaba5842222b427161565aa19d24583b2",
+      "afterSha256": "4c83aa0e4d211b932e632034dc8c3415757b566cd3a31140a0c975fab3cc3c03"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-25/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7d9e7595048c959ef76aa33655639a8530ba0fa02c13ba8b9eba5a67d0c06686",
+      "afterSha256": "0fafd5fc774938ded2b0b1ab330302c234d4fb79a3354755ddec5352335d432f"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-26/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "103de5b10828aebe25b5d3fc4c1020f745ef98794d29c6fb4b19b24b4aaf6161",
+      "afterSha256": "18c8e84c1dc5aba592ade297a477c0a089e64b57527b1b0591a9ce0ceac812aa"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-27/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f79fc3501057df257aad3fc0dde053ce58203e706ea277c6f2d3c9b8347fa150",
+      "afterSha256": "2eb0f416c523383c40a11ac8582ed011f2d9a732650491ac7880db36b1538a5f"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-28/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "3bcf3c1528dd3820e919039e0258f4314fd3bb2fab0cc9f3597d5728003083a9",
+      "afterSha256": "8083a8a4778aef1bc6f0fdf8128a0c93cee7d0b239c0d9bb8a18109e6e7a209b"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-29/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "dcf6676adb26959338a91854654c988bd9accad10acd1d7a1d3e2d6f7c9ac768",
+      "afterSha256": "37cd7cb98a5f8e2b7a8799b8e24b9f49c35c6a776a60374919d48ce171eabe9a"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-3/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2cd03af38dc2f12122b2a6a914a2320fb18ed626e81776c9b69bb78927b60d58",
+      "afterSha256": "3462bb86a7c5baf4f9abe60ba4b7597fbe4cb66527e2efd66ef1528df0e2468c"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-30/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8c5bf8df10cd8a49fdd72fcf9793fa2b2393da6ed4858347899e664eb792136a",
+      "afterSha256": "20b607c37ee4188ac630330719e05ee252164108d22aec1b8cf437a67cf2876f"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-31/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "95fdffe3bc62f490e98361b9432bc135426cece402c30ea8b969e7416f247a45",
+      "afterSha256": "fa62002cf83b5060ea3a541cd7fc1cbd16e2107a070d1ca07610759fece45e44"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-32/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "43870053e307647c1471fdf18b698f40f0bd8a5e541a5db574bbf870228619aa",
+      "afterSha256": "67ab64d11ff82166ce6bf4271153082ea8371d29360b7d5634162c61b31f75c0"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-33/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6adf187bf75c4a0573811df8b1d0b0141392e1a3cfff95f49ee8dad63b0a24c0",
+      "afterSha256": "6ca5bed05414f480e743249bc2520a0c6f90b8cc217923ab7c40f88680a356d4"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-34/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "aa5de3b3d14b33fa0e5875724d3450bd12adf5ef9b77da5c1cd44ef20c0eae73",
+      "afterSha256": "b49268c3cc3fe1977927c36a200fb2b95e5fd239ac9dd63654cfd1809c06aa48"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-35/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f8bc6fc9833785fc6dddbf61959d1c07c7a72966268c4f55438149b696299e88",
+      "afterSha256": "bab4a5013be7e2fe99f9c349ccc162938136d77f72a6aa3b40d384d9d99b0023"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-36/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "867187d066df4b1455fb2211e70b90c92812f2a70ec5a67869de2f6386bbc11b",
+      "afterSha256": "b0f348d679f74a2dd74273d9a80cb2335fd919a4247f831feb66a90a2f3dd9ad"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-37/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "f4e5caf229981a6212d3bfa6207da87a32af51bd4ac694a3b8fccc7548793bc5",
+      "afterSha256": "45afc2cf81074eb0628b04b5412f8d17e269917c3a7cd9f79c047b5581b2968f"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-38/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "a8614276fa06a3ee3d7b383afe5cfd27c9f04e2e5fea19ebda3d19ed4281efa3",
+      "afterSha256": "083ae28e8cdc281cc10045cc8b339d028c980f272d8b567db427d50720a96f95"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-39/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c954f82f9824bbd8f03a8b8df4ed204ff3b13451de9eef6d7705ffa167289e9c",
+      "afterSha256": "c4a38b610a00584626cae2819395bfa4f90f630d2cbc69fec1488e38ade019cf"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-4/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d45433fab92d882b74e576253241625e1d5018f40a73ba7b8ecbfd13663bc496",
+      "afterSha256": "4e8b3966456cb454cf765ebd97af36b0145a53c7630ce83ac11ec7427d5ad8a3"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-40/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8d4e30e5c7f3be85bbfa8f3878c41e7eeb611386a687ecf401fc1cf1fb2b5cf8",
+      "afterSha256": "03c5ab350f59b5ddfdcc4b0fd237930bd22a30ea8b178ab398c860d65119a5a9"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-5/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8c03c46032ba04f7c83b5a858624982d4cbfc9f93f3bb6c25781ebe8399360a0",
+      "afterSha256": "5a3f535cbfacbf80fa0e5f3b6f9a6564b8c9571134e17c1f14f687434ba687dc"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-6/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "77adb84618b26bfef81aeab408b4fab4f6d0828338b335c0b0a591663d342c21",
+      "afterSha256": "5324e466c4d37fdfc883fcee19c53d304d1139182527a5abdf02986576222613"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-7/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "98f3b5d41c7a3f527b80ff33a547dd10b52edd23de526d6ca66d293747591c21",
+      "afterSha256": "bd8b03b70eb6567316964ffb2920589196f692c9eaf62bd2deabf453a6b65d74"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-8/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7386b2925228d413044e20089fa9a49a542896a737192db03b54e68697f6f53b",
+      "afterSha256": "0d99b65805ecce8aba8a8ee65f755f6d83cd962bf1175cd9b277d075f6b284a6"
+    },
+    {
+      "file": "public/terraforma/catalog-plante/planta-9/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d354e6c06b88da602b48ed208f1083e9749de848f01d72146486c5d185d6b2e6",
+      "afterSha256": "343ca1ece6b76bfed971e4ca66f07840e5cb5787ce2bcdfa47e64aa803fba19d"
+    },
+    {
+      "file": "public/terraforma/portofoliu/casa-din-livada/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "72b2913d3a2bc7d5e342dd1018090429637a99c4f9d5ab7aa885125cdb43ad71",
+      "afterSha256": "5d84cd811741c407ba7a7f403ecf1ffa3e5eda19dfa1874e304c670c9847a26a"
+    },
+    {
+      "file": "public/terraforma/portofoliu/curtea-liniilor-simple/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "6b442dd1cab60e93fac1ef3826741b674aa070e786f4d4813604534bbfe6cfbb",
+      "afterSha256": "25747e63188bce0715acb14d8aaffcb10ec06601345f4d6c390b807e90995b2c"
+    },
+    {
+      "file": "public/terraforma/portofoliu/gradina-dintre-ziduri/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "23f4ba02d998ce5234574c83abd623f7c1528d76e41d47aaea03531fb7161c7f",
+      "afterSha256": "89848259ca063f737f28f5de5516af96005fe0cb7da244756e019f78dca45a76"
+    },
+    {
+      "file": "public/terraforma/portofoliu/liniste-in-verde/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "d32b9e598518c9eb6f6fec644aa479d436fd8efedb49a2bdc97aa1deae203e5c",
+      "afterSha256": "f468784b87e463d8d5c092faffa9935a0ec55d99a425de85f4c4739834002ade"
+    },
+    {
+      "file": "public/terraforma/portofoliu/terasa-cu-maslini/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "faa8f4183af44e97215d0eb5c8da734e1dd6b68ad06f02dfdc519803f30aed17",
+      "afterSha256": "3c1b39f15be153c9afc884523ab3d98e578012cead5a48cbfcb5174ec57d37f5"
+    },
+    {
+      "file": "public/yardcraft/404/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cd83211d90830518971328f82ed32b969b317ba7fe8673dbd03a03d98e43f8b8",
+      "afterSha256": "ba53d8c28e729352f893d8fc3fc679e0836fae78585076730c7ab69f38141264"
+    },
+    {
+      "file": "public/yardcraft/borduri/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0b48ece53b1cf9710a13127a7fbe53453f1e76844ea1f461fc1487eaa045d7b8",
+      "afterSha256": "65e5f49024e85cb79e34622549e7b11b374e5e46336f572c0a700d6ad8ab465a"
+    },
+    {
+      "file": "public/yardcraft/confidentialitate/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0234404621d57a54cfd73eadaabe0620bd0aae43585a76a8afd355742d8be954",
+      "afterSha256": "dee8a2bf0f7c537a097e1ab4a445a2be0b386a41aa4bd0d90846dc3e95c99d9b"
+    },
+    {
+      "file": "public/yardcraft/configurator/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "8b9c39a5ef82fc40294ac897b2f2794392b702ec2149b3d49fdfd63830078188",
+      "afterSha256": "76452d276e2105bf3692bc35aac328182bee6e8be167674a83c2c50eec1639fb"
+    },
+    {
+      "file": "public/yardcraft/constructii-de-gradina/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "b799113271bb152ba45479169de37755be742288601eb5c7ef090b2ac9207b09",
+      "afterSha256": "f9dc694849192ecd739a19814f46f1ccbb7995246bf27b963561b80ef29b9d8b"
+    },
+    {
+      "file": "public/yardcraft/contact/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2b0e2e87e6ac0981592b1b28fa8e258ad4bc8e8d445400f6e7ae35ae8ae14f0c",
+      "afterSha256": "b88053d5fd96f9e69cbefc8fc9e3c3f539a343cad220610a71fe824cc901ae20"
+    },
+    {
+      "file": "public/yardcraft/cookies/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "576c52dd14d9aa449288c4627c03e918d110b39ccf84d918b0d943f16e17d304",
+      "afterSha256": "b36f045a85eabd3d38f136a2d85fa6a05d1164c5cb4a4f1301ef0264105b1505"
+    },
+    {
+      "file": "public/yardcraft/curatare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cc07cbbb6fda41cef14ba19762a0bc1679c45a1597ea99fc5127f100d1746321",
+      "afterSha256": "213f39f647385781dee93baad0d733a03012358cb2446c287b94f17f1e7bc721"
+    },
+    {
+      "file": "public/yardcraft/despre-noi/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "c4265e0e4ce43dd22adc9d392a2fec231ddae28a053315000093fc488031cddf",
+      "afterSha256": "7cdd92e2febd1885e4058284792a93b15c5e307c09f6a7bbcb329de494189566"
+    },
+    {
+      "file": "public/yardcraft/drenaj/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "5cbc97310ae314b5a471e53ddbd24ce333445a90950d26e4d6484152cecf71d8",
+      "afterSha256": "37a6b9510c63e4b2f28ce9631419304885af21b190f60118b750b66b42ed850e"
+    },
+    {
+      "file": "public/yardcraft/faq/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "ef35e0d27f425a0950d7e37c1312680b675b17906849ee646d76c7431e42f2e3",
+      "afterSha256": "7503f361bd0a1aba71dda78570d3fe876fe75e808c9553e1fb3086a52063d629"
+    },
+    {
+      "file": "public/yardcraft/garantii/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7a040b439ca312ca5817a4965ecf787cbc759a85d75ba8fd8413ca0a93a133ac",
+      "afterSha256": "40cafae5526ca21ee9d1a8d41cb93d6ff05188275d4128186e9ff576eecf5c1b"
+    },
+    {
+      "file": "public/yardcraft/gazon/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cefb82fcb7e35575a4154002c76c0962376935a7dc11a8c24a5bc20ba632e216",
+      "afterSha256": "7aa468e1a348ebd5729041f10530b32cc44fed5259de1dfe2cbeb187dc7d557f"
+    },
+    {
+      "file": "public/yardcraft/iluminat/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "eee40ed6ad9aeb1e22943c4e3f3db7d12cf69e7f3bd9079aca91288bed72ccfd",
+      "afterSha256": "b0ba82c5af491d830e319ef62138f4cf39da72cca5207cde7f2c17b8a857cd57"
+    },
+    {
+      "file": "public/yardcraft/intretinere/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "e7fecd1a138fb71651714bfdde43bb24ba439b43b14be94a1fb0056b23d12253",
+      "afterSha256": "0cafac02047db26f432d3529bb39712e53774dfa301d923f569d4fa057ef5e87"
+    },
+    {
+      "file": "public/yardcraft/irigare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "2a65bc09e599ae3570f9d4753b6016b6519d94d81db6e9feac74dbc04eee0991",
+      "afterSha256": "9cb774dfc720c42146f33b33b3b0e55f6f584ff051bdc9bc39a8f002b3e38417"
+    },
+    {
+      "file": "public/yardcraft/nivelare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "fe4f7d0bfa9a9f3c4c585b515b946ebc14f0ea19bf201c82a0ec267cddebfed1",
+      "afterSha256": "3cc1d8d8de59501426fd17f042773dd5bdb6677b2eb93609b503a2d0e69053b9"
+    },
+    {
+      "file": "public/yardcraft/pachete/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cbef693afaf24052eb66649a9ec57584161915596084a6c7270eb4adcdd03a27",
+      "afterSha256": "a43957049566c18e439c181e80d4698ca70d7f88f78776541d079dd431612056"
+    },
+    {
+      "file": "public/yardcraft/pavaj/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "11f8ebc4d24e6035bb0f8f32c3ddd14804292d296d4392f24823994f0f30313b",
+      "afterSha256": "2b95c69d88a33df090128235473583783bd1ec94c545b16deac4168db538a0e1"
+    },
+    {
+      "file": "public/yardcraft/plantare/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "acdf04a1b828276123ac15000fb350ba7275792493e4f3410fc2eb41efd4e232",
+      "afterSha256": "77b08c65cae1843e14ed2b54252484dffa867c3b8d255bef667b6b74d2f3ed75"
+    },
+    {
+      "file": "public/yardcraft/portofoliu/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "82a0d601a6e7a5ff69d88362e623cff1bb5c34db8b4aa7f8132d1adca814b1b3",
+      "afterSha256": "2748b3f576a1730f69239bd4911b8b6710790f2cd55a7332314524bb273284cd"
+    },
+    {
+      "file": "public/yardcraft/proces/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "0cc49863dc1c09a50bd59c73051cdd3f03d1e2c3dc078947b5785d4b435f01a6",
+      "afterSha256": "9113097f04c6a9707b166c6367216754e7c0d09dfaa4469d6f799c6611ed835b"
+    },
+    {
+      "file": "public/yardcraft/servicii/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "902d19d70261b9e11ca2b81d0dab9f5344c43a859e4f9e978ab632cecd717ded",
+      "afterSha256": "9f923e763975907e4b0b13750cc855ba107af6873445ec1644e601a2691409f0"
+    },
+    {
+      "file": "public/yardcraft/termeni/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "7547c374ba259f806ff6146e3ad3587ccd2c805cb015d759c7a54502dd596fc5",
+      "afterSha256": "45711114b0b19f16212ca40f93168975f6ba7862cc6287c249db97f574874e10"
+    },
+    {
+      "file": "public/yardcraft/_not-found/index.html",
+      "reason": "Meta robots/googlebot uniformizat; restul HTML păstrat.",
+      "beforeSha256": "cd83211d90830518971328f82ed32b969b317ba7fe8673dbd03a03d98e43f8b8",
+      "afterSha256": "ba53d8c28e729352f893d8fc3fc679e0836fae78585076730c7ab69f38141264"
+    },
+    {
+      "file": "app/garden-projects.ts",
+      "reason": "Flag separat pe fiecare dintre cele cinci proiecte; preluat în catalog.",
+      "afterSha256": "cb3321a0892eab47844e7437131e005429c2d6dbcd245990de8986cfe70eab2b"
+    },
+    {
+      "file": "app/lib/project-seo.ts",
+      "reason": "Politică centrală și teste de activare individuală în memorie, fără activarea catalogului real.",
+      "afterSha256": "9fe11cdc1d42e39df1fa456d41e984c44f8b3544765de4e9e7953f794f8704e4"
+    },
+    {
+      "file": "app/lib/seo-routes.ts",
+      "reason": "Politică centrală și teste de activare individuală în memorie, fără activarea catalogului real.",
+      "afterSha256": "1089e6512b567d7ca9d2a8021590908d6d1e22d0e2ef853b7f9c9aa917abd1e2"
+    },
+    {
+      "file": "tests/project-seo-policy.test.mjs",
+      "reason": "Politică centrală și teste de activare individuală în memorie, fără activarea catalogului real.",
+      "afterSha256": "bdd0f4142ef225f9c822ce28366e5fce03c3763ebe6dc414d4b6c45f9fe9a930"
+    }
+  ],
+  "missingPreexistingFiles": [],
+  "demoFilesChecked": 221,
+  "demoChangesOutsideRobots": [],
+  "homepageOnlyAuthorizedRemoval": true,
+  "sitemapBefore": 246,
+  "sitemapAfter": 57,
+  "removedSitemapUrls": [
+    "https://monodev.md/en/projects/01-eventora",
+    "https://monodev.md/en/projects/02-scena-city",
+    "https://monodev.md/en/projects/03-pulse-tickets",
+    "https://monodev.md/en/projects/04-clinica-nova",
+    "https://monodev.md/en/projects/05-laboris",
+    "https://monodev.md/en/projects/06-doctor-aproape",
+    "https://monodev.md/en/projects/07-med-slot",
+    "https://monodev.md/en/projects/08-lead-pilot",
+    "https://monodev.md/en/projects/09-growth-desk",
+    "https://monodev.md/en/projects/10-closeflow",
+    "https://monodev.md/en/projects/11-partmatch",
+    "https://monodev.md/en/projects/12-garage-box",
+    "https://monodev.md/en/projects/13-motor-supply",
+    "https://monodev.md/en/projects/14-auto-grid",
+    "https://monodev.md/en/projects/15-park-suites-demo",
+    "https://monodev.md/en/projects/16-urban-haven",
+    "https://monodev.md/en/projects/17-nest-collection",
+    "https://monodev.md/en/projects/18-moldova-escape",
+    "https://monodev.md/en/projects/19-bazar-local",
+    "https://monodev.md/en/projects/20-pret-bun",
+    "https://monodev.md/en/projects/21-local-craft",
+    "https://monodev.md/en/projects/22-skillup",
+    "https://monodev.md/en/projects/23-civic-learn",
+    "https://monodev.md/en/projects/24-mentor-cloud",
+    "https://monodev.md/en/projects/25-casa-check",
+    "https://monodev.md/en/projects/26-direct-home",
+    "https://monodev.md/en/projects/27-area-insight",
+    "https://monodev.md/en/projects/28-table-flow",
+    "https://monodev.md/en/projects/29-food-route",
+    "https://monodev.md/en/projects/30-menu-studio",
+    "https://monodev.md/en/projects/31-my-utility",
+    "https://monodev.md/en/projects/32-block-admin",
+    "https://monodev.md/en/projects/academia",
+    "https://monodev.md/en/projects/aquaverde",
+    "https://monodev.md/en/projects/archicontract",
+    "https://monodev.md/en/projects/atelier-noire",
+    "https://monodev.md/en/projects/audio-rental-md",
+    "https://monodev.md/en/projects/autoflow-partner",
+    "https://monodev.md/en/projects/contor-acasa",
+    "https://monodev.md/en/projects/drivolt",
+    "https://monodev.md/en/projects/ecohabitat",
+    "https://monodev.md/en/projects/elan",
+    "https://monodev.md/en/projects/fixora",
+    "https://monodev.md/en/projects/flow-crm",
+    "https://monodev.md/en/projects/forma-living",
+    "https://monodev.md/en/projects/gazonpro",
+    "https://monodev.md/en/projects/imobilia-one",
+    "https://monodev.md/en/projects/iq-calendar",
+    "https://monodev.md/en/projects/market9000",
+    "https://monodev.md/en/projects/medora-clinic",
+    "https://monodev.md/en/projects/micora",
+    "https://monodev.md/en/projects/neo-barber-club",
+    "https://monodev.md/en/projects/neo-booking",
+    "https://monodev.md/en/projects/noma",
+    "https://monodev.md/en/projects/nord-and-oak",
+    "https://monodev.md/en/projects/pophaus",
+    "https://monodev.md/en/projects/rentech",
+    "https://monodev.md/en/projects/staynest",
+    "https://monodev.md/en/projects/studio-forma",
+    "https://monodev.md/en/projects/studio-velora",
+    "https://monodev.md/en/projects/tableo",
+    "https://monodev.md/en/projects/terraforma",
+    "https://monodev.md/en/projects/yardcraft",
+    "https://monodev.md/ro/projects/01-eventora",
+    "https://monodev.md/ro/projects/02-scena-city",
+    "https://monodev.md/ro/projects/03-pulse-tickets",
+    "https://monodev.md/ro/projects/04-clinica-nova",
+    "https://monodev.md/ro/projects/05-laboris",
+    "https://monodev.md/ro/projects/06-doctor-aproape",
+    "https://monodev.md/ro/projects/07-med-slot",
+    "https://monodev.md/ro/projects/08-lead-pilot",
+    "https://monodev.md/ro/projects/09-growth-desk",
+    "https://monodev.md/ro/projects/10-closeflow",
+    "https://monodev.md/ro/projects/11-partmatch",
+    "https://monodev.md/ro/projects/12-garage-box",
+    "https://monodev.md/ro/projects/13-motor-supply",
+    "https://monodev.md/ro/projects/14-auto-grid",
+    "https://monodev.md/ro/projects/15-park-suites-demo",
+    "https://monodev.md/ro/projects/16-urban-haven",
+    "https://monodev.md/ro/projects/17-nest-collection",
+    "https://monodev.md/ro/projects/18-moldova-escape",
+    "https://monodev.md/ro/projects/19-bazar-local",
+    "https://monodev.md/ro/projects/20-pret-bun",
+    "https://monodev.md/ro/projects/21-local-craft",
+    "https://monodev.md/ro/projects/22-skillup",
+    "https://monodev.md/ro/projects/23-civic-learn",
+    "https://monodev.md/ro/projects/24-mentor-cloud",
+    "https://monodev.md/ro/projects/25-casa-check",
+    "https://monodev.md/ro/projects/26-direct-home",
+    "https://monodev.md/ro/projects/27-area-insight",
+    "https://monodev.md/ro/projects/28-table-flow",
+    "https://monodev.md/ro/projects/29-food-route",
+    "https://monodev.md/ro/projects/30-menu-studio",
+    "https://monodev.md/ro/projects/31-my-utility",
+    "https://monodev.md/ro/projects/32-block-admin",
+    "https://monodev.md/ro/projects/academia",
+    "https://monodev.md/ro/projects/aquaverde",
+    "https://monodev.md/ro/projects/archicontract",
+    "https://monodev.md/ro/projects/atelier-noire",
+    "https://monodev.md/ro/projects/audio-rental-md",
+    "https://monodev.md/ro/projects/autoflow-partner",
+    "https://monodev.md/ro/projects/contor-acasa",
+    "https://monodev.md/ro/projects/drivolt",
+    "https://monodev.md/ro/projects/ecohabitat",
+    "https://monodev.md/ro/projects/elan",
+    "https://monodev.md/ro/projects/fixora",
+    "https://monodev.md/ro/projects/flow-crm",
+    "https://monodev.md/ro/projects/forma-living",
+    "https://monodev.md/ro/projects/gazonpro",
+    "https://monodev.md/ro/projects/imobilia-one",
+    "https://monodev.md/ro/projects/iq-calendar",
+    "https://monodev.md/ro/projects/market9000",
+    "https://monodev.md/ro/projects/medora-clinic",
+    "https://monodev.md/ro/projects/micora",
+    "https://monodev.md/ro/projects/neo-barber-club",
+    "https://monodev.md/ro/projects/neo-booking",
+    "https://monodev.md/ro/projects/noma",
+    "https://monodev.md/ro/projects/nord-and-oak",
+    "https://monodev.md/ro/projects/pophaus",
+    "https://monodev.md/ro/projects/rentech",
+    "https://monodev.md/ro/projects/staynest",
+    "https://monodev.md/ro/projects/studio-forma",
+    "https://monodev.md/ro/projects/studio-velora",
+    "https://monodev.md/ro/projects/tableo",
+    "https://monodev.md/ro/projects/terraforma",
+    "https://monodev.md/ro/projects/yardcraft",
+    "https://monodev.md/ru/projects/01-eventora",
+    "https://monodev.md/ru/projects/02-scena-city",
+    "https://monodev.md/ru/projects/03-pulse-tickets",
+    "https://monodev.md/ru/projects/04-clinica-nova",
+    "https://monodev.md/ru/projects/05-laboris",
+    "https://monodev.md/ru/projects/06-doctor-aproape",
+    "https://monodev.md/ru/projects/07-med-slot",
+    "https://monodev.md/ru/projects/08-lead-pilot",
+    "https://monodev.md/ru/projects/09-growth-desk",
+    "https://monodev.md/ru/projects/10-closeflow",
+    "https://monodev.md/ru/projects/11-partmatch",
+    "https://monodev.md/ru/projects/12-garage-box",
+    "https://monodev.md/ru/projects/13-motor-supply",
+    "https://monodev.md/ru/projects/14-auto-grid",
+    "https://monodev.md/ru/projects/15-park-suites-demo",
+    "https://monodev.md/ru/projects/16-urban-haven",
+    "https://monodev.md/ru/projects/17-nest-collection",
+    "https://monodev.md/ru/projects/18-moldova-escape",
+    "https://monodev.md/ru/projects/19-bazar-local",
+    "https://monodev.md/ru/projects/20-pret-bun",
+    "https://monodev.md/ru/projects/21-local-craft",
+    "https://monodev.md/ru/projects/22-skillup",
+    "https://monodev.md/ru/projects/23-civic-learn",
+    "https://monodev.md/ru/projects/24-mentor-cloud",
+    "https://monodev.md/ru/projects/25-casa-check",
+    "https://monodev.md/ru/projects/26-direct-home",
+    "https://monodev.md/ru/projects/27-area-insight",
+    "https://monodev.md/ru/projects/28-table-flow",
+    "https://monodev.md/ru/projects/29-food-route",
+    "https://monodev.md/ru/projects/30-menu-studio",
+    "https://monodev.md/ru/projects/31-my-utility",
+    "https://monodev.md/ru/projects/32-block-admin",
+    "https://monodev.md/ru/projects/academia",
+    "https://monodev.md/ru/projects/aquaverde",
+    "https://monodev.md/ru/projects/archicontract",
+    "https://monodev.md/ru/projects/atelier-noire",
+    "https://monodev.md/ru/projects/audio-rental-md",
+    "https://monodev.md/ru/projects/autoflow-partner",
+    "https://monodev.md/ru/projects/contor-acasa",
+    "https://monodev.md/ru/projects/drivolt",
+    "https://monodev.md/ru/projects/ecohabitat",
+    "https://monodev.md/ru/projects/elan",
+    "https://monodev.md/ru/projects/fixora",
+    "https://monodev.md/ru/projects/flow-crm",
+    "https://monodev.md/ru/projects/forma-living",
+    "https://monodev.md/ru/projects/gazonpro",
+    "https://monodev.md/ru/projects/imobilia-one",
+    "https://monodev.md/ru/projects/iq-calendar",
+    "https://monodev.md/ru/projects/market9000",
+    "https://monodev.md/ru/projects/medora-clinic",
+    "https://monodev.md/ru/projects/micora",
+    "https://monodev.md/ru/projects/neo-barber-club",
+    "https://monodev.md/ru/projects/neo-booking",
+    "https://monodev.md/ru/projects/noma",
+    "https://monodev.md/ru/projects/nord-and-oak",
+    "https://monodev.md/ru/projects/pophaus",
+    "https://monodev.md/ru/projects/rentech",
+    "https://monodev.md/ru/projects/staynest",
+    "https://monodev.md/ru/projects/studio-forma",
+    "https://monodev.md/ru/projects/studio-velora",
+    "https://monodev.md/ru/projects/tableo",
+    "https://monodev.md/ru/projects/terraforma",
+    "https://monodev.md/ru/projects/yardcraft"
+  ],
+  "addedSitemapUrls": [],
+  "newReportArtifacts": [
+    "KEYWORDS.md",
+    "REPORT.md",
+    "baseline-browser.log",
+    "baseline-demo-files.json",
+    "baseline-desktop.png",
+    "baseline-files.json",
+    "baseline-metrics.json",
+    "baseline-mobile.png",
+    "baseline-test-build.log",
+    "baseline-typecheck.log",
+    "changes.json",
+    "final-browser.log",
+    "final-en-desktop.png",
+    "final-en-mobile.png",
+    "final-lint.log",
+    "final-metrics.json",
+    "final-ro-desktop-top.png",
+    "final-ro-desktop.png",
+    "final-ro-mobile-top.png",
+    "final-ro-mobile.png",
+    "final-ru-desktop.png",
+    "final-ru-mobile.png",
+    "final-test-build.log",
+    "final-tests.log",
+    "final-typecheck.log",
+    "graphify-update.log",
+    "keyword-map.json",
+    "keyword-plan.json",
+    "netlify-parser.json",
+    "production-audit.json",
+    "static-audit.json",
+    "visual-comparison.json"
+  ]
+}

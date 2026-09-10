@@ -1,3 +1,7 @@
+"use client";
+
+import { projectCardImages } from "./lib/project-card-images";
+
 const gardenPreviewSources: Record<string, string> = {
   // The original stays available to the full AquaVerde site; this 800px copy
   // is visually lossless at the catalog card's 390px display size.
@@ -10,46 +14,27 @@ const gardenPreviewSources: Record<string, string> = {
   yardcraft: "/yardcraft/images/hero-1600.webp",
 };
 
-const widths = [480, 800, 1200] as const;
-
-function transformed(source: string, width: number, format: "avif" | "webp") {
-  return `/.netlify/images?url=${encodeURIComponent(source)}&w=${width}&fm=${format}&q=72`;
-}
-
 /** Lightweight catalog artwork. The interactive export is fetched only on explicit user action. */
-export function StaticProjectPreview({ slug, title }: { slug: string; title: string }) {
+export function StaticProjectPreview({ slug, title, description = title }: { slug: string; title: string; description?: string }) {
   const source = gardenPreviewSources[slug] ?? `/project-previews/${slug}.png`;
-  const [useNetlifyImages, setUseNetlifyImages] = useState(false);
-  useEffect(() => {
-    setUseNetlifyImages(
-      window.location.hostname.endsWith(".netlify.app") ||
-        window.location.hostname.endsWith(".netlify.com"),
-    );
-  }, []);
-  const srcSet = (format: "avif" | "webp") =>
-    widths.map((width) => `${transformed(source, width, format)} ${width}w`).join(", ");
+  const preview = projectCardImages[slug];
   return (
     <picture className="static-project-preview">
-      {useNetlifyImages && <source type="image/avif" srcSet={srcSet("avif")} sizes="(max-width: 760px) 92vw, (max-width: 1200px) 46vw, 390px" />}
-      {useNetlifyImages && <source type="image/webp" srcSet={srcSet("webp")} sizes="(max-width: 760px) 92vw, (max-width: 1200px) 46vw, 390px" />}
       <img
-        src={useNetlifyImages ? transformed(source, 800, "webp") : source}
-        alt={`Previzualizare ${title}`}
+        src={preview?.fallback ?? source}
+        srcSet={preview?.srcSet}
+        sizes="(max-width: 600px) calc((100vw - 40px) / 2), (max-width: 800px) calc(100vw - 28px), (max-width: 1288px) calc((100vw - 72px) / 2), 608px"
+        alt={`${title} — ${description}`}
         loading="lazy"
         decoding="async"
-        width="800"
-        height="667"
+        width={preview?.width ?? 800}
+        height={preview?.height ?? 667}
         onError={(event) => {
           if (event.currentTarget.src.endsWith(source)) return;
-          event.currentTarget.parentElement
-            ?.querySelectorAll("source")
-            .forEach((candidate) => candidate.remove());
+          event.currentTarget.removeAttribute("srcset");
           event.currentTarget.src = source;
         }}
       />
     </picture>
   );
 }
-"use client";
-
-import { useEffect, useState } from "react";

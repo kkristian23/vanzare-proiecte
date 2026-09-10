@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-10T19:44:34.295Z",
+  "parsers": {
+    "headers": "10.1.1",
+    "redirects": "16.1.1"
+  },
+  "headerRules": 12407,
+  "redirectRules": 1314,
+  "headerErrors": [],
+  "redirectErrors": [],
+  "headerBytes": 945804,
+  "redirectBytes": 106891,
+  "deploymentVerified": false
+}

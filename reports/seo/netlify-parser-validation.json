@@ -1,0 +1,69 @@
+{
+  "validatedAt": "2026-09-10T10:24:12.396Z",
+  "node": "v22.13.0",
+  "parsers": {
+    "headers": "10.1.1",
+    "redirects": "16.1.1"
+  },
+  "files": {
+    "headersBytes": 882964,
+    "redirectsBytes": 106891
+  },
+  "headerRules": 11273,
+  "redirectRules": 1314,
+  "headerErrors": [],
+  "redirectErrors": [],
+  "noindexPathChecks": [
+    "/aquaverde",
+    "/aquaverde/",
+    "/aquaverde/index.html",
+    "/archicontract/ro",
+    "/archicontract/ro/",
+    "/aquaverde.txt",
+    "/aquaverde/index.txt",
+    "/ro/index.rsc",
+    "/ru/projects/aquaverde.rsc",
+    "/.vite/manifest.json",
+    "/cabinet",
+    "/cabinet/"
+  ],
+  "indexablePathChecks": [
+    "/robots.txt",
+    "/sitemap.xml",
+    "/project-previews/aquaverde.webp",
+    "/archicontract/_next/static/chunks/0t1mk9f5s0n14.js",
+    "/aquaverde/images/hero.webp",
+    "/en",
+    "/en/projects/aquaverde",
+    "/ro/services"
+  ],
+  "firstRedirect": {
+    "from": "/",
+    "query": {
+      "lang": "ro",
+      "proiect": "aquaverde"
+    },
+    "to": "https://monodev.md/ro/projects/aquaverde?",
+    "status": 301,
+    "force": true,
+    "conditions": {},
+    "headers": {},
+    "path": "/",
+    "proxy": false
+  },
+  "lastRedirect": {
+    "from": "https://www.monodev.md/*",
+    "query": {},
+    "to": "https://monodev.md/:splat",
+    "status": 301,
+    "force": true,
+    "conditions": {},
+    "headers": {},
+    "scheme": "https",
+    "host": "www.monodev.md",
+    "path": "/*",
+    "proxy": false
+  },
+  "deploymentVerified": false,
+  "limits": "No numeric _headers size/rule limit is documented in the official headers guide; parser acceptance is local configuration validation, not proof of production CDN behavior."
+}

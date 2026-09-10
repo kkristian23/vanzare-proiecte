@@ -1,0 +1,1001 @@
+{
+  "quality": 86,
+  "withoutEnlargement": true,
+  "projects": 45,
+  "variants": 90,
+  "sourceBytes": 4231573,
+  "fallbackBytes": 1915624,
+  "smallBytes": 875920,
+  "records": [
+    {
+      "slug": "aquaverde",
+      "source": "/project-previews/aquaverde.webp",
+      "sourceWidth": 800,
+      "sourceHeight": 497,
+      "sourceBytes": 36950,
+      "sourceSha256": "aa1164117d038e498862481af53f186e95b5618d5f4f0410e5ea43fc2cf60272",
+      "variants": [
+        {
+          "src": "/project-card-previews/aquaverde-480.webp",
+          "width": 480,
+          "height": 298,
+          "bytes": 31650
+        },
+        {
+          "src": "/project-card-previews/aquaverde-800.webp",
+          "width": 800,
+          "height": 497,
+          "bytes": 47354
+        }
+      ]
+    },
+    {
+      "slug": "terraforma",
+      "source": "/project-previews/terraforma.webp",
+      "sourceWidth": 800,
+      "sourceHeight": 450,
+      "sourceBytes": 80208,
+      "sourceSha256": "442b988052684a9d575ac8e6a122770bc1ea94ce5bc8d79ac369fea8de645825",
+      "variants": [
+        {
+          "src": "/project-card-previews/terraforma-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 49314
+        },
+        {
+          "src": "/project-card-previews/terraforma-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 100764
+        }
+      ]
+    },
+    {
+      "slug": "gazonpro",
+      "source": "/gazonpro/images/hero.webp",
+      "sourceWidth": 1300,
+      "sourceHeight": 731,
+      "sourceBytes": 129756,
+      "sourceSha256": "de560c260c132ad6f6e20c6c22dff1ff7c99b14199d8dad69a0ee2a4dff21f16",
+      "variants": [
+        {
+          "src": "/project-card-previews/gazonpro-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 43134
+        },
+        {
+          "src": "/project-card-previews/gazonpro-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 97096
+        }
+      ]
+    },
+    {
+      "slug": "ecohabitat",
+      "source": "/ecohabitat/images/garden.jpg",
+      "sourceWidth": 1600,
+      "sourceHeight": 1067,
+      "sourceBytes": 373192,
+      "sourceSha256": "2fdccf46293177f33fb5e06f6267cc84c1389b0f187d381bc1da96c160d0511c",
+      "variants": [
+        {
+          "src": "/project-card-previews/ecohabitat-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 38962
+        },
+        {
+          "src": "/project-card-previews/ecohabitat-800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 91198
+        }
+      ]
+    },
+    {
+      "slug": "yardcraft",
+      "source": "/yardcraft/images/hero-1600.webp",
+      "sourceWidth": 1000,
+      "sourceHeight": 750,
+      "sourceBytes": 167748,
+      "sourceSha256": "fd0b4b91f32974bbacb3ea1a857cfc773fbe4754672b552bd8cd07829344f1f3",
+      "variants": [
+        {
+          "src": "/project-card-previews/yardcraft-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 62834
+        },
+        {
+          "src": "/project-card-previews/yardcraft-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 159572
+        }
+      ]
+    },
+    {
+      "slug": "01-eventora",
+      "source": "/project-previews/01-eventora.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 168505,
+      "sourceSha256": "3b8608910468ac44139d433aa65c49d6d4f795f4af83d4f3cc74a8e9a3dd2606",
+      "variants": [
+        {
+          "src": "/project-card-previews/01-eventora-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 21388
+        },
+        {
+          "src": "/project-card-previews/01-eventora-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 45168
+        }
+      ]
+    },
+    {
+      "slug": "02-scena-city",
+      "source": "/project-previews/02-scena-city.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 109061,
+      "sourceSha256": "596215a0cfcf665dec7f08ad64ab50e2d035ab80b7af665264f757012e9a40ca",
+      "variants": [
+        {
+          "src": "/project-card-previews/02-scena-city-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 19532
+        },
+        {
+          "src": "/project-card-previews/02-scena-city-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 44622
+        }
+      ]
+    },
+    {
+      "slug": "03-pulse-tickets",
+      "source": "/project-previews/03-pulse-tickets.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 19340,
+      "sourceSha256": "49cbbf5ce4a1065ffa57ed2863b1d36483730b40be4c0f39af561d13a74f2899",
+      "variants": [
+        {
+          "src": "/project-card-previews/03-pulse-tickets-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 9396
+        },
+        {
+          "src": "/project-card-previews/03-pulse-tickets-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 21026
+        }
+      ]
+    },
+    {
+      "slug": "04-clinica-nova",
+      "source": "/project-previews/04-clinica-nova.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 116293,
+      "sourceSha256": "bf8ae41d03d79eeb34e7e7d92edfd017b2891bb3ddf2da9df46b9e995602f493",
+      "variants": [
+        {
+          "src": "/project-card-previews/04-clinica-nova-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 20010
+        },
+        {
+          "src": "/project-card-previews/04-clinica-nova-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 41892
+        }
+      ]
+    },
+    {
+      "slug": "05-laboris",
+      "source": "/project-previews/05-laboris.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 22069,
+      "sourceSha256": "9f8f1ce8b304bad69d52907ebf51ae5599edf6b95c41a13c75e9eb9ee597ac59",
+      "variants": [
+        {
+          "src": "/project-card-previews/05-laboris-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 10616
+        },
+        {
+          "src": "/project-card-previews/05-laboris-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 24388
+        }
+      ]
+    },
+    {
+      "slug": "06-doctor-aproape",
+      "source": "/project-previews/06-doctor-aproape.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 24275,
+      "sourceSha256": "7871e18778f3d3b9141f3b0ebe82aab1031771e4f35a98a4a77972a6e0473608",
+      "variants": [
+        {
+          "src": "/project-card-previews/06-doctor-aproape-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 12768
+        },
+        {
+          "src": "/project-card-previews/06-doctor-aproape-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 27542
+        }
+      ]
+    },
+    {
+      "slug": "07-med-slot",
+      "source": "/project-previews/07-med-slot.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 51480,
+      "sourceSha256": "dccfd3c26e19ff043f88925b0ec3f38ed2a1cbca8e33c478771016a346ca1d1d",
+      "variants": [
+        {
+          "src": "/project-card-previews/07-med-slot-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 12110
+        },
+        {
+          "src": "/project-card-previews/07-med-slot-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 26586
+        }
+      ]
+    },
+    {
+      "slug": "08-lead-pilot",
+      "source": "/project-previews/08-lead-pilot.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 15964,
+      "sourceSha256": "bc8d102ffbbcc444885343684504201db8006e557545880cd296af004ca6a333",
+      "variants": [
+        {
+          "src": "/project-card-previews/08-lead-pilot-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 7886
+        },
+        {
+          "src": "/project-card-previews/08-lead-pilot-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 18406
+        }
+      ]
+    },
+    {
+      "slug": "09-growth-desk",
+      "source": "/project-previews/09-growth-desk.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 19714,
+      "sourceSha256": "1ebf3dbcbb50b5b5687c404dcfa4a4d9f831474ea4f8efa3f3f6ea7f8462c37e",
+      "variants": [
+        {
+          "src": "/project-card-previews/09-growth-desk-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 10108
+        },
+        {
+          "src": "/project-card-previews/09-growth-desk-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 22530
+        }
+      ]
+    },
+    {
+      "slug": "10-closeflow",
+      "source": "/project-previews/10-closeflow.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 21902,
+      "sourceSha256": "c9ec6babe06e68fe738205c8e30eb86661fad93f4c70b0270e52aaf8964c2313",
+      "variants": [
+        {
+          "src": "/project-card-previews/10-closeflow-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 8922
+        },
+        {
+          "src": "/project-card-previews/10-closeflow-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 22870
+        }
+      ]
+    },
+    {
+      "slug": "11-partmatch",
+      "source": "/project-previews/11-partmatch.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 36585,
+      "sourceSha256": "4a7543125aaacbc5792a874fca42a9753cd5ec5802c49f57eea4efdf5a743619",
+      "variants": [
+        {
+          "src": "/project-card-previews/11-partmatch-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 16092
+        },
+        {
+          "src": "/project-card-previews/11-partmatch-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 34162
+        }
+      ]
+    },
+    {
+      "slug": "12-garage-box",
+      "source": "/project-previews/12-garage-box.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 23481,
+      "sourceSha256": "49d52575918032d03bc53841e1dcebb6e6ea638cd063b1be9a9531b71f65b87b",
+      "variants": [
+        {
+          "src": "/project-card-previews/12-garage-box-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 11368
+        },
+        {
+          "src": "/project-card-previews/12-garage-box-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 25636
+        }
+      ]
+    },
+    {
+      "slug": "13-motor-supply",
+      "source": "/project-previews/13-motor-supply.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 20208,
+      "sourceSha256": "a619196c9b1b13dd32629b24345a8f108030ca1ac6da051de002e84a3f70cf75",
+      "variants": [
+        {
+          "src": "/project-card-previews/13-motor-supply-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 10954
+        },
+        {
+          "src": "/project-card-previews/13-motor-supply-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 23880
+        }
+      ]
+    },
+    {
+      "slug": "14-auto-grid",
+      "source": "/project-previews/14-auto-grid.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 39579,
+      "sourceSha256": "e49607380529fe38bb9c74765a0eab767993842223bcd566ec35a0ab20daeec8",
+      "variants": [
+        {
+          "src": "/project-card-previews/14-auto-grid-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 15304
+        },
+        {
+          "src": "/project-card-previews/14-auto-grid-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 35422
+        }
+      ]
+    },
+    {
+      "slug": "15-park-suites-demo",
+      "source": "/project-previews/15-park-suites-demo.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 175288,
+      "sourceSha256": "6bf786c429257bd97b96174e15e8ea35c87368f907857f8e1ccc8fab9a204872",
+      "variants": [
+        {
+          "src": "/project-card-previews/15-park-suites-demo-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 18394
+        },
+        {
+          "src": "/project-card-previews/15-park-suites-demo-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 39682
+        }
+      ]
+    },
+    {
+      "slug": "16-urban-haven",
+      "source": "/project-previews/16-urban-haven.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 248248,
+      "sourceSha256": "a668f5e0127f5d3a52008c9c9a63d160ca94194926ee616529439ace1d450b99",
+      "variants": [
+        {
+          "src": "/project-card-previews/16-urban-haven-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 21860
+        },
+        {
+          "src": "/project-card-previews/16-urban-haven-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 48198
+        }
+      ]
+    },
+    {
+      "slug": "17-nest-collection",
+      "source": "/project-previews/17-nest-collection.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 211217,
+      "sourceSha256": "57c2cc9b55d55e5de742d7318fb150ce0b92882fbbc60a99af5ba012e51ff48d",
+      "variants": [
+        {
+          "src": "/project-card-previews/17-nest-collection-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 22736
+        },
+        {
+          "src": "/project-card-previews/17-nest-collection-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 51456
+        }
+      ]
+    },
+    {
+      "slug": "18-moldova-escape",
+      "source": "/project-previews/18-moldova-escape.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 47559,
+      "sourceSha256": "638da891be269e4526daba4272ab57e9cf10344487d1d5c6b3151dffce13c05f",
+      "variants": [
+        {
+          "src": "/project-card-previews/18-moldova-escape-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 14078
+        },
+        {
+          "src": "/project-card-previews/18-moldova-escape-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 31064
+        }
+      ]
+    },
+    {
+      "slug": "19-bazar-local",
+      "source": "/project-previews/19-bazar-local.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 128842,
+      "sourceSha256": "f83f6399ce3019b9d7419b9300623214f6e12b868946245bace57e9f0676b516",
+      "variants": [
+        {
+          "src": "/project-card-previews/19-bazar-local-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 20052
+        },
+        {
+          "src": "/project-card-previews/19-bazar-local-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 44610
+        }
+      ]
+    },
+    {
+      "slug": "20-pret-bun",
+      "source": "/project-previews/20-pret-bun.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 24272,
+      "sourceSha256": "d6e41f375bd238f60b74c4f46109ce320ba99cff5c0c59b2d52589cecae67c6c",
+      "variants": [
+        {
+          "src": "/project-card-previews/20-pret-bun-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 11934
+        },
+        {
+          "src": "/project-card-previews/20-pret-bun-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 24606
+        }
+      ]
+    },
+    {
+      "slug": "21-local-craft",
+      "source": "/project-previews/21-local-craft.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 192739,
+      "sourceSha256": "cea143d9564bc172f898500ca3db4576b14219dbd451140645158a6f141d6997",
+      "variants": [
+        {
+          "src": "/project-card-previews/21-local-craft-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 21212
+        },
+        {
+          "src": "/project-card-previews/21-local-craft-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 44128
+        }
+      ]
+    },
+    {
+      "slug": "22-skillup",
+      "source": "/project-previews/22-skillup.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 51111,
+      "sourceSha256": "9eb8d43bf7a5b92234f417c2bef697c9b325a60938ee48630a2487ca88c7cea8",
+      "variants": [
+        {
+          "src": "/project-card-previews/22-skillup-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 15532
+        },
+        {
+          "src": "/project-card-previews/22-skillup-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 33764
+        }
+      ]
+    },
+    {
+      "slug": "23-civic-learn",
+      "source": "/project-previews/23-civic-learn.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 25310,
+      "sourceSha256": "cdffef00c6ae37bf74ca61cea0901e12819d494f7c2f72efba95e130392dbcf7",
+      "variants": [
+        {
+          "src": "/project-card-previews/23-civic-learn-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 15054
+        },
+        {
+          "src": "/project-card-previews/23-civic-learn-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 35474
+        }
+      ]
+    },
+    {
+      "slug": "24-mentor-cloud",
+      "source": "/project-previews/24-mentor-cloud.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 130174,
+      "sourceSha256": "ca1fed8a1860ee11c8c46be788a9eab58eea3d65611af8d255c7259131bc12df",
+      "variants": [
+        {
+          "src": "/project-card-previews/24-mentor-cloud-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 20776
+        },
+        {
+          "src": "/project-card-previews/24-mentor-cloud-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 45530
+        }
+      ]
+    },
+    {
+      "slug": "25-casa-check",
+      "source": "/project-previews/25-casa-check.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 202324,
+      "sourceSha256": "b334c82f9dab2808da269a481e5a5d1fbdd0c27d34c3935426dfba80564168fa",
+      "variants": [
+        {
+          "src": "/project-card-previews/25-casa-check-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 25850
+        },
+        {
+          "src": "/project-card-previews/25-casa-check-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 56526
+        }
+      ]
+    },
+    {
+      "slug": "26-direct-home",
+      "source": "/project-previews/26-direct-home.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 68598,
+      "sourceSha256": "59286b18e473dd3a897ee3012217cab65b2420503f3d90b148f9d4006110bc4d",
+      "variants": [
+        {
+          "src": "/project-card-previews/26-direct-home-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 15930
+        },
+        {
+          "src": "/project-card-previews/26-direct-home-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 37066
+        }
+      ]
+    },
+    {
+      "slug": "27-area-insight",
+      "source": "/project-previews/27-area-insight.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 29794,
+      "sourceSha256": "ea5bf5adb9e810de9c6f44e9431627648a9f1967fc1019124a6280e66d1b16a9",
+      "variants": [
+        {
+          "src": "/project-card-previews/27-area-insight-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 12824
+        },
+        {
+          "src": "/project-card-previews/27-area-insight-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 27792
+        }
+      ]
+    },
+    {
+      "slug": "28-table-flow",
+      "source": "/project-previews/28-table-flow.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 69284,
+      "sourceSha256": "12700e004b1132d880690d92cd464f02d64848646978369ff9b800de60f60d1e",
+      "variants": [
+        {
+          "src": "/project-card-previews/28-table-flow-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 15296
+        },
+        {
+          "src": "/project-card-previews/28-table-flow-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 35430
+        }
+      ]
+    },
+    {
+      "slug": "29-food-route",
+      "source": "/project-previews/29-food-route.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 207133,
+      "sourceSha256": "d0d02faebc1bb9a5cf34b6b3ab212efa54d6acd51152338aa4f7bf308999f76f",
+      "variants": [
+        {
+          "src": "/project-card-previews/29-food-route-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 27390
+        },
+        {
+          "src": "/project-card-previews/29-food-route-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 64502
+        }
+      ]
+    },
+    {
+      "slug": "30-menu-studio",
+      "source": "/project-previews/30-menu-studio.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 183119,
+      "sourceSha256": "eaff13b9477e41c79ab7cbb65e91c3ab21983677d183b612338f65a3a8661ff0",
+      "variants": [
+        {
+          "src": "/project-card-previews/30-menu-studio-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 26692
+        },
+        {
+          "src": "/project-card-previews/30-menu-studio-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 58882
+        }
+      ]
+    },
+    {
+      "slug": "31-my-utility",
+      "source": "/project-previews/31-my-utility.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 21840,
+      "sourceSha256": "186ef2e0205784a0ce25d6548d36a8e0a25b1d823ab2cf17211f71125e682bc9",
+      "variants": [
+        {
+          "src": "/project-card-previews/31-my-utility-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 9180
+        },
+        {
+          "src": "/project-card-previews/31-my-utility-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 20026
+        }
+      ]
+    },
+    {
+      "slug": "32-block-admin",
+      "source": "/project-previews/32-block-admin.png",
+      "sourceWidth": 1200,
+      "sourceHeight": 1000,
+      "sourceBytes": 22870,
+      "sourceSha256": "ecaa48dd5083749a40a49751068a0e7e682b9de2c8ef3315f48893a8f5fede1b",
+      "variants": [
+        {
+          "src": "/project-card-previews/32-block-admin-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 11122
+        },
+        {
+          "src": "/project-card-previews/32-block-admin-800.webp",
+          "width": 800,
+          "height": 667,
+          "bytes": 25876
+        }
+      ]
+    },
+    {
+      "slug": "autoflow-partner",
+      "source": "/project-previews/autoflow-partner.png",
+      "sourceWidth": 1920,
+      "sourceHeight": 911,
+      "sourceBytes": 92067,
+      "sourceSha256": "53f2ee88d3a576d6ede69606d41d882779fb803ac8df4e4dc21c2b2f1b26bf59",
+      "variants": [
+        {
+          "src": "/project-card-previews/autoflow-partner-480.webp",
+          "width": 480,
+          "height": 228,
+          "bytes": 6556
+        },
+        {
+          "src": "/project-card-previews/autoflow-partner-800.webp",
+          "width": 800,
+          "height": 380,
+          "bytes": 13810
+        }
+      ]
+    },
+    {
+      "slug": "drivolt",
+      "source": "/project-previews/drivolt.png",
+      "sourceWidth": 1082,
+      "sourceHeight": 685,
+      "sourceBytes": 62028,
+      "sourceSha256": "8d57f4b896a5bd7687691279dd9a01dc966f7267a579ec3553bb2f153308c056",
+      "variants": [
+        {
+          "src": "/project-card-previews/drivolt-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 13822
+        },
+        {
+          "src": "/project-card-previews/drivolt-800.webp",
+          "width": 800,
+          "height": 506,
+          "bytes": 26350
+        }
+      ]
+    },
+    {
+      "slug": "flow-crm",
+      "source": "/project-previews/flow-crm.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 66580,
+      "sourceSha256": "8a8bd96ce2e2e8db8efa3401581fa39b3a1fb0ad0688b7c31e8321da79157d7a",
+      "variants": [
+        {
+          "src": "/project-card-previews/flow-crm-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 10508
+        },
+        {
+          "src": "/project-card-previews/flow-crm-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 22492
+        }
+      ]
+    },
+    {
+      "slug": "academia",
+      "source": "/project-previews/academia.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 77227,
+      "sourceSha256": "c47eb6eda45582063987989d9d9336a06d8a4f90ecbbd11fd32f144ba9351382",
+      "variants": [
+        {
+          "src": "/project-card-previews/academia-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 17130
+        },
+        {
+          "src": "/project-card-previews/academia-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 32236
+        }
+      ]
+    },
+    {
+      "slug": "staynest",
+      "source": "/project-previews/staynest.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 159302,
+      "sourceSha256": "eb99888150d20290119040bc965318c8528def4ac43a085587c631f75d351876",
+      "variants": [
+        {
+          "src": "/project-card-previews/staynest-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 34618
+        },
+        {
+          "src": "/project-card-previews/staynest-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 79202
+        }
+      ]
+    },
+    {
+      "slug": "tableo",
+      "source": "/project-previews/tableo.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 84777,
+      "sourceSha256": "b83223e90114766c35dddbd8b58a7598fec06c328e6b96fad4ef289c0523897a",
+      "variants": [
+        {
+          "src": "/project-card-previews/tableo-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 19126
+        },
+        {
+          "src": "/project-card-previews/tableo-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 37326
+        }
+      ]
+    },
+    {
+      "slug": "medora-clinic",
+      "source": "/project-previews/medora-clinic.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 84151,
+      "sourceSha256": "86f0d15cb8c175b978f1c97a5ab9dcd9806241b1c8e24f6421bf18e325a68de3",
+      "variants": [
+        {
+          "src": "/project-card-previews/medora-clinic-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 18028
+        },
+        {
+          "src": "/project-card-previews/medora-clinic-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 35218
+        }
+      ]
+    },
+    {
+      "slug": "imobilia-one",
+      "source": "/project-previews/imobilia-one.png",
+      "sourceWidth": 1185,
+      "sourceHeight": 751,
+      "sourceBytes": 89409,
+      "sourceSha256": "dab7e3c2defaeaa185ac746d75bb0d15ff6684fcd9c779ad7554bf636c2c6875",
+      "variants": [
+        {
+          "src": "/project-card-previews/imobilia-one-480.webp",
+          "width": 480,
+          "height": 304,
+          "bytes": 17872
+        },
+        {
+          "src": "/project-card-previews/imobilia-one-800.webp",
+          "width": 800,
+          "height": 507,
+          "bytes": 34264
+        }
+      ]
+    }
+  ]
+}

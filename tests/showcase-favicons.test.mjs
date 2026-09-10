@@ -15,7 +15,7 @@ function htmlFiles(directory) {
   });
 }
 
-test("all 63 visible showcase projects expose a valid favicon on every HTML page", () => {
+test("all 63 visible showcase projects expose favicons on real pages and keep preview stubs resource-free", () => {
   assert.equal(visibleProjects.length, 63);
 
   for (const project of visibleProjects) {
@@ -25,6 +25,13 @@ test("all 63 visible showcase projects expose a valid favicon on every HTML page
 
     for (const page of pages) {
       const html = fs.readFileSync(page, "utf8");
+      if (path.basename(page) === "preview.html") {
+        assert.ok(Buffer.byteLength(html) < 1024, `${project.slug}: retired preview stub must stay lightweight`);
+        assert.doesNotMatch(html, /<script\b|<img\b|<link\b[^>]*rel=["']stylesheet["']/i, `${project.slug}: preview must not preload demo resources`);
+        assert.match(html, /<meta\b[^>]*name=["']robots["'][^>]*content=["']noindex["']/i);
+        assert.ok(html.includes(`href="/${project.slug}/index.html?source=catalog"`), `${project.slug}: preview must provide the explicit demo link`);
+        continue;
+      }
       const faviconLinks = [...html.matchAll(/<link\b[^>]*>/gi)].filter((match) => {
         const rel = match[0].match(/\brel\s*=\s*(["'])(.*?)\1/i)?.[2]?.toLowerCase().split(/\s+/) ?? [];
         return rel.includes("icon");

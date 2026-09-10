@@ -1,0 +1,416 @@
+{
+  "ro": {
+    "htmlBytes": 67693,
+    "gzipBytes": 12301
+  },
+  "ru": {
+    "htmlBytes": 71458,
+    "gzipBytes": 13233
+  },
+  "en": {
+    "htmlBytes": 67257,
+    "gzipBytes": 12094
+  },
+  "build": {
+    "files": 10947,
+    "bytes": 262782138
+  },
+  "browser": [
+    {
+      "locale": "ro",
+      "viewport": "desktop",
+      "lcp": 460,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Sisteme inteligente de irigare, cu simulator și calculator de consum.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Arhitectură peisagistică premium, portofoliu editorial și moodboard de grădină.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Instalare și întreținere gazon, cu magazin demonstrativ și calculator de suprafață.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Grădini ecologice și biodiversitate, cu plante locale și instrumente educaționale.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Amenajarea completă a curții, cu plan schematic și configurator de buget.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Afișe de concerte și catalog de bilete.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — Ghid cultural editorial cu agendă cronologică.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — Consolă pentru organizatori și registru de participanți.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "IDEI MARI\nDEJA CONSTRUITE"
+    },
+    {
+      "locale": "ru",
+      "viewport": "desktop",
+      "lcp": 1056,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Умные системы полива с симулятором и расчётом расхода воды.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Премиальная ландшафтная архитектура, редакционное портфолио и мудборд сада.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Укладка и уход за газоном с демонстрационным магазином и расчётом площади.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Экологичные сады и биоразнообразие с местными растениями и обучающими инструментами.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Комплексное благоустройство двора со схемой участка и настройкой бюджета.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Концертная афиша и каталог билетов.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — Редакционный гид по культурным событиям с хронологической афишей.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — Панель организатора с реестром участников.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "БОЛЬШИЕ ИДЕИ.\nУЖЕ СОЗДАНЫ."
+    },
+    {
+      "locale": "en",
+      "viewport": "desktop",
+      "lcp": 432,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Smart irrigation systems with a simulator and water-use calculator.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Premium landscape architecture, an editorial portfolio and a garden moodboard.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Lawn installation and care with a demo shop and an area calculator.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Ecological gardens and biodiversity with local plants and educational tools.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Complete yard landscaping with a schematic plan and a budget configurator.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Concert posters and a ticket catalog.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — An editorial culture guide with a chronological agenda.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — An organizer console with an attendee register.",
+          "loaded": true,
+          "width": 397,
+          "height": 256,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "BIG IDEAS.\nALREADY BUILT."
+    },
+    {
+      "locale": "ro",
+      "viewport": "mobile",
+      "lcp": 336,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Sisteme inteligente de irigare, cu simulator și calculator de consum.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Arhitectură peisagistică premium, portofoliu editorial și moodboard de grădină.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Instalare și întreținere gazon, cu magazin demonstrativ și calculator de suprafață.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Grădini ecologice și biodiversitate, cu plante locale și instrumente educaționale.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Amenajarea completă a curții, cu plan schematic și configurator de buget.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Afișe de concerte și catalog de bilete.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — Ghid cultural editorial cu agendă cronologică.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — Consolă pentru organizatori și registru de participanți.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "IDEI MARI\nDEJA CONSTRUITE"
+    },
+    {
+      "locale": "ru",
+      "viewport": "mobile",
+      "lcp": 332,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Умные системы полива с симулятором и расчётом расхода воды.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Премиальная ландшафтная архитектура, редакционное портфолио и мудборд сада.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Укладка и уход за газоном с демонстрационным магазином и расчётом площади.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Экологичные сады и биоразнообразие с местными растениями и обучающими инструментами.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Комплексное благоустройство двора со схемой участка и настройкой бюджета.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Концертная афиша и каталог билетов.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — Редакционный гид по культурным событиям с хронологической афишей.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — Панель организатора с реестром участников.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "БОЛЬШИЕ ИДЕИ.\nУЖЕ СОЗДАНЫ."
+    },
+    {
+      "locale": "en",
+      "viewport": "mobile",
+      "lcp": 316,
+      "cls": 0,
+      "overflow": false,
+      "images": [
+        {
+          "alt": "AquaVerde — Smart irrigation systems with a simulator and water-use calculator.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "TerraForma — Premium landscape architecture, an editorial portfolio and a garden moodboard.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "GazonPro — Lawn installation and care with a demo shop and an area calculator.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EcoHabitat — Ecological gardens and biodiversity with local plants and educational tools.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "YardCraft — Complete yard landscaping with a schematic plan and a budget configurator.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "EVENTORA — Concert posters and a ticket catalog.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "SCENA CITY — An editorial culture guide with a chronological agenda.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        },
+        {
+          "alt": "PULSE TICKETS — An organizer console with an attendee register.",
+          "loaded": true,
+          "width": 175,
+          "height": 175,
+          "loading": "lazy"
+        }
+      ],
+      "h1": "BIG IDEAS.\nALREADY BUILT."
+    }
+  ]
+}

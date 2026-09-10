@@ -1,0 +1,5 @@
+/* The same entrance starts with CSS, so the title never waits for hydration. */
+.hero-title-line{--hero-enter-y:70px;--hero-enter-rotation:-18deg;--hero-enter-blur:12px;animation:hero-title-reveal .9s cubic-bezier(.16,1,.3,1) .08s both}
+.hero-title-accent{--hero-enter-y:82px;--hero-enter-rotation:-20deg;--hero-enter-blur:14px;animation-duration:1s;animation-delay:.2s}
+@keyframes hero-title-reveal{from{opacity:0;transform:translateY(var(--hero-enter-y)) rotateX(var(--hero-enter-rotation));filter:blur(var(--hero-enter-blur))}to{opacity:1;transform:none;filter:none}}
+@media(prefers-reduced-motion:reduce){.hero-title-line{animation:none;opacity:1;transform:none;filter:none}}

@@ -1,0 +1,34 @@
+{
+  "desktop": {
+    "beforeSize": [
+      1440,
+      7393
+    ],
+    "afterSize": [
+      1440,
+      5250
+    ],
+    "topPixelDifferenceBounds": [
+      928,
+      158,
+      1340,
+      281
+    ]
+  },
+  "mobile": {
+    "beforeSize": [
+      390,
+      10807
+    ],
+    "afterSize": [
+      390,
+      5924
+    ],
+    "topPixelDifferenceBounds": [
+      14,
+      124,
+      376,
+      238
+    ]
+  }
+}

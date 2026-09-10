@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://monodev.md/ro</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/contact" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/contact" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/contact" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/intrebari</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/intrebari" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/intrebari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/intrebari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/intrebari" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/intrebari</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/intrebari" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/intrebari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/intrebari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/intrebari" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/intrebari</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/intrebari" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/intrebari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/intrebari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/intrebari" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/about</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/about" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/about</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/about" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/about" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/about" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/process</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/process" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/process" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/process" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/process" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/process</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/process" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/process" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/process" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/process" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/process</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/process" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/process" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/process" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/process" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/privacy" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/privacy" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/privacy" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/terms" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/terms" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/terms" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/terms" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/terms</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/terms" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/terms" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/cookies" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/cookies" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/cookies" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/cookies" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/cookies" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/cookies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/cookies" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/business-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/business-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/business-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/business-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/business-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/business-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/business-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/web-design</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-design" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/web-design</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-design" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/web-design</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-design" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/ecommerce" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/ecommerce" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/ecommerce" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/web-applications</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-applications" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/web-applications</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-applications" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/web-applications</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/web-applications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/web-applications" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/clinic-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/clinic-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/clinic-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/clinic-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/clinic-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/clinic-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/clinic-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/restaurant-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/restaurant-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/restaurant-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/restaurant-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/restaurant-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/restaurant-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/restaurant-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/real-estate-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/real-estate-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/real-estate-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/real-estate-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/real-estate-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/real-estate-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/real-estate-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/launch-ready-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/launch-ready-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/launch-ready-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/launch-ready-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/launch-ready-websites</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/launch-ready-websites" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/launch-ready-websites" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/website-customization</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-customization" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/website-customization</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-customization" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/website-customization</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-customization" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-customization" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ro/services/website-maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-maintenance" />
+  </url>
+  <url>
+    <loc>https://monodev.md/ru/services/website-maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-maintenance" />
+  </url>
+  <url>
+    <loc>https://monodev.md/en/services/website-maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="ro-MD" href="https://monodev.md/ro/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="ru-MD" href="https://monodev.md/ru/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://monodev.md/en/services/website-maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monodev.md/en/services/website-maintenance" />
+  </url>
+</urlset>

@@ -5,7 +5,7 @@ const directory='reports/showcase-audit';
 for(const file of (await readdir(`${directory}/final`)).filter(f=>f.endsWith('.browser.json'))){
   const original=JSON.parse(await readFile(`${directory}/final/${file}`,'utf8'));
   if(only.length&&!only.includes(original.slug))continue;
-  let previous;try{previous=JSON.parse(await readFile(`${directory}/rechecks/${file}`,'utf8'));}catch{}
+  let previous;try{previous=JSON.parse(await readFile(`${directory}/rechecks/${file}`,'utf8'));}catch{ /* No earlier recheck is expected on the first run. */ }
   const prefix=`/${original.slug}/`;
   const paths=[...new Set([...original.issues.map(i=>i.page||i.url),...(previous?.pages||[]).map(p=>p.url)].flatMap(value=>{
     try{const u=new URL(value);return u.pathname.startsWith(prefix)?[(u.pathname.slice(prefix.length)||'/')+u.search]:[];}catch{return [];}

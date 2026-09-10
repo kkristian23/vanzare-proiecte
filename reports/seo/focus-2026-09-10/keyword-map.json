@@ -1,0 +1,3893 @@
+{
+  "date": "2026-09-10",
+  "method": "Cercetare web RO/RU/EN. Google gl=md direct indisponibil; fără acces GSC/Keyword Planner. Nu sunt inventate volume sau poziții.",
+  "indexablePages": [
+    "https://monodev.md/ro",
+    "https://monodev.md/ro/contact",
+    "https://monodev.md/ro/intrebari",
+    "https://monodev.md/ro/services",
+    "https://monodev.md/ro/about",
+    "https://monodev.md/ro/process",
+    "https://monodev.md/ro/privacy",
+    "https://monodev.md/ro/terms",
+    "https://monodev.md/ro/cookies",
+    "https://monodev.md/ro/services/business-websites",
+    "https://monodev.md/ro/services/web-design",
+    "https://monodev.md/ro/services/ecommerce",
+    "https://monodev.md/ro/services/web-applications",
+    "https://monodev.md/ro/services/clinic-websites",
+    "https://monodev.md/ro/services/restaurant-websites",
+    "https://monodev.md/ro/services/real-estate-websites",
+    "https://monodev.md/ro/services/launch-ready-websites",
+    "https://monodev.md/ro/services/website-customization",
+    "https://monodev.md/ro/services/website-maintenance",
+    "https://monodev.md/ru",
+    "https://monodev.md/ru/contact",
+    "https://monodev.md/ru/intrebari",
+    "https://monodev.md/ru/services",
+    "https://monodev.md/ru/about",
+    "https://monodev.md/ru/process",
+    "https://monodev.md/ru/privacy",
+    "https://monodev.md/ru/terms",
+    "https://monodev.md/ru/cookies",
+    "https://monodev.md/ru/services/business-websites",
+    "https://monodev.md/ru/services/web-design",
+    "https://monodev.md/ru/services/ecommerce",
+    "https://monodev.md/ru/services/web-applications",
+    "https://monodev.md/ru/services/clinic-websites",
+    "https://monodev.md/ru/services/restaurant-websites",
+    "https://monodev.md/ru/services/real-estate-websites",
+    "https://monodev.md/ru/services/launch-ready-websites",
+    "https://monodev.md/ru/services/website-customization",
+    "https://monodev.md/ru/services/website-maintenance",
+    "https://monodev.md/en",
+    "https://monodev.md/en/contact",
+    "https://monodev.md/en/intrebari",
+    "https://monodev.md/en/services",
+    "https://monodev.md/en/about",
+    "https://monodev.md/en/process",
+    "https://monodev.md/en/privacy",
+    "https://monodev.md/en/terms",
+    "https://monodev.md/en/cookies",
+    "https://monodev.md/en/services/business-websites",
+    "https://monodev.md/en/services/web-design",
+    "https://monodev.md/en/services/ecommerce",
+    "https://monodev.md/en/services/web-applications",
+    "https://monodev.md/en/services/clinic-websites",
+    "https://monodev.md/en/services/restaurant-websites",
+    "https://monodev.md/en/services/real-estate-websites",
+    "https://monodev.md/en/services/launch-ready-websites",
+    "https://monodev.md/en/services/website-customization",
+    "https://monodev.md/en/services/website-maintenance"
+  ],
+  "keywords": [
+    {
+      "keyword": "MONO/DEV",
+      "language": "ro",
+      "intent": "navigațională",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro",
+      "seoTitle": "Creare site-uri în Moldova și catalog web | MONO/DEV",
+      "metaDescription": "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site.",
+      "h1": "IDEI MARI DEJA CONSTRUITE",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact",
+        "/ro/process",
+        "/ro/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro",
+        "queryFilter": {
+          "type": "exact",
+          "value": "MONO/DEV"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare site Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro",
+      "seoTitle": "Creare site-uri în Moldova și catalog web | MONO/DEV",
+      "metaDescription": "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site.",
+      "h1": "IDEI MARI DEJA CONSTRUITE",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact",
+        "/ro/process",
+        "/ro/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare site Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare site Chișinău",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro",
+      "seoTitle": "Creare site-uri în Moldova și catalog web | MONO/DEV",
+      "metaDescription": "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site.",
+      "h1": "IDEI MARI DEJA CONSTRUITE",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact",
+        "/ro/process",
+        "/ro/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare site Chișinău"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "dezvoltare web Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro",
+      "seoTitle": "Creare site-uri în Moldova și catalog web | MONO/DEV",
+      "metaDescription": "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site.",
+      "h1": "IDEI MARI DEJA CONSTRUITE",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact",
+        "/ro/process",
+        "/ro/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro",
+        "queryFilter": {
+          "type": "exact",
+          "value": "dezvoltare web Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website profesional Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro",
+      "seoTitle": "Creare site-uri în Moldova și catalog web | MONO/DEV",
+      "metaDescription": "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site.",
+      "h1": "IDEI MARI DEJA CONSTRUITE",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact",
+        "/ro/process",
+        "/ro/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website profesional Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "MONO/DEV",
+      "language": "ru",
+      "intent": "navigațională",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru",
+      "seoTitle": "Создание сайтов в Молдове и каталог проектов | MONO/DEV",
+      "metaDescription": "MONO/DEV создаёт сайты, интернет-магазины и веб-платформы для бизнеса в Молдове. Выберите проект, обсудите адаптацию, покупку в рассрочку или аренду сайта.",
+      "h1": "БОЛЬШИЕ ИДЕИ. УЖЕ СОЗДАНЫ.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact",
+        "/ru/process",
+        "/ru/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru",
+        "queryFilter": {
+          "type": "exact",
+          "value": "MONO/DEV"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "разработка сайтов Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru",
+      "seoTitle": "Создание сайтов в Молдове и каталог проектов | MONO/DEV",
+      "metaDescription": "MONO/DEV создаёт сайты, интернет-магазины и веб-платформы для бизнеса в Молдове. Выберите проект, обсудите адаптацию, покупку в рассрочку или аренду сайта.",
+      "h1": "БОЛЬШИЕ ИДЕИ. УЖЕ СОЗДАНЫ.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact",
+        "/ru/process",
+        "/ru/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru",
+        "queryFilter": {
+          "type": "exact",
+          "value": "разработка сайтов Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание сайтов Кишинев",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru",
+      "seoTitle": "Создание сайтов в Молдове и каталог проектов | MONO/DEV",
+      "metaDescription": "MONO/DEV создаёт сайты, интернет-магазины и веб-платформы для бизнеса в Молдове. Выберите проект, обсудите адаптацию, покупку в рассрочку или аренду сайта.",
+      "h1": "БОЛЬШИЕ ИДЕИ. УЖЕ СОЗДАНЫ.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact",
+        "/ru/process",
+        "/ru/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание сайтов Кишинев"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание сайтов Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru",
+      "seoTitle": "Создание сайтов в Молдове и каталог проектов | MONO/DEV",
+      "metaDescription": "MONO/DEV создаёт сайты, интернет-магазины и веб-платформы для бизнеса в Молдове. Выберите проект, обсудите адаптацию, покупку в рассрочку или аренду сайта.",
+      "h1": "БОЛЬШИЕ ИДЕИ. УЖЕ СОЗДАНЫ.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact",
+        "/ru/process",
+        "/ru/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание сайтов Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "MONO/DEV",
+      "language": "en",
+      "intent": "navigațională",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en",
+      "seoTitle": "Web development in Moldova & website catalog | MONO/DEV",
+      "metaDescription": "MONO/DEV builds websites, online stores and web applications in Moldova. Explore projects, customization, purchase, installments and website rental options.",
+      "h1": "BIG IDEAS. ALREADY BUILT.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact",
+        "/en/process",
+        "/en/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en",
+        "queryFilter": {
+          "type": "exact",
+          "value": "MONO/DEV"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "web development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en",
+      "seoTitle": "Web development in Moldova & website catalog | MONO/DEV",
+      "metaDescription": "MONO/DEV builds websites, online stores and web applications in Moldova. Explore projects, customization, purchase, installments and website rental options.",
+      "h1": "BIG IDEAS. ALREADY BUILT.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact",
+        "/en/process",
+        "/en/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en",
+        "queryFilter": {
+          "type": "exact",
+          "value": "web development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Servicii generale MONO/DEV și explorarea catalogului",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en",
+      "seoTitle": "Web development in Moldova & website catalog | MONO/DEV",
+      "metaDescription": "MONO/DEV builds websites, online stores and web applications in Moldova. Explore projects, customization, purchase, installments and website rental options.",
+      "h1": "BIG IDEAS. ALREADY BUILT.",
+      "content": {
+        "existing": "MONO/DEV, catalog, personalizare, proces, rate, chirie, limbi și ofertă în interfața existentă.",
+        "needed": "Fără blocuri suplimentare; condițiile complete pot fi extinse pe pagina serviciului după aprobare."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact",
+        "/en/process",
+        "/en/intrebari"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/razrabotka-sajtov-moldova/",
+          "https://gvg.md/web-development-moldova/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site de prezentare Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/business-websites",
+      "seoTitle": "Site de prezentare pentru afaceri din Moldova | MONO/DEV",
+      "metaDescription": "Site de prezentare MONO/DEV pentru serviciile și oferta companiei tale. Stabilim paginile, limbile, personalizarea și costul înainte de lansare.",
+      "h1": "Creare site pentru afaceri din Moldova",
+      "content": {
+        "existingIntro": "Când cineva află de afacerea ta, site-ul trebuie să răspundă repede: ce oferi, cui te adresezi și cum poate începe colaborarea. Construim această prezentare pornind de la activitatea reală, pentru afaceri din Moldova.",
+        "existingScope": [
+          "Structura paginilor și traseul către cerere de ofertă.",
+          "Design adaptat la telefon, tabletă și desktop.",
+          "Pagini pentru serviciile agreate, informații de contact și conținut furnizat de afacere.",
+          "Titluri, descrieri și structură HTML pentru paginile publice."
+        ],
+        "existingQuote": "Oferta se stabilește după numărul de pagini, limbile necesare și funcțiile cerute. Prețul unui proiect din catalog este punctul de plecare doar dacă acel proiect se potrivește; adaptările se discută separat.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site de prezentare Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site pentru afaceri",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/business-websites",
+      "seoTitle": "Site de prezentare pentru afaceri din Moldova | MONO/DEV",
+      "metaDescription": "Site de prezentare MONO/DEV pentru serviciile și oferta companiei tale. Stabilim paginile, limbile, personalizarea și costul înainte de lansare.",
+      "h1": "Creare site pentru afaceri din Moldova",
+      "content": {
+        "existingIntro": "Când cineva află de afacerea ta, site-ul trebuie să răspundă repede: ce oferi, cui te adresezi și cum poate începe colaborarea. Construim această prezentare pornind de la activitatea reală, pentru afaceri din Moldova.",
+        "existingScope": [
+          "Structura paginilor și traseul către cerere de ofertă.",
+          "Design adaptat la telefon, tabletă și desktop.",
+          "Pagini pentru serviciile agreate, informații de contact și conținut furnizat de afacere.",
+          "Titluri, descrieri și structură HTML pentru paginile publice."
+        ],
+        "existingQuote": "Oferta se stabilește după numărul de pagini, limbile necesare și funcțiile cerute. Prețul unui proiect din catalog este punctul de plecare doar dacă acel proiect se potrivește; adaptările se discută separat.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site pentru afaceri"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "realizare site profesional",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/business-websites",
+      "seoTitle": "Site de prezentare pentru afaceri din Moldova | MONO/DEV",
+      "metaDescription": "Site de prezentare MONO/DEV pentru serviciile și oferta companiei tale. Stabilim paginile, limbile, personalizarea și costul înainte de lansare.",
+      "h1": "Creare site pentru afaceri din Moldova",
+      "content": {
+        "existingIntro": "Când cineva află de afacerea ta, site-ul trebuie să răspundă repede: ce oferi, cui te adresezi și cum poate începe colaborarea. Construim această prezentare pornind de la activitatea reală, pentru afaceri din Moldova.",
+        "existingScope": [
+          "Structura paginilor și traseul către cerere de ofertă.",
+          "Design adaptat la telefon, tabletă și desktop.",
+          "Pagini pentru serviciile agreate, informații de contact și conținut furnizat de afacere.",
+          "Titluri, descrieri și structură HTML pentru paginile publice."
+        ],
+        "existingQuote": "Oferta se stabilește după numărul de pagini, limbile necesare și funcțiile cerute. Prețul unui proiect din catalog este punctul de plecare doar dacă acel proiect se potrivește; adaptările se discută separat.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "realizare site profesional"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "корпоративный сайт Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/business-websites",
+      "seoTitle": "Корпоративный сайт для бизнеса в Молдове | MONO/DEV",
+      "metaDescription": "Сайт компании от MONO/DEV: услуги, содержание на языках клиентов и обращение за предложением. Согласуем страницы, адаптацию и стоимость.",
+      "h1": "Создание сайтов для бизнеса в Молдове",
+      "content": {
+        "existingIntro": "Посетителю важно быстро понять, чем занимается компания, подходит ли ему услуга и как связаться. Создаем сайты для бизнеса в Молдове вокруг этих вопросов и реальных материалов компании.",
+        "existingScope": [
+          "Структура страниц и понятный путь к обращению.",
+          "Адаптация интерфейса для телефона, планшета и компьютера.",
+          "Согласованные страницы услуг и проверенные контакты компании.",
+          "Заголовки, описания и семантическая разметка публичных страниц."
+        ],
+        "existingQuote": "Стоимость зависит от количества страниц, языков и функций. Цена проекта из каталога служит ориентиром только для соответствующей основы; дополнительные изменения оцениваются отдельно.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "корпоративный сайт Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "сайт для бизнеса Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/business-websites",
+      "seoTitle": "Корпоративный сайт для бизнеса в Молдове | MONO/DEV",
+      "metaDescription": "Сайт компании от MONO/DEV: услуги, содержание на языках клиентов и обращение за предложением. Согласуем страницы, адаптацию и стоимость.",
+      "h1": "Создание сайтов для бизнеса в Молдове",
+      "content": {
+        "existingIntro": "Посетителю важно быстро понять, чем занимается компания, подходит ли ему услуга и как связаться. Создаем сайты для бизнеса в Молдове вокруг этих вопросов и реальных материалов компании.",
+        "existingScope": [
+          "Структура страниц и понятный путь к обращению.",
+          "Адаптация интерфейса для телефона, планшета и компьютера.",
+          "Согласованные страницы услуг и проверенные контакты компании.",
+          "Заголовки, описания и семантическая разметка публичных страниц."
+        ],
+        "existingQuote": "Стоимость зависит от количества страниц, языков и функций. Цена проекта из каталога служит ориентиром только для соответствующей основы; дополнительные изменения оцениваются отдельно.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "сайт для бизнеса Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "business website development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/business-websites",
+      "seoTitle": "Business website development in Moldova | MONO/DEV",
+      "metaDescription": "A business website by MONO/DEV, scoped around your services, content and enquiries. Agree the pages, languages, customization and launch requirements.",
+      "h1": "Custom business websites",
+      "content": {
+        "existingIntro": "Turn a business introduction into a useful destination. We build websites that explain your services, answer the questions buyers ask and give visitors a clear next step, including for businesses working across markets.",
+        "existingScope": [
+          "Page structure based on your audience and enquiry goals.",
+          "Responsive layouts for mobile, tablet and desktop.",
+          "Agreed service pages, business content and contact routes.",
+          "Page titles, descriptions and semantic HTML for public content."
+        ],
+        "existingQuote": "We quote after reviewing page count, languages and functionality. If a catalogue project fits, its listed price provides a starting point; custom work is scoped separately.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "business website development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "corporate website Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Site de prezentare / site corporativ",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/business-websites",
+      "seoTitle": "Business website development in Moldova | MONO/DEV",
+      "metaDescription": "A business website by MONO/DEV, scoped around your services, content and enquiries. Agree the pages, languages, customization and launch requirements.",
+      "h1": "Custom business websites",
+      "content": {
+        "existingIntro": "Turn a business introduction into a useful destination. We build websites that explain your services, answer the questions buyers ask and give visitors a clear next step, including for businesses working across markets.",
+        "existingScope": [
+          "Page structure based on your audience and enquiry goals.",
+          "Responsive layouts for mobile, tablet and desktop.",
+          "Agreed service pages, business content and contact routes.",
+          "Page titles, descriptions and semantic HTML for public content."
+        ],
+        "existingQuote": "We quote after reviewing page count, languages and functionality. If a catalogue project fits, its listed price provides a starting point; custom work is scoped separately.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/business-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "corporate website Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://chisinauweb.com/",
+          "https://sitemasters.md/ru/sozdanie-sajtov-kishinev/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "web design Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/web-design",
+      "seoTitle": "Web design în Moldova — design și interfețe | MONO/DEV",
+      "metaDescription": "Web design MONO/DEV pentru site-uri noi și interfețe existente: structură vizuală, navigare, accesibilitate și implementare responsive.",
+      "h1": "Web design și dezvoltare web în Moldova",
+      "content": {
+        "existingIntro": "Un design bun ajută vizitatorul să înțeleagă conținutul, nu doar să observe un efect vizual. Pentru un site nou sau o interfață existentă, legăm identitatea brandului de navigare și de acțiunile importante.",
+        "existingScope": [
+          "Structură vizuală pentru paginile și stările agreate.",
+          "Tipografie, culori și componente coerente cu materialele brandului.",
+          "Implementare responsive și verificarea contrastului și a navigării cu tastatura.",
+          "Revizuirea imaginilor și a încărcării elementelor vizuale importante."
+        ],
+        "existingQuote": "Estimarea depinde de numărul de tipuri de pagini, stări interactive și componente noi. O adaptare de brand și o reproiectare completă au scopuri diferite, definite în ofertă.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "web design Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "companie web design Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/web-design",
+      "seoTitle": "Web design în Moldova — design și interfețe | MONO/DEV",
+      "metaDescription": "Web design MONO/DEV pentru site-uri noi și interfețe existente: structură vizuală, navigare, accesibilitate și implementare responsive.",
+      "h1": "Web design și dezvoltare web în Moldova",
+      "content": {
+        "existingIntro": "Un design bun ajută vizitatorul să înțeleagă conținutul, nu doar să observe un efect vizual. Pentru un site nou sau o interfață existentă, legăm identitatea brandului de navigare și de acțiunile importante.",
+        "existingScope": [
+          "Structură vizuală pentru paginile și stările agreate.",
+          "Tipografie, culori și componente coerente cu materialele brandului.",
+          "Implementare responsive și verificarea contrastului și a navigării cu tastatura.",
+          "Revizuirea imaginilor și a încărcării elementelor vizuale importante."
+        ],
+        "existingQuote": "Estimarea depinde de numărul de tipuri de pagini, stări interactive și componente noi. O adaptare de brand și o reproiectare completă au scopuri diferite, definite în ofertă.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "companie web design Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "веб дизайн Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/web-design",
+      "seoTitle": "Веб-дизайн в Молдове — дизайн сайтов | MONO/DEV",
+      "metaDescription": "Веб-дизайн MONO/DEV для новых сайтов и существующих интерфейсов: визуальная структура, навигация и адаптивная вёрстка по согласованному объёму.",
+      "h1": "Веб-дизайн и разработка в Молдове",
+      "content": {
+        "existingIntro": "Веб-дизайн должен помогать читать и принимать решения. Связываем стиль бренда с содержанием и ключевыми действиями посетителя — при создании нового сайта или обновлении существующего интерфейса.",
+        "existingScope": [
+          "Визуальная структура согласованных страниц и состояний.",
+          "Шрифты, цвета и компоненты на основе материалов бренда.",
+          "Адаптивная верстка, проверка контраста и навигации с клавиатуры.",
+          "Проверка изображений и загрузки основных визуальных элементов."
+        ],
+        "existingQuote": "Оценка зависит от типов страниц, интерактивных состояний и новых компонентов. Адаптация фирменного стиля и полная переработка интерфейса обсуждаются как разные объемы работ.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "веб дизайн Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "дизайн сайта Кишинев",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/web-design",
+      "seoTitle": "Веб-дизайн в Молдове — дизайн сайтов | MONO/DEV",
+      "metaDescription": "Веб-дизайн MONO/DEV для новых сайтов и существующих интерфейсов: визуальная структура, навигация и адаптивная вёрстка по согласованному объёму.",
+      "h1": "Веб-дизайн и разработка в Молдове",
+      "content": {
+        "existingIntro": "Веб-дизайн должен помогать читать и принимать решения. Связываем стиль бренда с содержанием и ключевыми действиями посетителя — при создании нового сайта или обновлении существующего интерфейса.",
+        "existingScope": [
+          "Визуальная структура согласованных страниц и состояний.",
+          "Шрифты, цвета и компоненты на основе материалов бренда.",
+          "Адаптивная верстка, проверка контраста и навигации с клавиатуры.",
+          "Проверка изображений и загрузки основных визуальных элементов."
+        ],
+        "existingQuote": "Оценка зависит от типов страниц, интерактивных состояний и новых компонентов. Адаптация фирменного стиля и полная переработка интерфейса обсуждаются как разные объемы работ.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "дизайн сайта Кишинев"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "web design Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/web-design",
+      "seoTitle": "Web design in Moldova — responsive interfaces | MONO/DEV",
+      "metaDescription": "MONO/DEV web design connects your brand with clear content, responsive interfaces and keyboard navigation. Discuss design and front-end implementation.",
+      "h1": "Web design and front-end development",
+      "content": {
+        "existingIntro": "A visual direction becomes useful when it helps people read, navigate and act. We connect your brand with the structure and behaviour of the website, whether the work starts with an existing interface or a new concept.",
+        "existingScope": [
+          "Visual structure for agreed page templates and interface states.",
+          "Typography, colour and components informed by your brand assets.",
+          "Responsive implementation with contrast and keyboard navigation checks.",
+          "Review of image use and loading for important visual content."
+        ],
+        "existingQuote": "The estimate follows the number of page templates, interactive states and new components. A brand refresh and a full redesign are scoped separately so the deliverables remain clear.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "web design Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website design Chisinau",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Design și implementarea interfeței",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/web-design",
+      "seoTitle": "Web design in Moldova — responsive interfaces | MONO/DEV",
+      "metaDescription": "MONO/DEV web design connects your brand with clear content, responsive interfaces and keyboard navigation. Discuss design and front-end implementation.",
+      "h1": "Web design and front-end development",
+      "content": {
+        "existingIntro": "A visual direction becomes useful when it helps people read, navigate and act. We connect your brand with the structure and behaviour of the website, whether the work starts with an existing interface or a new concept.",
+        "existingScope": [
+          "Visual structure for agreed page templates and interface states.",
+          "Typography, colour and components informed by your brand assets.",
+          "Responsive implementation with contrast and keyboard navigation checks.",
+          "Review of image use and loading for important visual content."
+        ],
+        "existingQuote": "The estimate follows the number of page templates, interactive states and new components. A brand refresh and a full redesign are scoped separately so the deliverables remain clear.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Mediu: homepage deține cererea generală; business-websites prezentarea companiei; web-design interfața. Verifică alternarea paginilor în GSC.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/web-design",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website design Chisinau"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://selaodigital.com/en",
+          "https://loop.md/en"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare magazin online Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/ecommerce",
+      "seoTitle": "Creare magazin online în Moldova | MONO/DEV",
+      "metaDescription": "Creare magazin online MONO/DEV pentru afaceri din Moldova. Planificăm catalogul, comenzile și integrările de plată și livrare; solicită o ofertă.",
+      "h1": "Dezvoltare magazine online",
+      "content": {
+        "existingIntro": "Un magazin online începe cu modul în care vinzi: produse, variante, stoc, livrare și plată. Alegem structura potrivită acestor operațiuni, pentru ca prezentarea produselor și procesarea comenzilor să poată funcționa împreună.",
+        "existingScope": [
+          "Structura catalogului, categorii și pagini de produs.",
+          "Fluxul de coș și comandă conform cerințelor agreate.",
+          "Definirea integrărilor pentru plată, livrare sau inventar, dacă sunt necesare.",
+          "Verificarea scenariilor de comandă, erorilor și confirmărilor."
+        ],
+        "existingQuote": "Oferta depinde de volumul catalogului, importul de date și integrări. Taxele procesatorului de plăți, curierului sau altor servicii externe se clarifică separat; nu sunt deduse din prețul unui demo.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare magazin online Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare magazin online Chișinău",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/ecommerce",
+      "seoTitle": "Creare magazin online în Moldova | MONO/DEV",
+      "metaDescription": "Creare magazin online MONO/DEV pentru afaceri din Moldova. Planificăm catalogul, comenzile și integrările de plată și livrare; solicită o ofertă.",
+      "h1": "Dezvoltare magazine online",
+      "content": {
+        "existingIntro": "Un magazin online începe cu modul în care vinzi: produse, variante, stoc, livrare și plată. Alegem structura potrivită acestor operațiuni, pentru ca prezentarea produselor și procesarea comenzilor să poată funcționa împreună.",
+        "existingScope": [
+          "Structura catalogului, categorii și pagini de produs.",
+          "Fluxul de coș și comandă conform cerințelor agreate.",
+          "Definirea integrărilor pentru plată, livrare sau inventar, dacă sunt necesare.",
+          "Verificarea scenariilor de comandă, erorilor și confirmărilor."
+        ],
+        "existingQuote": "Oferta depinde de volumul catalogului, importul de date și integrări. Taxele procesatorului de plăți, curierului sau altor servicii externe se clarifică separat; nu sunt deduse din prețul unui demo.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare magazin online Chișinău"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "dezvoltare magazin online",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/ecommerce",
+      "seoTitle": "Creare magazin online în Moldova | MONO/DEV",
+      "metaDescription": "Creare magazin online MONO/DEV pentru afaceri din Moldova. Planificăm catalogul, comenzile și integrările de plată și livrare; solicită o ofertă.",
+      "h1": "Dezvoltare magazine online",
+      "content": {
+        "existingIntro": "Un magazin online începe cu modul în care vinzi: produse, variante, stoc, livrare și plată. Alegem structura potrivită acestor operațiuni, pentru ca prezentarea produselor și procesarea comenzilor să poată funcționa împreună.",
+        "existingScope": [
+          "Structura catalogului, categorii și pagini de produs.",
+          "Fluxul de coș și comandă conform cerințelor agreate.",
+          "Definirea integrărilor pentru plată, livrare sau inventar, dacă sunt necesare.",
+          "Verificarea scenariilor de comandă, erorilor și confirmărilor."
+        ],
+        "existingQuote": "Oferta depinde de volumul catalogului, importul de date și integrări. Taxele procesatorului de plăți, curierului sau altor servicii externe se clarifică separat; nu sunt deduse din prețul unui demo.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "dezvoltare magazin online"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание интернет магазина Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/ecommerce",
+      "seoTitle": "Создание интернет-магазина в Молдове | MONO/DEV",
+      "metaDescription": "Создание интернет-магазина MONO/DEV для бизнеса в Молдове. Планируем каталог, заказы и интеграции оплаты и доставки. Обсудите требования и стоимость.",
+      "h1": "Разработка интернет-магазинов",
+      "content": {
+        "existingIntro": "Магазин строится вокруг реальных операций: товары, варианты, остатки, доставка и оплата. Подбираем структуру так, чтобы витрина соответствовала тому, как компания принимает и обрабатывает заказы.",
+        "existingScope": [
+          "Структура каталога, категории и карточки товаров.",
+          "Корзина и оформление заказа по согласованным требованиям.",
+          "План интеграций оплаты, доставки и учета, если они нужны.",
+          "Проверка заказа, ошибок и подтверждений."
+        ],
+        "existingQuote": "Расчет зависит от объема каталога, импорта данных и интеграций. Комиссии платежных систем, доставка и внешние подписки уточняются отдельно от цены проекта.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание интернет магазина Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "разработка интернет магазина Кишинев",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/ecommerce",
+      "seoTitle": "Создание интернет-магазина в Молдове | MONO/DEV",
+      "metaDescription": "Создание интернет-магазина MONO/DEV для бизнеса в Молдове. Планируем каталог, заказы и интеграции оплаты и доставки. Обсудите требования и стоимость.",
+      "h1": "Разработка интернет-магазинов",
+      "content": {
+        "existingIntro": "Магазин строится вокруг реальных операций: товары, варианты, остатки, доставка и оплата. Подбираем структуру так, чтобы витрина соответствовала тому, как компания принимает и обрабатывает заказы.",
+        "existingScope": [
+          "Структура каталога, категории и карточки товаров.",
+          "Корзина и оформление заказа по согласованным требованиям.",
+          "План интеграций оплаты, доставки и учета, если они нужны.",
+          "Проверка заказа, ошибок и подтверждений."
+        ],
+        "existingQuote": "Расчет зависит от объема каталога, импорта данных и интеграций. Комиссии платежных систем, доставка и внешние подписки уточняются отдельно от цены проекта.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "разработка интернет магазина Кишинев"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "ecommerce development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/ecommerce",
+      "seoTitle": "E-commerce development in Moldova | MONO/DEV",
+      "metaDescription": "MONO/DEV online store development for businesses in Moldova and abroad. Scope your catalog, checkout, migration, payment and delivery integrations.",
+      "h1": "E-commerce development",
+      "content": {
+        "existingIntro": "A store needs to match how your business sells: product variants, stock, delivery and payment. We plan the storefront around those operations so browsing and order handling fit together.",
+        "existingScope": [
+          "Catalogue structure, categories and product pages.",
+          "Cart and order journey based on the agreed requirements.",
+          "Scope for payment, delivery or inventory integrations where required.",
+          "Checks for orders, failure states and customer confirmations."
+        ],
+        "existingQuote": "Pricing depends on catalogue size, data migration and integrations. Payment provider fees, delivery charges and external subscriptions are clarified separately from development.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "ecommerce development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "online store development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Dezvoltarea unui magazin, nu cumpărături de produse",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/ecommerce",
+      "seoTitle": "E-commerce development in Moldova | MONO/DEV",
+      "metaDescription": "MONO/DEV online store development for businesses in Moldova and abroad. Scope your catalog, checkout, migration, payment and delivery integrations.",
+      "h1": "E-commerce development",
+      "content": {
+        "existingIntro": "A store needs to match how your business sells: product variants, stock, delivery and payment. We plan the storefront around those operations so browsing and order handling fit together.",
+        "existingScope": [
+          "Catalogue structure, categories and product pages.",
+          "Cart and order journey based on the agreed requirements.",
+          "Scope for payment, delivery or inventory integrations where required.",
+          "Checks for orders, failure states and customer confirmations."
+        ],
+        "existingQuote": "Pricing depends on catalogue size, data migration and integrations. Payment provider fees, delivery charges and external subscriptions are clarified separately from development.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/ecommerce",
+        "queryFilter": {
+          "type": "exact",
+          "value": "online store development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webmaster.md/ro/servicii/elaborarea-si-crearea-magazinului-online/",
+          "https://webup.md/ru/uslugi/internet-magazin",
+          "https://www.webit.md/en/portfolio/online-store.html"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare platformă web",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/web-applications",
+      "seoTitle": "Dezvoltare aplicații și platforme web în Moldova | MONO/DEV",
+      "metaDescription": "Platforme și aplicații web MONO/DEV pentru procesele afacerii: roluri, date și fluxuri de lucru. Discută funcțiile și integrările pentru o ofertă.",
+      "h1": "Dezvoltare aplicații și platforme web",
+      "content": {
+        "existingIntro": "Când activitatea depinde de tabele, mesaje și transferuri manuale, o aplicație web poate aduce pașii într-un singur flux. Pornim de la cine folosește sistemul și ce trebuie să poată face fiecare persoană.",
+        "existingScope": [
+          "Scenarii de utilizare și roluri pentru versiunea agreată.",
+          "Interfețe, stări goale, erori și confirmări.",
+          "Plan pentru date, autentificare și integrări necesare.",
+          "Verificări ale fluxurilor principale și condiții de predare."
+        ],
+        "existingQuote": "Estimăm după fluxuri, roluri, volum de date și sisteme conectate. O interfață demonstrativă din catalog poate fi punct de plecare, dar nu dovedește existența unui backend de producție.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare platformă web"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "dezvoltare aplicații web Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/web-applications",
+      "seoTitle": "Dezvoltare aplicații și platforme web în Moldova | MONO/DEV",
+      "metaDescription": "Platforme și aplicații web MONO/DEV pentru procesele afacerii: roluri, date și fluxuri de lucru. Discută funcțiile și integrările pentru o ofertă.",
+      "h1": "Dezvoltare aplicații și platforme web",
+      "content": {
+        "existingIntro": "Când activitatea depinde de tabele, mesaje și transferuri manuale, o aplicație web poate aduce pașii într-un singur flux. Pornim de la cine folosește sistemul și ce trebuie să poată face fiecare persoană.",
+        "existingScope": [
+          "Scenarii de utilizare și roluri pentru versiunea agreată.",
+          "Interfețe, stări goale, erori și confirmări.",
+          "Plan pentru date, autentificare și integrări necesare.",
+          "Verificări ale fluxurilor principale și condiții de predare."
+        ],
+        "existingQuote": "Estimăm după fluxuri, roluri, volum de date și sisteme conectate. O interfață demonstrativă din catalog poate fi punct de plecare, dar nu dovedește existența unui backend de producție.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "dezvoltare aplicații web Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "platforme web la comandă Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/web-applications",
+      "seoTitle": "Dezvoltare aplicații și platforme web în Moldova | MONO/DEV",
+      "metaDescription": "Platforme și aplicații web MONO/DEV pentru procesele afacerii: roluri, date și fluxuri de lucru. Discută funcțiile și integrările pentru o ofertă.",
+      "h1": "Dezvoltare aplicații și platforme web",
+      "content": {
+        "existingIntro": "Când activitatea depinde de tabele, mesaje și transferuri manuale, o aplicație web poate aduce pașii într-un singur flux. Pornim de la cine folosește sistemul și ce trebuie să poată face fiecare persoană.",
+        "existingScope": [
+          "Scenarii de utilizare și roluri pentru versiunea agreată.",
+          "Interfețe, stări goale, erori și confirmări.",
+          "Plan pentru date, autentificare și integrări necesare.",
+          "Verificări ale fluxurilor principale și condiții de predare."
+        ],
+        "existingQuote": "Estimăm după fluxuri, roluri, volum de date și sisteme conectate. O interfață demonstrativă din catalog poate fi punct de plecare, dar nu dovedește existența unui backend de producție.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "platforme web la comandă Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "разработка веб приложений Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/web-applications",
+      "seoTitle": "Разработка веб-приложений и платформ в Молдове | MONO/DEV",
+      "metaDescription": "Веб-приложения и платформы MONO/DEV для рабочих процессов: роли, данные и интеграции. Обсудим функции и объём разработки перед оценкой.",
+      "h1": "Разработка веб-приложений и платформ",
+      "content": {
+        "existingIntro": "Если работа распределена между таблицами и перепиской, веб-приложение может объединить ее в последовательный процесс. Начинаем с пользователей: кто входит в систему и какие задачи должен решать.",
+        "existingScope": [
+          "Пользовательские сценарии и роли согласованной версии.",
+          "Интерфейсы, пустые состояния, ошибки и подтверждения.",
+          "План данных, авторизации и необходимых интеграций.",
+          "Проверки основных процессов и условия передачи."
+        ],
+        "existingQuote": "Оценка строится по процессам, ролям, данным и внешним системам. Интерфейс из каталога может стать основой, но демонстрация не подтверждает наличие готового серверного решения.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "разработка веб приложений Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "разработка веб платформ Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/web-applications",
+      "seoTitle": "Разработка веб-приложений и платформ в Молдове | MONO/DEV",
+      "metaDescription": "Веб-приложения и платформы MONO/DEV для рабочих процессов: роли, данные и интеграции. Обсудим функции и объём разработки перед оценкой.",
+      "h1": "Разработка веб-приложений и платформ",
+      "content": {
+        "existingIntro": "Если работа распределена между таблицами и перепиской, веб-приложение может объединить ее в последовательный процесс. Начинаем с пользователей: кто входит в систему и какие задачи должен решать.",
+        "existingScope": [
+          "Пользовательские сценарии и роли согласованной версии.",
+          "Интерфейсы, пустые состояния, ошибки и подтверждения.",
+          "План данных, авторизации и необходимых интеграций.",
+          "Проверки основных процессов и условия передачи."
+        ],
+        "existingQuote": "Оценка строится по процессам, ролям, данным и внешним системам. Интерфейс из каталога может стать основой, но демонстрация не подтверждает наличие готового серверного решения.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "разработка веб платформ Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "web application development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/web-applications",
+      "seoTitle": "Web application development in Moldova | MONO/DEV",
+      "metaDescription": "MONO/DEV builds web applications around business workflows, roles and data. Discuss features, integrations and delivery scope for a custom quote.",
+      "h1": "Web application development",
+      "content": {
+        "existingIntro": "When work is scattered across spreadsheets and messages, a web application can make the steps easier to follow. We start by defining who uses the system and what each person needs to accomplish.",
+        "existingScope": [
+          "User journeys and roles for the agreed release.",
+          "Interfaces including empty states, errors and confirmations.",
+          "A plan for data, authentication and required integrations.",
+          "Key workflow checks and agreed handover criteria."
+        ],
+        "existingQuote": "We estimate by workflows, roles, data requirements and connected systems. A catalogue interface can provide a starting point, but it does not establish that a production backend is included.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "web application development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "custom web platform development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Platforme și aplicații pentru procese de afaceri",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/web-applications",
+      "seoTitle": "Web application development in Moldova | MONO/DEV",
+      "metaDescription": "MONO/DEV builds web applications around business workflows, roles and data. Discuss features, integrations and delivery scope for a custom quote.",
+      "h1": "Web application development",
+      "content": {
+        "existingIntro": "When work is scattered across spreadsheets and messages, a web application can make the steps easier to follow. We start by defining who uses the system and what each person needs to accomplish.",
+        "existingScope": [
+          "User journeys and roles for the agreed release.",
+          "Interfaces including empty states, errors and confirmations.",
+          "A plan for data, authentication and required integrations.",
+          "Key workflow checks and agreed handover criteria."
+        ],
+        "existingQuote": "We estimate by workflows, roles, data requirements and connected systems. A catalogue interface can provide a starting point, but it does not establish that a production backend is included.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/web-applications",
+        "queryFilter": {
+          "type": "exact",
+          "value": "custom web platform development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://visio.md/",
+          "https://codex.md/creare-site/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare site clinică Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site pentru o clinică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/clinic-websites",
+      "seoTitle": "Site-uri pentru clinici și cabinete medicale | MONO/DEV",
+      "metaDescription": "Site-uri de clinică cu servicii explicate clar, informații verificate despre specialiști și un traseu simplu către solicitarea unei programări.",
+      "h1": "Site-uri pentru clinici și cabinete medicale",
+      "content": {
+        "existingIntro": "O persoană care caută o clinică are nevoie de informații precise despre servicii, specialiști și programare. Organizăm site-ul pentru aceste întrebări, folosind conținut medical și date confirmate de clinică.",
+        "existingScope": [
+          "Structură pentru specialități, servicii și profiluri aprobate de clinică.",
+          "Pagini adaptate pentru mobil și un traseu clar către contact.",
+          "Definirea fluxului de solicitare sau a integrării cu sistemul de programări.",
+          "Revizuirea câmpurilor de formular și a mesajelor de confirmare."
+        ],
+        "existingQuote": "Oferta ține cont de numărul de specialități, limbi și integrarea de programări. Funcțiile pentru dosare medicale sau date clinice necesită analiză separată și nu sunt implicite într-un site de prezentare.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/clinic-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare site clinică Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание сайта клиники Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Site pentru o clinică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/clinic-websites",
+      "seoTitle": "Сайты для клиник и медицинских кабинетов | MONO/DEV",
+      "metaDescription": "Сайты клиник с понятными услугами, проверенными сведениями о специалистах и прозрачным процессом обращения за записью.",
+      "h1": "Сайты для клиник и медицинских кабинетов",
+      "content": {
+        "existingIntro": "При выборе клиники человеку нужны точные сведения об услугах, специалистах и порядке записи. Организуем страницы вокруг этих вопросов, используя информацию, подтвержденную самой клиникой.",
+        "existingScope": [
+          "Страницы направлений, услуг и утвержденных профилей специалистов.",
+          "Мобильная версия и понятные способы связи.",
+          "Сценарий заявки или согласованная интеграция системы записи.",
+          "Проверка полей формы и сообщений о результате обращения."
+        ],
+        "existingQuote": "Стоимость зависит от направлений, языков и системы записи. Медицинские карты и обработка клинических данных требуют отдельной оценки и не подразумеваются в обычном сайте клиники.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/clinic-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание сайта клиники Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "clinic website development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Site pentru o clinică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/clinic-websites",
+      "seoTitle": "Websites for clinics and medical practices | MONO/DEV",
+      "metaDescription": "Clinic websites with clear service pages, approved practitioner information and an appointment journey that sets accurate expectations.",
+      "h1": "Websites for clinics and medical practices",
+      "content": {
+        "existingIntro": "Patients need accurate information about services, practitioners and how to arrange a visit. We organise clinic websites around those needs using content and professional details approved by the practice.",
+        "existingScope": [
+          "Pages for specialties, services and approved practitioner profiles.",
+          "Mobile layouts and clear contact routes.",
+          "An appointment request journey or scoped booking integration.",
+          "Review of form fields and confirmation messages."
+        ],
+        "existingQuote": "The estimate depends on specialties, languages and booking integration. Patient records and clinical data handling require a separate assessment and are not implicit in a presentation website.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/clinic-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "clinic website development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare site restaurant Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site pentru restaurant și meniu",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/restaurant-websites",
+      "seoTitle": "Site-uri pentru restaurante și cafenele | MONO/DEV",
+      "metaDescription": "Site-uri de restaurant cu meniu ușor de citit pe telefon, informații practice și un flux clar pentru rezervări sau comenzi.",
+      "h1": "Site-uri pentru restaurante și cafenele",
+      "content": {
+        "existingIntro": "Clienții verifică adesea meniul de pe telefon, înainte să decidă unde merg. Punem preparatele, programul și opțiunile de rezervare într-o structură ușor de parcurs, cu informații furnizate de local.",
+        "existingScope": [
+          "Meniu organizat în categorii și adaptat ecranelor mici.",
+          "Pagini cu informațiile reale despre local și fotografiile aprobate.",
+          "Traseu către rezervare, contact sau comandă, după scopul agreat.",
+          "Mod de actualizare a meniului stabilit înainte de predare."
+        ],
+        "existingQuote": "Estimarea depinde de mărimea meniului, limbile publicate și sistemele externe. Rezervările conectate, plățile și livrarea se evaluează separat de un site de prezentare.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/restaurant-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare site restaurant Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание сайта ресторана Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Site pentru restaurant și meniu",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/restaurant-websites",
+      "seoTitle": "Сайты для ресторанов и кафе | MONO/DEV",
+      "metaDescription": "Сайт ресторана с удобным меню на телефоне, актуальными сведениями о заведении и понятным путем к бронированию или заказу.",
+      "h1": "Сайты для ресторанов и кафе",
+      "content": {
+        "existingIntro": "Гости часто смотрят меню с телефона еще до выбора заведения. Делаем блюда, часы работы и способ бронирования доступными в понятной структуре, опираясь на материалы ресторана.",
+        "existingScope": [
+          "Меню по категориям, удобное для небольших экранов.",
+          "Реальные сведения о заведении и согласованные фотографии.",
+          "Переход к бронированию, обращению или заказу по выбранному сценарию.",
+          "Согласованный способ обновления меню после передачи."
+        ],
+        "existingQuote": "Оценка зависит от меню, языков и внешних систем. Подключенное бронирование, платежи и доставка рассматриваются отдельно от презентационных страниц.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/restaurant-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание сайта ресторана Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "restaurant website development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Site pentru restaurant și meniu",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/restaurant-websites",
+      "seoTitle": "Restaurant and café websites | MONO/DEV",
+      "metaDescription": "Restaurant websites with readable mobile menus, practical venue information and a clear route to reservations or ordering.",
+      "h1": "Restaurant and café websites",
+      "content": {
+        "existingIntro": "Guests often browse a menu on their phones before deciding where to go. We make dishes, opening information and reservation options easy to find using content supplied by the venue.",
+        "existingScope": [
+          "A categorised menu designed for small screens.",
+          "Verified venue information and approved photography.",
+          "A route to reservations, contact or ordering for the agreed use case.",
+          "An agreed approach to updating the menu after handover."
+        ],
+        "existingQuote": "The quote reflects menu size, languages and external systems. Connected booking, payment and delivery functions are assessed separately from presentation pages.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/restaurant-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "restaurant website development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://webup.md/ru/uslugi/sozdanie-saytov-kishinev"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site agenție imobiliară Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Site pentru agenție și catalog imobiliar",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/real-estate-websites",
+      "seoTitle": "Site-uri pentru imobiliare | MONO/DEV",
+      "metaDescription": "Cataloage imobiliare cu pagini pentru proprietăți, filtre utile și cereri de vizionare. Definim sursa anunțurilor și actualizarea disponibilității.",
+      "h1": "Site-uri pentru imobiliare",
+      "content": {
+        "existingIntro": "Un vizitator trebuie să compare proprietăți după criterii concrete: localizare, suprafață, preț și disponibilitate. Construim structura care face această comparație posibilă și duce spre o cerere relevantă de vizionare.",
+        "existingScope": [
+          "Pagini de proprietate cu câmpuri și fotografii agreate.",
+          "Filtre bazate pe datele reale ale catalogului.",
+          "Traseu către agent sau solicitarea unei vizionări.",
+          "Reguli pentru actualizare și tratarea anunțurilor retrase."
+        ],
+        "existingQuote": "Oferta depinde de volumul și sursa anunțurilor, filtre și integrări CRM. Importul dintr-un sistem existent se estimează după verificarea accesului și a structurii datelor.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/real-estate-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site agenție imobiliară Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "создание сайта агентства недвижимости Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Site pentru agenție și catalog imobiliar",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/real-estate-websites",
+      "seoTitle": "Сайты для недвижимости | MONO/DEV",
+      "metaDescription": "Каталоги недвижимости с карточками объектов, полезными фильтрами и заявками на просмотр. Планируем источник и обновление объявлений.",
+      "h1": "Сайты для недвижимости",
+      "content": {
+        "existingIntro": "Покупателю или арендатору нужны сопоставимые данные: расположение, площадь, цена и статус объекта. Создаем структуру для такого сравнения и перехода к содержательной заявке на просмотр.",
+        "existingScope": [
+          "Карточки объектов с согласованными полями и фотографиями.",
+          "Фильтры на основе фактических данных каталога.",
+          "Обращение к представителю или заявка на просмотр.",
+          "Правила обновления и обработки снятых объявлений."
+        ],
+        "existingQuote": "Оценка зависит от объема и источника объявлений, фильтров и CRM. Импорт из существующей системы рассчитывается после проверки доступа и структуры данных.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/real-estate-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "создание сайта агентства недвижимости Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "real estate website development Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Site pentru agenție și catalog imobiliar",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/real-estate-websites",
+      "seoTitle": "Real estate websites | MONO/DEV",
+      "metaDescription": "Property websites with useful listing pages, filters and viewing enquiries, supported by an explicit plan for listing data and availability updates.",
+      "h1": "Real estate websites",
+      "content": {
+        "existingIntro": "Property visitors compare specific details: location, floor area, price and availability. We structure that information so they can narrow their choices and make a relevant viewing enquiry.",
+        "existingScope": [
+          "Property pages with agreed data fields and photography.",
+          "Filters supported by the actual listing data.",
+          "A route to an agent or viewing request.",
+          "Rules for updates and withdrawn listings."
+        ],
+        "existingQuote": "We quote based on listing volume and source, filters and CRM integration. Imports are assessed after reviewing access and the structure of the existing data.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/real-estate-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "real estate website development Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site gata de lansare",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Alegerea și cumpărarea unei baze demonstrative pentru personalizare",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site gata de lansare"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://creare-site.md/en/online-store/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "cumpărare site",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Alegerea și cumpărarea unei baze demonstrative pentru personalizare",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "cumpărare site"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://creare-site.md/en/online-store/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "купить готовый сайт Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Alegerea și cumpărarea unei baze demonstrative pentru personalizare",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/ru/services/launch-ready-websites",
+      "seoTitle": "Готовые сайты с адаптацией к вашему бизнесу | MONO/DEV",
+      "metaDescription": "Выберите основу из каталога и уточните путь к запуску: фирменный стиль, содержание, интеграции, домен и передача проекта.",
+      "h1": "Готовые сайты с адаптацией к вашему бизнесу",
+      "content": {
+        "existingIntro": "Проект из каталога позволяет оценить направление заранее. Вы видите структуру, экраны и существующие взаимодействия, после чего определяете, что подходит бизнесу и что нужно изменить.",
+        "existingScope": [
+          "Сопоставление выбранного проекта с задачами бизнеса.",
+          "Список замен бренда, текстов, фотографий и контактов.",
+          "Уточнение демонстрационных функций и нужных интеграций.",
+          "Проверка адаптированной версии и согласованные шаги передачи."
+        ],
+        "existingQuote": "Базовая цена указана на странице проекта. Адаптация и внешние сервисы уточняются отдельно. Аренда и рассрочка рассматриваются только для подходящих проектов и вариантов из каталога.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "купить готовый сайт Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://creare-site.md/en/online-store/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "ready-made websites Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Alegerea și cumpărarea unei baze demonstrative pentru personalizare",
+      "commercialRelevance": "ridicată prin potrivirea ofertei; volum necunoscut",
+      "page": "https://monodev.md/en/services/launch-ready-websites",
+      "seoTitle": "Launch-ready websites | MONO/DEV",
+      "metaDescription": "Choose a visible website foundation and scope its launch: brand adaptation, real content, integrations, domain setup and handover.",
+      "h1": "Launch-ready websites",
+      "content": {
+        "existingIntro": "A catalogue project gives you something concrete to review before development starts. Explore its structure, screens and existing interactions, then decide which parts fit your business and what needs to change.",
+        "existingScope": [
+          "A comparison of the selected project against your requirements.",
+          "A replacement list for branding, copy, photography and contacts.",
+          "Clear identification of demo behaviour and required integrations.",
+          "Review of the adapted version and agreed handover steps."
+        ],
+        "existingQuote": "The project's page provides its base price. Customisation and external services are clarified separately. Rental or instalment options apply only where the catalogue presents eligible terms.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "ready-made websites Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://creare-site.md/en/online-store/"
+        ],
+        "status": "intenție și vocabular observate în rezultatele web; volumul fiecărei variante nu este cunoscut",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site în rate",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site în rate"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "creare site în rate",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "creare site în rate"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "închiriere site",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "închiriere site"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site cu plată lunară",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/launch-ready-websites",
+      "seoTitle": "Site-uri gata de lansare, adaptate afacerii tale | MONO/DEV",
+      "metaDescription": "Alege o bază demonstrativă din catalog și verifică ce trebuie adaptat pentru lansare: brand, conținut, integrări, domeniu și predare.",
+      "h1": "Site-uri gata de lansare, adaptate afacerii tale",
+      "content": {
+        "existingIntro": "Un proiect din catalog îți permite să vezi direcția înainte de a începe. Poți evalua structura, ecranele și interacțiunile existente, apoi alegem ce se păstrează și ce trebuie adaptat pentru afacerea ta.",
+        "existingScope": [
+          "Compararea proiectului ales cu cerințele afacerii.",
+          "Lista de înlocuiri pentru brand, texte, fotografii și contacte.",
+          "Clarificarea funcțiilor demonstrative și a integrărilor necesare.",
+          "Verificarea versiunii personalizate și pașii de predare agreați."
+        ],
+        "existingQuote": "Prețul de bază este cel afișat pentru proiect. Personalizarea și serviciile externe se clarifică separat. Chiria sau ratele se discută doar pentru opțiunile și proiectele eligibile prezentate în catalog.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site cu plată lunară"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "сайт в рассрочку Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/launch-ready-websites",
+      "seoTitle": "Готовые сайты с адаптацией к вашему бизнесу | MONO/DEV",
+      "metaDescription": "Выберите основу из каталога и уточните путь к запуску: фирменный стиль, содержание, интеграции, домен и передача проекта.",
+      "h1": "Готовые сайты с адаптацией к вашему бизнесу",
+      "content": {
+        "existingIntro": "Проект из каталога позволяет оценить направление заранее. Вы видите структуру, экраны и существующие взаимодействия, после чего определяете, что подходит бизнесу и что нужно изменить.",
+        "existingScope": [
+          "Сопоставление выбранного проекта с задачами бизнеса.",
+          "Список замен бренда, текстов, фотографий и контактов.",
+          "Уточнение демонстрационных функций и нужных интеграций.",
+          "Проверка адаптированной версии и согласованные шаги передачи."
+        ],
+        "existingQuote": "Базовая цена указана на странице проекта. Адаптация и внешние сервисы уточняются отдельно. Аренда и рассрочка рассматриваются только для подходящих проектов и вариантов из каталога.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "сайт в рассрочку Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "аренда сайта Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/launch-ready-websites",
+      "seoTitle": "Готовые сайты с адаптацией к вашему бизнесу | MONO/DEV",
+      "metaDescription": "Выберите основу из каталога и уточните путь к запуску: фирменный стиль, содержание, интеграции, домен и передача проекта.",
+      "h1": "Готовые сайты с адаптацией к вашему бизнесу",
+      "content": {
+        "existingIntro": "Проект из каталога позволяет оценить направление заранее. Вы видите структуру, экраны и существующие взаимодействия, после чего определяете, что подходит бизнесу и что нужно изменить.",
+        "existingScope": [
+          "Сопоставление выбранного проекта с задачами бизнеса.",
+          "Список замен бренда, текстов, фотографий и контактов.",
+          "Уточнение демонстрационных функций и нужных интеграций.",
+          "Проверка адаптированной версии и согласованные шаги передачи."
+        ],
+        "existingQuote": "Базовая цена указана на странице проекта. Адаптация и внешние сервисы уточняются отдельно. Аренда и рассрочка рассматриваются только для подходящих проектов и вариантов из каталога.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "аренда сайта Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website rental Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/launch-ready-websites",
+      "seoTitle": "Launch-ready websites | MONO/DEV",
+      "metaDescription": "Choose a visible website foundation and scope its launch: brand adaptation, real content, integrations, domain setup and handover.",
+      "h1": "Launch-ready websites",
+      "content": {
+        "existingIntro": "A catalogue project gives you something concrete to review before development starts. Explore its structure, screens and existing interactions, then decide which parts fit your business and what needs to change.",
+        "existingScope": [
+          "A comparison of the selected project against your requirements.",
+          "A replacement list for branding, copy, photography and contacts.",
+          "Clear identification of demo behaviour and required integrations.",
+          "Review of the adapted version and agreed handover steps."
+        ],
+        "existingQuote": "The project's page provides its base price. Customisation and external services are clarified separately. Rental or instalment options apply only where the catalogue presents eligible terms.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website rental Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website payment plans Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Opțiuni de rate și chirie pentru proiectul ales",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/launch-ready-websites",
+      "seoTitle": "Launch-ready websites | MONO/DEV",
+      "metaDescription": "Choose a visible website foundation and scope its launch: brand adaptation, real content, integrations, domain setup and handover.",
+      "h1": "Launch-ready websites",
+      "content": {
+        "existingIntro": "A catalogue project gives you something concrete to review before development starts. Explore its structure, screens and existing interactions, then decide which parts fit your business and what needs to change.",
+        "existingScope": [
+          "A comparison of the selected project against your requirements.",
+          "A replacement list for branding, copy, photography and contacts.",
+          "Clear identification of demo behaviour and required integrations.",
+          "Review of the adapted version and agreed handover steps."
+        ],
+        "existingQuote": "The project's page provides its base price. Customisation and external services are clarified separately. Rental or instalment options apply only where the catalogue presents eligible terms.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/launch-ready-websites",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website payment plans Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://sitemasters.md/ro/",
+          "https://elevateweb.md/pricing/",
+          "https://ecom.md/ru"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "personalizare site Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/website-customization",
+      "seoTitle": "Personalizarea unui website sau proiect existent | MONO/DEV",
+      "metaDescription": "Adaptăm un proiect existent la brand și la cerințe noi, după o verificare a codului, conținutului și funcțiilor care trebuie păstrate.",
+      "h1": "Personalizarea unui website sau proiect existent",
+      "content": {
+        "existingIntro": "Poate ai găsit un proiect potrivit în catalog sau ai deja un website care are nevoie de schimbări. Pornim de la diferența concretă dintre ce există și ce trebuie să poată face versiunea următoare.",
+        "existingScope": [
+          "Analiza materialelor și a accesului necesar la proiect.",
+          "Lista de adaptări vizuale, texte și funcții agreate.",
+          "Implementarea modificărilor în limitele tehnice identificate.",
+          "Verificarea zonelor schimbate și a fluxurilor conectate."
+        ],
+        "existingQuote": "Estimarea se face după verificarea bazei existente. Schimbarea culorilor și textelor, o pagină nouă și o integrare nouă sunt sarcini distincte; prețul lor nu este dedus automat din costul proiectului.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "personalizare site Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "site în română rusă și engleză",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/website-customization",
+      "seoTitle": "Personalizarea unui website sau proiect existent | MONO/DEV",
+      "metaDescription": "Adaptăm un proiect existent la brand și la cerințe noi, după o verificare a codului, conținutului și funcțiilor care trebuie păstrate.",
+      "h1": "Personalizarea unui website sau proiect existent",
+      "content": {
+        "existingIntro": "Poate ai găsit un proiect potrivit în catalog sau ai deja un website care are nevoie de schimbări. Pornim de la diferența concretă dintre ce există și ce trebuie să poată face versiunea următoare.",
+        "existingScope": [
+          "Analiza materialelor și a accesului necesar la proiect.",
+          "Lista de adaptări vizuale, texte și funcții agreate.",
+          "Implementarea modificărilor în limitele tehnice identificate.",
+          "Verificarea zonelor schimbate și a fluxurilor conectate."
+        ],
+        "existingQuote": "Estimarea se face după verificarea bazei existente. Schimbarea culorilor și textelor, o pagină nouă și o integrare nouă sunt sarcini distincte; prețul lor nu este dedus automat din costul proiectului.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "site în română rusă și engleză"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "адаптация сайта Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/website-customization",
+      "seoTitle": "Адаптация существующего сайта или проекта | MONO/DEV",
+      "metaDescription": "Изменения бренда, содержания и функций существующего сайта после проверки кода и процессов, которые важно сохранить.",
+      "h1": "Адаптация существующего сайта или проекта",
+      "content": {
+        "existingIntro": "Вы можете выбрать основу из каталога или обратиться с уже работающим сайтом. Начинаем с конкретной разницы между текущей версией и тем, что должна делать следующая.",
+        "existingScope": [
+          "Проверка материалов и необходимого доступа к проекту.",
+          "Перечень согласованных изменений оформления, текстов и функций.",
+          "Реализация с учетом выявленных технических ограничений.",
+          "Проверка измененных частей и связанных сценариев."
+        ],
+        "existingQuote": "Расчет возможен после изучения существующей основы. Замена цветов, новая страница и новая интеграция оцениваются как разные задачи; цена исходного проекта их автоматически не определяет.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "адаптация сайта Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "сайт на румынском русском и английском",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/website-customization",
+      "seoTitle": "Адаптация существующего сайта или проекта | MONO/DEV",
+      "metaDescription": "Изменения бренда, содержания и функций существующего сайта после проверки кода и процессов, которые важно сохранить.",
+      "h1": "Адаптация существующего сайта или проекта",
+      "content": {
+        "existingIntro": "Вы можете выбрать основу из каталога или обратиться с уже работающим сайтом. Начинаем с конкретной разницы между текущей версией и тем, что должна делать следующая.",
+        "existingScope": [
+          "Проверка материалов и необходимого доступа к проекту.",
+          "Перечень согласованных изменений оформления, текстов и функций.",
+          "Реализация с учетом выявленных технических ограничений.",
+          "Проверка измененных частей и связанных сценариев."
+        ],
+        "existingQuote": "Расчет возможен после изучения существующей основы. Замена цветов, новая страница и новая интеграция оцениваются как разные задачи; цена исходного проекта их автоматически не определяет.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "сайт на румынском русском и английском"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website customization Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/website-customization",
+      "seoTitle": "Website customization | MONO/DEV",
+      "metaDescription": "Adapt an existing website's branding, content and functionality after reviewing its code, dependencies and the journeys that need to keep working.",
+      "h1": "Website customization",
+      "content": {
+        "existingIntro": "You may have selected a catalogue project or already own a website that needs changes. We start with the specific gap between the current version and the behaviour you want from the next one.",
+        "existingScope": [
+          "Review of available materials and required project access.",
+          "An agreed list of visual, content and functional changes.",
+          "Implementation within the technical constraints identified.",
+          "Checks of the changed areas and connected user journeys."
+        ],
+        "existingQuote": "We estimate after reviewing the existing foundation. A brand update, a new page and a new integration are different tasks; the original project price does not automatically cover them.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website customization Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "multilingual website Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Personalizarea unui site existent și adaptare lingvistică",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/website-customization",
+      "seoTitle": "Website customization | MONO/DEV",
+      "metaDescription": "Adapt an existing website's branding, content and functionality after reviewing its code, dependencies and the journeys that need to keep working.",
+      "h1": "Website customization",
+      "content": {
+        "existingIntro": "You may have selected a catalogue project or already own a website that needs changes. We start with the specific gap between the current version and the behaviour you want from the next one.",
+        "existingScope": [
+          "Review of available materials and required project access.",
+          "An agreed list of visual, content and functional changes.",
+          "Implementation within the technical constraints identified.",
+          "Checks of the changed areas and connected user journeys."
+        ],
+        "existingQuote": "We estimate after reviewing the existing foundation. A brand update, a new page and a new integration are different tasks; the original project price does not automatically cover them.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/website-customization",
+        "queryFilter": {
+          "type": "exact",
+          "value": "multilingual website Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://loco.md/",
+          "https://inocode.md/servicii/creare-site-web"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "mentenanță site Moldova",
+      "language": "ro",
+      "intent": "comercială",
+      "pageIntent": "Întreținerea tehnică a unui site existent",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ro/services/website-maintenance",
+      "seoTitle": "Mentenanță website și suport tehnic | MONO/DEV",
+      "metaDescription": "Mentenanță pentru website-uri existente: evaluare tehnică, actualizări, verificarea fluxurilor importante și un scop de suport stabilit în scris.",
+      "h1": "Mentenanță website și suport tehnic",
+      "content": {
+        "existingIntro": "După lansare, un website poate avea nevoie de actualizări, corecturi și adaptări la schimbările serviciilor externe. Începem prin a înțelege cum este publicat proiectul și care sunt funcțiile importante pentru afacere.",
+        "existingScope": [
+          "Evaluarea tehnică a proiectului și a modului de publicare.",
+          "Lista actualizărilor și verificărilor convenite.",
+          "Verificarea fluxurilor afectate după intervenție.",
+          "Clarificarea acceselor, responsabilităților și procedurii de revenire."
+        ],
+        "existingQuote": "Oferta poate fi pentru o intervenție concretă sau un scop recurent, după evaluare. Timpii de răspuns, programul, frecvența copiilor și costurile sunt valabile numai dacă sunt stabilite explicit; această pagină nu promite suport permanent.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ro",
+        "/ro/services",
+        "/ro/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ro/services/website-maintenance",
+        "queryFilter": {
+          "type": "exact",
+          "value": "mentenanță site Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://elevateweb.md/pricing/",
+          "https://webup.md/"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "обслуживание сайта Молдова",
+      "language": "ru",
+      "intent": "comercială",
+      "pageIntent": "Întreținerea tehnică a unui site existent",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/ru/services/website-maintenance",
+      "seoTitle": "Обслуживание сайтов и техническая поддержка | MONO/DEV",
+      "metaDescription": "Техническое обслуживание сайтов: оценка состояния, обновления, проверка важных сценариев и согласованные границы поддержки.",
+      "h1": "Обслуживание сайтов и техническая поддержка",
+      "content": {
+        "existingIntro": "После запуска сайту могут потребоваться исправления, обновления и адаптация к внешним сервисам. Сначала изучаем способ публикации и функции, от которых зависит работа бизнеса.",
+        "existingScope": [
+          "Техническая оценка проекта и процесса публикации.",
+          "Согласованный перечень обновлений и проверок.",
+          "Проверка затронутых пользовательских сценариев.",
+          "Уточнение доступов, ответственности и порядка отката."
+        ],
+        "existingQuote": "После оценки возможен расчет разовой задачи или регулярного объема. Сроки ответа, график, резервное копирование и стоимость действуют только при явном согласовании; страница не обещает круглосуточную поддержку.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/ru",
+        "/ru/services",
+        "/ru/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/ru/services/website-maintenance",
+        "queryFilter": {
+          "type": "exact",
+          "value": "обслуживание сайта Молдова"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://elevateweb.md/pricing/",
+          "https://webup.md/"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    },
+    {
+      "keyword": "website maintenance Moldova",
+      "language": "en",
+      "intent": "comercială",
+      "pageIntent": "Întreținerea tehnică a unui site existent",
+      "commercialRelevance": "ofertă relevantă; cerere de validat",
+      "page": "https://monodev.md/en/services/website-maintenance",
+      "seoTitle": "Website maintenance and technical support | MONO/DEV",
+      "metaDescription": "Maintenance for existing websites, starting with a technical review and an agreed scope for updates, fixes and critical journey checks.",
+      "h1": "Website maintenance and technical support",
+      "content": {
+        "existingIntro": "A launched website may need updates, corrections and changes as external services evolve. We first review how it is deployed and which functions matter to your day-to-day operations.",
+        "existingScope": [
+          "Technical review of the project and deployment process.",
+          "An agreed list of updates and checks.",
+          "Verification of affected user journeys after changes.",
+          "Clarification of access, responsibilities and rollback steps."
+        ],
+        "existingQuote": "We can scope a specific intervention or recurring work after review. Response times, coverage hours, backup frequency and costs apply only when explicitly agreed; this page does not promise around-the-clock support.",
+        "needed": "Păstrează explicațiile despre funcții, proces, cost și responsabilități. Extinderile vizibile se aprobă separat."
+      },
+      "internalLinks": [
+        "/en",
+        "/en/services",
+        "/en/contact"
+      ],
+      "cannibalizationRisk": "Redus dacă se păstrează intenția distinctă; nu crea duplicate pentru variații sau orașe.",
+      "measurement": {
+        "tool": "Google Search Console",
+        "type": "Web",
+        "country": "Moldova",
+        "pageFilter": "https://monodev.md/en/services/website-maintenance",
+        "queryFilter": {
+          "type": "exact",
+          "value": "website maintenance Moldova"
+        },
+        "period": "28 zile vs 28 zile anterioare; comparație pe dispozitive, limbă și brand/non-brand",
+        "metrics": [
+          "impresii",
+          "clickuri",
+          "CTR",
+          "poziție medie",
+          "interogări cu impresii și poziție medie <=10",
+          "interogări cu impresii și poziție medie <=3"
+        ]
+      },
+      "evidence": {
+        "topicSources": [
+          "https://elevateweb.md/pricing/",
+          "https://webup.md/"
+        ],
+        "status": "ipoteză de validat; sursele arată oferta, nu cererea exactă",
+        "monthlyVolume": null,
+        "googleMdRank": null
+      }
+    }
+  ]
+}

@@ -39,7 +39,7 @@ function objectKeys(source, property) {
 }
 
 const [page, i18n, translations, gardens, romanianDetails] = await Promise.all([
-  read("app/page.tsx"),
+  read("app/lib/project-catalog.ts"),
   read("app/i18n.ts"),
   read("app/new-project-translations.ts"),
   read("app/garden-projects.ts"),
@@ -50,7 +50,7 @@ const catalog = between(page, "const projectCatalog", "const pricesByProjectId")
 const catalogIds = unique([...idsIn(catalog), ...idsIn(gardens)]);
 const gardenIds = unique(idsIn(gardens));
 const legacyDescriptionIds = numericKeysIn(between(i18n, "const descriptions", "export function localDescription"));
-const legacyDetailIds = numericKeysIn(between(page, "const projectDetails", "function ProjectVisual"));
+const legacyDetailIds = numericKeysIn(page.slice(page.indexOf("const projectDetails")));
 const roDetailIds = unique([...numericKeysIn(romanianDetails), ...gardenIds, ...legacyDetailIds]);
 
 const issues = [];

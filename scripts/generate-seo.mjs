@@ -1,0 +1,12 @@
+import { writeFileSync } from "node:fs";
+import { loadSiteModule } from "./load-site-data.mjs";
+const { locales, canonicalUrl, alternateLanguages, siteConfig } = loadSiteModule("app/lib/site-config.ts");
+const { indexablePaths } = loadSiteModule("app/lib/seo-routes.ts");
+const paths = indexablePaths();
+if (new Set(paths).size !== paths.length) throw new Error("Duplicate canonical route in sitemap data");
+const xml = value => String(value).replace(/[<>&"']/g, char => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' })[char]);
+const entries = paths.flatMap(path => locales.map(locale => `  <url>\n    <loc>${xml(canonicalUrl(locale, path))}</loc>\n${Object.entries(alternateLanguages(path)).map(([language, url]) => `    <xhtml:link rel="alternate" hreflang="${language}" href="${xml(url)}" />`).join("\n")}\n  </url>`));
+writeFileSync("public/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`);
+writeFileSync("public/robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${siteConfig.url}/sitemap.xml\n`);
+writeFileSync("public/site.webmanifest", JSON.stringify({ name: siteConfig.name, short_name: siteConfig.name, start_url: "/ro", display: "browser", background_color: "#111210", theme_color: "#8466ff", icons: [192, 512].map(size => ({ src: `/icon-${size}.png`, sizes: `${size}x${size}`, type: "image/png" })) }, null, 2) + "\n");
+console.log(`SEO: generated robots, sitemap (${entries.length} URLs), manifest`);

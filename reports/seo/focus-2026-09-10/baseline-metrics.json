@@ -1,0 +1,18 @@
+{
+  "ro": {
+    "htmlBytes": 82870,
+    "gzipBytes": 15589
+  },
+  "ru": {
+    "htmlBytes": 90399,
+    "gzipBytes": 17320
+  },
+  "en": {
+    "htmlBytes": 82346,
+    "gzipBytes": 15369
+  },
+  "build": {
+    "files": 10947,
+    "bytes": 263500302
+  }
+}

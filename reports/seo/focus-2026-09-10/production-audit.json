@@ -1,0 +1,439 @@
+{
+  "checkedAt": "2026-09-10T14:06:42.584Z",
+  "checks": [
+    {
+      "url": "https://monodev.md/ro",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/robots.txt",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/sitemap.xml",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/sitemap.xml",
+      "expected": 57,
+      "actual": 0,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/__seo_missing_page_9b723a__",
+      "expected": 404,
+      "actual": 404,
+      "pass": true
+    },
+    {
+      "url": "https://monodev.md/ro/projects/aquaverde",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/projects/aquaverde",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/services/business-websites",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/projects/terraforma",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/projects/terraforma",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/services/web-design",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/projects/gazonpro",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/projects/gazonpro",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/services/ecommerce",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?lang=ru",
+      "expected": "301 https://monodev.md/ru",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?lang=en&proiect=aquaverde",
+      "expected": "301 https://monodev.md/en/projects/aquaverde",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?proiect=aquaverde&lang=en",
+      "expected": "301 https://monodev.md/en/projects/aquaverde",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://www.monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "301 https://monodev.md/",
+      "pass": false
+    },
+    {
+      "url": "http://monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "301 https://monodev.md/",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/cabinet",
+      "expected": "X-Robots-Tag: noindex, nofollow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/index.html",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/preview",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/preview.html",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/project-previews/aquaverde-screenshot.webp",
+      "expected": "200, no noindex on the project image",
+      "actual": "404 ",
+      "pass": false
+    }
+  ],
+  "issues": [
+    {
+      "url": "https://monodev.md/ro",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/robots.txt",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/sitemap.xml",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/sitemap.xml",
+      "expected": 57,
+      "actual": 0,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/projects/aquaverde",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/projects/aquaverde",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/services/business-websites",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ro/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/projects/terraforma",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/projects/terraforma",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/services/web-design",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/ru/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/projects/gazonpro",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/projects/gazonpro",
+      "expected": "noindex, follow in HTML and header",
+      "actual": {
+        "meta": "noindex",
+        "header": ""
+      },
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/services/ecommerce",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/contact",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/en/intrebari",
+      "expected": 200,
+      "actual": 404,
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?lang=ru",
+      "expected": "301 https://monodev.md/ru",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?lang=en&proiect=aquaverde",
+      "expected": "301 https://monodev.md/en/projects/aquaverde",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/?proiect=aquaverde&lang=en",
+      "expected": "301 https://monodev.md/en/projects/aquaverde",
+      "actual": "200 undefined",
+      "pass": false
+    },
+    {
+      "url": "https://www.monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "301 https://monodev.md/",
+      "pass": false
+    },
+    {
+      "url": "http://monodev.md/",
+      "expected": "301 https://monodev.md/ro",
+      "actual": "301 https://monodev.md/",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/cabinet",
+      "expected": "X-Robots-Tag: noindex, nofollow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/index.html",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/preview",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/aquaverde/preview.html",
+      "expected": "X-Robots-Tag: noindex, follow",
+      "actual": "",
+      "pass": false
+    },
+    {
+      "url": "https://monodev.md/project-previews/aquaverde-screenshot.webp",
+      "expected": "200, no noindex on the project image",
+      "actual": "404 ",
+      "pass": false
+    }
+  ]
+}

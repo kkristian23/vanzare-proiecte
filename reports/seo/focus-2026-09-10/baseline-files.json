@@ -1,0 +1,1010 @@
+{
+  "backup": "C:\\Users\\c0788\\AppData\\Local\\Temp\\monodev-seo-baseline-iecwv70x",
+  "status": " M .gitignore\n M app/brand-logo.tsx\n M app/cabinet/layout.tsx\n M app/cabinet/page.tsx\n M app/contact/contact.css\n M app/contact/layout.tsx\n M app/contact/page.tsx\n M app/globals.css\n M app/i18n.ts\n M app/intrebari/intrebari.css\n M app/intrebari/page.tsx\n M app/layout.tsx\n M app/live-project-preview.tsx\n M app/page-language-switch.css\n M app/page.tsx\n M app/why-section.css\n M eslint.config.mjs\n M graphify-out/GRAPH_REPORT.md\n M graphify-out/graph.json\n M graphify-out/reflections/LESSONS.md\n M netlify.toml\n M package.json\n M public/archicontract/_next/static/chunks/0t1mk9f5s0n14.js\n M reports/project-image-optimization.json\n M scripts/audit-findings-recheck.mjs\n M scripts/audit-interactions-recheck.mjs\n M scripts/audit-translations.mjs\n M scripts/integrate-new-projects.mjs\n M scripts/sync-showcase.mjs\n M tests/rendered-html.test.mjs\n M tests/showcase-archi-actions.test.mjs\n M tests/showcase-favicons.test.mjs\n?? .env.example\n?? SEO_IMPLEMENTATION_REPORT.md\n?? SEO_LAUNCH_CHECKLIST.md\n?? app/[locale]/about/page.tsx\n?? app/[locale]/contact/page.tsx\n?? app/[locale]/cookies/page.tsx\n?? app/[locale]/intrebari/page.tsx\n?? app/[locale]/layout.tsx\n?? app/[locale]/page.tsx\n?? app/[locale]/privacy/page.tsx\n?? app/[locale]/process/page.tsx\n?? app/[locale]/projects/[slug]/page.tsx\n?? app/[locale]/services/[slug]/page.tsx\n?? app/[locale]/services/page.tsx\n?? app/[locale]/terms/page.tsx\n?? app/analytics-consent.css\n?? app/base.css\n?? app/components/analytics-consent.tsx\n?? app/components/html-document.tsx\n?? app/components/json-ld.tsx\n?? app/components/seo-shell.tsx\n?? app/components/trust-page.tsx\n?? app/contact/contact-client.tsx\n?? app/home-client.tsx\n?? app/home-hero.css\n?? app/intrebari/faq-client.tsx\n?? app/lib/analytics.ts\n?? app/lib/contact-request.ts\n?? app/lib/faq-content.ts\n?? app/lib/faq-translations.ts\n?? app/lib/faq-ui.ts\n?? app/lib/legacy-project-translations.ts\n?? app/lib/project-card-images.ts\n?? app/lib/project-catalog.ts\n?? app/lib/project-images.ts\n?? app/lib/services.ts\n?? app/lib/site-config.ts\n?? app/lib/trust-content.ts\n?? app/not-found.tsx\n?? app/project-pages.css\n?? app/seo-pages.css\n?? docs/seo-architecture.md\n?? docs/seo-editorial-plan.md\n?? docs/seo-file-inventory.md\n?? public/_headers\n?? public/_redirects\n?? public/apple-touch-icon.png\n?? public/favicon.ico\n?? public/icon-192.png\n?? public/icon-512.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-centered.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-clean.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-editorial.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-english-subtitle.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-informativ.png\n?? public/monodev-ad-covers/01-proiecte-business-monodev-style.png\n?? public/monodev-ad-covers/01-proiecte-business.png\n?? public/monodev-ad-covers/01-site-business.png\n?? public/monodev-ad-covers/02-magazin-online.png\n?? public/monodev-ad-covers/03-programari-online.png\n?? public/monodev-ad-covers/04-crm-automatizari.png\n?? public/monodev-ad-covers/05-imobiliare.png\n?? public/partner-campaign/market9000.webp\n?? public/partner-campaign/micora.webp\n?? public/project-card-previews/01-eventora-480.webp\n?? public/project-card-previews/01-eventora-800.webp\n?? public/project-card-previews/02-scena-city-480.webp\n?? public/project-card-previews/02-scena-city-800.webp\n?? public/project-card-previews/03-pulse-tickets-480.webp\n?? public/project-card-previews/03-pulse-tickets-800.webp\n?? public/project-card-previews/04-clinica-nova-480.webp\n?? public/project-card-previews/04-clinica-nova-800.webp\n?? public/project-card-previews/05-laboris-480.webp\n?? public/project-card-previews/05-laboris-800.webp\n?? public/project-card-previews/06-doctor-aproape-480.webp\n?? public/project-card-previews/06-doctor-aproape-800.webp\n?? public/project-card-previews/07-med-slot-480.webp\n?? public/project-card-previews/07-med-slot-800.webp\n?? public/project-card-previews/08-lead-pilot-480.webp\n?? public/project-card-previews/08-lead-pilot-800.webp\n?? public/project-card-previews/09-growth-desk-480.webp\n?? public/project-card-previews/09-growth-desk-800.webp\n?? public/project-card-previews/10-closeflow-480.webp\n?? public/project-card-previews/10-closeflow-800.webp\n?? public/project-card-previews/11-partmatch-480.webp\n?? public/project-card-previews/11-partmatch-800.webp\n?? public/project-card-previews/12-garage-box-480.webp\n?? public/project-card-previews/12-garage-box-800.webp\n?? public/project-card-previews/13-motor-supply-480.webp\n?? public/project-card-previews/13-motor-supply-800.webp\n?? public/project-card-previews/14-auto-grid-480.webp\n?? public/project-card-previews/14-auto-grid-800.webp\n?? public/project-card-previews/15-park-suites-demo-480.webp\n?? public/project-card-previews/15-park-suites-demo-800.webp\n?? public/project-card-previews/16-urban-haven-480.webp\n?? public/project-card-previews/16-urban-haven-800.webp\n?? public/project-card-previews/17-nest-collection-480.webp\n?? public/project-card-previews/17-nest-collection-800.webp\n?? public/project-card-previews/18-moldova-escape-480.webp\n?? public/project-card-previews/18-moldova-escape-800.webp\n?? public/project-card-previews/19-bazar-local-480.webp\n?? public/project-card-previews/19-bazar-local-800.webp\n?? public/project-card-previews/20-pret-bun-480.webp\n?? public/project-card-previews/20-pret-bun-800.webp\n?? public/project-card-previews/21-local-craft-480.webp\n?? public/project-card-previews/21-local-craft-800.webp\n?? public/project-card-previews/22-skillup-480.webp\n?? public/project-card-previews/22-skillup-800.webp\n?? public/project-card-previews/23-civic-learn-480.webp\n?? public/project-card-previews/23-civic-learn-800.webp\n?? public/project-card-previews/24-mentor-cloud-480.webp\n?? public/project-card-previews/24-mentor-cloud-800.webp\n?? public/project-card-previews/25-casa-check-480.webp\n?? public/project-card-previews/25-casa-check-800.webp\n?? public/project-card-previews/26-direct-home-480.webp\n?? public/project-card-previews/26-direct-home-800.webp\n?? public/project-card-previews/27-area-insight-480.webp\n?? public/project-card-previews/27-area-insight-800.webp\n?? public/project-card-previews/28-table-flow-480.webp\n?? public/project-card-previews/28-table-flow-800.webp\n?? public/project-card-previews/29-food-route-480.webp\n?? public/project-card-previews/29-food-route-800.webp\n?? public/project-card-previews/30-menu-studio-480.webp\n?? public/project-card-previews/30-menu-studio-800.webp\n?? public/project-card-previews/31-my-utility-480.webp\n?? public/project-card-previews/31-my-utility-800.webp\n?? public/project-card-previews/32-block-admin-480.webp\n?? public/project-card-previews/32-block-admin-800.webp\n?? public/project-card-previews/academia-480.webp\n?? public/project-card-previews/academia-800.webp\n?? public/project-card-previews/aquaverde-480.webp\n?? public/project-card-previews/aquaverde-800.webp\n?? public/project-card-previews/autoflow-partner-480.webp\n?? public/project-card-previews/autoflow-partner-800.webp\n?? public/project-card-previews/drivolt-480.webp\n?? public/project-card-previews/drivolt-800.webp\n?? public/project-card-previews/ecohabitat-480.webp\n?? public/project-card-previews/ecohabitat-800.webp\n?? public/project-card-previews/flow-crm-480.webp\n?? public/project-card-previews/flow-crm-800.webp\n?? public/project-card-previews/gazonpro-480.webp\n?? public/project-card-previews/gazonpro-800.webp\n?? public/project-card-previews/imobilia-one-480.webp\n?? public/project-card-previews/imobilia-one-800.webp\n?? public/project-card-previews/medora-clinic-480.webp\n?? public/project-card-previews/medora-clinic-800.webp\n?? public/project-card-previews/staynest-480.webp\n?? public/project-card-previews/staynest-800.webp\n?? public/project-card-previews/tableo-480.webp\n?? public/project-card-previews/tableo-800.webp\n?? public/project-card-previews/terraforma-480.webp\n?? public/project-card-previews/terraforma-800.webp\n?? public/project-card-previews/yardcraft-480.webp\n?? public/project-card-previews/yardcraft-800.webp\n?? public/project-previews/aquaverde-screenshot.webp\n?? public/project-previews/archicontract-screenshot.webp\n?? public/project-previews/atelier-noire-screenshot.webp\n?? public/project-previews/audio-rental-md-screenshot.webp\n?? public/project-previews/contor-acasa-screenshot.webp\n?? public/project-previews/ecohabitat-screenshot.webp\n?? public/project-previews/elan-screenshot.webp\n?? public/project-previews/fixora-screenshot.webp\n?? public/project-previews/forma-living-screenshot.webp\n?? public/project-previews/gazonpro-screenshot.webp\n?? public/project-previews/iqcalendar-screenshot.webp\n?? public/project-previews/market9000-screenshot.webp\n?? public/project-previews/micora-screenshot.webp\n?? public/project-previews/neo-booking-screenshot.webp\n?? public/project-previews/neobarberclub-screenshot.webp\n?? public/project-previews/noma-screenshot.webp\n?? public/project-previews/nord-and-oak-screenshot.webp\n?? public/project-previews/pophaus-screenshot.webp\n?? public/project-previews/rentech-screenshot.webp\n?? public/project-previews/studio-forma-screenshot.webp\n?? public/project-previews/studio-velora-screenshot.webp\n?? public/project-previews/terraforma-screenshot.webp\n?? public/project-previews/yardcraft-screenshot.webp\n?? public/robots.txt\n?? public/site.webmanifest\n?? public/sitemap.xml\n?? reports/seo/browser-review.json\n?? reports/seo/garden-screenshot-review.jpg\n?? reports/seo/lighthouse-mobile-home-before-fixes.json\n?? reports/seo/lighthouse-mobile-home-compressed-before-card-optimization.json\n?? reports/seo/lighthouse-mobile-home-final-compressed.json\n?? reports/seo/lighthouse-mobile-home.json\n?? reports/seo/lighthouse-mobile-project-before-fixes.json\n?? reports/seo/lighthouse-mobile-project-compressed-before-card-optimization.json\n?? reports/seo/lighthouse-mobile-project-final-compressed.json\n?? reports/seo/lighthouse-mobile-project.json\n?? reports/seo/netlify-parser-validation.json\n?? reports/seo/performance-summary-before-card-optimization.json\n?? reports/seo/performance-summary.json\n?? reports/seo/project-card-images.json\n?? reports/seo/project-card-visual-1.png\n?? reports/seo/project-card-visual-2.png\n?? reports/seo/screenshots/en-390.png\n?? reports/seo/screenshots/en-intrebari-1440.png\n?? reports/seo/screenshots/en-projects-aquaverde-390.png\n?? reports/seo/screenshots/en-services-website-customization-390.png\n?? reports/seo/screenshots/ro-1440.png\n?? reports/seo/screenshots/ro-projects-flow-crm-1440.png\n?? reports/seo/screenshots/ro-services-business-websites-1440.png\n?? reports/seo/screenshots/ru-1440.png\n?? reports/seo/screenshots/ru-contact-390.png\n?? reports/seo/screenshots/ru-projects-04-clinica-nova-390.png\n?? reports/seo/screenshots/ru-services-ecommerce-390.png\n?? reports/seo/static-audit.json\n?? scripts/audit-seo.mjs\n?? scripts/generate-project-card-images.mjs\n?? scripts/generate-seo.mjs\n?? scripts/load-site-data.mjs\n?? scripts/netlify-seo.mjs\n?? scripts/normalize-showcase-interactions.mjs\n?? scripts/serve-seo.mjs\n?? tests/normalize-showcase-interactions.test.mjs\n?? tests/seo-browser.test.mjs\n?? tests/seo.test.mjs\n?? tests/showcase-archi-navigation.test.mjs\n",
+  "files": {
+    "app/[locale]/cookies/page.tsx": {
+      "sha256": "48a59006950cd332051503de4458f02833ff152fe03e48a1663f1bb79b09d3e7",
+      "bytes": 472
+    },
+    "public/project-previews/micora-screenshot.webp": {
+      "sha256": "a2f577bb0f3ae527c69c5d6593fa1afcddede632604349364a3f0b02873ba815",
+      "bytes": 36920
+    },
+    "app/[locale]/process/page.tsx": {
+      "sha256": "2be869b595f9dbeb19b9e350713f60e1f35285ffbc86448a894c357f962748c2",
+      "bytes": 472
+    },
+    "app/[locale]/privacy/page.tsx": {
+      "sha256": "11de2c3b03dced1d6ddda789db28d0cb29c8e6f4e7bc61b4a331b60bda681b61",
+      "bytes": 472
+    },
+    "public/project-card-previews/06-doctor-aproape-800.webp": {
+      "sha256": "6e42cf36a083c99a13f8d2abd877e764ce27b018d0859e75157ac4d8e617ff73",
+      "bytes": 27542
+    },
+    ".gitignore": {
+      "sha256": "bae073d3ef5b1e55dba78d45b11a1212e201a13204b22eda8b044899f276fb38",
+      "bytes": 1277
+    },
+    "app/seo-pages.css": {
+      "sha256": "a1c46b7d4e307e77b64c9a3b7ddec2d408ffe217cd08252c2a9b1eb5c6fefbd8",
+      "bytes": 2764
+    },
+    "scripts/generate-seo.mjs": {
+      "sha256": "c415fd96d45c652862559e8c9188ee9388f77e34c053541eb89fb414e7c74116",
+      "bytes": 1845
+    },
+    "public/project-card-previews/07-med-slot-480.webp": {
+      "sha256": "99d0c053fab67dcd9f5512f785b7d8aa9418acd461fa98d4544c860655c9bcbf",
+      "bytes": 12110
+    },
+    "public/_redirects": {
+      "sha256": "af5a477304df929b71685be186b4ee831027d1a1a1a6c314c65cfb5d84c8bfad",
+      "bytes": 106891
+    },
+    "public/monodev-ad-covers/01-proiecte-business.png": {
+      "sha256": "dadac8b7c6e311d5fc8b5067dc58792392d95f07529abf84b31c0072d72cd80d",
+      "bytes": 1506560
+    },
+    "app/intrebari/faq-client.tsx": {
+      "sha256": "d75929d7de451752b5b84512dbe5a73f3596f3fb467f13810bc915fc700673e8",
+      "bytes": 8453
+    },
+    "public/project-card-previews/32-block-admin-480.webp": {
+      "sha256": "8741046b8e3c5bcf5240c188d0c73a31bc7fe804db0009b94087583904af08f2",
+      "bytes": 11122
+    },
+    "app/components/html-document.tsx": {
+      "sha256": "a78a7025f1fc6b4db9b7e4134346b0e226300c043ed8cf2149254e16753f5d64",
+      "bytes": 455
+    },
+    "tests/showcase-archi-actions.test.mjs": {
+      "sha256": "7c32f6241519bdff903ed08f6296fd7bdea64aad96723a4e05b1c37cf461ef60",
+      "bytes": 6230
+    },
+    "public/project-card-previews/medora-clinic-480.webp": {
+      "sha256": "82f41ff51ce2942fbcc652d2fbc2c906a14b61d4196d09224e255e0162b06c6d",
+      "bytes": 18028
+    },
+    "scripts/audit-seo.mjs": {
+      "sha256": "eb9494f021bf866c0960d56c9c71d135702c6d10e81b084020afe51f78c3a363",
+      "bytes": 22441
+    },
+    "public/project-card-previews/medora-clinic-800.webp": {
+      "sha256": "a49053e94a0bb8c9a2deaf1d089adb5a8323ef212345b4f070625bc511228a7b",
+      "bytes": 35218
+    },
+    "app/not-found.tsx": {
+      "sha256": "f71a028ad013abdfb15a3303460725d2892715ecbcd472a9eb6908a165ae6038",
+      "bytes": 404
+    },
+    "public/project-card-previews/21-local-craft-480.webp": {
+      "sha256": "48b64a6a32aa6bd6f9844743d75774eb347c6cf9fe593a1cfbcc0566755fcff1",
+      "bytes": 21212
+    },
+    "graphify-out/graph.json": {
+      "sha256": "1fda2c86121aeccab5f7b2e582c2d0a0a6e401c48ce3cec100b4d38be3e05485",
+      "bytes": 1621279
+    },
+    "scripts/generate-project-card-images.mjs": {
+      "sha256": "4d2b741dc6561306ef51376be28c294bcad6aa8ae12f680fee5eee120f55af35",
+      "bytes": 4934
+    },
+    "docs/seo-architecture.md": {
+      "sha256": "f4264ea71f8f450f79e4ddec148b516f11de1086990e64b1d06067985e593cfe",
+      "bytes": 9195
+    },
+    "reports/seo/screenshots/ru-contact-390.png": {
+      "sha256": "fdfec2e8c1f0961b7c11216fa542da06f0d3fcdec660b72a5b1e42ff7feac0fd",
+      "bytes": 64545
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-centered.png": {
+      "sha256": "1ac456f769da6b1f563771a78bf5ae7828f18d614b3ab8c533623eeb8dac639a",
+      "bytes": 1557284
+    },
+    "public/project-card-previews/12-garage-box-800.webp": {
+      "sha256": "57ca3ddcdfb63e22f9629d18a0e1309050135eb62bd3b92e969553bd919c12c8",
+      "bytes": 25636
+    },
+    "public/project-card-previews/17-nest-collection-800.webp": {
+      "sha256": "1ef1d19431e18556ba7f8375a56a5ae803f0eaf6fead1ff15b855b586d3d8555",
+      "bytes": 51456
+    },
+    "public/project-card-previews/23-civic-learn-480.webp": {
+      "sha256": "019a79237a48f4c62552e30f2761192d29565dd7a30eb25101332ed60e5143b3",
+      "bytes": 15054
+    },
+    "app/lib/faq-content.ts": {
+      "sha256": "258dbd13cbe218baa0bc8d1e12b3c6a0dd652e7add2433ba9b6ccc6d84c96576",
+      "bytes": 16149
+    },
+    "app/lib/faq-translations.ts": {
+      "sha256": "2b04f52b2bb01ab95edcad8a7a87955caaf3df7c7dc4a62d8af5529016a3cb57",
+      "bytes": 43705
+    },
+    "public/project-previews/archicontract-screenshot.webp": {
+      "sha256": "6c744e090dd03baa007acf170d1681b89b5a07d03293b8d39dc2e9b07fda40d9",
+      "bytes": 63826
+    },
+    "reports/seo/screenshots/ru-services-ecommerce-390.png": {
+      "sha256": "9b5f0450deb6f18e162acad15962e553c49e70ba4481060330157e395cee66dc",
+      "bytes": 81240
+    },
+    "reports/seo/lighthouse-mobile-home-compressed-before-card-optimization.json": {
+      "sha256": "cb8d55eb0dd146d04268ad4529670abd43c7e0f39468e98b05fc36992577b936",
+      "bytes": 877344
+    },
+    "public/project-card-previews/24-mentor-cloud-480.webp": {
+      "sha256": "1bd42c637e55f512d3c63231266aa46cbdf5898163b397f33d8adc13a66ff92f",
+      "bytes": 20776
+    },
+    "app/[locale]/terms/page.tsx": {
+      "sha256": "d8b3837540e8624bf8ee1dd8255bbeefca043508227c4d89ac68edd22214e1a0",
+      "bytes": 468
+    },
+    "public/project-card-previews/03-pulse-tickets-480.webp": {
+      "sha256": "a15914a7440ea0ba300c2b159a01dff5b9757ae083d3cedd50ebf5d4a81dd30b",
+      "bytes": 9396
+    },
+    "reports/seo/performance-summary.json": {
+      "sha256": "db63164a9d641de362f1ea4bb09f3e4449238f0c1b293153ff9d28d26886ff95",
+      "bytes": 55232
+    },
+    "public/project-card-previews/yardcraft-800.webp": {
+      "sha256": "6f5b6e0569a92d0c001fe3a69378403678ef9ec3b684101e78272ccb3c2a0124",
+      "bytes": 159572
+    },
+    "public/project-card-previews/29-food-route-480.webp": {
+      "sha256": "9c5ddfceeaea39565c7e605970f15b2779875743e32c3b617c6fe07c16053203",
+      "bytes": 27390
+    },
+    "public/project-card-previews/31-my-utility-800.webp": {
+      "sha256": "6f4745ee744e95ca83ed48a9dc98cb69d1b5e8f8203304dd2505fb97f59b0b3e",
+      "bytes": 20026
+    },
+    "public/project-card-previews/academia-800.webp": {
+      "sha256": "55e072358c247c8c98083075b5d1b8b8aca4cdf22047312c75ff0e4e1738d282",
+      "bytes": 32236
+    },
+    "public/project-card-previews/drivolt-480.webp": {
+      "sha256": "dcdfdffc0dd1025135987bc8ec9ed8e1f0a2fbea608e6b329a05fa19b16b4f71",
+      "bytes": 13822
+    },
+    "public/project-card-previews/11-partmatch-800.webp": {
+      "sha256": "1f6236224d35adae484f044677631fb27d5a51ac3c04fca5996cd9f8f3e488b4",
+      "bytes": 34162
+    },
+    "public/project-card-previews/04-clinica-nova-800.webp": {
+      "sha256": "c9f53c537daabc656a16a137411b354a539f14eb01080fbd8866672f855f736e",
+      "bytes": 41892
+    },
+    "public/project-card-previews/14-auto-grid-480.webp": {
+      "sha256": "9b67b7033661c10950715c256a54c87e6c8a395957d5e20e6c5a507905bd44e8",
+      "bytes": 15304
+    },
+    "reports/seo/lighthouse-mobile-home-final-compressed.json": {
+      "sha256": "a25c29e7011a8153a22b769b48ad08cb906356d45a60c278432470de9e8fd87c",
+      "bytes": 886482
+    },
+    "public/project-card-previews/25-casa-check-480.webp": {
+      "sha256": "e995d6698682586ea6d19d44a6caf2514fd7d527f58d63f8e847a4598b829f3d",
+      "bytes": 25850
+    },
+    "public/project-card-previews/19-bazar-local-800.webp": {
+      "sha256": "4d01d3757a4cd4bea9df5be38dc79f55709dfec3630804556af7e8b6e99060cc",
+      "bytes": 44610
+    },
+    "public/project-card-previews/10-closeflow-800.webp": {
+      "sha256": "3d1cec478cb1dc2022edcef4afb43a0237e51ef8381a8b6e8645f316c649f3a3",
+      "bytes": 22870
+    },
+    "public/project-card-previews/27-area-insight-800.webp": {
+      "sha256": "00e08a3035f4c2c8ef2428e666b3da4b3109e5f419369198b51dfdbc0c6b0a7b",
+      "bytes": 27792
+    },
+    "public/apple-touch-icon.png": {
+      "sha256": "cce3daa4927c07756378c2a592dbde3d3ee5ef4136fef8f473cc12622aaa36c4",
+      "bytes": 4258
+    },
+    "public/project-previews/forma-living-screenshot.webp": {
+      "sha256": "5de519ff97b18ad97350aee1c29b14a370d3cebb6f445b498f5539e1950f2aaa",
+      "bytes": 62326
+    },
+    "public/project-previews/market9000-screenshot.webp": {
+      "sha256": "bc485bec5b3b67244a6c40bc79ab609bf7682e60984af61baed46baef98014ac",
+      "bytes": 60914
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-style.png": {
+      "sha256": "3b7a8ae3ebad4a1256ee2d9c5b6c1fb0046a04d88685f2e5249984afbca3117e",
+      "bytes": 1718159
+    },
+    "reports/seo/screenshots/ru-1440.png": {
+      "sha256": "a794a1ba3d8496fd7a6f5a74467f5680b05ff06b637701550fd5108465d9425f",
+      "bytes": 299256
+    },
+    "app/lib/contact-request.ts": {
+      "sha256": "1d1a533e09384208da68ad89f2de0007c9b4d981515f1010684b3991c65a37f2",
+      "bytes": 1833
+    },
+    "scripts/sync-showcase.mjs": {
+      "sha256": "c5feac7df54f69488a8345b1c690302cb7739b4628d7c1e6c4d56d1a502e1ef1",
+      "bytes": 12143
+    },
+    "public/project-previews/neo-booking-screenshot.webp": {
+      "sha256": "f8c4d5f4fb03d0382f2fa54d219c86c1ee30bc7e6b8ddd5b708e882000c7eaed",
+      "bytes": 33908
+    },
+    "public/project-card-previews/05-laboris-480.webp": {
+      "sha256": "f7cfb123482e960a51556a3990c4d3c719d45448a526b3ddc4926208b733f713",
+      "bytes": 10616
+    },
+    "app/[locale]/page.tsx": {
+      "sha256": "999dfa4dbe6f4473af0d51d18ef48d9c8be1b2998c0523d47b7815bfe5a6a449",
+      "bytes": 638
+    },
+    "public/favicon.ico": {
+      "sha256": "b35c53c482d47113bb91c63a5a6552190c41255336ef90a0718639fdbb6521d6",
+      "bytes": 4506
+    },
+    "public/project-card-previews/terraforma-800.webp": {
+      "sha256": "cef17b85ba6c109e729f793bcedde8f99e6245bd84414f77a6ca033e93c92207",
+      "bytes": 100764
+    },
+    "app/lib/project-card-images.ts": {
+      "sha256": "d800c5a6cfd13cbb5f6ef3f09ea5e80876c1ed80fe1ddd86d5da559a13bf0fbc",
+      "bytes": 11232
+    },
+    "public/project-previews/studio-velora-screenshot.webp": {
+      "sha256": "fa3715a88fc875b4d7af1fb3451d50ed7bffbf4333b66e3f754435064809d933",
+      "bytes": 90402
+    },
+    "public/project-card-previews/27-area-insight-480.webp": {
+      "sha256": "58643614a6f735a560a260e0458d0046a55530760081622015e8c3b5d63b3ad2",
+      "bytes": 12824
+    },
+    "tests/showcase-favicons.test.mjs": {
+      "sha256": "fce7993f54a6b585956ccc7527c71e76414c9ef0ebc4629f56713947f65f31a0",
+      "bytes": 2401
+    },
+    "public/project-card-previews/18-moldova-escape-800.webp": {
+      "sha256": "7ca330be008c324e0636f3290deb3f46bb3b1ac9e3f4408872fc1abdad0baef3",
+      "bytes": 31064
+    },
+    "app/contact/page.tsx": {
+      "sha256": "cf05019693ce69c898ede3bbaee09b9496cbc2d29b911d9dd31a214913d2076d",
+      "bytes": 133
+    },
+    "public/project-previews/gazonpro-screenshot.webp": {
+      "sha256": "142fd2b68db4a0f7c075c8b0709ac0c41716f140e0441cb62a1267c867f9a1de",
+      "bytes": 84710
+    },
+    "eslint.config.mjs": {
+      "sha256": "98f9c4e23b33364da87534417fbafda70f7798b9e506ae8b3e9af77ba1f30c5e",
+      "bytes": 1335
+    },
+    "public/project-card-previews/flow-crm-480.webp": {
+      "sha256": "c6f11e33d9e0054456751cf88f93ae3bc3a88765b646ee0312fee16a86ad0d74",
+      "bytes": 10508
+    },
+    "public/project-card-previews/08-lead-pilot-800.webp": {
+      "sha256": "bcf547a53d3f3d74c0fad9b3ce75510642f29104c7aa568b1420b4de0fcf36ba",
+      "bytes": 18406
+    },
+    "public/icon-512.png": {
+      "sha256": "a27333fc330412e376e13d570fb1d3dbf4ce7b74f6a2231fd15da18fae4df04d",
+      "bytes": 12924
+    },
+    "public/robots.txt": {
+      "sha256": "2963ecc958aff9925753f06b47681064bae54678417a5a9bbfda1a1aaf7a106c",
+      "bytes": 64
+    },
+    "public/project-card-previews/25-casa-check-800.webp": {
+      "sha256": "9ea31c6e7a658c01ec0dfb501205e733fb4591a65e08685b76e428b69081ac7a",
+      "bytes": 56526
+    },
+    "reports/seo/screenshots/ro-1440.png": {
+      "sha256": "8a525dd72d115a1a0cf4d038cfe009b442236207a443667c2773ecb898e7401a",
+      "bytes": 298112
+    },
+    "public/project-card-previews/aquaverde-800.webp": {
+      "sha256": "22842c00dd0d8f17e9b936e31a55f54953b478d0ac74d61342878b2a74c0c00e",
+      "bytes": 47354
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-clean.png": {
+      "sha256": "57aaca937833360db0c127bcff0d731e03be1ce7120b67fe0f4b2b3e561442a7",
+      "bytes": 1268033
+    },
+    "reports/seo/netlify-parser-validation.json": {
+      "sha256": "a3784df7938ab022681dd8ceafb54acd36c33027a79a95b323f20132da32ae8b",
+      "bytes": 1680
+    },
+    "public/project-card-previews/24-mentor-cloud-800.webp": {
+      "sha256": "95a143d025e65cc9c25193906ae43346a76f192122369026084de9ed5a9993de",
+      "bytes": 45530
+    },
+    "public/project-card-previews/09-growth-desk-480.webp": {
+      "sha256": "71a15ccf0dab7d6b53816ac61292ed34e196d1bdad5822ff8cb06078438a4c97",
+      "bytes": 10108
+    },
+    "scripts/normalize-showcase-interactions.mjs": {
+      "sha256": "fd4f436668b02d00196b22fd3faf0ff6cec9150b2d271e8576a20af91a20cbd4",
+      "bytes": 2154
+    },
+    "public/monodev-ad-covers/04-crm-automatizari.png": {
+      "sha256": "29c4e4b97e236458648d42ff9f21b8fa8f5540bcb28e38325566db3e5800653c",
+      "bytes": 1666265
+    },
+    "docs/seo-editorial-plan.md": {
+      "sha256": "f2ffe3772d612649a21358806359155ce758712ead6a73791e0cc9b9314256f9",
+      "bytes": 5297
+    },
+    "app/lib/legacy-project-translations.ts": {
+      "sha256": "37274e78e253aaf59bba993fa4b1ec032d38634ae962b3473ad922922f311c25",
+      "bytes": 36123
+    },
+    "app/cabinet/layout.tsx": {
+      "sha256": "006af7dceaee64d2c9b7fc0b35d89a1eedaba54ed7b6f35b301f5b564402805c",
+      "bytes": 359
+    },
+    "app/components/trust-page.tsx": {
+      "sha256": "e8205f750d9c9967c0a1ea26be4067b261393d7f80e674ec1fd7cb0224200ec4",
+      "bytes": 2599
+    },
+    ".env.example": {
+      "sha256": "f8538476f818a142ee6f77f9e105775a00b43c80a04097e2e41dd6f17d0b309d",
+      "bytes": 116
+    },
+    "app/lib/project-catalog.ts": {
+      "sha256": "2693f4e67145a795eb608134a2511c53a1f0e41341924e007246a163a23fcce2",
+      "bytes": 78676
+    },
+    "public/project-card-previews/22-skillup-800.webp": {
+      "sha256": "304a47699db4fb5b0dbb5fd701cd464d85bd1e8e300fdf090b47d8f081d08076",
+      "bytes": 33764
+    },
+    "public/project-card-previews/06-doctor-aproape-480.webp": {
+      "sha256": "87dded21b53426c634fa21f7a6823076d46325891f6d9008b61a00e2d6c4b2b0",
+      "bytes": 12768
+    },
+    "public/project-previews/aquaverde-screenshot.webp": {
+      "sha256": "c9e650a726e4555607b3327f6feb5ff1e8b5df15fb74b24a3b35286f896db832",
+      "bytes": 69662
+    },
+    "app/lib/trust-content.ts": {
+      "sha256": "30ebf62895e6ab7a7cc31456293df9ea3caf660a8c720f824e0fbe18746f45c6",
+      "bytes": 39903
+    },
+    "public/project-card-previews/autoflow-partner-480.webp": {
+      "sha256": "3cd24e7b8d28cfb4e6af274c1f848809bdb4604d9b4d66603511dc2f65fb28fe",
+      "bytes": 6556
+    },
+    "public/project-previews/neobarberclub-screenshot.webp": {
+      "sha256": "71af9da2faac3571999748bacde2c26dd47a9e8b683a4b09f6c49c8710f16656",
+      "bytes": 56130
+    },
+    "public/project-previews/yardcraft-screenshot.webp": {
+      "sha256": "713576d05f3584cff9c388249300fd76af197e88b11a92cf4aab8ecb8046eed4",
+      "bytes": 89938
+    },
+    "public/project-card-previews/flow-crm-800.webp": {
+      "sha256": "050b3f7b6ae8b585f3d9215c0f290dedc66c18577d0a2496db208abf19b88041",
+      "bytes": 22492
+    },
+    "SEO_LAUNCH_CHECKLIST.md": {
+      "sha256": "7712f39694a76eff9330ea2ddeb35587021b3cff5731b86db40a3ac6c73d47ec",
+      "bytes": 12885
+    },
+    "app/live-project-preview.tsx": {
+      "sha256": "359103d471950402b02ec9ab051070d7be40ca7787ab5093a3543d670e0ef61e",
+      "bytes": 1728
+    },
+    "tests/normalize-showcase-interactions.test.mjs": {
+      "sha256": "be9dd7a72668203c4911ea25af098b1db519bba38b28aa5d65cdb8156c14becd",
+      "bytes": 1902
+    },
+    "app/brand-logo.tsx": {
+      "sha256": "223e32123c8fa4655744b8b694d699618e8afc5cbde89e2f025a28d168011e27",
+      "bytes": 559
+    },
+    "app/contact/contact-client.tsx": {
+      "sha256": "1f416854b618a039360c44320be3275b77b220a479312fda50fecdcc755774a9",
+      "bytes": 7500
+    },
+    "reports/project-image-optimization.json": {
+      "sha256": "2b13571cdd6aca012623a6ae4ed6ba6b77172a8a32e67cc9638a352459b42794",
+      "bytes": 140161
+    },
+    "app/components/seo-shell.tsx": {
+      "sha256": "b1bb41e1d59d2cd75da691d7aec60bf09752659c1751e6f6c021f790d0db0002",
+      "bytes": 3218
+    },
+    "public/project-card-previews/08-lead-pilot-480.webp": {
+      "sha256": "72563d066ee0871409358b32ce5a8375f39b9f51fa51e1cdd7f04cbb4941201e",
+      "bytes": 7886
+    },
+    "public/project-previews/contor-acasa-screenshot.webp": {
+      "sha256": "075ce214458ad5797d6771bb1eca67e9680469bf7f7c9f5e53b1df88548210bb",
+      "bytes": 40148
+    },
+    "reports/seo/project-card-images.json": {
+      "sha256": "5dc74cacc00316d560245b5899199dc9437c8c46df6fea802b52d3b158edf660",
+      "bytes": 28035
+    },
+    "app/globals.css": {
+      "sha256": "3adf9c85f09fab1680f55c1caafc0d8a3abe35552ecad18b2a3eb66be229131b",
+      "bytes": 112570
+    },
+    "public/project-card-previews/01-eventora-480.webp": {
+      "sha256": "9c82ab85204e2f2161a3d25a18da0b9d41bc930d2a63eee2af6aa896611db52e",
+      "bytes": 21388
+    },
+    "public/project-card-previews/staynest-480.webp": {
+      "sha256": "ec1be88cdf86122e9e7bae70e6fae1572b27ced9b5b6eacf2232d85d19d7848d",
+      "bytes": 34618
+    },
+    "public/project-previews/terraforma-screenshot.webp": {
+      "sha256": "188f71d69987a727bbc2670aac524e78ca4294e5a8f8a148b3b7839d5fb5dbd6",
+      "bytes": 165276
+    },
+    "reports/seo/performance-summary-before-card-optimization.json": {
+      "sha256": "97dd14210e563f19f1ed1f801048c8d80755ae32d06777116b5805b4741a7417",
+      "bytes": 36255
+    },
+    "public/monodev-ad-covers/05-imobiliare.png": {
+      "sha256": "ee52ca5e0c07a4ea3a101563ec9c017155db303f5961c18357a2b1d69504ec37",
+      "bytes": 1876962
+    },
+    "public/_headers": {
+      "sha256": "3529ab3859e7005860a8aaef1c9276b071d95f3b7c2167eeac0b7c56517ef80b",
+      "bytes": 882964
+    },
+    "public/project-card-previews/ecohabitat-800.webp": {
+      "sha256": "c93970c193c1032f582129e52c4e220208b55c66ee449ea72401ea0ec1a6b4e1",
+      "bytes": 91198
+    },
+    "graphify-out/reflections/LESSONS.md": {
+      "sha256": "d881ef61d97b83791e34cae31ba2600192447a0dcaf79b6679197c24fca7dd10",
+      "bytes": 2595
+    },
+    "public/archicontract/_next/static/chunks/0t1mk9f5s0n14.js": {
+      "sha256": "110c9b489d4d8c5e5f00470ba1b79dd2f4e816bf1c091a71b3635ac527a633b9",
+      "bytes": 136970
+    },
+    "public/project-card-previews/32-block-admin-800.webp": {
+      "sha256": "2763d4fa02b9c4b33a65a4497be4cc695c5f13a373c73f186c85d5c198408137",
+      "bytes": 25876
+    },
+    "public/project-card-previews/16-urban-haven-800.webp": {
+      "sha256": "7698cca0752c1e0f511545a2e92dc2116f8fbb89cd8c410523471cea75395fd0",
+      "bytes": 48198
+    },
+    "public/monodev-ad-covers/01-site-business.png": {
+      "sha256": "9135720dcbd291020e60d804492af5bd9400ebec1eb2ee49a86b36ea2ded0d4c",
+      "bytes": 1631401
+    },
+    "app/project-pages.css": {
+      "sha256": "54f6ec7becc7c35c1bf16e9406010f6d1ca6f3c4f3ca4a5696df0f496ef8ef7a",
+      "bytes": 5708
+    },
+    "app/[locale]/layout.tsx": {
+      "sha256": "14213587cf4f77e64aa5a8c5e20b5792a11f0364252007273c0f7ac8ae2e76c0",
+      "bytes": 427
+    },
+    "public/project-card-previews/19-bazar-local-480.webp": {
+      "sha256": "abea76f93313bcdef8ff69c73159379a14c626c76f8ca9a49b2c670c530bb7b8",
+      "bytes": 20052
+    },
+    "app/page.tsx": {
+      "sha256": "93689d8ca256b01c692a40606f89ea9e6a4cf888b3e30ad302034e79f0a809f4",
+      "bytes": 221
+    },
+    "scripts/audit-findings-recheck.mjs": {
+      "sha256": "148cdc90cd9a38f2e5e299cf20328c24a951e07f4cf9cafb98a16fb6d7462066",
+      "bytes": 1398
+    },
+    "public/project-card-previews/11-partmatch-480.webp": {
+      "sha256": "eb3bb7140cf51ffd56f5d32cc4c58cb496b6b74313266b3db40ad5ac2f47a4d4",
+      "bytes": 16092
+    },
+    "public/project-card-previews/tableo-800.webp": {
+      "sha256": "4657e4ab592fd7b9b6a7fdad7bf220902cf554023915f5a733cf811fd7ec2a83",
+      "bytes": 37326
+    },
+    "scripts/serve-seo.mjs": {
+      "sha256": "366106fd616e708696da08b7ad1e52b12b9af33dbc26343f28958938505530a0",
+      "bytes": 2449
+    },
+    "app/lib/site-config.ts": {
+      "sha256": "c11cf97dfbcd4db8ff791de04106ddfdfba4fee1ac7957fb965cf2ae89265b7a",
+      "bytes": 3176
+    },
+    "reports/seo/screenshots/en-services-website-customization-390.png": {
+      "sha256": "91f37826022029ac05671e2a952ea4d9e4a4eb4940cad74b1e2f7df138fb436c",
+      "bytes": 79418
+    },
+    "app/[locale]/intrebari/page.tsx": {
+      "sha256": "4b6dde0d2b36f23d8bceef0c1710728b9b0c1959e7851dd4cf371177a1cda9de",
+      "bytes": 1026
+    },
+    "app/[locale]/projects/[slug]/page.tsx": {
+      "sha256": "d90243771cbb455f2504b169d40efdcc4e1ad5007fb11e31dfcace7de83ecabf",
+      "bytes": 20145
+    },
+    "app/components/analytics-consent.tsx": {
+      "sha256": "45f96baa251a45cbfc357accfc2e6ccf31e4202237264f75fcc62e00ee46a1b1",
+      "bytes": 5928
+    },
+    "reports/seo/screenshots/ru-projects-04-clinica-nova-390.png": {
+      "sha256": "d024a85173a6c02762fa78e21604056e92c562d9fc2c3c0d35495b13ed4f8039",
+      "bytes": 98938
+    },
+    "app/cabinet/page.tsx": {
+      "sha256": "6b936975d8de30d98854e17c4c63064a22c102b09bcd635695067d073eec1683",
+      "bytes": 4003
+    },
+    "public/project-card-previews/28-table-flow-800.webp": {
+      "sha256": "be64d808254fc30935e6a9a106646c253b505f97c06882fe57953e134cdbc7f2",
+      "bytes": 35430
+    },
+    "public/sitemap.xml": {
+      "sha256": "31c10b8ee9e1af1932386a925446e135d33062b2a1c81258f0b4a2b14a2c49aa",
+      "bytes": 118977
+    },
+    "app/layout.tsx": {
+      "sha256": "106bbe450ecbaea69cc129538bc68f6a554b7995de4346264a444f1e53f6abf4",
+      "bytes": 2063
+    },
+    "app/[locale]/contact/page.tsx": {
+      "sha256": "44bbca0c54d5b605a94abf4312ee7f497c2fb923b2c2cf171050a54880a5c3ca",
+      "bytes": 1746
+    },
+    "public/project-card-previews/09-growth-desk-800.webp": {
+      "sha256": "13bf21d273a201ff25fdf9214b125f08c498057ca4a9a0de17de6271d845c9c8",
+      "bytes": 22530
+    },
+    "public/project-card-previews/14-auto-grid-800.webp": {
+      "sha256": "18546526b9c8f6bc66d0cec79845cb5e3f19e42714f9300caedde75ab9eee90c",
+      "bytes": 35422
+    },
+    "app/analytics-consent.css": {
+      "sha256": "9d2116f4fbc0afacbb16a0fcf5171f1f6f47b18424279d8c7e3ff5a8c62ee993",
+      "bytes": 634
+    },
+    "public/project-card-previews/26-direct-home-480.webp": {
+      "sha256": "5a2a7895c10dc0459d28f636cec722761bad4f1d3e30e1a2602d21779fb6bc2c",
+      "bytes": 15930
+    },
+    "SEO_IMPLEMENTATION_REPORT.md": {
+      "sha256": "fd07feddd77340a8a071e3ff5c4d02af44b92adeb7f1acf01ca1624fe1b9580a",
+      "bytes": 12319
+    },
+    "reports/seo/lighthouse-mobile-project-final-compressed.json": {
+      "sha256": "419090ab9ea94115c89c87004d0f1b9ed5fb83a5102b7e14474423a71a1c3e1a",
+      "bytes": 696292
+    },
+    "app/intrebari/intrebari.css": {
+      "sha256": "24ac433be0f37d5effe869aad7bbaa1912bac7ae5f8ee8fdeea0ebea498124eb",
+      "bytes": 13266
+    },
+    "public/project-card-previews/07-med-slot-800.webp": {
+      "sha256": "3ac15b2d4d16899384556cd0983f9cb125bb28084cec35de3e497e4d51b49048",
+      "bytes": 26586
+    },
+    "public/project-card-previews/12-garage-box-480.webp": {
+      "sha256": "d76c4573a762fbdcc48496a6089f15e04421d5fb55d9c81d3a1ebfb22ce11fb8",
+      "bytes": 11368
+    },
+    "app/lib/services.ts": {
+      "sha256": "86fd6614c96dc4f2081b3b1a78b4658c3c10ec386e7566f13cc8c263bae886c4",
+      "bytes": 69841
+    },
+    "public/monodev-ad-covers/02-magazin-online.png": {
+      "sha256": "b2f10fda305c8b78da03fc75a643ffd80d7405803642c6f590808ff3652905dc",
+      "bytes": 1732321
+    },
+    "public/project-card-previews/30-menu-studio-480.webp": {
+      "sha256": "6cf0b5d4e51ad7f8c43ea001b9e602d5b3855b91af47b6e600a1fdd905862d5c",
+      "bytes": 26692
+    },
+    "public/project-card-previews/aquaverde-480.webp": {
+      "sha256": "17279325f29dae1029494a9cf39638ac307c7b4d91377e79aafe7cef5e1a4641",
+      "bytes": 31650
+    },
+    "reports/seo/lighthouse-mobile-home-before-fixes.json": {
+      "sha256": "dab74f8c5d19444e7375a42847ae2a08eed9ea8bb1f1463c14537f5e37e947a2",
+      "bytes": 905975
+    },
+    "app/[locale]/about/page.tsx": {
+      "sha256": "894afb45c005771e9c0c4544923e41559715205737ae63a834bb8bb03965fe82",
+      "bytes": 468
+    },
+    "public/project-card-previews/autoflow-partner-800.webp": {
+      "sha256": "b54489d68475749235079d1dd8bf70ec89107cf743cf3b0607a412aeff3b99cc",
+      "bytes": 13810
+    },
+    "public/project-card-previews/imobilia-one-800.webp": {
+      "sha256": "fb5ecce8e7b9ad6fb6e26c10581210b46e23ec055129571996ea884627aedc62",
+      "bytes": 34264
+    },
+    "public/project-previews/atelier-noire-screenshot.webp": {
+      "sha256": "8d4c99176d1e08a2ed4d60a8772c5ed33c9def4ee59832f9d18c734acf200e65",
+      "bytes": 39910
+    },
+    "public/project-card-previews/03-pulse-tickets-800.webp": {
+      "sha256": "b10f951e891578ff802caef903f5cbd3f2a695b6ae534f2db915935b80f72cb1",
+      "bytes": 21026
+    },
+    "public/project-card-previews/13-motor-supply-800.webp": {
+      "sha256": "88e4bfe60a9f1d59dea7be2236c4ba03705472084f415f9558f9011db225a4bb",
+      "bytes": 23880
+    },
+    "public/project-previews/rentech-screenshot.webp": {
+      "sha256": "6ab1ccce0cd813038a5614bd5816c8d3c3450ea4ebab0d4e80865d1b822c7228",
+      "bytes": 48380
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-english-subtitle.png": {
+      "sha256": "edd962c59af460be7731117fe82b88c2ae20d378c8cac64cfbabb7a24234af83",
+      "bytes": 1401469
+    },
+    "public/project-previews/iqcalendar-screenshot.webp": {
+      "sha256": "d72a67dd42397ee5dd5db9519d86ef99de17670fe42a56f32219409a8bb3934d",
+      "bytes": 12508
+    },
+    "tests/seo.test.mjs": {
+      "sha256": "38281d20a1742faaa4ab0e6b04a181f38c48a269c14ae29004140b007ae41ffc",
+      "bytes": 8304
+    },
+    "public/project-card-previews/04-clinica-nova-480.webp": {
+      "sha256": "a189c0c8ab21284659943df11a7d79bdb66b0f419655ca847911770b4f075e9e",
+      "bytes": 20010
+    },
+    "public/project-card-previews/22-skillup-480.webp": {
+      "sha256": "7cd9968d008a16a1ef72f121689e1324fae46f93ebc22874102f699cdb87bbc0",
+      "bytes": 15532
+    },
+    "public/monodev-ad-covers/03-programari-online.png": {
+      "sha256": "941fcda5b951e5f2db3265b62b493023bd25f26b3ec7a783bd2e5437e5421dca",
+      "bytes": 1507839
+    },
+    "reports/seo/browser-review.json": {
+      "sha256": "e67581bf58573fb612ddce647f120e667367d91da7d6aef4c4a0b711c92de95e",
+      "bytes": 4575
+    },
+    "public/project-card-previews/15-park-suites-demo-800.webp": {
+      "sha256": "136f92ab3f6686ef23095d10a6583fba98ea8fe69f4d81387bae581343e0c8b3",
+      "bytes": 39682
+    },
+    "scripts/integrate-new-projects.mjs": {
+      "sha256": "e2a6110133b5ff44be54fb3d77f6a088bed4014ce2b85c81972966e929597072",
+      "bytes": 4697
+    },
+    "public/partner-campaign/market9000.webp": {
+      "sha256": "908da7c52c6444e31f136e546213741760f8154e8c701231304b851744e5d969",
+      "bytes": 107574
+    },
+    "public/project-card-previews/18-moldova-escape-480.webp": {
+      "sha256": "3abac177eba2c857f12ec760b7068d117d6a721af42ae3aa15e357dfafc95256",
+      "bytes": 14078
+    },
+    "public/project-card-previews/20-pret-bun-800.webp": {
+      "sha256": "63f5e33d028fcdde5db88eaeb6b26beca3114c30349a900d6fcf8431eb077302",
+      "bytes": 24606
+    },
+    "public/project-card-previews/02-scena-city-480.webp": {
+      "sha256": "68e399bbb728b89c990756ca7eda0e426d3840a6b506ca6d301374a833cc2f6c",
+      "bytes": 19532
+    },
+    "public/project-card-previews/13-motor-supply-480.webp": {
+      "sha256": "1fb75de78976cee3c633edc4c7ff970c2997fa519ec4b2f6aacb1c4bc562221e",
+      "bytes": 10954
+    },
+    "public/project-card-previews/21-local-craft-800.webp": {
+      "sha256": "9d7f3b619f3d542f6387d237cf89d99cf12ef552d369823253916d1edeef67d3",
+      "bytes": 44128
+    },
+    "public/project-previews/audio-rental-md-screenshot.webp": {
+      "sha256": "3bed63bc1223657fc9121cd9ccdf728dc48fe7202b6126a7575d4e308ca6b4b6",
+      "bytes": 62666
+    },
+    "public/project-previews/nord-and-oak-screenshot.webp": {
+      "sha256": "022fee63ded5925307a0ca12f71c26e76b49fae680363c2459f46b2696c3345f",
+      "bytes": 64492
+    },
+    "public/project-previews/fixora-screenshot.webp": {
+      "sha256": "b7662e2bbe72190ed2fabe5727e83c1f824793a983b1ce1832000905dab4a532",
+      "bytes": 56130
+    },
+    "reports/seo/lighthouse-mobile-home.json": {
+      "sha256": "dab74f8c5d19444e7375a42847ae2a08eed9ea8bb1f1463c14537f5e37e947a2",
+      "bytes": 905975
+    },
+    "scripts/netlify-seo.mjs": {
+      "sha256": "0932b0810761001b1ef72ee5159a3a85d5e9c97eff7af2529a9d56b7b1bcb223",
+      "bytes": 7071
+    },
+    "public/project-card-previews/23-civic-learn-800.webp": {
+      "sha256": "f7b463f6ba41401fb37f9f1c347406676dff13a3cbab1cde73f3e88afc7ec52b",
+      "bytes": 35474
+    },
+    "public/partner-campaign/micora.webp": {
+      "sha256": "c8830cf1ad56546ff348a17241758c097d614c14fc978150f98058cb9191dd8f",
+      "bytes": 67306
+    },
+    "public/project-card-previews/gazonpro-800.webp": {
+      "sha256": "b39ff33a39e16d67164627694827e39fb7f47db875ee2849717f091134927450",
+      "bytes": 97096
+    },
+    "public/project-card-previews/05-laboris-800.webp": {
+      "sha256": "b3f7b1374ff11bbfe57a444df6b638b4ecc2913ab59ba8ec20be6be60d6bffad",
+      "bytes": 24388
+    },
+    "package.json": {
+      "sha256": "c442c5074463f6cb8df2837724317b8c44aad5fcb42d86b48c51b1292cbe67ff",
+      "bytes": 3672
+    },
+    "reports/seo/screenshots/ro-projects-flow-crm-1440.png": {
+      "sha256": "bf7006647bd7eddf376e4db146e20c620f573e908f1cfb41a40ff451016cbd5d",
+      "bytes": 190016
+    },
+    "public/project-card-previews/02-scena-city-800.webp": {
+      "sha256": "609e40ca2497987fc4abab274c01e2abd799ceff5e1ebef33d2d81efecd5b49e",
+      "bytes": 44622
+    },
+    "app/why-section.css": {
+      "sha256": "07aea1d701eea09aa070a33fd0e26c2a27df7c0dd173d23bfee002d68879215c",
+      "bytes": 48983
+    },
+    "public/project-card-previews/01-eventora-800.webp": {
+      "sha256": "61e4229d26e263db8ed9b192be6a3a3b8c7a637a82bd69ed3ecc74636a6ce941",
+      "bytes": 45168
+    },
+    "public/project-previews/noma-screenshot.webp": {
+      "sha256": "4073fa0de5777a59c556ee5acaa91cfc9690c3eebc710e9f453dd1ea65a95958",
+      "bytes": 96938
+    },
+    "public/site.webmanifest": {
+      "sha256": "be95791a1832434378b2886ac5ac46003b59656d3349442341f11165ce633fe0",
+      "bytes": 367
+    },
+    "app/intrebari/page.tsx": {
+      "sha256": "2c75633e0d0f53cc53be06cd1e7c01766d772a5c281b18fcbe9344ed0c490614",
+      "bytes": 316
+    },
+    "netlify.toml": {
+      "sha256": "6c9b4b9789643d223434aa2daf844c46cb21c1e0b3a86dfb9a31a3285582d042",
+      "bytes": 1229
+    },
+    "public/project-card-previews/16-urban-haven-480.webp": {
+      "sha256": "529d0416b6f0553d56b2f040a02d7f848eabec9ad6ccee379abda8e3c96057ab",
+      "bytes": 21860
+    },
+    "public/project-card-previews/ecohabitat-480.webp": {
+      "sha256": "29cd9e62b6afd3fc2faecb5a3d714979f72c332bb723dc60c23637af90c960fc",
+      "bytes": 38962
+    },
+    "public/project-card-previews/staynest-800.webp": {
+      "sha256": "fed1ec2b54e64b7b1fa5b494f7e279eb8ac0a49ad0fe966238c703e15ca6e301",
+      "bytes": 79202
+    },
+    "app/contact/contact.css": {
+      "sha256": "3c9847bae523581ad157b6092cbec1f152136de5b5c86797d6239588fc95827c",
+      "bytes": 10249
+    },
+    "app/i18n.ts": {
+      "sha256": "5ee1c09178a71f03c912adf612b6ac678b73edbd6100137bcd6eaeeaffbc156b",
+      "bytes": 30724
+    },
+    "public/project-card-previews/29-food-route-800.webp": {
+      "sha256": "e084e81b11f8a35375b0797918af7a6a69660008102cefa0d291a30fce71debc",
+      "bytes": 64502
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-informativ.png": {
+      "sha256": "4d7909da009fec3c82aaf0983376c2cad7ca785bef4db9a9cc2eb623bf0018ce",
+      "bytes": 1474119
+    },
+    "public/project-previews/pophaus-screenshot.webp": {
+      "sha256": "03c9b2f88082f24407cfa220bb954e01ef9d97fd3b1c00d406318a2743ace33a",
+      "bytes": 107084
+    },
+    "app/lib/faq-ui.ts": {
+      "sha256": "5fa0b680a31b60ca8d28baf28e83a2ef0c5efd67b4fbecae1eba1409dd2fd149",
+      "bytes": 3200
+    },
+    "public/project-card-previews/imobilia-one-480.webp": {
+      "sha256": "5d08a703fcb5f6dade0d05387891e13fec8b876a1863c06e23343d8c72671838",
+      "bytes": 17872
+    },
+    "app/[locale]/services/[slug]/page.tsx": {
+      "sha256": "1aa8c86c12da95fe0487bb3718a7ffab3875b01350b0d933de4dff6c1cb0a142",
+      "bytes": 3719
+    },
+    "app/home-hero.css": {
+      "sha256": "31c0f426a31c7d1a999abb774ec5d02024c5f6b5992b0c77d40a0f355a56fe9c",
+      "bytes": 681
+    },
+    "reports/seo/screenshots/en-390.png": {
+      "sha256": "bda84d8b8eaed6e931669eae4e88c21e21e3e82de10bc6db829dae605244ed32",
+      "bytes": 172404
+    },
+    "reports/seo/lighthouse-mobile-project-before-fixes.json": {
+      "sha256": "4471dc2b1ad02a6b7ee1465b75a7e28b8cb6b91bb477d40d5ed518d06a9dd84b",
+      "bytes": 763589
+    },
+    "public/project-card-previews/26-direct-home-800.webp": {
+      "sha256": "4db8f0c941173011810196d9ac514bffdbca4d641e0f191c87e43384cde41cd3",
+      "bytes": 37066
+    },
+    "public/project-previews/studio-forma-screenshot.webp": {
+      "sha256": "09019513caad9d18342d3b2d14c50b2494cf30855b935a953a0b8d6fecdf66d1",
+      "bytes": 48072
+    },
+    "reports/seo/screenshots/en-projects-aquaverde-390.png": {
+      "sha256": "7ba236b3a17fa9da64c83937f26de07d0a0dba8401e058afdff0471a39a5787e",
+      "bytes": 132251
+    },
+    "reports/seo/screenshots/en-intrebari-1440.png": {
+      "sha256": "08db3f910d592a579a44ed4a1decdbc9458e482e0a9bcba9a0c02313d842bc54",
+      "bytes": 177218
+    },
+    "public/project-card-previews/31-my-utility-480.webp": {
+      "sha256": "f6e43b84014592d6d7d1b80ac5c2f3649727975bfbc38167b25d1dbd1f5617cd",
+      "bytes": 9180
+    },
+    "reports/seo/static-audit.json": {
+      "sha256": "7269b380250fc2d15d4fb9b74e43492a00a961ff4adec2a7502599bbcc23fd0f",
+      "bytes": 443
+    },
+    "scripts/load-site-data.mjs": {
+      "sha256": "c981c27a9bc245ecd61798ba56e12d678c7bc8deae0cce7d3edf7441b9392661",
+      "bytes": 1841
+    },
+    "app/[locale]/services/page.tsx": {
+      "sha256": "7188167560c307b70353916eab14928525c29700d510d531bd7cfcbac990f0de",
+      "bytes": 1386
+    },
+    "scripts/audit-translations.mjs": {
+      "sha256": "36a5462f4ac030cbb05b94ff3ab09bab48c9525a1d1673be76318c0a97db2f25",
+      "bytes": 3928
+    },
+    "public/project-card-previews/tableo-480.webp": {
+      "sha256": "147b7f817dda2f9287c44b532492957a2431b7598896023bbc9a6af21f5fa666",
+      "bytes": 19126
+    },
+    "app/lib/analytics.ts": {
+      "sha256": "400e08a82ed729467dd8891720ea817424d01463eada1ba8686a93064672b15e",
+      "bytes": 783
+    },
+    "public/project-card-previews/30-menu-studio-800.webp": {
+      "sha256": "62c882e70825809d3c49ba56736b1ca6cd20931f3ad3f6788ecc4d20dc56aa9b",
+      "bytes": 58882
+    },
+    "public/project-card-previews/academia-480.webp": {
+      "sha256": "b1ba8783b41c51fa406a4dad865766a6b3e12985e3cf18f5ae37818438c5a882",
+      "bytes": 17130
+    },
+    "public/project-card-previews/10-closeflow-480.webp": {
+      "sha256": "2a15fb7965e2f2df328260ec696cc24951c3fdc0e3eb899664aa4f59f73a4f20",
+      "bytes": 8922
+    },
+    "app/home-client.tsx": {
+      "sha256": "788a1f346b10bb24ec91fcff0f1ff67aa5ef5059674c695d184dc39ce5c06836",
+      "bytes": 92624
+    },
+    "public/project-card-previews/terraforma-480.webp": {
+      "sha256": "c00da87a4c1cc52786a1ff5ffe422280a5bcc609ecc871bdda6b0c8f5a265b3b",
+      "bytes": 49314
+    },
+    "public/project-previews/elan-screenshot.webp": {
+      "sha256": "bf772cbdb78fc087a0f2b12aca149058f94947ca889512e456eb8facd13cd4fb",
+      "bytes": 66716
+    },
+    "public/project-card-previews/28-table-flow-480.webp": {
+      "sha256": "d8f4b7adc3a1d6a4065d3ded1c31d9cf65f42eaeebc07ec9da34a0a8ebe55370",
+      "bytes": 15296
+    },
+    "tests/rendered-html.test.mjs": {
+      "sha256": "8c250cb22e258bd60f07000f95af7374840b1563df64ecc65047a49f6a8fea23",
+      "bytes": 8220
+    },
+    "tests/seo-browser.test.mjs": {
+      "sha256": "517add4f8dcb07fa55d119423e3c320335f84cf10b521b8b6117e8565a3f827b",
+      "bytes": 2967
+    },
+    "app/base.css": {
+      "sha256": "53e3db092b67eaa9cf9308300bec278a121d38166374f8868af39007ed211c98",
+      "bytes": 3629
+    },
+    "app/components/json-ld.tsx": {
+      "sha256": "a44093ba3b0d9d5e82054c09028e2de9dfdb78b5b6370a76206e842b88bc083d",
+      "bytes": 1634
+    },
+    "app/page-language-switch.css": {
+      "sha256": "cd0188ec3b55e28e0952a4cbc3d08c81e6708f6cfa5f4c49ced193f81f25665d",
+      "bytes": 2173
+    },
+    "public/project-card-previews/gazonpro-480.webp": {
+      "sha256": "cd117d5327b6d55ae87b3b0062b360a30123dbe2695fe562e4e85c73eb83a648",
+      "bytes": 43134
+    },
+    "reports/seo/lighthouse-mobile-project.json": {
+      "sha256": "4471dc2b1ad02a6b7ee1465b75a7e28b8cb6b91bb477d40d5ed518d06a9dd84b",
+      "bytes": 763589
+    },
+    "public/project-card-previews/15-park-suites-demo-480.webp": {
+      "sha256": "74266255bfbd5b03cd2ac6b74e85f6f771d44d0ce36191bf51604af34d5d13a9",
+      "bytes": 18394
+    },
+    "docs/seo-file-inventory.md": {
+      "sha256": "9ba07ed10da951af7c43ccab387b0786c5e2293dd526fea61cf993293dddea72",
+      "bytes": 16951
+    },
+    "reports/seo/project-card-visual-2.png": {
+      "sha256": "5434272f6e8bff8954e601eef647db1256922e5fdd6fc3e2510bad3466f3f0c5",
+      "bytes": 1454047
+    },
+    "app/lib/project-images.ts": {
+      "sha256": "dfa3fb500d2f3f31a810727fa7560bdb213b7442a3c4f6508c04022f0844487c",
+      "bytes": 7771
+    },
+    "reports/seo/lighthouse-mobile-project-compressed-before-card-optimization.json": {
+      "sha256": "dc755ca3311e3065bb446703d8e77dda6ada2e30c1bcb7f9e4fd82a12111215c",
+      "bytes": 698172
+    },
+    "public/project-card-previews/20-pret-bun-480.webp": {
+      "sha256": "0f8c9eca5f53977371d533e6fae524e9854e03d599669a0994f7aad6ca032d53",
+      "bytes": 11934
+    },
+    "tests/showcase-archi-navigation.test.mjs": {
+      "sha256": "85087b5871e4351d56ba747b904c4d4d8621cd11dcbdd9b54742a82b970418d1",
+      "bytes": 1692
+    },
+    "scripts/audit-interactions-recheck.mjs": {
+      "sha256": "ea7d3a21b3386351e6a3cb2b7a34bdfbd824579d105b5ad798e835d4cb742e68",
+      "bytes": 12813
+    },
+    "public/icon-192.png": {
+      "sha256": "08a51b0a4aaf68b45ae5a7e9d2743b963c777110a0398e488e164301ab3cdb30",
+      "bytes": 4236
+    },
+    "public/project-previews/ecohabitat-screenshot.webp": {
+      "sha256": "0a39292353ac2b5f7f9d3f69b37271bf0320b439f305a10afcc855f9b1a6abcc",
+      "bytes": 92876
+    },
+    "public/monodev-ad-covers/01-proiecte-business-monodev-editorial.png": {
+      "sha256": "7c226cfb13b5139462bac61f9b103a3dcd98ec9f9fb1372f2e35e89ca20e6af6",
+      "bytes": 1262311
+    },
+    "public/project-card-previews/yardcraft-480.webp": {
+      "sha256": "0b26803b5fe743b353a7d99ed7b192312880bc500feaeff4d936c749f6dee10f",
+      "bytes": 62834
+    },
+    "app/contact/layout.tsx": {
+      "sha256": "35c858cce59265b5a87a455774f8eb26b244588740660de08af64336400f7e01",
+      "bytes": 413
+    },
+    "public/project-card-previews/17-nest-collection-480.webp": {
+      "sha256": "34e37c6b3c47a1abe028fe6717fde97cc8b32191bb9a8f19482d16e6693ebb2e",
+      "bytes": 22736
+    },
+    "reports/seo/project-card-visual-1.png": {
+      "sha256": "8fda2c478172f994a00de8e212eee17db6b8c05be6aa60d137cf7a3b51007bb2",
+      "bytes": 2720444
+    },
+    "public/project-card-previews/drivolt-800.webp": {
+      "sha256": "0ac80878c1f6ce56af8d844278d4d84eb302ebc6fe4ec045da371fae6c746993",
+      "bytes": 26350
+    },
+    "reports/seo/garden-screenshot-review.jpg": {
+      "sha256": "4a40a115d6b8ab506a12e7495b7c4d589ab72063dc04816575220e86338a709c",
+      "bytes": 222183
+    },
+    "reports/seo/screenshots/ro-services-business-websites-1440.png": {
+      "sha256": "bf69bfcf550995834ea7eafc96228b9d1c1960e004bf9e8af0eb49820e88b1f5",
+      "bytes": 108454
+    },
+    "graphify-out/GRAPH_REPORT.md": {
+      "sha256": "4b992b0098d8235dc0c4a962689cbff486f178fdacd2ec1f9f27009b1fde9f66",
+      "bytes": 20708
+    }
+  }
+}

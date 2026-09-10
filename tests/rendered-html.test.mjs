@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-async function render(pathname = "/") {
+async function render(pathname = "/ro") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
@@ -18,17 +18,17 @@ test("server-renders the MONO/DEV catalog", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /<title>MONO\/DEV/);
+  assert.match(html, /<title>[^<]*MONO\/DEV/);
   assert.match(html, /IDEI MARI/);
   assert.match(html, /EVENTORA/);
-  assert.match(html, /CLINICA NOVA/);
+  assert.doesNotMatch(html, /class="catalog-directory(?:\s|")/, "Removed directory must not be rendered");
   for (const title of ["AquaVerde", "TerraForma", "GazonPro", "EcoHabitat", "YardCraft"]) {
     assert.ok(html.includes(title), `${title}: new project missing from first catalog page`);
   }
   assert.match(html, /Grădini și peisagistică/);
   assert.match(html, /id="proiecte"/);
   assert.match(html, /id="proces"/);
-  const catalogSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  const catalogSource = await readFile(new URL("../app/home-client.tsx", import.meta.url), "utf8");
   const configuredPageSize = Number(catalogSource.match(/const PROJECT_PAGE_SIZE = (\d+);/)?.[1]);
   assert.ok(configuredPageSize > 0, "catalog page size must be configured");
   assert.equal([...html.matchAll(/<article\b[^>]*class="card"/g)].length, configuredPageSize);
@@ -39,7 +39,7 @@ test("server-renders the MONO/DEV catalog", async () => {
 test("every registered project has an export and a catalog route", async () => {
   const [registryText, pageSource] = await Promise.all([
     readFile(new URL("../showcase-projects/registry.json", import.meta.url), "utf8"),
-    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/lib/project-catalog.ts", import.meta.url), "utf8"),
   ]);
   const registry = JSON.parse(registryText);
   for (const project of registry) {
@@ -99,10 +99,16 @@ test("redesigned projects preview their current static exports", async () => {
     assert.ok(newProjects.some(project => project.slug === slug), `${slug}: missing registration`);
   }
   const html = await (await render()).text();
-  const pageSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
+  const pageSource = await readFile(new URL("../app/lib/project-catalog.ts", import.meta.url), "utf8");
   assert.doesNotMatch(html, /<iframe\b/i, "catalog must not preload interactive project exports");
   assert.doesNotMatch(html, /\/\.netlify\/images/, "local and server-rendered previews must not require Netlify Image CDN");
-  assert.match(html, /\/aquaverde\/images\/hero\.webp/, "catalog must render the original preview as its safe fallback");
+  const gardenPreview = [...html.matchAll(/<img\b[^>]*>/g)].find(([tag]) => /alt="AquaVerde\b/.test(tag))?.[0];
+  assert.ok(gardenPreview, "catalog must render the AquaVerde preview before hydration");
+  const previewSource = gardenPreview.match(/\bsrc="([^"]+)"/)?.[1];
+  const previewAlt = gardenPreview.match(/\balt="([^"]+)"/)?.[1];
+  assert.ok(previewSource?.startsWith("/") && !previewSource.startsWith("//"), "preview needs a locally served fallback");
+  assert.match(previewAlt ?? "", /AquaVerde.+irigare/i, "preview alt must identify the project and its localized purpose");
+  await access(new URL(`../public${previewSource}`, import.meta.url));
   for (const project of newProjects) {
     assert.ok(pageSource.includes(`"/${project.slug}/"`), `${project.slug}: preview path absent from catalog`);
     assert.ok(!html.includes(`/${project.slug}/preview.html`), `${project.slug}: heavyweight preview must not be loaded by the catalog`);

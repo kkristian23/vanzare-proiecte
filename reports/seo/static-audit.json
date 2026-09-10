@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-09-10T10:42:49.371Z",
+  "buildDirectory": "dist/client",
+  "pages": 247,
+  "expectedPublicPages": 246,
+  "publicProjects": 63,
+  "sitemapUrls": 246,
+  "demoDirectoriesProtected": 64,
+  "noindexHtmlPaths": 4778,
+  "technicalPayloadPaths": 6479,
+  "issues": [],
+  "warnings": [
+    "Production HTTP 301/noindex headers/404 status require the postdeployment HTTP audit; local static HTML cannot prove CDN responses."
+  ]
+}

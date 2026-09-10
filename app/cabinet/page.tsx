@@ -4,6 +4,7 @@ import { ArrowLeft, BellRing, Clock3, LockKeyhole, Rocket, UserRound } from "luc
 import { useEffect, useState } from "react";
 import { Locale, locales } from "../i18n";
 import { BrandLogo } from "../brand-logo";
+import { FooterLinks } from "../components/seo-shell";
 import "./cabinet.css";
 
 const content = {
@@ -14,9 +15,9 @@ const content = {
 
 export default function CabinetPage() {
   const [locale, setLocale] = useState<Locale>("ro");
-  useEffect(() => { const value = new URLSearchParams(window.location.search).get("lang"); if (value && locales.includes(value as Locale)) setLocale(value as Locale); }, []);
+  useEffect(() => { const frame = requestAnimationFrame(() => { const value = new URLSearchParams(window.location.search).get("lang"); if (value && locales.includes(value as Locale)) setLocale(value as Locale); }); return () => cancelAnimationFrame(frame); }, []);
   const c = content[locale];
-  const changeLocale = (language: Locale) => { setLocale(language); const url = new URL(window.location.href); language === "ro" ? url.searchParams.delete("lang") : url.searchParams.set("lang", language); window.history.replaceState({}, "", url); };
-  const catalogHref = locale === "ro" ? "/" : `/?lang=${locale}`;
-  return <main className="cabinet-page"><div className="cabinet-noise" aria-hidden="true" /><header className="cabinet-nav"><BrandLogo className="cabinet-logo" href={catalogHref} inverse /><div className="cabinet-languages">{locales.map(language => <button key={language} className={locale === language ? "active" : ""} onClick={() => changeLocale(language)}>{language.toUpperCase()}</button>)}</div><a className="cabinet-back" href={catalogHref}><ArrowLeft /> {c.back}</a></header><section className="cabinet-hero"><div className="cabinet-copy"><p className="cabinet-label"><i /> {c.label}</p><h1>{c.title[0]}<br /><em>{c.title[1]}</em></h1><p className="cabinet-description">{c.text}</p><div className="cabinet-status"><Clock3 /> {c.status}</div></div><div className="cabinet-card"><div className="cabinet-card-bar"><span><i /><i /><i /></span><b>personal-area.tsx</b><LockKeyhole /></div><div className="cabinet-avatar"><UserRound /><span>+</span></div><p>MONO/DEV</p><h2>{c.status}</h2><div className="cabinet-progress"><i /></div><small>BUILD 01 / 03</small></div></section><section className="cabinet-roadmap">{c.features.map((feature, index) => <article key={feature}><span>0{index + 1}</span><Rocket /><p>{feature}</p></article>)}</section><footer className="cabinet-footer"><BellRing /> {c.note}</footer></main>;
+  const changeLocale = (language: Locale) => { setLocale(language); const url = new URL(window.location.href); if (language === "ro") url.searchParams.delete("lang"); else url.searchParams.set("lang", language); window.history.replaceState({}, "", url); };
+  const catalogHref = `/${locale}`;
+  return <main className="cabinet-page"><div className="cabinet-noise" aria-hidden="true" /><header className="cabinet-nav"><BrandLogo className="cabinet-logo" href={catalogHref} inverse /><div className="cabinet-languages">{locales.map(language => <button key={language} className={locale === language ? "active" : ""} onClick={() => changeLocale(language)}>{language.toUpperCase()}</button>)}</div><a className="cabinet-back" href={catalogHref}><ArrowLeft /> {c.back}</a></header><section className="cabinet-hero"><div className="cabinet-copy"><p className="cabinet-label"><i /> {c.label}</p><h1>{c.title[0]}<br /><em>{c.title[1]}</em></h1><p className="cabinet-description">{c.text}</p><div className="cabinet-status"><Clock3 /> {c.status}</div></div><div className="cabinet-card"><div className="cabinet-card-bar"><span><i /><i /><i /></span><b>personal-area.tsx</b><LockKeyhole /></div><div className="cabinet-avatar"><UserRound /><span>+</span></div><p>MONO/DEV</p><h2>{c.status}</h2><div className="cabinet-progress"><i /></div><small>BUILD 01 / 03</small></div></section><section className="cabinet-roadmap">{c.features.map((feature, index) => <article key={feature}><span>0{index + 1}</span><Rocket /><p>{feature}</p></article>)}</section><footer className="cabinet-footer"><div className="cabinet-footer-main"><BellRing /> {c.note}</div><FooterLinks locale={locale} /></footer></main>;
 }
