@@ -56,6 +56,46 @@
 .admin-header > div > span {
   font-size: 13px;
 }
+.admin-sidebar-stack {
+  display: grid;
+  align-self: start;
+  position: sticky;
+  top: 20px;
+  gap: 12px;
+  min-width: 0;
+}
+.admin-sidebar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-sidebar-stack .admin-global-save {
+  position: relative;
+  flex: 1;
+  min-height: 42px;
+  padding: 9px 13px;
+  border-color: #8fcb3f;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d5ff72, #aee73d);
+  box-shadow: 0 8px 18px rgba(87, 125, 23, 0.2);
+  color: #26341a;
+  font-size: 13px;
+  font-weight: 800;
+}
+.admin-sidebar-stack .admin-global-save:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: saturate(1.08) brightness(1.03);
+}
+.admin-sidebar-stack .admin-global-save:disabled {
+  opacity: 0.55;
+  box-shadow: none;
+}
+.admin-sidebar-actions .admin-reload-section {
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  min-height: 42px;
+}
 .admin-page button,
 .admin-upload {
   display: inline-flex;
@@ -192,8 +232,6 @@
   flex-direction: column;
   gap: 24px;
   align-self: start;
-  position: sticky;
-  top: 20px;
   min-width: 0;
   padding: 18px;
   border: 1px solid var(--admin-border);
@@ -362,6 +400,7 @@
   border-radius: 14px;
   background: linear-gradient(90deg, rgba(242, 237, 255, 0.8), rgba(237, 255, 246, 0.8));
 }
+.admin-save:empty { display: none; }
 .admin-page .admin-reload-section {
   display: inline-grid;
   width: 34px;
@@ -897,34 +936,39 @@
 }
 .admin-price-filter-dropdown > summary {
   display: inline-flex;
-  min-height: 44px;
+  min-height: 42px;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 9px 14px;
-  border: 1px solid #d4c9ee;
-  border-radius: 11px;
-  background: linear-gradient(135deg, #f8f5ff, #f0ebff);
-  box-shadow: 0 4px 12px rgba(83, 59, 169, 0.08);
-  color: #5239aa;
+  gap: 9px;
+  padding: 8px 13px;
+  border: 1px solid #d9d0f2;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(73, 49, 143, 0.07);
+  color: #473383;
   font-size: 13px;
   font-weight: 800;
   list-style: none;
   cursor: pointer;
-  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
 }
 .admin-price-filter-dropdown > summary::-webkit-details-marker { display: none; }
 .admin-price-filter-dropdown > summary:hover {
-  border-color: #a996e2;
-  box-shadow: 0 7px 17px rgba(83, 59, 169, 0.14);
-  transform: translateY(-1px);
+  border-color: #aa96df;
+  background: #fbfaff;
+  box-shadow: 0 4px 11px rgba(73, 49, 143, 0.11);
+}
+.admin-price-filter-dropdown[open] > summary {
+  border-color: #7656cf;
+  background: #f7f4ff;
 }
 .admin-price-filter-dropdown > summary svg {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   fill: none;
-  stroke: currentColor;
+  stroke: #6c4dca;
   stroke-linecap: round;
+  stroke-linejoin: round;
   stroke-width: 1.9;
 }
 .admin-price-filter-dropdown > summary strong {
@@ -937,11 +981,6 @@
   color: #fff;
   font-size: 10px;
 }
-.admin-price-filter-dropdown > summary > span:last-child {
-  font-size: 15px;
-  transition: transform 150ms ease;
-}
-.admin-price-filter-dropdown[open] > summary > span:last-child { transform: rotate(180deg); }
 .admin-price-filter-panel {
   position: absolute;
   z-index: 30;
@@ -1282,6 +1321,21 @@
   min-height: 38px;
   padding: 7px 12px;
   border-radius: 9px;
+}
+.admin-save .admin-save-pagination {
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  flex-wrap: wrap;
+}
+.admin-save-pagination > span { white-space: nowrap; }
+@media (max-width: 800px) {
+  .admin-save .admin-save-pagination {
+    flex: 1 1 100%;
+    margin-left: 0;
+    justify-content: space-between;
+  }
 }
 .admin-discount-empty {
   display: grid;
@@ -1675,6 +1729,7 @@
     padding: 13px;
     border-radius: 16px;
   }
+  .admin-sidebar-stack { position: static; }
   .admin-sidebar-title { padding: 0; }
   .admin-sidebar-title strong { font-size: 18px; }
   .admin-sidebar > label,

@@ -12,6 +12,7 @@ const gardenPreviewSources: Record<string, string> = {
   gazonpro: "/gazonpro/images/hero.webp",
   ecohabitat: "/ecohabitat/images/garden.jpg",
   yardcraft: "/yardcraft/images/hero-1600.webp",
+  iclinica: "/project-previews/iclinica.webp",
 };
 
 /** Lightweight catalog artwork. The interactive export is fetched only on explicit user action. */

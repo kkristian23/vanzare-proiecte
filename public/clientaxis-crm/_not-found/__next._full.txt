@@ -1,0 +1,20 @@
+1:"$Sreact.fragment"
+2:I[39756,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default"]
+3:I[37457,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default"]
+4:I[36768,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js","/clientaxis-crm/_next/static/chunks/0m5qiolt9897f.js"],"default"]
+5:I[47257,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"ClientPageRoot"]
+8:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+e:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+10:I[68027,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default",1]
+:HL["/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","style"]
+b:X
+0:{"P":null,"c":["","_not-found"],"q":"","i":false,"f":[[["",{"children":["/_not-found",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/clientaxis-crm/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L4",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","$L5",null,{"Component":"$4","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@6","$@7"]}}],[["$","script","script-0",{"src":"/clientaxis-crm/_next/static/chunks/0m5qiolt9897f.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$b"]},null,false,null],["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Lf"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$10",[["$","link","0",{"rel":"stylesheet","href":"/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"lz1hnjWv9hkH5Qrned-oG"}
+b:C
+6:{}
+7:"$0:f:0:1:1:children:1:children:0:props:children:0:props:serverProvidedParams:params"
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:I[27201,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
+a:null
+f:[["$","title","0",{"children":"ClientAxis CRM"}],["$","link","1",{"rel":"icon","href":"/clientaxis-crm/favicon.svg"}],["$","$L11","2",{}]]

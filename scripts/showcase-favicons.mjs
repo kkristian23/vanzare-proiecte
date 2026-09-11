@@ -5,6 +5,7 @@ import path from "node:path";
 export const hiddenShowcaseSlugs = new Set(["forge"]);
 
 const generatedFavicons = {
+  iclinica: ["i+", "#123b2a", "#a6e65a"],
   drivolt: ["DV", "#061c22", "#19a6b8"],
   "flow-crm": ["FC", "#20201f", "#8b78eb"],
   academia: ["A", "#101010", "#c8ff31"],

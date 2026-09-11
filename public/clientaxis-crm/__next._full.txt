@@ -1,0 +1,17 @@
+1:"$Sreact.fragment"
+2:I[39756,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default"]
+3:I[37457,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default"]
+4:I[36768,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js","/clientaxis-crm/_next/static/chunks/0m5qiolt9897f.js"],"default"]
+5:I[79975,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js","/clientaxis-crm/_next/static/chunks/1nglh_56judrc.js","/clientaxis-crm/_next/static/chunks/1x2znypun-tcd.js","/clientaxis-crm/_next/static/chunks/01a1y0tnz5p9c.js"],"default"]
+6:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+9:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+b:I[97367,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+d:I[68027,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"default",1]
+:HL["/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","style"]
+:HC["/",""]
+0:{"P":null,"c":["",""],"q":"","i":false,"f":[[["",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/clientaxis-crm/_next/static/chunks/3fntmmi971322.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L4",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[["$","$L5",null,{}],[["$","script","script-0",{"src":"/clientaxis-crm/_next/static/chunks/1nglh_56judrc.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/clientaxis-crm/_next/static/chunks/1x2znypun-tcd.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/clientaxis-crm/_next/static/chunks/01a1y0tnz5p9c.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,null]},null,false,null],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$d",[["$","link","0",{"rel":"stylesheet","href":"/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"lz1hnjWv9hkH5Qrned-oG"}
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+e:I[27201,["/clientaxis-crm/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
+8:null
+c:[["$","title","0",{"children":"ClientAxis CRM"}],["$","link","1",{"rel":"icon","href":"/clientaxis-crm/favicon.svg"}],["$","$Le","2",{}]]

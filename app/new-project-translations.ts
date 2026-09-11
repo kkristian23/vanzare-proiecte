@@ -5,6 +5,10 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
   "en": {
     "descriptions": {
       ...gardenDescriptions("en"),
+      "73": "Renovation and maintenance workspace with estimates, quote requests, appointments and job tracking.",
+      "74": "Local producer marketplace with products, inventory, orders and seller management.",
+      "75": "Stays and experiences in Moldova with availability, reservations and owner management.",
+      "76": "Team CRM with contacts, sales pipelines, tasks, proposals and reports.",
       "27": "A premium real-estate platform with listings, advanced search, neighborhoods, saved favorites, viewings and administration.",
       "28": "A premium medical website with specialties, doctors, transparent pricing and a guided seven-step booking journey.",
       "29": "A premium restaurant platform with a digital menu, reservations, online orders, checkout and an operational workspace.",
@@ -980,6 +984,10 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
   "ru": {
     "descriptions": {
       ...gardenDescriptions("ru"),
+      "73": "Сервис ремонта и обслуживания: расчёт стоимости, заявки, запись и контроль работ.",
+      "74": "Маркетплейс местных производителей: товары, остатки, заказы и кабинет продавца.",
+      "75": "Жильё и впечатления в Молдове: доступность, бронирования и кабинет владельца.",
+      "76": "CRM для команд: контакты, воронки продаж, задачи, предложения и отчёты.",
       "27": "Премиальная платформа недвижимости с объектами, расширенным поиском, районами, избранным, просмотрами и администрированием.",
       "28": "Премиальный медицинский сайт со специальностями, врачами, прозрачными ценами и записью в семь понятных шагов.",
       "29": "Премиальная платформа ресторана с цифровым меню, бронированием, онлайн-заказами, оплатой и рабочим кабинетом.",

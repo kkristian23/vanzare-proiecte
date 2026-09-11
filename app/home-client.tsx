@@ -2,6 +2,7 @@
 import { CatalogPrice } from "./components/catalog-price";
 import { CmsMedia } from "./components/cms-media";
 import { paymentSettings, projectPrice, slotImages } from "./lib/cms-store";
+import { projectCardImages } from "./lib/project-card-images";
 import { siteConfig } from "./lib/site-config";
 import { cmsContent, cmsText } from "./lib/cms-store";
 import { useCms } from "./components/cms-live";
@@ -160,7 +161,10 @@ function ProjectVisual({
   const v = visualCopy[locale];
   const s = showcaseCopy[locale];
   const hasLivePreview = (project.id >= 35 && project.id <= 66) || gardenProjects.some((item) => item.id === project.id);
-  const hasProjectPreview = launchProjectIds.has(project.id) || hasLivePreview;
+  const hasProjectPreview =
+    launchProjectIds.has(project.id) ||
+    hasLivePreview ||
+    Boolean(projectCardImages[projectSlugs[project.id]]);
   return (
     <div className={`visual-frame${hasProjectPreview ? " visual-frame-preview" : ""}`}>
       <div className={`visual visual-${project.tone}${hasProjectPreview ? " visual-with-preview" : ""}`}>
@@ -1953,7 +1957,14 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
                       {c.openProject} {cmsText("home-client", "literal-588da410532073f8", " · ")}{visualCopy[locale].coming}
                     </button>
                   ) : projectPaths[selected.id] ? (
-                    <a className="demo-link" href={projectPaths[selected.id]} data-analytics-event="demo_open" data-project={projectSlugs[selected.id]}>
+                    <a
+                      className="demo-link"
+                      href={projectPaths[selected.id]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-analytics-event="demo_open"
+                      data-project={projectSlugs[selected.id]}
+                    >
                       {c.openProject} <ExternalLink />
                     </a>
                   ) : "demo" in selectedDetail && typeof selectedDetail.demo === "string" && selectedDetail.demo ? (

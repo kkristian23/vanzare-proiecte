@@ -36,6 +36,20 @@ export const annualInstallmentPrice = (price: number) => {
 };
 
 export const projectCatalog: Project[] = [
+  { id: 73, seoEnabled: false, title: "ServiceFlow Pro", type: "Service Management", price: 1100, tone: "serviceflow-pro", desc: "Renovări și mentenanță: estimări, cereri de ofertă, programări și urmărirea lucrărilor.", stack: ["Next.js", "TypeScript", "Firebase Auth", "Cloud Firestore", "PDF", "RO / RU / EN"] },
+  { id: 74, seoEnabled: false, title: "Vatra Market", type: "Marketplace", price: 1000, tone: "vatra-market", desc: "Marketplace pentru producători locali: produse, stocuri, comenzi și panou pentru vânzători.", stack: ["Next.js", "TypeScript", "Firebase Auth", "Cloud Firestore", "Firebase Storage", "RO / RU / EN"] },
+  { id: 75, seoEnabled: false, title: "Codru Escapes", type: "Hotels & Travel", price: 1200, tone: "codru-escapes", desc: "Cazări și experiențe în Moldova: disponibilitate, rezervări și administrare pentru proprietari.", stack: ["Next.js", "TypeScript", "Firebase Auth", "Cloud Firestore", "Leaflet", "RO / RU / EN"] },
+  { id: 76, seoEnabled: false, title: "ClientAxis CRM", type: "CRM & Sales", price: 1200, tone: "clientaxis-crm", desc: "CRM pentru echipe: contacte, pipeline de vânzări, sarcini, oferte și rapoarte.", stack: ["Next.js", "TypeScript", "Firebase Auth", "Cloud Firestore", "PDF / CSV", "RO / RU / EN"] },
+  {
+    id: 72,
+    seoEnabled: false,
+    title: "iClinica",
+    type: "Clinics & Medical",
+    price: 1100,
+    tone: "iclinica",
+    desc: "Platformă medicală pentru programări, medici și pacienți.",
+    stack: ["Next.js 15", "React 19", "TypeScript 5.9", "Firebase Auth", "Cloud Firestore", "CSS responsive"],
+  },
   ...gardenProjects.map((project) => ({
     id: project.id,
     seoEnabled: project.seoEnabled,
@@ -846,6 +860,11 @@ export const hiddenCategories = new Set(["AI Website Factory"]);
 export const unavailableProjectIds = new Set<number>();
 
 export const projectSlugs: Record<number, string> = {
+  73: "serviceflow-pro",
+  74: "vatra-market",
+  75: "codru-escapes",
+  76: "clientaxis-crm",
+  72: "iclinica",
   71: "aquaverde",
   70: "terraforma",
   69: "gazonpro",
@@ -913,6 +932,11 @@ export const projectSlugs: Record<number, string> = {
 };
 
 export const projectPaths: Record<number, string> = {
+  73: "/serviceflow-pro/",
+  74: "/vatra-market/",
+  75: "/codru-escapes/",
+  76: "/clientaxis-crm/",
+  72: "/iclinica/",
   71: "/aquaverde/",
   70: "/terraforma/",
   69: "/gazonpro/",
@@ -2045,10 +2069,16 @@ export function getProject(locale: Locale, slug: string) {
   const detail = locale === "ro"
     ? newProjectDetails[project.id] ?? projectDetails[project.id]
     : newProjectTranslations[locale].newProjectDetails[project.id] ?? legacyProjectDetails(locale, project);
-  if (!detail) throw new Error(`Missing project detail: ${locale}/${slug}`);
+  const resolvedDetail = detail ?? {
+    summary: description,
+    sections: [
+      { title: locale === "en" ? "Main functions" : locale === "ru" ? "Основные функции" : "Funcționalități", items: project.stack },
+      { title: locale === "en" ? "Delivery" : locale === "ru" ? "Что получает покупатель" : "Ce primește cumpărătorul", items: [description] },
+    ],
+  };
   const image = projectImages[slug];
   return {
-    ...project, description, detail,
+    ...project, description, detail: resolvedDetail,
     category: localType(project.type, locale),
     demo: projectPaths[project.id],
     image: image ? { ...image, alt: `${{ ro: "Captură", ru: "Снимок экрана", en: "Screenshot" }[locale]} ${project.title} — ${description}` } : undefined,

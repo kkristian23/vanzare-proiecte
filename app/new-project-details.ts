@@ -3,6 +3,34 @@ import { gardenDetails } from "./garden-projects";
 
 export const newProjectDetails: Record<number,{summary:string;sections:{title:string;items:string[]}[]}> = cmsContent("new-project-details-newProjectDetails", {
   ...gardenDetails("ro"),
+  "73": {
+    summary: "ServiceFlow Pro centralizează solicitările și lucrările unei firme de renovări și mentenanță.",
+    sections: [
+      { title: "Pentru clienți", items: ["Catalog de servicii și calculator de estimare", "Cereri de ofertă și programări", "Cont client cu urmărirea lucrărilor"] },
+      { title: "Pentru companie", items: ["Administrarea solicitărilor și statusurilor", "Oferte PDF și comunicare cu clienții", "Interfață RO / RU / EN și integrare Firebase configurabilă"] }
+    ]
+  },
+  "74": {
+    summary: "Vatra Market aduce produsele artizanilor și administrarea comenzilor într-un marketplace dedicat producătorilor locali.",
+    sections: [
+      { title: "Cumpărături", items: ["Catalog cu căutare, filtre și variante de produs", "Favorite, coș și flux de comandă", "Pagini de producători și recenzii"] },
+      { title: "Administrare", items: ["Panou producător pentru produse și stocuri", "Gestionarea comenzilor și notificărilor", "RO / RU / EN; Firebase Auth, Firestore și Storage configurabile"] }
+    ]
+  },
+  "75": {
+    summary: "Codru Escapes reunește cazările și experiențele din Moldova, cu rezervări și administrare pentru proprietari.",
+    sections: [
+      { title: "Pentru turiști", items: ["Căutare cazări după perioadă, oaspeți și facilități", "Hartă, galerii și pagini de proprietăți", "Calculul sejurului și rezervări"] },
+      { title: "Pentru proprietari", items: ["Calendar și gestionarea rezervărilor", "Mesagerie și statistici", "Interfață RO / RU / EN și integrare Firebase configurabilă"] }
+    ]
+  },
+  "76": {
+    summary: "ClientAxis CRM centralizează clienții, vânzările și activitățile echipei într-un singur spațiu de lucru.",
+    sections: [
+      { title: "Vânzări și relații cu clienții", items: ["Contacte, companii și oportunități", "Pipeline Kanban și sarcini", "Oferte PDF și import/export CSV"] },
+      { title: "Echipă și administrare", items: ["Organizații, roluri și permisiuni", "Rapoarte și notificări", "Interfață RO / RU / EN și integrare Firebase configurabilă"] }
+    ]
+  },
   "35": {
     "summary": "Comunitate de bloc, avizier și participare.",
     "sections": [

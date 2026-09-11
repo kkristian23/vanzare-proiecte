@@ -1,5 +1,14 @@
 // Real local demo screenshots. Dimensions are read from the captured assets.
 export const projectImages: Record<string, { src: string; width: number; height: number }> = {
+  "serviceflow-pro": { src: "/project-previews/serviceflow-pro.webp", width: 1440, height: 1080 },
+  "vatra-market": { src: "/project-previews/vatra-market.webp", width: 1440, height: 1080 },
+  "codru-escapes": { src: "/project-previews/codru-escapes.webp", width: 1440, height: 1080 },
+  "clientaxis-crm": { src: "/project-previews/clientaxis-crm.webp", width: 1440, height: 1080 },
+  "iclinica": {
+    "src": "/project-previews/iclinica.webp",
+    "width": 1448,
+    "height": 1086
+  },
   "aquaverde": {
     "src": "/project-previews/aquaverde-screenshot.webp",
     "width": 1200,

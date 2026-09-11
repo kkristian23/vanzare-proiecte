@@ -8667,6 +8667,114 @@
 /gazonpro/termeni-conditii/index.txt
   X-Robots-Tag: noindex, nofollow
 
+/iclinica.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/__next.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/_not-found/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/_not-found/__next._not-found.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/_not-found/__next._not-found/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/_not-found/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/_not-found/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/clinica-nova/REUSE.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/cont/__next.%24d%24section.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/cont/__next.%24d%24section/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/cont/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/cont/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/cont/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/medici/__next.%24d%24section.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/medici/__next.%24d%24section/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/medici/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/medici/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/medici/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/preturi/__next.%24d%24section.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/preturi/__next.%24d%24section/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/preturi/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/preturi/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/preturi/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/programare/__next.%24d%24section.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/programare/__next.%24d%24section/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/programare/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/programare/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/programare/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/specializari/__next.%24d%24section.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/specializari/__next.%24d%24section/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/specializari/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/specializari/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/iclinica/specializari/index.txt
+  X-Robots-Tag: noindex, nofollow
+
 /market9000.txt
   X-Robots-Tag: noindex, nofollow
 
@@ -27150,6 +27258,138 @@
 /gazonpro/termeni-conditii/index/
   X-Robots-Tag: noindex, follow
 
+/iclinica
+  X-Robots-Tag: noindex, follow
+
+/iclinica/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/404/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/_not-found
+  X-Robots-Tag: noindex, follow
+
+/iclinica/_not-found/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/_not-found/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/_not-found/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/_not-found/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/cont
+  X-Robots-Tag: noindex, follow
+
+/iclinica/cont/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/cont/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/cont/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/cont/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/medici
+  X-Robots-Tag: noindex, follow
+
+/iclinica/medici/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/medici/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/medici/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/medici/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preturi
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preturi/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preturi/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preturi/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preturi/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preview
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preview.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/preview/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/programare
+  X-Robots-Tag: noindex, follow
+
+/iclinica/programare/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/programare/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/programare/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/programare/index/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/specializari
+  X-Robots-Tag: noindex, follow
+
+/iclinica/specializari/
+  X-Robots-Tag: noindex, follow
+
+/iclinica/specializari/index
+  X-Robots-Tag: noindex, follow
+
+/iclinica/specializari/index.html
+  X-Robots-Tag: noindex, follow
+
+/iclinica/specializari/index/
+  X-Robots-Tag: noindex, follow
+
 /imobilia-one
   X-Robots-Tag: noindex, follow
 
@@ -33817,6 +34057,60 @@
   X-Robots-Tag: noindex, follow
 
 /yardcraft/termeni/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica/index
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/iclinica/index.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica/index
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica/index/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/iclinica/index.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica/index
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica/index/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/iclinica/index.html
   X-Robots-Tag: noindex, follow
 
 /ro/projects/aquaverde

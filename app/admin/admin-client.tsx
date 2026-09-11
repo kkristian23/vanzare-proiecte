@@ -46,7 +46,7 @@ import "./admin.css";
 type Section = "text" | "media" | "price" | "discount" | "payment";
 type AdminNavigationCategory = "text" | "media" | "pricing" | "payment";
 type DiscountStatusFilter = "all" | "active" | "inactive";
-type PriceSort = "alphabetical" | "low-high" | "high-low";
+type PriceSort = "newest" | "alphabetical" | "low-high" | "high-low";
 type DraftImage = CmsImage & { file?: File };
 type SavedPrice = Price & { revision: number };
 type OptionalNumber = number | "";
@@ -62,6 +62,7 @@ const discountStatusFilters: readonly [DiscountStatusFilter, string][] = [
   ["inactive", "Fără reducere"],
 ];
 const priceSortOptions: readonly [PriceSort, string][] = [
+  ["newest", "Cele mai noi"],
   ["alphabetical", "Ordine alfabetică"],
   ["low-high", "Preț mic → mare"],
   ["high-low", "Preț mare → mic"],
@@ -186,6 +187,7 @@ function adminLocation() {
     : "all";
   const requestedPriceSort = params.get("priceSort");
   const priceSort: PriceSort = [
+    "newest",
     "alphabetical",
     "low-high",
     "high-low",
@@ -234,7 +236,49 @@ function adminHref(state: AdminUrlState, hasDraft = false) {
 }
 const draftKey = (section: Section, selection: string) =>
   `monodev-admin-draft:${section}:${selection}`;
+const adminDraftPrefix = "monodev-admin-draft:";
 const activeAdminDrafts = new Set<string>();
+type StoredAdminDraft = {
+  key: string;
+  section: Section;
+  selection: string;
+  value: unknown;
+};
+function storedAdminDrafts(_version = 0): StoredAdminDraft[] {
+  if (typeof window === "undefined") return [];
+  const sections: Section[] = ["text", "media", "price", "discount", "payment"];
+  const drafts: StoredAdminDraft[] = [];
+  try {
+    for (let index = 0; index < window.localStorage.length; index += 1) {
+      const key = window.localStorage.key(index);
+      if (!key?.startsWith(adminDraftPrefix)) continue;
+      const separator = key.indexOf(":", adminDraftPrefix.length);
+      if (separator === -1) continue;
+      const section = key.slice(adminDraftPrefix.length, separator) as Section;
+      const selection = key.slice(separator + 1);
+      const stored = window.localStorage.getItem(key);
+      if (!sections.includes(section) || !selection || !stored) continue;
+      drafts.push({ key, section, selection, value: JSON.parse(stored) });
+      activeAdminDrafts.add(key);
+    }
+  } catch {
+    // A malformed or unavailable local storage must not block the editor.
+  }
+  return drafts;
+}
+function storedPaymentSettings(settings: PaymentSettings): StoredPaymentSettings {
+  return {
+    installmentPlans: settings.installmentPlans.map((plan) => ({
+      months: Number.isNaN(plan.months) ? "" : plan.months,
+      surcharge: Number.isNaN(plan.surcharge) ? "" : plan.surcharge,
+    })),
+    rentalMonths: Number.isNaN(settings.rentalMonths) ? "" : settings.rentalMonths,
+    rentalServices: settings.rentalServices.map((service) => ({
+      name: service.name,
+      price: Number.isNaN(service.price) ? "" : service.price,
+    })),
+  };
+}
 function readAdminDraft<T>(section: Section, selection: string): T | null {
   try {
     const key = draftKey(section, selection);
@@ -248,6 +292,23 @@ function readAdminDraft<T>(section: Section, selection: string): T | null {
 }
 function sameNumber(left: number, right: number) {
   return left === right || (Number.isNaN(left) && Number.isNaN(right));
+}
+function samePaymentSettings(left: PaymentSettings, right: PaymentSettings) {
+  return (
+    sameNumber(left.rentalMonths, right.rentalMonths) &&
+    left.installmentPlans.length === right.installmentPlans.length &&
+    left.rentalServices.length === right.rentalServices.length &&
+    left.installmentPlans.every(
+      (plan, index) =>
+        sameNumber(plan.months, right.installmentPlans[index].months) &&
+        sameNumber(plan.surcharge, right.installmentPlans[index].surcharge),
+    ) &&
+    left.rentalServices.every(
+      (service, index) =>
+        service.name === right.rentalServices[index].name &&
+        sameNumber(service.price, right.rentalServices[index].price),
+    )
+  );
 }
 function DraftStatus({ isDraft, onRestore }: { isDraft: boolean; onRestore: () => void }) {
   if (!isDraft) return null;
@@ -351,6 +412,8 @@ export default function Admin() {
   const [loading, setLoading] = useState(true);
   const [loadFailed, setLoadFailed] = useState(false);
   const [reload, setReload] = useState(0);
+  const [draftsVersion, setDraftsVersion] = useState(0);
+  const [globalSaving, setGlobalSaving] = useState(false);
   const [values, setValues] = useState<Record<string, string>>({});
   const [projectPriceDrafts, setProjectPriceDrafts] = useState<Record<number, string>>(
     {},
@@ -406,6 +469,11 @@ export default function Admin() {
   const dirtyRef = useRef(false);
   const hrefRef = useRef("");
   const priceFilterRef = useRef<HTMLDetailsElement>(null);
+  const savedDrafts = storedAdminDrafts(draftsVersion);
+  const currentDraftKey = draftKey(section, selection);
+  const globalDraftCount = savedDrafts.some(({ key }) => key === currentDraftKey)
+    ? savedDrafts.length
+    : savedDrafts.length + Number(dirty);
   useEffect(() => {
     dirtyRef.current = dirty;
   }, [dirty]);
@@ -548,6 +616,7 @@ export default function Admin() {
         )
       : priceFilteredCatalog;
   const filteredCatalog = [...statusFilteredCatalog].sort((left, right) => {
+    if (priceSort === "newest") return right.id - left.id;
     if (priceSort === "low-high")
       return priceForProject(left) - priceForProject(right);
     if (priceSort === "high-low")
@@ -633,7 +702,6 @@ export default function Admin() {
         </svg>
         Filtre
         {activePriceFilterCount > 0 && <strong>{activePriceFilterCount}</strong>}
-        <span aria-hidden="true">⌄</span>
       </summary>
       <div className="admin-price-filter-panel">
         <div className="admin-price-range-heading">
@@ -983,16 +1051,7 @@ export default function Admin() {
       });
     else if (section === "payment")
       writeAdminDraft(section, selection, {
-        paymentDraft: {
-          installmentPlans: paymentDraft.installmentPlans.map((plan) => ({
-            months: Number.isNaN(plan.months) ? "" : plan.months,
-            surcharge: Number.isNaN(plan.surcharge) ? "" : plan.surcharge,
-          })),
-          rentalMonths: Number.isNaN(paymentDraft.rentalMonths)
-            ? ""
-            : paymentDraft.rentalMonths,
-          rentalServices: paymentDraft.rentalServices.map((service) => ({ name: service.name, price: Number.isNaN(service.price) ? "" : service.price })),
-        },
+        paymentDraft: storedPaymentSettings(paymentDraft),
       });
   }, [
     dirty,
@@ -1008,6 +1067,12 @@ export default function Admin() {
     discountOverrides,
     paymentDraft,
   ]);
+  useEffect(() => {
+    if (section !== "payment" || loading) return;
+    const unchanged = samePaymentSettings(paymentDraft, savedPaymentDraft);
+    setDirty(!unchanged);
+    if (unchanged) clearAdminDraft(section, selection);
+  }, [section, selection, loading, paymentDraft, savedPaymentDraft]);
   useEffect(() => {
     const navigate = (event: MouseEvent) => {
       const link = (event.target as Element).closest?.(
@@ -1335,6 +1400,240 @@ export default function Admin() {
       setBusy(false);
     }
   };
+  const saveAllDrafts = async () => {
+    if (busy || globalSaving || loading || globalDraftCount === 0) return;
+    setGlobalSaving(true);
+    setError("");
+    setMessage("");
+
+    const hasPendingMediaUpload =
+      section === "media" &&
+      dirty &&
+      images.some((image) => image.file || image.src.startsWith("blob:"));
+    if (dirty && !hasPendingMediaUpload) {
+      if (section === "text") writeAdminDraft(section, selection, { values });
+      else if (section === "media") writeAdminDraft(section, selection, { images });
+      else if (section === "price")
+        writeAdminDraft(section, selection, { projectPriceDrafts, editedPriceIds });
+      else if (section === "discount")
+        writeAdminDraft(section, selection, {
+          discountProjectIds,
+          discountPercent,
+          discountOverrides,
+        });
+      else writeAdminDraft(section, selection, {
+        paymentDraft: storedPaymentSettings(paymentDraft),
+      });
+    }
+
+    const failures: string[] = [];
+    let savedCount = 0;
+    let currentSectionSaved = false;
+    const markSaved = (draft: Pick<StoredAdminDraft, "section" | "selection">) => {
+      clearAdminDraft(draft.section, draft.selection);
+      savedCount += 1;
+      if (draft.section === section && draft.selection === selection)
+        currentSectionSaved = true;
+    };
+    const readCurrentPrices = async () => {
+      const documents = await readDocuments(
+        catalog.map((project) => `price-${project.id}`),
+      );
+      return Object.fromEntries(
+        catalog.map((project) => {
+          const saved = documents[`price-${project.id}`];
+          return [
+            project.id,
+            {
+              standard: saved?.standard ?? project.price,
+              discounted: saved?.discounted ?? null,
+              enabled: saved?.enabled ?? false,
+              revision: saved?.revision ?? 0,
+            } as SavedPrice,
+          ];
+        }),
+      ) as Record<number, SavedPrice>;
+    };
+    const saveStoredDraft = async (draft: StoredAdminDraft) => {
+      if (draft.section === "text") {
+        const values = (draft.value as { values?: Record<string, string> }).values;
+        if (!values) throw new Error("Draftul de texte nu este valid.");
+        const document = await readDocument(draft.selection);
+        await saveDocument(draft.selection, { values }, document?.revision ?? 0);
+        return;
+      }
+      if (draft.section === "media") {
+        const draftImages = (draft.value as { images?: DraftImage[] }).images;
+        if (!draftImages || draftImages.some((image) => image.file || image.src.startsWith("blob:")))
+          throw new Error("Imaginile locale trebuie salvate din secțiunea lor curentă.");
+        const document = await readDocument(draft.selection);
+        await saveDocument(draft.selection, { images: draftImages }, document?.revision ?? 0);
+        return;
+      }
+      if (draft.section === "payment") {
+        const stored = (draft.value as { paymentDraft?: StoredPaymentSettings }).paymentDraft;
+        if (!stored) throw new Error("Draftul pentru rate și chirie nu este valid.");
+        const document = await readDocument("text-payment-settings");
+        const savedSettings = paymentSettingsFromValues(document?.values);
+        const settings: PaymentSettings = {
+          installmentPlans: stored.installmentPlans.map((plan) => ({
+            months: plan.months === "" ? Number.NaN : Number(plan.months),
+            surcharge: plan.surcharge === "" ? Number.NaN : Number(plan.surcharge),
+          })),
+          rentalMonths:
+            stored.rentalMonths === "" ? Number.NaN : Number(stored.rentalMonths),
+          rentalServices:
+            stored.rentalServices?.map((service) => ({
+              name: service.name,
+              price: service.price === "" ? Number.NaN : Number(service.price),
+            })) ?? savedSettings.rentalServices,
+        };
+        const issue = validatePaymentSettings(settings);
+        if (issue) throw new Error(issue);
+        await saveDocument(
+          "text-payment-settings",
+          {
+            values: {
+              ...Object.fromEntries(
+                settings.installmentPlans.flatMap((plan, index) => [
+                  [`plan${index + 1}Months`, String(plan.months)],
+                  [`plan${index + 1}Surcharge`, String(plan.surcharge)],
+                ]),
+              ),
+              rentalMonths: String(settings.rentalMonths),
+              ...Object.fromEntries(
+                settings.rentalServices.flatMap((service, index) => [
+                  [`rentalService${index + 1}Name`, service.name],
+                  [`rentalService${index + 1}Price`, String(service.price)],
+                ]),
+              ),
+            },
+          },
+          document?.revision ?? 0,
+        );
+        return;
+      }
+      const prices = await readCurrentPrices();
+      if (draft.section === "price") {
+        const stored = draft.value as {
+          projectPriceDrafts?: Record<number, string>;
+          editedPriceIds?: number[];
+        };
+        const entries = (stored.editedPriceIds ?? []).map((projectId) => {
+          const project = catalog.find(({ id }) => id === projectId);
+          if (!project) throw new Error("Un proiect din draft nu mai există.");
+          const current = prices[projectId];
+          const standard = Math.floor(Number(stored.projectPriceDrafts?.[projectId]));
+          const ratio =
+            current.enabled && current.discounted && current.standard > 0
+              ? current.discounted / current.standard
+              : null;
+          const value: Price = {
+            standard,
+            discounted: ratio ? Math.floor(standard * ratio) : current.discounted,
+            enabled: current.enabled,
+          };
+          const issue = validatePrice(value);
+          if (issue) throw new Error(`${project.title}: ${issue}`);
+          return { id: `price-${projectId}`, value, revision: current.revision };
+        });
+        if (entries.length) await saveDocuments(entries);
+        return;
+      }
+      const stored = draft.value as {
+        discountProjectIds?: number[];
+        discountPercent?: number;
+        discountOverrides?: Record<number, OptionalNumber>;
+      };
+      const selected = new Set(stored.discountProjectIds ?? []);
+      const entries = catalog
+        .filter((project) => selected.has(project.id) || prices[project.id]?.enabled)
+        .map((project) => {
+          const current = prices[project.id];
+          const enabled = selected.has(project.id);
+          const percent = stored.discountOverrides?.[project.id] ?? stored.discountPercent;
+          const validPercent =
+            typeof percent === "number" &&
+            Number.isInteger(percent) &&
+            percent >= 1 &&
+            percent <= 99;
+          if (enabled && !validPercent)
+            throw new Error(`${project.title}: reducerea trebuie să fie un procent întreg între 1% și 99%.`);
+          const value: Price = {
+            standard: Math.floor(current.standard),
+            discounted: enabled
+              ? Math.floor((current.standard * (100 - Number(percent))) / 100)
+              : null,
+            enabled,
+          };
+          const issue = validatePrice(value);
+          if (issue) throw new Error(`${project.title}: ${issue}`);
+          return { id: `price-${project.id}`, value, revision: current.revision };
+        });
+      if (entries.length) await saveDocuments(entries);
+    };
+
+    try {
+      const order: Record<Section, number> = {
+        text: 0,
+        payment: 1,
+        price: 2,
+        discount: 3,
+        media: 4,
+      };
+      const drafts = storedAdminDrafts(draftsVersion)
+        .filter(
+          (draft) =>
+            !(
+              hasPendingMediaUpload &&
+              draft.section === section &&
+              draft.selection === selection
+            ),
+        )
+        .sort((left, right) => order[left.section] - order[right.section]);
+      for (const draft of drafts) {
+        try {
+          await saveStoredDraft(draft);
+          markSaved(draft);
+        } catch (e) {
+          failures.push(`${draft.selection}: ${firebaseMessage(e)}`);
+        }
+      }
+      if (hasPendingMediaUpload) {
+        try {
+          const ready: CmsImage[] = [];
+          for (const image of images) {
+            if (image.file) {
+              const uploaded =
+                uploads.current.get(image.file) ??
+                (await uploadImage(image.file, (progress) =>
+                  setMessage(`Încărcare imagine ${ready.length + 1}/${images.length}: ${progress}%`),
+                ));
+              uploads.current.set(image.file, uploaded);
+              ready.push({ ...uploaded, alt: image.alt });
+            } else ready.push({ src: image.src, alt: image.alt, ...(image.path ? { path: image.path } : {}) });
+          }
+          await saveDocument(selection, { images: ready }, revision);
+          setImages(ready);
+          markSaved({ section, selection });
+        } catch (e) {
+          failures.push(`${selection}: ${firebaseMessage(e)}`);
+        }
+      }
+      if (currentSectionSaved) {
+        setDirty(false);
+        if (section === "payment") setSavedPaymentDraft(paymentDraft);
+        if (section === "price") setEditedPriceIds([]);
+      }
+      setDraftsVersion((value) => value + 1);
+      if (failures.length) {
+        setError(`${failures.length} secțiuni au rămas nesalvate. ${failures[0]}`);
+        if (savedCount) setMessage(`Au fost salvate ${savedCount} secțiuni.`);
+      } else if (savedCount) setMessage(`Au fost salvate ${savedCount} secțiuni.`);
+    } finally {
+      setGlobalSaving(false);
+    }
+  };
   const reloadSection = () => {
     if (busy) return;
     const applyReload = () => {
@@ -1418,7 +1717,8 @@ export default function Admin() {
         </section>
       ) : (
         <div className="admin-workspace">
-          <aside className="admin-sidebar">
+          <div className="admin-sidebar-stack">
+            <aside className="admin-sidebar">
             <div className="admin-sidebar-title">
               <span>Panou de control</span>
             </div>
@@ -1427,7 +1727,7 @@ export default function Admin() {
                 [
                   ["text", "Textele catalogului"],
                   ["media", "Coperțile din catalog"],
-                  ["pricing", "Reduceri"],
+                  ["pricing", "Prețuri & Reduceri"],
                   ["payment", "Rate și chirie"],
                 ] as const
               ).map(([key, label]) => {
@@ -1485,7 +1785,34 @@ export default function Admin() {
                 </select>
               </label>
             )}
-          </aside>
+            </aside>
+            <div className="admin-sidebar-actions">
+              <button
+                type="button"
+                className="admin-global-save"
+                onClick={() => void saveAllDrafts()}
+                disabled={busy || globalSaving || loading || globalDraftCount === 0}
+                title="Salvează toate modificările locale"
+              >
+                Salvează tot{globalDraftCount > 0 ? ` (${globalDraftCount})` : ""}
+              </button>
+              <button
+                type="button"
+                className="admin-secondary admin-reload-section"
+                disabled={busy}
+                onClick={reloadSection}
+                aria-label="Reîncarcă secțiunea"
+                title="Reîncarcă secțiunea"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a9 9 0 0 0-15.5-6.2L3 8" />
+                  <path d="M3 3v5h5" />
+                  <path d="M3 12a9 9 0 0 0 15.5 6.2L21 16" />
+                  <path d="M16 16h5v5" />
+                </svg>
+              </button>
+            </div>
+          </div>
           <section
             className={`admin-editor ${
               section === "payment"
@@ -1707,7 +2034,10 @@ export default function Admin() {
                             >
                               <Link
                                 className="admin-project-open"
-                                href={projectPaths[project.id]}
+                                href={
+                                  projectPaths[project.id] ??
+                                  `/ro/projects/${projectSlugs[project.id]}`
+                                }
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`Deschide ${project.title} pe site`}
@@ -1786,13 +2116,6 @@ export default function Admin() {
                           );
                         })}
                       </div>
-                      {pricePageCount > 1 && (
-                        <nav className="admin-discount-pagination" aria-label="Paginarea prețurilor">
-                          <button type="button" className="admin-secondary" disabled={priceCurrentPage === 0} onClick={() => setPage(priceCurrentPage - 1)}>← Înapoi</button>
-                          <span>Pagina <strong>{priceCurrentPage + 1}</strong> din {pricePageCount}</span>
-                          <button type="button" className="admin-secondary" disabled={priceCurrentPage >= pricePageCount - 1} onClick={() => setPage(priceCurrentPage + 1)}>Înainte →</button>
-                        </nav>
-                      )}
                       {filteredCatalog.length === 0 && (
                         <div className="admin-discount-empty" role="status">
                           <strong>Niciun proiect nu corespunde filtrelor.</strong>
@@ -1943,7 +2266,10 @@ export default function Admin() {
                             >
                               <Link
                                 className="admin-project-open"
-                                href={projectPaths[project.id]}
+                                href={
+                                  projectPaths[project.id] ??
+                                  `/ro/projects/${projectSlugs[project.id]}`
+                                }
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`Deschide ${project.title} pe site`}
@@ -2034,27 +2360,6 @@ export default function Admin() {
                           );
                         })}
                       </div>
-                      {discountPageCount > 1 && (
-                        <nav className="admin-discount-pagination" aria-label="Paginarea proiectelor">
-                          <button
-                            type="button"
-                            className="admin-secondary"
-                            disabled={discountCurrentPage === 0}
-                            onClick={() => setPage(discountCurrentPage - 1)}
-                          >
-                            ← Înapoi
-                          </button>
-                          <span>Pagina <strong>{discountCurrentPage + 1}</strong> din {discountPageCount}</span>
-                          <button
-                            type="button"
-                            className="admin-secondary"
-                            disabled={discountCurrentPage >= discountPageCount - 1}
-                            onClick={() => setPage(discountCurrentPage + 1)}
-                          >
-                            Înainte →
-                          </button>
-                        </nav>
-                      )}
                       {filteredCatalog.length === 0 && (
                         <div className="admin-discount-empty" role="status">
                           <strong>Niciun proiect nu corespunde filtrelor.</strong>
@@ -2369,24 +2674,24 @@ export default function Admin() {
                   )}
                 </fieldset>
                 <div className="admin-save">
-                  <button type="submit" disabled={!dirty || busy}>
-                    {busy ? "Se salvează…" : "Salvează modificările"}
-                  </button>
-                  <button
-                    type="button"
-                    className="admin-secondary admin-reload-section"
-                    disabled={busy}
-                    onClick={reloadSection}
-                    aria-label="Reîncarcă secțiunea"
-                    title="Reîncarcă secțiunea"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M21 12a9 9 0 0 0-15.5-6.2L3 8" />
-                      <path d="M3 3v5h5" />
-                      <path d="M3 12a9 9 0 0 0 15.5 6.2L21 16" />
-                      <path d="M16 16h5v5" />
-                    </svg>
-                  </button>
+                  {(section === "price" || section === "discount") &&
+                    (section === "price" ? pricePageCount : discountPageCount) > 1 && (
+                      <nav className="admin-discount-pagination admin-save-pagination" aria-label="Paginarea proiectelor">
+                        <button
+                          type="button"
+                          className="admin-secondary"
+                          disabled={busy || (section === "price" ? priceCurrentPage : discountCurrentPage) === 0}
+                          onClick={() => setPage((section === "price" ? priceCurrentPage : discountCurrentPage) - 1)}
+                        >← Înapoi</button>
+                        <span>Pagina <strong>{(section === "price" ? priceCurrentPage : discountCurrentPage) + 1}</strong> din {section === "price" ? pricePageCount : discountPageCount}</span>
+                        <button
+                          type="button"
+                          className="admin-secondary"
+                          disabled={busy || (section === "price" ? priceCurrentPage >= pricePageCount - 1 : discountCurrentPage >= discountPageCount - 1)}
+                          onClick={() => setPage((section === "price" ? priceCurrentPage : discountCurrentPage) + 1)}
+                        >Înainte →</button>
+                      </nav>
+                    )}
                 </div>
               </form>
             )}

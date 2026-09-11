@@ -94,7 +94,7 @@ test(
       await expect(
         page.getByLabel("Română / hero A", { exact: false }),
       ).toHaveValue("IDEI ADMIN TEST");
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate");
       for (let run = 0; run < 2; run++) {
         page.once("dialog", (dialog) => dialog.accept());
@@ -128,7 +128,7 @@ test(
       await page
         .getByLabel("Preț actual pentru AquaVerde", { exact: true })
         .fill("1500");
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate");
       await page
         .getByRole("button", { name: "Aplică reduceri", exact: true })
@@ -136,7 +136,7 @@ test(
       await page.getByLabel("Procentul reducerii").selectOption("20");
       await page.getByLabel("Aplică reducerea pentru AquaVerde").check();
       await page.getByLabel("Reducere individuală pentru AquaVerde").fill("25");
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate");
       await expect(
         publicPage
@@ -173,7 +173,7 @@ test(
       await page
         .getByLabel("Text alternativ", { exact: true })
         .fill("Copertă administrată de test");
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate", {
         timeout: 30000,
       });
@@ -194,13 +194,13 @@ test(
       await db
         .doc("cms/media-catalog-aquaverde")
         .update({ revision: saved.data().revision + 1 });
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("alert")).toContainText("altă sesiune");
       page.once("dialog", (d) => d.accept());
       await page.getByRole("button", { name: "Reîncarcă secțiunea" }).click();
       page.once("dialog", (d) => d.accept());
       await page.getByRole("button", { name: "Elimină", exact: true }).click();
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate");
       await expect(
         publicPage.getByAltText("Copertă administrată de test"),
@@ -227,7 +227,7 @@ test(
         .getByRole("button", { name: "Mai sus", exact: true })
         .last()
         .click();
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate", {
         timeout: 30000,
       });
@@ -247,7 +247,7 @@ test(
         .getByRole("button", { name: "Aplică reduceri", exact: true })
         .click();
       await page.getByLabel("Aplică reducerea pentru AquaVerde").uncheck();
-      await page.getByRole("button", { name: "Salvează modificările" }).click();
+      await page.getByRole("button", { name: /^Salvează tot/ }).click();
       await expect(page.getByRole("status")).toContainText("salvate");
       await expect(
         detail.locator(".project-purchase .catalog-price"),

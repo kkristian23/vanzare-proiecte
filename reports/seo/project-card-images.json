@@ -1,12 +1,122 @@
 {
   "quality": 86,
   "withoutEnlargement": true,
-  "projects": 45,
-  "variants": 90,
-  "sourceBytes": 4231573,
-  "fallbackBytes": 1915624,
-  "smallBytes": 875920,
+  "projects": 50,
+  "variants": 100,
+  "sourceBytes": 5720327,
+  "fallbackBytes": 2082292,
+  "smallBytes": 956772,
   "records": [
+    {
+      "slug": "serviceflow-pro",
+      "source": "/project-previews/serviceflow-pro.webp",
+      "sourceWidth": 1440,
+      "sourceHeight": 1080,
+      "sourceBytes": 52748,
+      "sourceSha256": "e0abe5205be1cb016fa2aba21826552fa99c936ade88059cc2a7afc24a1cccbd",
+      "variants": [
+        {
+          "src": "/project-card-previews/serviceflow-pro-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 10738
+        },
+        {
+          "src": "/project-card-previews/serviceflow-pro-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 21822
+        }
+      ]
+    },
+    {
+      "slug": "vatra-market",
+      "source": "/project-previews/vatra-market.webp",
+      "sourceWidth": 1440,
+      "sourceHeight": 1080,
+      "sourceBytes": 138712,
+      "sourceSha256": "ec0898c33a61e492fb9dafffc14037c3269168ed9200920fcd8d2198c71f93b6",
+      "variants": [
+        {
+          "src": "/project-card-previews/vatra-market-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 21430
+        },
+        {
+          "src": "/project-card-previews/vatra-market-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 46312
+        }
+      ]
+    },
+    {
+      "slug": "codru-escapes",
+      "source": "/project-previews/codru-escapes.webp",
+      "sourceWidth": 1440,
+      "sourceHeight": 1080,
+      "sourceBytes": 142648,
+      "sourceSha256": "f9af732b0312cbe5894ccbaaeb53999c0f34fc9e22a3e9d84ea5681a567c3dea",
+      "variants": [
+        {
+          "src": "/project-card-previews/codru-escapes-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 21998
+        },
+        {
+          "src": "/project-card-previews/codru-escapes-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 47408
+        }
+      ]
+    },
+    {
+      "slug": "clientaxis-crm",
+      "source": "/project-previews/clientaxis-crm.webp",
+      "sourceWidth": 1440,
+      "sourceHeight": 1080,
+      "sourceBytes": 35208,
+      "sourceSha256": "14fd9c9d597c83deee0c1c83a410aa07af4ff1e9fab3503041f8ab06b34d6a42",
+      "variants": [
+        {
+          "src": "/project-card-previews/clientaxis-crm-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 7080
+        },
+        {
+          "src": "/project-card-previews/clientaxis-crm-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 14266
+        }
+      ]
+    },
+    {
+      "slug": "iclinica",
+      "source": "/project-previews/iclinica.webp",
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 1134664,
+      "sourceSha256": "affc5f1b3f4f827e9782af58292c9dc98413ca57a54c924aa4ac01d5246a2909",
+      "variants": [
+        {
+          "src": "/project-card-previews/iclinica-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 19606
+        },
+        {
+          "src": "/project-card-previews/iclinica-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 36860
+        }
+      ]
+    },
     {
       "slug": "aquaverde",
       "source": "/project-previews/aquaverde.webp",
@@ -870,8 +980,8 @@
       "source": "/project-previews/flow-crm.png",
       "sourceWidth": 1185,
       "sourceHeight": 751,
-      "sourceBytes": 66580,
-      "sourceSha256": "8a8bd96ce2e2e8db8efa3401581fa39b3a1fb0ad0688b7c31e8321da79157d7a",
+      "sourceBytes": 63489,
+      "sourceSha256": "c619efe207d69d8ccb6438d93d82345776537d2394aeec1bd7a152995f86d107",
       "variants": [
         {
           "src": "/project-card-previews/flow-crm-480.webp",
@@ -914,8 +1024,8 @@
       "source": "/project-previews/staynest.png",
       "sourceWidth": 1185,
       "sourceHeight": 751,
-      "sourceBytes": 159302,
-      "sourceSha256": "eb99888150d20290119040bc965318c8528def4ac43a085587c631f75d351876",
+      "sourceBytes": 153312,
+      "sourceSha256": "89213308bb0c5a077c83081f72a53618addfdade5f39885bbbb18ef5a6ca3ba1",
       "variants": [
         {
           "src": "/project-card-previews/staynest-480.webp",
@@ -936,8 +1046,8 @@
       "source": "/project-previews/tableo.png",
       "sourceWidth": 1185,
       "sourceHeight": 751,
-      "sourceBytes": 84777,
-      "sourceSha256": "b83223e90114766c35dddbd8b58a7598fec06c328e6b96fad4ef289c0523897a",
+      "sourceBytes": 80597,
+      "sourceSha256": "6679cc903c7f54ae616ac79db3cdb31d117117e9a5b23378e457d782c28c5b27",
       "variants": [
         {
           "src": "/project-card-previews/tableo-480.webp",
@@ -980,8 +1090,8 @@
       "source": "/project-previews/imobilia-one.png",
       "sourceWidth": 1185,
       "sourceHeight": 751,
-      "sourceBytes": 89409,
-      "sourceSha256": "dab7e3c2defaeaa185ac746d75bb0d15ff6684fcd9c779ad7554bf636c2c6875",
+      "sourceBytes": 87444,
+      "sourceSha256": "5a7562eb7f2903c4b35dcd8be2d7e9479149684c391cd0fca3b23e33fe49c8a4",
       "variants": [
         {
           "src": "/project-card-previews/imobilia-one-480.webp",

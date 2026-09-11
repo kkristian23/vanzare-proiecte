@@ -1,0 +1,25 @@
+1:"$Sreact.fragment"
+2:I[47257,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"ClientPageRoot"]
+3:I[36768,["/iclinica/_next/static/chunks/3fntmmi971322.js","/iclinica/_next/static/chunks/1q5uaao2caygh.js"],"default"]
+6:I[97367,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+b:I[97367,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+c:I[97367,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+e:I[39756,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"default"]
+f:I[37457,["/iclinica/_next/static/chunks/3fntmmi971322.js"],"default"]
+:HL["/iclinica/_next/static/chunks/0hwp27nwdt5d2.css","style"]
+a:X
+11:X
+11:C
+0:{"buildId":"sd2EmFBW_p0lrBuyutjXV","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/iclinica/_next/static/chunks/1q5uaao2caygh.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":"$@9","staleTime":"$a","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$Lb",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":[]}]}]}],null]}],"isPartial":"$@d","staleTime":"$a","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}]}]]}],"isPartial":"$@10","staleTime":"$a","varyParams":"$11"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/iclinica/_next/static/chunks/0hwp27nwdt5d2.css","precedence":"next"}],["$","script","script-0",{"src":"/iclinica/_next/static/chunks/3fntmmi971322.js","async":true}]],["$","html",null,{"lang":"ro","children":[["$","head",null,{"children":["$","title",null,{"children":"iClinica"}]}],["$","body",null,{"children":["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}],"notFound":[["$","$L3",null,{}],[]]}]}]]}]]}],"isPartial":"$@12","staleTime":"$a","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@13","rootVaryParams":null,"needsRuntimeRequest":"$@14"}
+4:{}
+5:"$0:data:0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
+a:300
+14:true
+a:C
+13:0
+d:"$undefined"
+10:"$undefined"
+12:"$undefined"
+9:"$undefined"

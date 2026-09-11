@@ -16,12 +16,24 @@ const gardenSources = {
   ecohabitat: "/ecohabitat/images/garden.jpg",
   yardcraft: "/yardcraft/images/hero-1600.webp",
 };
+const previewSources = {
+  "serviceflow-pro": "/project-previews/serviceflow-pro.webp",
+  "vatra-market": "/project-previews/vatra-market.webp",
+  "codru-escapes": "/project-previews/codru-escapes.webp",
+  "clientaxis-crm": "/project-previews/clientaxis-crm.webp",
+  iclinica: "/project-previews/iclinica.webp",
+};
 const widths = [480, 800];
 const digest = (buffer) => createHash("sha256").update(buffer).digest("hex");
 
 export async function generateProjectCardImages(root = process.cwd()) {
   const { publicProjects } = loadSiteModule("app/lib/project-catalog.ts", root);
-  const projects = publicProjects.filter((project) => gardenSources[project.slug] || (project.id >= 27 && project.id <= 66));
+  const projects = publicProjects.filter(
+    (project) =>
+      gardenSources[project.slug] ||
+      previewSources[project.slug] ||
+      (project.id >= 27 && project.id <= 66),
+  );
   const outputDirectory = path.join(root, "public/project-card-previews");
   await mkdir(outputDirectory, { recursive: true });
   const manifest = {};
@@ -29,7 +41,7 @@ export async function generateProjectCardImages(root = process.cwd()) {
 
   for (const project of projects) {
     assert.match(project.slug, /^[a-z0-9-]+$/, "Expected a safe catalog slug");
-    const source = gardenSources[project.slug] ?? `/project-previews/${project.slug}.png`;
+    const source = gardenSources[project.slug] ?? previewSources[project.slug] ?? `/project-previews/${project.slug}.png`;
     const sourceFile = path.join(root, "public", source.slice(1));
     const original = await readFile(sourceFile);
     const originalHash = digest(original);

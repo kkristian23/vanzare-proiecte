@@ -1,0 +1,4 @@
+:HL["/serviceflow-pro/_next/static/chunks/1jmkp6tvdda2k.css","style"]
+:HL["/serviceflow-pro/_next/static/chunks/2w6xw5l1upr-a.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"servicii","param":null,"prefetchHints":4192,"slots":{"children":{"name":"id","param":{"type":"d","key":"montare-laminat","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"_ivuUofP7X73Nw3tsa6Ls"}

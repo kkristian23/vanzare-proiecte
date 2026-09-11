@@ -9,6 +9,15 @@ const thresholdKb = Number(process.argv.find((argument) => argument.startsWith("
 const threshold = thresholdKb * 1024;
 const apply = process.argv.includes("--apply");
 const includeSourceImages = process.argv.includes("--include-source-images");
+const projectSelection = process.argv
+  .find((argument) => argument.startsWith("--projects="))
+  ?.slice("--projects=".length)
+  .split(",")
+  .map((slug) => slug.trim().toLowerCase())
+  .filter(Boolean);
+const selectedProjectSlugs = projectSelection?.length
+  ? new Set(projectSelection)
+  : null;
 const concurrency = Math.max(1, Math.min(Number(process.env.IMAGE_OPTIMIZE_CONCURRENCY ?? 2), 4));
 const imageExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".svg", ".bmp", ".tif", ".tiff", ".ico"]);
 const sourceSkipDirectories = new Set([
@@ -181,7 +190,12 @@ async function optimizeFile(target) {
 }
 
 const registry = JSON.parse(await readFile(path.join(root, "showcase-projects", "registry.json"), "utf8"));
-const projects = registry.filter((project) => !project.disabled && project.slug !== "forge");
+const projects = registry.filter(
+  (project) =>
+    !project.disabled &&
+    project.slug !== "forge" &&
+    (!selectedProjectSlugs || selectedProjectSlugs.has(project.slug)),
+);
 const audit = [];
 const candidates = [];
 const missingProjects = [];
@@ -207,18 +221,28 @@ for (const project of projects) {
   });
 }
 
-const previewDirectory = path.join(root, "public", "project-previews");
-await walk(previewDirectory, async (file) => {
-  const size = (await stat(file)).size;
-  const record = { scope: "project-preview", project: "project-previews", path: file, beforeHash: size > threshold ? await fileHash(file) : undefined, bytes: size };
-  try {
-    Object.assign(record, await inspectImage(file));
-  } catch (error) {
-    Object.assign(record, { valid: false, error: error.message });
-  }
-  audit.push(record);
-  if (record.valid && size > threshold) candidates.push(record);
-});
+const selectedPreview = (file) => {
+  if (!selectedProjectSlugs) return true;
+  const name = path.basename(file).toLowerCase();
+  return [...selectedProjectSlugs].some(
+    (slug) => name.startsWith(`${slug}.`) || name.startsWith(`${slug}-`),
+  );
+};
+for (const directoryName of ["project-previews", "project-card-previews"]) {
+  const previewDirectory = path.join(root, "public", directoryName);
+  await walk(previewDirectory, async (file) => {
+    if (!selectedPreview(file)) return;
+    const size = (await stat(file)).size;
+    const record = { scope: "project-preview", project: directoryName, path: file, beforeHash: size > threshold ? await fileHash(file) : undefined, bytes: size };
+    try {
+      Object.assign(record, await inspectImage(file));
+    } catch (error) {
+      Object.assign(record, { valid: false, error: error.message });
+    }
+    audit.push(record);
+    if (record.valid && size > threshold) candidates.push(record);
+  });
+}
 
 const publicCandidateCount = candidates.length;
 const sourceTargets = [];
@@ -276,6 +300,7 @@ const output = {
   generatedAt: new Date().toISOString(),
   mode: apply ? "apply" : "dry-run",
   thresholdKb,
+  selectedProjects: selectedProjectSlugs ? [...selectedProjectSlugs] : null,
   projects: projects.length,
   missingProjects,
   audit: {
