@@ -1,5 +1,6 @@
 "use client";
-
+import { cmsText } from "../lib/cms-store";
+import { useCms } from "../components/cms-live";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -23,6 +24,7 @@ export default function QuestionsPage({
 }: {
   initialLocale?: Locale;
 }) {
+  useCms();
   const locale = initialLocale;
   const c = faqUi[locale];
   const categories = getFaqCategories(locale);
@@ -139,7 +141,7 @@ export default function QuestionsPage({
       <header className="faq-nav">
         <BrandLogo className="faq-logo" href={localePath(locale)} inverse />
         <div className="faq-runtime">
-          <i /> {c.knowledge} <b>v1.0.0</b>
+          <i /> {c.knowledge} <b>{cmsText("faq-client", "literal-2485f4d55aae6c5b", "v1.0.0")}</b>
         </div>
         <div className="page-nav-tools">
           <nav className="page-language-switch" aria-label={c.language}>
@@ -165,7 +167,7 @@ export default function QuestionsPage({
             <ArrowLeft /> {c.back}
           </a>
           <p className="faq-kicker">
-            <span>00</span> / {c.kicker}
+            <span>{cmsText("faq-client", "literal-f1534392279bddbf", "00")}</span> {cmsText("faq-client", "literal-005e1574a2b5c816", " / ")}{c.kicker}
           </p>
           <h1>
             {c.hero[0]}
@@ -178,10 +180,8 @@ export default function QuestionsPage({
         </div>
         <div className="faq-stat-card">
           <em className="faq-stat-edition">
-            KNOWLEDGE
-            <br />
-            EDITION
-          </em>
+            {cmsText("faq-client", "literal-7dbef783a890cc6b", "KNOWLEDGE")}<br />
+            {cmsText("faq-client", "literal-344328bd87a04220", "EDITION")}</em>
           <Sparkles />
           <strong>{count}</strong>
           <span>
@@ -189,12 +189,12 @@ export default function QuestionsPage({
             <br />
             <b>{c.meaningful}</b>
           </span>
-          <small>STATUS: READY_TO_HELP</small>
+          <small>{cmsText("faq-client", "literal-6505c08c957ef99b", "STATUS: READY_TO_HELP")}</small>
         </div>
       </section>
       <section className="faq-workspace">
         <aside className="faq-sidebar">
-          <p>/ {c.navigation}</p>
+          <p>{cmsText("faq-client", "literal-5da345a47290ee22", "/ ")}{c.navigation}</p>
           {categories.map((category) => (
             <div
               key={category.title}
@@ -218,7 +218,7 @@ export default function QuestionsPage({
                   type="button"
                   onClick={() => void shareCategory(category)}
                   aria-label={`Distribuie categoria ${category.title}`}
-                  title="Distribuie categoria"
+                  title={cmsText("faq-client", "literal-d129ea7609286d9e", "Distribuie categoria")}
                 >
                   <Link2 />
                 </button>
@@ -248,7 +248,7 @@ export default function QuestionsPage({
       />
       <footer className="faq-footer">
         <div className="faq-footer-main">
-          <span>© 2026 MONO/DEV</span>
+          <span>{cmsText("faq-client", "literal-b17f48f4917456d7", "© 2026 MONO/DEV")}</span>
           <p>{c.footer}</p>
           <a href={localePath(locale, "contact")}>
             {c.contact} <ArrowUpRight />

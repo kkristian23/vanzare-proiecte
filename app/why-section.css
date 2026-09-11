@@ -593,8 +593,8 @@
 #top > div.marquee {
   margin-top: clamp(200px, 13.6vw, 260px);
   padding-block: 22px;
-  background: #ff8a35;
-  color: var(--ink);
+  background: #143d27;
+  color: #f2f0e9;
   border-color: var(--ink);
   box-shadow: none;
 }
@@ -1153,11 +1153,11 @@
 
 .project-sort summary {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   min-height: 52px;
   padding: 0 18px 0 20px;
   align-items: center;
-  justify-content: center;
   gap: 18px;
   border: 1px solid rgb(132 102 255 / 22%);
   border-radius: 999px;
@@ -1168,6 +1168,11 @@
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 82%);
   list-style: none;
   transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.project-sort summary > span {
+  min-width: 0;
+  text-align: center;
 }
 
 .project-sort summary::-webkit-details-marker {
@@ -1184,8 +1189,6 @@
 }
 
 .project-sort summary svg {
-  position: absolute;
-  right: 18px;
   flex: 0 0 auto;
   transition: transform 180ms ease;
 }
@@ -1553,10 +1556,6 @@
     gap: 8px;
     padding-inline: 14px;
     font-size: 12px;
-  }
-
-  .project-sort summary svg {
-    right: 14px;
   }
 
   .project-sort .sort-menu {

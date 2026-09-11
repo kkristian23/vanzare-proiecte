@@ -16,7 +16,7 @@ test("contact prefill preserves rental tiers and each catalogue instalment term 
     assert.notEqual(withServices, withoutServices);
     assert.notEqual(contactOptionLabel(locale, "unknown"), purchase, "Unknown options must not be silently sold as purchase");
     assert.equal(contactOptionLabel(locale, "rent"), contactOptionLabel(locale, "rental"));
-    for (const plan of installmentPlans) {
+    for (const plan of installmentPlans()) {
       const option = `installments-${plan.months}-months`;
       const label = contactOptionLabel(locale, option);
       assert.notEqual(label, purchase);
@@ -75,7 +75,7 @@ test("demo noindex covers HTML aliases and keeps project images crawlable", asyn
   for (const required of ["/aquaverde", "/aquaverde/", "/aquaverde/index.html", "/aquaverde/preview.html", "/archicontract/ro", "/archicontract/ro/", "/archicontract/ro/catalog/ac-001", "/archicontract/ro/catalog/ac-001/"]) assert.ok(paths.includes(required), required);
   const payloads = await technicalPayloadPaths();
   const headers = renderHeaders(paths, payloads);
-  assert.deepEqual(headers.split("\n").filter((line) => line.startsWith("/") && line.includes("*")), ["/*.rsc"], "Only the targeted RSC extension may use a wildcard");
+  assert.deepEqual(headers.split("\n").filter((line) => line.startsWith("/") && line.includes("*")), ["/admin/*", "/*.rsc"], "Only the private admin namespace and targeted RSC extension may use a wildcard");
   assert.doesNotMatch(headers, /^\S*\.(?:webp|png|jpe?g|avif|gif|svg|css|m?js)$/mi);
   assert.ok(payloads.includes("/aquaverde.txt"));
   assert.ok(payloads.includes("/aquaverde/index.txt"));

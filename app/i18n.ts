@@ -1,10 +1,11 @@
+import { cmsContent } from "./lib/cms-store";
 import { newProjectTranslations } from "./new-project-translations";
 
 export type Locale = "ro" | "ru" | "en";
 
 export const locales: Locale[] = ["ro", "ru", "en"];
 
-export const contactCopy = {
+export const contactCopy = cmsContent("i18n-contactCopy", {
   ro: {
     systemOnline: "SISTEM ONLINE", back: "Înapoi la proiecte", initialize: "/ INIȚIALIZARE CONTACT",
     hero: ["HAI SĂ", "CONSTRUIM", "CEVA", "RAR."], compiled: "compilat cu succes",
@@ -50,9 +51,9 @@ export const contactCopy = {
     mailSubject: "Project brief", mailName: "Name", mailEmail: "Email", mailProject: "Project type", mailBudget: "Budget",
     footer: "DESIGN → CODE → LAUNCH",
   },
-} as const;
+} as const);
 
-export const copy = {
+export const copy = cmsContent("i18n-copy", {
   ro: {
     nav: ["Proiecte", "Proces", "Contact"], questions: "Întrebări", buyProject: "Proiect personalizat", openMenu: "Deschide meniul", language: "Limbă",
     eyebrow: "PROIECTE DIGITALE. GATA DE LANSARE.", heroA: "IDEI MARI", heroB: "DEJA CONSTRUITE",
@@ -92,9 +93,9 @@ export const copy = {
     close: "Close details", fullLicense: "FULL LICENSE", fullPrice: "FULL PRICE", requestDemo: "Request demo access", openProject: "Open project", buyFor: "Buy for", interested: "Interested in", demoSubject: "Demo access request for", rentalLabel: "MONTHLY RENTAL", rentalFrom: "from", perMonth: "/ month", rentalIncludes: ["Fixed rental for 18 months", "Launch and hosting included", "Monthly technical care", "Option to buy later"], rentFor: "Rent from",
     footer: { label: "MONO/DEV — DIGITAL PRODUCTS", title: "Found the right project?", text: "We’ll explain what is included, how customization works and every step leading to launch.", contact: "Discuss your project", navigation: "Navigation", projects: "Projects", process: "Process", contactPage: "Contact", email: "Email", availability: "Available for new projects", legal: "Launch-ready websites and digital products." },
   },
-} as const;
+} as const);
 
-const typeMap: Record<string, [string, string]> = {
+const typeMap: Record<string, [string, string]> = cmsContent("i18n-typeMap", {
   "Gardens & Landscaping": ["Сады и ландшафтный дизайн", "Gardens & Landscaping"],
   "Real Estate": ["Недвижимость", "Real Estate"],
   "Clinics & Medical": ["Клиники и медицина", "Clinics & Medical"],
@@ -110,9 +111,9 @@ const typeMap: Record<string, [string, string]> = {
   "Luxury Furniture": ["Премиальная мебель", "Luxury Furniture"], Marketplace: ["Маркетплейс", "Marketplace"],
   "Equipment Rental": ["Аренда техники", "Equipment Rental"], "Beauty & Academy": ["Красота и академия", "Beauty & Academy"], "Service Management": ["Управление сервисом", "Service Management"],
   "Calendar & Events": ["Календарь и события", "Calendar & Events"], "Utility Management": ["Учёт коммунальных услуг", "Utility Management"], Beauty: ["Красота", "Beauty"],
-};
+});
 
-const romanianTypeMap: Record<string, string> = {
+const romanianTypeMap: Record<string, string> = cmsContent("i18n-romanianTypeMap", {
   "Gardens & Landscaping": "Grădini și peisagistică",
   "Real Estate": "Imobiliare",
   "Clinics & Medical": "Clinici și servicii medicale",
@@ -134,11 +135,11 @@ const romanianTypeMap: Record<string, string> = {
   "Calendar & Events": "Calendar și evenimente",
   "Utility Management": "Administrarea utilităților",
   Beauty: "Frumusețe",
-};
+});
 
 export function localType(type: string, locale: Locale) { return locale === "ro" ? romanianTypeMap[type] ?? type : typeMap[type]?.[locale === "ru" ? 0 : 1] ?? type; }
 
-const descriptions: Record<number, [string, string]> = {
+const descriptions: Record<number, [string, string]> = cmsContent("i18n-descriptions", {
   34: ["Мультитенантная операционная платформа для автосервисов: записи, работы, клиенты, склад, партнёры и отчёты в одной системе", "A multi-tenant operations platform for automotive service companies, combining appointments, work orders, customers, inventory, partners and reporting"],
   26: ["Универсальная система онлайн-записи для услуг, команд и доступности, автоматически адаптируемая под каждую компанию", "A universal booking system for services, teams and availability, automatically customized for each company"],
   25: ["Универсальная платформа аренды с инвентарём, доступностью, ценообразованием, депозитами и полным управлением бронированиями", "A universal rental platform with inventory, availability, pricing, deposits and complete reservation management"],
@@ -159,7 +160,7 @@ const descriptions: Record<number, [string, string]> = {
   9: ["Социальный календарь для событий, партнёров и групп", "A social calendar for events, partners and groups"],
   8: ["Платформа умного управления жилыми сообществами и коммунальными услугами", "A platform for intelligent residential-community management"],
   7: ["Премиальный цифровой опыт для салона красоты", "A premium digital experience for a beauty salon"],
-};
+});
 
 export function localDescription(id: number, fallback: string, locale: Locale) {
   if (locale === "ro") return fallback;
@@ -186,13 +187,13 @@ export function localizedDetail(locale: Exclude<Locale, "ro">, project: { title:
   };
 }
 
-export const visualCopy = {
+export const visualCopy = cmsContent("i18n-visualCopy", {
   ro: { coming: "ÎN CURÂND", search: "Ce cauți astăzi?", estate: "Imobil", auto: "Auto", services: "Servicii", electronics: "Electronice", active: "MARKETPLACE ACTIV", opportunities: "oportunități într-un singur loc", publish: "+ PUBLICĂ ANUNȚ", available: "UTILAJ DISPONIBIL", capacity: "CAPACITATE ATELIER", appointments: "PROGRAMĂRI", working: "ÎN LUCRU", dinner: "🍷 Cină împreună", participants: "2 participanți", connect: "PLANIFICĂ · INVITĂ · CONECTEAZĂ", hello: "BUNĂ, CRISTIAN", consumers: "CONSUMATORI", roles: "MULTI-ZONĂ · 3 ROLURI", configurable: "MODULAR / CONFIGURABIL / AL TĂU" },
   ru: { coming: "СКОРО", search: "Что вы ищете?", estate: "Недвижимость", auto: "Авто", services: "Услуги", electronics: "Техника", active: "МАРКЕТПЛЕЙС АКТИВЕН", opportunities: "все возможности в одном месте", publish: "+ ПОДАТЬ ОБЪЯВЛЕНИЕ", available: "ТЕХНИКА ДОСТУПНА", capacity: "ЗАГРУЗКА СЕРВИСА", appointments: "ЗАПИСЕЙ", working: "В РАБОТЕ", dinner: "🍷 Ужин вместе", participants: "2 участника", connect: "ПЛАНИРУЙ · ПРИГЛАШАЙ · ОБЩАЙСЯ", hello: "ПРИВЕТ, КРИСТИАН", consumers: "ПОТРЕБИТЕЛЕЙ", roles: "МУЛЬТИЗОНА · 3 РОЛИ", configurable: "МОДУЛЬНО / НАСТРАИВАЕМО / ДЛЯ ВАС" },
   en: { coming: "COMING SOON", search: "What are you looking for?", estate: "Property", auto: "Auto", services: "Services", electronics: "Electronics", active: "ACTIVE MARKETPLACE", opportunities: "opportunities in one place", publish: "+ POST AN AD", available: "EQUIPMENT AVAILABLE", capacity: "WORKSHOP CAPACITY", appointments: "APPOINTMENTS", working: "IN PROGRESS", dinner: "🍷 Dinner together", participants: "2 participants", connect: "PLAN · INVITE · CONNECT", hello: "HELLO, CRISTIAN", consumers: "CONSUMERS", roles: "MULTI-ZONE · 3 ROLES", configurable: "MODULAR / CONFIGURABLE / YOURS" },
-} as const;
+} as const);
 
-export const showcaseCopy = {
+export const showcaseCopy = cmsContent("i18n-showcaseCopy", {
   ro: {
     universalAppointments: "PROGRAMĂRI UNIVERSALE", step: "PASUL 03 / 05", chooseDate: ["Alege data", "și ora."], bookingLive: "PROGRAMĂRI ACTIVE",
     inventoryAvailable: "INVENTAR DISPONIBIL", rentCycle: ["ÎNCHIRIAZĂ.", "RETURNĂ.", "REPETĂ."], units: "12 UNITĂȚI",
@@ -229,4 +230,4 @@ export const showcaseCopy = {
     precision: ["PRECISION", "IS A RITUAL"], signatureCut: "SIGNATURE CUT", nailStudio: "NAIL STUDIO & ACADEMY", beautyCraft: ["BEAUTY", "meets craft."],
     serviceOs: "SERVICE OS", liveOperations: "● LIVE OPERATIONS", month: "August 2026",
   },
-} as const;
+} as const);

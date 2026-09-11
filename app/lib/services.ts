@@ -1,3 +1,4 @@
+import { cmsContent } from "./cms-store";
 import type { Locale } from "./site-config";
 
 export type ServiceContent = {
@@ -19,7 +20,7 @@ export type Service = {
 };
 
 /** Editorial content is intentionally maintained per service and language. */
-export const services: Service[] = [
+export const services: Service[] = cmsContent("services-services", [
   {
     slug: "business-websites",
     categories: ["Gardens & Landscaping", "Interior Design", "Mobilă"],
@@ -392,14 +393,14 @@ export const services: Service[] = [
       },
     },
   },
-];
+]);
 
 export function getService(slug: string) {
   return services.find((service) => service.slug === slug);
 }
 
-export const serviceLabels = {
+export const serviceLabels = cmsContent("services-serviceLabels", {
   ro: { title: "Servicii web pentru Moldova și colaborări internaționale", description: "De la un site de prezentare la un magazin sau o aplicație web: alege serviciul după problema pe care vrei să o rezolvi și vezi exemplele din catalog.", problem: "Ce rezolvăm", included: "Ce putem include în proiect", process: "Cum lucrăm", quote: "Cum se stabilește oferta", examples: "Exemple demonstrative relevante", examplesNote: "Exemplele din catalog ilustrează direcții de design și funcții. Sunt produse demonstrative, nu studii de caz ale unor clienți.", faq: "Întrebări despre acest serviciu", cta: "Discută cerințele proiectului", all: "Toate serviciile", detail: "Vezi proiectul", related: "Servicii conexe" },
   ru: { title: "Веб-услуги для Молдовы и международных проектов", description: "От сайта компании до интернет-магазина и веб-приложения: выберите услугу по своей задаче и изучите примеры из каталога.", problem: "Какую задачу решаем", included: "Что может войти в проект", process: "Как проходит работа", quote: "Как рассчитывается стоимость", examples: "Подходящие демонстрационные проекты", examplesNote: "Примеры показывают направления дизайна и функции. Это демонстрационные продукты, а не кейсы клиентов.", faq: "Вопросы об этой услуге", cta: "Обсудить требования к проекту", all: "Все услуги", detail: "Посмотреть проект", related: "Связанные услуги" },
   en: { title: "Website and web application services", description: "From a business website to an online store or operational application: choose a service by the problem you need to solve and explore relevant catalogue examples.", problem: "The problem we address", included: "What the project can include", process: "How the work proceeds", quote: "How we scope the quote", examples: "Relevant demonstration projects", examplesNote: "Catalogue examples illustrate design directions and functionality. They are demonstration products, not commissioned client case studies.", faq: "Questions about this service", cta: "Discuss your project requirements", all: "All services", detail: "View project", related: "Related services" },
-} as const;
+} as const);

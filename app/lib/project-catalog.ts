@@ -1,3 +1,4 @@
+import { liveProject, cmsContent, paymentSettings, defaultPaymentSettings } from "./cms-store";
 import projectPrices from "../project-prices.json";
 import { gardenProjects } from "../garden-projects";
 import { newProjectDetails } from "../new-project-details";
@@ -17,13 +18,22 @@ export type Project = {
   mobileOS?: ("android" | "ios")[];
 };
 
-export const monthlyRentalPrice = (price: number) => Number((price / 18).toFixed(2));
-export const annualInstallmentPrice = (price: number) => Math.ceil(price / 12 / 5) * 5;
-export const installmentPlans = [
-  { months: 3, surcharge: 0 },
-  { months: 6, surcharge: 0.05 },
-  { months: 12, surcharge: 0.08 },
-] as const;
+export const monthlyRentalPrice = (price: number) =>
+  Math.floor(price / paymentSettings().rentalMonths);
+export const installmentPlans = () =>
+  paymentSettings().installmentPlans.map((plan) => ({
+    months: plan.months,
+    surcharge: plan.surcharge / 100,
+  }));
+export const annualInstallmentPrice = (price: number) => {
+  const plan = installmentPlans().at(-1) ?? {
+    months: defaultPaymentSettings.installmentPlans.at(-1)!.months,
+    surcharge: defaultPaymentSettings.installmentPlans.at(-1)!.surcharge / 100,
+  };
+  const surcharge = plan.surcharge;
+  const total = Math.ceil(price * (1 + surcharge));
+  return Math.floor(total / plan.months);
+};
 
 export const projectCatalog: Project[] = [
   ...gardenProjects.map((project) => ({
@@ -827,10 +837,10 @@ const pricesByProjectId = new Map(
   projectPrices.map(({ id, price }) => [id, price]),
 );
 
-export const projects: Project[] = projectCatalog.map((project) => ({
+export const projects: Project[] = projectCatalog.map((project) => liveProject(cmsContent(`project-${project.id}`, {
   ...project,
   price: pricesByProjectId.get(project.id) ?? project.price,
-}));
+})));
 
 export const hiddenCategories = new Set(["AI Website Factory"]);
 export const unavailableProjectIds = new Set<number>();
@@ -978,7 +988,7 @@ export const projectDetails: Record<
     demo?: string;
     sections: Array<{ title: string; items: string[] }>;
   }
-> = {
+> = cmsContent("project-catalog-projectDetails", {
   34: {
     summary: "AUTOFLOW PARTNER este un sistem complet de operare pentru service-uri și companii de servicii auto. Platforma unește planificarea, execuția lucrărilor, relația cu clienții, stocul și indicatorii de management într-un workspace multi-tenant.",
     sections: [
@@ -2017,13 +2027,13 @@ export const projectDetails: Record<
       },
     ],
   },
-};
+});
 
 export const projectCurrency = "EUR" as const;
 export const categoryServiceSlugs: Record<string, string> = { "Clinics & Medical": "clinic-websites", "Restaurants & Food": "restaurant-websites", "Real Estate": "real-estate-websites", "E-commerce & Auto": "ecommerce", "Mobilă": "ecommerce", "Marketplace": "ecommerce", "CRM & Sales": "web-applications", "Service Management": "web-applications", "Utility Management": "web-applications", "Calendar & Events": "web-applications", "Online Education": "web-applications", "Equipment Rental": "web-applications", "Interior Design": "web-design" };
-export const publicProjects = projects.filter((project) =>
+export const publicProjects = projectCatalog.filter((project) =>
   !hiddenCategories.has(project.type) && !unavailableProjectIds.has(project.id),
-).map((project) => ({ ...project, slug: projectSlugs[project.id], available: true, currency: projectCurrency }));
+).map((project) => liveProject(cmsContent(`project-${project.id}`, { ...project, price: pricesByProjectId.get(project.id) ?? project.price, slug: projectSlugs[project.id], available: true, currency: projectCurrency })));
 
 export const projectHref = (locale: Locale, id: number) => localePath(locale, `projects/${projectSlugs[id]}`);
 

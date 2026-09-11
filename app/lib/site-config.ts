@@ -1,13 +1,14 @@
+import { cmsContent } from "./cms-store";
 import type { Metadata } from "next";
 export const locales = ["ro", "ru", "en"] as const;
 export type Locale = (typeof locales)[number];
 export const seoLocales = { ro: "ro-MD", ru: "ru-MD", en: "en" } as const;
-export const siteConfig = { name: "MONO/DEV", url: "https://monodev.md", email: "monodev@gmail.com", phone: "+37378868996", country: "Moldova", locales, defaultLocale: "ro" as Locale, socialProfiles: [] as string[], ogImage: "/og.png", ogWidth: 1731, ogHeight: 909 } as const;
-export const defaultCopy = {
+export const siteConfig = cmsContent("site-config-siteConfig", { name: "MONO/DEV", url: "https://monodev.md", email: "monodev@gmail.com", phone: "+37378868996", country: "Moldova", locales, defaultLocale: "ro" as Locale, socialProfiles: [] as string[], ogImage: "/og.png", ogWidth: 1731, ogHeight: 909 } as const);
+export const defaultCopy = cmsContent("site-config-defaultCopy", {
   ro: { title: "Creare site-uri în Moldova și catalog web | MONO/DEV", description: "MONO/DEV creează site-uri, magazine online și platforme web pentru Moldova. Explorează catalogul, personalizarea, cumpărarea în rate sau închirierea unui site." },
   ru: { title: "Создание сайтов в Молдове и каталог проектов | MONO/DEV", description: "MONO/DEV создаёт сайты, интернет-магазины и веб-платформы для бизнеса в Молдове. Выберите проект, обсудите адаптацию, покупку в рассрочку или аренду сайта." },
   en: { title: "Web development in Moldova & website catalog | MONO/DEV", description: "MONO/DEV builds websites, online stores and web applications in Moldova. Explore projects, customization, purchase, installments and website rental options." },
-} as const;
+} as const);
 export function isLocale(value: unknown): value is Locale { return locales.includes(value as Locale); }
 export function localePath(locale: Locale, path = "") { const clean = path.replace(/^\/+|\/+$/g, ""); return `/${locale}${clean ? `/${clean}` : ""}`; }
 export function absoluteUrl(path = "") { return new URL(path || "/", siteConfig.url).href; }

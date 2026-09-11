@@ -1,9 +1,10 @@
+import { cmsContent } from "./cms-store";
 import type { Locale } from "./site-config";
 import { translatedFaqCategories } from "./faq-translations";
 export type FAQ = { question: string; answer: string };
 export type Category = { title: string; code: string; description: string; questions: FAQ[] };
 
-export const romanianCategories: Category[] = [
+export const romanianCategories: Category[] = cmsContent("faq-content-romanianCategories", [
   { title: "Catalog & alegere", code: "01", description: "Cum găsești proiectul potrivit.", questions: [
     ["Ce găsesc în catalog?", "Proiecte digitale gata de lansare: site-uri, magazine, platforme și produse web pentru industrii diferite."],
     ["Proiectele din catalog sunt deja funcționale?", "Da. Fiecare este construit ca produs demonstrativ funcțional, pregătit pentru adaptare și lansare."],
@@ -124,7 +125,7 @@ export const romanianCategories: Category[] = [
     ["Cum comunicăm pe parcurs?", "Stabilim un canal simplu de lucru pentru actualizări, întrebări și feedback."],
     ["Nu am găsit răspunsul meu. Ce fac?", "Scrie-ne. O întrebare bună merită un răspuns clar, iar noi actualizăm FAQ-ul când este util."],
   ].map(([question, answer]) => ({ question, answer })) },
-];
+]);
 
 
 export function getFaqCategories(locale: Locale): Category[] { return locale === "ro" ? romanianCategories : translatedFaqCategories[locale]; }

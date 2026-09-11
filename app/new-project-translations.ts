@@ -1,6 +1,7 @@
+import { cmsContent } from "./lib/cms-store";
 import { gardenDetails, gardenDescriptions } from "./garden-projects";
 
-export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<number, string>; newProjectDetails: Record<number, { summary: string; sections: { title: string; items: string[] }[] }> }> = {
+export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<number, string>; newProjectDetails: Record<number, { summary: string; sections: { title: string; items: string[] }[] }> }> = cmsContent("new-project-translations-newProjectTranslations", {
   "en": {
     "descriptions": {
       ...gardenDescriptions("en"),
@@ -1951,4 +1952,4 @@ export const newProjectTranslations: Record<"en" | "ru", { descriptions: Record<
       }
     }
   }
-};
+});

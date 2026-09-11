@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function admin() {
+      return request.auth != null && get(/databases/$(database)/documents/cmsAdmins/$(request.auth.uid)).data.active == true;
+    }
+    match /cmsAdmins/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+    function metadataValid(d) {
+      return d.site == 'monodev-catalog' && d.revision is int && d.revision > 0 && d.updatedBy == request.auth.uid && d.updatedAt == request.time;
+    }
+    function priceValid(d) {
+      return d.keys().hasOnly(['site', 'standard', 'discounted', 'enabled', 'revision', 'updatedAt', 'updatedBy'])
+        && d.standard is number && d.standard >= 0 && d.standard <= 100000000 && d.enabled is bool
+        && (d.discounted == null || (d.discounted is number && d.discounted > 0 && d.discounted < d.standard))
+        && (!d.enabled || d.discounted != null);
+    }
+    function imageValid(i) {
+      return i is map && i.keys().hasOnly(['src', 'alt', 'path']) && i.src is string && i.src.size() < 4096
+        && (i.src.matches('^/[^/].*') || i.src.matches('^https://firebasestorage[.]googleapis[.]com/.*'))
+        && i.alt is string && i.alt.size() <= 1000 && (!('path' in i) || (i.path is string && i.path.matches('^cms-images/monodev-catalog/[^/]+$')));
+    }
+    function imagesValid(a) {
+      return a is list && a.size() <= 12
+        && (a.size() < 1 || imageValid(a[0])) && (a.size() < 2 || imageValid(a[1]))
+        && (a.size() < 3 || imageValid(a[2])) && (a.size() < 4 || imageValid(a[3]))
+        && (a.size() < 5 || imageValid(a[4])) && (a.size() < 6 || imageValid(a[5]))
+        && (a.size() < 7 || imageValid(a[6])) && (a.size() < 8 || imageValid(a[7]))
+        && (a.size() < 9 || imageValid(a[8])) && (a.size() < 10 || imageValid(a[9]))
+        && (a.size() < 11 || imageValid(a[10])) && (a.size() < 12 || imageValid(a[11]));
+    }
+    match /cms/{id} {
+      // This collection contains only published site content; private roles live elsewhere.
+      allow read: if true;
+      allow create, update: if admin() && metadataValid(request.resource.data)
+        && ((!exists(/databases/$(database)/documents/cms/$(id)) && request.resource.data.revision == 1)
+          || (resource != null && request.resource.data.revision == resource.data.revision + 1))
+        && ((id.matches('^text-[a-zA-Z0-9_-]+$')
+          && request.resource.data.keys().hasOnly(['site', 'values', 'revision', 'updatedAt', 'updatedBy'])
+          && request.resource.data.values is map && request.resource.data.values.size() <= 10000)
+        || (id.matches('^price-[0-9]+$') && priceValid(request.resource.data))
+        || (id.matches('^media-[a-zA-Z0-9_-]+$')
+          && request.resource.data.keys().hasOnly(['site', 'images', 'revision', 'updatedAt', 'updatedBy'])
+          && imagesValid(request.resource.data.images)));
+      allow delete: if false;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # MONO/DEV — catalog de proiecte
 
+Administrarea conținutului, imaginilor și prețurilor afișate în catalogul MONO/DEV este disponibilă la `/admin`, cu Firebase Authentication și acces acordat explicit administratorilor. Panoul nu administrează cele 63 de site-uri demonstrative din `public/<slug>/`. Vezi [configurarea Firebase, autorizarea primului administrator și testele](docs/admin-firebase.md).
+
 AquaVerde, TerraForma, GazonPro, EcoHabitat și YardCraft sunt disponibile în categoria **Grădini și peisagistică**. Vezi [sursele, stilurile și fluxul de actualizare](docs/garden-projects.md).
 
 Cele 32 de proiecte noi au implementări separate pentru design, structură și fluxuri. Vezi [lista proiectelor, referințele și verificările](docs/32-project-redesign.md). Sursele lor sunt în directoarele numerotate din `D:/proiecte-front-end`, iar exporturile integrate sunt în `public/<slug>/`.

@@ -28,3 +28,8 @@ public/**/_next/
 # Generated browser traces, screenshots and audit reports are not source code.
 reports/showcase-audit/
 public/*.txt
+# Local test runtimes, generated editor registry and build snapshots.
+work/
+reports/admin/
+app/admin/content-registry.json
+app/lib/cms-published.json

@@ -1,6 +1,7 @@
+import { cmsContent } from "./lib/cms-store";
 import { gardenDetails } from "./garden-projects";
 
-export const newProjectDetails: Record<number,{summary:string;sections:{title:string;items:string[]}[]}> = {
+export const newProjectDetails: Record<number,{summary:string;sections:{title:string;items:string[]}[]}> = cmsContent("new-project-details-newProjectDetails", {
   ...gardenDetails("ro"),
   "35": {
     "summary": "Comunitate de bloc, avizier și participare.",
@@ -898,4 +899,4 @@ export const newProjectDetails: Record<number,{summary:string;sections:{title:st
       }
     ]
   }
-};
+});

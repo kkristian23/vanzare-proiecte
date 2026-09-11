@@ -253,8 +253,8 @@
 
 .installment-options {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
 }
 
 .installment-options button {
@@ -264,7 +264,7 @@
   justify-content: center;
   gap: 3px;
   min-width: 0;
-  padding: 9px 7px;
+  padding: 7px 3px;
   border: 1px solid #b0cb61;
   background: #f4ffd6;
   color: var(--ink);
@@ -275,7 +275,7 @@
 
 .installment-options button:hover { transform: translateY(-1px); border-color: var(--ink); }
 .installment-options button.is-active { border-color: var(--ink); background: var(--ink); color: white; }
-.installment-options b { font: 800 11px var(--font-mono); white-space: nowrap; }
+.installment-options b { font: 800 9px var(--font-mono); white-space: nowrap; }
 .installment-options small { font: 500 8px var(--font-mono); opacity: .72; white-space: nowrap; }
 
 .installment-result {
@@ -382,13 +382,14 @@
 .modal-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px}.modal-toolbar .kicker{color:#5c574f}.modal-status{display:flex;align-items:center;gap:7px;color:#4c6512;font:800 9px var(--font-mono);letter-spacing:1px;white-space:nowrap}.modal-status i{width:7px;height:7px;border-radius:50%;background:#75a517;box-shadow:0 0 0 4px #b8e66b66}
 .modal-price{min-width:145px;padding:12px 14px;margin-bottom:12px;border:1px solid #d8d0b6;border-radius:14px;background:linear-gradient(135deg,#fff9e7,#f0dc9a)}.modal-summary{margin:18px 0 26px}
 .detail-sections{gap:12px;margin-top:14px}.detail-sections section{padding:19px 20px;border:1px solid #d8d4ca;border-radius:16px;background:linear-gradient(135deg,#fffdf8,#f5f2e9)}.detail-sections h3{display:flex;align-items:center;gap:8px;margin-bottom:14px}.detail-sections h3:before{width:7px;height:7px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 4px #8466ff1a;content:""}
-.rental-offer{margin:18px 0 4px;padding:19px;border:1px solid #b2d951;border-radius:18px;background:linear-gradient(135deg,#efffc4,#dcf895);box-shadow:inset 0 1px #fff9,0 10px 28px #769e1b17}.payment-mode-options button{min-height:39px;padding:8px 10px;border-radius:9px}.installment-options button{min-height:40px;padding:6px 8px;border-radius:9px}.installment-options button b{display:block;width:100%;text-align:center}.installment-result{padding:10px 12px;border-radius:10px}
+.rental-offer{margin:18px 0 4px;padding:19px;border:1px solid #b2d951;border-radius:18px;background:linear-gradient(135deg,#efffc4,#dcf895);box-shadow:inset 0 1px #fff9,0 10px 28px #769e1b17}.payment-mode-options button{min-height:39px;padding:8px 10px;border-radius:9px}.installment-options button{min-height:40px;padding:6px 3px;border-radius:9px}.installment-options button b{display:block;width:100%;text-align:center}.installment-result{padding:10px 12px;border-radius:10px}
 .modal-actions{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}.modal-actions a,.modal-actions .demo-link-disabled{min-height:58px;padding:16px 18px;border-radius:13px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.modal-actions a:hover{transform:translateY(-2px);box-shadow:0 10px 20px #17151220}.demo-link{border-color:#bdb8ac;background:#fffdfa}.buy-link{background:linear-gradient(135deg,#242220,var(--ink))}.rent-link{border-radius:13px}
 @media(max-width:700px){.modal-detailed{padding:8px;border-radius:20px}.modal-detailed .visual{height:210px;border-radius:13px}.modal-content{padding:18px 10px 12px}.modal-toolbar{align-items:flex-start}.modal-status{font-size:7px;letter-spacing:.6px}.modal-title-row h2{font-size:clamp(36px,12vw,48px)}.modal-price{min-width:auto;padding:8px 10px;margin-bottom:8px}.detail-sections section{padding:17px}.rental-offer{padding:15px}.modal-actions{padding-top:14px}}
 
 /* Premium action area */
 .modal-actions {
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
   gap: 10px;
   margin-top: 22px;
   padding: 12px;
@@ -418,12 +419,28 @@
   color: #242220;
 }
 
+.modal-actions .project-page-link {
+  margin: 0;
+  border: 1px solid #c8c2b5;
+  background: linear-gradient(135deg, #fffefa, #f8f5ed);
+  color: #242220;
+  text-decoration: none;
+}
+
 .modal-actions .buy-link {
+  min-height: 70px;
+  gap: 12px;
   background: linear-gradient(135deg, #171716, #36342f);
   box-shadow: inset 0 1px #ffffff18, 0 10px 20px #17151220;
 }
 
+.modal-actions .buy-link .catalog-price {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
 .modal-actions .rent-link {
+  grid-column: auto;
   min-height: 70px;
   border-color: #a6ca48;
   border-radius: 14px;

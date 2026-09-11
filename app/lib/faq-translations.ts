@@ -1,3 +1,4 @@
+import { cmsContent } from "./cms-store";
 import type { Category } from "./faq-content";
 
 type CategorySource = [title: string, description: string, questions: [string, string][]];
@@ -249,4 +250,4 @@ const russian: CategorySource[] = [
   ]],
 ];
 
-export const translatedFaqCategories: Record<"ru" | "en", Category[]> = { ru: russian.map(category), en: english.map(category) };
+export const translatedFaqCategories: Record<"ru" | "en", Category[]> = cmsContent("faq-translations-translatedFaqCategories", { ru: russian.map(category), en: english.map(category) });

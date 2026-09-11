@@ -1,8 +1,9 @@
+import { CmsLive, CmsOrganization } from "./components/cms-live";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { defaultCopy, siteConfig } from "./lib/site-config";
 import { HtmlDocument } from "./components/html-document";
-import { JsonLd, organizationSchema } from "./components/json-ld";
+
 import { AnalyticsConsent } from "./components/analytics-consent";
 import "./base.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin", "cyrillic"] });
@@ -40,6 +41,6 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <HtmlDocument className={`${geist.variable} ${mono.variable}`}>{children}<JsonLd data={organizationSchema()} /><AnalyticsConsent measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ""} /></HtmlDocument>
+    <HtmlDocument className={`${geist.variable} ${mono.variable}`}>{children}<CmsLive /><CmsOrganization /><AnalyticsConsent measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ""} /></HtmlDocument>
   );
 }

@@ -1,0 +1,16 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function admin() {
+      return request.auth != null && firestore.get(/databases/(default)/documents/cmsAdmins/$(request.auth.uid)).data.active == true;
+    }
+    match /cms-images/monodev-catalog/{filename} {
+      allow read: if true;
+      // Immutable uploads: replacement gets a new UUID. Referenced files cannot be destroyed.
+      allow write: if resource == null && request.resource != null && admin() && request.resource.size > 0 && request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/(jpeg|png|webp|avif)')
+        && filename.matches('^[a-zA-Z0-9-]+[.](jpg|png|webp|avif)$');
+      allow update, delete: if false;
+    }
+  }
+}

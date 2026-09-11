@@ -1,22 +1,25 @@
 "use client";
+import { cmsContent } from "../lib/cms-store";
+import { useCms } from "./cms-live";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { analyticsConsentKey, trackEvent, type AnalyticsEvent } from "../lib/analytics";
 import { isLocale, localePath, siteConfig } from "../lib/site-config";
 import "../analytics-consent.css";
-const text = {
+const text = cmsContent("analytics-consent-text", {
   ro: { title: "Măsurarea vizitelor", body: "Cu acordul tău, folosim Google Analytics pentru a înțelege vizitele și solicitările. Poți refuza sau schimba alegerea oricând.", accept: "Accept", reject: "Refuz", settings: "Preferințe cookies", policy: "Detalii" },
   ru: { title: "Статистика посещений", body: "С вашего согласия Google Analytics помогает нам понимать посещения и обращения. Вы можете отказаться или изменить выбор в любое время.", accept: "Разрешить", reject: "Отказаться", settings: "Настройки cookies", policy: "Подробнее" },
   en: { title: "Visit measurement", body: "With your permission, Google Analytics helps us understand visits and enquiries. You can decline or change your choice at any time.", accept: "Accept", reject: "Decline", settings: "Cookie preferences", policy: "Details" },
-};
+});
 export function AnalyticsConsent({ measurementId }: { measurementId: string }) {
+  useCms();
   const [choice, setChoice] = useState<string | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const path = usePathname() ?? "/ro";
   const segment = path.split("/")[1];
   const locale = isLocale(segment) ? segment : "ro";
   const c = text[locale];
-  const configured = /^G-[A-Z0-9]+$/.test(measurementId) && path.replace(/\/+$/, "") !== "/cabinet";
+  const configured = /^G-[A-Z0-9]+$/.test(measurementId) && !["/cabinet", "/admin"].includes(path.replace(/\/+$/, ""));
   useEffect(() => {
     const frame = requestAnimationFrame(() => { try { setChoice(localStorage.getItem(analyticsConsentKey)); } catch { /* Stay unconsented. */ } });
     return () => cancelAnimationFrame(frame);

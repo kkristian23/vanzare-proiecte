@@ -1,9 +1,10 @@
+import { cmsContent, cmsText } from "./cms-store";
 import { localDescription, type Locale } from "../i18n";
 
 // These localized descriptions summarize the existing Romanian product details.
 // Demo brands, people, addresses and results are sample content, not MONO/DEV credentials.
 type DetailCopy = { purpose: string; features: string[]; delivery: string };
-const details: Record<number, Record<"en" | "ru", DetailCopy>> = {
+const details: Record<number, Record<"en" | "ru", DetailCopy>> = cmsContent("legacy-project-translations-details", {
   34: {
     en: { purpose: "For automotive service teams that need reception, workshop work and stock in one operational workspace.", features: ["A resource calendar and work orders tracked from arrival to handover", "Customer and vehicle histories, suppliers and separate staff roles", "Inventory reservations, replenishment alerts and tenant isolation"], delivery: "The responsive application, documented API, database structure, Docker configuration and demonstration seed." },
     ru: { purpose: "Для автосервисов, которым нужен единый рабочий кабинет для приёмки, ремонта и складского учёта.", features: ["Календарь ресурсов и заказ-наряды от приёмки до выдачи автомобиля", "История клиентов и машин, поставщики и отдельные роли сотрудников", "Резервирование запчастей, уведомления о пополнении и изоляция организаций"], delivery: "Адаптивное приложение, документированный API, структура базы, конфигурация Docker и демонстрационные данные." },
@@ -108,7 +109,7 @@ const details: Record<number, Record<"en" | "ru", DetailCopy>> = {
     en: { purpose: "A beauty-salon website that presents treatments and the salon's visual identity while giving visitors a clear route to an appointment enquiry.", features: ["Interactive hair, nail, skincare and brow service sections", "A salon-story page and an extensive visual gallery", "Trilingual content, responsive navigation and an appointment enquiry form"], delivery: "The complete editable source, presented pages and responsive design for rebranding with a real salon's services and imagery." },
     ru: { purpose: "Сайт салона красоты, который знакомит с процедурами и визуальным стилем и ведёт посетителя к заявке на запись.", features: ["Интерактивные разделы волос, ногтей, ухода за кожей и бровей", "Страница истории салона и обширная визуальная галерея", "Три языка, адаптивная навигация и форма заявки на запись"], delivery: "Полный редактируемый код, представленные страницы и адаптивный дизайн для реальных услуг и фотографий салона." },
   },
-};
+});
 
 export function legacyProjectDetails(locale: Exclude<Locale, "ro">, project: { id: number; title: string; desc: string; stack: string[] }) {
   const content = details[project.id]?.[locale];
@@ -116,8 +117,8 @@ export function legacyProjectDetails(locale: Exclude<Locale, "ro">, project: { i
   return {
     summary: `${localDescription(project.id, project.desc, locale)} ${content.purpose}`,
     sections: [
-      { title: locale === "en" ? "Main functions" : "Основные функции", items: content.features },
-      { title: locale === "en" ? "What the buyer receives" : "Что получает покупатель", items: [content.delivery] },
+      { title: locale === "en" ? cmsText("legacy-project-translations", "literal-36348b58703a581d", "Main functions") : cmsText("legacy-project-translations", "literal-442567e727e2b9d4", "Основные функции"), items: content.features },
+      { title: locale === "en" ? cmsText("legacy-project-translations", "literal-79c38c106f391d5f", "What the buyer receives") : cmsText("legacy-project-translations", "literal-38773faa3f5650dc", "Что получает покупатель"), items: [content.delivery] },
     ],
   };
 }

@@ -1,4 +1,5 @@
 import type { getProject } from "./project-catalog";
+import { cmsContent } from "./cms-store";
 import { absoluteUrl, localePath, pageMetadata, siteConfig, type Locale } from "./site-config";
 
 type LocalizedProject = NonNullable<ReturnType<typeof getProject>>;
@@ -9,7 +10,7 @@ export function isProjectSeoEnabled(project: { seoEnabled?: unknown }) {
 }
 
 export function projectTitle(project: LocalizedProject, locale: Locale) {
-  const kind = { ro: "Proiect web", ru: "Веб-проект", en: "Web project" }[locale];
+  const kind = cmsContent("project-page-title", { ro: "Proiect web", ru: "Веб-проект", en: "Web project" })[locale];
   return `${kind}: ${project.description.replace(/[.!?]+$/, "")} — ${project.title}`;
 }
 

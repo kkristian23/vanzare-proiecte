@@ -1,10 +1,11 @@
+import { cmsContent } from "./cms-store";
 import type { Locale } from "./site-config";
 
 export const trustPaths = ["about", "process", "privacy", "terms", "cookies"] as const;
 export type TrustPath = (typeof trustPaths)[number];
 export type TrustContent = { title: string; description: string; sections: { title: string; paragraphs: string[] }[] };
 
-export const trustContent: Record<Locale, Record<TrustPath, TrustContent>> = {
+export const trustContent: Record<Locale, Record<TrustPath, TrustContent>> = cmsContent("trust-content-trustContent", {
   ro: {
     about: {
       title: "Despre MONO/DEV",
@@ -167,4 +168,4 @@ export const trustContent: Record<Locale, Record<TrustPath, TrustContent>> = {
       ],
     },
   },
-};
+});
