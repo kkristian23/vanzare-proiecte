@@ -37,7 +37,7 @@ test("live catalog, detail and payment calculations share effective prices witho
   });
   assert.equal(project.price, 1200);
   assert.equal(catalog.getProject("ro", project.slug).price, 1200);
-  assert.equal(catalog.monthlyRentalPrice(project.price), 66);
+  assert.equal(catalog.monthlyRentalPrice(project.price), 66.67);
   cms.publishCms({
     [`price-${project.id}`]: {
       revision: 2,
@@ -77,16 +77,58 @@ test("payment settings update installment terms and monthly rental calculations"
     { months: 16, surcharge: 0.1 },
     { months: 24, surcharge: 0.12 },
   ]);
-  assert.equal(catalog.monthlyRentalPrice(1000), 41);
-  assert.equal(catalog.annualInstallmentPrice(1000), 46);
+  assert.equal(catalog.monthlyRentalPrice(1000), 41.67);
+  assert.equal(catalog.annualInstallmentPrice(1000), 47);
+  assert.equal(catalog.installmentTotalPrice(350, 0.12), 392);
+  assert.equal(catalog.installmentMonthlyPrice(350, { months: 12, surcharge: 0.12 }), 32.67);
   assert.equal(cms.paymentSettings().rentalMonths, 24);
   assert.deepEqual(cms.paymentSettings().rentalServices, [
-    { name: "Găzduire web", price: 12 },
-    { name: "Mentenanță tehnică", price: 23 },
-    { name: "Securitate și backup", price: 5 },
+    { name: "Găzduire web", price: 12, included: true },
+    { name: "Mentenanță tehnică", price: 23, included: true },
+    { name: "Securitate și backup", price: 5, included: true },
   ]);
   cms.publishCms({});
 });
+test("four payment lists round-trip independently, including exclusions and empty lists", () => {
+  const settings = structuredClone(cms.defaultPaymentSettings);
+  settings.rentalServices = [{ name: "Chirie: găzduire", price: 12.5, included: true }];
+  settings.rentalBenefits = [{ name: "Chirie: proprietate", included: false }];
+  settings.installmentServices = [{ name: "Rate: configurare", included: false }];
+  settings.installmentBenefits = [{ name: "Rate: proprietate", included: true }];
+  const saved = cms.paymentSettingsToValues(settings);
+  assert.deepEqual(cms.paymentSettingsFromValues(saved), settings);
+  const edited = cms.paymentSettingsFromValues(saved);
+  edited.installmentServices[0].included = true;
+  edited.installmentBenefits[0].name = "Beneficiu nou doar pentru rate";
+  const reloaded = cms.paymentSettingsFromValues(cms.paymentSettingsToValues(edited));
+  assert.deepEqual(reloaded.rentalServices, settings.rentalServices);
+  assert.deepEqual(reloaded.rentalBenefits, settings.rentalBenefits);
+  assert.equal(reloaded.installmentServices[0].included, true);
+  assert.equal(reloaded.installmentBenefits[0].name, "Beneficiu nou doar pentru rate");
+  for (const key of ["rentalServices", "rentalBenefits", "installmentServices", "installmentBenefits"]) {
+    edited[key] = [];
+  }
+  assert.equal(cms.validatePaymentSettings(edited), null);
+  assert.deepEqual(cms.paymentSettingsFromValues(cms.paymentSettingsToValues(edited)), edited);
+});
+
+test("legacy rental configuration remains intact when independent installment lists are introduced", () => {
+  const migrated = cms.paymentSettingsFromValues({
+    plan1Months: "12", plan1Surcharge: "12", rentalMonths: "24",
+    rentalService1Name: "Serviciul meu existent", rentalService1Price: "7.5", rentalService1Included: "false",
+    rentalBenefit1Name: "Beneficiul meu existent", rentalBenefit1Included: "true",
+  });
+  assert.deepEqual(migrated.rentalServices, [{ name: "Serviciul meu existent", price: 7.5, included: false }]);
+  assert.deepEqual(migrated.rentalBenefits, [{ name: "Beneficiul meu existent", included: true }]);
+  assert.deepEqual(migrated.installmentServices, cms.defaultPaymentSettings.installmentServices);
+  assert.deepEqual(migrated.installmentBenefits, cms.defaultPaymentSettings.installmentBenefits);
+  migrated.installmentBenefits[0].included = false;
+  assert.equal(cms.defaultPaymentSettings.installmentBenefits[0].included, true);
+  const invalid = structuredClone(migrated);
+  invalid.installmentServices[0].name = " ";
+  assert.ok(cms.validatePaymentSettings(invalid));
+});
+
 test("payment settings accept more than eight installment plans", () => {
   const values = Object.fromEntries(
     Array.from({ length: 10 }, (_, index) => [

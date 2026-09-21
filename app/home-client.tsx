@@ -33,7 +33,7 @@ import { StaticProjectPreview } from "./live-project-preview";
 import { BrandLogo } from "./brand-logo";
 import { FooterLinks } from "./components/seo-shell";
 import { gardenProjects } from "./garden-projects";
-import { projects, publicProjects, projectSlugs, projectPaths, hiddenCategories, unavailableProjectIds, launchProjectIds, getProject, projectHref, monthlyRentalPrice, annualInstallmentPrice, installmentPlans, type Platform, type MobileOS, type PaymentMode, type RentalServiceTier } from "./lib/project-catalog";
+import { projects, publicProjects, projectSlugs, projectPaths, hiddenCategories, unavailableProjectIds, launchProjectIds, getProject, projectHref, monthlyRentalPrice, annualInstallmentPrice, installmentPlans, installmentMonthlyPrice, installmentTotalPrice, type Platform, type MobileOS, type PaymentMode } from "./lib/project-catalog";
 import { localePath } from "./lib/site-config";
 import "./globals.css";
 import "./why-section.css";
@@ -793,8 +793,6 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
     () => installmentPlans().at(-1)?.months ?? 12,
   );
   const [paymentMode, setPaymentMode] = useState<PaymentMode>("installments");
-  const [rentalServiceTier, setRentalServiceTier] = useState<RentalServiceTier>("with-services");
-  const [rentalServicesInfoOpen, setRentalServicesInfoOpen] = useState<RentalServiceTier | null>(null);
   useEffect(() => {
     const removeNetlifyBadge = () => document.getElementById("nl-badge")?.remove();
     removeNetlifyBadge();
@@ -897,60 +895,45 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
     (plan) => plan.months === activeInstallmentMonths,
   ) ?? availableInstallmentPlans.at(-1)!;
   const installmentTotal = selected
-    ? Math.ceil(selected.price * (1 + selectedInstallmentPlan.surcharge))
+    ? installmentTotalPrice(selected.price, selectedInstallmentPlan.surcharge)
     : 0;
-  const rentalPrice = Math.floor(installmentTotal / activeInstallmentMonths);
+  const rentalPrice = selected
+    ? installmentMonthlyPrice(selected.price, selectedInstallmentPlan)
+    : 0;
+  const monthlyPriceFormatter = new Intl.NumberFormat(
+    locale === "ro" ? "ro-RO" : locale === "ru" ? "ru-RU" : "en-US",
+    {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    },
+  );
+  const installmentPriceLabel = monthlyPriceFormatter.format(rentalPrice);
   const siteRentalPrice = selected ? monthlyRentalPrice(selected.price) : 0;
-  const rentalServicesFee = Object.values(paymentTerms.rentalServices).reduce(
-    (total, service) => total + service.price,
+  const rentalServicesFee = paymentTerms.rentalServices.reduce(
+    (total, service) => total + (service.included ? service.price : 0),
     0,
   );
-  const rentalPriceWithServices = {
-    min: siteRentalPrice + rentalServicesFee,
-    max: siteRentalPrice + rentalServicesFee,
+  const rentalMonthlyPriceLabel = `€${monthlyPriceFormatter.format(siteRentalPrice + rentalServicesFee)}`;
+  const rentalServiceLabel = (label: string) =>
+    label.replace(/\s*—\s*€\d+(?:[.,]\d+)?$/, "");
+  const servicesSummary = {
+    title: locale === "ro" ? "Servicii" : locale === "ru" ? "Услуги" : "Services",
+    items: (paymentMode === "rental" ? paymentTerms.rentalServices : paymentTerms.installmentServices)
+      .map((service) => ({ label: rentalServiceLabel(service.name), included: service.included }))
+      .sort((left, right) => Number(right.included) - Number(left.included)),
   };
-  const rentalMonthlyPriceLabel = rentalServiceTier === "with-services"
-    ? `€${rentalPriceWithServices.min}`
-    : `€${siteRentalPrice}`;
-  const rentalServiceLabel = (label: string, price: number) =>
-    `${label.replace(/\s*—\s*€\d+(?:[.,]\d+)?$/, "")} — €${price}`;
-  const rentalServicesSummary = cmsContent("home-client-rentalServicesSummary", rentalServiceTier === "with-services"
-    ? {
-        title: locale === "ro" ? cmsText("home-client-additional", "literal-7e771d2d8e7ec5fe", "Incluse în abonament") : locale === "ru" ? cmsText("home-client-additional", "literal-ef0655bc65bbfd31", "Включено в подписку") : cmsText("home-client-additional", "literal-fff8d28f494b45b0", "Included in the subscription"),
-        items: paymentTerms.rentalServices.map((service) => rentalServiceLabel(service.name, service.price)),
-      }
-    : {
-        title: locale === "ro" ? cmsText("home-client-additional", "literal-8bcabf3e625f7013", "Nu sunt incluse") : locale === "ru" ? cmsText("home-client-additional", "literal-d1145403ace8fdf1", "Не включено") : cmsText("home-client-additional", "literal-b665bfc292d96e31", "Not included"),
-        items: locale === "ro"
-          ? [cmsText("home-client-additional", "literal-3b90e7abb80b566d", "Găzduire web"), cmsText("home-client-additional", "literal-3e37f49b3f415f2d", "Mentenanță tehnică"), cmsText("home-client-additional", "literal-abb847d5572d9f38", "Securitate și backup")]
-          : locale === "ru"
-            ? [cmsText("home-client-additional", "literal-a99b34044d2a3c88", "Веб-хостинг"), cmsText("home-client-additional", "literal-62e0297b30d43e13", "Техническая поддержка"), cmsText("home-client-additional", "literal-d15b6166fae907a2", "Безопасность и резервные копии")]
-            : [cmsText("home-client-additional", "literal-c1e27c03a08ad138", "Web hosting"), cmsText("home-client-additional", "literal-b2fec04acfcc0490", "Technical maintenance"), cmsText("home-client-additional", "literal-391de9842bc91490", "Security and backups")],
-      });
+  const benefitsSummary = {
+    title: locale === "ro" ? "Beneficii" : locale === "ru" ? "Преимущества" : "Benefits",
+    items: [...(paymentMode === "rental" ? paymentTerms.rentalBenefits : paymentTerms.installmentBenefits)]
+      .sort((left, right) => Number(right.included) - Number(left.included)),
+  };
   const installmentHref = selected
     ? `${contactHref}?${new URLSearchParams({ project: selected.title, option: `installments-${activeInstallmentMonths}-months` })}`
     : contactHref;
   const rentalHref = selected
-    ? `${contactHref}?${new URLSearchParams({ project: selected.title, option: `site-rental-${rentalServiceTier}` })}`
+    ? `${contactHref}?${new URLSearchParams({ project: selected.title, option: "site-rental" })}`
     : contactHref;
   const paymentHref = paymentMode === "installments" ? installmentHref : rentalHref;
-  const paymentIncludes = cmsContent("home-client-paymentIncludes", paymentMode === "rental"
-    ? rentalServiceTier === "with-services"
-      ? locale === "ro"
-        ? [cmsText("home-client-additional", "literal-3b90e7abb80b566d", "Găzduire web"), cmsText("home-client-additional", "literal-3e37f49b3f415f2d", "Mentenanță tehnică"), cmsText("home-client-additional", "literal-abb847d5572d9f38", "Securitate și backup")]
-        : locale === "ru"
-          ? [cmsText("home-client-additional", "literal-a99b34044d2a3c88", "Веб-хостинг"), cmsText("home-client-additional", "literal-62e0297b30d43e13", "Техническая поддержка"), cmsText("home-client-additional", "literal-d15b6166fae907a2", "Безопасность и резервные копии")]
-          : [cmsText("home-client-additional", "literal-c1e27c03a08ad138", "Web hosting"), cmsText("home-client-additional", "literal-b2fec04acfcc0490", "Technical maintenance"), cmsText("home-client-additional", "literal-391de9842bc91490", "Security and backups")]
-      : locale === "ro"
-        ? [cmsText("home-client-additional", "literal-39ef1cf9253fe3f3", "Site pregătit pentru utilizare"), cmsText("home-client-additional", "literal-705851740ba168c6", "Fără găzduire și mentenanță incluse"), cmsText("home-client-additional", "literal-50e44245098a6bf9", "Îți alegi propriul furnizor de servicii"), cmsText("home-client-additional", "literal-d8c3c0c85987769a", "Poți activa serviciile ulterior")]
-        : locale === "ru"
-          ? [cmsText("home-client-additional", "literal-9da2bfd870d19088", "Сайт готов к использованию"), cmsText("home-client-additional", "literal-db33faaf3a09c193", "Хостинг и техподдержка не включены"), cmsText("home-client-additional", "literal-14c64973201ec7bb", "Вы выбираете своего поставщика услуг"), cmsText("home-client-additional", "literal-fdd0ff60dacd1659", "Услуги можно подключить позже")]
-          : [cmsText("home-client-additional", "literal-086c0978e1173db5", "Website ready to use"), cmsText("home-client-additional", "literal-59afb7ae35589cdc", "Hosting and maintenance not included"), cmsText("home-client-additional", "literal-ca58391c39a94f8f", "Choose your own service provider"), cmsText("home-client-additional", "literal-b5bfc44e943447ba", "Services can be activated later")]
-    : locale === "ro"
-      ? [cmsText("home-client-additional", "literal-ec2e58c4b21f3c1e", "Devii proprietarul siteului"), cmsText("home-client-additional", "literal-43a71f023d817fb3", "Găzduire gratuită primele 2 luni"), cmsText("home-client-additional", "literal-51dac56b76b364d5", "Mentenanță tehnică lunară gratuită primele 2 luni"), cmsText("home-client-additional", "literal-cd6af79f54852d31", "Plată flexibilă în rate")]
-      : locale === "ru"
-        ? [cmsText("home-client-additional", "literal-f5393886251ea2f6", "Сайт становится вашей собственностью"), cmsText("home-client-additional", "literal-e99c7a858e21c227", "Запуск и хостинг включены"), cmsText("home-client-additional", "literal-50390b97cf1a1c37", "Ежемесячная техподдержка"), cmsText("home-client-additional", "literal-981e741779adadec", "Гибкая оплата в рассрочку")]
-        : [cmsText("home-client-additional", "literal-033e056a0c1f9d6e", "You own the website"), cmsText("home-client-additional", "literal-78785c3fc3e6312a", "Launch and hosting included"), cmsText("home-client-additional", "literal-ec32d3134c1dfb9d", "Monthly technical care"), cmsText("home-client-additional", "literal-a8a40c1a3f19c659", "Flexible installment payments")]);
   const selectedDetail = selected ? getProject(locale, projectSlugs[selected.id])?.detail : null;
   useEffect(() => {
     const syncFromUrl = () => {
@@ -1850,7 +1833,7 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
               <div className="modal-content">
                 <div className="modal-toolbar">
                   <span className="kicker">{localType(selected.type, locale)}</span>
-                  <span className="modal-status"><i />{locale === "ro" ? cmsText("home-client", "literal-83aa745f4bcc3887", "DISPONIBIL") : locale === "ru" ? cmsText("home-client", "literal-8de93ea4a6052cf2", "ЛИЦЕНЗИЯ ДОСТУПНА") : cmsText("home-client", "literal-db45ed279748337a", "LICENSE AVAILABLE")}</span>
+                  <span className="modal-status"><i />{c.from}</span>
                 </div>
                 <div className="modal-title-row">
                   <AutoFitProjectTitle title={selected.title} />
@@ -1858,7 +1841,6 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
                     <small>{c.fullPrice}</small><CatalogPrice id={selected.id} fallback={selected.price} />
                   </div>
                 </div>
-                <p className="modal-summary">{selectedDetail.summary}</p>
                 <aside className="rental-offer" aria-label={c.rentalLabel}>
                   <div className="installment-side">
                     <div className="installment-heading">
@@ -1867,16 +1849,16 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
                         ? locale === "ro" ? cmsText("home-client", "literal-ac364cc3fb06c6e2", "Cumpără în rate") : locale === "ru" ? cmsText("home-client", "literal-c91d2163b5b370c1", "Купить в рассрочку") : cmsText("home-client", "literal-154dcfdfccde08ea", "Buy in installments")
                         : c.rentalLabel}</strong>
                     </div>
-                    {paymentMode === "rental" && (
-                      <div className={`rental-services-summary ${rentalServiceTier === "without-services" ? "is-excluded" : ""}`} aria-live="polite">
-                        <b>{rentalServicesSummary.title}</b>
+                    {servicesSummary.items.length > 0 && <>
+                      <div className="rental-services-summary" aria-live="polite">
+                        <b>{servicesSummary.title}</b>
                         <ul>
-                          {rentalServicesSummary.items.map((item) => (
-                            <li key={item}><span aria-hidden="true">{rentalServiceTier === "with-services" ? "✓" : "×"}</span>{item}</li>
+                          {servicesSummary.items.map((item) => (
+                            <li key={item.label}><span className={item.included ? "is-included" : "is-excluded"} aria-hidden="true">{item.included ? "✓" : "×"}</span>{item.label}</li>
                           ))}
                         </ul>
                       </div>
-                    )}
+                    </>}
                   </div>
                   <div className="installment-calculator">
                     <div className="payment-mode-options" role="radiogroup" aria-label={locale === "ro" ? cmsText("home-client", "literal-a8d93a994a4db1f9", "Modalitate de plată") : locale === "ru" ? cmsText("home-client", "literal-3df3da628153a6b7", "Способ оплаты") : cmsText("home-client", "literal-9de316fab48d0b7d", "Payment option")}>
@@ -1894,44 +1876,29 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
                             const label = locale === "ro"
                               ? `${plan.months} luni`
                               : locale === "ru"
-                                ? plan.months === 12 ? cmsText("home-client", "literal-b4061c863603e7cf", "1 год") : `${plan.months} мес.`
-                                : plan.months === 12 ? cmsText("home-client", "literal-91647badc37b9309", "1 year") : `${plan.months} months`;
+                                ? `${plan.months} мес.`
+                                : `${plan.months} months`;
                             return <button key={plan.months} type="button" className={plan.months === activeInstallmentMonths ? "is-active" : ""} data-analytics-event="payment_option" data-project={projectSlugs[selected.id]} data-option={`installments-${plan.months}-months`} onClick={() => setInstallmentMonths(plan.months)} role="radio" aria-checked={plan.months === activeInstallmentMonths}><b>{label}</b></button>;
                           })}
                         </div>
-                        <div className="installment-result" aria-live="polite"><div><span>{locale === "ro" ? cmsText("home-client", "literal-210c08dfafd670f6", "Rata lunara") : locale === "ru" ? cmsText("home-client", "literal-ec6908254574e258", "Ваш ежемесячный платёж") : cmsText("home-client", "literal-d67da9c4b7a7c17d", "Your monthly payment")}</span><strong>{cmsText("home-client", "literal-c4cc90ed3d26f12d", "€")}{rentalPrice}<em>{c.perMonth}</em></strong></div><p>{locale === "ro" ? cmsText("home-client-additional", "literal-18e872be2359d76e", "Total:") : locale === "ru" ? cmsText("home-client", "literal-d6d27f2716ff7fa2", "Итого:") : cmsText("home-client-additional", "literal-18e872be2359d76e", "Total:")} <b>{cmsText("home-client", "literal-c4cc90ed3d26f12d", "€")}{installmentTotal}</b></p></div>
+                        <div className="installment-result" aria-live="polite"><div><span>{locale === "ro" ? cmsText("home-client", "literal-210c08dfafd670f6", "Rata lunara") : locale === "ru" ? cmsText("home-client", "literal-ec6908254574e258", "Ваш ежемесячный платёж") : cmsText("home-client", "literal-d67da9c4b7a7c17d", "Your monthly payment")}</span><strong>{cmsText("home-client", "literal-c4cc90ed3d26f12d", "€")}{installmentPriceLabel}<em>{c.perMonth}</em></strong></div><p>{locale === "ro" ? cmsText("home-client-additional", "literal-18e872be2359d76e", "Total:") : locale === "ru" ? cmsText("home-client", "literal-d6d27f2716ff7fa2", "Итого:") : cmsText("home-client-additional", "literal-18e872be2359d76e", "Total:")} <b>{cmsText("home-client", "literal-c4cc90ed3d26f12d", "€")}{installmentTotal}</b></p></div>
                       </>
                     ) : (
                       <>
-                        <div className="rental-service-options" role="radiogroup" aria-label={locale === "ro" ? cmsText("home-client", "literal-aeaaf778585f833b", "Servicii pentru chirie") : locale === "ru" ? cmsText("home-client", "literal-71343aeee81ae574", "Услуги для аренды") : cmsText("home-client", "literal-c0e6aa0eae54d096", "Rental services")}>
-                          <div className="rental-service-choice">
-                            <button type="button" className={`rental-service-option ${rentalServiceTier === "with-services" ? "is-active" : ""}`} data-analytics-event="payment_option" data-project={projectSlugs[selected.id]} data-option="site-rental-with-services" onClick={() => setRentalServiceTier("with-services")} role="radio" aria-checked={rentalServiceTier === "with-services"}>
-                              <b>{locale === "ro" ? cmsText("home-client", "literal-1c2c88993436936a", "Cu servicii suplimentare") : locale === "ru" ? cmsText("home-client", "literal-147e34efad0f5280", "С дополнительными услугами") : cmsText("home-client", "literal-ed39c059d4593c55", "With additional services")}</b>
-                              <span className="rental-service-supplement">+€{rentalServicesFee}{c.perMonth}</span>
-                            </button>
-                            <div className="rental-services-info" onMouseEnter={() => setRentalServicesInfoOpen("with-services")} onMouseLeave={() => setRentalServicesInfoOpen(null)}>
-                              <button type="button" className="rental-services-info-button" aria-label={locale === "ro" ? cmsText("home-client", "literal-eadbfe78b8209303", "Vezi serviciile incluse") : locale === "ru" ? cmsText("home-client", "literal-4c3a3f8fbb0821f9", "Посмотреть включённые услуги") : cmsText("home-client", "literal-1db1490817e2289c", "View included services")} aria-expanded={rentalServicesInfoOpen === "with-services"} aria-describedby={rentalServicesInfoOpen === "with-services" ? "with-services-tooltip" : undefined} onClick={() => setRentalServicesInfoOpen("with-services")} onFocus={() => setRentalServicesInfoOpen("with-services")} onBlur={() => setRentalServicesInfoOpen(null)}>{cmsText("home-client", "literal-de7d1b721a1e0632", "i")}</button>
-                              {rentalServicesInfoOpen === "with-services" && <div id="with-services-tooltip" className="rental-services-tooltip" role="tooltip"><strong>{rentalServicesSummary.title}</strong>{rentalServicesSummary.items.map((item) => <span key={item}>{item}</span>)}</div>}
-                            </div>
-                          </div>
-                          <div className="rental-service-choice">
-                            <button type="button" className={`rental-service-option ${rentalServiceTier === "without-services" ? "is-active" : ""}`} data-analytics-event="payment_option" data-project={projectSlugs[selected.id]} data-option="site-rental-without-services" onClick={() => setRentalServiceTier("without-services")} role="radio" aria-checked={rentalServiceTier === "without-services"}>
-                              <b>{locale === "ro" ? cmsText("home-client", "literal-04a071dc72b2c4df", "Fără servicii suplimentare") : locale === "ru" ? cmsText("home-client", "literal-08856cd9b44a71f3", "Без дополнительных услуг") : cmsText("home-client", "literal-d26f63a5570967fc", "Without additional services")}</b>
-                            </button>
-                            <div className="rental-services-info" onMouseEnter={() => setRentalServicesInfoOpen("without-services")} onMouseLeave={() => setRentalServicesInfoOpen(null)}>
-                              <button type="button" className="rental-services-info-button" aria-label={locale === "ro" ? cmsText("home-client", "literal-ef7a3ecd101914a8", "Vezi serviciile neincluse") : locale === "ru" ? cmsText("home-client", "literal-2e9549b5ce4186a1", "Посмотреть услуги, которые не включены") : cmsText("home-client", "literal-8a1ff80a7b860c1f", "View services not included")} aria-expanded={rentalServicesInfoOpen === "without-services"} aria-describedby={rentalServicesInfoOpen === "without-services" ? "without-services-tooltip" : undefined} onClick={() => setRentalServicesInfoOpen("without-services")} onFocus={() => setRentalServicesInfoOpen("without-services")} onBlur={() => setRentalServicesInfoOpen(null)}>{cmsText("home-client", "literal-de7d1b721a1e0632", "i")}</button>
-                              {rentalServicesInfoOpen === "without-services" && <div id="without-services-tooltip" className="rental-services-tooltip" role="tooltip"><strong>{locale === "ro" ? cmsText("home-client", "literal-8bcabf3e625f7013", "Nu sunt incluse") : locale === "ru" ? cmsText("home-client", "literal-d1145403ace8fdf1", "Не включено") : cmsText("home-client", "literal-b665bfc292d96e31", "Not included")}</strong><span>{locale === "ro" ? cmsText("home-client", "literal-3b90e7abb80b566d", "Găzduire web") : locale === "ru" ? cmsText("home-client", "literal-a99b34044d2a3c88", "Веб-хостинг") : cmsText("home-client", "literal-c1e27c03a08ad138", "Web hosting")}</span><span>{locale === "ro" ? cmsText("home-client", "literal-3e37f49b3f415f2d", "Mentenanță tehnică") : locale === "ru" ? cmsText("home-client", "literal-62e0297b30d43e13", "Техническая поддержка") : cmsText("home-client", "literal-b2fec04acfcc0490", "Technical maintenance")}</span><span>{locale === "ro" ? cmsText("home-client", "literal-abb847d5572d9f38", "Securitate și backup") : locale === "ru" ? cmsText("home-client", "literal-d15b6166fae907a2", "Безопасность и резервные копии") : cmsText("home-client", "literal-391de9842bc91490", "Security and backups")}</span></div>}
-                            </div>
-                          </div>
-                        </div>
                         <div className="installment-result rental-result" aria-live="polite"><div><span>{locale === "ro" ? cmsText("home-client", "literal-a9a59b72f690a630", "Chiria ta lunară") : locale === "ru" ? cmsText("home-client", "literal-1c3a9bfde9fabeff", "Ваша ежемесячная аренда") : cmsText("home-client", "literal-b4db5f306825ae61", "Your monthly rental")}</span><strong>{rentalMonthlyPriceLabel}<em>{c.perMonth}</em></strong></div><p>{locale === "ro" ? `Perioada contractului: ${paymentTerms.rentalMonths} luni` : locale === "ru" ? `Срок договора: ${paymentTerms.rentalMonths} мес.` : `Contract term: ${paymentTerms.rentalMonths} months`}</p></div>
                       </>
                     )}
                   </div>
-                  {paymentMode !== "rental" && <ul>
-                    {paymentIncludes.map((item) => <li key={item}><Check />{item}</li>)}
-                  </ul>}
+                  {benefitsSummary.items.length > 0 && <div className="rental-services-summary rental-benefits-summary" aria-live="polite">
+                    <b>{benefitsSummary.title}</b>
+                    <ul>
+                      {benefitsSummary.items.map((item, index) => (
+                        <li key={index}><span className={item.included ? "is-included" : "is-excluded"} aria-label={item.included ? "✓" : "×"}>{item.included ? "✓" : "×"}</span>{item.name}</li>
+                      ))}
+                    </ul>
+                  </div>}
                 </aside>
+                <p className="modal-summary">{selectedDetail.summary}</p>
                 <div className="detail-sections" aria-label={locale === "ro" ? cmsText("home-client", "literal-9882686a75fa8d6c", "Ce primești") : locale === "ru" ? cmsText("home-client", "literal-f1cfb2b145a7be01", "Что входит") : cmsText("home-client", "literal-06cec1523c69f02c", "What is included")}>
                   {selectedDetail.sections.map((section) => (
                     <section key={section.title}>
@@ -1985,7 +1952,7 @@ export default function Home({ initialLocale = "ro" }: { initialLocale?: Locale 
                     {c.buyFor} <CatalogPrice id={selected.id} fallback={selected.price} hideOriginal /> <ArrowRight />
                   </a>
                   <a className="rent-link" href={paymentHref} data-analytics-event="payment_option" data-project={projectSlugs[selected.id]} data-option={paymentMode}>
-                    <span>{paymentMode === "installments" ? `${locale === "ro" ? cmsText("home-client", "literal-fa4bd2bb877cb496", "Cumpără în rate la") : locale === "ru" ? cmsText("home-client", "literal-7c562ae69ba6c7dd", "Купить в рассрочку от") : cmsText("home-client", "literal-86de4377c6aa39bf", "Buy in installments from")} €${rentalPrice}` : `${c.rentFor} ${rentalMonthlyPriceLabel}`}<small>{c.perMonth}</small></span> <ArrowRight />
+                    <span>{paymentMode === "installments" ? `${locale === "ro" ? cmsText("home-client", "literal-fa4bd2bb877cb496", "Cumpără în rate la") : locale === "ru" ? cmsText("home-client", "literal-7c562ae69ba6c7dd", "Купить в рассрочку от") : cmsText("home-client", "literal-86de4377c6aa39bf", "Buy in installments from")} €${installmentPriceLabel}` : `${c.rentFor} ${rentalMonthlyPriceLabel}`}<small>{c.perMonth}</small></span> <ArrowRight />
                   </a>
                 </div>
               </div>

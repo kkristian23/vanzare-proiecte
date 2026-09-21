@@ -17,6 +17,7 @@ import {
   type CmsImage,
   defaultPaymentSettings,
   paymentSettingsFromValues,
+  paymentSettingsToValues,
   type PaymentSettings,
   type Price,
   validatePaymentSettings,
@@ -42,6 +43,7 @@ import {
 } from "./repository";
 import registry from "./content-registry.json";
 import "./admin.css";
+import { PaymentItemsEditor } from "./payment-items-editor";
 
 type Section = "text" | "media" | "price" | "discount" | "payment";
 type AdminNavigationCategory = "text" | "media" | "pricing" | "payment";
@@ -53,7 +55,10 @@ type OptionalNumber = number | "";
 type StoredPaymentSettings = {
   installmentPlans: { months: OptionalNumber; surcharge: OptionalNumber }[];
   rentalMonths: OptionalNumber;
-  rentalServices?: { name: string; price: OptionalNumber }[];
+  rentalServices?: { name: string; price: OptionalNumber; included?: boolean }[];
+  rentalBenefits?: { name: string; included?: boolean }[];
+  installmentBenefits?: { name: string; included?: boolean }[];
+  installmentServices?: { name: string; included?: boolean }[];
 };
 const discountPercentages = [10, 20, 30, 40, 50, 60, 70, 80, 90] as const;
 const discountStatusFilters: readonly [DiscountStatusFilter, string][] = [
@@ -276,7 +281,11 @@ function storedPaymentSettings(settings: PaymentSettings): StoredPaymentSettings
     rentalServices: settings.rentalServices.map((service) => ({
       name: service.name,
       price: Number.isNaN(service.price) ? "" : service.price,
+      included: service.included,
     })),
+    rentalBenefits: settings.rentalBenefits.map((benefit) => ({ name: benefit.name, included: benefit.included })),
+    installmentBenefits: settings.installmentBenefits.map((item) => ({ ...item })),
+    installmentServices: settings.installmentServices.map((item) => ({ ...item })),
   };
 }
 function readAdminDraft<T>(section: Section, selection: string): T | null {
@@ -298,6 +307,11 @@ function samePaymentSettings(left: PaymentSettings, right: PaymentSettings) {
     sameNumber(left.rentalMonths, right.rentalMonths) &&
     left.installmentPlans.length === right.installmentPlans.length &&
     left.rentalServices.length === right.rentalServices.length &&
+    left.rentalBenefits.length === right.rentalBenefits.length &&
+    left.installmentBenefits.length === right.installmentBenefits.length &&
+    left.installmentBenefits.every((item, index) => item.name === right.installmentBenefits[index].name && item.included === right.installmentBenefits[index].included) &&
+    left.installmentServices.length === right.installmentServices.length &&
+    left.installmentServices.every((item, index) => item.name === right.installmentServices[index].name && item.included === right.installmentServices[index].included) &&
     left.installmentPlans.every(
       (plan, index) =>
         sameNumber(plan.months, right.installmentPlans[index].months) &&
@@ -306,7 +320,11 @@ function samePaymentSettings(left: PaymentSettings, right: PaymentSettings) {
     left.rentalServices.every(
       (service, index) =>
         service.name === right.rentalServices[index].name &&
-        sameNumber(service.price, right.rentalServices[index].price),
+        sameNumber(service.price, right.rentalServices[index].price) &&
+        service.included === right.rentalServices[index].included,
+    )
+    && left.rentalBenefits.every(
+      (benefit, index) => benefit.name === right.rentalBenefits[index].name && benefit.included === right.rentalBenefits[index].included,
     )
   );
 }
@@ -993,7 +1011,10 @@ export default function Admin() {
                     draft.paymentDraft.rentalMonths === ""
                       ? Number.NaN
                       : Number(draft.paymentDraft.rentalMonths),
-                  rentalServices: draft.paymentDraft.rentalServices?.map((service) => ({ name: service.name, price: service.price === "" ? Number.NaN : Number(service.price) })) ?? savedPaymentSettings.rentalServices,
+                  rentalServices: draft.paymentDraft.rentalServices?.map((service) => ({ name: service.name, price: service.price === "" ? Number.NaN : Number(service.price), included: service.included !== false })) ?? savedPaymentSettings.rentalServices,
+                  rentalBenefits: draft.paymentDraft.rentalBenefits?.map((benefit) => ({ name: benefit.name, included: benefit.included !== false })) ?? savedPaymentSettings.rentalBenefits,
+                  installmentBenefits: draft.paymentDraft.installmentBenefits?.map((item) => ({ name: item.name, included: item.included !== false })) ?? savedPaymentSettings.installmentBenefits,
+                  installmentServices: draft.paymentDraft.installmentServices?.map((item) => ({ name: item.name, included: item.included !== false })) ?? savedPaymentSettings.installmentServices,
                 }
               : savedPaymentSettings,
           );
@@ -1228,16 +1249,7 @@ export default function Admin() {
         await saveDocument(
           "text-payment-settings",
           {
-            values: {
-              ...Object.fromEntries(
-                paymentDraft.installmentPlans.flatMap((plan, index) => [
-                  [`plan${index + 1}Months`, String(plan.months)],
-                  [`plan${index + 1}Surcharge`, String(plan.surcharge)],
-                ]),
-              ),
-              rentalMonths: String(paymentDraft.rentalMonths),
-              ...Object.fromEntries(paymentDraft.rentalServices.flatMap((service, index) => [[`rentalService${index + 1}Name`, service.name], [`rentalService${index + 1}Price`, String(service.price)]])),
-            },
+            values: paymentSettingsToValues(paymentDraft),
           },
           revision,
         );
@@ -1485,29 +1497,19 @@ export default function Admin() {
           rentalServices:
             stored.rentalServices?.map((service) => ({
               name: service.name,
-              price: service.price === "" ? Number.NaN : Number(service.price),
+              price: service.price === "" ? Number.NaN : Number(service.price), included: service.included !== false,
             })) ?? savedSettings.rentalServices,
+          rentalBenefits:
+            stored.rentalBenefits?.map((benefit) => ({ name: benefit.name, included: benefit.included !== false })) ?? savedSettings.rentalBenefits,
+          installmentBenefits: stored.installmentBenefits?.map((item) => ({ name: item.name, included: item.included !== false })) ?? savedSettings.installmentBenefits,
+          installmentServices: stored.installmentServices?.map((item) => ({ name: item.name, included: item.included !== false })) ?? savedSettings.installmentServices,
         };
         const issue = validatePaymentSettings(settings);
         if (issue) throw new Error(issue);
         await saveDocument(
           "text-payment-settings",
           {
-            values: {
-              ...Object.fromEntries(
-                settings.installmentPlans.flatMap((plan, index) => [
-                  [`plan${index + 1}Months`, String(plan.months)],
-                  [`plan${index + 1}Surcharge`, String(plan.surcharge)],
-                ]),
-              ),
-              rentalMonths: String(settings.rentalMonths),
-              ...Object.fromEntries(
-                settings.rentalServices.flatMap((service, index) => [
-                  [`rentalService${index + 1}Name`, service.name],
-                  [`rentalService${index + 1}Price`, String(service.price)],
-                ]),
-              ),
-            },
+            values: paymentSettingsToValues(settings),
           },
           document?.revision ?? 0,
         );
@@ -2482,9 +2484,23 @@ export default function Admin() {
                           </svg>
                         </button>
                         </div>
+                        <PaymentItemsEditor
+                            title="Servicii — cumpără în rate"
+                            items={paymentDraft.installmentServices}
+                            newItem={{ name: "", included: true }}
+                            onChange={(installmentServices) => { setPaymentDraft({ ...paymentDraft, installmentServices }); setDirty(true); }}
+                            onRestore={() => { setPaymentDraft({ ...paymentDraft, installmentServices: savedPaymentDraft.installmentServices.map((item) => ({ ...item })) }); setDirty(true); }}
+                          />
+                        <PaymentItemsEditor
+                            title="Beneficii — cumpără în rate"
+                            items={paymentDraft.installmentBenefits}
+                            newItem={{ name: "", included: true }}
+                            onChange={(installmentBenefits) => { setPaymentDraft({ ...paymentDraft, installmentBenefits }); setDirty(true); }}
+                            onRestore={() => { setPaymentDraft({ ...paymentDraft, installmentBenefits: savedPaymentDraft.installmentBenefits.map((item) => ({ ...item })) }); setDirty(true); }}
+                          />
                       </section>
                       <section>
-                        <h3>Chiria proiectelor</h3>
+                        <h3>Chirie lunară</h3>
                         <div className="admin-rental-settings">
                           <label>
                             <span>Perioada contractului (luni)<DraftStatus isDraft={!sameNumber(paymentDraft.rentalMonths, savedPaymentDraft.rentalMonths)} onRestore={() => { setPaymentDraft({ ...paymentDraft, rentalMonths: savedPaymentDraft.rentalMonths }); setDirty(true); }} /></span>
@@ -2511,34 +2527,20 @@ export default function Admin() {
                               }}
                             />
                           </label>
-                          {paymentDraft.rentalServices.map((service, index) => (
-                            <div className="admin-rental-service" key={index}>
-                              <strong>Serviciul {index + 1}</strong>
-                              <label>Numele serviciului<input value={service.name} maxLength={100} onChange={(event) => { const rentalServices = [...paymentDraft.rentalServices]; rentalServices[index] = { ...service, name: event.target.value }; setPaymentDraft({ ...paymentDraft, rentalServices }); setDirty(true); }} /></label>
-                              <label>Preț (€ / lună)<input type="number" min="0" max="100000" step="1" required value={Number.isNaN(service.price) ? "" : service.price} onChange={(event) => { const rentalServices = [...paymentDraft.rentalServices]; rentalServices[index] = { ...service, price: event.target.value === "" ? Number.NaN : Number(event.target.value) }; setPaymentDraft({ ...paymentDraft, rentalServices }); setDirty(true); }} /></label>
-                              <button type="button" className="admin-icon-button admin-danger" aria-label={`Elimină serviciul ${index + 1}`} title="Elimină serviciul" disabled={paymentDraft.rentalServices.length <= 1} onClick={() => { setPaymentDraft({ ...paymentDraft, rentalServices: paymentDraft.rentalServices.filter((_, itemIndex) => itemIndex !== index) }); setDirty(true); }}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M9 7V4.8h6V7m2 0-.7 12H7.7L7 7m3.5 4v4.5m3-4.5v4.5" /></svg></button>
-                            </div>
-                          ))}
-                          <button
-                            type="button"
-                            className="admin-add-plan"
-                            aria-label="Adaugă serviciu pentru chiria proiectelor"
-                            title="Adaugă serviciu"
-                            onClick={() => {
-                              setPaymentDraft({
-                                ...paymentDraft,
-                                rentalServices: [
-                                  ...paymentDraft.rentalServices,
-                                  { name: "Serviciu nou", price: 0 },
-                                ],
-                              });
-                              setDirty(true);
-                            }}
-                          >
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                              <path d="M12 5v14M5 12h14" />
-                            </svg>
-                          </button>
+                          <PaymentItemsEditor
+                            title="Servicii — chirie lunară"
+                            items={paymentDraft.rentalServices}
+                            newItem={{ name: "", included: true, price: 0 }}
+                            onChange={(rentalServices) => { setPaymentDraft({ ...paymentDraft, rentalServices }); setDirty(true); }}
+                            onRestore={() => { setPaymentDraft({ ...paymentDraft, rentalServices: savedPaymentDraft.rentalServices.map((item) => ({ ...item })) }); setDirty(true); }}
+                          />
+                          <PaymentItemsEditor
+                            title="Beneficii — chirie lunară"
+                            items={paymentDraft.rentalBenefits}
+                            newItem={{ name: "", included: true }}
+                            onChange={(rentalBenefits) => { setPaymentDraft({ ...paymentDraft, rentalBenefits }); setDirty(true); }}
+                            onRestore={() => { setPaymentDraft({ ...paymentDraft, rentalBenefits: savedPaymentDraft.rentalBenefits.map((item) => ({ ...item })) }); setDirty(true); }}
+                          />
                         </div>
                       </section>
                     </div>

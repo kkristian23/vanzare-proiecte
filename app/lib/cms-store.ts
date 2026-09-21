@@ -13,10 +13,15 @@ export type CmsDocument = {
 export type CmsImage = { src: string; alt: string; path?: string };
 export type CmsSnapshot = Record<string, CmsDocument>;
 export type InstallmentPlan = { months: number; surcharge: number };
+export type RentalService = { name: string; price: number; included: boolean };
+export type RentalBenefit = { name: string; included: boolean };
 export type PaymentSettings = {
   installmentPlans: InstallmentPlan[];
   rentalMonths: number;
-  rentalServices: { name: string; price: number }[];
+  rentalServices: RentalService[];
+  rentalBenefits: RentalBenefit[];
+  installmentServices: RentalBenefit[];
+  installmentBenefits: RentalBenefit[];
 };
 export const defaultPaymentSettings: PaymentSettings = {
   installmentPlans: [
@@ -26,9 +31,21 @@ export const defaultPaymentSettings: PaymentSettings = {
   ],
   rentalMonths: 18,
   rentalServices: [
-    { name: "Găzduire web", price: 10 },
-    { name: "Mentenanță tehnică", price: 20 },
-    { name: "Securitate și backup", price: 10 },
+    { name: "Găzduire web", price: 10, included: true },
+    { name: "Mentenanță tehnică", price: 20, included: true },
+    { name: "Securitate și backup", price: 10, included: true },
+  ],
+  rentalBenefits: [
+    { name: "Site pregătit pentru utilizare", included: true },
+    { name: "Actualizări și îmbunătățiri", included: true },
+  ],
+  installmentServices: [
+    { name: "Găzduire gratuită primele 2 luni", included: true },
+    { name: "Mentenanță tehnică lunară gratuită primele 2 luni", included: true },
+  ],
+  installmentBenefits: [
+    { name: "Devii proprietarul siteului", included: true },
+    { name: "Plată flexibilă în rate", included: true },
   ],
 };
 let snapshot: CmsSnapshot = published as CmsSnapshot;
@@ -59,6 +76,43 @@ const finiteSetting = (
     ? parsed
     : fallback;
 };
+function readPaymentItems(values: Record<string, string> | undefined, prefix: string, fallback: RentalBenefit[]): RentalBenefit[] {
+  if (values?.[`${prefix}Count`] === "0") return [];
+  const pattern = new RegExp(`^${prefix}(\\d+)Name$`);
+  const indices = Object.keys(values ?? {}).flatMap((key) => {
+    const match = pattern.exec(key);
+    return match ? [Number(match[1])] : [];
+  }).sort((a, b) => a - b);
+  if (!indices.length) return fallback.map((item) => ({ ...item }));
+  return indices.map((index) => ({
+    name: values?.[`${prefix}${index}Name`]?.trim() ?? "",
+    included: values?.[`${prefix}${index}Included`] !== "false",
+  }));
+}
+
+/** Both individual and queued admin saves use the same independent list keys. */
+export function paymentSettingsToValues(settings: PaymentSettings): Record<string, string> {
+  const values: Record<string, string> = { rentalMonths: String(settings.rentalMonths) };
+  settings.installmentPlans.forEach((plan, index) => {
+    values[`plan${index + 1}Months`] = String(plan.months);
+    values[`plan${index + 1}Surcharge`] = String(plan.surcharge);
+  });
+  for (const [prefix, items] of [
+    ["rentalService", settings.rentalServices],
+    ["rentalBenefit", settings.rentalBenefits],
+    ["installmentService", settings.installmentServices],
+    ["installmentBenefit", settings.installmentBenefits],
+  ] as const) {
+    values[`${prefix}Count`] = String(items.length);
+    items.forEach((item, index) => {
+      values[`${prefix}${index + 1}Name`] = item.name.trim();
+      values[`${prefix}${index + 1}Included`] = String(item.included);
+      if ("price" in item) values[`${prefix}${index + 1}Price`] = String(item.price);
+    });
+  }
+  return values;
+}
+
 export function paymentSettingsFromValues(
   values?: Record<string, string>,
 ): PaymentSettings {
@@ -102,17 +156,21 @@ export function paymentSettingsFromValues(
       ),
     ),
     rentalServices: (() => {
+      if (values?.rentalServiceCount === "0") return [];
       const indices = [...new Set(Object.keys(values ?? {}).flatMap((key) => /^rentalService(\d+)Name$/.exec(key)?.[1] ?? []))].map(Number).sort((a, b) => a - b);
       if (indices.length) return indices.flatMap((index) => {
         const name = values?.[`rentalService${index}Name`]?.trim() ?? "";
         const price = Number(values?.[`rentalService${index}Price`]);
-        return name && Number.isFinite(price) && price >= 0 && price <= 100000 ? [{ name, price }] : [];
+        return name && Number.isFinite(price) && price >= 0 && price <= 100000 ? [{ name, price, included: values?.[`rentalService${index}Included`] !== "false" }] : [];
       });
       return defaultPaymentSettings.rentalServices.map((service, index) => ({
         ...service,
         price: finiteSetting(values?.[["rentalHosting", "rentalMaintenance", "rentalSecurity"][index]], service.price, 0, 100000),
       }));
     })(),
+    rentalBenefits: readPaymentItems(values, "rentalBenefit", defaultPaymentSettings.rentalBenefits),
+    installmentServices: readPaymentItems(values, "installmentService", defaultPaymentSettings.installmentServices),
+    installmentBenefits: readPaymentItems(values, "installmentBenefit", defaultPaymentSettings.installmentBenefits),
   };
 }
 export function paymentSettings(): PaymentSettings {
@@ -136,11 +194,13 @@ export function validatePaymentSettings(settings: PaymentSettings): string | nul
   if (!Number.isInteger(settings.rentalMonths) || settings.rentalMonths < 1 || settings.rentalMonths > 60)
     return "Perioada chiriei trebuie să fie între 1 și 60 de luni.";
   if (
-    !settings.rentalServices.length || settings.rentalServices.some(
+    settings.rentalServices.some(
       (service) => !service.name.trim() || !Number.isFinite(service.price) || service.price < 0 || service.price > 100000,
     )
   )
     return "Prețurile serviciilor de chirie trebuie să fie între 0 și 100.000 EUR.";
+  if ([...settings.rentalBenefits, ...settings.installmentServices, ...settings.installmentBenefits].some((item) => !item.name.trim() || item.name.length > 200 || typeof item.included !== "boolean"))
+    return "Completează denumirea fiecărui serviciu și beneficiu (maximum 200 de caractere).";
   return null;
 }
 const structural = new Set([

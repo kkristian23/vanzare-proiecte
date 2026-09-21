@@ -205,7 +205,7 @@
   font-weight: 900;
 }
 
-.rental-services-summary.is-excluded li > span {
+.rental-services-summary li > span.is-excluded {
   color: #a8422b;
 }
 
@@ -222,11 +222,12 @@
   font-weight: 900;
 }
 
-.rental-services-summary.is-excluded li span {
+.rental-services-summary li span.is-excluded {
   color: #a23b27;
   font-size: 13px;
   line-height: .8;
 }
+.rental-benefits-summary { grid-column: 1 / -1; }
 
 .installment-calculator { min-width: 0; }
 
@@ -378,7 +379,7 @@
 .modal-detailed{width:min(1040px,100%);padding:12px;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:28px;background:color-mix(in srgb,var(--paper) 94%,white);box-shadow:0 28px 90px #100d1966,0 0 0 8px #ffffff18;scrollbar-color:var(--violet) transparent}
 .modal-detailed .visual{height:300px;border:1px solid #ffffff55;border-radius:18px;box-shadow:inset 0 0 0 1px #00000012}
 .modal-detailed .modal-close{right:26px;top:26px;width:42px;height:42px;border:1px solid #ffffff70;border-radius:50%;background:#10100fd9;color:#fff;box-shadow:0 8px 22px #0004;backdrop-filter:blur(10px);transition:transform .2s ease,background .2s ease}.modal-detailed .modal-close:hover{background:var(--violet);transform:rotate(90deg)}
-.modal-content{display:flex;flex-direction:column;padding:22px 20px 20px}.modal-content .detail-sections{order:1}.modal-content .rental-offer{order:2}.modal-content .modal-actions{order:3}
+.modal-content{display:flex;flex-direction:column;padding:22px 20px 20px}.modal-content .detail-sections{order:1}.modal-content .modal-actions{order:2}
 .modal-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px}.modal-toolbar .kicker{color:#5c574f}.modal-status{display:flex;align-items:center;gap:7px;color:#4c6512;font:800 9px var(--font-mono);letter-spacing:1px;white-space:nowrap}.modal-status i{width:7px;height:7px;border-radius:50%;background:#75a517;box-shadow:0 0 0 4px #b8e66b66}
 .modal-price{min-width:145px;padding:12px 14px;margin-bottom:12px;border:1px solid #d8d0b6;border-radius:14px;background:linear-gradient(135deg,#fff9e7,#f0dc9a)}.modal-summary{margin:18px 0 26px}
 .detail-sections{gap:12px;margin-top:14px}.detail-sections section{padding:19px 20px;border:1px solid #d8d4ca;border-radius:16px;background:linear-gradient(135deg,#fffdf8,#f5f2e9)}.detail-sections h3{display:flex;align-items:center;gap:8px;margin-bottom:14px}.detail-sections h3:before{width:7px;height:7px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 4px #8466ff1a;content:""}

@@ -7,7 +7,7 @@ import { useCms } from "../../../components/cms-live";
 import { SeoShell } from "../../../components/seo-shell";
 import { JsonLd } from "../../../components/json-ld";
 import { localePath, type Locale } from "../../../lib/site-config";
-import { getProject, installmentPlans, monthlyRentalPrice, projectHref, publicProjects, categoryServiceSlugs } from "../../../lib/project-catalog";
+import { getProject, installmentMonthlyPrice, installmentPlans, installmentTotalPrice, monthlyRentalPrice, projectHref, publicProjects, categoryServiceSlugs } from "../../../lib/project-catalog";
 import { projectStructuredData, projectTitle } from "../../../lib/project-seo";
 import "../../../project-pages.css";
 
@@ -42,6 +42,10 @@ export default function ProjectView({ locale, slug }: { locale: Locale; slug: st
   const plans = installmentPlans();
   const paymentTerms = paymentSettings();
   const c = labels[locale];
+  const formatMonthlyPrice = (value: number) => new Intl.NumberFormat(
+    locale === "ro" ? "ro-RO" : locale === "ru" ? "ru-RU" : "en-US",
+    { maximumFractionDigits: 2 },
+  ).format(value);
   const path = `projects/${project.slug}`;
   const contact = (option: string) => `${localePath(locale, "contact")}?${new URLSearchParams({ project: project.title, option })}`;
   const similar = publicProjects.filter(candidate => candidate.id !== project.id && candidate.type === project.type).slice(0, 3);
@@ -61,8 +65,8 @@ export default function ProjectView({ locale, slug }: { locale: Locale; slug: st
       <aside className="project-purchase" aria-label={c.price}>
         <h2>{c.price}</h2><strong><CatalogPrice id={project.id} fallback={project.price} /></strong><small>{c.available} {cmsText("view-projects-slug", "literal-e800ff635b30dc76", " · EUR")}</small>
         <a href={contact("purchase")} data-analytics-event="project_request" data-project={project.slug}>{c.purchase}</a>
-        <h3>{c.installments}</h3><table className="project-payment-table"><thead><tr><th scope="col">{c.months}</th><th scope="col">{c.monthly}</th><th scope="col">{c.total}</th></tr></thead><tbody>{plans.map(plan => { const total = Math.ceil(project.price * (1 + plan.surcharge)); return <tr key={plan.months}><th scope="row"><a className="project-secondary" href={contact(`installments-${plan.months}-months`)} data-analytics-event="payment_option" data-project={project.slug} data-option={`installments-${plan.months}-months`}>{plan.months}</a></th><td>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{Math.floor(total / plan.months)}</td><td>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{total}</td></tr>; })}</tbody></table>
-        <h3>{c.rent}</h3><p>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{monthlyRentalPrice(project.price)} {cmsText("view-projects-slug", "literal-005e1574a2b5c816", " / ")}{locale === "ro" ? cmsText("view-projects-slug", "literal-d446576ad92d9d78", "lună") : locale === "ru" ? cmsText("view-projects-slug", "literal-e8926ec2b8684a99", "месяц") : cmsText("view-additional", "literal-a5c7d1719e284f2c", "month")}</p><small>{locale === "ro" ? `Perioada contractului: ${paymentTerms.rentalMonths} luni.` : locale === "ru" ? `Срок договора: ${paymentTerms.rentalMonths} мес.` : `Contract term: ${paymentTerms.rentalMonths} months.`}</small><small>{c.rentalDetails}</small><a className="project-secondary" href={contact("site-rental-without-services")} data-analytics-event="payment_option" data-project={project.slug} data-option="site-rental-without-services">{c.discussRental}</a><small>{c.terms}</small>
+        <h3>{c.installments}</h3><table className="project-payment-table"><thead><tr><th scope="col">{c.months}</th><th scope="col">{c.monthly}</th><th scope="col">{c.total}</th></tr></thead><tbody>{plans.map(plan => { const total = installmentTotalPrice(project.price, plan.surcharge); return <tr key={plan.months}><th scope="row"><a className="project-secondary" href={contact(`installments-${plan.months}-months`)} data-analytics-event="payment_option" data-project={project.slug} data-option={`installments-${plan.months}-months`}>{plan.months}</a></th><td>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{formatMonthlyPrice(installmentMonthlyPrice(project.price, plan))}</td><td>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{total}</td></tr>; })}</tbody></table>
+        <h3>{c.rent}</h3><p>{cmsText("view-projects-slug", "literal-c4cc90ed3d26f12d", "€")}{formatMonthlyPrice(monthlyRentalPrice(project.price))} {cmsText("view-projects-slug", "literal-005e1574a2b5c816", " / ")}{locale === "ro" ? cmsText("view-projects-slug", "literal-d446576ad92d9d78", "lună") : locale === "ru" ? cmsText("view-projects-slug", "literal-e8926ec2b8684a99", "месяц") : cmsText("view-additional", "literal-a5c7d1719e284f2c", "month")}</p><small>{locale === "ro" ? `Perioada contractului: ${paymentTerms.rentalMonths} luni.` : locale === "ru" ? `Срок договора: ${paymentTerms.rentalMonths} мес.` : `Contract term: ${paymentTerms.rentalMonths} months.`}</small><small>{c.rentalDetails}</small><a className="project-secondary" href={contact("site-rental")} data-analytics-event="payment_option" data-project={project.slug} data-option="site-rental">{c.discussRental}</a><small>{c.terms}</small>
       </aside>
     </div>
     <section className="project-content"><h2>{c.related}</h2><div className="project-related">{related.map(candidate => <article key={candidate.id}><h3><a href={projectHref(locale, candidate.id)} data-analytics-event="project_open" data-project={candidate.slug}>{candidate.title}</a></h3><p>{candidate.description}</p><p><CatalogPrice id={candidate.id} fallback={candidate.price} /></p></article>)}</div></section>

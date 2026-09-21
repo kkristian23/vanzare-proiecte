@@ -11,7 +11,6 @@ import { projectImages } from "./project-images";
 export type Platform = "web" | "mobile" | "games";
 export type MobileOS = "all" | "android" | "ios";
 export type PaymentMode = "installments" | "rental";
-export type RentalServiceTier = "with-services" | "without-services";
 export type Project = {
   id: number; title: string; type: string; price: number; tone: string; seoEnabled: boolean;
   desc: string; stack: string[]; platform?: Platform;
@@ -19,20 +18,26 @@ export type Project = {
 };
 
 export const monthlyRentalPrice = (price: number) =>
-  Math.floor(price / paymentSettings().rentalMonths);
+  Math.round((price / paymentSettings().rentalMonths) * 100) / 100;
 export const installmentPlans = () =>
   paymentSettings().installmentPlans.map((plan) => ({
     months: plan.months,
     surcharge: plan.surcharge / 100,
   }));
+export const installmentTotalPrice = (price: number, surcharge: number) => {
+  const surchargePercent = Math.round(surcharge * 100);
+  return Math.ceil((price * (100 + surchargePercent)) / 100);
+};
+export const installmentMonthlyPrice = (
+  price: number,
+  plan: { months: number; surcharge: number },
+) => Math.round((installmentTotalPrice(price, plan.surcharge) / plan.months) * 100) / 100;
 export const annualInstallmentPrice = (price: number) => {
   const plan = installmentPlans().at(-1) ?? {
     months: defaultPaymentSettings.installmentPlans.at(-1)!.months,
     surcharge: defaultPaymentSettings.installmentPlans.at(-1)!.surcharge / 100,
   };
-  const surcharge = plan.surcharge;
-  const total = Math.ceil(price * (1 + surcharge));
-  return Math.floor(total / plan.months);
+  return Math.round(installmentMonthlyPrice(price, plan));
 };
 
 export const projectCatalog: Project[] = [
@@ -704,7 +709,7 @@ export const projectCatalog: Project[] = [
   {
     id: 14,
     seoEnabled: false,
-    title: "NEO BARBER CLUB",
+    title: "NEO BARBE CLUB",
     type: "Beauty & Academy",
     price: 350,
     tone: "neo",
@@ -1661,7 +1666,7 @@ export const projectDetails: Record<
   },
   14: {
     summary:
-      "NEO Barber Club este o experiență digitală premium pentru un barber shop contemporan din Chișinău. Site-ul combină prezentarea serviciilor, portofoliul vizual și o academie profesională într-o identitate cinematografică construită pentru poziționare și rezervări.",
+      "NEO BARBE CLUB este o experiență digitală premium pentru un barber shop contemporan din Chișinău. Site-ul combină prezentarea serviciilor, portofoliul vizual și o academie profesională într-o identitate cinematografică construită pentru poziționare și rezervări.",
     sections: [
       {
         title: "Ideea și poziționarea",

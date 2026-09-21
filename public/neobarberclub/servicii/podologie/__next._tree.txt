@@ -1,3 +1,4 @@
-:HL["/neobarberclub/_next/static/css/59993dc72181462c.css","style"]
-:HL["/neobarberclub/_next/static/css/4ef810911a5d6088.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"servicii","param":null,"prefetchHints":4192,"slots":{"children":{"name":"category","param":{"type":"d","key":"podologie","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"jGRjQXuwM5mpyEYnsTNIv"}
+:HL["/neobarberclub/_next/static/css/d7cc49e674f28e78.css","style"]
+:HL["/neobarberclub/_next/static/css/d0789629e68bf563.css","style"]
+:HL["/neobarberclub/_next/static/css/1858eea0c889ff4c.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"servicii","param":null,"prefetchHints":4192,"slots":{"children":{"name":"category","param":{"type":"d","key":"podologie","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"suNQ22Qj4GozUBdiusiQ_"}

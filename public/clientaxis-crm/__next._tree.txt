@@ -1,2 +1,2 @@
 :HL["/clientaxis-crm/_next/static/css/5b1c1b6ae6206704.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"WH8qp2XxitY2eM98RRQ-5"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"l0oKBLG-1f023nC9sbOb9"}

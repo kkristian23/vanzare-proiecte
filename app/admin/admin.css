@@ -561,6 +561,45 @@
   gap: 6px;
 }
 .admin-rental-settings > label:first-child { grid-column: 1 / -1; max-width: 230px; }
+.admin-rental-service-group {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-content: start;
+  padding: 10px;
+  border: 1px solid #b9e1d1;
+  border-radius: 12px;
+  background: rgba(224, 252, 240, 0.55);
+}
+.admin-rental-service-group > h4 {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #145c48;
+  font-size: 14px;
+}
+.admin-rental-service-group > .admin-add-plan { justify-self: start; }
+.admin-payment-items {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 12px 0 0;
+  padding: 16px;
+  border: 1px solid #cfc7df;
+  border-radius: 14px;
+  background: #ffffffb3;
+}
+.admin-payment-items legend { padding: 0 6px; font-weight: 800; font-size: 16px; }
+.admin-payment-items > p { color: #555065; font-size: 13px; line-height: 1.5; }
+.admin-payment-items-list { display: grid; gap: 10px; margin: 12px 0; }
+.admin-payment-item { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; padding: 12px; border: 1px solid #ddd7e6; border-radius: 10px; background: white; }
+.admin-payment-item-name { flex: 1 1 260px; min-width: 0; }
+.admin-payment-item > label:not(.admin-payment-item-name):not(.admin-payment-item-status) { flex: 0 1 130px; }
+.admin-editor-payment .admin-payment-items .admin-payment-item-status { display: flex; align-items: center; gap: 8px; min-height: 38px; color: #287044; cursor: pointer; }
+.admin-editor-payment .admin-payment-items .admin-payment-item-status.is-excluded { color: #a23b27; }
+.admin-editor-payment .admin-payment-items input[type="checkbox"] { width: 18px; height: 18px; min-height: 0; padding: 0; margin: 0; accent-color: #287044; }
+.admin-payment-items-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.admin-service-included { display: flex; align-items: center; gap: 7px; }
+.admin-service-included input { inline-size: 16px; block-size: 16px; }
 .admin-rental-service { grid-template-columns: 1fr; align-content: start; }
 .admin-payment-settings label { gap: 4px; font-size: 12px; }
 .admin-payment-settings input { padding: 7px 8px; font-size: 14px; }
@@ -1754,6 +1793,7 @@
   .admin-rental-settings .admin-price-preview {
     grid-column: auto;
   }
+  .admin-rental-service-group { grid-column: auto; grid-template-columns: 1fr; }
   .admin-rental-service {
     grid-template-columns: 1fr;
   }

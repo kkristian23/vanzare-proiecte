@@ -1,4 +1,4 @@
 :HL["/serviceflow-pro/_next/static/css/fcbed522051dfc71.css","style"]
 :HL["/serviceflow-pro/_next/static/css/c2b029b4b8c2b2f3.css","style"]
 :HL["/serviceflow-pro/_next/static/css/4d1ef516011585c7.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"servicii","param":null,"prefetchHints":4192,"slots":{"children":{"name":"id","param":{"type":"d","key":"renovare-baie","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"MinFsLdFkBf-mYVPJIeS8"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"servicii","param":null,"prefetchHints":4192,"slots":{"children":{"name":"id","param":{"type":"d","key":"renovare-baie","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"TtyHafNPFZxhWuYikeDLn"}

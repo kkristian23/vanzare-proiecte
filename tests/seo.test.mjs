@@ -4,16 +4,13 @@ import { auditSeo } from "../scripts/audit-seo.mjs";
 import { legacyRedirectRules, demoHtmlPaths, technicalPayloadPaths, renderHeaders } from "../scripts/netlify-seo.mjs";
 import { loadSiteModule } from "../scripts/load-site-data.mjs";
 
-test("contact prefill preserves rental tiers and each catalogue instalment term in all languages", () => {
+test("contact prefill preserves rental and each catalogue instalment term in all languages", () => {
   const { contactOptionLabel, contactRequestMessage } = loadSiteModule("app/lib/contact-request.ts");
   const { installmentPlans } = loadSiteModule("app/lib/project-catalog.ts");
   for (const locale of ["ro", "ru", "en"]) {
     const purchase = contactOptionLabel(locale, "purchase");
-    const withServices = contactOptionLabel(locale, "site-rental-with-services");
-    const withoutServices = contactOptionLabel(locale, "site-rental-without-services");
-    assert.notEqual(withServices, purchase);
-    assert.notEqual(withoutServices, purchase);
-    assert.notEqual(withServices, withoutServices);
+    const rental = contactOptionLabel(locale, "site-rental");
+    assert.notEqual(rental, purchase);
     assert.notEqual(contactOptionLabel(locale, "unknown"), purchase, "Unknown options must not be silently sold as purchase");
     assert.equal(contactOptionLabel(locale, "rent"), contactOptionLabel(locale, "rental"));
     for (const plan of installmentPlans()) {
