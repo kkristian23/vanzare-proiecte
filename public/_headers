@@ -42,193 +42,97 @@
 /404.html
   X-Robots-Tag: noindex, nofollow
 
-/01-eventora.txt
-  X-Robots-Tag: noindex, nofollow
-
 /01-eventora/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/02-scena-city.txt
   X-Robots-Tag: noindex, nofollow
 
 /02-scena-city/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/03-pulse-tickets.txt
-  X-Robots-Tag: noindex, nofollow
-
 /03-pulse-tickets/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/04-clinica-nova.txt
   X-Robots-Tag: noindex, nofollow
 
 /04-clinica-nova/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/05-laboris.txt
-  X-Robots-Tag: noindex, nofollow
-
 /05-laboris/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/06-doctor-aproape.txt
   X-Robots-Tag: noindex, nofollow
 
 /06-doctor-aproape/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/07-med-slot.txt
-  X-Robots-Tag: noindex, nofollow
-
 /07-med-slot/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/08-lead-pilot.txt
   X-Robots-Tag: noindex, nofollow
 
 /08-lead-pilot/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/09-growth-desk.txt
-  X-Robots-Tag: noindex, nofollow
-
 /09-growth-desk/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/10-closeflow.txt
   X-Robots-Tag: noindex, nofollow
 
 /10-closeflow/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/11-partmatch.txt
-  X-Robots-Tag: noindex, nofollow
-
 /11-partmatch/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/12-garage-box.txt
   X-Robots-Tag: noindex, nofollow
 
 /12-garage-box/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/13-motor-supply.txt
-  X-Robots-Tag: noindex, nofollow
-
 /13-motor-supply/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/14-auto-grid.txt
   X-Robots-Tag: noindex, nofollow
 
 /14-auto-grid/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/15-park-suites-demo.txt
-  X-Robots-Tag: noindex, nofollow
-
 /15-park-suites-demo/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/16-urban-haven.txt
   X-Robots-Tag: noindex, nofollow
 
 /16-urban-haven/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/17-nest-collection.txt
-  X-Robots-Tag: noindex, nofollow
-
 /17-nest-collection/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/18-moldova-escape.txt
   X-Robots-Tag: noindex, nofollow
 
 /18-moldova-escape/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/19-bazar-local.txt
-  X-Robots-Tag: noindex, nofollow
-
 /19-bazar-local/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/20-pret-bun.txt
   X-Robots-Tag: noindex, nofollow
 
 /20-pret-bun/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/21-local-craft.txt
-  X-Robots-Tag: noindex, nofollow
-
 /21-local-craft/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/22-skillup.txt
   X-Robots-Tag: noindex, nofollow
 
 /22-skillup/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/23-civic-learn.txt
-  X-Robots-Tag: noindex, nofollow
-
 /23-civic-learn/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/24-mentor-cloud.txt
   X-Robots-Tag: noindex, nofollow
 
 /24-mentor-cloud/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/25-casa-check.txt
-  X-Robots-Tag: noindex, nofollow
-
 /25-casa-check/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/26-direct-home.txt
   X-Robots-Tag: noindex, nofollow
 
 /26-direct-home/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/27-area-insight.txt
-  X-Robots-Tag: noindex, nofollow
-
 /27-area-insight/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/28-table-flow.txt
   X-Robots-Tag: noindex, nofollow
 
 /28-table-flow/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/29-food-route.txt
-  X-Robots-Tag: noindex, nofollow
-
 /29-food-route/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/30-menu-studio.txt
   X-Robots-Tag: noindex, nofollow
 
 /30-menu-studio/index.txt
   X-Robots-Tag: noindex, nofollow
 
-/31-my-utility.txt
-  X-Robots-Tag: noindex, nofollow
-
 /31-my-utility/index.txt
-  X-Robots-Tag: noindex, nofollow
-
-/32-block-admin.txt
   X-Robots-Tag: noindex, nofollow
 
 /32-block-admin/index.txt
@@ -5629,6 +5533,69 @@
   X-Robots-Tag: noindex, nofollow
 
 /autoflow-partner/work-orders.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/__next.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/_not-found.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/_not-found/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/_not-found/__next._not-found.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/_not-found/__next._not-found/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/_not-found/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/fonts/OFL.txt
+  X-Robots-Tag: noindex, nofollow
+
+/clientaxis-crm/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/__next.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/_not-found.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/_not-found/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/_not-found/__next._not-found.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/_not-found/__next._not-found/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/_not-found/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/codru-escapes/index.txt
   X-Robots-Tag: noindex, nofollow
 
 /contor-acasa.txt
@@ -17385,6 +17352,246 @@
 /rentech/index.txt
   X-Robots-Tag: noindex, nofollow
 
+/serviceflow-pro.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/__next.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/_not-found/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/_not-found/__next._not-found.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/_not-found/__next._not-found/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/_not-found/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/_not-found/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/admin/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/admin/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/admin/__next.admin.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/admin/__next.admin/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/admin/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/calculator/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/calculator/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/calculator/__next.calculator.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/calculator/__next.calculator/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/calculator/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/cont/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/cont/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/cont/__next.cont.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/cont/__next.cont/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/cont/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/programare/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/programare/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/programare/__next.programare.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/programare/__next.programare/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/programare/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/proiecte/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/proiecte/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/proiecte/__next.proiecte.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/proiecte/__next.proiecte/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/proiecte/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/__next.servicii.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/__next.servicii/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-electrica/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-electrica/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-electrica/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-electrica/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-electrica/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-sanitara/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-sanitara/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-sanitara/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-sanitara/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/instalatie-sanitara/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-gresie/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-gresie/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-gresie/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-gresie/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-gresie/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-laminat/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-laminat/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-laminat/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-laminat/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/montare-laminat/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-apartament/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-apartament/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-apartament/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-apartament/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-apartament/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-baie/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-baie/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-baie/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-baie/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/renovare-baie/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/reparatie-urgenta/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/reparatie-urgenta/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/reparatie-urgenta/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/reparatie-urgenta/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/reparatie-urgenta/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/zugravire-pereti/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/zugravire-pereti/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/zugravire-pereti/__next.servicii.%24d%24id.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/zugravire-pereti/__next.servicii/%24d%24id/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/serviceflow-pro/servicii/zugravire-pereti/index.txt
+  X-Robots-Tag: noindex, nofollow
+
 /staynest.txt
   X-Robots-Tag: noindex, nofollow
 
@@ -19210,6 +19417,231 @@
   X-Robots-Tag: noindex, nofollow
 
 /terraforma/termeni/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/__next.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/_not-found/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/_not-found/__next._not-found.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/_not-found/__next._not-found/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/_not-found/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/_not-found/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/admin/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/admin/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/admin/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/admin/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/admin/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/checkout/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/checkout/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/checkout/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/checkout/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/checkout/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/colectii/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/colectii/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/colectii/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/colectii/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/colectii/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cont/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cont/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cont/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cont/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cont/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cos/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cos/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cos/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cos/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/cos/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/despre/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/despre/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/despre/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/despre/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/despre/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/favorite/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/favorite/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/favorite/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/favorite/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/favorite/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/mesaje/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/mesaje/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/mesaje/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/mesaje/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/mesaje/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/panou/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/panou/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/panou/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/panou/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/panou/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producator/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producator/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producator/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producator/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producator/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producatori/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producatori/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producatori/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producatori/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/producatori/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produs/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produs/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produs/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produs/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produs/index.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produse/__next.%24d%24view.__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produse/__next.%24d%24view/__PAGE__.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produse/__next._full.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produse/__next._tree.txt
+  X-Robots-Tag: noindex, nofollow
+
+/vatra-market/produse/index.txt
   X-Robots-Tag: noindex, nofollow
 
 /yardcraft.txt
@@ -24889,6 +25321,90 @@
   X-Robots-Tag: noindex, follow
 
 /autoflow-partner/work-orders/
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/404
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/404.html
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/404/
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/_not-found
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/_not-found.html
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/_not-found/
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/index
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/index.html
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/index/
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/preview
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/preview.html
+  X-Robots-Tag: noindex, follow
+
+/clientaxis-crm/preview/
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/404
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/404.html
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/404/
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/_not-found
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/_not-found.html
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/_not-found/
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/index
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/index.html
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/index/
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/preview
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/preview.html
+  X-Robots-Tag: noindex, follow
+
+/codru-escapes/preview/
   X-Robots-Tag: noindex, follow
 
 /contor-acasa
@@ -32040,6 +32556,273 @@
 /rentech/index/
   X-Robots-Tag: noindex, follow
 
+/serviceflow-pro
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/404/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/_not-found
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/_not-found/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/_not-found/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/_not-found/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/_not-found/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/admin
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/admin/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/admin/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/admin/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/admin/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/calculator
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/calculator/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/calculator/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/calculator/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/calculator/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/cont
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/cont/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/cont/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/cont/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/cont/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/preview
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/preview.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/preview/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/programare
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/programare/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/programare/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/programare/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/programare/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/proiecte
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/proiecte/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/proiecte/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/proiecte/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/proiecte/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-electrica
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-electrica/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-electrica/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-electrica/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-electrica/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-sanitara
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-sanitara/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-sanitara/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-sanitara/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/instalatie-sanitara/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-gresie
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-gresie/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-gresie/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-gresie/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-gresie/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-laminat
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-laminat/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-laminat/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-laminat/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/montare-laminat/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-apartament
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-apartament/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-apartament/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-apartament/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-apartament/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-baie
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-baie/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-baie/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-baie/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/renovare-baie/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/reparatie-urgenta
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/reparatie-urgenta/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/reparatie-urgenta/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/reparatie-urgenta/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/reparatie-urgenta/index/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/zugravire-pereti
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/zugravire-pereti/
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/zugravire-pereti/index
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/zugravire-pereti/index.html
+  X-Robots-Tag: noindex, follow
+
+/serviceflow-pro/servicii/zugravire-pereti/index/
+  X-Robots-Tag: noindex, follow
+
 /staynest
   X-Robots-Tag: noindex, follow
 
@@ -33657,6 +34440,258 @@
 /terraforma/termeni/index/
   X-Robots-Tag: noindex, follow
 
+/vatra-market
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/404/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/_not-found
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/_not-found/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/_not-found/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/_not-found/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/_not-found/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/admin
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/admin/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/admin/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/admin/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/admin/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/checkout
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/checkout/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/checkout/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/checkout/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/checkout/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/colectii
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/colectii/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/colectii/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/colectii/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/colectii/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cont
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cont/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cont/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cont/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cont/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cos
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cos/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cos/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cos/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/cos/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/despre
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/despre/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/despre/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/despre/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/despre/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/favorite
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/favorite/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/favorite/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/favorite/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/favorite/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/mesaje
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/mesaje/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/mesaje/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/mesaje/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/mesaje/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/panou
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/panou/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/panou/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/panou/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/panou/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/preview
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/preview.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/preview/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producator
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producator/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producator/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producator/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producator/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producatori
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producatori/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producatori/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producatori/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/producatori/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produs
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produs/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produs/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produs/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produs/index/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produse
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produse/
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produse/index
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produse/index.html
+  X-Robots-Tag: noindex, follow
+
+/vatra-market/produse/index/
+  X-Robots-Tag: noindex, follow
+
 /yardcraft
   X-Robots-Tag: noindex, follow
 
@@ -34057,6 +35092,222 @@
   X-Robots-Tag: noindex, follow
 
 /yardcraft/termeni/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro/index
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/serviceflow-pro/index.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro/index
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro/index/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/serviceflow-pro/index.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro/index
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro/index/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/serviceflow-pro/index.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market/index
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/vatra-market/index.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market/index
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market/index/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/vatra-market/index.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market/index
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market/index/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/vatra-market/index.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes/index
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/codru-escapes/index.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes/index
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes/index/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/codru-escapes/index.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes/index
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes/index/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/codru-escapes/index.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm.html
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm/index
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm/index/
+  X-Robots-Tag: noindex, follow
+
+/ro/projects/clientaxis-crm/index.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm.html
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm/index
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm/index/
+  X-Robots-Tag: noindex, follow
+
+/ru/projects/clientaxis-crm/index.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm.html
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm/index
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm/index/
+  X-Robots-Tag: noindex, follow
+
+/en/projects/clientaxis-crm/index.html
   X-Robots-Tag: noindex, follow
 
 /ro/projects/iclinica

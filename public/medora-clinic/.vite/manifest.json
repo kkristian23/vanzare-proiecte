@@ -21,7 +21,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "medora-clinic/_next/static/chunks/app-route-prefetch-policy-c_10jQG3.js",
+    "file": "medora-clinic/_next/static/chunks/app-route-prefetch-policy-JxdenBwg.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -30,7 +30,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "medora-clinic/_next/static/chunks/layout-segment-context-B25a8mAF.js",
+    "file": "medora-clinic/_next/static/chunks/layout-segment-context-BgzfHZea.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -51,7 +51,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "medora-clinic/_next/static/chunks/index-15vsBl5Q.js",
+    "file": "medora-clinic/_next/static/chunks/index-eK4-rW3I.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,

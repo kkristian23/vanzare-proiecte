@@ -1,3 +1,2 @@
-:HL["/vatra-market/_next/static/chunks/0jd69ub-w_r5c.css","style"]
-:HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"view","param":{"type":"d","key":"producator","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"fU_l4DK-XaSbatQui_Fag"}
+:HL["/vatra-market/_next/static/css/a6cf51679c362b99.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"view","param":{"type":"d","key":"producator","siblings":["_not-found","_global-error"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"zEJfc_E2f-ZnJIxTvsDWp"}

@@ -15,6 +15,7 @@ const requested = new Set(process.argv.slice(2).filter((arg) => !arg.startsWith(
 const strict = process.argv.includes("--strict");
 const buildRequested = process.argv.includes("--build");
 const changedOnly = process.argv.includes("--changed");
+const updatedOnlyReport = process.argv.includes("--updated-only-report");
 const textExtensions = new Set([".html", ".css", ".js", ".mjs", ".json", ".rsc", ".txt", ".xml", ".webmanifest"]);
 const ignoredNames = new Set([".git", ".next", ".vinext", "node_modules", "graphify-out", "logs", "reports", "tests"]);
 const sourceIgnoredNames = new Set([
@@ -89,10 +90,21 @@ async function buildProject(project) {
       hidden.push({ sourcePath, temporaryPath });
     }
     if (hidden.length) await rm(path.join(project.source, ".next"), { recursive: true, force: true, maxRetries: 5, retryDelay: 250 });
+    const packagePath = path.join(project.source, "package.json");
+    const packageJson = await readFile(packagePath, "utf8").then(JSON.parse).catch(() => ({}));
+    const nextVersion = packageJson.dependencies?.next ?? packageJson.devDependencies?.next ?? "";
+    const nextMajor = Number.parseInt(String(nextVersion).match(/\d+/)?.[0] ?? "0", 10);
+    const webpackArgs = process.platform === "win32" && nextMajor >= 16 ? ["--webpack"] : [];
     await new Promise((resolve, reject) => {
       const npmExecPath = process.env.npm_execpath;
       const command = project.directNext ? process.execPath : npmExecPath ? process.execPath : process.platform === "win32" ? "npm.cmd" : "npm";
-      const args = project.directNext ? [path.join(project.source, "node_modules", "next", "dist", "bin", "next"), "build"] : npmExecPath ? [npmExecPath, ...(project.buildArgs ?? ["run", "build"])] : project.buildArgs ?? ["run", "build"];
+      const defaultBuildArgs = npmExecPath ? [npmExecPath, "run", "build", ...(webpackArgs.length ? ["--", ...webpackArgs] : [])] : ["run", "build", ...(webpackArgs.length ? ["--", ...webpackArgs] : [])];
+      const configuredBuildArgs = project.buildArgs
+        ? npmExecPath ? [npmExecPath, ...project.buildArgs] : project.buildArgs
+        : defaultBuildArgs;
+      const args = project.directNext
+        ? [path.join(project.source, "node_modules", "next", "dist", "bin", "next"), "build", ...webpackArgs]
+        : configuredBuildArgs;
       const child = spawn(command, args, {
         cwd: project.source,
         env: {
@@ -101,10 +113,18 @@ async function buildProject(project) {
           NEXT_PUBLIC_SHOWCASE_BASE_PATH: `/${project.slug}`,
         },
         shell: false,
-        stdio: "inherit",
+        stdio: updatedOnlyReport ? ["ignore", "pipe", "pipe"] : "inherit",
       });
+      let buildError = "";
+      if (updatedOnlyReport) {
+        child.stdout.resume();
+        child.stderr.setEncoding("utf8");
+        child.stderr.on("data", (chunk) => { buildError = `${buildError}${chunk}`.slice(-4000); });
+      }
       child.once("error", reject);
-      child.once("exit", (code) => code === 0 ? resolve() : reject(new Error(`Build eșuat pentru ${project.slug} (${code})`)));
+      child.once("exit", (code) => code === 0
+        ? resolve()
+        : reject(new Error(`Build eșuat pentru ${project.slug} (${code})${buildError.trim() ? `: ${buildError.trim()}` : ""}`)));
     });
   } finally {
     for (const entry of hidden.reverse()) await rename(entry.temporaryPath, entry.sourcePath);
@@ -173,7 +193,7 @@ for (const project of registry) {
   let output = null;
   if (buildRequested) {
     try {
-      console.log(`→ build ${project.slug}`);
+      if (!updatedOnlyReport) console.log(`→ build ${project.slug}`);
       await buildProject(project);
       output = await findOutput(project);
     } catch (error) {
@@ -247,8 +267,18 @@ for (const project of registry) {
   results.push({ slug: project.slug, status: "synced", output });
 }
 
-for (const result of results) {
-  console.log(`${result.status === "synced" || result.status === "unchanged" ? "✓" : "!"} ${result.slug}: ${result.status}${result.output ? ` (${result.output})` : ""}${result.error ? ` — ${result.error}` : ""}`);
+if (updatedOnlyReport) {
+  const updated = results.filter((result) => result.status === "synced");
+  console.log(updated.length
+    ? `Proiecte actualizate (${updated.length}): ${updated.map((result) => result.slug).join(", ")}`
+    : "Proiecte actualizate: niciunul");
+  for (const result of results.filter((item) => item.status !== "synced" && item.status !== "unchanged" && item.status !== "disabled")) {
+    console.error(`! ${result.slug}: ${result.status}${result.error ? ` — ${result.error}` : ""}`);
+  }
+} else {
+  for (const result of results) {
+    console.log(`${result.status === "synced" || result.status === "unchanged" ? "✓" : "!"} ${result.slug}: ${result.status}${result.output ? ` (${result.output})` : ""}${result.error ? ` — ${result.error}` : ""}`);
+  }
 }
 
 const missing = results.filter(

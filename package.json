@@ -25,7 +25,7 @@
     "build": "vinext build",
     "showcase:sync": "node scripts/sync-showcase.mjs",
     "showcase:favicons": "node scripts/apply-showcase-favicons.mjs",
-    "showcase:refresh": "npm run showcase:sync -- --build --strict && npm run build",
+    "showcase:refresh": "npm run showcase:sync -- --build --changed --strict --updated-only-report && npm run build",
     "start": "node scripts/start-server.mjs start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs tests/normalize-next-export.test.mjs tests/seo.test.mjs tests/project-seo-policy.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

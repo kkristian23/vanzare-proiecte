@@ -1,3 +1,2 @@
-:HL["/clientaxis-crm/_next/static/chunks/3ni00u1prjmw5.css","style"]
-:HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"lz1hnjWv9hkH5Qrned-oG"}
+:HL["/clientaxis-crm/_next/static/css/5b1c1b6ae6206704.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"WH8qp2XxitY2eM98RRQ-5"}
